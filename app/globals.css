@@ -91,45 +91,45 @@
   /* Ultra-dark background #0D0D0F */
   --background: #0D0D0F;
   --foreground: #FFFFFF;
-  
+
   /* Dark cards and popovers */
   --card: #1A1A1C;
   --card-foreground: #FFFFFF;
   --popover: #1A1A1C;
   --popover-foreground: #FFFFFF;
-  
+
   /* Primary colors - bright accent */
   --primary: #FFFFFF;
   --primary-foreground: #0D0D0F;
-  
+
   /* Secondary colors - dark gray */
   --secondary: #2A2A2D;
   --secondary-foreground: #FFFFFF;
-  
+
   /* Muted colors - subtle grays */
   --muted: #2A2A2D;
   --muted-foreground: #8B8B8F;
-  
+
   /* Accent colors */
   --accent: #2A2A2D;
   --accent-foreground: #FFFFFF;
-  
+
   /* Destructive - red */
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  
+
   /* Borders and inputs - very subtle */
   --border: #2A2A2D;
   --input: #2A2A2D;
   --ring: #4A4A4D;
-  
+
   /* Chart colors - vibrant for contrast */
   --chart-1: #3B82F6;
   --chart-2: #10B981;
   --chart-3: #F59E0B;
   --chart-4: #EF4444;
   --chart-5: #8B5CF6;
-  
+
   /* Sidebar colors */
   --sidebar: #1A1A1C;
   --sidebar-foreground: #FFFFFF;
@@ -149,9 +149,18 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
-  
+
   /* Apply Uber Move font to all headings */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-uber-move), sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

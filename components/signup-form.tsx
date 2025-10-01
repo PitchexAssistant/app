@@ -32,11 +32,16 @@ export function SignUpForm({
         password,
       })
 
+      // Handle email verification if required
       if (signUpAttempt.status === "complete") {
         await setActive({ session: signUpAttempt.createdSessionId })
         router.push("/dashboard")
+      } else if (signUpAttempt.status === "missing_requirements") {
+        // If email verification is required, handle it
+        setError("Please check your email for verification link")
       }
     } catch (err: any) {
+      console.error("Sign up error:", err)
       setError(err.errors?.[0]?.message || "Failed to create account")
     } finally {
       setIsLoading(false)
