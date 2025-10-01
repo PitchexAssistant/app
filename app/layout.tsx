@@ -1,6 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
 import { Geist } from "next/font/google";
 import localFont from "next/font/local"; // 1. Import localFont
 import "./globals.css";
@@ -39,10 +39,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      signInUrl="/sign-in"
+      signUpUrl="/sign-up"
+      signInFallbackRedirectUrl="/dashboard"
+      signUpFallbackRedirectUrl="/dashboard"
+    >
       <html lang="en" className="dark">
         {/* 4. Combine the font variables in the body className */}
         <body className={`${geistSans.variable} ${uberMove.variable} font-sans`}>
+          <GoogleOneTap />
           {children}
         </body>
       </html>

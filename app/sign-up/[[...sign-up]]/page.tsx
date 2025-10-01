@@ -1,14 +1,9 @@
-"use client"
+import { SignUp } from '@clerk/nextjs'
 
-import { SignIn } from "@clerk/nextjs"
-
-export function LoginForm({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+export default function SignUpPage() {
   return (
-    <div className={className} {...props}>
-      <SignIn
+    <div className="flex min-h-screen items-center justify-center">
+      <SignUp
         appearance={{
           elements: {
             rootBox: "mx-auto",
