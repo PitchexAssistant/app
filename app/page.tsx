@@ -53,7 +53,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleGetStarted = useCallback(() => {
-    router.push("/login");
+    router.push("/sign-in");
   }, [router]);
 
   return (

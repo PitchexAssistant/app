@@ -11,6 +11,8 @@ import {
   LogOut,
 } from "lucide-react"
 import Image from "next/image"
+import { useClerk } from "@clerk/nextjs"
+import { useRouter } from "next/navigation"
 
 import { NavUser } from "@/components/nav-user"
 import {
@@ -66,6 +68,13 @@ const DropboxIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function AppSidebar({ user, ...props }: AppSidebarProps) {
   const [isPreviousSessionsOpen, setIsPreviousSessionsOpen] = React.useState(true)
+  const { signOut } = useClerk()
+  const router = useRouter()
+
+  const handleSignOut = async () => {
+    await signOut()
+    router.push("/sign-in")
+  }
 
   return (
     <Sidebar collapsible="icon" {...props}>
@@ -194,7 +203,12 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
             <div className="text-white font-medium text-sm truncate">{user.name}</div>
             <div className="text-slate-400 text-xs truncate">{user.email}</div>
           </div>
-          <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-slate-400 hover:text-white">
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            className="h-8 w-8 p-0 text-slate-400 hover:text-white hover:bg-slate-800"
+            onClick={handleSignOut}
+          >
             <LogOut className="w-4 h-4" />
           </Button>
         </div>
