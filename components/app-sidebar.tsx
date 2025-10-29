@@ -27,6 +27,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  useSidebar,
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Badge } from "./ui/badge"
@@ -44,32 +45,12 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   }
 }
 
-const GoogleDriveIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-    <path fill="#0066da" d="M15.1,1.1l-6,10.6l-3.3-5.9l-4.7,8.2h17.9l-3.9-6.9Z"></path>
-    <path fill="#009e5d" d="M4.1,22.9l6-10.6l6.1,10.6Z"></path>
-    <path fill="#ffcd00" d="M10.1,12.3l-6-10.6l-3,5.3l9,15.9l6-10.6Z"></path>
-  </svg>
-);
-
-const FirebaseIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-    <path fill="#f57c00" d="M4.3,20.3l5.8-16.7c0.1-0.2,0.3-0.3,0.5-0.3s0.4,0.1,0.5,0.3l3.2,9.1l5.4-3.5c0.2-0.1,0.4-0.1,0.5,0l0,0c0.2,0.1,0.3,0.3,0.2,0.5l-5.1,15.1c-0.1,0.2-0.3,0.3-0.5,0.3s-0.4-0.1-0.5-0.3L10,12.4L4.5,20.8C4.4,21,4.1,21,3.9,20.9l0,0C3.8,20.8,3.7,20.5,3.8,20.3Z"></path>
-    <path fill="#ffca28" d="M12.9,12.5l-3.2-9.1c-0.1-0.2-0.3-0.4-0.5-0.4s-0.4,0.1-0.5,0.3L3.8,15.4Z"></path>
-    <path fill="#ffa726" d="M4.3,20.3l0.2,0.5c0.1,0.2,0.4,0.3,0.6,0.2l7.8-5.1Z"></path>
-  </svg>
-);
-
-const DropboxIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-    <path fill="#0061ff" d="M12,4.2L6.1,8.1L12,12l5.9-3.9Zm0,8.7L6.1,17l5.9,3.9l5.9-3.9ZM6.1,4.2l-6,3.9l6,3.9l6-3.9Zm11.8,0l6,3.9l-6,3.9-6-3.9Z"></path>
-  </svg>
-);
-
 export function AppSidebar({ user, ...props }: AppSidebarProps) {
   const [isPreviousSessionsOpen, setIsPreviousSessionsOpen] = React.useState(true)
   const { signOut } = useClerk()
   const router = useRouter()
+  const { state } = useSidebar()
+  const isCollapsed = state === "collapsed"
 
   const handleSignOut = async () => {
     await signOut()
@@ -77,141 +58,226 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
   }
 
   return (
-    <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader className="p-4">
-        <div className="flex items-center gap-3">
-          <Image src="/pitchexLogo.png" alt="Logo" width={100} height={100} />
-        </div>
+    <Sidebar collapsible="icon" {...props} className="bg-[var(--bg-dark-grey)] border-r border-zinc-800">
+      {/* Header */}
+      <SidebarHeader className="pt-3 pl-6 pr-5 bg-[var(--bg-dark-grey)]">
+        {isCollapsed ? (
+          <div className="w-12 h-12 flex items-center justify-center">
+            <Image 
+              src="/logo-sidebar-collapsed.png" 
+              alt="Logo" 
+              width={32} 
+              height={20}
+              className="w-8 h-5"
+            />
+          </div>
+        ) : (
+          <div className="inline-flex justify-start items-center gap-2">
+            <div className="w-20 h-5 relative overflow-hidden">
+              <Image 
+                src="/pitchexLogo.png" 
+                alt="Logo" 
+                width={180} 
+                height={180}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        )}
       </SidebarHeader>
       
-      <SidebarContent className="px-4 overflow-y-auto overflow-x-hidden scrollbar-hide">
-        {/* Integrations Section */}
-        <SidebarGroup>
-        <div className="flex items-center justify-between">
-      <p className="text-base font-medium text-slate-200">Integrations</p>
-      <div className="flex items-center gap-x-1.5 bg-[#27272A] p-1.5 rounded-full">
-        <GoogleDriveIcon className="w-5 h-5" />
-        <FirebaseIcon className="w-5 h-5" />
-        <DropboxIcon className="w-5 h-5" />
-      </div>
-    </div>
-        </SidebarGroup>
+      <SidebarContent className="px-4 flex flex-col justify-between overflow-y-auto overflow-x-hidden scrollbar-hide bg-[var(--bg-dark-grey)]">
+        <div className="flex flex-col justify-start items-start gap-6">
+          {/* Integrations Section */}
+          {!isCollapsed && (
+            <div className="self-stretch h-10 px-3 inline-flex justify-between items-center">
+              <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Integrations</div>
+              <Image 
+                  src="/integrations-icon-custom.svg" 
+                  alt="Integrations" 
+                  width={64} 
+                  height={12}
+                  className="h-10"
+                />
+            </div>
+          )}
 
-        {/* New Session Button */}
-        <div className="mb-6">
-          <Button className="w-full bg-slate-800 border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white rounded-lg h-10">
-            <Plus className="w-4 h-4 mr-2" />
-            New Session
-          </Button>
-        </div>
-
-        {/* Pitch Maker Section */}
-        <SidebarGroup>
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton className="text-slate-300 hover:bg-slate-800 hover:text-white">
-                <Monitor className="w-4 h-4" />
-                <span>Pitch Maker</span>
-                <Badge className="ml-auto bg-orange-500 text-orange-900 text-xs px-2 py-0.5">
-                  Coming Soon
-                </Badge>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarGroup>
-
-        <SidebarSeparator className="my-4" />
-
-        {/* Previous Sessions Section */}
-        <SidebarGroup>
-          <Collapsible open={isPreviousSessionsOpen} onOpenChange={setIsPreviousSessionsOpen}>
-            <div className="flex items-center justify-between mb-3">
-              <SidebarGroupLabel className="text-slate-400 text-sm">Previous Sessions</SidebarGroupLabel>
-              <div className="flex items-center gap-2">
-                <Badge className="bg-purple-500 text-white text-xs px-2 py-0.5">6</Badge>
-                <CollapsibleTrigger asChild>
-                  <Button variant="ghost" size="sm" className="h-6 w-6 p-0 text-slate-400 hover:text-white">
-                    <ChevronUp className={`w-3 h-3 transition-transform ${isPreviousSessionsOpen ? 'rotate-0' : 'rotate-180'}`} />
-                  </Button>
-                </CollapsibleTrigger>
+          {isCollapsed && (
+            <div className="w-full flex justify-center">
+              <div className="px-1.5 py-1.5 bg-zinc-900 rounded-md outline outline-[0.67px] outline-offset-[-0.67px] outline-zinc-800 flex justify-start items-center gap-1">
+                <Image 
+                  src="/integrations-icon-custom.svg" 
+                  alt="Integrations" 
+                  width={42} 
+                  height={12}
+                  className="h-3"
+                />
               </div>
             </div>
-            <CollapsibleContent>
-              <SidebarMenu>
-                <SidebarMenuItem>
-                  <SidebarMenuButton className="text-slate-300 hover:bg-slate-800 hover:text-white">
-                    <Mic className="w-4 h-4" />
-                    <span>Pitch 1</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton className="text-slate-300 hover:bg-slate-800 hover:text-white">
-                    <Mic className="w-4 h-4" />
-                    <span>Pitch 2</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton className="text-slate-300 hover:bg-slate-800 hover:text-white">
-                    <Mic className="w-4 h-4" />
-                    <span>Pitch 3</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </SidebarMenu>
-            </CollapsibleContent>
-          </Collapsible>
-        </SidebarGroup>
+          )}
 
-        <SidebarSeparator className="my-4" />
+          {/* Separator */}
+          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
 
-        {/* Help & Support Section */}
-        <SidebarGroup>
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton className="text-slate-300 hover:bg-slate-800 hover:text-white">
-                <Info className="w-4 h-4" />
-                <span>Help & Support</span>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarGroup>
+          {/* Actions Section */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-3">
+            {/* New Session Button */}
+            <div className={`self-stretch h-11 px-3 py-2 bg-zinc-900 rounded-xl inline-flex justify-start items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'gap-3'}`}>
+              <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? '' : 'mr-0'}`} />
+              {!isCollapsed && (
+                <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">New Session</div>
+              )}
+            </div>
 
-        {/* Upgrade to Pro Card */}
-        <div className="mt-6 p-4 bg-slate-800 border border-slate-600 rounded-lg">
-          <div className="flex items-start justify-between mb-3">
-            <Badge className="bg-green-500 text-green-900 text-xs px-2 py-0.5">Pro</Badge>
+            {/* Pitch Maker */}
+            <div className={`self-stretch rounded-xl inline-flex justify-start items-start ${isCollapsed ? 'justify-center' : ''}`}>
+              <div className={`flex-1 h-11 px-3 py-2 rounded-xl flex items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'justify-start gap-3'}`}>
+                <Monitor className="w-5 h-5 text-stone-500" />
+                {!isCollapsed && (
+                  <>
+                    <div className="text-neutral-400 text-s font-medium font-['Uber_Move']">Pitcher</div>
+                    <div className="h-6 px-2 py-[5px] bg-amber-500/10 rounded-md flex justify-center items-center">
+                      <div className="text-amber-500 text-xs font-bold font-['Uber_Move']">Coming Soon</div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
-          <h3 className="text-white font-semibold text-sm mb-2">Upgrade to Pro</h3>
-          <p className="text-slate-400 text-xs leading-relaxed mb-4">
-            Unlock unlimited sessions, priority support, and advanced AI tools to take your pitches to the next level.
-          </p>
-          <Button className="w-full bg-slate-700 border border-slate-600 text-white hover:bg-slate-600 rounded-lg h-8 text-xs">
-            Upgrade Now
-            <ArrowUpRight className="w-3 h-3 ml-1" />
-          </Button>
+
+          {/* Separator */}
+          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
+
+          {/* Previous Sessions Section */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-3">
+            {!isCollapsed ? (
+              <Collapsible open={isPreviousSessionsOpen} onOpenChange={setIsPreviousSessionsOpen} className="w-full">
+                <div className="self-stretch w-full h-11 px-3 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden">
+                  <div className="flex justify-start items-center gap-3">
+                    <Mic className="w-5 h-5 text-stone-500" />
+                    <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Recents </div>
+                    <div className="h-6 px-2 py-[5px] bg-pink-500/10 rounded-[5.13px] flex justify-center items-center">
+                      <div className="text-pink-500 text-xs font-bold font-['Uber_Move']">6</div>
+                    </div>
+                  </div>
+                  <CollapsibleTrigger asChild>
+                    <Button variant="ghost" size="sm" className="h-6 w-6 p-0 hover:bg-transparent">
+                      <ChevronUp className={`w-5 h-5 text-neutral-400 transition-transform ${isPreviousSessionsOpen ? 'rotate-0' : 'rotate-180'}`} />
+                    </Button>
+                  </CollapsibleTrigger>
+                </div>
+
+                <CollapsibleContent>
+                  <div className="self-stretch flex flex-col justify-start items-start gap-3">
+                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
+                      <div className="flex justify-start items-center gap-3">
+                        <Mic className="w-5 h-5 text-stone-500" />
+                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 1</div>
+                      </div>
+                    </div>
+                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
+                      <div className="flex justify-start items-center gap-3">
+                        <Mic className="w-5 h-5 text-stone-500" />
+                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 2</div>
+                      </div>
+                    </div>
+                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
+                      <div className="flex justify-start items-center gap-3">
+                        <Mic className="w-5 h-5 text-stone-500" />
+                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            ) : (
+              <div className="w-full flex justify-center">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="h-11 w-11 p-0 hover:bg-zinc-900 rounded-xl"
+                >
+                  <Mic className="w-5 h-5 text-neutral-400" />
+                </Button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="self-stretch pb-8 flex flex-col justify-start items-start gap-6">
+          {/* Separator */}
+          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
+
+          {/* Help & Support */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-3">
+            <div className={`self-stretch h-11 px-3 py-2 rounded-xl inline-flex items-center overflow-hidden hover:bg-zinc-900 ${isCollapsed ? 'justify-center' : 'justify-start gap-3'}`}>
+              <Info className="w-6 h-6 text-stone-500" />
+              {!isCollapsed && (
+                <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Help & Support</div>
+              )}
+            </div>
+          </div>
+
+          {/* Upgrade to Pro Card */}
+          {!isCollapsed && (
+            <div className="self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-zinc-800 flex flex-col justify-start items-start gap-3">
+              <div className="h-6 px-2 py-2 bg-neutral-800 rounded-md inline-flex justify-center items-center">
+                <div className="text-green-600 text-xs font-bold font-['Uber_Move']">Pro</div>
+              </div>
+              <div className="text-stone-300 text-base font-medium font-['Uber_Move']">Upgrade to Pro</div>
+              <div className="text-neutral-500 text-sm font-medium font-['Uber_Move']">
+                Unlock unlimited sessions, priority support, and advanced AI tools to take your pitches to the next level.
+              </div>
+              <div className="h-8 px-3 py-[5px] rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-800 inline-flex justify-start items-center gap-[3px] hover:bg-zinc-900 cursor-pointer">
+                <div className="text-stone-300 text-xs font-medium font-['Uber_Move']">Upgrade Now</div>
+                <ArrowUpRight className="w-3 h-3 text-stone-300" />
+              </div>
+            </div>
+          )}
+
+          {/* Separator */}
+          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
         </div>
       </SidebarContent>
 
-      <SidebarFooter className="p-4">
-        <SidebarSeparator className="mb-4" />
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-semibold text-sm">
-              {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
-            </span>
+      {/* Footer */}
+      <SidebarFooter className="px-5 pb-8 bg-[var(--bg-dark-grey)]">
+        {!isCollapsed ? (
+          <div className="self-stretch inline-flex justify-between items-start">
+            <div className="flex justify-start items-center gap-2">
+              <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
+                <div className="text-white text-base font-medium font-['Uber_Move']">
+                  {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
+                </div>
+              </div>
+               <div className="inline-flex flex-col justify-start items-start gap-0.5 max-w-[200px]">
+                <div className="text-zinc-100 text-base font-medium font-['Uber_Move']">
+                    {user.name}
+                  </div>
+                  <div className="text-stone-500 text-sm font-medium font-['Uber_Move'] truncate w-full overflow-hidden text-ellipsis whitespace-nowrap">
+                    {user.email}
+                  </div>
+                </div>  
+            </div>
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="w-8 h-8 p-2 hover:bg-zinc-900 rounded-lg"
+              onClick={handleSignOut}
+            >
+              <LogOut className="w-5 h-5 text-stone-500" />
+            </Button>
           </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-white font-medium text-sm truncate">{user.name}</div>
-            <div className="text-slate-400 text-xs truncate">{user.email}</div>
+        ) : (
+          <div className="flex justify-center">
+            <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
+              <div className="text-white text-base font-medium font-['Inter']">
+                {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
+              </div>
+            </div>
           </div>
-          <Button 
-            variant="ghost" 
-            size="sm" 
-            className="h-8 w-8 p-0 text-slate-400 hover:text-white hover:bg-slate-800"
-            onClick={handleSignOut}
-          >
-            <LogOut className="w-4 h-4" />
-          </Button>
-        </div>
+        )}
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
