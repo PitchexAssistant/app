@@ -49,13 +49,34 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
   /* Custom color scheme */
   --color-bg-dark-grey: var(--bg-dark-grey);
   --color-bg-gray: var(--bg-gray);
   --color-border-gray: var(--border-gray);
   --color-text-white: var(--text-white);
   --color-disable-grey: var(--disable-grey);
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+  @keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
+  @keyframes spin-around {
+  0% {
+    transform: translateZ(0) rotate(0);
+    }
+  15%, 35% {
+    transform: translateZ(0) rotate(90deg);
+    }
+  65%, 85% {
+    transform: translateZ(0) rotate(270deg);
+    }
+  100% {
+    transform: translateZ(0) rotate(360deg);
+    }
+  }
 }
 
 :root {
@@ -92,7 +113,7 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
   --orange-accent: #FF6B00;
-  
+
   /* Font size variables */
   --font-size-h1: 40px;
   --font-size-h2: 32px;
@@ -103,7 +124,7 @@
   --font-size-caption: 14px;
   --font-size-button: 16px;
   --font-size-chat-body: 16px;
-  
+
   /* Custom color scheme variables */
   --bg-dark-grey: #0D0D0F;
   --bg-gray: #1A1A1D;
@@ -165,7 +186,7 @@
   --sidebar-border: #2A2A2D;
   --sidebar-ring: #4A4A4D;
   --orange-accent: #FF6B00;
-  
+
   /* Custom color scheme variables for dark mode */
   --bg-dark-grey: #0D0D0F;
   --bg-gray: #1A1A1D;
@@ -188,44 +209,44 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-uber-move), sans-serif;
   }
-  
+
   h1 {
     font-size: var(--font-size-h1);
     line-height: 1.2;
   }
-  
+
   h2 {
     font-size: var(--font-size-h2);
     line-height: 1.25;
   }
-  
+
   h3 {
     font-size: var(--font-size-h3);
     line-height: 1.3;
   }
-  
+
   h4 {
     font-size: var(--font-size-h4);
     line-height: 1.4;
   }
-  
+
   h5 {
     font-size: var(--font-size-h5);
     line-height: 1.5;
   }
-  
+
   /* Caption text */
   .caption {
     font-size: var(--font-size-caption);
     line-height: 1.4;
   }
-  
+
   /* Button text */
   button {
     font-size: var(--font-size-button);
     line-height: 1.5;
   }
-  
+
   /* Chat body text */
   .chat-body-text {
     font-size: var(--font-size-chat-body);
@@ -238,31 +259,40 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Hide scrollbar for IE, Edge and Firefox */
   .scrollbar-hide {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-  
+
   /* Custom color utility classes */
   .bg-dark-grey {
     background-color: var(--bg-dark-grey);
   }
-  
+
   .bg-gray {
     background-color: var(--bg-gray);
   }
-  
+
   .border-gray {
     border-color: var(--border-gray);
   }
-  
+
   .text-white {
     color: var(--text-white);
   }
-  
+
   .text-disable-grey {
     color: var(--disable-grey);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
