@@ -60,11 +60,11 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
   return (
     <Sidebar collapsible="icon" {...props} className="bg-[var(--bg-dark-grey)] border-r border-zinc-800">
       {/* Header */}
-      <SidebarHeader className="pt-3 pl-6 pr-5 bg-[var(--bg-dark-grey)]">
+      <SidebarHeader className="pt-3 pl-0 pr-5 bg-[var(--bg-dark-grey)]">
         {isCollapsed ? (
-          <div className="w-12 h-12 flex items-center justify-center">
+          <div className="w-6 h-6 ml-2.5 flex items-center justify-center">
             <Image 
-              src="/logo-sidebar-collapsed.png" 
+              src="/logo-sidebar-collapsed.svg" 
               alt="Logo" 
               width={32} 
               height={20}
@@ -72,7 +72,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
             />
           </div>
         ) : (
-          <div className="inline-flex justify-start items-center gap-2">
+          <div className="inline-flex mt-3 justify-start pl-6 items-center gap-2">
             <div className="w-20 h-5 relative overflow-hidden">
               <Image 
                 src="/pitchexLogo.png" 
@@ -86,7 +86,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
         )}
       </SidebarHeader>
       
-      <SidebarContent className="px-4 flex flex-col justify-between overflow-y-auto overflow-x-hidden scrollbar-hide bg-[var(--bg-dark-grey)]">
+      <SidebarContent className="px-3 flex flex-col justify-between overflow-y-auto overflow-x-hidden scrollbar-hide bg-[var(--bg-dark-grey)]">
         <div className="flex flex-col justify-start items-start gap-6">
           {/* Integrations Section */}
           {!isCollapsed && (
@@ -104,15 +104,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
 
           {isCollapsed && (
             <div className="w-full flex justify-center">
-              <div className="px-1.5 py-1.5 bg-zinc-900 rounded-md outline outline-[0.67px] outline-offset-[-0.67px] outline-zinc-800 flex justify-start items-center gap-1">
-                <Image 
-                  src="/integrations-icon-custom.svg" 
-                  alt="Integrations" 
-                  width={42} 
-                  height={12}
-                  className="h-3"
-                />
-              </div>
+               
             </div>
           )}
 
@@ -122,24 +114,24 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
           {/* Actions Section */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
             {/* New Session Button */}
-            <div className={`self-stretch h-11 px-3 py-2 bg-zinc-900 rounded-xl inline-flex justify-start items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'gap-3'}`}>
-              <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? '' : 'mr-0'}`} />
+            <div className={`w-10 h-8 px-0 py-2  inline-flex justify-start items-center  rounded-xl cursor-pointer overflow-hidden ${isCollapsed ? 'justify-center px-0' : 'gap-3 px-2 w-full h-11 hover:bg-zinc-900'}`}>
+              <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? 'h-6 w-6 p-0' : 'mr-0'}`} />
               {!isCollapsed && (
                 <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">New Session</div>
               )}
             </div>
 
             {/* Pitch Maker */}
-            <div className={`self-stretch rounded-xl inline-flex justify-start items-start ${isCollapsed ? 'justify-center' : ''}`}>
-              <div className={`flex-1 h-11 px-3 py-2 rounded-xl flex items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'justify-start gap-3'}`}>
-                <Monitor className="w-5 h-5 text-stone-500" />
+            <div className={`self-stretch rounded-xl inline-flex justify-start items-start ${isCollapsed ? 'justify-center' : 'hover:bg-zinc-900 rounded-xl cursor-pointer'}`}>
+              <div className={`flex-1 h-11 px-0 py-2 rounded-xl flex items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'justify-start gap-3 px-3 hover:bg-zinc-900 rounded-xl cursor-pointe'}`}>
+                <Monitor className="w-5 h-5 text-stone-500 cursor-pointer" />
                 {!isCollapsed && (
-                  <>
+                  <div className="flex justify-between w-full">
                     <div className="text-neutral-400 text-s font-medium font-['Uber_Move']">Pitcher</div>
                     <div className="h-6 px-2 py-[5px] bg-amber-500/10 rounded-md flex justify-center items-center">
                       <div className="text-amber-500 text-xs font-bold font-['Uber_Move']">Coming Soon</div>
                     </div>
-                  </>
+                  </div>
                 )}
               </div>
             </div>
@@ -169,7 +161,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
 
                 <CollapsibleContent>
                   <div className="self-stretch flex flex-col justify-start items-start gap-3">
-                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
+                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900 rounded-xl cursor-pointer">
                       <div className="flex justify-start items-center gap-3">
                         <Mic className="w-5 h-5 text-stone-500" />
                         <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 1</div>
@@ -195,7 +187,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className="h-11 w-11 p-0 hover:bg-zinc-900 rounded-xl"
+                  className="h-8 w-8 p-0 hover:bg-zinc-900 rounded-md"
                 >
                   <Mic className="w-5 h-5 text-neutral-400" />
                 </Button>
@@ -211,7 +203,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
 
           {/* Help & Support */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            <div className={`self-stretch h-11 px-3 py-2 rounded-xl inline-flex items-center overflow-hidden hover:bg-zinc-900 ${isCollapsed ? 'justify-center' : 'justify-start gap-3'}`}>
+            <div className={`self-stretch h-11 py-2 rounded-xl cursor-pointer inline-flex items-center overflow-hidden  ${isCollapsed ? 'justify-center' : 'justify-start  px-3  gap-3 hover:bg-zinc-900'}`}>
               <Info className="w-6 h-6 text-stone-500" />
               {!isCollapsed && (
                 <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Help & Support</div>
@@ -242,8 +234,9 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       </SidebarContent>
 
       {/* Footer */}
-      <SidebarFooter className="px-5 pb-8 bg-[var(--bg-dark-grey)]">
+      <SidebarFooter className="pb-8 bg-[var(--bg-dark-grey)]">
         {!isCollapsed ? (
+          <div className="px-3 flex justify-center">    
           <div className="self-stretch inline-flex justify-between items-start">
             <div className="flex justify-start items-center gap-2">
               <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
@@ -269,10 +262,11 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
               <LogOut className="w-5 h-5 text-stone-500" />
             </Button>
           </div>
+          </div>
         ) : (
           <div className="flex justify-center">
             <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
-              <div className="text-white text-base font-medium font-['Inter']">
+              <div className="text-white text-base font-medium font-['Uber_Move']">
                 {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
               </div>
             </div>
