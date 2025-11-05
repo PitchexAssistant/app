@@ -44,7 +44,7 @@ export const ShimmerButton = React.forwardRef<
           } as CSSProperties
         }
         className={cn(
-          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--radius)] border border-[#0d0d0f] px-4 py-3 whitespace-nowrap text-base font-bold [background:var(--bg)] h-[43px] w-auto gap-2 font-['Uber_Move']",
+          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--radius)] border border-[#0d0d0f] px-4 py-3 whitespace-nowrap text-base font-bold [background:var(--bg)] h-[40px] w-auto gap-2 font-['Uber_Move']",
           "shadow-[0px_1px_2px_rgba(10,13,18,0.05)]",
           "transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px",
           className
@@ -81,7 +81,7 @@ export const ShimmerButton = React.forwardRef<
           className={cn(
             "absolute inset-0 size-full",
 
-            "rounded-xl px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#ffffff1f]",
+            "rounded-lg px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#ffffff1f]",
 
             // transition
             "transform-gpu transition-all duration-300 ease-in-out",
