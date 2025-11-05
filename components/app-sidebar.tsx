@@ -263,7 +263,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
 
           {/* Upgrade to Pro Card */}
           {!isCollapsed && (
-            <div className="self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-zinc-800 flex flex-col justify-start items-start gap-3">
+            <div className="self-stretch p-3 rounded-xl outline outline-1 outline-offset-[-1px] outline-zinc-800 flex flex-col justify-start items-start gap-3">
               <div className="h-6 px-2 py-2 bg-neutral-800 rounded-md inline-flex justify-center items-center">
                 <div 
                   className="text-green-600 font-bold font-['Uber_Move']"
@@ -302,7 +302,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       </SidebarContent>
 
       {/* Footer */}
-      <SidebarFooter className="p-4 bg-[var(--bg-dark-grey)]">
+      <SidebarFooter className="p-1 bg-[var(--bg-dark-grey)]">
         {!isCollapsed ? (
           <div className="px-3 flex justify-center">    
             <div className="self-stretch inline-flex justify-between items-start">
@@ -345,7 +345,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
             <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
               <div 
                 className="text-white font-medium font-['Uber_Move']"
-                style={{ fontSize: 'var(--font-size-body)' }}
+                style={{ fontSize: 'var(--font-size-caption)' }}
               >
                 {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
               </div>

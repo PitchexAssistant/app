@@ -48,7 +48,7 @@ export default function Page() {
         <div className="flex flex-1 flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4">
           <div className="flex flex-col items-center justify-center max-w-2xl w-full gap-4 sm:gap-5 px-4">
             {/* Circular Image - Responsive with max 300px */}
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 max-w-[300px] max-h-[300px]">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 max-w-[220px] max-h-[220px]">
               <Image 
                 src="/mas-circle.png"
                 fill
