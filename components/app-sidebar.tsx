@@ -54,7 +54,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
 
   const handleSignOut = async () => {
     await signOut()
-    router.push("/sign-in")
+    router.push("/")
   }
 
   return (

@@ -46,15 +46,15 @@ export default function Page() {
         </header>
         
         <div className="flex flex-1 flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4">
-          <div className="flex flex-col items-center justify-center max-w-3xl w-full gap-8">
+          <div className="flex flex-col items-center justify-center max-w-2xl w-full gap-5">
             {/* Circular Image */}
             <Image 
               src="/mas-circle.png"
-              width={400} 
-              height={400} 
+              width={300} 
+              height={300} 
               sizes="100vw" 
               alt="Pitchex" 
-              className="w-72 h-72 md:w-96 md:h-96"
+              className="w-64 h-64 md:w-64 md:h-64"
               priority
             />
             
@@ -64,21 +64,23 @@ export default function Page() {
             </h1>
             
             {/* Description Text */}
-            <p className="text-[var(--text-white)] text-base md:text-lg text-center max-w-2xl px-4">
+            <p className="text-[var(--text-white)] text-base text-center max-w-2xl px-4">
               Collaborate, refine, and present your story with confidence. Pitchex helps you craft and deliver powerful pitches effortlessly.
             </p>
             
-            {/* Start Pitching Button */}
-            <Button 
-              className="w-64 h-11 px-4 py-3 font-['Uber_Move'] bg-white rounded-xl shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] border border-neutral-950 inline-flex justify-center cursor-pointer items-center gap-2 overflow-hidden text-neutral-950 text-base font-bold hover:bg-zinc-200"
-            >
-              Start Pitching
-            </Button>
-            
-            {/* Add Context Button */}
-            <ShimmerButton icon={<Image src="/ai-icon-gradient.svg" width={24} height={24} alt="icon" />}>
-              Add Context for our model
-            </ShimmerButton>
+            <div className="flex flex-col items-center justify-center gap-3 mt-4">
+              {/* Start Pitching Button */}
+              <Button 
+                className="w-64 h-11 px-4 py-3 font-['Uber_Move'] bg-white rounded-xl shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] border border-neutral-950 inline-flex justify-center cursor-pointer items-center gap-2 overflow-hidden text-neutral-950 text-base font-bold hover:bg-zinc-200"
+              >
+                Start Pitching
+              </Button>
+              
+              {/* Add Context Button */}
+              <ShimmerButton icon={<Image src="/ai-icon-gradient.svg" width={24} height={24} alt="icon" />}>
+                Add Context for our model
+              </ShimmerButton>
+            </div>
                       
           </div>
         </div>

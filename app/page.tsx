@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Zap, Users, Target, TrendingUp } from 'lucide-react';
 
+
 const showcaseCards = [
   {
     id: 1,
