@@ -15,6 +15,7 @@ from schemas.api_schemas import (
 from services.emotion_service import get_emotion_service
 from services.gemini_service import get_gemini_service
 from services.stt_service import get_stt_service
+from services.context_service import get_context_service
 
 logger = structlog.get_logger()
 router = APIRouter()
@@ -33,6 +34,7 @@ async def send_chat_message(request: ChatRequest, req: Request):
     try:
         emotion_service = req.app.state.emotion_service
         gemini_service = req.app.state.gemini_service
+        context_service = get_context_service()
         
         # Analyze emotion if requested
         emotion_analysis = None
@@ -46,11 +48,31 @@ async def send_chat_message(request: ChatRequest, req: Request):
             emotion_analysis = emotion_result
             emotion_context = emotion_result
         
-        # Generate AI response with emotion context
-        ai_response = await gemini_service.generate_response_async(
-            user_message=request.message,
+        # Get document context if available
+        document_context = None
+        if request.session_id:
+            relevant_context = await context_service.search_context(
+                session_id=request.session_id,
+                query=request.message,
+                top_k=3
+            )
+            
+            if relevant_context:
+                # Combine top relevant chunks
+                context_texts = [r["content"] for r in relevant_context[:3]]
+                document_context = "\n\n".join(context_texts)
+                logger.info(
+                    "document_context_retrieved",
+                    session_id=request.session_id,
+                    chunks_found=len(relevant_context)
+                )
+        
+        # Generate AI response with emotion and document context
+        ai_response = await gemini_service.generate_response(
+            message=request.message,
+            emotion_data=emotion_context,
             conversation_history=request.conversation_history,
-            emotion_context=emotion_context
+            document_context=document_context
         )
         
         return ChatResponse(
@@ -87,6 +109,7 @@ async def analyze_pitch(
         stt_service = get_stt_service()
         emotion_service = req.app.state.emotion_service
         gemini_service = req.app.state.gemini_service
+        context_service = get_context_service()
         
         # Step 1: Transcribe audio
         audio_content = await file.read()
@@ -118,11 +141,30 @@ async def analyze_pitch(
             session_id=session_id
         )
         
-        # Step 3: Generate AI coaching response
-        ai_response = await gemini_service.generate_response_async(
-            user_message=transcript,
+        # Step 3: Get document context if available
+        document_context = None
+        if session_id:
+            relevant_context = await context_service.search_context(
+                session_id=session_id,
+                query=transcript,
+                top_k=3
+            )
+            
+            if relevant_context:
+                context_texts = [r["content"] for r in relevant_context[:3]]
+                document_context = "\n\n".join(context_texts)
+                logger.info(
+                    "document_context_retrieved_for_pitch",
+                    session_id=session_id,
+                    chunks_found=len(relevant_context)
+                )
+        
+        # Step 4: Generate AI coaching response
+        ai_response = await gemini_service.generate_response(
+            message=transcript,
+            emotion_data=emotion_result,
             conversation_history=None,
-            emotion_context=emotion_result
+            document_context=document_context
         )
         
         return PitchAnalysisResponse(

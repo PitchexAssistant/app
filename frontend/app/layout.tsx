@@ -47,7 +47,7 @@ export default function RootLayout({
     >
       <html lang="en" className="dark">
         {/* 4. Combine the font variables in the body className */}
-        <body className={`${geistSans.variable} ${uberMove.variable} font-sans`}>
+        <body className={`${geistSans.variable} ${uberMove.variable} font-sans`} suppressHydrationWarning>
           <GoogleOneTap />
           {children}
         </body>

@@ -1,224 +1,196 @@
 """
-Gemini 2.5 Pro Service for AI Coaching
-Uses Google's Gemini API for intelligent pitch coaching responses
+Google Gemini LLM Service
+Handles all interactions with Gemini 2.5 Flash for intelligent pitch coaching
+Uses advanced prompt engineering templates for business-focused coaching
 """
 
 import google.generativeai as genai
 from typing import List, Dict, Optional
 import structlog
-from datetime import datetime
-
 from config import settings
+from services.prompt_templates import PromptTemplates
 
 logger = structlog.get_logger()
 
 
 class GeminiService:
-    """Service for interacting with Gemini 2.5 Pro LLM"""
+    """Service for emotion-aware pitch coaching using Gemini LLM"""
     
     def __init__(self):
-        self.api_key = settings.GEMINI_API_KEY
-        self.model_name = "gemini-2.0-flash-exp"  # Latest Gemini model
-        self.model = None
-        self._initialize_model()
+        """Initialize Gemini service with advanced prompt templates"""
+        genai.configure(api_key=settings.GEMINI_API_KEY)
+        
+        # Configure generation settings
+        generation_config = {
+            "temperature": 0.7,  # Balanced creativity and consistency
+            "top_p": 0.95,
+            "top_k": 40,
+            "max_output_tokens": 2048,
+        }
+        
+        # Safety settings (permissive for business coaching)
+        safety_settings = [
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+        ]
+        
+        self.model = genai.GenerativeModel(
+            model_name='gemini-2.0-flash-exp',
+            generation_config=generation_config,
+            safety_settings=safety_settings
+        )
+        
+        self.prompt_templates = PromptTemplates()
+        
+        logger.info("initializing_gemini_model", model="gemini-2.0-flash-exp")
+        logger.info("gemini_model_initialized", model="gemini-2.0-flash-exp")
     
-    def _initialize_model(self):
-        """Initialize Gemini API"""
-        try:
-            logger.info("initializing_gemini_model", model=self.model_name)
-            
-            genai.configure(api_key=self.api_key)
-            
-            # Configure the model
-            generation_config = {
-                "temperature": 0.7,
-                "top_p": 0.95,
-                "top_k": 40,
-                "max_output_tokens": 2048,
-            }
-            
-            safety_settings = [
-                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-            ]
-            
-            self.model = genai.GenerativeModel(
-                model_name=self.model_name,
-                generation_config=generation_config,
-                safety_settings=safety_settings,
-                system_instruction=self._get_system_prompt()
-            )
-            
-            logger.info("gemini_model_initialized", model=self.model_name)
-            
-        except Exception as e:
-            logger.error("gemini_initialization_failed", error=str(e))
-            raise
-    
-    def _get_system_prompt(self) -> str:
-        """Get the system prompt for the AI coach"""
-        return """You are an expert AI Pitch and Negotiation Coach with deep expertise in:
-- Business pitching and presentation skills
-- Negotiation tactics and strategies
-- Emotional intelligence and communication
-- Public speaking and confidence building
-- Persuasion and influence techniques
-
-Your role is to:
-1. Provide constructive, actionable feedback on pitch delivery
-2. Analyze communication patterns and suggest improvements
-3. Offer emotional support and encouragement
-4. Give specific examples and techniques to improve
-5. Be empathetic and adapt to the user's emotional state
-6. Focus on both content and delivery aspects
-7. Help build confidence while maintaining realism
-
-Guidelines:
-- Be concise but thorough (200-300 words max)
-- Use encouraging language
-- Provide 2-3 specific actionable tips
-- Reference emotional state when relevant
-- Balance praise with constructive criticism
-- Use examples to illustrate points
-- End with a motivating statement
-
-Remember: Your goal is to help users become better pitchers and negotiators through supportive, expert coaching."""
-    
-    def generate_response(
-        self,
-        user_message: str,
+    async def generate_response(
+        self, 
+        message: str,
+        emotion_data: Optional[Dict] = None,
         conversation_history: Optional[List[Dict]] = None,
-        emotion_context: Optional[Dict] = None
+        document_context: Optional[str] = None
     ) -> str:
         """
-        Generate AI coach response
+        Generate coaching response using advanced prompt engineering
         
         Args:
-            user_message: User's input message
+            message: User's pitch text
+            emotion_data: Emotion analysis results
             conversation_history: Previous conversation messages
-            emotion_context: Emotional analysis of the user's message
+            document_context: Context from uploaded business proposals
             
         Returns:
             AI-generated coaching response
         """
         try:
-            # Build the prompt with emotion context
-            prompt = self._build_prompt(user_message, emotion_context)
+            # Build advanced prompt using templates
+            if emotion_data:
+                # Use emotion-aware prompting with stage detection
+                prompt = self.prompt_templates.build_prompt(
+                    transcript=message,
+                    emotion_data=emotion_data,
+                    conversation_history=conversation_history
+                )
+                
+                # Add document context if available
+                if document_context:
+                    prompt += f"\n\n=== BUSINESS PROPOSAL CONTEXT ===\n{document_context}\n\n"
+                    prompt += "Use the above context from the uploaded business proposals to provide personalized, specific feedback that references actual details from their documents.\n"
+                
+                detected_stage = self.prompt_templates.detect_pitch_stage(message)
+                logger.info(
+                    "generating_emotion_aware_response",
+                    emotion=emotion_data.get('dominant_emotion'),
+                    stage_detected=detected_stage.value,
+                    is_business_related=self.prompt_templates.is_business_related(message),
+                    has_document_context=document_context is not None
+                )
+            else:
+                # Fallback to basic prompt with business focus
+                prompt = f"{PromptTemplates.MASTER_SYSTEM_PROMPT}\n\nUSER: {message}\n\n"
+                
+                if document_context:
+                    prompt += f"\n\n=== BUSINESS PROPOSAL CONTEXT ===\n{document_context}\n\n"
+                    prompt += "Use the context from uploaded proposals to give specific feedback.\n\n"
+                
+                prompt += "Provide pitch coaching feedback."
+                logger.info("generating_basic_response", has_document_context=document_context is not None)
             
-            # Start chat with history
-            chat = self.model.start_chat(history=self._format_history(conversation_history))
-            
-            # Generate response
-            response = chat.send_message(prompt)
+            # Generate response with Gemini
+            response = self.model.generate_content(prompt)
             
             logger.info(
-                "gemini_response_generated",
-                message_length=len(user_message),
+                "response_generated",
+                message_length=len(message),
                 response_length=len(response.text),
-                has_emotion_context=emotion_context is not None
+                has_emotion_context=emotion_data is not None,
+                has_document_context=document_context is not None
             )
             
             return response.text
             
         except Exception as e:
-            logger.error("gemini_generation_failed", error=str(e))
-            return self._get_fallback_response(emotion_context)
-    
-    def _build_prompt(self, user_message: str, emotion_context: Optional[Dict] = None) -> str:
-        """Build enhanced prompt with emotion context"""
-        
-        if not emotion_context:
-            return user_message
-        
-        # Extract emotion data
-        dominant = emotion_context.get("dominant_emotion", "neutral")
-        confidence = emotion_context.get("confidence", 0)
-        metrics = emotion_context.get("metrics", {})
-        
-        nervousness = metrics.get("nervousness_level", "low")
-        enthusiasm = metrics.get("enthusiasm_level", "medium")
-        confidence_level = metrics.get("confidence_level", "medium")
-        
-        # Build emotion-aware prompt
-        enhanced_prompt = f"""User's pitch segment:
-"{user_message}"
-
-Emotional Analysis:
-- Dominant emotion: {dominant} (confidence: {confidence:.2f})
-- Enthusiasm level: {enthusiasm}
-- Nervousness level: {nervousness}
-- Confidence level: {confidence_level}
-
-As their pitch coach, provide feedback that:
-1. Acknowledges their current emotional state
-2. Addresses any nervousness or anxiety if present
-3. Reinforces positive emotions and confidence
-4. Suggests emotional and delivery adjustments
-5. Provides specific techniques to improve their pitch
-
-Focus on helping them deliver this pitch more effectively."""
-
-        return enhanced_prompt
-    
-    def _format_history(self, history: Optional[List[Dict]]) -> List[Dict]:
-        """Format conversation history for Gemini"""
-        if not history:
-            return []
-        
-        formatted = []
-        for msg in history[-10:]:  # Keep last 10 messages
-            role = "user" if msg.get("role") == "user" else "model"
-            formatted.append({
-                "role": role,
-                "parts": [msg.get("content", "")]
-            })
-        
-        return formatted
-    
-    def _get_fallback_response(self, emotion_context: Optional[Dict] = None) -> str:
-        """Generate fallback response if API fails"""
-        
-        if emotion_context:
-            nervousness = emotion_context.get("metrics", {}).get("nervousness_level", "low")
+            logger.error("gemini_generation_error", error=str(e))
             
-            if nervousness == "high":
-                return """I can sense some nervousness in your pitch. That's completely natural! Here are some quick tips:
+            # Provide intelligent error response based on emotion
+            if emotion_data:
+                dominant_emotion = emotion_data.get('dominant_emotion', 'neutral')
+                
+                if dominant_emotion == 'fear':
+                    return """I understand you might be nervous about your pitch. That's completely normal!
 
-1. Take a deep breath and slow down your pace
-2. Focus on the value you're providing, not your anxiety
-3. Remember: the audience wants you to succeed
+Here's what I can tell you: Every successful entrepreneur has felt this way. The key is preparation and practice.
 
-You've got this! Keep practicing and your confidence will grow."""
+Let's break down your pitch into smaller parts:
+1. Start with your problem statement - what are you solving?
+2. Then explain your solution clearly
+3. Show me why now is the right time
+
+Take a deep breath and try again. I'm here to help you succeed!"""
+                
+                elif dominant_emotion == 'anger':
+                    return """I sense some frustration in your message. Let's channel that energy productively.
+
+Sometimes pitch challenges can be frustrating, but remember:
+- Investors want to see problem-solving ability
+- Your passion is valuable, but needs to be focused
+- Let's work together to make your pitch stronger
+
+What specific part of your pitch would you like to improve?"""
+                
+                elif dominant_emotion == 'sadness':
+                    return """I hear some disappointment in your message. Let me help you reframe this.
+
+Every great entrepreneur faces setbacks. What matters is how you respond:
+- Your idea has value, we just need to communicate it better
+- Practice makes perfect - pitching is a learnable skill
+- Let's identify what's working and build on that
+
+Share more about your business and let's build a winning pitch together!"""
             
-        return """Thank you for sharing your pitch with me. Here's some general feedback:
+            return f"""I encountered a technical issue, but let's keep moving forward!
 
-1. Focus on clarity: Make sure your main value proposition is crystal clear
-2. Show confidence: Speak with conviction about your solution
-3. Engage emotionally: Connect with your audience's needs and pain points
+Could you:
+1. Break your pitch into smaller sections (Problem, Solution, Market, Ask)
+2. Start with one section at a time
+3. Be specific about what feedback you need
 
-Keep practicing! Every pitch makes you stronger."""
+I'm here to help you create a compelling pitch. Let's try again!
+
+Technical note: {str(e)}"""
     
-    async def generate_response_async(
+    def generate_response_sync(
         self,
-        user_message: str,
-        conversation_history: Optional[List[Dict]] = None,
-        emotion_context: Optional[Dict] = None
+        message: str,
+        emotion_data: Optional[Dict] = None,
+        conversation_history: Optional[List[Dict]] = None
     ) -> str:
-        """Async version of generate_response"""
-        # For now, just call the sync version
-        # TODO: Implement true async when Gemini SDK supports it
-        return self.generate_response(user_message, conversation_history, emotion_context)
+        """
+        Synchronous version of generate_response for compatibility
+        """
+        import asyncio
+        try:
+            loop = asyncio.get_event_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        
+        return loop.run_until_complete(
+            self.generate_response(message, emotion_data, conversation_history)
+        )
 
 
-# Singleton instance
-_gemini_service_instance = None
+# Global instance
+_gemini_service = None
 
 
 def get_gemini_service() -> GeminiService:
-    """Get singleton instance of GeminiService"""
-    global _gemini_service_instance
-    if _gemini_service_instance is None:
-        _gemini_service_instance = GeminiService()
-    return _gemini_service_instance
+    """Get or create the global Gemini service instance"""
+    global _gemini_service
+    if _gemini_service is None:
+        _gemini_service = GeminiService()
+    return _gemini_service

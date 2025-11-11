@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
     # CORS
-    FRONTEND_URL: str = "http://localhost:3000"
+    FRONTEND_URL: str = "http://localhost:3001"
     
     # Models
     EMOTION_MODEL: str = "j-hartmann/emotion-english-distilroberta-base"
