@@ -46,6 +46,14 @@ aiohttp==3.10.10
 # WebSocket
 websockets==13.1
 
+# Audio Processing for Live
+pyaudio==0.2.14
+opencv-python==4.10.0.84
+pillow==10.4.0
+
+# Gemini SDK (updated for Live API)
+google-genai==0.2.2
+
 # Testing
 pytest==8.3.3
 pytest-asyncio==0.24.0

@@ -12,12 +12,15 @@ import { useUser } from "@clerk/nextjs"
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Mic, Sparkles, TrendingUp, Users } from "lucide-react"
+import { useSessions } from "@/hooks/use-sessions"
+import { Session } from "@/lib/api/client"
 
 export default function Page() {
   const { user, isLoaded } = useUser()
   const [mounted, setMounted] = useState(false)
   const [showPractice, setShowPractice] = useState(false)
   const [contextFiles, setContextFiles] = useState<any[]>([])
+  const { createSession, currentSession, setCurrentSession } = useSessions()
 
   useEffect(() => {
     setMounted(true)
@@ -49,9 +52,31 @@ export default function Page() {
     })
   }
 
+  const handleNewSession = () => {
+    // Clear current session and show practice mode selector
+    setCurrentSession(null)
+    setShowPractice(true)
+  }
+
+  const handleSelectSession = (session: Session) => {
+    // Load the existing session
+    setCurrentSession(session)
+    setShowPractice(true)
+  }
+
+  const handleBackToSessions = () => {
+    // Clear current session and return to landing page with session list visible
+    setCurrentSession(null);
+    setShowPractice(false);
+  }
+
   return (
     <SidebarProvider>
-      <AppSidebar user={userData} />
+      <AppSidebar 
+        user={userData} 
+        onNewSession={handleNewSession}
+        onSelectSession={handleSelectSession}
+      />
       <SidebarInset className="bg-[var(--bg-dark-grey)]">
         <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4">
@@ -64,8 +89,9 @@ export default function Page() {
             /* AI Pitch Practice Component */
             <PitchPractice 
               uploadedFiles={contextFiles} 
-              onBack={() => setShowPractice(false)}
+              onBack={handleBackToSessions}
               onDeleteFile={handleDeleteFile}
+              initialSession={currentSession}
             />
           ) : (
             /* Dashboard Landing Page */

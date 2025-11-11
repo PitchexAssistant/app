@@ -119,31 +119,40 @@ class STTService:
                 "success": False,
                 "error": str(e),
                 "transcript": "",
-                "confidence": 0.0
+                "confidence": 0.0,
+                "language": language_code  # Include language field for schema validation
             }
     
     def _mock_transcription(self, audio_content: bytes) -> dict:
         """
         Offline transcription using SpeechRecognition library
-        Converts WebM audio to WAV and uses Google's free Speech Recognition API
+        Supports WebM, MP3, WAV formats and uses Google's free Speech Recognition API
         """
-        webm_path = None
+        input_path = None
         wav_path = None
         
         try:
             logger.info("attempting_offline_transcription", audio_size=len(audio_content))
             
-            # Save WebM audio to temporary file
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.webm') as temp_file:
-                temp_file.write(audio_content)
-                webm_path = temp_file.name
+            # Detect audio format from content
+            audio_format = 'webm'  # default
+            if audio_content[:4] == b'RIFF':
+                audio_format = 'wav'
+            elif audio_content[:3] == b'ID3' or audio_content[:2] == b'\xff\xfb' or audio_content[:2] == b'\xff\xf3':
+                audio_format = 'mp3'
             
-            # Convert WebM to WAV using pydub
-            logger.info("converting_audio_format", from_format="webm", to_format="wav")
-            audio = AudioSegment.from_file(webm_path, format="webm")
+            # Save audio to temporary file with appropriate extension
+            suffix = f'.{audio_format}'
+            with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as temp_file:
+                temp_file.write(audio_content)
+                input_path = temp_file.name
+            
+            # Convert to WAV using pydub
+            logger.info("converting_audio_format", from_format=audio_format, to_format="wav")
+            audio = AudioSegment.from_file(input_path, format=audio_format)
             
             # Export as WAV with proper settings for speech recognition
-            wav_path = webm_path.replace('.webm', '.wav')
+            wav_path = input_path.replace(suffix, '.wav')
             audio.export(
                 wav_path,
                 format="wav",
@@ -194,6 +203,7 @@ class STTService:
                     "success": False,
                     "transcript": "",
                     "confidence": 0.0,
+                    "language": "en-US",
                     "error": f"Speech recognition service error: {str(e)}. Please check your internet connection."
                 }
                     
@@ -203,11 +213,12 @@ class STTService:
                 "success": False,
                 "transcript": "",
                 "confidence": 0.0,
+                "language": "en-US",
                 "error": f"Transcription failed: {str(e)}"
             }
         finally:
             # Clean up temporary files
-            for path in [webm_path, wav_path]:
+            for path in [input_path, wav_path]:
                 if path and os.path.exists(path):
                     try:
                         os.unlink(path)

@@ -13963,3 +13963,2150 @@ INFO:     127.0.0.1:51314 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51322 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51326 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51332 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42056 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42062 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42072 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50844 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50860 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50870 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58542 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58556 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58564 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58596 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57568 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57578 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57596 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57608 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56914 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56924 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56950 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35998 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36012 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36014 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36022 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45748 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45762 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45764 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45780 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55064 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55076 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55086 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55094 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34744 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34748 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34754 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34760 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34776 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40214 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40224 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40234 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40246 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44546 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44554 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44568 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44570 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43872 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43876 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43892 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43906 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44706 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44716 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44722 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44724 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44738 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56052 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56066 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56076 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56084 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49304 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49318 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49332 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49340 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47970 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33504 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33514 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33522 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52556 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52558 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39182 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39188 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39192 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56598 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56610 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51370 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51382 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51394 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41350 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41364 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33908 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33912 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33926 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32818 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59054 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59060 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58278 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47284 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47288 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47292 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60542 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60558 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46690 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46700 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46706 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38644 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38660 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56212 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56218 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56222 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60058 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60074 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60412 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60420 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60434 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40852 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43296 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43310 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43318 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39620 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45996 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45998 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46004 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46018 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42184 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52162 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52176 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52182 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52190 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48284 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51932 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51940 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51946 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51950 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37170 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36602 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36604 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36616 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36632 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44366 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44380 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44388 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44406 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58542 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58544 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58546 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58550 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58556 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52088 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52118 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58132 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58146 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58158 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58180 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58608 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58622 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58626 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58640 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58642 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47236 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47248 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47256 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47262 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33554 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33564 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33566 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33572 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33578 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35658 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35660 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35666 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35676 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35682 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34688 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34690 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34700 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34714 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51798 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51814 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51826 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51834 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51840 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48436 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48446 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48462 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48464 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48470 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34462 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34466 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34472 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34478 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34494 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39316 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39318 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39338 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39354 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33422 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33434 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33450 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33454 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33466 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49698 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49702 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49712 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49716 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49718 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44880 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44884 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44908 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44914 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48824 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48836 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48852 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48868 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54600 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60814 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60844 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53324 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42044 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42050 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42058 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55606 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50154 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50164 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50180 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50186 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38398 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52342 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52348 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52362 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52374 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36360 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40186 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40190 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40206 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40210 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40626 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/gemini_live_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T10:58:14.673509Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [855211]
+WARNING:  WatchFiles detected changes in 'services/gemini_live_service.py'. Reloading...
+INFO:     Started server process [877803]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T10:58:28.644216Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T10:58:28.646403Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T10:58:30.467079Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T10:58:30.467227Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T10:58:30.467453Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T10:58:30.467533Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T10:58:30.467599Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [877950]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T10:58:41.620948Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T10:58:41.621054Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T10:58:42.592680Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T10:58:42.592852Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T10:58:42.593025Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T10:58:42.593090Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T10:58:42.593143Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56330 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56342 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56344 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57458 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57462 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api/routes/live.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T10:59:03.861766Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [877950]
+WARNING:  WatchFiles detected changes in 'api/routes/live.py'. Reloading...
+INFO:     Started server process [878135]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T10:59:14.300349Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T10:59:14.300487Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T10:59:15.751038Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T10:59:15.751179Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T10:59:15.751440Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T10:59:15.751526Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T10:59:15.751599Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [878278]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T10:59:30.184170Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T10:59:30.184322Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T10:59:31.624158Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T10:59:31.624413Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T10:59:31.625184Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T10:59:31.625302Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T10:59:31.625370Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41972 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41976 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41992 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41996 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42002 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T10:59:41.092687Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [878278]
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Started server process [878401]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T10:59:53.041431Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T10:59:53.041677Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T10:59:54.524284Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T10:59:54.524422Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T10:59:54.524585Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T10:59:54.524669Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T10:59:54.524732Z", "level": "info"}
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api/routes/live.py', 'services/gemini_live_service.py', 'main.py'. Reloading...
+INFO:     Started server process [878729]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:00:06.221165Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:00:06.221512Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:00:07.438052Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:00:07.438142Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:00:07.438264Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:00:07.438307Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:00:07.438342Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:07.438381Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:07.438410Z", "level": "info"}
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Started server process [879035]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:00:21.167448Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:00:21.167572Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:00:22.460132Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:00:22.460590Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:00:22.461132Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:00:22.461551Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:00:22.461866Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:22.462035Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:22.462128Z", "level": "info"}
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Started server process [879206]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:00:33.223569Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:00:33.223715Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:00:34.460267Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:00:34.460427Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:00:34.460583Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:00:34.460638Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:00:34.460683Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:34.460738Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:34.460780Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [879379]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:00:44.584860Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:00:44.584990Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:00:46.169689Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:00:46.169978Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:00:46.170294Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:00:46.170510Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:00:46.170689Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:46.170939Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T11:00:46.171421Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41238 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41248 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41254 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41266 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api/routes/live.py', 'main.py', 'services/gemini_live_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T11:00:58.676293Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [879379]
+INFO:     Started server process [879525]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:01:13.031505Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:01:13.031648Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:01:14.440619Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:01:14.442456Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:01:14.442663Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:01:14.442732Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:01:14.442785Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57266 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57278 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57290 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57308 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44260 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44274 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45268 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45282 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45298 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45304 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45320 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47436 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47452 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47454 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47458 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47470 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57394 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57396 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57408 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57422 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57204 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55756 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55770 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55774 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60192 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36666 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36672 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36680 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/gemini_live_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T11:04:35.955553Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [879525]
+INFO:     Started server process [881040]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:04:46.768240Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:04:46.768385Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:04:47.883368Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:04:47.883471Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:04:47.883592Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:04:47.883642Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:04:47.883691Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55696 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55712 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55718 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55744 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55386 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55410 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api/routes/live.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T11:05:25.430070Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [881040]
+INFO:     Started server process [881371]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:05:33.166738Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:05:33.166844Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:05:34.229870Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:05:34.229980Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:05:34.230189Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:05:34.230318Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:05:34.230392Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55420 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55426 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49922 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49930 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49940 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T11:05:57.206575Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [881371]
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+Process SpawnProcess-16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+WARNING:  WatchFiles detected changes in 'services/gemini_live_service.py'. Reloading...
+Process SpawnProcess-17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+WARNING:  WatchFiles detected changes in 'api/routes/live.py'. Reloading...
+Process SpawnProcess-18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+Process SpawnProcess-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/live.py", line 12, in <module>
+    from services.gemini_live_service import GeminiLiveService
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 11, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+WARNING:  WatchFiles detected changes in 'venv/lib64/python3.12/site-packages/~IL/ImageSequence.py', 'venv/lib64/python3.12/site-packages/PIL/XpmImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/JpegPresets.py', 'venv/lib64/python3.12/site-packages/~IL/MspImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/SunImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/PdfImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/DdsImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/CurImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/XbmImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/PcxImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/FitsImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageWin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageFont.py', 'venv/lib64/python3.12/site-packages/PIL/PalmImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/_version.py', 'venv/lib64/python3.12/site-packages/~IL/FliImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageDraw.py', 'venv/lib64/python3.12/site-packages/~IL/PSDraw.py', 'venv/lib64/python3.12/site-packages/google/genai/types.py', 'venv/lib64/python3.12/site-packages/PIL/PpmImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PpmImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/PcdImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/XbmImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageTk.py', 'venv/lib64/python3.12/site-packages/PIL/JpegImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/MpegImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/_util.py', 'venv/lib64/python3.12/site-packages/PIL/PngImagePlugin.py', 'venv/lib64/python3.12/site-packages/google/genai/live.py', 'venv/lib64/python3.12/site-packages/google/genai/_test_api_client.py', 'venv/lib64/python3.12/site-packages/~IL/SgiImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/TiffTags.py', 'venv/lib64/python3.12/site-packages/~IL/ImageMorph.py', 'venv/lib64/python3.12/site-packages/PIL/MpoImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageTransform.py', 'venv/lib64/python3.12/site-packages/~IL/ContainerIO.py', 'venv/lib64/python3.12/site-packages/PIL/features.py', 'venv/lib64/python3.12/site-packages/google/genai/_common.py', 'venv/lib64/python3.12/site-packages/~IL/ImageDraw.py', 'venv/lib64/python3.12/site-packages/google/genai/caches.py', 'venv/lib64/python3.12/site-packages/PIL/ImageFont.py', 'venv/lib64/python3.12/site-packages/PIL/ImageFile.py', 'venv/lib64/python3.12/site-packages/~IL/Jpeg2KImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageText.py', 'venv/lib64/python3.12/site-packages/~IL/PaletteFile.py', 'venv/lib64/python3.12/site-packages/~IL/report.py', 'venv/lib64/python3.12/site-packages/google/genai/_api_client.py', 'venv/lib64/python3.12/site-packages/~IL/TarIO.py', 'venv/lib64/python3.12/site-packages/~IL/AvifImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/WalImageFile.py', 'venv/lib64/python3.12/site-packages/~IL/JpegImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/__init__.py', 'venv/lib64/python3.12/site-packages/~IL/ImageGrab.py', 'venv/lib64/python3.12/site-packages/PIL/XVThumbImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageChops.py', 'venv/lib64/python3.12/site-packages/~IL/TgaImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/IcnsImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/PixarImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/GbrImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/BmpImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/TiffImagePlugin.py', 'venv/lib64/python3.12/site-packages/google/genai/pagers.py', 'venv/lib64/python3.12/site-packages/PIL/QoiImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageTransform.py', 'venv/lib64/python3.12/site-packages/~IL/PdfParser.py', 'venv/lib64/python3.12/site-packages/~IL/GifImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PdfImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageFilter.py', 'venv/lib64/python3.12/site-packages/google/genai/__init__.py', 'venv/lib64/python3.12/site-packages/google/genai/files.py', 'venv/lib64/python3.12/site-packages/PIL/ImageWin.py', 'venv/lib64/python3.12/site-packages/PIL/report.py', 'venv/lib64/python3.12/site-packages/~IL/BdfFontFile.py', 'venv/lib64/python3.12/site-packages/~IL/ImageStat.py', 'venv/lib64/python3.12/site-packages/~IL/ImageShow.py', 'venv/lib64/python3.12/site-packages/~IL/GribStubImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/WebPImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/TarIO.py', 'venv/lib64/python3.12/site-packages/google/genai/_extra_utils.py', 'venv/lib64/python3.12/site-packages/~IL/GimpPaletteFile.py', 'venv/lib64/python3.12/site-packages/~IL/_tkinter_finder.py', 'venv/lib64/python3.12/site-packages/PIL/ImageTk.py', 'venv/lib64/python3.12/site-packages/PIL/_binary.py', 'venv/lib64/python3.12/site-packages/PIL/SunImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ExifTags.py', 'venv/lib64/python3.12/site-packages/~IL/FpxImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImagePath.py', 'venv/lib64/python3.12/site-packages/PIL/MspImagePlugin.py', 'venv/lib64/python3.12/site-packages/google/genai/models.py', 'venv/lib64/python3.12/site-packages/google/genai/errors.py', 'venv/lib64/python3.12/site-packages/PIL/ImageShow.py', 'venv/lib64/python3.12/site-packages/PIL/SpiderImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/MicImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/McIdasImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageMorph.py', 'venv/lib64/python3.12/site-packages/~IL/XVThumbImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/Image.py', 'venv/lib64/python3.12/site-packages/~IL/ImageOps.py', 'venv/lib64/python3.12/site-packages/~IL/TiffTags.py', 'venv/lib64/python3.12/site-packages/PIL/TiffImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageSequence.py', 'venv/lib64/python3.12/site-packages/PIL/ImageMode.py', 'venv/lib64/python3.12/site-packages/~IL/ImageColor.py', 'venv/lib64/python3.12/site-packages/PIL/Jpeg2KImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/SpiderImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/_deprecate.py', 'venv/lib64/python3.12/site-packages/PIL/ImageDraw2.py', 'venv/lib64/python3.12/site-packages/~IL/ImageDraw2.py', 'venv/lib64/python3.12/site-packages/~IL/GdImageFile.py', 'venv/lib64/python3.12/site-packages/PIL/PsdImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/WalImageFile.py', 'venv/lib64/python3.12/site-packages/PIL/ImageEnhance.py', 'venv/lib64/python3.12/site-packages/PIL/ImageQt.py', 'venv/lib64/python3.12/site-packages/PIL/SgiImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/XpmImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/EpsImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PcfFontFile.py', 'venv/lib64/python3.12/site-packages/~IL/IptcImagePlugin.py', 'venv/lib64/python3.12/site-packages/google/genai/client.py', 'venv/lib64/python3.12/site-packages/~IL/FtexImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageEnhance.py', 'venv/lib64/python3.12/site-packages/~IL/ImtImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/WebPImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageMath.py', 'venv/lib64/python3.12/site-packages/~IL/PcdImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/BufrStubImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/_typing.py', 'venv/lib64/python3.12/site-packages/PIL/PcfFontFile.py', 'venv/lib64/python3.12/site-packages/PIL/ImageStat.py', 'venv/lib64/python3.12/site-packages/~IL/IcoImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/IptcImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImtImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/_version.py', 'venv/lib64/python3.12/site-packages/PIL/PdfParser.py', 'venv/lib64/python3.12/site-packages/~IL/WmfImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageMode.py', 'venv/lib64/python3.12/site-packages/~IL/PsdImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/GimpGradientFile.py', 'venv/lib64/python3.12/site-packages/PIL/_util.py', 'venv/lib64/python3.12/site-packages/~IL/MpoImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/BlpImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/PSDraw.py', 'venv/lib64/python3.12/site-packages/~IL/ImagePalette.py', 'venv/lib64/python3.12/site-packages/~IL/DcxImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/__init__.py', 'venv/lib64/python3.12/site-packages/~IL/__main__.py', 'venv/lib64/python3.12/site-packages/PIL/WmfImagePlugin.py', 'venv/lib64/python3.12/site-packages/google/genai/_transformers.py', 'venv/lib64/python3.12/site-packages/~IL/ImageMath.py', 'venv/lib64/python3.12/site-packages/~IL/FontFile.py', 'venv/lib64/python3.12/site-packages/google/genai/chats.py', 'venv/lib64/python3.12/site-packages/~IL/ImageFile.py', 'venv/lib64/python3.12/site-packages/PIL/__main__.py', 'venv/lib64/python3.12/site-packages/google/genai/_replay_api_client.py', 'venv/lib64/python3.12/site-packages/~IL/McIdasImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImageOps.py', 'venv/lib64/python3.12/site-packages/~IL/PalmImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/_typing.py', 'venv/lib64/python3.12/site-packages/PIL/_tkinter_finder.py', 'venv/lib64/python3.12/site-packages/~IL/QoiImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PcxImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImageCms.py', 'venv/lib64/python3.12/site-packages/google/genai/tunings.py', 'venv/lib64/python3.12/site-packages/~IL/MpegImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/MicImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PixarImagePlugin.py', 'venv/lib64/python3.12/site-packages/PIL/ImagePalette.py', 'venv/lib64/python3.12/site-packages/PIL/ImageGrab.py', 'venv/lib64/python3.12/site-packages/~IL/Hdf5StubImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/ImagePath.py', 'venv/lib64/python3.12/site-packages/PIL/TgaImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/PngImagePlugin.py', 'venv/lib64/python3.12/site-packages/~IL/_binary.py', 'venv/lib64/python3.12/site-packages/~IL/ImageFilter.py', 'venv/lib64/python3.12/site-packages/PIL/PaletteFile.py', 'venv/lib64/python3.12/site-packages/PIL/_deprecate.py', 'venv/lib64/python3.12/site-packages/google/genai/batches.py', 'venv/lib64/python3.12/site-packages/google/genai/_automatic_function_calling_util.py', 'venv/lib64/python3.12/site-packages/~IL/JpegPresets.py', 'venv/lib64/python3.12/site-packages/~IL/features.py', 'venv/lib64/python3.12/site-packages/~IL/ImageQt.py'. Reloading...
+INFO:     Started server process [886153]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:13:57.777410Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:13:57.777567Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:13:59.503765Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:13:59.503917Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:13:59.504145Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:13:59.504203Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:13:59.504273Z", "level": "info"}
+{"error": "GEMINI_API_KEY environment variable is required", "event": "service_initialization_failed", "timestamp": "2025-11-11T11:13:59.504359Z", "level": "error"}
+ERROR:    Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 43, in lifespan
+    gemini_live_service = GeminiLiveService()
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 28, in __init__
+    raise ValueError("GEMINI_API_KEY environment variable is required")
+ValueError: GEMINI_API_KEY environment variable is required
+
+ERROR:    Application startup failed. Exiting.
+WARNING:  WatchFiles detected changes in 'venv/lib64/python3.12/site-packages/pyaudio/__init__.py'. Reloading...
+INFO:     Started server process [887068]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:16:42.514130Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:16:42.514390Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:16:43.823363Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:16:43.823910Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:16:43.824298Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:16:43.824546Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:16:43.824784Z", "level": "info"}
+{"error": "GEMINI_API_KEY environment variable is required", "event": "service_initialization_failed", "timestamp": "2025-11-11T11:16:43.825036Z", "level": "error"}
+ERROR:    Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 43, in lifespan
+    gemini_live_service = GeminiLiveService()
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 28, in __init__
+    raise ValueError("GEMINI_API_KEY environment variable is required")
+ValueError: GEMINI_API_KEY environment variable is required
+
+ERROR:    Application startup failed. Exiting.
+WARNING:  WatchFiles detected changes in 'venv/lib64/python3.12/site-packages/cv2/load_config_py3.py', 'venv/lib64/python3.12/site-packages/cv2/version.py', 'venv/lib64/python3.12/site-packages/cv2/gapi/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/misc/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/data/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/config-3.py', 'venv/lib64/python3.12/site-packages/cv2/utils/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/config.py', 'venv/lib64/python3.12/site-packages/cv2/load_config_py2.py', 'venv/lib64/python3.12/site-packages/cv2/typing/__init__.py', 'venv/lib64/python3.12/site-packages/cv2/misc/version.py', 'venv/lib64/python3.12/site-packages/cv2/mat_wrapper/__init__.py'. Reloading...
+INFO:     Started server process [890689]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T11:27:23.369315Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T11:27:23.369450Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T11:27:24.951072Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T11:27:24.956642Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T11:27:24.956905Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T11:27:24.957013Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T11:27:24.957078Z", "level": "info"}
+{"error": "GEMINI_API_KEY environment variable is required", "event": "service_initialization_failed", "timestamp": "2025-11-11T11:27:24.957149Z", "level": "error"}
+ERROR:    Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 43, in lifespan
+    gemini_live_service = GeminiLiveService()
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/gemini_live_service.py", line 28, in __init__
+    raise ValueError("GEMINI_API_KEY environment variable is required")
+ValueError: GEMINI_API_KEY environment variable is required
+
+ERROR:    Application startup failed. Exiting.
+INFO:     Stopping reloader process [855198]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [938375] using WatchFiles
+INFO:     Started server process [938426]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T12:28:26.954254Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T12:28:26.954375Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T12:28:28.339349Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T12:28:28.339488Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T12:28:28.339643Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T12:28:28.339704Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T12:28:28.339756Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T12:28:28.351512Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T12:28:28.351637Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51420 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41326 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41340 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41350 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41358 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34852 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34854 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34858 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34854 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34854 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34854 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56908 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56924 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56936 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56950 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"event": "initializing_stt_client", "timestamp": "2025-11-11T12:29:48.241461Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-11T12:29:48.242302Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-11T12:29:48.242428Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-11T12:29:48.242496Z", "level": "warning"}
+{"audio_size": 76115, "event": "attempting_offline_transcription", "timestamp": "2025-11-11T12:29:48.242548Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-11T12:29:48.243257Z", "level": "info"}
+{"transcript_length": 23, "method": "google_free_api", "transcript": "hello hello hello hello", "event": "offline_transcription_success", "timestamp": "2025-11-11T12:29:50.577758Z", "level": "info"}
+INFO:     127.0.0.1:40386 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40386 - "OPTIONS /api/v1/emotion/analyze HTTP/1.1" 200 OK
+{"dominant": "neutral", "confidence": 0.887, "session_id": "session_1762864171883", "event": "emotion_analyzed", "timestamp": "2025-11-11T12:29:50.630614Z", "level": "info"}
+INFO:     127.0.0.1:40400 - "POST /api/v1/emotion/analyze HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40400 - "OPTIONS /api/v1/chat/send HTTP/1.1" 200 OK
+{"event": "context_service_initialized", "timestamp": "2025-11-11T12:29:50.655691Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.887, "session_id": "session_1762864171883", "event": "emotion_analyzed", "timestamp": "2025-11-11T12:29:50.689516Z", "level": "info"}
+{"emotion": "neutral", "stage_detected": "introduction", "is_business_related": false, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-11T12:29:50.689674Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0\nPlease retry in 8.374907178s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 8\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-11T12:29:51.737645Z", "level": "error"}
+INFO:     127.0.0.1:40386 - "POST /api/v1/chat/send HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40386 - "OPTIONS /api/v1/sessions/session_1_1762864173?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40400 - "PATCH /api/v1/sessions/session_1_1762864173?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45482 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45490 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45500 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45512 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45514 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59296 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59310 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59322 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59326 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59336 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46532 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46548 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46558 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46574 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46586 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50378 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50380 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50394 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50400 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50408 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43578 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43590 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43594 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43602 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45908 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45910 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45934 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45946 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45946 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45960 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35898 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35904 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35936 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54010 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54016 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54030 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54050 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51978 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51978 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51978 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39610 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39636 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39654 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39666 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39666 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50002 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50002 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47468 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47478 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47494 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47502 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47508 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46306 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46306 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47168 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47168 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52442 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52452 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52464 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52488 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44002 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44002 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36082 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36094 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36098 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36104 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36116 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50052 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50066 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48014 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50750 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50766 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54880 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54880 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44536 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44540 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44556 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44572 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45742 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45750 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45756 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45762 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54758 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54764 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54772 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54778 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54782 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53396 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42578 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42586 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42596 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42610 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42622 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48242 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59356 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59364 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59372 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59384 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59392 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59400 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53946 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53958 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53964 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53968 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47666 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47670 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39664 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39676 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39692 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39708 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39724 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45494 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45510 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45522 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45526 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45528 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54938 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54954 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54964 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54966 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54974 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41666 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41678 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41684 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41696 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41698 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44108 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44108 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44130 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39568 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44126 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T12:42:22.449199Z", "level": "info"}
+INFO:     ('127.0.0.1', 52328) - "WebSocket /api/v1/ws/live/live_session_1762864940709?mode=pitch" [accepted]
+{"session_id": "live_session_1762864940709", "event": "websocket_connected", "timestamp": "2025-11-11T12:42:22.449585Z", "level": "info"}
+{"session_id": "live_session_1762864940709", "mode": "pitch", "event": "live_session_created", "timestamp": "2025-11-11T12:42:22.449702Z", "level": "info"}
+{"session_id": "live_session_1762864940709", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "session_connection_failed", "timestamp": "2025-11-11T12:42:22.449978Z", "level": "error"}
+{"session_id": "live_session_1762864940709", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "websocket_error", "timestamp": "2025-11-11T12:42:22.450028Z", "level": "error"}
+INFO:     connection open
+{"session_id": "live_session_1762864940709", "event": "websocket_disconnected", "timestamp": "2025-11-11T12:42:22.450806Z", "level": "info"}
+{"session_id": "live_session_1762864940709", "event": "live_session_ended", "timestamp": "2025-11-11T12:42:22.450910Z", "level": "info"}
+{"session_id": "live_session_1762864940709", "event": "session_cleaned_up", "timestamp": "2025-11-11T12:42:22.450989Z", "level": "info"}
+INFO:     127.0.0.1:57922 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57932 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57944 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57958 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52414 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45644 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45648 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54120 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:60266 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60266 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60274 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46816 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46822 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46822 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46822 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46828 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46836 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46842 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46822 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46822 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44078 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44078 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44078 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44078 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34342 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53720 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53724 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53730 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T12:44:12.179217Z", "level": "info"}
+INFO:     ('127.0.0.1', 53746) - "WebSocket /api/v1/ws/live/live_session_1762865042993?mode=pitch" [accepted]
+{"session_id": "live_session_1762865042993", "event": "websocket_connected", "timestamp": "2025-11-11T12:44:12.179520Z", "level": "info"}
+{"session_id": "live_session_1762865042993", "mode": "pitch", "event": "live_session_created", "timestamp": "2025-11-11T12:44:12.179588Z", "level": "info"}
+{"session_id": "live_session_1762865042993", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "session_connection_failed", "timestamp": "2025-11-11T12:44:12.179857Z", "level": "error"}
+{"session_id": "live_session_1762865042993", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "websocket_error", "timestamp": "2025-11-11T12:44:12.179940Z", "level": "error"}
+INFO:     connection open
+{"session_id": "live_session_1762865042993", "event": "websocket_disconnected", "timestamp": "2025-11-11T12:44:12.180721Z", "level": "info"}
+{"session_id": "live_session_1762865042993", "event": "live_session_ended", "timestamp": "2025-11-11T12:44:12.180833Z", "level": "info"}
+{"session_id": "live_session_1762865042993", "event": "session_cleaned_up", "timestamp": "2025-11-11T12:44:12.180897Z", "level": "info"}
+INFO:     127.0.0.1:46384 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46396 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46410 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46422 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46438 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38904 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38932 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55596 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44064 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44080 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44090 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44110 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57110 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57132 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50034 - "OPTIONS /api/v1/sessions/session_5_1762864941?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "DELETE /api/v1/sessions/session_5_1762864941?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "OPTIONS /api/v1/sessions/session_4_1762864938/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50034 - "POST /api/v1/sessions/session_4_1762864938/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52524 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52070 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52078 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52086 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52100 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52104 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58408 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58408 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51466 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51466 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34974 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34986 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35000 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35010 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35022 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42032 - "OPTIONS /api/v1/sessions/session_5_1762865193?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42038 - "PATCH /api/v1/sessions/session_5_1762865193?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46796 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46802 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46804 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46812 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46814 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51010 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51024 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51028 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51044 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43652 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43656 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43672 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43688 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43700 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34866 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34872 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34874 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34898 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43058 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43074 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43086 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43098 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43112 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53740 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53750 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53762 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53774 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53790 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55590 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55598 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55608 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55624 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58090 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58106 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58124 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60790 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60798 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42932 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42948 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42954 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42968 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42982 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42992 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37436 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37440 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37448 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37454 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37460 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44308 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50868 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50880 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50912 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50928 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42150 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42158 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42162 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42172 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42178 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44742 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44758 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44768 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44774 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44790 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35006 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35010 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35016 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36294 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36306 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36310 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36326 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56216 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56218 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56226 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56232 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56254 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57230 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57232 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57240 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40388 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53262 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53278 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59680 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59682 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59684 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59692 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38908 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59018 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59020 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59022 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59030 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35816 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50388 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50390 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50398 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42384 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34390 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34404 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34416 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49418 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47076 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47084 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47094 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47098 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38628 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47238 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47266 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47282 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47040 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34108 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34120 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34136 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34194 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34202 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40558 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40564 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40566 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35230 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35246 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60186 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60190 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39088 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39118 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51846 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51860 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48646 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48656 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48660 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54918 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54924 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42962 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42964 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42968 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46738 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46754 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53220 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53234 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53116 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53634 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53646 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53660 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44666 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44678 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51400 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51404 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51418 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34790 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57502 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57514 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57522 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57532 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48056 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49860 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49874 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49876 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38370 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46628 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46634 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46648 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46660 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49148 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37622 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37632 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37634 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37638 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54696 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54702 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54716 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54732 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54744 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54258 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54272 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54276 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54292 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54302 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43832 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43838 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43848 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43854 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43862 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43864 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43874 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43882 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43882 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43882 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43882 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42246 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42246 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42246 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42246 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54158 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54158 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54158 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54172 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41562 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41570 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41584 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41596 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41600 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:07:24.796232Z", "level": "info"}
+INFO:     ('127.0.0.1', 41616) - "WebSocket /api/v1/ws/live/live_session_1762866432557?mode=pitch" [accepted]
+{"session_id": "live_session_1762866432557", "event": "websocket_connected", "timestamp": "2025-11-11T13:07:24.796527Z", "level": "info"}
+{"session_id": "live_session_1762866432557", "mode": "pitch", "event": "live_session_created", "timestamp": "2025-11-11T13:07:24.796599Z", "level": "info"}
+{"session_id": "live_session_1762866432557", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "session_connection_failed", "timestamp": "2025-11-11T13:07:24.796856Z", "level": "error"}
+{"session_id": "live_session_1762866432557", "error": "Unsupported speechConfig type: <class 'dict'>", "event": "websocket_error", "timestamp": "2025-11-11T13:07:24.796920Z", "level": "error"}
+INFO:     connection open
+{"session_id": "live_session_1762866432557", "event": "websocket_disconnected", "timestamp": "2025-11-11T13:07:24.797623Z", "level": "info"}
+{"session_id": "live_session_1762866432557", "event": "live_session_ended", "timestamp": "2025-11-11T13:07:24.797684Z", "level": "info"}
+{"session_id": "live_session_1762866432557", "event": "session_cleaned_up", "timestamp": "2025-11-11T13:07:24.797719Z", "level": "info"}
+INFO:     127.0.0.1:45806 - "OPTIONS /api/v1/sessions/session_4_1762864938?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45808 - "PATCH /api/v1/sessions/session_4_1762864938?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45808 - "OPTIONS /api/v1/sessions/session_4_1762864938/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "POST /api/v1/sessions/session_4_1762864938/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:33444 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33458 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33444 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33444 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33458 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44102 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44108 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44112 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44142 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46342 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46352 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46368 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46372 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40632 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40644 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46524 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46528 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46532 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46546 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46560 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39464 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39468 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39482 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39492 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39498 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39514 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58364 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58378 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58386 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52646 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52658 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52672 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52688 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52704 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44338 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44340 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44350 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42090 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42096 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42110 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42120 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42134 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55910 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:11:50.280710Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [938426]
+INFO:     Stopping reloader process [938375]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [974434] using WatchFiles
+INFO:     Started server process [974447]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:23:18.338486Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:23:18.338592Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:23:19.337823Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:23:19.337949Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:23:19.338060Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:23:19.338106Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:23:19.338167Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:23:19.340764Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:23:19.340842Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59784 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59794 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59800 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59804 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59806 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59818 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41624 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34926 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34934 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34940 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55904 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33152 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33152 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33152 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33152 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33152 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33140 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38286 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38290 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38300 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34718 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34584 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34594 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57252 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57256 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57270 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42834 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42840 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42842 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33890 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51984 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51990 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52006 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38054 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38056 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38060 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37376 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52970 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35742 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35746 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35752 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45422 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45432 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45436 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37574 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37582 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37584 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60312 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60314 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60320 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54714 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54720 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54722 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41106 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41130 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45112 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45128 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45138 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54744 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54750 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54766 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51898 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51912 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60848 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60864 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60874 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42776 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42786 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42792 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54342 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54356 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55092 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55112 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37758 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"event": "initializing_stt_client", "timestamp": "2025-11-11T13:29:26.694169Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-11T13:29:26.695067Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-11T13:29:26.695181Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-11T13:29:26.695276Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2025-11-11T13:29:26.695336Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-11T13:29:26.697202Z", "level": "info"}
+{"error": "Decoding failed. ffmpeg returned error code: 183\n\nOutput from ffmpeg/avlib:\n\nffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[matroska,webm @ 0x5c8321da3f00] EBML header parsing failed\n[in#0 @ 0x5c8321da3e00] Error opening input: Invalid data found when processing input\nError opening input file /tmp/tmpcc57k5k0.webm.\nError opening input files: Invalid data found when processing input\n", "error_type": "CouldntDecodeError", "event": "offline_transcription_failed", "timestamp": "2025-11-11T13:29:26.861288Z", "level": "error"}
+{"error": "1 validation error for STTTranscribeResponse\nlanguage\n  Field required [type=missing, input_value={'success': False, 'trans...hen processing input\\n'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.9/v/missing", "event": "transcription_endpoint_failed", "timestamp": "2025-11-11T13:29:26.862588Z", "level": "error"}
+INFO:     127.0.0.1:55100 - "POST /api/v1/stt/transcribe HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:45024 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45048 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57820 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57822 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50700 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34118 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34126 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34142 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49366 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49374 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55076 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53628 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53636 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41578 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41594 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44012 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:30:58.075425Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [974447]
+INFO:     Started server process [981197]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:31:07.091098Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:31:07.091229Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:31:08.177546Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:31:08.177910Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:31:08.178112Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:31:08.178175Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:31:08.178250Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:08.182127Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:08.182222Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:37036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37058 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:31:24.031122Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [981197]
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Started server process [981685]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:31:33.987021Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:31:33.987142Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:31:35.088462Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:31:35.088550Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:31:35.088660Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:31:35.088703Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:31:35.088737Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:35.091315Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:35.091387Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [981861]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:31:46.565306Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:31:46.565440Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:31:47.754557Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:31:47.754861Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:31:47.755164Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:31:47.755374Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:31:47.755462Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:47.758162Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:31:47.758245Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53922 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47856 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47860 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42456 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42464 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42476 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60230 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60232 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60248 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60256 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60262 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60276 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40130 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40146 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40130 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36070 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36078 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36084 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36094 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36106 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36118 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42042 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59844 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59848 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59858 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59868 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59874 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:33:22.951447Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [981861]
+INFO:     Started server process [983298]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:33:34.059981Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:33:34.060105Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:33:35.242723Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:33:35.243104Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:33:35.244999Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:33:35.245398Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:33:35.246132Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:33:35.251290Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:33:35.251582Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41236 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41254 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41268 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41278 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41290 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43710 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43712 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43748 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43758 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38256 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:34:50.054493Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [983298]
+INFO:     Stopping reloader process [974434]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [985975] using WatchFiles
+INFO:     Started server process [985997]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:35:06.551408Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:35:06.551540Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:35:07.685822Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:35:07.686027Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:35:07.686193Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:35:07.686276Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:35:07.686347Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:35:07.688941Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:35:07.689000Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:45642 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54404 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54406 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54420 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54434 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54440 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54446 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38048 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47072 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35212 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35220 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35232 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35246 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35260 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35270 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52086 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52102 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52086 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52086 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52102 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38734 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38738 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38746 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38752 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38768 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38770 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38786 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38796 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38810 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38810 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38796 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"event": "initializing_stt_client", "timestamp": "2025-11-11T13:36:35.845899Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-11T13:36:35.846593Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-11T13:36:35.846661Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-11T13:36:35.846707Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2025-11-11T13:36:35.846739Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-11T13:36:35.848718Z", "level": "info"}
+{"error": "Decoding failed. ffmpeg returned error code: 183\n\nOutput from ffmpeg/avlib:\n\nffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[matroska,webm @ 0x5942e7a01f00] EBML header parsing failed\n[in#0 @ 0x5942e7a01e00] Error opening input: Invalid data found when processing input\nError opening input file /tmp/tmp0tof2a95.webm.\nError opening input files: Invalid data found when processing input\n", "error_type": "CouldntDecodeError", "event": "offline_transcription_failed", "timestamp": "2025-11-11T13:36:36.000520Z", "level": "error"}
+INFO:     127.0.0.1:57220 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34330 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34336 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34344 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34346 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34358 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33432 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33444 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33456 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33460 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33476 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33482 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33492 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39580 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39590 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39590 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39590 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39580 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54772 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54788 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54800 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54836 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54846 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:38:15.035905Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [985997]
+INFO:     Started server process [988170]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:38:23.638290Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:38:23.638472Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:38:24.798398Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:38:24.798589Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:38:24.798775Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:38:24.798852Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:38:24.798914Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:24.801675Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:24.801753Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57138 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57146 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:38:28.317404Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [988170]
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Started server process [988460]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:38:36.655165Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:38:36.655259Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:38:37.610538Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:38:37.610891Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:38:37.611244Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:38:37.611468Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:38:37.611525Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:37.614868Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:37.614970Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [988691]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:38:45.652596Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:38:45.652715Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:38:46.644378Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:38:46.644576Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:38:46.644689Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:38:46.644749Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:38:46.644810Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:46.648566Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:46.648669Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57156 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57160 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57172 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57180 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:38:49.569747Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [988691]
+INFO:     Started server process [988797]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:38:57.459693Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:38:57.459805Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:38:58.825066Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:38:58.825196Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:38:58.825319Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:38:58.825382Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:38:58.825463Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:58.828108Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:38:58.828175Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53040 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53046 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53062 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api/routes/stt.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:39:05.758557Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [988797]
+INFO:     Started server process [989173]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:39:13.633584Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:39:13.633663Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:39:14.578642Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:39:14.578748Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:39:14.578877Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:39:14.578960Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:39:14.579016Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:14.581589Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:14.581663Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47274 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47294 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api/routes/stt.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-11T13:39:26.520983Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [989173]
+WARNING:  WatchFiles detected changes in 'services/stt_service.py'. Reloading...
+INFO:     Started server process [989606]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:39:36.256014Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:39:36.256243Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:39:37.447339Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:39:37.447548Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:39:37.447752Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:39:37.447830Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:39:37.447893Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:37.451496Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:37.451592Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     Started server process [989775]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-11T13:39:46.851579Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-11T13:39:46.851719Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-11T13:39:48.543370Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-11T13:39:48.543510Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-11T13:39:48.543681Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-11T13:39:48.543762Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-11T13:39:48.543841Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:48.549250Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-11T13:39:48.549379Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:48632 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48640 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48656 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43766 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "OPTIONS /api/v1/sessions/session_1_1762864173?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36500 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36512 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "DELETE /api/v1/sessions/session_1_1762864173?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36514 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36528 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "OPTIONS /api/v1/sessions/session_4_1762864938?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "DELETE /api/v1/sessions/session_4_1762864938?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "OPTIONS /api/v1/sessions/session_6_1762866433?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "DELETE /api/v1/sessions/session_6_1762866433?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "OPTIONS /api/v1/sessions/session_2_1762864570?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "DELETE /api/v1/sessions/session_2_1762864570?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45830 - "OPTIONS /api/v1/sessions/session_3_1762864574?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45840 - "DELETE /api/v1/sessions/session_3_1762864574?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45840 - "OPTIONS /api/v1/sessions/session_10_1762867761?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45830 - "DELETE /api/v1/sessions/session_10_1762867761?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45830 - "OPTIONS /api/v1/sessions/session_9_1762867557?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45840 - "DELETE /api/v1/sessions/session_9_1762867557?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45840 - "OPTIONS /api/v1/sessions/session_8_1762867453?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45830 - "DELETE /api/v1/sessions/session_8_1762867453?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44806 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45830 - "OPTIONS /api/v1/sessions/session_7_1762866560?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45840 - "DELETE /api/v1/sessions/session_7_1762866560?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44822 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44834 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44848 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44854 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44864 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44870 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40974 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38034 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38048 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38064 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38072 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38074 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38076 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38090 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60742 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49390 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49404 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49418 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49426 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49440 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49442 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "audio.webm", "content_type": "audio/mpeg", "size": 2666277, "event": "transcribe_request", "timestamp": "2025-11-11T13:41:24.383084Z", "level": "info"}
+{"event": "initializing_stt_client", "timestamp": "2025-11-11T13:41:24.383203Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-11T13:41:24.383917Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-11T13:41:24.384039Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-11T13:41:24.384109Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2025-11-11T13:41:24.384165Z", "level": "info"}
+{"from_format": "mp3", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-11T13:41:24.385997Z", "level": "info"}
+{"transcript_length": 1891, "method": "google_free_api", "transcript": "good morning a few years ago I went back to my grandfather's hometown he always told me stories abou...", "event": "offline_transcription_success", "timestamp": "2025-11-11T13:42:38.359477Z", "level": "info"}
+INFO:     127.0.0.1:42512 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42516 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42528 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49452 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42544 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42560 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42574 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42588 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49452 - "OPTIONS /api/v1/emotion/analyze HTTP/1.1" 200 OK
+{"dominant": "anger", "confidence": 0.3604, "session_id": "session_1762868378536", "event": "emotion_analyzed", "timestamp": "2025-11-11T13:42:38.595393Z", "level": "info"}
+INFO:     127.0.0.1:50636 - "POST /api/v1/emotion/analyze HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50636 - "OPTIONS /api/v1/chat/send HTTP/1.1" 200 OK
+{"event": "context_service_initialized", "timestamp": "2025-11-11T13:42:38.625539Z", "level": "info"}
+{"dominant": "anger", "confidence": 0.3604, "session_id": "session_1762868378536", "event": "emotion_analyzed", "timestamp": "2025-11-11T13:42:38.791373Z", "level": "info"}
+{"emotion": "anger", "stage_detected": "introduction", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-11T13:42:38.792340Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0\nPlease retry in 20.105052095s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 20\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-11T13:42:39.993333Z", "level": "error"}
+INFO:     127.0.0.1:49452 - "POST /api/v1/chat/send HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49452 - "OPTIONS /api/v1/sessions/session_5_1762868475?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50636 - "PATCH /api/v1/sessions/session_5_1762868475?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36210 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36224 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36236 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36266 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36290 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44782 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44788 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44796 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44812 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44828 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44840 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44848 - "GET /api/v1/health HTTP/1.1" 200 OK

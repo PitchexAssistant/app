@@ -23,7 +23,7 @@ async def transcribe_audio(
     """
     Transcribe audio file to text
     
-    - **file**: Audio file (WAV, MP3, FLAC, OGG)
+    - **file**: Audio file (WAV, MP3, WEBM, FLAC, OGG)
     - **language_code**: Language code (default: en-US)
     - **sample_rate**: Sample rate in Hz (default: 16000)
     - **encoding**: Audio encoding (LINEAR16, MP3, FLAC, etc.)
@@ -34,6 +34,14 @@ async def transcribe_audio(
         
         if len(audio_content) == 0:
             raise HTTPException(status_code=400, detail="Empty audio file")
+        
+        # Log file info for debugging
+        logger.info(
+            "transcribe_request",
+            filename=file.filename,
+            content_type=file.content_type,
+            size=len(audio_content)
+        )
         
         # Get STT service
         stt_service = get_stt_service()

@@ -9,6 +9,13 @@ import {
   Info,
   ArrowUpRight,
   LogOut,
+  Trash2,
+  MoreVertical,
+  Edit2,
+  Copy,
+  Archive,
+  CheckCircle,
+  Download,
 } from "lucide-react"
 import Image from "next/image"
 import { useClerk } from "@clerk/nextjs"
@@ -36,6 +43,14 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { useSessions } from "@/hooks/use-sessions"
+import { Session } from "@/lib/api/client"
 
 interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   user: {
@@ -43,18 +58,107 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
     email: string
     avatar: string
   }
+  onNewSession?: () => void
+  onSelectSession?: (session: Session) => void
 }
 
-export function AppSidebar({ user, ...props }: AppSidebarProps) {
+export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: AppSidebarProps) {
   const [isPreviousSessionsOpen, setIsPreviousSessionsOpen] = React.useState(true)
-  const { signOut } = useClerk()
+  const { signOut, user: clerkUser } = useClerk()
   const router = useRouter()
   const { state } = useSidebar()
   const isCollapsed = state === "collapsed"
+  
+  // Use sessions hook
+  const {
+    sessions,
+    currentSession,
+    loading,
+    deleteSession,
+    updateSession,
+    createSession,
+    completeSession,
+    loadSessions,
+  } = useSessions()
 
   const handleSignOut = async () => {
     await signOut()
     router.push("/")
+  }
+
+  const handleNewSession = () => {
+    onNewSession?.()
+  }
+
+  const handleSessionClick = (session: Session) => {
+    onSelectSession?.(session)
+  }
+
+  const handleDeleteSession = async (e: React.MouseEvent, sessionId: string) => {
+    e.stopPropagation()
+    if (confirm('Are you sure you want to delete this session?')) {
+      await deleteSession(sessionId)
+    }
+  }
+
+  const handleRenameSession = async (e: React.MouseEvent, session: Session) => {
+    e.stopPropagation()
+    const newTitle = prompt('Enter new session name:', session.title)
+    if (newTitle && newTitle.trim() !== session.title) {
+      await updateSession(session.id, { title: newTitle.trim() })
+    }
+  }
+
+  const handleDuplicateSession = async (e: React.MouseEvent, session: Session) => {
+    e.stopPropagation()
+    const newTitle = `${session.title} (Copy)`
+    if (clerkUser?.id) {
+      await createSession(newTitle, session.mode)
+    }
+  }
+
+  const handleMarkComplete = async (e: React.MouseEvent, sessionId: string) => {
+    e.stopPropagation()
+    await completeSession(sessionId)
+  }
+
+  const handleDownloadTranscript = (e: React.MouseEvent, session: Session) => {
+    e.stopPropagation()
+    if (!session.transcript) {
+      alert('No transcript available for this session')
+      return
+    }
+    
+    const blob = new Blob([session.transcript], { type: 'text/plain' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `${session.title.replace(/[^a-z0-9]/gi, '_')}_transcript.txt`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  }
+
+  // Format date for display
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString)
+    const now = new Date()
+    const diffMs = now.getTime() - date.getTime()
+    const diffMins = Math.floor(diffMs / 60000)
+    const diffHours = Math.floor(diffMs / 3600000)
+    const diffDays = Math.floor(diffMs / 86400000)
+
+    if (diffMins < 1) return 'Just now'
+    if (diffMins < 60) return `${diffMins}m ago`
+    if (diffHours < 24) return `${diffHours}h ago`
+    if (diffDays < 7) return `${diffDays}d ago`
+    return date.toLocaleDateString()
+  }
+
+  // Get mode icon
+  const getModeIcon = (mode: string) => {
+    return <Mic className="w-5 h-5 text-stone-500" />
   }
 
   return (
@@ -114,7 +218,10 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
           {/* Actions Section */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
             {/* New Session Button */}
-            <div className={`w-10 h-8 px-0 py-2  inline-flex justify-start items-center  rounded-xl cursor-pointer overflow-hidden ${isCollapsed ? 'justify-center px-0' : 'gap-3 px-2 w-full h-11 hover:bg-zinc-900'}`}>
+            <div 
+              onClick={handleNewSession}
+              className={`w-10 h-8 px-0 py-2  inline-flex justify-start items-center  rounded-xl cursor-pointer overflow-hidden ${isCollapsed ? 'justify-center px-0' : 'gap-3 px-2 w-full h-11 hover:bg-zinc-900'}`}
+            >
               <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? 'h-6 w-6 p-0' : 'mr-0'}`} />
               {!isCollapsed && (
                 <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">New Session</div>
@@ -148,9 +255,11 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
                   <div className="flex justify-start items-center gap-3">
                     <Mic className="w-5 h-5 text-stone-500" />
                     <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Recents </div>
-                    <div className="h-6 px-2 py-[5px] bg-pink-500/10 rounded-[5.13px] flex justify-center items-center">
-                      <div className="text-pink-500 text-xs font-bold font-['Uber_Move']">6</div>
-                    </div>
+                    {sessions.length > 0 && (
+                      <div className="h-6 px-2 py-[5px] bg-pink-500/10 rounded-[5.13px] flex justify-center items-center">
+                        <div className="text-pink-500 text-xs font-bold font-['Uber_Move']">{sessions.length}</div>
+                      </div>
+                    )}
                   </div>
                   <CollapsibleTrigger asChild>
                     <Button variant="ghost" size="sm" className="h-6 w-6 p-0 hover:bg-transparent">
@@ -160,25 +269,86 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
                 </div>
 
                 <CollapsibleContent>
-                  <div className="self-stretch flex flex-col justify-start items-start gap-3">
-                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900 rounded-xl cursor-pointer">
-                      <div className="flex justify-start items-center gap-3">
-                        <Mic className="w-5 h-5 text-stone-500" />
-                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 1</div>
+                  <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                    {loading ? (
+                      <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
+                        <div className="text-neutral-500 text-sm font-['Uber_Move']">Loading...</div>
                       </div>
-                    </div>
-                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
-                      <div className="flex justify-start items-center gap-3">
-                        <Mic className="w-5 h-5 text-stone-500" />
-                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 2</div>
+                    ) : sessions.length === 0 ? (
+                      <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
+                        <div className="text-neutral-500 text-sm font-['Uber_Move']">No sessions yet</div>
                       </div>
-                    </div>
-                    <div className="self-stretch h-11 pl-12 pr-3 py-2 rounded-xl inline-flex justify-start items-center overflow-hidden hover:bg-zinc-900">
-                      <div className="flex justify-start items-center gap-3">
-                        <Mic className="w-5 h-5 text-stone-500" />
-                        <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Pitch 3</div>
-                      </div>
-                    </div>
+                    ) : (
+                      sessions.slice(0, 10).map((session) => (
+                        <div
+                          key={session.id}
+                          onClick={() => handleSessionClick(session)}
+                          className={`self-stretch group pl-12 pr-2 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden hover:bg-zinc-900 cursor-pointer ${
+                            currentSession?.id === session.id ? 'bg-zinc-900' : ''
+                          }`}
+                        >
+                          <div className="flex justify-start items-center gap-3 flex-1 min-w-0">
+                            {getModeIcon(session.mode)}
+                            <div className="flex flex-col min-w-0 flex-1">
+                              <div className="text-neutral-400 text-sm font-medium font-['Uber_Move'] truncate">
+                                {session.title}
+                              </div>
+                              <div className="text-stone-600 text-xs font-['Uber_Move']">
+                                {formatDate(session.updated_at)}
+                              </div>
+                            </div>
+                          </div>
+                          <DropdownMenu>
+                            <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100 hover:bg-zinc-800"
+                              >
+                                <MoreVertical className="w-4 h-4 text-neutral-400" />
+                              </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="end" className="bg-zinc-900 border-zinc-800">
+                              <DropdownMenuItem
+                                onClick={(e) => handleRenameSession(e, session)}
+                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
+                              >
+                                <Edit2 className="w-4 h-4 mr-2" />
+                                Rename
+                              </DropdownMenuItem>
+                              <DropdownMenuItem
+                                onClick={(e) => handleDuplicateSession(e, session)}
+                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
+                              >
+                                <Copy className="w-4 h-4 mr-2" />
+                                Duplicate
+                              </DropdownMenuItem>
+                              <DropdownMenuItem
+                                onClick={(e) => handleMarkComplete(e, session.id)}
+                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
+                              >
+                                <CheckCircle className="w-4 h-4 mr-2" />
+                                Mark Complete
+                              </DropdownMenuItem>
+                              <DropdownMenuItem
+                                onClick={(e) => handleDownloadTranscript(e, session)}
+                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
+                              >
+                                <Download className="w-4 h-4 mr-2" />
+                                Download Transcript
+                              </DropdownMenuItem>
+                              <DropdownMenuItem
+                                onClick={(e) => handleDeleteSession(e, session.id)}
+                                className="text-red-400 focus:text-red-300 focus:bg-zinc-800"
+                              >
+                                <Trash2 className="w-4 h-4 mr-2" />
+                                Delete
+                              </DropdownMenuItem>
+                            </DropdownMenuContent>
+                          </DropdownMenu>
+                        </div>
+                      ))
+                    )}
                   </div>
                 </CollapsibleContent>
               </Collapsible>
@@ -188,6 +358,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
                   variant="ghost" 
                   size="sm" 
                   className="h-8 w-8 p-0 hover:bg-zinc-900 rounded-md"
+                  onClick={handleNewSession}
                 >
                   <Mic className="w-5 h-5 text-neutral-400" />
                 </Button>

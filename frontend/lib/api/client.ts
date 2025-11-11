@@ -93,7 +93,18 @@ export const sttAPI = {
       );
     }
 
-    return await response.json();
+    const result = await response.json();
+    
+    // Check if transcription was successful
+    if (!result.success) {
+      throw new APIError(
+        result.error || 'Transcription failed',
+        response.status,
+        result
+      );
+    }
+    
+    return result;
   },
 
   /**
@@ -118,7 +129,18 @@ export const sttAPI = {
       );
     }
 
-    return await response.json();
+    const result = await response.json();
+    
+    // Check if transcription was successful
+    if (!result.success) {
+      throw new APIError(
+        result.error || 'Transcription failed',
+        response.status,
+        result
+      );
+    }
+    
+    return result;
   },
 };
 
@@ -244,6 +266,108 @@ export const pipelineAPI = {
 };
 
 /**
+ * Session Management API
+ */
+export interface Session {
+  id: string;
+  title: string;
+  mode: string;
+  user_id: string;
+  created_at: string;
+  updated_at: string;
+  transcript?: string;
+  analysis?: any;
+  summary?: string;
+  duration?: number;
+  status: string;
+}
+
+export const sessionsAPI = {
+  /**
+   * Create a new session
+   */
+  create: async (data: {
+    title: string;
+    mode: string;
+    user_id: string;
+  }): Promise<Session> => {
+    return fetchAPI<Session>('/api/v1/sessions', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  },
+
+  /**
+   * Get all sessions for a user
+   */
+  list: async (userId: string, limit?: number, status?: string): Promise<Session[]> => {
+    const params = new URLSearchParams({ user_id: userId });
+    if (limit) params.append('limit', limit.toString());
+    if (status) params.append('status', status);
+    
+    return fetchAPI<Session[]>(`/api/v1/sessions?${params.toString()}`);
+  },
+
+  /**
+   * Get a specific session
+   */
+  get: async (sessionId: string, userId: string): Promise<Session> => {
+    return fetchAPI<Session>(`/api/v1/sessions/${sessionId}?user_id=${userId}`);
+  },
+
+  /**
+   * Update a session
+   */
+  update: async (
+    sessionId: string,
+    userId: string,
+    updates: {
+      title?: string;
+      transcript?: string;
+      analysis?: any;
+      summary?: string;
+      duration?: number;
+    }
+  ): Promise<Session> => {
+    return fetchAPI<Session>(`/api/v1/sessions/${sessionId}?user_id=${userId}`, {
+      method: 'PATCH',
+      body: JSON.stringify(updates),
+    });
+  },
+
+  /**
+   * Delete a session
+   */
+  delete: async (sessionId: string, userId: string): Promise<{ message: string }> => {
+    return fetchAPI<{ message: string }>(
+      `/api/v1/sessions/${sessionId}?user_id=${userId}`,
+      {
+        method: 'DELETE',
+      }
+    );
+  },
+
+  /**
+   * Mark session as completed
+   */
+  complete: async (sessionId: string, userId: string): Promise<Session> => {
+    return fetchAPI<Session>(
+      `/api/v1/sessions/${sessionId}/complete?user_id=${userId}`,
+      {
+        method: 'POST',
+      }
+    );
+  },
+
+  /**
+   * Get session statistics
+   */
+  getStats: async (userId: string): Promise<any> => {
+    return fetchAPI<any>(`/api/v1/sessions/stats/${userId}`);
+  },
+};
+
+/**
  * Export default API client
  */
 export const api = {
@@ -252,6 +376,7 @@ export const api = {
   emotion: emotionAPI,
   chat: chatAPI,
   pipeline: pipelineAPI,
+  sessions: sessionsAPI,
 };
 
 export default api;
