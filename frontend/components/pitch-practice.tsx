@@ -286,11 +286,23 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile }: Pitc
             )}
 
             {audioBlob && !isRecording && (
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground">
-                  Recording ready • {formatTime(recordingTime)}
-                </p>
-                <audio src={URL.createObjectURL(audioBlob)} controls className="mx-auto mt-2" />
+              <div className="text-center space-y-3">
+                <div className="flex items-center justify-center gap-2">
+                  <p className="text-sm text-muted-foreground">
+                    Recording ready • {formatTime(recordingTime)}
+                  </p>
+                  <button
+                    onClick={() => {
+                      resetRecording();
+                      setError(null);
+                    }}
+                    className="p-1.5 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
+                    title="Delete recording"
+                  >
+                    <X className="h-3.5 w-3.5 text-white" />
+                  </button>
+                </div>
+                <audio src={URL.createObjectURL(audioBlob)} controls className="mx-auto" />
               </div>
             )}
           </CardContent>
