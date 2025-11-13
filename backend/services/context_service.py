@@ -12,8 +12,9 @@ from datetime import datetime
 from pathlib import Path
 import tempfile
 
-# PDF parsing libraries
+# Document parsing libraries
 import pypdf
+from docx import Document as DocxDocument
 
 # LangChain for text processing
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -32,7 +33,7 @@ class ContextService:
     MAX_PDFS_PER_SESSION = 2
     MAX_FILE_SIZE_MB = 10
     MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
-    ALLOWED_EXTENSIONS = {'.pdf'}
+    ALLOWED_EXTENSIONS = {'.pdf', '.docx'}
     
     def __init__(self):
         self.upload_dir = Path("./uploads")
@@ -61,10 +62,10 @@ class ContextService:
         file_index: int = 0
     ) -> Dict:
         """
-        Upload and process a business proposal PDF
+        Upload and process a business proposal document (PDF or DOCX)
         
         Args:
-            file_content: PDF file bytes
+            file_content: Document file bytes
             filename: Original filename
             session_id: Session identifier
             file_index: Index of the file (0 or 1)
@@ -91,13 +92,13 @@ class ContextService:
             temp_path = self._save_temp_file(file_content, file_id)
             
             try:
-                # Extract text using multiple methods for accuracy
-                extracted_text = await self._extract_pdf_text(temp_path)
+                # Extract text based on file type (PDF or DOCX)
+                extracted_text = await self._extract_document_text(temp_path, filename)
                 
                 if not extracted_text or len(extracted_text.strip()) < 100:
                     return {
                         "success": False,
-                        "error": "PDF appears to be empty or contains no extractable text",
+                        "error": "Document appears to be empty or contains no extractable text",
                         "file_index": file_index
                     }
                 
@@ -138,7 +139,7 @@ class ContextService:
                 await self._update_vector_store(session_id)
                 
                 logger.info(
-                    "pdf_uploaded_successfully",
+                    "document_uploaded_successfully",
                     session_id=session_id,
                     file_id=file_id,
                     filename=filename,
@@ -193,7 +194,7 @@ class ContextService:
         if file_ext not in self.ALLOWED_EXTENSIONS:
             return {
                 "valid": False,
-                "error": f"Invalid file type. Only PDF files are allowed."
+                "error": f"Invalid file type. Only PDF and DOCX files are allowed."
             }
         
         # Check file size
@@ -253,6 +254,50 @@ class ContextService:
         except Exception as e:
             logger.error("pdf_extraction_failed", error=str(e))
             raise ValueError(f"Failed to extract text from PDF: {str(e)}")
+    
+    async def _extract_docx_text(self, docx_path: Path) -> str:
+        """
+        Extract text from DOCX using python-docx library
+        """
+        try:
+            doc = DocxDocument(str(docx_path))
+            extracted_text = ""
+            
+            # Extract text from paragraphs
+            for para in doc.paragraphs:
+                if para.text.strip():
+                    extracted_text += para.text + "\n"
+            
+            # Extract text from tables
+            for table in doc.tables:
+                for row in table.rows:
+                    for cell in row.cells:
+                        if cell.text.strip():
+                            extracted_text += cell.text + " "
+                    extracted_text += "\n"
+            
+            if not extracted_text.strip():
+                raise ValueError("Could not extract text from DOCX - file may be empty")
+            
+            logger.info("docx_extracted_successfully", length=len(extracted_text))
+            return extracted_text
+            
+        except Exception as e:
+            logger.error("docx_extraction_failed", error=str(e))
+            raise ValueError(f"Failed to extract text from DOCX: {str(e)}")
+    
+    async def _extract_document_text(self, file_path: Path, filename: str) -> str:
+        """
+        Extract text from document (PDF or DOCX) based on file extension
+        """
+        file_ext = filename.lower().split('.')[-1]
+        
+        if file_ext == 'pdf':
+            return await self._extract_pdf_text(file_path)
+        elif file_ext == 'docx':
+            return await self._extract_docx_text(file_path)
+        else:
+            raise ValueError(f"Unsupported file type: {file_ext}")
     
     def _structure_content(self, text: str) -> Dict:
         """Structure extracted text into sections and key points"""

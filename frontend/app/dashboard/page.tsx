@@ -7,6 +7,8 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { PitchPractice } from "@/components/pitch-practice"
+import { UploadModal } from "@/components/upload-modal"
+import { ModeSelectionModal } from "@/components/mode-selection-modal"
 import { useUser, useClerk } from "@clerk/nextjs"
 import { useEffect, useState } from "react"
 import { Users, Settings, LogOut, ChevronDown } from "lucide-react"
@@ -28,7 +30,11 @@ export default function Page() {
   const router = useRouter()
   const [mounted, setMounted] = useState(false)
   const [showPractice, setShowPractice] = useState(false)
+  const [showUploadModal, setShowUploadModal] = useState(false)
+  const [showModeSelection, setShowModeSelection] = useState(false)
+  const [uploadedFiles, setUploadedFiles] = useState<File[]>([])
   const [contextFiles, setContextFiles] = useState<any[]>([])
+  const [selectedMode, setSelectedMode] = useState<'live' | 'recorded' | null>(null)
   const { createSession, currentSession, setCurrentSession } = useSessions()
 
   useEffect(() => {
@@ -82,6 +88,85 @@ export default function Page() {
   const handleSignOut = async () => {
     await signOut()
     router.push("/")
+  }
+
+  const handleStartPitching = () => {
+    setShowUploadModal(true)
+  }
+
+  const handleUploadComplete = async (files: File[]) => {
+    setUploadedFiles(files)
+    setShowUploadModal(false)
+    
+    if (!files || files.length === 0) {
+      // Skip directly to mode selection if no files uploaded
+      setShowModeSelection(true)
+      return
+    }
+
+    // Show mode selection modal after file upload
+    setShowModeSelection(true)
+  }
+
+  const handleModeSelection = async (mode: 'live' | 'recorded') => {
+    setSelectedMode(mode)
+    setShowModeSelection(false)
+
+    // Generate session title
+    const sessionTitle = `${mode === 'live' ? 'Live' : 'Recorded'} Session - ${new Date().toLocaleString()}`
+    
+    try {
+      // Create a new session first
+      const newSession = await createSession(sessionTitle, mode)
+      
+      if (!newSession) {
+        throw new Error("Failed to create session")
+      }
+
+      // Upload each file to the backend using the session ID
+      const uploadedFileData = []
+      
+      for (let i = 0; i < uploadedFiles.length; i++) {
+        const file = uploadedFiles[i]
+        const formData = new FormData()
+        formData.append("file", file)
+        formData.append("session_id", newSession.id)
+        formData.append("file_index", i.toString())
+
+        const response = await fetch("http://localhost:8000/api/v1/documents/upload", {
+          method: "POST",
+          body: formData,
+        })
+
+        if (!response.ok) {
+          throw new Error(`Failed to upload ${file.name}`)
+        }
+
+        const data = await response.json()
+        
+        if (data.success) {
+          uploadedFileData.push({
+            filename: data.data.filename,
+            file_id: data.data.file_id,
+            file_index: data.data.file_index,
+            text_length: data.data.text_length,
+            local_url: URL.createObjectURL(file),
+            file: file,
+          })
+        }
+      }
+
+      // Set the processed files
+      setContextFiles(uploadedFileData)
+      
+      // Show practice component
+      setShowPractice(true)
+      
+    } catch (error) {
+      console.error("Error uploading files:", error)
+      alert("Failed to upload files. Please try again.")
+      setShowModeSelection(true) // Show mode selection again on error
+    }
   }
 
   return (
@@ -232,7 +317,7 @@ export default function Page() {
 
                 {/* CTA Button - Exact Figma Design */}
                 <button
-                  onClick={() => setShowPractice(true)}
+                  onClick={handleStartPitching}
                   className="w-[260px] h-[44px] bg-[#f0f0f0] text-[#0d0d0f] rounded-[12px] font-bold text-[16px] leading-[24px] hover:bg-white transition-colors border border-[#0d0d0f] flex items-center justify-center"
                 >
                   Start Pitching
@@ -242,6 +327,22 @@ export default function Page() {
           )}
         </div>
       </SidebarInset>
+
+      {/* Upload Modal */}
+      {showUploadModal && (
+        <UploadModal
+          onClose={() => setShowUploadModal(false)}
+          onNext={handleUploadComplete}
+        />
+      )}
+
+      {/* Mode Selection Modal */}
+      {showModeSelection && (
+        <ModeSelectionModal
+          onClose={() => setShowModeSelection(false)}
+          onContinue={handleModeSelection}
+        />
+      )}
     </SidebarProvider>
   )
 }

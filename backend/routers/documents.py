@@ -35,10 +35,11 @@ async def upload_document(
     """
     try:
         # Validate file type
-        if not file.filename.lower().endswith('.pdf'):
+        allowed_extensions = ('.pdf', '.docx')
+        if not file.filename.lower().endswith(allowed_extensions):
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail="Only PDF files are allowed"
+                detail="Only PDF and DOCX files are allowed"
             )
         
         # Read file content
