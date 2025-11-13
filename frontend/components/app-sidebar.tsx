@@ -404,45 +404,9 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
         </div>
       </SidebarContent>
 
-      {/* Footer */}
+      {/* Footer - Empty for now */}
       <SidebarFooter className="pb-8 bg-[var(--bg-dark-grey)]">
-        {!isCollapsed ? (
-          <div className="px-3 flex justify-center">    
-          <div className="self-stretch inline-flex justify-between items-start">
-            <div className="flex justify-start items-center gap-2">
-              <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
-                <div className="text-white text-base font-medium font-['Uber_Move']">
-                  {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
-                </div>
-              </div>
-               <div className="inline-flex flex-col justify-start items-start gap-0.5 max-w-[200px]">
-                <div className="text-zinc-100 text-base font-medium font-['Uber_Move']">
-                    {user.name}
-                  </div>
-                  <div className="text-stone-500 text-sm font-medium font-['Uber_Move'] truncate w-full overflow-hidden text-ellipsis whitespace-nowrap">
-                    {user.email}
-                  </div>
-                </div>  
-            </div>
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              className="w-8 h-8 p-2 hover:bg-zinc-900 rounded-lg"
-              onClick={handleSignOut}
-            >
-              <LogOut className="w-5 h-5 text-stone-500" />
-            </Button>
-          </div>
-          </div>
-        ) : (
-          <div className="flex justify-center">
-            <div className="w-10 h-10 bg-orange-500 rounded-[110px] inline-flex flex-col justify-center items-center">
-              <div className="text-white text-base font-medium font-['Uber_Move']">
-                {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Profile moved to top right header */}
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

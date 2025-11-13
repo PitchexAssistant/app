@@ -1,31 +1,5 @@
 [
   {
-    "id": "session_5_1762865193",
-    "title": "Haseeb",
-    "mode": "record",
-    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
-    "created_at": "2025-11-11T17:46:33.942394",
-    "updated_at": "2025-11-11T17:47:23.402004",
-    "transcript": null,
-    "analysis": null,
-    "summary": null,
-    "duration": null,
-    "status": "active"
-  },
-  {
-    "id": "session_11_1762868190",
-    "title": "Upload Session 06:36 PM",
-    "mode": "upload",
-    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
-    "created_at": "2025-11-11T18:36:30.474605",
-    "updated_at": "2025-11-11T18:36:30.474612",
-    "transcript": null,
-    "analysis": null,
-    "summary": null,
-    "duration": null,
-    "status": "active"
-  },
-  {
     "id": "session_12_1762868270",
     "title": "Record Session 06:37 PM",
     "mode": "record",
@@ -39,12 +13,12 @@
     "status": "active"
   },
   {
-    "id": "session_13_1762868388",
-    "title": "Record Session 06:39 PM",
-    "mode": "record",
+    "id": "session_3_1762868796",
+    "title": "Live Session 06:46 PM",
+    "mode": "live",
     "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
-    "created_at": "2025-11-11T18:39:48.556729",
-    "updated_at": "2025-11-11T18:39:48.556747",
+    "created_at": "2025-11-11T18:46:36.793727",
+    "updated_at": "2025-11-11T18:46:36.793735",
     "transcript": null,
     "analysis": null,
     "summary": null,
@@ -52,13 +26,13 @@
     "status": "active"
   },
   {
-    "id": "session_5_1762868475",
-    "title": "Upload Session 06:41 PM",
+    "id": "session_3_1762869432",
+    "title": "Upload Session 06:57 PM",
     "mode": "upload",
     "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
-    "created_at": "2025-11-11T18:41:15.459191",
-    "updated_at": "2025-11-11T18:42:40.020838",
-    "transcript": "user: good morning a few years ago I went back to my grandfather's hometown he always told me stories about the clear rushing river where he learnt a fish but the river I saw was choked with pollution and a constant industrial Haze in the year the local manufacturing plant the heart of the town's economy was struggling trying to comply with new environmental regulations and just keeping the door is open so many businesses sustainability feels like a sacrifice a choice between doing right by the planet and doing right by their shareholders I couldn't accept that I knew there had to be a way for these essential companies to become more sustainable environment the problem or dressing is one of the most urgent challenges of our time the pressure on companies to reduce their carbon emissions is no longer Argentina match it's a powerful self from all directions consumers are demanding green products and government are imposing strict Complex regulations for the mid size manufacturing companies that are the backbone of economy this is a massive challenge majority of their carbon footprint in transportation and warehousing in the raw materials of this is interesting environmental problem in efficiency in the supply chain invested fuel excess inventory and higher operational cost green means being left behind this is very important sustainability with the companies existing systems to provide real time analysis to identify the most common intention shipping routes and suggest more efficient alternatives to suppliers with stronger environmental inventory to eliminate waste we are turning Complex data into clear data driven decisions that reduce efficient and sustainable business now let's look at the opportunity the market for sustainable supply chain management is not just emerging its expanding rapidly projection show it reaching over 22 billion dollars globally by 2 2 7 0\nassistant: I sense some frustration in your message. Let's channel that energy productively.\n\nSometimes pitch challenges can be frustrating, but remember:\n- Investors want to see problem-solving ability\n- Your passion is valuable, but needs to be focused\n- Let's work together to make your pitch stronger\n\nWhat specific part of your pitch would you like to improve?",
+    "created_at": "2025-11-11T18:57:12.442832",
+    "updated_at": "2025-11-11T18:58:13.350487",
+    "transcript": "user: good morning a few years ago I went back to my grandfather's hometown he always told me stories about the clear rushing river where he learnt a fish but the river I saw was choked with pollution and a constant industrial Haze in the year the local manufacturing plant the heart of the town's economy was struggling trying to comply with new environmental regulations and just keeping the door is open so many businesses sustainability feels like a sacrifice a choice between doing right by the planet and doing right by their shareholders I couldn't accept that I knew there had to be a way for these essential companies to become more sustainable environment the problem or dressing is one of the most urgent challenges of our time the pressure on companies to reduce their carbon emissions is no longer Argentina match it's a powerful self from all directions consumers are demanding green products and government are imposing strict Complex regulations for the mid size manufacturing companies that are the backbone of economy this is a massive challenge majority of their carbon footprint in transportation and warehousing in the raw materials of this is interesting environmental problem in efficiency in the supply chain invested fuel excess inventory and higher operational costs they are facing a future where failing to go green means being left behind this is very popular sustainability with the companies existing systems to provide real time analysis to identify the most common intention shipping routes and suggest more efficient alternatives to suppliers with stronger environmental inventory to eliminate waste we are turning Complex data into clear data given decisions that reduce efficient and sustainable business now let's look at the opportunity the market for sustainable supply chain management is not just emerging its expanding rapidly projection show it reaching over 22 billion dollars globally by 2 2 7 0\nassistant: I sense some frustration in your message. Let's channel that energy productively.\n\nSometimes pitch challenges can be frustrating, but remember:\n- Investors want to see problem-solving ability\n- Your passion is valuable, but needs to be focused\n- Let's work together to make your pitch stronger\n\nWhat specific part of your pitch would you like to improve?",
     "analysis": {
       "dominant_emotion": "anger",
       "emotions": {
@@ -80,12 +54,25 @@
         "confidence_level": "low",
         "emotional_stability": 0.9523
       },
-      "timestamp": "2025-11-11T13:42:38.595356",
-      "text_length": 1891,
-      "session_id": "session_1762868378536",
+      "timestamp": "2025-11-11T13:58:12.274982",
+      "text_length": 1934,
+      "session_id": "session_1762869431545",
       "fallback": false,
       "error": null
     },
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_4_1762962440",
+    "title": "Record Session 08:47 PM",
+    "mode": "record",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2025-11-12T20:47:20.737394",
+    "updated_at": "2025-11-12T20:47:20.737402",
+    "transcript": null,
+    "analysis": null,
     "summary": null,
     "duration": null,
     "status": "active"
