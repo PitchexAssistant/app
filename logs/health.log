@@ -27828,3 +27828,170 @@
 2025-11-13 13:35:00 | Backend: UP | Frontend: UP
 2025-11-13 13:35:04 | Backend: UP | Frontend: UP
 2025-11-13 13:35:29 | Backend: UP | Frontend: UP
+2025-11-13 13:35:31 | Backend: UP | Frontend: UP
+2025-11-13 13:35:34 | Backend: UP | Frontend: UP
+2025-11-13 13:35:59 | Backend: UP | Frontend: UP
+2025-11-13 13:36:01 | Backend: UP | Frontend: UP
+2025-11-13 13:36:04 | Backend: UP | Frontend: UP
+2025-11-13 14:06:27 | Backend: UP | Frontend: UP
+2025-11-13 14:06:28 | Backend: UP | Frontend: UP
+2025-11-13 14:06:32 | Backend: UP | Frontend: UP
+2025-11-13 14:06:57 | Backend: UP | Frontend: UP
+2025-11-13 14:06:58 | Backend: UP | Frontend: UP
+2025-11-13 14:07:02 | Backend: UP | Frontend: UP
+2025-11-13 14:07:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:07:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:07:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:07:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:07:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:07:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:07:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:07:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:08:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:08:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:08:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:08:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:08:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:08:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:08:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:08:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:09:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:09:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:09:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:09:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:09:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:09:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:09:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:09:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:10:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:10:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:10:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:10:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:10:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:10:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:10:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:10:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:11:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:11:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:11:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:11:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:11:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:11:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:11:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:11:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:12:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:12:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:12:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:12:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:12:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:12:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:12:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:12:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:13:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:13:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:13:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:13:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:13:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:13:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:13:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:13:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:14:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:14:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:14:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:14:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:14:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:14:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:14:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:14:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:15:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:15:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:15:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:15:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:15:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:15:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:15:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:15:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:16:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:16:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:16:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:16:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:16:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:16:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:16:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:16:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:17:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:17:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:17:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:17:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:17:57 | Backend: UP | Frontend: DOWN
+2025-11-13 14:17:57 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:17:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:17:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:18:27 | Backend: UP | Frontend: DOWN
+2025-11-13 14:18:27 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:18:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:18:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:18:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:18:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:18:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:18:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:19:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:19:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:19:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:19:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:19:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:19:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:19:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:19:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:20:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:20:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:20:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:20:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:20:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:20:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:20:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:20:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:21:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:21:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:21:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:21:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:21:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:21:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:21:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:21:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:22:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:22:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:22:29 | Backend: UP | Frontend: DOWN
+2025-11-13 14:22:29 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:22:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:22:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:22:59 | Backend: UP | Frontend: DOWN
+2025-11-13 14:22:59 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:23:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:23:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:23:30 | Backend: UP | Frontend: DOWN
+2025-11-13 14:23:30 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:23:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:23:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:24:00 | Backend: UP | Frontend: DOWN
+2025-11-13 14:24:00 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:24:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:24:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:24:30 | Backend: UP | Frontend: DOWN
+2025-11-13 14:24:30 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:24:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:24:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:25:00 | Backend: UP | Frontend: DOWN
+2025-11-13 14:25:00 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:25:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:25:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:25:30 | Backend: UP | Frontend: DOWN
+2025-11-13 14:25:30 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:25:58 | Backend: UP | Frontend: DOWN
+2025-11-13 14:25:58 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:26:00 | Backend: UP | Frontend: DOWN
+2025-11-13 14:26:00 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:26:28 | Backend: UP | Frontend: DOWN
+2025-11-13 14:26:28 [ALERT] Frontend is DOWN on port 3001
+2025-11-13 14:26:30 | Backend: UP | Frontend: DOWN
+2025-11-13 14:26:30 [ALERT] Frontend is DOWN on port 3001
