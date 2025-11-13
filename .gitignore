@@ -1,2 +1,79 @@
+# Python Virtual Environment
 /venv
+backend/venv
+
+# Environment Variables
 /.env
+.env
+.env.*
+backend/.env
+
+# Process ID Files
+*.pid
+.pids/
+backend.pid
+frontend.pid
+health_monitor.pid
+
+# Logs
+logs/
+*.log
+backend/logs/
+frontend/logs/
+
+# Documentation (temporary/development)
+IMPLEMENTATION-COMPLETE.md
+MODE-SELECTION-IMPLEMENTATION.md
+TESTING-GUIDE.md
+IMPLEMENTATION-STATUS.md
+TEST-RESULTS.md
+INTEGRATION.md
+FIGMA-INTEGRATION.md
+backend-architecture-specification.md
+
+# Test Files
+*.mp3
+*.wav
+piching_test.mp3
+
+# Uploaded Files
+backend/uploads/
+uploads/
+
+# Session Data
+backend/data/sessions/
+data/sessions/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.pdf
+*.jpeg
+*.jpg
+*.png
+FYP*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node.js
+node_modules/
+.next/
+out/
+dist/

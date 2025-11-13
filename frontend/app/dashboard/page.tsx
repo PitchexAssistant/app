@@ -9,6 +9,8 @@ import {
 import { PitchPractice } from "@/components/pitch-practice"
 import { UploadModal } from "@/components/upload-modal"
 import { ModeSelectionModal } from "@/components/mode-selection-modal"
+import { RecordedSession } from "@/components/recorded-session"
+import { ResultsPage } from "@/components/results-page"
 import { useUser, useClerk } from "@clerk/nextjs"
 import { useEffect, useState } from "react"
 import { Users, Settings, LogOut, ChevronDown } from "lucide-react"
@@ -35,6 +37,8 @@ export default function Page() {
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([])
   const [contextFiles, setContextFiles] = useState<any[]>([])
   const [selectedMode, setSelectedMode] = useState<'live' | 'recorded' | null>(null)
+  const [showResults, setShowResults] = useState(false)
+  const [resultsData, setResultsData] = useState<any>(null)
   const { createSession, currentSession, setCurrentSession } = useSessions()
 
   useEffect(() => {
@@ -159,7 +163,7 @@ export default function Page() {
       // Set the processed files
       setContextFiles(uploadedFileData)
       
-      // Show practice component
+      // Show the appropriate practice component based on mode
       setShowPractice(true)
       
     } catch (error) {
@@ -167,6 +171,24 @@ export default function Page() {
       alert("Failed to upload files. Please try again.")
       setShowModeSelection(true) // Show mode selection again on error
     }
+  }
+
+  const handleEndRecordedSession = () => {
+    setShowPractice(false)
+    setSelectedMode(null)
+    setContextFiles([])
+    setUploadedFiles([])
+    setShowResults(false)
+    setResultsData(null)
+  }
+
+  const handleShowResults = (audioBlob: Blob, transcript: string, analysis: any) => {
+    setResultsData({
+      audioBlob,
+      transcript,
+      analysis
+    })
+    setShowResults(true)
   }
 
   return (
@@ -242,14 +264,30 @@ export default function Page() {
         </header>
         
         <div className="flex-1 overflow-y-auto">
-          {showPractice ? (
-            /* AI Pitch Practice Component */
-            <PitchPractice 
-              uploadedFiles={contextFiles} 
-              onBack={handleBackToSessions}
-              onDeleteFile={handleDeleteFile}
-              initialSession={currentSession}
+          {showResults ? (
+            /* Results Page */
+            <ResultsPage 
+              transcript={resultsData.transcript}
+              analysis={resultsData.analysis}
             />
+          ) : showPractice ? (
+            selectedMode === 'recorded' ? (
+              /* Recorded Session Component */
+              <RecordedSession 
+                uploadedFiles={contextFiles}
+                onEndSession={handleEndRecordedSession}
+                onShowResults={handleShowResults}
+                sessionId={currentSession?.id || ''}
+              />
+            ) : (
+              /* AI Pitch Practice Component (Live mode) */
+              <PitchPractice 
+                uploadedFiles={contextFiles} 
+                onBack={handleBackToSessions}
+                onDeleteFile={handleDeleteFile}
+                initialSession={currentSession}
+              />
+            )
           ) : (
             /* Dashboard Landing Page - Exact Figma Match */
             <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-hidden">

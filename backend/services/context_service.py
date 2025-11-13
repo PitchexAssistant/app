@@ -480,6 +480,39 @@ class ContextService:
         
         return full_text
     
+    async def get_session_context(self, session_id: str, max_length: int = 4000) -> Optional[str]:
+        """
+        Get session context for AI analysis
+        Returns concatenated text from all uploaded documents, truncated to max_length
+        """
+        session = self.session_contexts.get(session_id)
+        if not session or not session.get("files"):
+            return None
+        
+        context_parts = []
+        for file_data in session["files"].values():
+            context_parts.append(f"=== {file_data['filename']} ===")
+            context_parts.append(file_data.get("summary", ""))
+            
+            # Add first chunk of actual content if available
+            if file_data.get("documents") and len(file_data["documents"]) > 0:
+                context_parts.append(file_data["documents"][0].page_content)
+        
+        full_context = "\n\n".join(context_parts)
+        
+        # Truncate if too long
+        if len(full_context) > max_length:
+            full_context = full_context[:max_length] + "\n\n[... content truncated ...]"
+        
+        logger.info(
+            "session_context_retrieved",
+            session_id=session_id,
+            context_length=len(full_context),
+            files_count=len(session["files"])
+        )
+        
+        return full_context
+    
     def delete_file(self, session_id: str, file_index: int) -> Dict:
         """Delete a specific file from session"""
         session = self.session_contexts.get(session_id)

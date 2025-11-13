@@ -66,3 +66,11 @@ service-account-key.json
 *.flac
 uploads/
 temp/
+
+# Session Data
+data/sessions/
+*.json
+
+# Process ID Files
+*.pid
+backend.pid

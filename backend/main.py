@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 import structlog
 
 from config import settings
-from api.routes import stt, llm, emotion, chat, health, live, sessions
+from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis
 from routers import documents
 from services.emotion_service import EmotionService
 from services.gemini_service import GeminiService
@@ -83,6 +83,7 @@ app.include_router(health.router, prefix=settings.API_V1_PREFIX, tags=["Health"]
 app.include_router(stt.router, prefix=settings.API_V1_PREFIX, tags=["Speech-to-Text"])
 app.include_router(emotion.router, prefix=settings.API_V1_PREFIX, tags=["Emotion Analysis"])
 app.include_router(llm.router, prefix=settings.API_V1_PREFIX, tags=["LLM"])
+app.include_router(analysis.router, prefix=settings.API_V1_PREFIX, tags=["Analysis"])  # Pitch analysis
 app.include_router(chat.router, prefix=settings.API_V1_PREFIX, tags=["Chat"])
 app.include_router(live.router, prefix=settings.API_V1_PREFIX, tags=["Live Coaching"])  # Live sessions
 app.include_router(sessions.router, prefix=settings.API_V1_PREFIX, tags=["Sessions"])  # Session management
