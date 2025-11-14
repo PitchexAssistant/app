@@ -258,5 +258,18 @@
     "summary": null,
     "duration": null,
     "status": "active"
+  },
+  {
+    "id": "session_19_1763140643",
+    "title": "Recorded Session - 11/14/2025, 10:17:23 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2025-11-14T22:17:23.334753",
+    "updated_at": "2025-11-14T22:17:23.334764",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
   }
 ]

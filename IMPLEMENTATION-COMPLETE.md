@@ -398,8 +398,8 @@ curl -X POST "http://localhost:8000/api/v1/emotion/analyze" \
 
 ### Backend (.env)
 ```bash
-GEMINI_API_KEY=AIzaSyBrO9Dqg2MFdopJYhKOFYbf6j4hZyGBt1M
-HUGGINGFACE_API_KEY=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
+GEMINI_API_KEY=your_gemini_api_key_here
+HUGGINGFACE_API_KEY=your_huggingface_api_key_here
 ```
 
 ### Frontend (.env.local)
