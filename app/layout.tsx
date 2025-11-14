@@ -1,15 +1,14 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Geist } from "next/font/google";
 import localFont from "next/font/local"; // 1. Import localFont
 import "./globals.css";
 
-// 2. Configure the default sans-serif font (Geist)
-const geistSans = Geist({
+// 2. Configure a system font fallback instead of Google Fonts
+// Using CSS variable for better flexibility and offline builds
+const geistSans = {
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+};
 
 // 3. Configure the local heading font (Uber Move)
 const uberMove = localFont({
