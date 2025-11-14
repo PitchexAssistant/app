@@ -150,6 +150,11 @@
     @apply bg-background text-foreground font-sans;
   }
   
+  /* Define Geist Sans fallback font stack */
+  :root {
+    --font-geist-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
   /* Apply Uber Move font to all headings */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-uber-move), sans-serif;

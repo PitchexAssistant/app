@@ -2,6 +2,18 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Environment Setup
+
+Before running the development server, copy `.env.example` to `.env.local` and fill in your Clerk authentication keys:
+
+```bash
+cp .env.example .env.local
+```
+
+Then edit `.env.local` with your actual Clerk keys from [Clerk Dashboard](https://dashboard.clerk.com/last-active?path=api-keys).
+
+### Running the Development Server
+
 First, run the development server:
 
 ```bash
@@ -34,3 +46,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration. The CI workflow runs on:
+- Push to `main`, `develop`, and `UI-orb-implementation` branches
+- Pull requests to `main` and `develop` branches
+
+The workflow performs:
+- Dependency installation
+- TypeScript type checking
+- Package validation
+- Linting (if configured)
+- Tests (if configured)
