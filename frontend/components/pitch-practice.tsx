@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { EmotionIndicator, EmotionBreakdown } from '@/components/emotion-indicator';
 import { LiveSessionOrb } from '@/components/live-session-orb';
+import { LiveWaveform } from '@/components/ui/live-waveform';
 import { Mic, Square, Loader2, Send, ArrowLeft, X, Radio, Upload, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
@@ -50,7 +51,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
   const [uploadedAudioFile, setUploadedAudioFile] = useState<File | null>(null);
   const [isUploadingAudio, setIsUploadingAudio] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
-  
+
   const { createSession, updateSession, completeSession, currentSession, setCurrentSession } = useSessions();
 
   // Set the session if passed from parent and load its data
@@ -58,7 +59,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     if (initialSession) {
       console.log('[PitchPractice] Loading existing session:', initialSession.id);
       setCurrentSession(initialSession);
-      
+
       // Load session data if available
       if (initialSession.transcript) {
         // Parse transcript back into messages
@@ -75,7 +76,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           });
         setMessages(loadedMessages);
       }
-      
+
       // Set the mode based on session - resume exactly where user left off
       const sessionMode = initialSession.mode as PitchMode;
       if (['record', 'live', 'upload'].includes(sessionMode)) {
@@ -189,30 +190,30 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     try {
       // Calculate duration
       const duration = Math.floor((new Date().getTime() - startTime.getTime()) / 1000);
-      
+
       // Update session with final data
       if (currentSession && user?.id) {
         const transcript = messages.map(m => `${m.role}: ${m.content}`).join('\n');
         // Convert summary to string if it's an object
-        const summaryText = typeof liveSession.summary === 'string' 
-          ? liveSession.summary 
-          : liveSession.summary 
+        const summaryText = typeof liveSession.summary === 'string'
+          ? liveSession.summary
+          : liveSession.summary
             ? `Session ${liveSession.summary.session_id}: ${liveSession.summary.message_count} messages in ${liveSession.summary.mode} mode`
             : `Session completed with ${messages.length} messages`;
-        
+
         await updateSession(currentSession.id, {
           transcript: transcript || undefined,
           summary: summaryText || undefined,
           duration: duration > 0 ? duration : undefined,
         });
-        
+
         await completeSession(currentSession.id);
       }
     } catch (error) {
       console.error('Error saving session:', error);
       // Continue with cleanup even if save fails
     }
-    
+
     // End live session if active
     try {
       if (liveSession.isConnected) {
@@ -221,7 +222,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     } catch (error) {
       console.error('Error ending live session:', error);
     }
-    
+
     // Go back to dashboard
     onBack?.();
   };
@@ -268,7 +269,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
 
       setMessages(newMessages);
       setCurrentEmotion(result.emotion);
-      
+
       // Auto-save session with new messages
       if (currentSession && user?.id) {
         const transcript = newMessages.map(m => `${m.role}: ${m.content}`).join('\n');
@@ -277,12 +278,12 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           analysis: result.emotion,
         }).catch(err => console.error('Failed to auto-save session:', err));
       }
-      
+
       resetRecording();
     } catch (err: any) {
       console.error('Processing error:', err);
       let errorMessage = 'Failed to process audio. Please try again.';
-      
+
       // Provide more specific error messages
       if (err.message?.includes('Decoding failed') || err.message?.includes('ffmpeg')) {
         errorMessage = 'Unable to process the recorded audio. Please try recording again.';
@@ -291,7 +292,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       } else if (err.message) {
         errorMessage = err.message;
       }
-      
+
       setError(errorMessage);
     } finally {
       setIsProcessing(false);
@@ -355,7 +356,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
 
       setMessages(newMessages);
       setCurrentEmotion(result.emotion);
-      
+
       // Auto-save session with new messages
       if (currentSession && user?.id) {
         const transcript = newMessages.map(m => `${m.role}: ${m.content}`).join('\n');
@@ -364,13 +365,13 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           analysis: result.emotion,
         }).catch(err => console.error('Failed to auto-save session:', err));
       }
-      
+
       // Reset upload state
       setUploadedAudioFile(null);
     } catch (err: any) {
       console.error('Upload processing error:', err);
       let errorMessage = 'Failed to process audio file. Please try again.';
-      
+
       // Provide more specific error messages
       if (err.message?.includes('Decoding failed') || err.message?.includes('ffmpeg')) {
         errorMessage = 'Unable to process this audio file. Please ensure it\'s a valid MP3 or WAV file and try again.';
@@ -379,7 +380,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       } else if (err.message) {
         errorMessage = err.message;
       }
-      
+
       setUploadError(errorMessage);
     } finally {
       setIsUploadingAudio(false);
@@ -406,7 +407,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                 {currentSession?.title || 'AI Pitch Practice'}
               </h1>
               <p className="text-gray-400 mt-1">
-                {pitchMode === 'live' 
+                {pitchMode === 'live'
                   ? 'Live pitch coaching with Marcus Sterling AI'
                   : 'Practice your pitch with real-time emotion analysis and AI feedback'}
               </p>
@@ -491,7 +492,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                 <div className="mt-6 p-4 rounded-lg bg-zinc-800/50 border border-zinc-700">
                   <p className="text-sm text-zinc-300 flex items-center gap-2">
                     <MessageSquare className="h-4 w-4" />
-                    You have {uploadedFiles.length} document{uploadedFiles.length > 1 ? 's' : ''} uploaded. 
+                    You have {uploadedFiles.length} document{uploadedFiles.length > 1 ? 's' : ''} uploaded.
                     The AI will reference these during your session.
                   </p>
                 </div>
@@ -630,7 +631,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                       <Square className="h-6 w-6" />
                     </Button>
                   )}
-                  
+
                   {audioBlob && !isRecording && (
                     <Button
                       size="lg"
@@ -654,7 +655,15 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                 </div>
 
                 {isRecording && (
-                  <div className="text-center">
+                  <div className="text-center space-y-4">
+                    <LiveWaveform
+                      active={isRecording}
+                      barColor="#ff6b00"
+                      height={60}
+                      barWidth={6}
+                      barGap={10}
+                      fadeEdges={false}
+                    />
                     <p className="text-2xl font-mono font-bold text-primary">
                       {formatTime(recordingTime)}
                     </p>
@@ -693,7 +702,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                 <CardContent className="space-y-4">
                   <EmotionIndicator emotion={currentEmotion} />
                   <EmotionBreakdown emotion={currentEmotion} />
-                  
+
                   {currentEmotion.metrics && (
                     <div className="grid grid-cols-3 gap-4 pt-4 border-t">
                       <div>
@@ -862,7 +871,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                 <CardContent className="space-y-4">
                   <EmotionIndicator emotion={currentEmotion} />
                   <EmotionBreakdown emotion={currentEmotion} />
-                  
+
                   {currentEmotion.metrics && (
                     <div className="grid grid-cols-3 gap-4 pt-4 border-t">
                       <div>

@@ -23,13 +23,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import Image from "next/image"
 
 export default function Page() {
   const { user, isLoaded } = useUser()
   const { signOut } = useClerk()
   const router = useRouter()
+  const searchParams = useSearchParams()
   const [mounted, setMounted] = useState(false)
   const [showPractice, setShowPractice] = useState(false)
   const [showUploadModal, setShowUploadModal] = useState(false)
@@ -43,7 +44,16 @@ export default function Page() {
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+
+    // Check for newSession query parameter
+    const newSession = searchParams?.get('newSession')
+    if (newSession === 'true') {
+      // Clear the query parameter
+      router.replace('/dashboard')
+      // Show upload modal to start new session
+      setShowUploadModal(true)
+    }
+  }, [searchParams, router])
 
   if (!mounted || !isLoaded) {
     return (
@@ -72,9 +82,9 @@ export default function Page() {
   }
 
   const handleNewSession = () => {
-    // Clear current session and show practice mode selector
+    // Clear current session and show upload modal
     setCurrentSession(null)
-    setShowPractice(true)
+    setShowUploadModal(true)
   }
 
   const handleSelectSession = (session: Session) => {
@@ -101,7 +111,7 @@ export default function Page() {
   const handleUploadComplete = async (files: File[]) => {
     setUploadedFiles(files)
     setShowUploadModal(false)
-    
+
     if (!files || files.length === 0) {
       // Skip directly to mode selection if no files uploaded
       setShowModeSelection(true)
@@ -118,18 +128,18 @@ export default function Page() {
 
     // Generate session title
     const sessionTitle = `${mode === 'live' ? 'Live' : 'Recorded'} Session - ${new Date().toLocaleString()}`
-    
+
     try {
       // Create a new session first
       const newSession = await createSession(sessionTitle, mode)
-      
+
       if (!newSession) {
         throw new Error("Failed to create session")
       }
 
       // Upload each file to the backend using the session ID
       const uploadedFileData = []
-      
+
       for (let i = 0; i < uploadedFiles.length; i++) {
         const file = uploadedFiles[i]
         const formData = new FormData()
@@ -147,7 +157,7 @@ export default function Page() {
         }
 
         const data = await response.json()
-        
+
         if (data.success) {
           uploadedFileData.push({
             filename: data.data.filename,
@@ -162,10 +172,10 @@ export default function Page() {
 
       // Set the processed files
       setContextFiles(uploadedFileData)
-      
+
       // Show the appropriate practice component based on mode
       setShowPractice(true)
-      
+
     } catch (error) {
       console.error("Error uploading files:", error)
       alert("Failed to upload files. Please try again.")
@@ -193,8 +203,8 @@ export default function Page() {
 
   return (
     <SidebarProvider>
-      <AppSidebar 
-        user={userData} 
+      <AppSidebar
+        user={userData}
         onNewSession={handleNewSession}
         onSelectSession={handleSelectSession}
       />
@@ -203,7 +213,7 @@ export default function Page() {
           <div className="flex items-center gap-2">
             <SidebarTrigger className="-ml-1 text-[var(--text-white)]" />
           </div>
-          
+
           {/* Profile Section - Top Right with Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -216,8 +226,8 @@ export default function Page() {
                 <ChevronDown className="w-5 h-5 text-zinc-400" />
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent 
-              align="end" 
+            <DropdownMenuContent
+              align="end"
               className="w-60 bg-[#262626] border border-zinc-700 rounded-lg"
             >
               {/* User Info Header */}
@@ -238,21 +248,21 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Menu Items */}
               <DropdownMenuItem className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300">
                 <Users className="w-4 h-4 mr-3" />
                 <span className="text-sm font-medium font-['Uber_Move']">Manage Plans</span>
               </DropdownMenuItem>
-              
+
               <DropdownMenuItem className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300">
                 <Settings className="w-4 h-4 mr-3" />
                 <span className="text-sm font-medium font-['Uber_Move']">Settings</span>
               </DropdownMenuItem>
-              
+
               <DropdownMenuSeparator className="bg-zinc-700" />
-              
-              <DropdownMenuItem 
+
+              <DropdownMenuItem
                 onClick={handleSignOut}
                 className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300"
               >
@@ -262,18 +272,18 @@ export default function Page() {
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
-        
+
         <div className="flex-1 overflow-y-auto">
           {showResults ? (
             /* Results Page */
-            <ResultsPage 
+            <ResultsPage
               transcript={resultsData.transcript}
               analysis={resultsData.analysis}
             />
           ) : showPractice ? (
             selectedMode === 'recorded' ? (
               /* Recorded Session Component */
-              <RecordedSession 
+              <RecordedSession
                 uploadedFiles={contextFiles}
                 onEndSession={handleEndRecordedSession}
                 onShowResults={handleShowResults}
@@ -281,8 +291,8 @@ export default function Page() {
               />
             ) : (
               /* AI Pitch Practice Component (Live mode) */
-              <PitchPractice 
-                uploadedFiles={contextFiles} 
+              <PitchPractice
+                uploadedFiles={contextFiles}
                 onBack={handleBackToSessions}
                 onDeleteFile={handleDeleteFile}
                 initialSession={currentSession}
@@ -294,14 +304,14 @@ export default function Page() {
               {/* Main Content - Centered */}
               <div className="flex-1 flex flex-col items-center justify-center px-8 gap-8">
                 {/* Orb - Exact from Figma with gradient overlay */}
-                <div 
+                <div
                   className="relative w-[220px] h-[220px] rounded-full overflow-hidden"
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.1)'
                   } as React.CSSProperties}
                 >
                   {/* Base gradient image with rotation and increased opacity */}
-                  <div 
+                  <div
                     className="absolute inset-0"
                     style={{
                       animation: 'orb-rotate 20s linear infinite',
@@ -317,9 +327,9 @@ export default function Page() {
                       priority
                     />
                   </div>
-                  
+
                   {/* Animated gradient overlay - matching Figma exactly */}
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-full"
                     style={{
                       backgroundImage: 'linear-gradient(135deg, rgba(255, 107, 0, 0.6) 0%, rgba(236, 72, 153, 0.5) 30%, rgba(168, 85, 247, 0.4) 60%, rgba(59, 130, 246, 0.3) 100%)',
@@ -328,9 +338,9 @@ export default function Page() {
                       mixBlendMode: 'screen' as 'screen'
                     } as React.CSSProperties}
                   ></div>
-                  
+
                   {/* Outer glow for depth */}
-                  <div 
+                  <div
                     className="absolute inset-[-10px] rounded-full"
                     style={{
                       backgroundImage: 'radial-gradient(circle, rgba(255, 107, 0, 0.2) 0%, transparent 70%)',

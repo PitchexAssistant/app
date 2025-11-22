@@ -661,3 +661,35 @@
 2025-11-13 12:50:14 [SUCCESS] Application startup complete!
 2025-11-13 12:50:14 [INFO] Press Ctrl+C to exit (services will continue running)
 2025-11-13 12:50:14 [INFO] Use ./stop-app.sh to stop all services
+2025-11-22 16:47:52 [SECTION] Pitchex Application Startup
+2025-11-22 16:47:52 [SECTION] Setting Up Directories
+2025-11-22 16:47:52 [SECTION] Checking Dependencies
+2025-11-22 16:47:52 [SUCCESS] Python3: Python 3.12.3
+2025-11-22 16:47:52 [SUCCESS] Node.js: v20.19.3
+2025-11-22 16:47:52 [SUCCESS] npm: 11.6.2
+2025-11-22 16:47:52 [SUCCESS] curl: Available
+2025-11-22 16:47:52 [SUCCESS] All dependencies satisfied
+2025-11-22 16:47:52 [SECTION] Checking Port Availability
+2025-11-22 16:47:52 [SUCCESS] Port 8000 (Backend) is available
+2025-11-22 16:47:52 [SUCCESS] Port 3001 (Frontend) is available
+2025-11-22 16:47:52 [SECTION] Starting Backend (FastAPI)
+2025-11-22 16:47:52 [INFO] Installing/updating backend dependencies...
+2025-11-22 16:47:56 [INFO] Starting FastAPI server on port 8000...
+2025-11-22 16:47:56 [SUCCESS] Backend started (PID: 91318)
+2025-11-22 16:47:56 [INFO] Backend logs: /home/haseeb-raza/Desktop/Pitchex/logs/backend.log
+2025-11-22 16:47:56 [INFO] Waiting for backend to become healthy...
+2025-11-22 16:48:08 [SUCCESS] Backend is healthy and responding on port 8000
+2025-11-22 16:48:09 [SECTION] Starting Frontend (Next.js)
+2025-11-22 16:48:09 [INFO] Starting Next.js server on port 3001...
+2025-11-22 16:48:09 [SUCCESS] Frontend started (PID: 91456)
+2025-11-22 16:48:09 [INFO] Frontend logs: /home/haseeb-raza/Desktop/Pitchex/logs/frontend.log
+2025-11-22 16:48:09 [INFO] Waiting for frontend to become healthy...
+2025-11-22 16:48:37 [SUCCESS] Frontend is healthy and responding on port 3001
+2025-11-22 16:48:37 [SECTION] Starting Health Monitor
+2025-11-22 16:48:37 [SUCCESS] Health monitor started (PID: 91710)
+2025-11-22 16:48:37 [INFO] Health checks every 30 seconds
+2025-11-22 16:48:37 [INFO] Health logs: /home/haseeb-raza/Desktop/Pitchex/logs/health.log
+2025-11-22 16:48:37 [SECTION] Application Status
+2025-11-22 16:48:37 [SUCCESS] Application startup complete!
+2025-11-22 16:48:37 [INFO] Press Ctrl+C to exit (services will continue running)
+2025-11-22 16:48:37 [INFO] Use ./stop-app.sh to stop all services

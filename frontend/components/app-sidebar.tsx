@@ -68,7 +68,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
   const router = useRouter()
   const { state } = useSidebar()
   const isCollapsed = state === "collapsed"
-  
+
   // Use sessions hook
   const {
     sessions,
@@ -87,9 +87,9 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
   }
 
   const handleNewSession = () => {
-    // Navigate to dashboard and trigger new session
-    router.push('/dashboard?newSession=true')
-    // Also call the callback if provided
+    // Navigate to dashboard
+    router.push('/dashboard')
+    // Trigger the callback which will show the modal
     onNewSession?.()
   }
 
@@ -133,7 +133,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
       alert('No transcript available for this session')
       return
     }
-    
+
     const blob = new Blob([session.transcript], { type: 'text/plain' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -172,10 +172,10 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
       <SidebarHeader className="pt-3 pl-0 pr-5 bg-[var(--bg-dark-grey)]">
         {isCollapsed ? (
           <div className="w-6 h-6 ml-2.5 flex items-center justify-center">
-            <Image 
-              src="/logo-sidebar-collapsed.svg" 
-              alt="Logo" 
-              width={32} 
+            <Image
+              src="/logo-sidebar-collapsed.svg"
+              alt="Logo"
+              width={32}
               height={20}
               className="w-8 h-5"
             />
@@ -183,10 +183,10 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
         ) : (
           <div className="inline-flex mt-3 justify-start pl-6 items-center gap-2">
             <div className="w-20 h-5 relative overflow-hidden">
-              <Image 
-                src="/pitchexLogo.png" 
-                alt="Logo" 
-                width={180} 
+              <Image
+                src="/pitchexLogo.png"
+                alt="Logo"
+                width={180}
                 height={180}
                 className="w-full h-full object-contain"
               />
@@ -194,26 +194,26 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
           </div>
         )}
       </SidebarHeader>
-      
+
       <SidebarContent className="px-3 flex flex-col justify-between overflow-y-auto overflow-x-hidden scrollbar-hide bg-[var(--bg-dark-grey)]">
         <div className="flex flex-col justify-start items-start gap-6">
           {/* Integrations Section */}
           {!isCollapsed && (
             <div className="self-stretch h-10 px-3 inline-flex justify-between items-center">
               <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Integrations</div>
-              <Image 
-                  src="/integrations-icon-custom.svg" 
-                  alt="Integrations" 
-                  width={64} 
-                  height={12}
-                  className="h-10"
-                />
+              <Image
+                src="/integrations-icon-custom.svg"
+                alt="Integrations"
+                width={64}
+                height={12}
+                className="h-10"
+              />
             </div>
           )}
 
           {isCollapsed && (
             <div className="w-full flex justify-center">
-               
+
             </div>
           )}
 
@@ -223,7 +223,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
           {/* Actions Section */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
             {/* New Session Button */}
-            <div 
+            <div
               onClick={handleNewSession}
               className={`w-10 h-8 px-0 py-2  inline-flex justify-start items-center  rounded-xl cursor-pointer overflow-hidden ${isCollapsed ? 'justify-center px-0' : 'gap-3 px-2 w-full h-11 hover:bg-zinc-900'}`}
             >
@@ -288,9 +288,8 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                         <div
                           key={session.id}
                           onClick={() => handleSessionClick(session)}
-                          className={`self-stretch group pl-12 pr-2 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden hover:bg-zinc-900 cursor-pointer ${
-                            currentSession?.id === session.id ? 'bg-zinc-900' : ''
-                          }`}
+                          className={`self-stretch group pl-12 pr-2 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden hover:bg-zinc-900 cursor-pointer ${currentSession?.id === session.id ? 'bg-zinc-900' : ''
+                            }`}
                         >
                           <div className="flex justify-start items-center gap-3 flex-1 min-w-0">
                             {getModeIcon(session.mode)}
@@ -359,9 +358,9 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
               </Collapsible>
             ) : (
               <div className="w-full flex justify-center">
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
+                <Button
+                  variant="ghost"
+                  size="sm"
                   className="h-8 w-8 p-0 hover:bg-zinc-900 rounded-md"
                   onClick={handleNewSession}
                 >
@@ -379,7 +378,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
 
           {/* Help & Support */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            <div 
+            <div
               onClick={() => router.push('/help')}
               className={`self-stretch h-11 py-2 rounded-xl cursor-pointer inline-flex items-center overflow-hidden  ${isCollapsed ? 'justify-center' : 'justify-start  px-3  gap-3 hover:bg-zinc-900'}`}
             >

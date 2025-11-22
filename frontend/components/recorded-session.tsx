@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Mic, Square, Paperclip } from "lucide-react"
 import Image from "next/image"
+import { LiveWaveform } from "@/components/ui/live-waveform"
 
 interface RecordedSessionProps {
   uploadedFiles: Array<{
@@ -17,11 +18,11 @@ interface RecordedSessionProps {
   sessionId: string
 }
 
-export function RecordedSession({ 
-  uploadedFiles, 
-  onEndSession, 
+export function RecordedSession({
+  uploadedFiles,
+  onEndSession,
   onShowResults,
-  sessionId 
+  sessionId
 }: RecordedSessionProps) {
   const [isRecording, setIsRecording] = useState(false)
   const [hasRecording, setHasRecording] = useState(false)
@@ -30,7 +31,7 @@ export function RecordedSession({
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null)
   const [isProcessing, setIsProcessing] = useState(false)
   const [audioLevels, setAudioLevels] = useState<number[]>([20, 25, 30, 25, 35, 30, 25, 28, 22])
-  
+
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])
   const audioContextRef = useRef<AudioContext | null>(null)
@@ -83,26 +84,26 @@ export function RecordedSession({
     // Get 9 frequency bands for real-time visualization
     const newLevels: number[] = []
     const bandSize = Math.floor(dataArray.length / 9)
-    
+
     for (let i = 0; i < 9; i++) {
       const start = i * bandSize
       const end = start + bandSize
       const bandData = dataArray.slice(start, end)
       const average = bandData.reduce((a, b) => a + b, 0) / bandData.length
-      
+
       // Map to Figma design range: 20px to 60px (matching Figma bars)
       const normalized = average / 255
-      
+
       // Apply sensitivity boost for better visual response
       // When silent (< 5), stay at minimum; when audio present, amplify
       const amplified = average < 5 ? 0 : Math.pow(normalized, 0.8)
       const height = 20 + (amplified * 40) // Range: 20-60px (exact Figma range)
-      
+
       newLevels.push(height)
     }
 
     // Smooth interpolation for natural movement
-    setAudioLevels(prevLevels => 
+    setAudioLevels(prevLevels =>
       prevLevels.map((prev, i) => {
         const target = newLevels[i]
         // Fast response to audio input
@@ -115,27 +116,27 @@ export function RecordedSession({
 
   const startRecording = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ 
+      const stream = await navigator.mediaDevices.getUserMedia({
         audio: {
           echoCancellation: true,
           noiseSuppression: true,
           autoGainControl: true,
-        } 
+        }
       })
-      
+
       // Set up audio analysis for waveform with optimized settings
       audioContextRef.current = new AudioContext()
       analyzerRef.current = audioContextRef.current.createAnalyser()
-      
+
       // Optimized settings for real-time visualization like ElevenLabs/Gemini
       analyzerRef.current.fftSize = 512 // Higher resolution for smoother bars
       analyzerRef.current.smoothingTimeConstant = 0.7 // Smooth but responsive (0-1)
       analyzerRef.current.minDecibels = -90 // Capture quiet sounds
       analyzerRef.current.maxDecibels = -10 // Avoid clipping
-      
+
       const source = audioContextRef.current.createMediaStreamSource(stream)
       source.connect(analyzerRef.current)
-      
+
       // Start audio level monitoring
       updateAudioLevels()
 
@@ -155,10 +156,10 @@ export function RecordedSession({
         const blob = new Blob(chunksRef.current, { type: 'audio/webm' })
         setAudioBlob(blob)
         setHasRecording(true)
-        
+
         // Stop all tracks
         stream.getTracks().forEach(track => track.stop())
-        
+
         // Cleanup audio context
         if (animationFrameRef.current) {
           cancelAnimationFrame(animationFrameRef.current)
@@ -166,7 +167,7 @@ export function RecordedSession({
         if (audioContextRef.current) {
           audioContextRef.current.close()
         }
-        
+
         // Reset audio levels to static
         setAudioLevels([20, 20, 20, 20, 20, 20, 20, 20, 20])
       }
@@ -204,7 +205,7 @@ export function RecordedSession({
     try {
       // Convert to MP3 (or send webm which backend accepts)
       const audioToUpload = await convertToMP3(audioBlob)
-      
+
       // Upload and transcribe
       const formData = new FormData()
       formData.append('file', audioToUpload, 'recording.mp3')
@@ -271,40 +272,7 @@ export function RecordedSession({
     return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
-  // Waveform component - REAL-TIME microphone audio responsive (Figma exact match)
-  const WaveformBars = ({ active }: { active: boolean }) => {
-    if (!active && !isRecording) {
-      // Show dots when idle (no recording)
-      return (
-        <div className="flex items-center gap-[8px]">
-          {[...Array(9)].map((_, i) => (
-            <div
-              key={i}
-              className="w-[8px] h-[8px] rounded-full bg-[#ff6b00]"
-            />
-          ))}
-        </div>
-      )
-    }
 
-    // Active recording - vertical bars driven by REAL microphone audio
-    // NO CSS animations - only React state from actual audio input
-    return (
-      <div className="flex items-end justify-center gap-[10px] h-[60px]">
-        {audioLevels.map((height, i) => (
-          <div
-            key={i}
-            className="bg-[#ff6b00]"
-            style={{ 
-              width: '6.667px',
-              height: `${height}px`,
-              transition: 'height 0.05s ease-out', // Smooth visual updates only
-            }}
-          />
-        ))}
-      </div>
-    )
-  }
 
   return (
     <div className="flex h-screen bg-[#171717]">
@@ -334,15 +302,22 @@ export function RecordedSession({
 
           {/* Waveform / Status Display */}
           <div className="flex flex-col items-center gap-[16px] py-8">
-            <WaveformBars active={isRecording} />
-            
+            <LiveWaveform
+              active={isRecording}
+              barColor="#ff6b00"
+              height={60}
+              barWidth={6}
+              barGap={10}
+              fadeEdges={false}
+            />
+
             {/* Recording Status Text */}
             {isRecording && (
               <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e]">
                 Recording your pitch...
               </p>
             )}
-            
+
             {!isRecording && !hasRecording && (
               <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e]">
                 Press to record an upload
@@ -381,11 +356,10 @@ export function RecordedSession({
               <button
                 onClick={isRecording ? stopRecording : startRecording}
                 disabled={isProcessing}
-                className={`flex-1 h-[44px] rounded-[12px] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px] transition-colors ${
-                  isRecording
-                    ? 'bg-[#902f31] text-[#f0f0f0]'
-                    : 'bg-[#f0f0f0] text-[#262626]'
-                }`}
+                className={`flex-1 h-[44px] rounded-[12px] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px] transition-colors ${isRecording
+                  ? 'bg-[#902f31] text-[#f0f0f0]'
+                  : 'bg-[#f0f0f0] text-[#262626]'
+                  }`}
               >
                 {isRecording ? (
                   <>

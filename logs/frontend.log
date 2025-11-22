@@ -11667,3 +11667,35 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 180ms
  GET / 200 in 158ms
  GET / 200 in 149ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.109:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1855ms
+ ✓ Ready in 4.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 19.7s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 21105ms
+ GET /dashboard 200 in 20047ms
+ GET / 200 in 481ms
+ GET / 200 in 425ms
+ POST / 200 in 266ms
+ POST / 200 in 149ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 948ms
+ GET /sign-in 200 in 2038ms
+ GET /dashboard 200 in 284ms
+ GET /dashboard 200 in 275ms
+ GET / 200 in 370ms

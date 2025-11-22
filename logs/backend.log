@@ -18728,3 +18728,27 @@ INFO:     127.0.0.1:46464 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:59970 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:59794 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:46868 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [91318] using WatchFiles
+INFO:     Started server process [91331]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-22T11:48:06.100746Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-22T11:48:06.100829Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-22T11:48:07.190246Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-22T11:48:07.190397Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-22T11:48:07.190866Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-22T11:48:07.190958Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-22T11:48:07.191016Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-22T11:48:07.194957Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-22T11:48:07.195036Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:35074 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35542 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37210 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37220 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37220 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37210 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37210 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37220 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34732 - "GET /api/v1/health HTTP/1.1" 200 OK
