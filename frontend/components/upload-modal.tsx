@@ -114,9 +114,8 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
 
         {/* Upload Area */}
         <div
-          className={`bg-[#171717] rounded-[16px] p-6 mb-4 border-2 border-dashed transition-colors ${
-            isDragging ? "border-[#ff6b00]" : "border-transparent"
-          }`}
+          className={`bg-[#171717] rounded-[16px] p-6 mb-4 border-2 border-dashed transition-colors ${isDragging ? "border-[#ff6b00]" : "border-transparent"
+            }`}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
@@ -206,14 +205,18 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
         {/* Action Buttons */}
         <div className="flex gap-3">
           <button
-            onClick={onClose}
+            onClick={() => onNext([])}
             className="flex-1 bg-[#404040] text-[#f0f0f0] rounded-[12px] px-4 py-2.5 text-[14px] font-semibold leading-[20px] hover:bg-[#4a4a4a] transition-colors"
           >
             Skip
           </button>
           <button
             onClick={() => onNext(uploadedFiles.map(f => f.file))}
-            className="flex-1 bg-[#f0f0f0] text-[#0a0a0a] rounded-[12px] px-4 py-2.5 text-[14px] font-semibold leading-[20px] hover:bg-white transition-colors border border-[#f0f0f0]"
+            disabled={uploadedFiles.length === 0}
+            className={`flex-1 rounded-[12px] px-4 py-2.5 text-[14px] font-semibold leading-[20px] transition-colors border ${uploadedFiles.length === 0
+                ? "bg-[#404040] text-[#9e9e9e] border-[#404040] cursor-not-allowed"
+                : "bg-[#f0f0f0] text-[#0a0a0a] hover:bg-white border-[#f0f0f0]"
+              }`}
           >
             Next
           </button>
