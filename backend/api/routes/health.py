@@ -5,7 +5,7 @@ Health check endpoint
 from fastapi import APIRouter
 from datetime import datetime
 
-from config import settings
+from core.config import settings
 from schemas.api_schemas import HealthResponse
 
 router = APIRouter()

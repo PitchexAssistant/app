@@ -95,7 +95,29 @@ async def live_session_endpoint(
         await live_service.create_session(session_id, mode=mode, context=context)
         
         # Connect to Gemini Live API
-        connection = await live_service.connect_session(session_id)
+        try:
+            connection = await live_service.connect_session(session_id)
+        except ValueError as ve:
+            # Send user-friendly error message
+            error_msg = str(ve)
+            await manager.send_message(session_id, {
+                "type": "error",
+                "message": error_msg,
+                "code": "CONNECTION_FAILED"
+            })
+            logger.error("connection_failed", session_id=session_id, error=error_msg)
+            await websocket.close(code=1011, reason=error_msg[:100])  # Limit reason length
+            return
+        except Exception as e:
+            error_msg = f"Unexpected error connecting to AI service: {str(e)}"
+            await manager.send_message(session_id, {
+                "type": "error",
+                "message": error_msg,
+                "code": "UNEXPECTED_ERROR"
+            })
+            logger.error("unexpected_connection_error", session_id=session_id, error=str(e))
+            await websocket.close(code=1011, reason="Internal error")
+            return
         
         # Send connection confirmation
         await manager.send_message(session_id, {

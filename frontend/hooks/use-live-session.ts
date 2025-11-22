@@ -31,6 +31,7 @@ interface UseLiveSessionOptions {
 interface UseLiveSessionReturn {
   isConnected: boolean;
   isRecording: boolean;
+  isAISpeaking: boolean;
   messages: Message[];
   currentMode: SessionMode;
   summary: SessionSummary | null;
@@ -54,6 +55,7 @@ export function useLiveSession({
 }: UseLiveSessionOptions): UseLiveSessionReturn {
   const [isConnected, setIsConnected] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
+  const [isAISpeaking, setIsAISpeaking] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentMode, setCurrentMode] = useState<SessionMode>(mode);
   const [summary, setSummary] = useState<SessionSummary | null>(null);
@@ -63,6 +65,7 @@ export function useLiveSession({
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const audioChunksRef = useRef<Uint8Array[]>([]);
+  const aiSpeakingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // WebSocket connection
   const startSession = useCallback(async () => {
@@ -70,19 +73,41 @@ export function useLiveSession({
       const contextParam = context ? `&context=${encodeURIComponent(context)}` : '';
       const wsUrl = `${WS_URL}/api/v1/ws/live/${sessionId}?mode=${mode}${contextParam}`;
       
+      console.log('[useLiveSession] Connecting to:', wsUrl);
       const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
+      // Set connection timeout
+      const connectionTimeout = setTimeout(() => {
+        if (!isConnected && ws.readyState !== WebSocket.OPEN) {
+          console.error('[useLiveSession] Connection timeout - closing WebSocket');
+          ws.close();
+          setError('Connection timeout. Please check if backend is running.');
+          if (onError) onError('Connection timeout');
+        }
+      }, 10000); // 10 second timeout
+
       ws.onopen = () => {
-        console.log('WebSocket connected');
+        console.log('[useLiveSession] WebSocket connected successfully');
+        clearTimeout(connectionTimeout);
         setIsConnected(true);
         setError(null);
       };
 
       ws.onmessage = async (event) => {
         if (event.data instanceof Blob) {
-          // Audio data from AI
+          // Audio data from AI - set AI speaking state
+          setIsAISpeaking(true);
           await playAudioChunk(event.data);
+          
+          // Clear previous timeout and set new one
+          if (aiSpeakingTimeoutRef.current) {
+            clearTimeout(aiSpeakingTimeoutRef.current);
+          }
+          // AI stops speaking 500ms after last audio chunk
+          aiSpeakingTimeoutRef.current = setTimeout(() => {
+            setIsAISpeaking(false);
+          }, 500);
         } else {
           // JSON message
           const data = JSON.parse(event.data);
@@ -145,19 +170,22 @@ export function useLiveSession({
       };
 
       ws.onerror = (event) => {
-        console.error('WebSocket error:', event);
+        console.error('[useLiveSession] WebSocket error:', event);
         setError('Connection error occurred');
         if (onError) onError('Connection error occurred');
       };
 
-      ws.onclose = () => {
-        console.log('WebSocket disconnected');
+      ws.onclose = (event) => {
+        console.log('[useLiveSession] WebSocket disconnected:', event.code, event.reason);
         setIsConnected(false);
+        setIsAISpeaking(false);
       };
 
     } catch (err: any) {
       const errorMsg = err.message || 'Failed to start session';
+      console.error('[useLiveSession] Session start error:', err);
       setError(errorMsg);
+      setIsConnected(false);
       if (onError) onError(errorMsg);
     }
   }, [sessionId, mode, context, onError, onMessage]);
@@ -183,6 +211,7 @@ export function useLiveSession({
   // Audio recording
   const startRecording = useCallback(async () => {
     try {
+      console.log('[useLiveSession] Starting recording...');
       const stream = await navigator.mediaDevices.getUserMedia({ 
         audio: {
           sampleRate: 16000,
@@ -207,21 +236,25 @@ export function useLiveSession({
           
           // Send as binary
           wsRef.current.send(audioData);
+          console.log('[useLiveSession] Sent audio chunk:', audioData.length, 'bytes');
         }
       };
 
       mediaRecorder.start(100); // Send chunks every 100ms
       setIsRecording(true);
       setError(null);
+      console.log('[useLiveSession] Recording started successfully');
 
     } catch (err: any) {
       const errorMsg = err.message || 'Failed to access microphone';
+      console.error('[useLiveSession] Recording error:', errorMsg);
       setError(errorMsg);
       if (onError) onError(errorMsg);
     }
   }, [onError]);
 
   const stopRecording = useCallback(() => {
+    console.log('[useLiveSession] Stopping recording...');
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
       mediaRecorderRef.current.stop();
       
@@ -230,6 +263,7 @@ export function useLiveSession({
       stream.getTracks().forEach(track => track.stop());
       
       setIsRecording(false);
+      console.log('[useLiveSession] Recording stopped');
     }
   }, []);
 
@@ -290,6 +324,7 @@ export function useLiveSession({
   return {
     isConnected,
     isRecording,
+    isAISpeaking,
     messages,
     currentMode,
     summary,

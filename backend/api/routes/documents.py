@@ -10,7 +10,7 @@ import structlog
 from services.context_service import get_context_service
 
 logger = structlog.get_logger()
-router = APIRouter(prefix="/api/v1/documents", tags=["documents"])
+router = APIRouter(prefix="/documents", tags=["documents"])
 
 
 @router.post("/upload")

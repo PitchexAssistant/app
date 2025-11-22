@@ -8,6 +8,7 @@ import { api, Session as APISession } from '@/lib/api/client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { EmotionIndicator, EmotionBreakdown } from '@/components/emotion-indicator';
+import { LiveSessionOrb } from '@/components/live-session-orb';
 import { Mic, Square, Loader2, Send, ArrowLeft, X, Radio, Upload, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
@@ -106,8 +107,12 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     sessionId: `live_${sessionId}`,
     mode: liveMode,
     context: uploadedFiles.map(f => f.filename).join(', '),
-    onError: (err) => setError(err),
+    onError: (err) => {
+      console.error('Live session error:', err);
+      setError(err);
+    },
     onMessage: (msg) => {
+      console.log('Live session message received:', msg);
       // Sync live session messages to state
       setMessages(prev => [...prev, msg]);
     }
@@ -119,6 +124,32 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       setMessages(liveSession.messages);
     }
   }, [liveSession.messages]);
+
+  // Auto-start live session when entering live mode
+  useEffect(() => {
+    if (pitchMode === 'live' && !liveSession.isConnected) {
+      console.log('[PitchPractice] Live mode entered, starting session...');
+      const startLiveSession = async () => {
+        try {
+          await liveSession.startSession();
+          console.log('[PitchPractice] Live session connected successfully');
+        } catch (error) {
+          console.error('[PitchPractice] Failed to start live session:', error);
+          setError('Failed to connect to AI Investor. Please try again.');
+        }
+      };
+      startLiveSession();
+    }
+  }, [pitchMode, liveSession.isConnected]);
+
+  // Debug live session connection state
+  useEffect(() => {
+    console.log('Live session state changed:', {
+      isConnected: liveSession.isConnected,
+      isRecording: liveSession.isRecording,
+      pitchMode: pitchMode
+    });
+  }, [liveSession.isConnected, liveSession.isRecording, pitchMode]);
 
   useEffect(() => {
     if (recordingError) {
@@ -394,12 +425,15 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <button
                   onClick={async () => {
+                    console.log('[PitchPractice] Live Session button clicked');
                     setPitchMode('live');
+                    setLiveMode('pitch'); // Default to pitch mode
                     if (user?.id && !currentSession) {
                       const now = new Date();
                       const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
                       await createSession(`Live Session ${timeStr}`, 'live');
                     }
+                    // Connection will be handled by useEffect
                   }}
                   className="p-6 rounded-lg border-2 border-green-500 bg-green-500/10 hover:bg-green-500/20 transition-all text-left group"
                 >
@@ -533,220 +567,25 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           </Card>
         )}
 
-        {/* Live Session Mode */}
+        {/* Live Session Mode - Show Orb Interface Immediately */}
         {pitchMode === 'live' && (
-          <>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span>Live Pitch Session</span>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      if (liveSession.isConnected) {
-                        liveSession.endSession();
-                      }
-                      setPitchMode('select');
-                    }}
-                  >
-                    Change Mode
-                  </Button>
-                </CardTitle>
-                <CardDescription>
-                  {liveSession.isConnected 
-                    ? `Live coaching with Marcus Sterling - Mode: ${liveMode.toUpperCase()}`
-                    : 'Connect to start your live pitch coaching session'}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {!liveSession.isConnected ? (
-                  <div className="space-y-4">
-                    <div>
-                      <label className="text-sm font-medium text-white mb-2 block">
-                        Select Coaching Mode
-                      </label>
-                      <div className="grid grid-cols-3 gap-2">
-                        <button
-                          onClick={() => setLiveMode('pitch')}
-                          className={cn(
-                            "p-3 rounded-lg border-2 transition-all text-sm",
-                            liveMode === 'pitch'
-                              ? "border-green-500 bg-green-500/20"
-                              : "border-zinc-700 hover:border-green-500/50"
-                          )}
-                        >
-                          <div className="font-semibold text-white">Pitch</div>
-                          <div className="text-xs text-gray-400">Full presentation</div>
-                        </button>
-                        <button
-                          onClick={() => setLiveMode('qa')}
-                          className={cn(
-                            "p-3 rounded-lg border-2 transition-all text-sm",
-                            liveMode === 'qa'
-                              ? "border-blue-500 bg-blue-500/20"
-                              : "border-zinc-700 hover:border-blue-500/50"
-                          )}
-                        >
-                          <div className="font-semibold text-white">Q&A</div>
-                          <div className="text-xs text-gray-400">Investor questions</div>
-                        </button>
-                        <button
-                          onClick={() => setLiveMode('negotiation')}
-                          className={cn(
-                            "p-3 rounded-lg border-2 transition-all text-sm",
-                            liveMode === 'negotiation'
-                              ? "border-purple-500 bg-purple-500/20"
-                              : "border-zinc-700 hover:border-purple-500/50"
-                          )}
-                        >
-                          <div className="font-semibold text-white">Negotiation</div>
-                          <div className="text-xs text-gray-400">Terms & valuation</div>
-                        </button>
-                      </div>
-                    </div>
-                    <Button
-                      size="lg"
-                      onClick={liveSession.startSession}
-                      className="w-full"
-                    >
-                      <Radio className="h-4 w-4 mr-2" />
-                      Start Live Session
-                    </Button>
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-center gap-4">
-                      {!liveSession.isRecording ? (
-                        <Button
-                          size="lg"
-                          onClick={liveSession.startRecording}
-                          className="h-16 w-16 rounded-full bg-green-600 hover:bg-green-700"
-                        >
-                          <Mic className="h-6 w-6" />
-                        </Button>
-                      ) : (
-                        <Button
-                          size="lg"
-                          variant="destructive"
-                          onClick={liveSession.stopRecording}
-                          className="h-16 w-16 rounded-full animate-pulse"
-                        >
-                          <Square className="h-6 w-6" />
-                        </Button>
-                      )}
-                      
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        onClick={handleEndSession}
-                        className="gap-2"
-                      >
-                        End Session
-                      </Button>
-                    </div>
-
-                    {liveSession.isRecording && (
-                      <div className="text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 border border-red-500">
-                          <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
-                          <span className="text-sm font-medium text-white">Live - Marcus is listening</span>
-                        </div>
-                      </div>
-                    )}
-
-                    <div className="flex justify-center gap-2">
-                      <Button
-                        size="sm"
-                        variant={liveSession.currentMode === 'pitch' ? 'default' : 'outline'}
-                        onClick={() => liveSession.changeMode('pitch')}
-                        disabled={liveSession.isRecording}
-                      >
-                        Pitch
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant={liveSession.currentMode === 'qa' ? 'default' : 'outline'}
-                        onClick={() => liveSession.changeMode('qa')}
-                        disabled={liveSession.isRecording}
-                      >
-                        Q&A
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant={liveSession.currentMode === 'negotiation' ? 'default' : 'outline'}
-                        onClick={() => liveSession.changeMode('negotiation')}
-                        disabled={liveSession.isRecording}
-                      >
-                        Negotiation
-                      </Button>
-                    </div>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-
-            {liveSession.summary && (
-              <Card className="border-green-500">
-                <CardHeader>
-                  <CardTitle>Session Summary</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <p className="text-sm text-gray-300">
-                      Session ended with {liveSession.summary.message_count} messages
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      Mode: {liveSession.summary.mode.toUpperCase()}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Live Conversation</CardTitle>
-                <CardDescription>Real-time coaching with Marcus Sterling</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 max-h-[500px] overflow-y-auto">
-                  {liveSession.messages.length === 0 ? (
-                    <p className="text-center text-muted-foreground py-8">
-                      {liveSession.isConnected 
-                        ? 'Click the microphone to start speaking...'
-                        : 'Connect to start your session'}
-                    </p>
-                  ) : (
-                    liveSession.messages.map((message, index) => (
-                      <div
-                        key={index}
-                        className={cn(
-                          "flex gap-3",
-                          message.role === 'user' ? 'justify-end' : 'justify-start'
-                        )}
-                      >
-                        <div
-                          className={cn(
-                            "max-w-[80%] rounded-lg px-4 py-3",
-                            message.role === 'user'
-                              ? 'bg-green-600 text-white'
-                              : 'bg-zinc-800 text-white'
-                          )}
-                        >
-                          <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                          <p className="text-xs opacity-70 mt-2">
-                            {message.timestamp.toLocaleTimeString()}
-                          </p>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </>
+          <div className="fixed inset-0 z-50 bg-[#171717]">
+            <LiveSessionOrb
+              isConnected={liveSession.isConnected}
+              isRecording={liveSession.isRecording}
+              isAISpeaking={liveSession.isAISpeaking}
+              onEndSession={handleEndSession}
+              onStartRecording={liveSession.startRecording}
+              onStopRecording={liveSession.stopRecording}
+              sessionId={sessionId}
+              contextFiles={uploadedFiles}
+              contextFileName={uploadedFiles && uploadedFiles.length > 0 ? uploadedFiles[0].filename : undefined}
+              pitchMode="live"
+            />
+          </div>
         )}
+
+
 
         {/* Record Mode */}
         {pitchMode === 'record' && (

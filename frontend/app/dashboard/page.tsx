@@ -297,26 +297,24 @@ export default function Page() {
                 <div 
                   className="relative w-[220px] h-[220px] rounded-full overflow-hidden"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    animation: 'orb-pulse 3s ease-in-out infinite'
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
                   } as React.CSSProperties}
                 >
-                  {/* Base gradient image with rotation and reduced opacity */}
+                  {/* Base gradient image with rotation and increased opacity */}
                   <div 
                     className="absolute inset-0"
                     style={{
                       animation: 'orb-rotate 20s linear infinite',
-                      opacity: 0.4
+                      opacity: 0.7
                     } as React.CSSProperties}
                   >
                     <Image
-                      src="https://www.figma.com/api/mcp/asset/54798332-3632-499d-8b6f-e17134f282b1"
+                      src="/mas-circle.png"
                       alt="Gradient orb"
                       width={220}
                       height={220}
                       className="w-full h-full object-cover"
                       priority
-                      unoptimized
                     />
                   </div>
                   

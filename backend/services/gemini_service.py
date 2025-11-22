@@ -7,7 +7,7 @@ Uses advanced prompt engineering templates for business-focused coaching
 import google.generativeai as genai
 from typing import List, Dict, Optional
 import structlog
-from config import settings
+from core.config import settings
 from services.prompt_templates import PromptTemplates
 
 logger = structlog.get_logger()

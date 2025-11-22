@@ -81,16 +81,21 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
     loadSessions,
   } = useSessions()
 
-  const handleSignOut = async () => {
+  const handleLogout = async () => {
     await signOut()
     router.push("/")
   }
 
   const handleNewSession = () => {
+    // Navigate to dashboard and trigger new session
+    router.push('/dashboard?newSession=true')
+    // Also call the callback if provided
     onNewSession?.()
   }
 
   const handleSessionClick = (session: Session) => {
+    // Navigate to dashboard when selecting a session
+    router.push('/dashboard')
     onSelectSession?.(session)
   }
 
@@ -374,7 +379,10 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
 
           {/* Help & Support */}
           <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            <div className={`self-stretch h-11 py-2 rounded-xl cursor-pointer inline-flex items-center overflow-hidden  ${isCollapsed ? 'justify-center' : 'justify-start  px-3  gap-3 hover:bg-zinc-900'}`}>
+            <div 
+              onClick={() => router.push('/help')}
+              className={`self-stretch h-11 py-2 rounded-xl cursor-pointer inline-flex items-center overflow-hidden  ${isCollapsed ? 'justify-center' : 'justify-start  px-3  gap-3 hover:bg-zinc-900'}`}
+            >
               <Info className="w-6 h-6 text-stone-500" />
               {!isCollapsed && (
                 <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Help & Support</div>

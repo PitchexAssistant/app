@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { StickyCard002 } from '@/components/ui/skiper-ui/skiper17';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Orb } from '@/components/ui/orb';
 import { ArrowRight, CheckCircle, Zap, Users, Target, TrendingUp } from 'lucide-react';
 
 
@@ -63,6 +64,19 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="container mx-auto px-6 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Right side - Animated Orb */}
+            <div className="order-first lg:order-last flex items-center justify-center">
+              <div className="relative w-full max-w-md aspect-square">
+                <Orb 
+                  colors={["#FF6B00", "#FF8533"]}
+                  agentState="thinking"
+                  className="w-full h-full"
+                />
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-[#FF6B00]/20 blur-3xl -z-10" />
+              </div>
+            </div>
+
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
@@ -109,8 +123,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>

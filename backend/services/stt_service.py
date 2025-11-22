@@ -12,7 +12,7 @@ from pydub import AudioSegment
 import tempfile
 import os
 
-from config import settings
+from core.config import settings
 
 logger = structlog.get_logger()
 

@@ -100,16 +100,11 @@ Be supportive but realistic. Your goal is to make them investor-ready."""
             role="user"
         )
         
+        # Simple config without speech_config for now
+        # The API will use default voice settings
         return types.LiveConnectConfig(
             response_modalities=["AUDIO"],
-            system_instruction=system_instruction_content,
-            speech_config=types.SpeechConfig(
-                voice_config=types.VoiceConfig(
-                    prebuilt_voice_config=types.PrebuiltVoiceConfig(
-                        voice_name="Charon"  # Professional, authoritative voice
-                    )
-                )
-            )
+            system_instruction=system_instruction_content
         )
     
     async def create_session(self, session_id: str, mode: str = "pitch", context: Optional[str] = None) -> Dict[str, Any]:
@@ -171,8 +166,18 @@ Be supportive but realistic. Your goal is to make them investor-ready."""
             return session
             
         except Exception as e:
-            logger.error("session_connection_failed", session_id=session_id, error=str(e))
-            raise
+            error_msg = str(e)
+            logger.error("session_connection_failed", session_id=session_id, error=error_msg)
+            
+            # Check for specific error types
+            if "quota" in error_msg.lower() or "exceeded" in error_msg.lower():
+                raise ValueError("API quota exceeded. Please check your billing details or try again later.")
+            elif "401" in error_msg or "unauthorized" in error_msg.lower():
+                raise ValueError("API authentication failed. Please check your API key.")
+            elif "403" in error_msg or "forbidden" in error_msg.lower():
+                raise ValueError("API access forbidden. Please verify your API permissions.")
+            else:
+                raise ValueError(f"Failed to connect to AI service: {error_msg}")
     
     async def send_audio(self, session_id: str, audio_data: bytes) -> None:
         """Send audio chunk to live session"""

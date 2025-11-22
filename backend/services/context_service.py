@@ -22,7 +22,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_core.documents import Document
 
-from config import settings
+from core.config import settings
 
 logger = structlog.get_logger()
 
