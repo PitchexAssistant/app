@@ -4,6 +4,7 @@
  */
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { useMicVAD } from "@ricky0123/vad-react";
 
 export type SessionMode = 'pitch' | 'qa' | 'negotiation';
 
@@ -30,7 +31,9 @@ interface UseLiveSessionOptions {
 
 interface UseLiveSessionReturn {
   isConnected: boolean;
+  isConnecting: boolean;
   isRecording: boolean;
+  isUserSpeaking: boolean;
   isAISpeaking: boolean;
   messages: Message[];
   currentMode: SessionMode;
@@ -38,7 +41,7 @@ interface UseLiveSessionReturn {
   error: string | null;
   startSession: () => Promise<void>;
   endSession: () => Promise<void>;
-  startRecording: () => Promise<void>;
+  startRecording: () => void;
   stopRecording: () => void;
   sendText: (text: string) => void;
   changeMode: (mode: SessionMode) => void;
@@ -54,6 +57,7 @@ export function useLiveSession({
   onMessage,
 }: UseLiveSessionOptions): UseLiveSessionReturn {
   const [isConnected, setIsConnected] = useState(false);
+  const [isConnecting, setIsConnecting] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [isAISpeaking, setIsAISpeaking] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -62,17 +66,51 @@ export function useLiveSession({
   const [error, setError] = useState<string | null>(null);
 
   const wsRef = useRef<WebSocket | null>(null);
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
-  const audioChunksRef = useRef<Uint8Array[]>([]);
   const aiSpeakingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // VAD Hook
+  const vad = useMicVAD({
+    startOnLoad: false,
+    baseAssetPath: "https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.30/dist/",
+    onnxWASMBasePath: "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.2/dist/",
+    onFrameProcessed: (probabilities, frame) => {
+      if (!isConnected || !isRecording) return;
+
+      // Only send audio if speech probability is high
+      if (probabilities.isSpeech > 0.5) {
+        if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+          try {
+            // Convert Float32 (VAD output) to Int16 PCM (Backend expectation)
+            const pcmData = float32ToInt16(frame);
+            wsRef.current.send(pcmData.buffer);
+          } catch (err) {
+            console.error('[useLiveSession] Error sending audio chunk:', err);
+          }
+        }
+      }
+    },
+  });
+
+  // Helper to convert Float32 to Int16 PCM
+  const float32ToInt16 = (float32Array: Float32Array): Int16Array => {
+    const int16Array = new Int16Array(float32Array.length);
+    for (let i = 0; i < float32Array.length; i++) {
+      const s = Math.max(-1, Math.min(1, float32Array[i]));
+      int16Array[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+    }
+    return int16Array;
+  };
 
   // WebSocket connection
   const startSession = useCallback(async () => {
+    if (isConnected || isConnecting) return;
+
     try {
+      setIsConnecting(true);
       const contextParam = context ? `&context=${encodeURIComponent(context)}` : '';
       const wsUrl = `${WS_URL}/api/v1/ws/live/${sessionId}?mode=${mode}${contextParam}`;
-      
+
       console.log('[useLiveSession] Connecting to:', wsUrl);
       const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
@@ -82,6 +120,7 @@ export function useLiveSession({
         if (!isConnected && ws.readyState !== WebSocket.OPEN) {
           console.error('[useLiveSession] Connection timeout - closing WebSocket');
           ws.close();
+          setIsConnecting(false);
           setError('Connection timeout. Please check if backend is running.');
           if (onError) onError('Connection timeout');
         }
@@ -91,6 +130,7 @@ export function useLiveSession({
         console.log('[useLiveSession] WebSocket connected successfully');
         clearTimeout(connectionTimeout);
         setIsConnected(true);
+        setIsConnecting(false);
         setError(null);
       };
 
@@ -99,7 +139,7 @@ export function useLiveSession({
           // Audio data from AI - set AI speaking state
           setIsAISpeaking(true);
           await playAudioChunk(event.data);
-          
+
           // Clear previous timeout and set new one
           if (aiSpeakingTimeoutRef.current) {
             clearTimeout(aiSpeakingTimeoutRef.current);
@@ -111,7 +151,7 @@ export function useLiveSession({
         } else {
           // JSON message
           const data = JSON.parse(event.data);
-          
+
           switch (data.type) {
             case 'connection':
               console.log('Session connected:', data.message);
@@ -123,7 +163,7 @@ export function useLiveSession({
                 }]);
               }
               break;
-            
+
             case 'assistant_message':
               const assistantMsg: Message = {
                 role: 'assistant',
@@ -133,7 +173,7 @@ export function useLiveSession({
               setMessages(prev => [...prev, assistantMsg]);
               if (onMessage) onMessage(assistantMsg);
               break;
-            
+
             case 'user_message':
               const userMsg: Message = {
                 role: 'user',
@@ -142,7 +182,7 @@ export function useLiveSession({
               };
               setMessages(prev => [...prev, userMsg]);
               break;
-            
+
             case 'mode_changed':
               setCurrentMode(data.mode);
               setMessages(prev => [...prev, {
@@ -151,17 +191,17 @@ export function useLiveSession({
                 timestamp: new Date()
               }]);
               break;
-            
+
             case 'session_ended':
               setSummary(data.summary);
               break;
-            
+
             case 'error':
               const errorMsg = data.message || 'An error occurred';
               setError(errorMsg);
               if (onError) onError(errorMsg);
               break;
-            
+
             case 'pong':
               // Heartbeat response
               break;
@@ -171,14 +211,23 @@ export function useLiveSession({
 
       ws.onerror = (event) => {
         console.error('[useLiveSession] WebSocket error:', event);
+        // Attempt to extract more info if available
+        if (event instanceof ErrorEvent) {
+          console.error('[useLiveSession] Error details:', event.message);
+        }
         setError('Connection error occurred');
+        setIsConnecting(false);
         if (onError) onError('Connection error occurred');
       };
 
       ws.onclose = (event) => {
         console.log('[useLiveSession] WebSocket disconnected:', event.code, event.reason);
         setIsConnected(false);
+        setIsConnecting(false);
         setIsAISpeaking(false);
+        // Ensure VAD is stopped
+        vad.pause();
+        setIsRecording(false);
       };
 
     } catch (err: any) {
@@ -186,9 +235,10 @@ export function useLiveSession({
       console.error('[useLiveSession] Session start error:', err);
       setError(errorMsg);
       setIsConnected(false);
+      setIsConnecting(false);
       if (onError) onError(errorMsg);
     }
-  }, [sessionId, mode, context, onError, onMessage]);
+  }, [sessionId, mode, context, onError, onMessage, vad]);
 
   // End session
   const endSession = useCallback(async () => {
@@ -196,7 +246,7 @@ export function useLiveSession({
       wsRef.current.send(JSON.stringify({
         type: 'end_session'
       }));
-      
+
       // Wait a bit for summary, then close
       setTimeout(() => {
         if (wsRef.current) {
@@ -204,68 +254,24 @@ export function useLiveSession({
           wsRef.current = null;
         }
         setIsConnected(false);
+        vad.pause();
+        setIsRecording(false);
       }, 2000);
     }
-  }, []);
+  }, [vad]);
 
-  // Audio recording
-  const startRecording = useCallback(async () => {
-    try {
-      console.log('[useLiveSession] Starting recording...');
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        audio: {
-          sampleRate: 16000,
-          channelCount: 1,
-          echoCancellation: true,
-          noiseSuppression: true,
-        }
-      });
-
-      // Create MediaRecorder
-      const mediaRecorder = new MediaRecorder(stream, {
-        mimeType: 'audio/webm'
-      });
-      
-      mediaRecorderRef.current = mediaRecorder;
-
-      mediaRecorder.ondataavailable = async (event) => {
-        if (event.data.size > 0 && wsRef.current?.readyState === WebSocket.OPEN) {
-          // Convert to PCM and send
-          const arrayBuffer = await event.data.arrayBuffer();
-          const audioData = new Uint8Array(arrayBuffer);
-          
-          // Send as binary
-          wsRef.current.send(audioData);
-          console.log('[useLiveSession] Sent audio chunk:', audioData.length, 'bytes');
-        }
-      };
-
-      mediaRecorder.start(100); // Send chunks every 100ms
-      setIsRecording(true);
-      setError(null);
-      console.log('[useLiveSession] Recording started successfully');
-
-    } catch (err: any) {
-      const errorMsg = err.message || 'Failed to access microphone';
-      console.error('[useLiveSession] Recording error:', errorMsg);
-      setError(errorMsg);
-      if (onError) onError(errorMsg);
-    }
-  }, [onError]);
+  // Audio recording control via VAD
+  const startRecording = useCallback(() => {
+    console.log('[useLiveSession] Starting VAD recording...');
+    vad.start();
+    setIsRecording(true);
+  }, [vad]);
 
   const stopRecording = useCallback(() => {
-    console.log('[useLiveSession] Stopping recording...');
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
-      mediaRecorderRef.current.stop();
-      
-      // Stop all tracks
-      const stream = mediaRecorderRef.current.stream;
-      stream.getTracks().forEach(track => track.stop());
-      
-      setIsRecording(false);
-      console.log('[useLiveSession] Recording stopped');
-    }
-  }, []);
+    console.log('[useLiveSession] Stopping VAD recording...');
+    vad.pause();
+    setIsRecording(false);
+  }, [vad]);
 
   // Send text message
   const sendText = useCallback((text: string) => {
@@ -296,7 +302,7 @@ export function useLiveSession({
 
       const arrayBuffer = await blob.arrayBuffer();
       const audioBuffer = await audioContextRef.current.decodeAudioData(arrayBuffer);
-      
+
       const source = audioContextRef.current.createBufferSource();
       source.buffer = audioBuffer;
       source.connect(audioContextRef.current.destination);
@@ -311,19 +317,27 @@ export function useLiveSession({
     return () => {
       if (wsRef.current) {
         wsRef.current.close();
+        wsRef.current = null;
       }
-      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
-        mediaRecorderRef.current.stop();
-      }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
+      // Don't pause VAD here as it might be used by other components or cause issues if paused too early
+      // vad.pause(); 
+
+      if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+        try {
+          audioContextRef.current.close();
+        } catch (e) {
+          console.error('[useLiveSession] Error closing AudioContext:', e);
+        }
+        audioContextRef.current = null;
       }
     };
-  }, []);
+  }, []); // Remove vad from dependencies to prevent unnecessary re-runs
 
   return {
     isConnected,
+    isConnecting,
     isRecording,
+    isUserSpeaking: vad.userSpeaking,
     isAISpeaking,
     messages,
     currentMode,

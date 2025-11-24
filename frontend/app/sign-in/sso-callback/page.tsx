@@ -11,7 +11,7 @@ export default function SSOCallback() {
   useEffect(() => {
     const handle = async () => {
       try {
-        await handleRedirectCallback()
+        await handleRedirectCallback({})
         router.push("/dashboard")
       } catch (error) {
         console.error("SSO callback error:", error)

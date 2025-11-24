@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 import structlog
 
 from core.config import settings
-from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis, documents
+from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis, documents, livekit_token
 from services.emotion_service import EmotionService
 from services.gemini_service import GeminiService
 from services.gemini_live_service import GeminiLiveService
@@ -87,6 +87,7 @@ app.include_router(chat.router, prefix=settings.API_V1_PREFIX, tags=["Chat"])
 app.include_router(live.router, prefix=settings.API_V1_PREFIX, tags=["Live Coaching"])  # Live sessions
 app.include_router(sessions.router, prefix=settings.API_V1_PREFIX, tags=["Sessions"])  # Session management
 app.include_router(documents.router, prefix=settings.API_V1_PREFIX, tags=["Documents"])  # Document management
+app.include_router(livekit_token.router, prefix=settings.API_V1_PREFIX + "/live", tags=["LiveKit"]) # LiveKit Token
 
 
 @app.get("/")

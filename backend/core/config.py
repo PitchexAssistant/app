@@ -40,6 +40,14 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api/v1"
     PROJECT_NAME: str = "Pitchex AI Coach"
     VERSION: str = "1.0.0"
+
+    # LiveKit Configuration
+    LIVEKIT_URL: str = ""
+    LIVEKIT_API_KEY: str = ""
+    LIVEKIT_API_SECRET: str = ""
+    OPENROUTER_API_KEY: str = ""
+    DEEPGRAM_API_KEY: str = ""
+
     
     class Config:
         env_file = ".env"

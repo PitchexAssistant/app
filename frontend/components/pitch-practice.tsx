@@ -2,13 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { useAudioRecorder } from '@/hooks/use-audio-recorder';
-import { useLiveSession, SessionMode } from '@/hooks/use-live-session';
 import { useSessions } from '@/hooks/use-sessions';
+import { LiveSessionLiveKit } from '@/components/live-session-livekit';
 import { api, Session as APISession } from '@/lib/api/client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { EmotionIndicator, EmotionBreakdown } from '@/components/emotion-indicator';
-import { LiveSessionOrb } from '@/components/live-session-orb';
 import { LiveWaveform } from '@/components/ui/live-waveform';
 import { Mic, Square, Loader2, Send, ArrowLeft, X, Radio, Upload, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -46,7 +45,6 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
   const [error, setError] = useState<string | null>(null);
   const [selectedFileIndex, setSelectedFileIndex] = useState(0);
   const [hoveredFileIndex, setHoveredFileIndex] = useState<number | null>(null);
-  const [liveMode, setLiveMode] = useState<SessionMode>('pitch');
   const [startTime] = useState<Date>(new Date());
   const [uploadedAudioFile, setUploadedAudioFile] = useState<File | null>(null);
   const [isUploadingAudio, setIsUploadingAudio] = useState(false);
@@ -103,54 +101,13 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     error: recordingError,
   } = useAudioRecorder();
 
-  // Live session hook
-  const liveSession = useLiveSession({
-    sessionId: `live_${sessionId}`,
-    mode: liveMode,
-    context: uploadedFiles.map(f => f.filename).join(', '),
-    onError: (err) => {
-      console.error('Live session error:', err);
-      setError(err);
-    },
-    onMessage: (msg) => {
-      console.log('Live session message received:', msg);
-      // Sync live session messages to state
-      setMessages(prev => [...prev, msg]);
-    }
-  });
+  // Live session hook removed - using LiveSessionLiveKit component instead
 
-  // Sync live session messages to our messages state
   useEffect(() => {
-    if (liveSession.messages.length > messages.length) {
-      setMessages(liveSession.messages);
+    if (recordingError) {
+      setError(recordingError);
     }
-  }, [liveSession.messages]);
-
-  // Auto-start live session when entering live mode
-  useEffect(() => {
-    if (pitchMode === 'live' && !liveSession.isConnected) {
-      console.log('[PitchPractice] Live mode entered, starting session...');
-      const startLiveSession = async () => {
-        try {
-          await liveSession.startSession();
-          console.log('[PitchPractice] Live session connected successfully');
-        } catch (error) {
-          console.error('[PitchPractice] Failed to start live session:', error);
-          setError('Failed to connect to AI Investor. Please try again.');
-        }
-      };
-      startLiveSession();
-    }
-  }, [pitchMode, liveSession.isConnected]);
-
-  // Debug live session connection state
-  useEffect(() => {
-    console.log('Live session state changed:', {
-      isConnected: liveSession.isConnected,
-      isRecording: liveSession.isRecording,
-      pitchMode: pitchMode
-    });
-  }, [liveSession.isConnected, liveSession.isRecording, pitchMode]);
+  }, [recordingError]);
 
   useEffect(() => {
     if (recordingError) {
@@ -194,12 +151,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       // Update session with final data
       if (currentSession && user?.id) {
         const transcript = messages.map(m => `${m.role}: ${m.content}`).join('\n');
-        // Convert summary to string if it's an object
-        const summaryText = typeof liveSession.summary === 'string'
-          ? liveSession.summary
-          : liveSession.summary
-            ? `Session ${liveSession.summary.session_id}: ${liveSession.summary.message_count} messages in ${liveSession.summary.mode} mode`
-            : `Session completed with ${messages.length} messages`;
+        const summaryText = `Session completed with ${messages.length} messages`;
 
         await updateSession(currentSession.id, {
           transcript: transcript || undefined,
@@ -215,13 +167,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     }
 
     // End live session if active
-    try {
-      if (liveSession.isConnected) {
-        await liveSession.endSession();
-      }
-    } catch (error) {
-      console.error('Error ending live session:', error);
-    }
+    // LiveKit session handling is managed within the component
 
     // Go back to dashboard
     onBack?.();
@@ -415,91 +361,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           </div>
         </div>
 
-        {/* Mode Selection */}
-        {pitchMode === 'select' && (
-          <Card>
-            <CardHeader>
-              <CardTitle>Choose Your Practice Mode</CardTitle>
-              <CardDescription>Select how you'd like to practice your pitch</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <button
-                  onClick={async () => {
-                    console.log('[PitchPractice] Live Session button clicked');
-                    setPitchMode('live');
-                    setLiveMode('pitch'); // Default to pitch mode
-                    if (user?.id && !currentSession) {
-                      const now = new Date();
-                      const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-                      await createSession(`Live Session ${timeStr}`, 'live');
-                    }
-                    // Connection will be handled by useEffect
-                  }}
-                  className="p-6 rounded-lg border-2 border-green-500 bg-green-500/10 hover:bg-green-500/20 transition-all text-left group"
-                >
-                  <Radio className="h-8 w-8 text-green-500 mb-3" />
-                  <h3 className="text-lg font-semibold text-white mb-2">Live Session</h3>
-                  <p className="text-sm text-gray-400">
-                    Real-time coaching with Marcus Sterling AI. Get instant feedback as you pitch.
-                  </p>
-                  <div className="mt-3 text-xs text-green-400">
-                    🎯 Recommended for practice
-                  </div>
-                </button>
 
-                <button
-                  onClick={async () => {
-                    setPitchMode('record');
-                    if (user?.id && !currentSession) {
-                      const now = new Date();
-                      const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-                      await createSession(`Record Session ${timeStr}`, 'record');
-                    }
-                  }}
-                  className="p-6 rounded-lg border-2 border-zinc-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all text-left group"
-                >
-                  <Mic className="h-8 w-8 text-zinc-400 group-hover:text-blue-500 mb-3" />
-                  <h3 className="text-lg font-semibold text-white mb-2">Record & Analyze</h3>
-                  <p className="text-sm text-gray-400">
-                    Record your pitch, then get detailed emotion analysis and coaching feedback.
-                  </p>
-                </button>
-
-                <button
-                  onClick={async () => {
-                    setPitchMode('upload');
-                    if (user?.id && !currentSession) {
-                      const now = new Date();
-                      const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-                      await createSession(`Upload Session ${timeStr}`, 'upload');
-                    }
-                  }}
-                  className="p-6 rounded-lg border-2 border-zinc-700 hover:border-purple-500 hover:bg-purple-500/10 transition-all text-left group"
-                >
-                  <Upload className="h-8 w-8 text-zinc-400 group-hover:text-purple-500 mb-3" />
-                  <h3 className="text-lg font-semibold text-white mb-2">Upload Audio</h3>
-                  <p className="text-sm text-gray-400 mb-2">
-                    Upload a pre-recorded pitch for analysis and feedback.
-                  </p>
-                  <p className="text-xs text-purple-400">
-                    Supports: MP3, WAV (Max 10MB)
-                  </p>
-                </button>
-              </div>
-
-              {uploadedFiles.length > 0 && (
-                <div className="mt-6 p-4 rounded-lg bg-zinc-800/50 border border-zinc-700">
-                  <p className="text-sm text-zinc-300 flex items-center gap-2">
-                    <MessageSquare className="h-4 w-4" />
-                    You have {uploadedFiles.length} document{uploadedFiles.length > 1 ? 's' : ''} uploaded.
-                    The AI will reference these during your session.
-                  </p>
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        )}
 
         {/* Document Preview - Show for all modes except select */}
         {pitchMode !== 'select' && uploadedFiles && uploadedFiles.length > 0 && (
@@ -568,20 +430,12 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           </Card>
         )}
 
-        {/* Live Session Mode - Show Orb Interface Immediately */}
+        {/* Live Session Mode - Show LiveKit Interface */}
         {pitchMode === 'live' && (
           <div className="fixed inset-0 z-50 bg-[#171717]">
-            <LiveSessionOrb
-              isConnected={liveSession.isConnected}
-              isRecording={liveSession.isRecording}
-              isAISpeaking={liveSession.isAISpeaking}
+            <LiveSessionLiveKit
               onEndSession={handleEndSession}
-              onStartRecording={liveSession.startRecording}
-              onStopRecording={liveSession.stopRecording}
-              sessionId={sessionId}
               contextFiles={uploadedFiles}
-              contextFileName={uploadedFiles && uploadedFiles.length > 0 ? uploadedFiles[0].filename : undefined}
-              pitchMode="live"
             />
           </div>
         )}
@@ -662,7 +516,6 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                       height={60}
                       barWidth={6}
                       barGap={10}
-                      fadeEdges={false}
                     />
                     <p className="text-2xl font-mono font-bold text-primary">
                       {formatTime(recordingTime)}

@@ -33,12 +33,14 @@ interface LiveSessionOrbProps {
   onStopRecording?: () => void
   contextFileName?: string
   pitchMode?: 'live' | 'recorded'
+  error?: string | null
+  isUserSpeaking?: boolean
 }
 
-export function LiveSessionOrb({ 
-  onEndSession, 
-  onBack, 
-  sessionId, 
+export function LiveSessionOrb({
+  onEndSession,
+  onBack,
+  sessionId,
   contextFiles,
   isConnected = false,
   isRecording = false,
@@ -46,7 +48,9 @@ export function LiveSessionOrb({
   onStartRecording,
   onStopRecording,
   contextFileName,
-  pitchMode = 'live'
+  pitchMode = 'live',
+  error,
+  isUserSpeaking = false
 }: LiveSessionOrbProps) {
   // Three distinct states for orb animation:
   // null (idle) - static orb, no animation
@@ -61,7 +65,7 @@ export function LiveSessionOrb({
   const [isAISpeaking, setIsAISpeaking] = useState(false)
   const [elapsedTime, setElapsedTime] = useState(0)
   const [startTime, setStartTime] = useState<number | null>(null)
-  
+
   // Audio volume refs for orb reactivity
   const inputVolumeRef = useRef<number>(0)
   const outputVolumeRef = useRef<number>(0)
@@ -123,19 +127,19 @@ export function LiveSessionOrb({
       setAgentState('talking')
       setConnectionStatus('Connected')
       setStatusMessage('Talking')
-    } else if (isRecording && micEnabled && !isMuted) {
+    } else if (isRecording && micEnabled && !isMuted && isUserSpeaking) {
       // User is speaking - listening state (animated with input volume)
       setAgentState('listening')
       setConnectionStatus('Connected')
       setStatusMessage('Listening')
       lastActivityRef.current = Date.now()
     } else {
-      // Default idle when mic enabled but not actively recording
+      // Default idle when mic enabled but not actively recording or speaking
       setAgentState(null)
       setConnectionStatus('Connected')
       setStatusMessage('Idle')
     }
-  }, [isConnected, isRecording, isPaused, micEnabled, isMuted, isAISpeaking])
+  }, [isConnected, isRecording, isPaused, micEnabled, isMuted, isAISpeaking, isUserSpeaking])
 
   // Handle connection state changes
   useEffect(() => {
@@ -146,7 +150,7 @@ export function LiveSessionOrb({
       setIsPaused(false)
       setStatusMessage('Idle')
       console.log('[LiveSessionOrb] Connected - microphone enabled')
-      
+
       // Auto-start recording when connected (after small delay for stability)
       const timer = setTimeout(() => {
         if (onStartRecording && !isRecording) {
@@ -195,14 +199,14 @@ export function LiveSessionOrb({
   const handlePause = () => {
     const newPausedState = !isPaused
     setIsPaused(newPausedState)
-    
-    console.log('[LiveSessionOrb] Pause toggled:', { 
-      newPausedState, 
-      isRecording, 
-      micEnabled, 
-      isMuted 
+
+    console.log('[LiveSessionOrb] Pause toggled:', {
+      newPausedState,
+      isRecording,
+      micEnabled,
+      isMuted
     })
-    
+
     // When pausing, stop recording
     if (newPausedState && isRecording) {
       console.log('[LiveSessionOrb] Pausing - stopping recording')
@@ -218,13 +222,13 @@ export function LiveSessionOrb({
   const handleMute = () => {
     const newMutedState = !isMuted
     setIsMuted(newMutedState)
-    
-    console.log('[LiveSessionOrb] Mute toggled:', { 
-      newMutedState, 
-      isRecording, 
-      isPaused 
+
+    console.log('[LiveSessionOrb] Mute toggled:', {
+      newMutedState,
+      isRecording,
+      isPaused
     })
-    
+
     // When muting, stop recording and disable mic
     if (newMutedState) {
       console.log('[LiveSessionOrb] Muting - disabling mic and stopping recording')
@@ -232,7 +236,7 @@ export function LiveSessionOrb({
       if (isRecording) {
         onStopRecording?.()
       }
-    } 
+    }
     // When unmuting, enable mic and start recording if not paused
     else {
       console.log('[LiveSessionOrb] Unmuting - enabling mic and starting recording')
@@ -250,9 +254,9 @@ export function LiveSessionOrb({
 
   // Orb colors - yellowish orange tone with warm gradient
   const orbColors: [string, string] = ['#FFA500', '#FF9500']
-  
+
   const { user } = useUser()
-  
+
   const sidebarUser = {
     name: user?.fullName || 'User',
     email: user?.primaryEmailAddress?.emailAddress || '',
@@ -263,14 +267,14 @@ export function LiveSessionOrb({
     <SidebarProvider>
       <div className="relative w-full h-screen bg-[#171717] flex">
         {/* Use the proper AppSidebar component */}
-        <AppSidebar 
+        <AppSidebar
           user={sidebarUser}
           onNewSession={() => {
             // Handle new session if needed
             console.log('[LiveSessionOrb] New session requested from sidebar')
           }}
         />
-        
+
         {/* Main Content Area */}
         <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-[#171717]">
           {/* Timer at Top Center */}
@@ -290,162 +294,175 @@ export function LiveSessionOrb({
             </div>
           )}
 
-          {/* Connection Status Message */}
+          {/* Connection Status Message or Error */}
           {!isConnected && (
-            <div className="absolute top-[15%] flex items-center justify-center gap-3">
-              <div className="w-5 h-5 border-2 border-t-[#FF6B00] border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin" />
-              <p className="text-[16px] font-medium text-[#f0f0f0]">
-                Connecting to your AI Investor...
-              </p>
+            <div className="absolute top-[15%] flex flex-col items-center justify-center gap-3">
+              {error ? (
+                <>
+                  <div className="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center">
+                    <X className="w-5 h-5 text-red-500" />
+                  </div>
+                  <p className="text-[16px] font-medium text-red-500 text-center max-w-md px-4">
+                    {error}
+                  </p>
+                </>
+              ) : (
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-5 h-5 border-2 border-t-[#FF6B00] border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin" />
+                  <p className="text-[16px] font-medium text-[#f0f0f0]">
+                    Connecting to your AI Investor...
+                  </p>
+                </div>
+              )}
             </div>
           )}
 
-        {/* Main Content Area - Centered Orb */}
-        <div className="flex flex-col items-center justify-center gap-12">
-          {/* Orb Container - 250px exact size with proper opacity */}
-          <div className="w-[250px] h-[250px] flex items-center justify-center">
-            <div className="w-full h-full opacity-90">
-              <Orb
-                colors={orbColors}
-                agentState={!isConnected ? 'thinking' : agentState}
-                getInputVolume={getInputVolume}
-                getOutputVolume={getOutputVolume}
-                className="w-full h-full"
-              />
-            </div>
-          </div>
-
-          {/* Status text and state indicators below orb */}
-          <div className="flex flex-col items-center gap-6">
-            <p className="text-[20px] font-medium text-[#f0f0f0]">
-              {statusMessage}
-            </p>
-            
-            {/* State Indicators - Similar to ElevenLabs design */}
-            {isConnected && (
-              <div className="flex items-center gap-3">
-                {/* Idle State Badge */}
-                <div className={cn(
-                  "px-4 py-2 rounded-lg border transition-all",
-                  agentState === null
-                    ? "bg-[#262626] border-[#404040] text-[#f0f0f0]"
-                    : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                )}>
-                  <span className="text-sm font-medium">Idle</span>
-                </div>
-                
-                {/* Listening State Badge */}
-                <div className={cn(
-                  "px-4 py-2 rounded-lg border transition-all",
-                  agentState === 'listening'
-                    ? "bg-blue-500/10 border-blue-500/30 text-blue-400"
-                    : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                )}>
-                  <span className="text-sm font-medium">Listening</span>
-                </div>
-                
-                {/* Talking State Badge */}
-                <div className={cn(
-                  "px-4 py-2 rounded-lg border transition-all",
-                  agentState === 'talking'
-                    ? "bg-[#FF6B00]/10 border-[#FF6B00]/30 text-[#FF6B00]"
-                    : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                )}>
-                  <span className="text-sm font-medium">Talking</span>
-                </div>
+          {/* Main Content Area - Centered Orb */}
+          <div className="flex flex-col items-center justify-center gap-12">
+            {/* Orb Container - 250px exact size with proper opacity */}
+            <div className="w-[250px] h-[250px] flex items-center justify-center">
+              <div className="w-full h-full opacity-90">
+                <Orb
+                  colors={orbColors}
+                  agentState={!isConnected ? 'thinking' : agentState}
+                  getInputVolume={getInputVolume}
+                  getOutputVolume={getOutputVolume}
+                  className="w-full h-full"
+                />
               </div>
-            )}
-          </div>
-        </div>
+            </div>
 
-        {/* Bottom Control Bar - Fixed at bottom with proper spacing */}
-        <div className="absolute bottom-[60px] left-0 right-0 flex items-center justify-center px-8">
-          <div className="w-full max-w-[1000px] flex items-center justify-between">
-            {/* Left Controls */}
-            <div className="flex items-center gap-4">
-              {/* Pause/Resume Button */}
-              <button
-                onClick={handlePause}
-                disabled={!isConnected}
-                title={isPaused ? "Resume session" : "Pause session"}
-                className={cn(
-                  "h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium",
-                  "border",
-                  !isConnected && "opacity-40 cursor-not-allowed",
-                  isPaused 
-                    ? "bg-[#FF6B00] hover:bg-[#ff7f1a] text-white border-[#FF6B00] shadow-lg shadow-[#FF6B00]/20" 
-                    : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
-                )}
-              >
-                <div className="w-5 h-5 flex items-center justify-center">
-                  {isPaused ? (
-                    <Play className="w-4 h-4" fill="currentColor" />
-                  ) : (
-                    <Pause className="w-4 h-4" fill="currentColor" />
-                  )}
+            {/* Status text and state indicators below orb */}
+            <div className="flex flex-col items-center gap-6">
+              <p className="text-[20px] font-medium text-[#f0f0f0]">
+                {statusMessage}
+              </p>
+
+              {/* State Indicators - Similar to ElevenLabs design */}
+              {isConnected && (
+                <div className="flex items-center gap-3">
+                  {/* Idle State Badge */}
+                  <div className={cn(
+                    "px-4 py-2 rounded-lg border transition-all",
+                    agentState === null
+                      ? "bg-[#262626] border-[#404040] text-[#f0f0f0]"
+                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                  )}>
+                    <span className="text-sm font-medium">Idle</span>
+                  </div>
+
+                  {/* Listening State Badge */}
+                  <div className={cn(
+                    "px-4 py-2 rounded-lg border transition-all",
+                    agentState === 'listening'
+                      ? "bg-blue-500/10 border-blue-500/30 text-blue-400"
+                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                  )}>
+                    <span className="text-sm font-medium">Listening</span>
+                  </div>
+
+                  {/* Talking State Badge */}
+                  <div className={cn(
+                    "px-4 py-2 rounded-lg border transition-all",
+                    agentState === 'talking'
+                      ? "bg-[#FF6B00]/10 border-[#FF6B00]/30 text-[#FF6B00]"
+                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                  )}>
+                    <span className="text-sm font-medium">Talking</span>
+                  </div>
                 </div>
-                <span className="text-[15px]">
-                  {isPaused ? 'Resume' : 'Pause'}
-                </span>
-              </button>
-
-              {/* Mute/Unmute Button */}
-              <button
-                onClick={handleMute}
-                disabled={!isConnected}
-                title={isMuted ? "Unmute microphone" : "Mute microphone"}
-                className={cn(
-                  "h-12 w-12 rounded-lg flex items-center justify-center transition-all relative",
-                  "border",
-                  !isConnected && "opacity-40 cursor-not-allowed",
-                  isMuted
-                    ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border-red-500/30"
-                    : isRecording
-                    ? "bg-green-500/10 hover:bg-green-500/20 text-green-400 border-green-500/30"
-                    : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
-                )}
-              >
-                {/* Recording indicator pulse */}
-                {isRecording && !isMuted && (
-                  <span className="absolute top-1 right-1 flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                  </span>
-                )}
-                {isMuted ? (
-                  <MicOff className="w-5 h-5" />
-                ) : (
-                  <Mic className="w-5 h-5" />
-                )}
-              </button>
-            </div>
-
-            {/* Right Controls */}
-            <div className="flex items-center gap-4">
-              {/* Settings/Help Button */}
-              <button
-                disabled={!isConnected}
-                title="Help"
-                className={cn(
-                  "h-12 w-12 rounded-lg flex items-center justify-center transition-all",
-                  "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border border-[#404040]",
-                  !isConnected && "opacity-40 cursor-not-allowed"
-                )}
-              >
-                <HelpCircle className="w-5 h-5" />
-              </button>
-
-              {/* End Session Button */}
-              <button
-                onClick={handleEndSession}
-                className="h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium bg-red-600/90 hover:bg-red-600 text-white border border-red-600 shadow-lg shadow-red-600/20"
-              >
-                <X className="w-4 h-4" />
-                <span className="text-[15px]">End Session</span>
-              </button>
+              )}
             </div>
           </div>
-        </div>
+
+          {/* Bottom Control Bar - Fixed at bottom with proper spacing */}
+          <div className="absolute bottom-[60px] left-0 right-0 flex items-center justify-center px-8">
+            <div className="w-full max-w-[1000px] flex items-center justify-between">
+              {/* Left Controls */}
+              <div className="flex items-center gap-4">
+                {/* Pause/Resume Button */}
+                <button
+                  onClick={handlePause}
+                  disabled={!isConnected}
+                  title={isPaused ? "Resume session" : "Pause session"}
+                  className={cn(
+                    "h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium",
+                    "border",
+                    !isConnected && "opacity-40 cursor-not-allowed",
+                    isPaused
+                      ? "bg-[#FF6B00] hover:bg-[#ff7f1a] text-white border-[#FF6B00] shadow-lg shadow-[#FF6B00]/20"
+                      : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
+                  )}
+                >
+                  <div className="w-5 h-5 flex items-center justify-center">
+                    {isPaused ? (
+                      <Play className="w-4 h-4" fill="currentColor" />
+                    ) : (
+                      <Pause className="w-4 h-4" fill="currentColor" />
+                    )}
+                  </div>
+                  <span className="text-[15px]">
+                    {isPaused ? 'Resume' : 'Pause'}
+                  </span>
+                </button>
+
+                {/* Mute/Unmute Button */}
+                <button
+                  onClick={handleMute}
+                  disabled={!isConnected}
+                  title={isMuted ? "Unmute microphone" : "Mute microphone"}
+                  className={cn(
+                    "h-12 w-12 rounded-lg flex items-center justify-center transition-all relative",
+                    "border",
+                    !isConnected && "opacity-40 cursor-not-allowed",
+                    isMuted
+                      ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border-red-500/30"
+                      : isRecording
+                        ? "bg-green-500/10 hover:bg-green-500/20 text-green-400 border-green-500/30"
+                        : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
+                  )}
+                >
+                  {/* Recording indicator pulse */}
+                  {isRecording && !isMuted && (
+                    <span className="absolute top-1 right-1 flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                  )}
+                  {isMuted ? (
+                    <MicOff className="w-5 h-5" />
+                  ) : (
+                    <Mic className="w-5 h-5" />
+                  )}
+                </button>
+              </div>
+
+              {/* Right Controls */}
+              <div className="flex items-center gap-4">
+                {/* Settings/Help Button */}
+                <button
+                  disabled={!isConnected}
+                  title="Help"
+                  className={cn(
+                    "h-12 w-12 rounded-lg flex items-center justify-center transition-all",
+                    "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border border-[#404040]",
+                    !isConnected && "opacity-40 cursor-not-allowed"
+                  )}
+                >
+                  <HelpCircle className="w-5 h-5" />
+                </button>
+
+                {/* End Session Button */}
+                <button
+                  onClick={handleEndSession}
+                  className="h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium bg-red-600/90 hover:bg-red-600 text-white border border-red-600 shadow-lg shadow-red-600/20"
+                >
+                  <X className="w-4 h-4" />
+                  <span className="text-[15px]">End Session</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </SidebarInset>
       </div>
     </SidebarProvider>
