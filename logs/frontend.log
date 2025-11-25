@@ -51263,3 +51263,395 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 439ms
  GET / 200 in 682ms
  GET / 200 in 693ms
+ GET / 200 in 332ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1221ms
+ GET / 200 in 2169ms
+ GET / 200 in 2872ms
+ GET / 200 in 1080ms
+ GET / 200 in 1215ms
+ GET / 200 in 5614ms
+ GET / 200 in 1812ms
+ GET / 200 in 1525ms
+ GET / 200 in 3890ms
+ GET / 200 in 4808ms
+ GET / 200 in 3151ms
+ GET / 200 in 4445ms
+ GET / 200 in 1658ms
+ GET / 200 in 1248ms
+ GET / 200 in 1171ms
+ GET / 200 in 1098ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 770ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 680ms
+ GET / 200 in 216ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.160:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1002ms
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.8s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 12050ms
+ GET / 200 in 272ms
+ GET / 200 in 197ms
+ GET / 200 in 217ms
+ GET / 200 in 233ms
+ GET / 200 in 186ms
+ GET / 200 in 228ms
+ GET / 200 in 203ms
+ GET / 200 in 206ms
+ GET / 200 in 249ms
+ GET / 200 in 191ms
+ GET / 200 in 181ms
+ GET / 200 in 411ms
+ POST / 200 in 312ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ GET / 200 in 250ms
+ POST / 303 in 2560ms
+ GET / 200 in 229ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 1426ms
+ GET / 200 in 257ms
+ GET /sign-in 200 in 2520ms
+ GET /sign-in 200 in 187ms
+ GET /sign-in 200 in 200ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.5s
+ GET /dashboard 200 in 7678ms
+ GET /dashboard 200 in 429ms
+ GET / 200 in 422ms
+ GET / 200 in 220ms
+ GET / 200 in 251ms
+ GET / 200 in 258ms
+ GET / 200 in 314ms
+ ✓ Compiled in 1559ms
+ ✓ Compiled in 439ms
+ GET / 200 in 280ms
+ GET / 200 in 371ms
+ ✓ Compiled in 1146ms
+ GET / 200 in 360ms
+ GET / 200 in 290ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 270ms
+ GET / 200 in 276ms
+ GET / 200 in 277ms
+ GET / 200 in 452ms
+ GET / 200 in 283ms
+ GET / 200 in 226ms
+ GET / 200 in 266ms
+ GET / 200 in 194ms
+ GET / 200 in 213ms
+ GET / 200 in 192ms
+ GET / 200 in 203ms
+ GET / 200 in 360ms
+ GET / 200 in 196ms
+ GET / 200 in 238ms
+ ✓ Compiled in 1024ms
+ ✓ Compiled /dashboard in 58ms
+ GET /dashboard 200 in 206ms
+ ✓ Compiled in 585ms
+ GET / 200 in 276ms
+ GET / 200 in 247ms
+ GET / 200 in 226ms
+ GET / 200 in 191ms
+ GET / 200 in 286ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 187ms
+ GET / 200 in 352ms
+ GET / 200 in 253ms
+ GET / 200 in 442ms
+ GET / 200 in 265ms
+ GET / 200 in 334ms
+ GET / 200 in 238ms
+ ✓ Compiled in 1258ms
+ GET / 200 in 756ms
+ ✓ Compiled in 893ms
+ GET / 200 in 707ms
+ ✓ Compiled in 1772ms
+ ✓ Compiled in 1406ms
+ GET / 200 in 561ms
+ GET / 200 in 438ms
+ GET / 200 in 767ms
+ GET / 200 in 619ms
+ ✓ Compiled in 1311ms
+ GET / 200 in 289ms
+ GET / 200 in 261ms
+ GET / 200 in 267ms
+ GET / 200 in 426ms
+ GET / 200 in 455ms
+ GET / 200 in 248ms
+ GET / 200 in 263ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 268ms
+ GET / 200 in 645ms
+ GET / 200 in 557ms
+ GET / 200 in 348ms
+ GET / 200 in 267ms
+ GET / 200 in 286ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1523ms
+ GET / 200 in 933ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 529ms
+ GET / 200 in 546ms
+ GET / 200 in 928ms
+ GET / 200 in 411ms
+ GET / 200 in 424ms
+ GET / 200 in 796ms
+ GET / 200 in 1061ms
+ GET / 200 in 394ms
+ GET / 200 in 363ms
+ GET / 200 in 372ms
+ GET / 200 in 432ms
+ GET / 200 in 623ms
+ GET / 200 in 471ms
+ GET / 200 in 853ms
+ GET / 200 in 563ms
+ GET / 200 in 451ms
+ GET / 200 in 1617ms
+ GET /dashboard 200 in 5143ms
+ POST /dashboard 200 in 151ms
+ ○ Compiling /favicon.ico ...
+ POST /dashboard 200 in 347ms
+ ✓ Compiled /favicon.ico in 1744ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2203ms
+ GET / 200 in 328ms
+ GET / 200 in 294ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 313ms
+ GET / 200 in 323ms
+ GET /sign-in 200 in 358ms
+ GET /dashboard 200 in 368ms
+ GET /dashboard 200 in 248ms
+ GET /dashboard 200 in 232ms
+ POST /dashboard 200 in 156ms
+ POST /dashboard 200 in 240ms
+ GET / 200 in 447ms
+ GET / 200 in 276ms
+ GET /sign-in 200 in 237ms
+ GET /dashboard 200 in 227ms
+ GET /dashboard 200 in 239ms
+ GET / 200 in 325ms
+ GET / 200 in 326ms
+ GET / 200 in 282ms
+ GET / 200 in 235ms
+ GET / 200 in 226ms
+ GET / 200 in 216ms
+ GET / 200 in 223ms
+ GET / 200 in 245ms
+ GET / 200 in 224ms
+ GET / 200 in 312ms
+ GET / 200 in 242ms
+ GET / 200 in 226ms
+ GET / 200 in 215ms
+ GET / 200 in 245ms
+ GET / 200 in 231ms
+ GET / 200 in 284ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 289ms
+ GET / 200 in 552ms
+ GET / 200 in 228ms
+ GET / 200 in 303ms
+ GET / 200 in 345ms
+ GET / 200 in 318ms
+ GET / 200 in 217ms
+ ✓ Compiled in 697ms
+ GET / 200 in 357ms
+ ✓ Compiled in 580ms
+ ✓ Compiled /dashboard in 170ms
+ GET /dashboard 200 in 625ms
+ GET / 200 in 231ms
+ ✓ Compiled in 1238ms
+ GET / 200 in 222ms
+ GET / 200 in 229ms
+ ✓ Compiled in 834ms
+ GET / 200 in 212ms
+ GET / 200 in 259ms
+ GET / 200 in 311ms
+ GET / 200 in 235ms
+ GET /dashboard 200 in 431ms
+ GET /dashboard 200 in 404ms
+ GET / 200 in 232ms
+ GET /dashboard 200 in 154ms
+ GET /dashboard 200 in 133ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.160:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1407ms
+ ✓ Ready in 3.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.3s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 14654ms
+ GET / 200 in 495ms
+ GET / 200 in 221ms
+ POST / 200 in 169ms
+ POST / 200 in 185ms
+ ✓ Compiled /favicon.ico in 457ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 869ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1488ms
+ GET /sign-in 200 in 2528ms
+ GET / 200 in 308ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 6.6s
+ GET /dashboard 200 in 7232ms
+ POST /dashboard 200 in 202ms
+ POST /dashboard 200 in 120ms
+ GET / 200 in 274ms
+ GET / 200 in 341ms
+ GET / 200 in 215ms
+ GET / 200 in 232ms
+ GET / 200 in 230ms
+ GET / 200 in 346ms
+ GET / 200 in 350ms
+ GET /dashboard 200 in 252ms
+ POST /dashboard 200 in 178ms
+ POST /dashboard 200 in 98ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 342ms
+ GET / 200 in 226ms
+ GET / 200 in 253ms
+ GET / 200 in 211ms
+ GET / 200 in 222ms
+ ✓ Compiled in 948ms
+ GET / 200 in 396ms
+ GET /dashboard 200 in 1242ms
+ GET /dashboard 200 in 311ms
+ POST /dashboard 200 in 154ms
+ POST /dashboard 200 in 88ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 400ms
+ GET / 200 in 198ms
+ GET / 200 in 239ms
+ GET /sign-in 200 in 328ms
+ POST /sign-in 200 in 160ms
+ POST /sign-in 200 in 322ms
+ GET /dashboard 200 in 227ms
+ GET / 200 in 206ms
+ GET /dashboard 200 in 141ms
+ GET /dashboard 200 in 112ms
+ GET / 200 in 216ms
+ GET / 200 in 217ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 232ms
+ GET / 200 in 217ms
+ GET / 200 in 232ms
+ GET / 200 in 389ms
+ GET / 200 in 268ms
+ GET / 200 in 223ms
+ GET / 200 in 226ms
+ ✓ Compiled in 681ms
+ GET / 200 in 218ms
+ GET / 200 in 336ms
+ GET / 200 in 369ms
+ GET / 200 in 270ms
+ GET / 200 in 221ms
+ GET / 200 in 224ms
+ GET / 200 in 217ms
+ GET / 200 in 356ms
+ GET / 200 in 238ms
+ GET / 200 in 215ms
+ GET / 200 in 230ms
+ GET / 200 in 236ms
+ GET / 200 in 270ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 333ms

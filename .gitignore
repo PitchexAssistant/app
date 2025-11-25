@@ -30,6 +30,9 @@ TEST-RESULTS.md
 INTEGRATION.md
 FIGMA-INTEGRATION.md
 backend-architecture-specification.md
+COMPLETE-ARCHITECTURE.md
+DIRECTORY-TREE.md
+open_router_models.txt
 
 # Test Files
 *.mp3
@@ -77,3 +80,4 @@ node_modules/
 .next/
 out/
 dist/
+

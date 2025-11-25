@@ -1,6 +1,8 @@
 "use client"
 
 import { useEffect } from "react"
+import { EmotionTrendChart } from './charts/emotion-trend-chart'
+import { PerformanceRadarChart } from './charts/performance-radar-chart'
 
 interface ResultsPageProps {
   transcript: string
@@ -12,7 +14,18 @@ interface ResultsPageProps {
       clarity?: number
       confidence?: number
       engagement?: number
+      persuasiveness?: number
+      structure?: number
+      delivery?: number
     }
+    emotionTrend?: Array<{
+      timestamp: number
+      joy: number
+      confidence: number
+      nervousness: number
+      anger: number
+      surprise: number
+    }>
   }
 }
 
@@ -26,12 +39,12 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
     <div className="flex flex-col h-full bg-[#171717]">
       {/* Back Button - Aligned with content */}
       <div className="px-[32px] pt-[32px] pb-[16px]">
-        <button 
+        <button
           className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#262626] hover:bg-[#2c2c33] transition-colors cursor-pointer"
           onClick={() => window.history.back()}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="#f0f0f0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M15 18l-6-6 6-6" stroke="#f0f0f0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
       </div>
@@ -44,7 +57,7 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
             <h2 className="font-['Inter'] font-bold text-[18px] text-[#f0f0f0] leading-[28px]">
               Summary
             </h2>
-            
+
             <div className="bg-[#171717] rounded-[16px] p-[12px] flex-1 overflow-y-auto">
               <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e] leading-[24px] whitespace-pre-wrap">
                 {analysis.summary || 'Processing your pitch analysis...'}
@@ -93,13 +106,35 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
           </div>
         </div>
 
+        {/* Charts Section */}
+        <div className="flex-1 flex flex-col gap-[32px]">
+          {/* Emotion Trend Chart */}
+          {analysis.emotionTrend && analysis.emotionTrend.length > 0 && (
+            <EmotionTrendChart data={analysis.emotionTrend} />
+          )}
+
+          {/* Performance Radar Chart */}
+          {analysis.scores && (
+            <PerformanceRadarChart
+              data={{
+                clarity: analysis.scores.clarity || 0,
+                confidence: analysis.scores.confidence || 0,
+                persuasiveness: analysis.scores.persuasiveness || 0,
+                structure: analysis.scores.structure || 0,
+                delivery: analysis.scores.delivery || 0,
+                engagement: analysis.scores.engagement || 0,
+              }}
+            />
+          )}
+        </div>
+
         {/* Analysis & Feedback Section */}
         <div className="w-[456px]">
           <div className="bg-[#262626] rounded-[24px] p-[24px] flex flex-col gap-[20px] h-full">
             <h2 className="font-['Inter'] font-bold text-[18px] text-[#f0f0f0] leading-[28px]">
               Analysis & Feedback
             </h2>
-            
+
             <div className="flex flex-col gap-[16px] overflow-y-auto flex-1">
               {analysis.feedback_items && analysis.feedback_items.length > 0 ? (
                 analysis.feedback_items.map((feedback, index) => (

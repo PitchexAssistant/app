@@ -22696,3 +22696,520 @@ INFO:     127.0.0.1:49046 - "PATCH /api/v1/sessions/session_55_1763978420?user_i
 INFO:     127.0.0.1:49046 - "OPTIONS /api/v1/sessions/session_55_1763978420/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
 INFO:     127.0.0.1:49044 - "POST /api/v1/sessions/session_55_1763978420/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
 INFO:     127.0.0.1:45910 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42742 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48346 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40636 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40638 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40638 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40646 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     ::1:0 - "GET /api/v1/live/token?room=default-room&username=user-mj1im HTTP/1.1" 200 OK
+INFO:     ::1:0 - "GET /api/v1/live/token?room=default-room&username=user-rm9k2q HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52190 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52202 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49158 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60930 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40378 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57238 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42954 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38852 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46874 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55088 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39574 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39586 - "OPTIONS /api/v1/sessions/session_56_1763987622?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39588 - "PATCH /api/v1/sessions/session_56_1763987622?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39588 - "OPTIONS /api/v1/sessions/session_56_1763987622/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39586 - "POST /api/v1/sessions/session_56_1763987622/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33550 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57314 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45928 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55484 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43030 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32820 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58100 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-25T12:44:04.987189Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [321619]
+INFO:     Stopping reloader process [316255]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [20393] using WatchFiles
+INFO:     Started server process [20406]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-25T14:37:16.379190Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T14:37:16.379359Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T14:37:22.563171Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-25T14:37:22.563276Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T14:37:22.563429Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T14:37:22.563511Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-25T14:37:22.563561Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T14:37:22.566571Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T14:37:22.566634Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47558 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53318 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41870 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54922 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33212 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50390 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58600 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37192 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59316 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37064 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46274 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44608 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44614 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44630 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44614 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44634 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44614 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44630 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35338 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35350 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55366 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60560 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49204 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42414 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51502 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57640 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50082 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52546 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59126 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34468 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45464 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39044 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52392 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44916 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59860 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55548 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45456 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45804 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51204 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44402 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57756 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50718 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52324 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54190 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47154 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47272 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47276 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34188 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42190 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57048 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41748 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56784 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52752 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47234 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44902 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36012 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39530 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36982 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36688 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34494 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38036 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35456 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55576 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60926 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51032 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50556 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36324 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60566 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56910 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39990 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-25T15:10:51.259913Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20406]
+INFO:     Stopping reloader process [20393]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [36866] using WatchFiles
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 6, in <module>
+    from core.config import settings
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/core/__init__.py", line 4, in <module>
+    from .config import settings, get_settings
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/core/config.py", line 62, in <module>
+    settings = get_settings()
+               ^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/core/config.py", line 59, in get_settings
+    return Settings()
+           ^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/pydantic_settings/main.py", line 152, in __init__
+    super().__init__(
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for Settings
+REASONING_LLM_API_KEY
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sk-or-v1-6f99f23f0203876...70ab39d16d6d13cf741d631', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.9/v/extra_forbidden
+EMOTION_DETECTION_LLM_API_KEY
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sk-or-v1-d1a54ec05438d21...ce9bbe5db2fed4ceac1c6d0', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.9/v/extra_forbidden
+BACKUP_1_API_KEY
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sk-or-v1-10c30287e994c66...cc521302caf20b140b6955d', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.9/v/extra_forbidden
+BACKUP_2_API_KEY
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sk-or-v1-9d3b6cd40476935...90769b01f7a5daa56b1c088', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.9/v/extra_forbidden
+INFO:     Stopping reloader process [36866]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [48585] using WatchFiles
+INFO:     Started server process [48598]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-25T15:35:17.221009Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T15:35:17.221167Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T15:35:19.258893Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-25T15:35:19.259026Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T15:35:19.259300Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T15:35:19.259482Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-25T15:35:19.259592Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T15:35:19.270937Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T15:35:19.276174Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:46834 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46838 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51856 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59086 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52470 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40442 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38998 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32822 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35264 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55714 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39268 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56140 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49462 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43406 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39458 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58876 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35062 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35646 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50846 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46388 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46390 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46394 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46394 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46390 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46394 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47828 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56106 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40722 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39626 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39630 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39638 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59698 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59698 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59686 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59194 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59200 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59194 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59206 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59194 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"filename": "recording.mp3", "content_type": "audio/webm", "size": 126842, "event": "transcribe_request", "timestamp": "2025-11-25T15:46:50.976036Z", "level": "info"}
+{"event": "initializing_stt_client", "timestamp": "2025-11-25T15:46:50.976370Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-25T15:46:50.982141Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-25T15:46:50.982282Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-25T15:46:50.982359Z", "level": "warning"}
+{"audio_size": 126842, "event": "attempting_offline_transcription", "timestamp": "2025-11-25T15:46:50.982427Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-25T15:46:50.983841Z", "level": "info"}
+{"transcript_length": 83, "method": "google_free_api", "transcript": "hello hello 12311 hello hello so what you need is to about the number one saying is", "event": "offline_transcription_success", "timestamp": "2025-11-25T15:46:55.301274Z", "level": "info"}
+INFO:     127.0.0.1:53652 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53652 - "OPTIONS /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+{"session_id": "session_61_1764085600", "transcript_length": 83, "duration": 7, "event": "analyze_pitch_request", "timestamp": "2025-11-25T15:46:55.311834Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T15:46:55.312071Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T15:46:55.312135Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T15:46:55.312198Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T15:46:56.456896Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2025-11-25T15:46:56.502881Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.8935, "session_id": "session_61_1764085600", "event": "emotion_analyzed", "timestamp": "2025-11-25T15:46:57.200278Z", "level": "info"}
+{"dominant_emotion": "neutral", "confidence": 0.8935, "event": "emotion_analyzed", "timestamp": "2025-11-25T15:46:57.200496Z", "level": "info"}
+{"emotion": "neutral", "stage_detected": "introduction", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-25T15:46:57.201113Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 1.770165135s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 1\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-25T15:46:58.305209Z", "level": "error"}
+{"response_length": 1671, "event": "analysis_generated", "timestamp": "2025-11-25T15:46:58.305374Z", "level": "info"}
+{"error": "Expecting property name enclosed in double quotes: line 2 column 3 (char 4)", "event": "failed_to_parse_json_response", "timestamp": "2025-11-25T15:46:58.305714Z", "level": "warning"}
+{"session_id": "session_61_1764085600", "feedback_count": 7, "overall_score": 75, "event": "analysis_complete", "timestamp": "2025-11-25T15:46:58.305851Z", "level": "info"}
+INFO:     127.0.0.1:53656 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45630 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60978 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60982 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60978 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60982 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46174 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44592 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37488 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36404 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56858 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41576 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37954 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47378 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59932 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57136 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58656 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60902 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55484 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47406 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40434 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57136 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51652 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47432 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38012 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51578 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35914 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59078 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49078 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53914 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58522 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40118 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33670 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59144 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47592 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59320 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59310 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59312 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59320 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "recording.mp3", "content_type": "audio/webm", "size": 33792, "event": "transcribe_request", "timestamp": "2025-11-25T16:02:50.495264Z", "level": "info"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-25T16:02:50.495400Z", "level": "warning"}
+{"audio_size": 33792, "event": "attempting_offline_transcription", "timestamp": "2025-11-25T16:02:50.495479Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-25T16:02:50.495911Z", "level": "info"}
+{"transcript_length": 29, "method": "google_free_api", "transcript": "hello hello hello hello hello", "event": "offline_transcription_success", "timestamp": "2025-11-25T16:02:52.475002Z", "level": "info"}
+INFO:     127.0.0.1:59312 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59312 - "OPTIONS /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+{"session_id": "session_63_1764086565", "transcript_length": 29, "duration": 2, "event": "analyze_pitch_request", "timestamp": "2025-11-25T16:02:52.482954Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.8619, "session_id": "session_63_1764086565", "event": "emotion_analyzed", "timestamp": "2025-11-25T16:02:52.520928Z", "level": "info"}
+{"dominant_emotion": "neutral", "confidence": 0.8619, "event": "emotion_analyzed", "timestamp": "2025-11-25T16:02:52.521035Z", "level": "info"}
+{"emotion": "neutral", "stage_detected": "introduction", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-25T16:02:52.521557Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 6.514306475s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 6\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-25T16:02:53.605843Z", "level": "error"}
+{"response_length": 1671, "event": "analysis_generated", "timestamp": "2025-11-25T16:02:53.606015Z", "level": "info"}
+{"error": "Expecting property name enclosed in double quotes: line 2 column 3 (char 4)", "event": "failed_to_parse_json_response", "timestamp": "2025-11-25T16:02:53.606172Z", "level": "warning"}
+{"session_id": "session_63_1764086565", "feedback_count": 7, "overall_score": 75, "event": "analysis_complete", "timestamp": "2025-11-25T16:02:53.606287Z", "level": "info"}
+INFO:     127.0.0.1:45954 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45954 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45956 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45958 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45956 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45956 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45958 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45958 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59760 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54420 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54432 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54432 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54420 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-25T16:03:34.464897Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [48598]
+INFO:     Stopping reloader process [48585]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [61157] using WatchFiles
+INFO:     Started server process [61170]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-25T16:03:56.727112Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T16:03:56.727305Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T16:03:58.052118Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-25T16:03:58.052242Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T16:03:58.052405Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T16:03:58.052471Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-25T16:03:58.052534Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T16:03:58.057366Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T16:03:58.057457Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:43736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2025-11-25T16:06:53.524201Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61170]
+INFO:     Stopping reloader process [61157]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [64325] using WatchFiles
+INFO:     Started server process [64338]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2025-11-25T16:08:53.485114Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T16:08:53.485293Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T16:08:54.672028Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2025-11-25T16:08:54.672254Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T16:08:54.672418Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T16:08:54.672488Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2025-11-25T16:08:54.672607Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T16:08:54.678225Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2025-11-25T16:08:54.678294Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55874 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56126 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42958 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49706 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49710 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49710 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49706 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49710 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49710 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49706 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36110 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36112 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39758 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59966 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52850 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36862 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46132 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51476 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51488 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51476 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51476 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47222 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58654 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53600 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42902 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50448 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36582 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36588 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36582 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45988 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45992 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "piching_test.mp3", "content_type": "audio/mpeg", "size": 2666277, "event": "transcribe_request", "timestamp": "2025-11-25T16:16:30.194200Z", "level": "info"}
+{"event": "initializing_stt_client", "timestamp": "2025-11-25T16:16:30.194341Z", "level": "info"}
+{"error": "File  was not found.", "event": "stt_initialization_failed", "timestamp": "2025-11-25T16:16:30.195078Z", "level": "error"}
+{"event": "running_without_google_cloud_stt", "timestamp": "2025-11-25T16:16:30.195156Z", "level": "warning"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-25T16:16:30.195230Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2025-11-25T16:16:30.195276Z", "level": "info"}
+{"from_format": "mp3", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-25T16:16:30.197306Z", "level": "info"}
+{"transcript_length": 1934, "method": "google_free_api", "transcript": "good morning a few years ago I went back to my grandfather's hometown he always told me stories abou...", "event": "offline_transcription_success", "timestamp": "2025-11-25T16:17:26.473285Z", "level": "info"}
+INFO:     127.0.0.1:50550 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54184 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54184 - "OPTIONS /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+{"session_id": "session_68_1764087380", "transcript_length": 1934, "duration": 0, "event": "analyze_pitch_request", "timestamp": "2025-11-25T16:17:26.489058Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2025-11-25T16:17:26.489229Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2025-11-25T16:17:26.489292Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2025-11-25T16:17:26.489350Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2025-11-25T16:17:28.008081Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2025-11-25T16:17:28.024952Z", "level": "info"}
+{"dominant": "anger", "confidence": 0.3604, "session_id": "session_68_1764087380", "event": "emotion_analyzed", "timestamp": "2025-11-25T16:17:28.152973Z", "level": "info"}
+{"dominant_emotion": "anger", "confidence": 0.3604, "event": "emotion_analyzed", "timestamp": "2025-11-25T16:17:28.153064Z", "level": "info"}
+{"emotion": "anger", "stage_detected": "introduction", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-25T16:17:28.153823Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 30.269364935s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 30\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-25T16:17:29.771790Z", "level": "error"}
+{"response_length": 354, "event": "analysis_generated", "timestamp": "2025-11-25T16:17:29.771904Z", "level": "info"}
+{"error": "No JSON found in response", "event": "failed_to_parse_json_response", "timestamp": "2025-11-25T16:17:29.772116Z", "level": "warning"}
+{"session_id": "session_68_1764087380", "feedback_count": 6, "overall_score": 75, "event": "analysis_complete", "timestamp": "2025-11-25T16:17:29.772206Z", "level": "info"}
+INFO:     127.0.0.1:49856 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49522 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49536 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49536 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49522 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58042 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"filename": "recording.mp3", "content_type": "audio/webm", "size": 37004, "event": "transcribe_request", "timestamp": "2025-11-25T16:17:50.399368Z", "level": "info"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-25T16:17:50.399474Z", "level": "warning"}
+{"audio_size": 37004, "event": "attempting_offline_transcription", "timestamp": "2025-11-25T16:17:50.399555Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-25T16:17:50.399956Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2025-11-25T16:17:51.649434Z", "level": "warning"}
+INFO:     127.0.0.1:54126 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+{"session_id": "session_69_1764087464", "transcript_length": 0, "duration": 2, "event": "analyze_pitch_request", "timestamp": "2025-11-25T16:17:51.655423Z", "level": "info"}
+{"dominant_emotion": "neutral", "confidence": 1.0, "event": "emotion_analyzed", "timestamp": "2025-11-25T16:17:51.655647Z", "level": "info"}
+{"emotion": "neutral", "stage_detected": "market", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-25T16:17:51.656040Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 8.177186868s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 8\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-25T16:17:51.863463Z", "level": "error"}
+{"response_length": 1671, "event": "analysis_generated", "timestamp": "2025-11-25T16:17:51.863612Z", "level": "info"}
+{"error": "Expecting property name enclosed in double quotes: line 2 column 3 (char 4)", "event": "failed_to_parse_json_response", "timestamp": "2025-11-25T16:17:51.863745Z", "level": "warning"}
+{"session_id": "session_69_1764087464", "feedback_count": 7, "overall_score": 75, "event": "analysis_complete", "timestamp": "2025-11-25T16:17:51.863841Z", "level": "info"}
+INFO:     127.0.0.1:54126 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54132 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50342 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50358 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50358 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50342 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47670 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40210 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43628 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44312 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53896 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32806 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60678 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47198 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41038 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41134 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42564 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42572 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36646 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "piching_test.mp3", "content_type": "audio/mpeg", "size": 2666277, "event": "transcribe_request", "timestamp": "2025-11-25T16:24:03.560731Z", "level": "info"}
+{"event": "stt_client_not_available_using_mock", "timestamp": "2025-11-25T16:24:03.560888Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2025-11-25T16:24:03.560952Z", "level": "info"}
+{"from_format": "mp3", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2025-11-25T16:24:03.563105Z", "level": "info"}
+{"transcript_length": 1934, "method": "google_free_api", "transcript": "good morning a few years ago I went back to my grandfather's hometown he always told me stories abou...", "event": "offline_transcription_success", "timestamp": "2025-11-25T16:24:54.183977Z", "level": "info"}
+INFO:     127.0.0.1:47078 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36648 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+{"session_id": "session_71_1764087832", "transcript_length": 1934, "duration": 0, "event": "analyze_pitch_request", "timestamp": "2025-11-25T16:24:54.196111Z", "level": "info"}
+{"dominant": "anger", "confidence": 0.3604, "session_id": "session_71_1764087832", "event": "emotion_analyzed", "timestamp": "2025-11-25T16:24:54.323712Z", "level": "info"}
+{"dominant_emotion": "anger", "confidence": 0.3604, "event": "emotion_analyzed", "timestamp": "2025-11-25T16:24:54.323838Z", "level": "info"}
+{"emotion": "anger", "stage_detected": "introduction", "is_business_related": true, "has_document_context": false, "event": "generating_emotion_aware_response", "timestamp": "2025-11-25T16:24:54.324707Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 4.715204805s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 4\n}\n]", "event": "gemini_generation_error", "timestamp": "2025-11-25T16:24:55.413324Z", "level": "error"}
+{"response_length": 354, "event": "analysis_generated", "timestamp": "2025-11-25T16:24:55.413435Z", "level": "info"}
+{"error": "No JSON found in response", "event": "failed_to_parse_json_response", "timestamp": "2025-11-25T16:24:55.413512Z", "level": "warning"}
+{"session_id": "session_71_1764087832", "feedback_count": 6, "overall_score": 75, "event": "analysis_complete", "timestamp": "2025-11-25T16:24:55.413619Z", "level": "info"}
+INFO:     127.0.0.1:36648 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33106 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44584 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37526 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44148 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53560 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48776 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56738 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52200 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39838 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55328 - "GET /api/v1/health HTTP/1.1" 200 OK

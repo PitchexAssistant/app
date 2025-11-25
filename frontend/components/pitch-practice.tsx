@@ -46,7 +46,9 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
   const [selectedFileIndex, setSelectedFileIndex] = useState(0);
   const [hoveredFileIndex, setHoveredFileIndex] = useState<number | null>(null);
   const [startTime] = useState<Date>(new Date());
+  const [audioMode, setAudioMode] = useState<'none' | 'record' | 'upload'>('none');
   const [uploadedAudioFile, setUploadedAudioFile] = useState<File | null>(null);
+  const [uploadedAudioURL, setUploadedAudioURL] = useState<string | null>(null);
   const [isUploadingAudio, setIsUploadingAudio] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
 
@@ -143,8 +145,117 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // Validate audio file
+  const validateAudioFile = (file: File): boolean => {
+    // Check file type
+    const validTypes = ['audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/wave', 'audio/x-wav'];
+    const validExtensions = /\.(mp3|wav)$/i;
+
+    if (!validTypes.includes(file.type) && !file.name.match(validExtensions)) {
+      setUploadError('Please upload only MP3 or WAV files');
+      return false;
+    }
+
+    // Check file size (max 10MB)
+    if (file.size > 10 * 1024 * 1024) {
+      setUploadError('File size must be less than 10MB');
+      return false;
+    }
+
+    return true;
+  };
+
+  // Handle audio file selection
+  const handleAudioFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    setUploadError(null);
+
+    if (!validateAudioFile(file)) {
+      return;
+    }
+
+    // Set upload mode and store file
+    setAudioMode('upload');
+    setUploadedAudioFile(file);
+    setUploadedAudioURL(URL.createObjectURL(file));
+
+    // Clear any existing recording
+    if (audioBlob) {
+      resetRecording();
+    }
+  };
+
+  // Handle removing audio (upload or recording)
+  const handleRemoveAudio = () => {
+    if (audioMode === 'upload') {
+      if (uploadedAudioURL) {
+        URL.revokeObjectURL(uploadedAudioURL);
+      }
+      setUploadedAudioFile(null);
+      setUploadedAudioURL(null);
+      setUploadError(null);
+    } else if (audioMode === 'record') {
+      resetRecording();
+    }
+    setAudioMode('none');
+    setError(null);
+  };
+
+  // Handle proceed with uploaded audio
+  const handleProceedWithUpload = async () => {
+    if (!uploadedAudioFile) return;
+
+    setIsProcessing(true);
+    setError(null);
+
+    try {
+      // Process uploaded audio through STT pipeline
+      const result = await api.pipeline.processAudio(
+        uploadedAudioFile,
+        sessionId,
+        messages.map(m => ({ role: m.role, content: m.content }))
+      );
+
+      // Add user message
+      const userMessage: Message = {
+        role: 'user',
+        content: result.transcript,
+        emotion: result.emotion,
+        timestamp: new Date(),
+      };
+
+      // Add assistant response
+      const assistantMessage: Message = {
+        role: 'assistant',
+        content: result.response,
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, userMessage, assistantMessage]);
+      setCurrentEmotion(result.emotion);
+
+      // Clear uploaded audio after processing
+      handleRemoveAudio();
+    } catch (err: any) {
+      console.error('Failed to process uploaded audio:', err);
+      setError(err.message || 'Failed to process audio');
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
   const handleEndSession = async () => {
     try {
+      // Stop any active recording first to prevent AudioContext errors
+      if (isRecording || audioBlob) {
+        resetRecording();
+        // Wait a bit for the MediaRecorder.onstop handler to complete
+        // This prevents race condition with component unmount
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
       // Calculate duration
       const duration = Math.floor((new Date().getTime() - startTime.getTime()) / 1000);
 
@@ -175,6 +286,17 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
 
   const handleStartRecording = async () => {
     setError(null);
+    setAudioMode('record');
+
+    // Clear any uploaded audio
+    if (uploadedAudioFile) {
+      if (uploadedAudioURL) {
+        URL.revokeObjectURL(uploadedAudioURL);
+      }
+      setUploadedAudioFile(null);
+      setUploadedAudioURL(null);
+    }
+
     await startRecording();
   };
 
@@ -243,30 +365,6 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     } finally {
       setIsProcessing(false);
     }
-  };
-
-  const handleAudioFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (!file) return;
-
-    // Validate file type
-    const allowedTypes = ['audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/wave', 'audio/x-wav'];
-    if (!allowedTypes.includes(file.type) && !file.name.match(/\.(mp3|wav)$/i)) {
-      setUploadError('Please upload only MP3 or WAV audio files.');
-      event.target.value = ''; // Reset input
-      return;
-    }
-
-    // Validate file size (max 10MB)
-    const maxSize = 10 * 1024 * 1024; // 10MB
-    if (file.size > maxSize) {
-      setUploadError('File size must be less than 10MB.');
-      event.target.value = ''; // Reset input
-      return;
-    }
-
-    setUploadError(null);
-    setUploadedAudioFile(file);
   };
 
   const handleProcessUploadedAudio = async () => {
@@ -442,18 +540,18 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
 
 
 
-        {/* Record Mode */}
+        {/* Record Mode - Now supports both recording and uploading */}
         {pitchMode === 'record' && (
           <>
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  <span>Record Your Pitch</span>
+                  <span>Analysis & Feedback</span>
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => {
-                      resetRecording();
+                      handleRemoveAudio();
                       setPitchMode('select');
                     }}
                   >
@@ -461,87 +559,141 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
                   </Button>
                 </CardTitle>
                 <CardDescription>
-                  Click the microphone to start recording. Your speech will be analyzed for emotions and coaching feedback.
+                  Record your pitch or upload an audio file for AI analysis and coaching feedback
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex items-center justify-center gap-4">
-                  {!isRecording ? (
-                    <Button
-                      size="lg"
-                      onClick={handleStartRecording}
-                      className="h-16 w-16 rounded-full"
-                      disabled={isProcessing}
-                    >
-                      <Mic className="h-6 w-6" />
-                    </Button>
-                  ) : (
-                    <Button
-                      size="lg"
-                      variant="destructive"
-                      onClick={handleStopRecording}
-                      className="h-16 w-16 rounded-full animate-pulse"
-                    >
-                      <Square className="h-6 w-6" />
-                    </Button>
-                  )}
-
-                  {audioBlob && !isRecording && (
-                    <Button
-                      size="lg"
-                      onClick={handleSendRecording}
-                      disabled={isProcessing}
-                      className="gap-2"
-                    >
-                      {isProcessing ? (
-                        <>
-                          <Loader2 className="h-4 w-4 animate-spin" />
-                          Processing...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="h-4 w-4" />
-                          Analyze Pitch
-                        </>
-                      )}
-                    </Button>
-                  )}
-                </div>
-
-                {isRecording && (
-                  <div className="text-center space-y-4">
-                    <LiveWaveform
-                      active={isRecording}
-                      barColor="#ff6b00"
-                      height={60}
-                      barWidth={6}
-                      barGap={10}
-                    />
-                    <p className="text-2xl font-mono font-bold text-primary">
-                      {formatTime(recordingTime)}
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">Recording...</p>
+                {/* Show errors */}
+                {(error || uploadError) && (
+                  <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-lg text-red-500 text-sm">
+                    {error || uploadError}
                   </div>
                 )}
 
-                {audioBlob && !isRecording && (
-                  <div className="text-center space-y-3">
-                    <div className="flex items-center justify-center gap-2">
-                      <p className="text-sm text-muted-foreground">
-                        Recording ready • {formatTime(recordingTime)}
-                      </p>
-                      <button
-                        onClick={() => {
-                          resetRecording();
-                          setError(null);
-                        }}
-                        className="p-1.5 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
-                        title="Delete recording"
+                {/* Initial State - Show both record and upload options */}
+                {audioMode === 'none' && !isRecording && (
+                  <div className="space-y-4">
+                    <p className="text-center text-muted-foreground">
+                      Press to record or upload
+                    </p>
+                    <div className="flex items-center justify-center gap-4">
+                      <Button
+                        size="lg"
+                        onClick={handleStartRecording}
+                        disabled={isProcessing}
+                        className="gap-2"
                       >
-                        <X className="h-3.5 w-3.5 text-white" />
-                      </button>
+                        <Mic className="h-5 w-5" />
+                        Record
+                      </Button>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        onClick={() => document.getElementById('audio-upload-input')?.click()}
+                        disabled={isProcessing}
+                        className="gap-2"
+                      >
+                        <Upload className="h-5 w-5" />
+                        Upload Audio
+                      </Button>
                     </div>
-                    <audio src={URL.createObjectURL(audioBlob)} controls className="mx-auto" />
+                    <input
+                      id="audio-upload-input"
+                      type="file"
+                      accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
+                      onChange={handleAudioFileSelect}
+                      className="hidden"
+                    />
+                  </div>
+                )}
+
+                {/* Recording State */}
+                {audioMode === 'record' && isRecording && (
+                  <div className="space-y-4">
+                    <div className="text-center space-y-4">
+                      <LiveWaveform
+                        active={isRecording}
+                        barColor="#ff6b00"
+                        height={60}
+                        barWidth={6}
+                        barGap={10}
+                      />
+                      <p className="text-2xl font-mono font-bold text-primary">
+                        {formatTime(recordingTime)}
+                      </p>
+                      <p className="text-sm text-muted-foreground">Recording...</p>
+                    </div>
+                    <div className="flex justify-center">
+                      <Button
+                        size="lg"
+                        variant="destructive"
+                        onClick={handleStopRecording}
+                        className="h-16 w-16 rounded-full animate-pulse"
+                      >
+                        <Square className="h-6 w-6" />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Audio Ready State (Recorded or Uploaded) */}
+                {audioMode !== 'none' && !isRecording && (audioBlob || uploadedAudioFile) && (
+                  <div className="space-y-4">
+                    <div className="text-center space-y-3">
+                      <div className="flex items-center justify-center gap-2">
+                        <p className="text-sm text-muted-foreground">
+                          {audioMode === 'record'
+                            ? `Recording ready • ${formatTime(recordingTime)}`
+                            : `Audio uploaded: ${uploadedAudioFile?.name}`
+                          }
+                        </p>
+                        <button
+                          onClick={handleRemoveAudio}
+                          className="p-1.5 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
+                          title="Remove audio"
+                        >
+                          <X className="h-3.5 w-3.5 text-white" />
+                        </button>
+                      </div>
+                      <audio
+                        src={audioMode === 'record' && audioBlob
+                          ? URL.createObjectURL(audioBlob)
+                          : uploadedAudioURL || undefined
+                        }
+                        controls
+                        className="mx-auto w-full max-w-md"
+                      />
+                    </div>
+
+                    {/* Proceed and End Session buttons */}
+                    <div className="flex gap-3 justify-center pt-2">
+                      <Button
+                        size="lg"
+                        onClick={audioMode === 'record' ? handleSendRecording : handleProceedWithUpload}
+                        disabled={isProcessing}
+                        className="gap-2"
+                      >
+                        {isProcessing ? (
+                          <>
+                            <Loader2 className="h-4 w-4 animate-spin" />
+                            Processing...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="h-4 w-4" />
+                            Proceed
+                          </>
+                        )}
+                      </Button>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        onClick={handleEndSession}
+                        disabled={isProcessing}
+                      >
+                        End Session
+                      </Button>
+                    </div>
                   </div>
                 )}
               </CardContent>
