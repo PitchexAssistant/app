@@ -52346,3 +52346,28 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET /sign-in 200 in 233ms
  GET /dashboard 200 in 232ms
  GET /dashboard 200 in 236ms
+ GET / 200 in 243ms
+ GET / 200 in 237ms
+ GET / 200 in 239ms
+ GET / 200 in 240ms
+ GET / 200 in 243ms
+ GET / 200 in 227ms
+ GET / 200 in 228ms
+ GET / 200 in 237ms
+ GET / 200 in 395ms
+ GET / 200 in 268ms
+ GET / 200 in 233ms
+ GET / 200 in 242ms
+ GET / 200 in 420ms
+ ✓ Compiled in 893ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 239ms
+ GET /dashboard 200 in 1545ms
+ POST /dashboard 200 in 169ms
+ POST /dashboard 200 in 93ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 441ms
+ GET / 200 in 264ms
