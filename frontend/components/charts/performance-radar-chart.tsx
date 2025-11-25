@@ -40,18 +40,14 @@ export function PerformanceRadarChart({ data }: PerformanceRadarChartProps) {
                     Your pitch skills across key dimensions
                 </CardDescription>
             </CardHeader>
-            <CardContent className="flex justify-center">
-                <ResponsiveContainer width="100%" height={350}>
-                    <RadarChart data={chartData}>
+            <CardContent className="flex justify-center pb-8">
+                <ResponsiveContainer width="100%" height={450}>
+                    <RadarChart data={chartData} margin={{ top: 20, right: 40, bottom: 60, left: 40 }}>
                         <PolarGrid stroke="#404040" />
                         <PolarAngleAxis
                             dataKey="category"
                             stroke="#9e9e9e"
-                            style={{
-                                fontSize: '13px',
-                                fontFamily: 'Uber Move',
-                                fill: '#f0f0f0'
-                            }}
+                            tick={{ fill: '#f0f0f0', fontSize: 13, fontFamily: 'Uber Move' }}
                         />
                         <PolarRadiusAxis
                             angle={90}

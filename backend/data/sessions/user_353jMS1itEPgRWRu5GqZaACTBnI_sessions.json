@@ -947,5 +947,31 @@
     "summary": null,
     "duration": null,
     "status": "active"
+  },
+  {
+    "id": "session_72_1764088834",
+    "title": "Recorded Session - 11/25/2025, 9:40:34 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2025-11-25T21:40:34.983176",
+    "updated_at": "2025-11-25T21:40:34.983187",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_73_1764094987",
+    "title": "Recorded Session - 11/25/2025, 11:23:07 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2025-11-25T23:23:07.738103",
+    "updated_at": "2025-11-25T23:23:07.738119",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
   }
 ]

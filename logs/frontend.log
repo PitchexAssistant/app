@@ -51655,3 +51655,694 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
 You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
 
  GET / 200 in 333ms
+ GET / 200 in 228ms
+ GET / 200 in 250ms
+ GET / 200 in 222ms
+ GET / 200 in 216ms
+ GET / 200 in 289ms
+ GET / 200 in 231ms
+ GET / 200 in 205ms
+ ✓ Compiled in 367ms
+ GET / 200 in 227ms
+ ✓ Compiled in 800ms
+ GET / 200 in 224ms
+ GET / 200 in 216ms
+ GET / 200 in 456ms
+ GET / 200 in 220ms
+ GET / 200 in 219ms
+ GET / 200 in 224ms
+ GET / 200 in 347ms
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 752ms
+ GET / 200 in 406ms
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/results-page.tsx:6:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+[0m [90m 4 |[39m [36mimport[39m { [33mEmotionTrendChart[39m } [36mfrom[39m [32m'./charts/emotion-trend-chart'[39m
+ [90m 5 |[39m [36mimport[39m { [33mPerformanceRadarChart[39m } [36mfrom[39m [32m'./charts/performance-radar-chart'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mScrollArea[39m } [36mfrom[39m [32m"@/components/ui/scroll-area"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36minterface[39m [33mResultsPageProps[39m {
+ [90m 9 |[39m   transcript[33m:[39m string[0m
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/results-page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/results-page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 716ms
+ ✓ Compiled in 1153ms
+ GET / 200 in 1035ms
+ ✓ Compiled /dashboard in 100ms
+ GET /dashboard 200 in 1003ms
+ ✓ Compiled in 1152ms
+ ✓ Compiled in 906ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /dashboard in 272ms
+ POST /dashboard 200 in 2011ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+[Error: aborted] { code: 'ECONNRESET' }
+ ⨯ uncaughtException: [Error: aborted] { code: 'ECONNRESET' }
+ ⨯ uncaughtException:  [Error: aborted] { code: 'ECONNRESET' }
+ GET /dashboard 200 in 2378ms
+ POST /dashboard 200 in 173ms
+ POST /dashboard 200 in 185ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 421ms
+ GET / 200 in 563ms
+ GET / 200 in 276ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 241ms
+ GET / 200 in 289ms
+ GET / 200 in 326ms
+ GET / 200 in 246ms
+ GET / 200 in 237ms
+ GET / 200 in 344ms
+ GET / 200 in 263ms
+ GET / 200 in 261ms
+ GET / 200 in 228ms
+ GET / 200 in 230ms
+ GET / 200 in 226ms
+ GET / 200 in 231ms
+ GET / 200 in 264ms
+ GET / 200 in 312ms
+ GET / 200 in 254ms
+ GET / 200 in 233ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 379ms
+ GET / 200 in 183ms
+ GET / 200 in 189ms
+ GET / 200 in 313ms
+ GET / 200 in 200ms
+ GET / 200 in 185ms
+ GET / 200 in 187ms
+ GET / 200 in 282ms
+ GET / 200 in 210ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.160:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1246ms
+ ✓ Ready in 3.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 12.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 13268ms
+ GET / 200 in 282ms
+ GET / 200 in 224ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ GET / 200 in 553ms
+ POST / 200 in 271ms
+ POST / 200 in 436ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 3.3s
+ GET /sign-in 200 in 3591ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 6.6s
+ GET /dashboard 200 in 7215ms
+ POST /dashboard 200 in 213ms
+ ○ Compiling /favicon.ico ...
+ POST /dashboard 200 in 394ms
+ ✓ Compiled /favicon.ico in 834ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1232ms
+ GET / 200 in 342ms
+ GET / 200 in 235ms
+ GET / 200 in 237ms
+ GET / 200 in 238ms
+ ✓ Compiled in 921ms
+ GET / 200 in 225ms
+ GET / 200 in 255ms
+ GET / 200 in 242ms
+ GET / 200 in 561ms
+ GET / 200 in 244ms
+ GET / 200 in 238ms
+ GET / 200 in 221ms
+ ✓ Compiled in 773ms
+ GET / 200 in 357ms
+ GET / 200 in 246ms
+ GET / 200 in 230ms
+ GET / 200 in 288ms
+ GET / 200 in 313ms
+ GET / 200 in 228ms
+ ✓ Compiled in 810ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 227ms
+ ✓ Compiled in 2s
+ GET / 200 in 617ms
+ GET / 200 in 284ms
+ ✓ Compiled in 549ms
+ GET / 200 in 1113ms
+ ✓ Compiled /dashboard in 122ms
+ GET /dashboard 200 in 922ms
+ GET / 200 in 209ms
+ GET / 200 in 226ms
+ GET / 200 in 226ms
+ GET /sign-in 200 in 233ms
+ GET /dashboard 200 in 232ms
+ GET /dashboard 200 in 236ms
