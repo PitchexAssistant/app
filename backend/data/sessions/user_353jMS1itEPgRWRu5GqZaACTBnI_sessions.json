@@ -1103,5 +1103,18 @@
     "summary": null,
     "duration": null,
     "status": "active"
+  },
+  {
+    "id": "session_84_1767292775",
+    "title": "Recorded Session - 1/1/2026, 11:39:35 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-01T23:39:35.574796",
+    "updated_at": "2026-01-01T23:39:35.574804",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
   }
 ]

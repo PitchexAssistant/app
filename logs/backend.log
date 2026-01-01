@@ -857,3 +857,126 @@ INFO:     127.0.0.1:51800 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57050 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:47246 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54518 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [72850] using WatchFiles
+INFO:     Started server process [72863]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-01T18:22:33.797871Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-01T18:22:33.797964Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-01T18:22:35.097273Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-01T18:22:35.097431Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2026-01-01T18:22:35.097547Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2026-01-01T18:22:35.097597Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-01T18:22:35.097643Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:22:35.101771Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:22:35.101929Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:40456 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35696 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41996 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56866 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41382 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57084 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43712 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53872 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47508 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50448 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2026-01-01T18:28:33.056536Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [72863]
+INFO:     Stopping reloader process [72850]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [76518] using WatchFiles
+INFO:     Started server process [76531]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-01T18:29:12.803841Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-01T18:29:12.803949Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-01T18:29:13.976196Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-01T18:29:13.976309Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2026-01-01T18:29:13.976454Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2026-01-01T18:29:13.976543Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-01T18:29:13.976598Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:29:13.980203Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:29:13.980293Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:37136 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59548 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42122 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [82632] using WatchFiles
+INFO:     Started server process [82645]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-01T18:38:26.207060Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-01T18:38:26.207157Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-01T18:38:27.300772Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-01T18:38:27.300896Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "initializing_gemini_model", "timestamp": "2026-01-01T18:38:27.301034Z", "level": "info"}
+{"model": "gemini-2.0-flash-exp", "event": "gemini_model_initialized", "timestamp": "2026-01-01T18:38:27.303795Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-01T18:38:27.303905Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:38:27.307975Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-01T18:38:27.308084Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50018 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59054 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60924 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60930 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60946 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60930 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60946 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60930 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60370 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60386 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40750 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "piching_test.mp3", "content_type": "audio/mpeg", "size": 2666277, "event": "transcribe_request", "timestamp": "2026-01-01T18:39:43.552991Z", "level": "info"}
+{"event": "initializing_gemini_stt", "timestamp": "2026-01-01T18:39:43.553104Z", "level": "info"}
+{"event": "gemini_stt_initialized", "timestamp": "2026-01-01T18:39:43.553201Z", "level": "info"}
+{"event": "initializing_google_cloud_stt", "timestamp": "2026-01-01T18:39:43.553238Z", "level": "info"}
+{"error": "File  was not found.", "event": "google_cloud_stt_initialization_failed", "timestamp": "2026-01-01T18:39:43.553862Z", "level": "warning"}
+{"audio_size": 2666277, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-01T18:39:43.553995Z", "level": "info"}
+{"audio_size": 2666277, "event": "attempting_offline_transcription", "timestamp": "2026-01-01T18:39:43.554076Z", "level": "info"}
+{"from_format": "mp3", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-01T18:39:43.556778Z", "level": "info"}
+{"transcript_length": 1934, "method": "google_free_api", "transcript": "good morning a few years ago I went back to my grandfather's hometown he always told me stories abou...", "event": "offline_transcription_success", "timestamp": "2026-01-01T18:40:35.572195Z", "level": "info"}
+{"transcript_length": 1934, "elapsed_ms": 52023, "event": "google_free_api_stt_success", "timestamp": "2026-01-01T18:40:35.577112Z", "level": "info"}
+INFO:     127.0.0.1:33388 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40760 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40760 - "OPTIONS /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+{"session_id": "session_84_1767292775", "transcript_length": 1934, "duration": 0, "event": "analyze_pitch_request", "timestamp": "2026-01-01T18:40:35.587856Z", "level": "info"}
+{"reasoning_model": "qwen/qwen3-4b:free", "emotion_model": "nvidia/nemotron-nano-9b-v2:free", "reasoning_keys_count": 2, "emotion_keys_count": 2, "event": "openrouter_service_initialized", "timestamp": "2026-01-01T18:40:35.588005Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-01T18:40:35.608204Z", "level": "info"}
+{"model": "nvidia/nemotron-nano-9b-v2:free", "key_index": 0, "is_fallback_model": false, "is_fallback_key": false, "event": "attempting_openrouter_request", "timestamp": "2026-01-01T18:40:35.608345Z", "level": "info"}
+{"model": "nvidia/nemotron-nano-9b-v2:free", "key_index": 0, "error": "peer closed connection without sending complete message body (incomplete chunked read)", "event": "openrouter_request_error", "timestamp": "2026-01-01T18:40:57.861005Z", "level": "error"}
+{"model": "nvidia/nemotron-nano-9b-v2:free", "key_index": 1, "is_fallback_model": false, "is_fallback_key": true, "event": "attempting_openrouter_request", "timestamp": "2026-01-01T18:40:57.861100Z", "level": "info"}
+{"model": "nvidia/nemotron-nano-9b-v2:free", "key_index": 1, "response_length": 191, "used_fallback_model": false, "event": "openrouter_request_successful", "timestamp": "2026-01-01T18:41:04.449095Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.7, "event": "emotion_detected", "timestamp": "2026-01-01T18:41:04.449590Z", "level": "info"}
+{"dominant_emotion": "neutral", "confidence": 0.7, "event": "emotion_analyzed", "timestamp": "2026-01-01T18:41:04.449713Z", "level": "info"}
+{"model": "qwen/qwen3-4b:free", "key_index": 0, "is_fallback_model": false, "is_fallback_key": false, "event": "attempting_openrouter_request", "timestamp": "2026-01-01T18:41:04.449791Z", "level": "info"}
+INFO:     127.0.0.1:51608 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"model": "qwen/qwen3-4b:free", "key_index": 0, "response_length": 1628, "used_fallback_model": false, "event": "openrouter_request_successful", "timestamp": "2026-01-01T18:41:13.787412Z", "level": "info"}
+{"response_length": 1628, "event": "analysis_generated", "timestamp": "2026-01-01T18:41:13.787683Z", "level": "info"}
+{"session_id": "session_84_1767292775", "feedback_count": 7, "overall_score": 65, "event": "analysis_complete", "timestamp": "2026-01-01T18:41:13.787865Z", "level": "info"}
+INFO:     127.0.0.1:51336 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49152 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42708 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49648 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49294 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50266 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52534 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43928 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39824 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56258 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52458 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57662 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43740 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58250 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47142 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60524 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40538 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35982 - "GET /api/v1/health HTTP/1.1" 200 OK

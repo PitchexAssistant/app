@@ -29867,3 +29867,125 @@
 2026-01-01 23:02:11 [ALERT] Frontend is DOWN on port 3001
 2026-01-01 23:02:41 | Backend: UP | Frontend: DOWN
 2026-01-01 23:02:41 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:03:11 | Backend: UP | Frontend: DOWN
+2026-01-01 23:03:11 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:03:51 | Backend: UP | Frontend: DOWN
+2026-01-01 23:03:51 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:04:21 | Backend: UP | Frontend: DOWN
+2026-01-01 23:04:21 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:04:52 | Backend: UP | Frontend: DOWN
+2026-01-01 23:04:52 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:05:22 | Backend: UP | Frontend: DOWN
+2026-01-01 23:05:22 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:05:53 | Backend: UP | Frontend: DOWN
+2026-01-01 23:05:53 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:06:23 | Backend: UP | Frontend: DOWN
+2026-01-01 23:06:23 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:06:54 | Backend: UP | Frontend: DOWN
+2026-01-01 23:06:54 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:07:24 | Backend: UP | Frontend: DOWN
+2026-01-01 23:07:24 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:07:54 | Backend: UP | Frontend: DOWN
+2026-01-01 23:07:54 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:08:25 | Backend: UP | Frontend: DOWN
+2026-01-01 23:08:25 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:08:55 | Backend: UP | Frontend: DOWN
+2026-01-01 23:08:55 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:09:26 | Backend: UP | Frontend: DOWN
+2026-01-01 23:09:26 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:09:56 | Backend: UP | Frontend: DOWN
+2026-01-01 23:09:56 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:10:26 | Backend: UP | Frontend: DOWN
+2026-01-01 23:10:26 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:10:57 | Backend: UP | Frontend: DOWN
+2026-01-01 23:10:57 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:11:27 | Backend: UP | Frontend: DOWN
+2026-01-01 23:11:27 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:11:58 | Backend: UP | Frontend: DOWN
+2026-01-01 23:11:58 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:12:29 | Backend: UP | Frontend: DOWN
+2026-01-01 23:12:29 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:12:59 | Backend: UP | Frontend: DOWN
+2026-01-01 23:12:59 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:13:30 | Backend: UP | Frontend: DOWN
+2026-01-01 23:13:30 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:14:00 | Backend: UP | Frontend: DOWN
+2026-01-01 23:14:00 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:14:31 | Backend: UP | Frontend: DOWN
+2026-01-01 23:14:31 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:15:02 | Backend: UP | Frontend: DOWN
+2026-01-01 23:15:02 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:15:32 | Backend: UP | Frontend: DOWN
+2026-01-01 23:15:32 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:16:02 | Backend: UP | Frontend: DOWN
+2026-01-01 23:16:02 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:16:33 | Backend: UP | Frontend: DOWN
+2026-01-01 23:16:33 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:17:03 | Backend: UP | Frontend: DOWN
+2026-01-01 23:17:03 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:17:34 | Backend: UP | Frontend: DOWN
+2026-01-01 23:17:34 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:18:05 | Backend: UP | Frontend: DOWN
+2026-01-01 23:18:05 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:18:35 | Backend: UP | Frontend: DOWN
+2026-01-01 23:18:35 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:19:05 | Backend: UP | Frontend: DOWN
+2026-01-01 23:19:05 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:19:36 | Backend: UP | Frontend: DOWN
+2026-01-01 23:19:36 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:20:06 | Backend: UP | Frontend: DOWN
+2026-01-01 23:20:06 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:20:37 | Backend: UP | Frontend: DOWN
+2026-01-01 23:20:37 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:21:07 | Backend: UP | Frontend: DOWN
+2026-01-01 23:21:07 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:21:38 | Backend: UP | Frontend: DOWN
+2026-01-01 23:21:38 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:23:48 | Backend: UP | Frontend: DOWN
+2026-01-01 23:23:48 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:24:18 | Backend: UP | Frontend: DOWN
+2026-01-01 23:24:18 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:24:49 | Backend: UP | Frontend: DOWN
+2026-01-01 23:24:49 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:25:19 | Backend: UP | Frontend: DOWN
+2026-01-01 23:25:19 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:25:49 | Backend: UP | Frontend: DOWN
+2026-01-01 23:25:49 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:26:20 | Backend: UP | Frontend: DOWN
+2026-01-01 23:26:20 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:26:51 | Backend: UP | Frontend: DOWN
+2026-01-01 23:26:51 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:27:21 | Backend: UP | Frontend: DOWN
+2026-01-01 23:27:21 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:27:51 | Backend: UP | Frontend: DOWN
+2026-01-01 23:27:51 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:28:22 | Backend: UP | Frontend: DOWN
+2026-01-01 23:28:22 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:30:30 | Backend: UP | Frontend: DOWN
+2026-01-01 23:30:30 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:31:01 | Backend: UP | Frontend: DOWN
+2026-01-01 23:31:01 [ALERT] Frontend is DOWN on port 3001
+2026-01-01 23:38:41 | Backend: UP | Frontend: UP
+2026-01-01 23:39:12 | Backend: UP | Frontend: UP
+2026-01-01 23:39:42 | Backend: UP | Frontend: UP
+2026-01-01 23:40:13 | Backend: UP | Frontend: UP
+2026-01-01 23:41:05 | Backend: UP | Frontend: UP
+2026-01-01 23:41:36 | Backend: UP | Frontend: UP
+2026-01-01 23:42:06 | Backend: UP | Frontend: UP
+2026-01-01 23:42:36 | Backend: UP | Frontend: UP
+2026-01-01 23:43:07 | Backend: UP | Frontend: UP
+2026-01-01 23:43:37 | Backend: UP | Frontend: UP
+2026-01-01 23:44:07 | Backend: UP | Frontend: UP
+2026-01-01 23:44:38 | Backend: UP | Frontend: UP
+2026-01-01 23:45:08 | Backend: UP | Frontend: UP
+2026-01-01 23:45:38 | Backend: UP | Frontend: UP
+2026-01-01 23:46:08 | Backend: UP | Frontend: UP
+2026-01-01 23:46:39 | Backend: UP | Frontend: UP
+2026-01-01 23:47:09 | Backend: UP | Frontend: UP
+2026-01-01 23:47:39 | Backend: UP | Frontend: UP
+2026-01-01 23:48:09 | Backend: UP | Frontend: UP
+2026-01-01 23:48:40 | Backend: UP | Frontend: UP
+2026-01-01 23:49:10 | Backend: UP | Frontend: UP
+2026-01-01 23:49:40 | Backend: UP | Frontend: UP
+2026-01-01 23:50:11 | Backend: UP | Frontend: UP
+2026-01-01 23:50:41 | Backend: UP | Frontend: UP
