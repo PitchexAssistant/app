@@ -92,9 +92,9 @@ function MetricBar({ label, score, index, isHovered, onHover }: MetricBarProps) 
             <motion.span
                 animate={{
                     color: isHovered ? '#ff6b00' : '#9e9e9e',
-                    scale: isHovered ? 1.05 : 1
+                    scale: isHovered ? 1.1 : 1
                 }}
-                className="text-[10px] font-medium text-center truncate w-full"
+                className={`text-[10px] font-medium text-center ${isHovered ? 'whitespace-nowrap z-10 bg-[#171717] px-1 rounded' : 'truncate w-full'}`}
             >
                 {label}
             </motion.span>

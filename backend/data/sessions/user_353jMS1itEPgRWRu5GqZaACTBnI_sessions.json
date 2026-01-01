@@ -1116,5 +1116,18 @@
     "summary": null,
     "duration": null,
     "status": "active"
+  },
+  {
+    "id": "session_85_1767294775",
+    "title": "Live Session - 1/2/2026, 12:12:55 AM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-02T00:12:55.326652",
+    "updated_at": "2026-01-02T00:13:29.558611",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 34,
+    "status": "completed"
   }
 ]
