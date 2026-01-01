@@ -48,6 +48,12 @@ class Settings(BaseSettings):
     OPENROUTER_API_KEY: str = ""
     DEEPGRAM_API_KEY: str = ""
 
+    # Additional LLM API Keys (OpenRouter)
+    REASONING_LLM_API_KEY: str = ""
+    EMOTION_DETECTION_LLM_API_KEY: str = ""
+    BACKUP_1_API_KEY: str = ""
+    BACKUP_2_API_KEY: str = ""
+
     
     class Config:
         env_file = ".env"

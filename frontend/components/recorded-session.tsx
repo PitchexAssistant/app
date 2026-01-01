@@ -32,6 +32,12 @@ export function RecordedSession({
   const [isProcessing, setIsProcessing] = useState(false)
   const [audioLevels, setAudioLevels] = useState<number[]>([20, 25, 30, 25, 35, 30, 25, 28, 22])
 
+  // New states for upload functionality
+  const [audioMode, setAudioMode] = useState<'none' | 'record' | 'upload'>('none')
+  const [uploadedAudioFile, setUploadedAudioFile] = useState<File | null>(null)
+  const [uploadedAudioURL, setUploadedAudioURL] = useState<string | null>(null)
+  const [uploadError, setUploadError] = useState<string | null>(null)
+
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])
   const audioContextRef = useRef<AudioContext | null>(null)
@@ -116,6 +122,17 @@ export function RecordedSession({
 
   const startRecording = async () => {
     try {
+      setAudioMode('record')
+
+      // Clear any uploaded audio
+      if (uploadedAudioFile) {
+        if (uploadedAudioURL) {
+          URL.revokeObjectURL(uploadedAudioURL)
+        }
+        setUploadedAudioFile(null)
+        setUploadedAudioURL(null)
+      }
+
       const stream = await navigator.mediaDevices.getUserMedia({
         audio: {
           echoCancellation: true,
@@ -253,10 +270,15 @@ export function RecordedSession({
 
   const handleProceedWithPitch = () => {
     if (!hasRecording) {
-      alert('Please record your pitch first')
+      alert('Please record or upload your pitch first')
       return
     }
-    handleUploadAudio()
+
+    if (audioMode === 'upload') {
+      handleProceedWithUpload()
+    } else {
+      handleUploadAudio()
+    }
   }
 
   const handleEndSession = () => {
@@ -270,6 +292,110 @@ export function RecordedSession({
     const mins = Math.floor(seconds / 60)
     const secs = seconds % 60
     return `${mins}:${secs.toString().padStart(2, '0')}`
+  }
+
+  // File validation
+  const validateAudioFile = (file: File): boolean => {
+    const validTypes = ['audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/wave', 'audio/x-wav']
+    const validExtensions = /\.(mp3|wav)$/i
+
+    if (!validTypes.includes(file.type) && !file.name.match(validExtensions)) {
+      setUploadError('Please upload only MP3 or WAV files')
+      return false
+    }
+
+    if (file.size > 10 * 1024 * 1024) {
+      setUploadError('File size must be less than 10MB')
+      return false
+    }
+
+    return true
+  }
+
+  // Handle audio file selection
+  const handleAudioFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (!file) return
+
+    setUploadError(null)
+
+    if (!validateAudioFile(file)) {
+      return
+    }
+
+    setAudioMode('upload')
+    setUploadedAudioFile(file)
+    setUploadedAudioURL(URL.createObjectURL(file))
+    setHasRecording(true)
+
+    if (audioBlob) {
+      setAudioBlob(null)
+    }
+  }
+
+  // Handle removing audio
+  const handleRemoveAudio = () => {
+    if (audioMode === 'upload') {
+      if (uploadedAudioURL) {
+        URL.revokeObjectURL(uploadedAudioURL)
+      }
+      setUploadedAudioFile(null)
+      setUploadedAudioURL(null)
+      setUploadError(null)
+    } else if (audioMode === 'record') {
+      setAudioBlob(null)
+    }
+    setAudioMode('none')
+    setHasRecording(false)
+    setRecordingTime(0)
+    setTimeRemaining(300)
+  }
+
+  // Handle proceed with uploaded audio
+  const handleProceedWithUpload = async () => {
+    if (!uploadedAudioFile || !sessionId) return
+
+    setIsProcessing(true)
+    try {
+      const formData = new FormData()
+      formData.append('file', uploadedAudioFile)
+
+      const transcribeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/stt/transcribe`, {
+        method: 'POST',
+        body: formData
+      })
+
+      if (!transcribeResponse.ok) {
+        throw new Error('Failed to transcribe audio')
+      }
+
+      const transcriptionData = await transcribeResponse.json()
+
+      const analysisResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/llm/analyze-pitch`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          session_id: sessionId,
+          transcript: transcriptionData.transcript,
+          duration: 0
+        })
+      })
+
+      if (!analysisResponse.ok) {
+        throw new Error('Failed to analyze pitch')
+      }
+
+      const analysisData = await analysisResponse.json()
+      onShowResults(uploadedAudioFile, transcriptionData.transcript, analysisData)
+
+    } catch (error) {
+      console.error('Error processing uploaded audio:', error)
+      alert('Failed to process audio. Please try again.')
+    } finally {
+      setIsProcessing(false)
+    }
   }
 
 
@@ -320,12 +446,45 @@ export function RecordedSession({
 
             {!isRecording && !hasRecording && (
               <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e]">
-                Press to record an upload
+                Press to record or upload
               </p>
             )}
 
-            {/* Recording Time Display */}
-            {(isRecording || hasRecording) && (
+            {/* Recording Time Display - Only for recorded audio */}
+            {isRecording && (
+              <p className="font-['Uber_Move'] text-[24px] text-[#f0f0f0] font-medium">
+                {formatTime(recordingTime)}
+              </p>
+            )}
+
+            {/* Uploaded Audio File Display */}
+            {audioMode === 'upload' && hasRecording && uploadedAudioFile && (
+              <div className="bg-[#171717] rounded-[16px] p-[12px] flex items-center gap-[12px] w-full max-w-[300px] relative">
+                <div className="w-[40px] h-[40px] bg-[#262626] rounded-[8px] flex items-center justify-center flex-shrink-0">
+                  🎵
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-['Uber_Move'] text-[14px] text-[#f0f0f0] truncate">
+                    {uploadedAudioFile.name}
+                  </p>
+                  <p className="font-['Uber_Move'] text-[12px] text-[#9e9e9e]">
+                    {(uploadedAudioFile.size / 1024).toFixed(1)} KB
+                  </p>
+                </div>
+                <button
+                  onClick={handleRemoveAudio}
+                  className="w-[24px] h-[24px] rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-colors flex-shrink-0"
+                  title="Remove audio"
+                >
+                  <svg className="w-[12px] h-[12px] text-[#f0f0f0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            )}
+
+            {/* Recorded Audio Time Display */}
+            {audioMode === 'record' && hasRecording && !isRecording && (
               <p className="font-['Uber_Move'] text-[24px] text-[#f0f0f0] font-medium">
                 {formatTime(recordingTime)}
               </p>
@@ -351,56 +510,63 @@ export function RecordedSession({
 
           {/* Action Buttons */}
           <div className="flex items-center gap-[16px]">
-            {/* Record / Stop Button */}
+            {/* Show both Record and Upload buttons initially */}
             {!hasRecording && (
-              <button
-                onClick={isRecording ? stopRecording : startRecording}
-                disabled={isProcessing}
-                className={`flex-1 h-[44px] rounded-[12px] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px] transition-colors ${isRecording
-                  ? 'bg-[#902f31] text-[#f0f0f0]'
-                  : 'bg-[#f0f0f0] text-[#262626]'
-                  }`}
-              >
-                {isRecording ? (
-                  <>
-                    <Square className="w-[20px] h-[20px] fill-current" />
-                    Stop
-                  </>
-                ) : (
-                  <>
-                    <Mic className="w-[20px] h-[20px]" />
-                    Record
-                  </>
+              <>
+                <button
+                  onClick={isRecording ? stopRecording : startRecording}
+                  disabled={isProcessing}
+                  className={`flex-1 h-[44px] rounded-[12px] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px] transition-colors ${isRecording
+                    ? 'bg-[#902f31] text-[#f0f0f0]'
+                    : 'bg-[#f0f0f0] text-[#262626]'
+                    }`}
+                >
+                  {isRecording ? (
+                    <>
+                      <Square className="w-[20px] h-[20px] fill-current" />
+                      Stop
+                    </>
+                  ) : (
+                    <>
+                      <Mic className="w-[20px] h-[20px]" />
+                      Record
+                    </>
+                  )}
+                </button>
+
+                {/* Upload Button */}
+                {!isRecording && (
+                  <button
+                    onClick={() => document.getElementById('audio-upload-input')?.click()}
+                    disabled={isProcessing}
+                    className="w-[44px] h-[44px] rounded-[12px] bg-[#ff6b00] flex items-center justify-center hover:bg-[#ff8c00] transition-colors"
+                    title="Upload audio file"
+                  >
+                    <Paperclip className="w-[20px] h-[20px] text-[#f0f0f0] rotate-45" />
+                  </button>
                 )}
-              </button>
+
+                <input
+                  id="audio-upload-input"
+                  type="file"
+                  accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
+                  onChange={handleAudioFileSelect}
+                  className="hidden"
+                />
+              </>
             )}
 
-            {/* Re-record Button (After Recording) */}
+            {/* Re-record Button (After Recording/Upload) */}
             {hasRecording && (
               <button
-                onClick={() => {
-                  setHasRecording(false)
-                  setAudioBlob(null)
-                  setRecordingTime(0)
-                  setTimeRemaining(300)
-                }}
+                onClick={handleRemoveAudio}
                 disabled={isProcessing}
                 className="flex-1 h-[44px] rounded-[12px] bg-[#f0f0f0] text-[#262626] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px]"
               >
                 <Mic className="w-[20px] h-[20px]" />
-                Record
+                Re-record
               </button>
             )}
-
-            {/* Upload Button - Triggers proceed with pitch */}
-            <button
-              onClick={handleProceedWithPitch}
-              disabled={!hasRecording || isProcessing}
-              className="w-[44px] h-[44px] rounded-[12px] bg-[#ff6b00] flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#ff8c00] transition-colors"
-              title="Upload and analyze pitch"
-            >
-              <Paperclip className="w-[20px] h-[20px] text-[#f0f0f0] rotate-45" />
-            </button>
           </div>
 
           {/* Processing Indicator */}

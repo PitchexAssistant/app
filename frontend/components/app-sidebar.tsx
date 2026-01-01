@@ -200,7 +200,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
           {/* Integrations Section */}
           {!isCollapsed && (
             <div className="self-stretch h-10 px-3 inline-flex justify-between items-center">
-              <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Integrations</div>
+              <div className="text-neutral-400 text-base font-medium font-['Inter']">Integrations</div>
               <Image
                 src="/integrations-icon-custom.svg"
                 alt="Integrations"
@@ -229,7 +229,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
             >
               <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? 'h-6 w-6 p-0' : 'mr-0'}`} />
               {!isCollapsed && (
-                <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">New Session</div>
+                <div className="text-neutral-400 text-base font-medium font-['Inter']">New Session</div>
               )}
             </div>
 
@@ -239,9 +239,9 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                 <Monitor className="w-5 h-5 text-stone-500 cursor-pointer" />
                 {!isCollapsed && (
                   <div className="flex justify-between w-full">
-                    <div className="text-neutral-400 text-s font-medium font-['Uber_Move']">Pitcher</div>
+                    <div className="text-neutral-400 text-s font-medium font-['Inter']">Pitcher</div>
                     <div className="h-6 px-2 py-[5px] bg-amber-500/10 rounded-md flex justify-center items-center">
-                      <div className="text-amber-500 text-xs font-bold font-['Uber_Move']">Coming Soon</div>
+                      <div className="text-amber-500 text-xs font-bold font-['Inter']">Coming Soon</div>
                     </div>
                   </div>
                 )}
@@ -259,10 +259,10 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                 <div className="self-stretch w-full h-11 px-3 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden">
                   <div className="flex justify-start items-center gap-3">
                     <Mic className="w-5 h-5 text-stone-500" />
-                    <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Recents </div>
+                    <div className="text-neutral-400 text-base font-medium font-['Inter']">Recents </div>
                     {sessions.length > 0 && (
                       <div className="h-6 px-2 py-[5px] bg-pink-500/10 rounded-[5.13px] flex justify-center items-center">
-                        <div className="text-pink-500 text-xs font-bold font-['Uber_Move']">{sessions.length}</div>
+                        <div className="text-pink-500 text-xs font-bold font-['Inter']">{sessions.length}</div>
                       </div>
                     )}
                   </div>
@@ -277,11 +277,11 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                   <div className="self-stretch flex flex-col justify-start items-start gap-1">
                     {loading ? (
                       <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
-                        <div className="text-neutral-500 text-sm font-['Uber_Move']">Loading...</div>
+                        <div className="text-neutral-500 text-sm font-['Inter']">Loading...</div>
                       </div>
                     ) : sessions.length === 0 ? (
                       <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
-                        <div className="text-neutral-500 text-sm font-['Uber_Move']">No sessions yet</div>
+                        <div className="text-neutral-500 text-sm font-['Inter']">No sessions yet</div>
                       </div>
                     ) : (
                       sessions.slice(0, 10).map((session) => (
@@ -294,10 +294,10 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                           <div className="flex justify-start items-center gap-3 flex-1 min-w-0">
                             {getModeIcon(session.mode)}
                             <div className="flex flex-col min-w-0 flex-1">
-                              <div className="text-neutral-400 text-sm font-medium font-['Uber_Move'] truncate">
+                              <div className="text-neutral-400 text-sm font-medium font-['Inter'] truncate">
                                 {session.title}
                               </div>
-                              <div className="text-stone-600 text-xs font-['Uber_Move']">
+                              <div className="text-stone-600 text-xs font-['Inter']">
                                 {formatDate(session.updated_at)}
                               </div>
                             </div>
@@ -384,7 +384,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
             >
               <Info className="w-6 h-6 text-stone-500" />
               {!isCollapsed && (
-                <div className="text-neutral-400 text-base font-medium font-['Uber_Move']">Help & Support</div>
+                <div className="text-neutral-400 text-base font-medium font-['Inter']">Help & Support</div>
               )}
             </div>
           </div>
@@ -393,14 +393,14 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
           {!isCollapsed && (
             <div className="self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-zinc-800 flex flex-col justify-start items-start gap-3">
               <div className="h-6 px-2 py-2 bg-neutral-800 rounded-md inline-flex justify-center items-center">
-                <div className="text-green-600 text-xs font-bold font-['Uber_Move']">Pro</div>
+                <div className="text-green-600 text-xs font-bold font-['Inter']">Pro</div>
               </div>
-              <div className="text-stone-300 text-base font-medium font-['Uber_Move']">Upgrade to Pro</div>
-              <div className="text-neutral-500 text-sm font-medium font-['Uber_Move']">
+              <div className="text-stone-300 text-base font-medium font-['Inter']">Upgrade to Pro</div>
+              <div className="text-neutral-500 text-sm font-medium font-['Inter']">
                 Unlock unlimited sessions, priority support, and advanced AI tools to take your pitches to the next level.
               </div>
               <div className="h-8 px-3 py-[5px] rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-800 inline-flex justify-start items-center gap-[3px] hover:bg-zinc-900 cursor-pointer">
-                <div className="text-stone-300 text-xs font-medium font-['Uber_Move']">Upgrade Now</div>
+                <div className="text-stone-300 text-xs font-medium font-['Inter']">Upgrade Now</div>
                 <ArrowUpRight className="w-3 h-3 text-stone-300" />
               </div>
             </div>

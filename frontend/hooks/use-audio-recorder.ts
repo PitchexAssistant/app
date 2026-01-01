@@ -77,11 +77,34 @@ export function useAudioRecorder(): UseAudioRecorderResult {
   // Cleanup on unmount
   useEffect(() => {
     return () => {
+      // Stop recording if still active
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+        mediaRecorderRef.current.stop();
+      }
+
+      // Cancel animation frame
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
+
+      // Stop media stream
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach(track => track.stop());
+      }
+
+      // Close audio context only if it exists and is not already closed
+      try {
+        if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+          audioContextRef.current.close();
+        }
+      } catch (err) {
+        // Ignore errors when closing AudioContext during unmount
+        console.warn('AudioContext cleanup warning:', err);
+      }
+
+      // Clear timer
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
       }
     };
   }, []);
@@ -149,8 +172,15 @@ export function useAudioRecorder(): UseAudioRecorderResult {
         if (animationFrameRef.current) {
           cancelAnimationFrame(animationFrameRef.current);
         }
-        if (audioContextRef.current) {
-          audioContextRef.current.close();
+
+        // Safely close audio context
+        try {
+          if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+            audioContextRef.current.close();
+          }
+        } catch (err) {
+          // Ignore errors when closing AudioContext during cleanup
+          console.warn('AudioContext close warning:', err);
         }
 
         // Reset audio levels to static
