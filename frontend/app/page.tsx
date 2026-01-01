@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { StickyCard002 } from '@/components/ui/skiper-ui/skiper17';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -52,11 +51,6 @@ const features = [
 ];
 
 export default function Home() {
-  const router = useRouter();
-
-  const handleGetStarted = useCallback(() => {
-    router.push("/sign-in");
-  }, [router]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -67,7 +61,7 @@ export default function Home() {
             {/* Right side - Animated Orb */}
             <div className="order-first lg:order-last flex items-center justify-center">
               <div className="relative w-full max-w-md aspect-square">
-                <Orb 
+                <Orb
                   colors={["#FF6B00", "#FF8533"]}
                   agentState="thinking"
                   className="w-full h-full"
@@ -84,23 +78,24 @@ export default function Home() {
                   <span className="text-[var(--orange-accent)]"> Winning Pitches</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Master the art of pitching with AI-powered insights, real-time collaboration, 
-                  and industry-specific practice sessions. Transform your ideas into compelling 
+                  Master the art of pitching with AI-powered insights, real-time collaboration,
+                  and industry-specific practice sessions. Transform your ideas into compelling
                   presentations that win.
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  onClick={handleGetStarted}
-                  className="bg-[var(--orange-accent)] hover:bg-[var(--orange-accent)]/90 text-white px-8 py-6 text-lg"
-                >
-                  Start Pitching Now
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <Button 
-                  variant="outline" 
+                <Link href="/sign-in">
+                  <Button
+                    size="lg"
+                    className="bg-[var(--orange-accent)] hover:bg-[var(--orange-accent)]/90 text-white px-8 py-6 text-lg"
+                  >
+                    Start Pitching Now
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Button
+                  variant="outline"
                   size="lg"
                   className="px-8 py-6 text-lg"
                 >
@@ -135,7 +130,7 @@ export default function Home() {
               Everything You Need to Pitch Like a Pro
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From AI-powered feedback to real-time collaboration, Pitchex provides 
+              From AI-powered feedback to real-time collaboration, Pitchex provides
               all the tools you need to create winning pitches.
             </p>
           </div>
@@ -158,11 +153,11 @@ export default function Home() {
         </div>
       </section>
       <section className="py-20 bg-muted/30" style={{ height: "300vh" }}>
-      
-              <div className="h-[800px] w-full">
-                <StickyCard002 cards={showcaseCards} />
-              </div>
-           
+
+        <div className="h-[800px] w-full">
+          <StickyCard002 cards={showcaseCards} />
+        </div>
+
       </section>
 
       {/* Benefits Section */}
@@ -175,7 +170,7 @@ export default function Home() {
                   Why Choose Pitchex?
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Join thousands of entrepreneurs, startups, and professionals who have 
+                  Join thousands of entrepreneurs, startups, and professionals who have
                   transformed their pitching game with Pitchex.
                 </p>
               </div>
@@ -229,16 +224,17 @@ export default function Home() {
               Join thousands of successful entrepreneurs who have mastered the art of pitching with Pitchex.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                onClick={handleGetStarted}
-                className="bg-white text-[var(--orange-accent)] hover:bg-white/90 px-8 py-6 text-lg font-semibold"
-              >
-                Get Started Free
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                variant="outline" 
+              <Link href="/sign-in">
+                <Button
+                  size="lg"
+                  className="bg-white text-[var(--orange-accent)] hover:bg-white/90 px-8 py-6 text-lg font-semibold"
+                >
+                  Get Started Free
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-[var(--orange-accent)] px-8 py-6 text-lg"
               >

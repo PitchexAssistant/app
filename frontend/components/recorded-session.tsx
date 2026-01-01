@@ -401,19 +401,13 @@ export function RecordedSession({
 
 
   return (
-    <div className="flex h-screen bg-[#171717]">
-      {/* Time Remaining Header */}
-      <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-        <p className="font-['Uber_Move'] text-[#f0f0f0] text-[16px]">
-          Time remaining: {formatTime(timeRemaining)}
-        </p>
-      </div>
-
-      {/* Main Content */}
+    <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-y-auto scrollbar-hide">
+      {/* Main Content Container */}
       <div className="flex-1 flex items-center justify-center p-8">
-        <div className="bg-[#262626] rounded-[24px] p-[24px] w-full max-w-[456px] flex flex-col gap-[32px]">
+        {/* Centered Card - Exact Figma Design */}
+        <div className="w-full max-w-[600px] bg-[#262626] rounded-[24px] p-[24px] flex flex-col gap-[20px]">
           {/* Header */}
-          <div className="flex flex-col gap-[8px]">
+          <div className="flex items-center justify-between">
             <h2 className="font-['Inter'] font-bold text-[18px] text-[#f0f0f0] leading-[28px]">
               Analysis & Feedback
             </h2>

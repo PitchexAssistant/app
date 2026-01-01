@@ -13,27 +13,38 @@ import tempfile
 import os
 
 from core.config import settings
+import google.generativeai as genai
+import time
 
 logger = structlog.get_logger()
 
 
 class STTService:
-    """Service for Speech-to-Text transcription"""
+    """Service for Speech-to-Text transcription with multiple providers"""
     
     def __init__(self):
-        self.client = None
-        self._initialize_client()
+        self.google_cloud_client = None
+        self.gemini_model = None
+        self._initialize_clients()
     
-    def _initialize_client(self):
-        """Initialize Google Cloud Speech client"""
+    def _initialize_clients(self):
+        """Initialize STT clients (Gemini + Google Cloud)"""
+        # Initialize Gemini for fast STT
         try:
-            logger.info("initializing_stt_client")
-            self.client = speech.SpeechClient()
-            logger.info("stt_client_initialized")
+            logger.info("initializing_gemini_stt")
+            genai.configure(api_key=settings.GEMINI_API_KEY)
+            self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
+            logger.info("gemini_stt_initialized")
         except Exception as e:
-            logger.error("stt_initialization_failed", error=str(e))
-            # For development without Google Cloud credentials
-            logger.warning("running_without_google_cloud_stt")
+            logger.warning("gemini_stt_initialization_failed", error=str(e))
+        
+        # Initialize Google Cloud STT as fallback
+        try:
+            logger.info("initializing_google_cloud_stt")
+            self.google_cloud_client = speech.SpeechClient()
+            logger.info("google_cloud_stt_initialized")
+        except Exception as e:
+            logger.warning("google_cloud_stt_initialization_failed", error=str(e))
     
     def transcribe_audio(
         self,
@@ -43,7 +54,8 @@ class STTService:
         encoding: str = "LINEAR16"
     ) -> dict:
         """
-        Transcribe audio content to text
+        Transcribe audio content to text using fastest available method
+        Priority: Google Free API (most reliable) → Gemini STT → Google Cloud STT
         
         Args:
             audio_content: Audio file content as bytes
@@ -54,76 +66,136 @@ class STTService:
         Returns:
             Dictionary with transcription results
         """
+        start_time = time.time()
         
-        if not self.client:
-            logger.warning("stt_client_not_available_using_mock")
-            return self._mock_transcription(audio_content)
+        # Try Google Free API FIRST (most reliable, no credentials needed)
+        logger.info("attempting_google_free_api_stt", audio_size=len(audio_content))
+        result = self._google_free_api_transcription(audio_content)
         
-        try:
-            # Configure audio
-            audio = speech.RecognitionAudio(content=audio_content)
-            
-            # Configure recognition
-            encoding_map = {
-                "LINEAR16": speech.RecognitionConfig.AudioEncoding.LINEAR16,
-                "MP3": speech.RecognitionConfig.AudioEncoding.MP3,
-                "FLAC": speech.RecognitionConfig.AudioEncoding.FLAC,
-                "WAV": speech.RecognitionConfig.AudioEncoding.LINEAR16,
-                "OGG_OPUS": speech.RecognitionConfig.AudioEncoding.OGG_OPUS,
-                "WEBM_OPUS": speech.RecognitionConfig.AudioEncoding.WEBM_OPUS
-            }
-            
-            config = speech.RecognitionConfig(
-                encoding=encoding_map.get(encoding.upper(), speech.RecognitionConfig.AudioEncoding.LINEAR16),
-                sample_rate_hertz=sample_rate,
-                language_code=language_code,
-                enable_automatic_punctuation=True,
-                enable_word_time_offsets=False,
-                model="default"
-            )
-            
-            # Perform transcription
-            response = self.client.recognize(config=config, audio=audio)
-            
-            # Process results
-            transcripts = []
-            for result in response.results:
-                alternative = result.alternatives[0]
-                transcripts.append({
-                    "transcript": alternative.transcript,
-                    "confidence": alternative.confidence
-                })
-            
-            # Combine transcripts
-            full_transcript = " ".join([t["transcript"] for t in transcripts])
-            avg_confidence = sum([t["confidence"] for t in transcripts]) / len(transcripts) if transcripts else 0
-            
+        if result.get("success"):
+            elapsed = time.time() - start_time
+            result["elapsed_ms"] = int(elapsed * 1000)
             logger.info(
-                "audio_transcribed",
-                transcript_length=len(full_transcript),
-                confidence=avg_confidence,
-                num_results=len(transcripts)
+                "google_free_api_stt_success",
+                transcript_length=len(result.get("transcript", "")),
+                elapsed_ms=result["elapsed_ms"]
             )
-            
-            return {
-                "success": True,
-                "transcript": full_transcript,
-                "confidence": avg_confidence,
-                "language": language_code,
-                "results": transcripts
-            }
-            
-        except Exception as e:
-            logger.error("transcription_failed", error=str(e))
-            return {
-                "success": False,
-                "error": str(e),
-                "transcript": "",
-                "confidence": 0.0,
-                "language": language_code  # Include language field for schema validation
-            }
+            return result
+        
+        # Fallback 1: Try Gemini STT if available
+        if self.gemini_model:
+            try:
+                logger.info("attempting_gemini_stt_fallback", audio_size=len(audio_content))
+                
+                # Upload audio to Gemini
+                import tempfile
+                with tempfile.NamedTemporaryFile(delete=False, suffix='.wav') as temp_file:
+                    temp_file.write(audio_content)
+                    temp_path = temp_file.name
+                
+                try:
+                    # Upload file to Gemini
+                    audio_file = genai.upload_file(temp_path)
+                    
+                    # Generate transcription
+                    prompt = "Transcribe this audio exactly as spoken. Return only the transcription text, no additional commentary."
+                    response = self.gemini_model.generate_content([prompt, audio_file])
+                    transcript = response.text.strip()
+                    
+                    elapsed = time.time() - start_time
+                    logger.info(
+                        "gemini_stt_success",
+                        transcript_length=len(transcript),
+                        elapsed_ms=int(elapsed * 1000)
+                    )
+                    
+                    return {
+                        "success": True,
+                        "transcript": transcript,
+                        "confidence": 0.90,  # Gemini is highly accurate
+                        "language": language_code,
+                        "method": "gemini_stt",
+                        "elapsed_ms": int(elapsed * 1000)
+                    }
+                finally:
+                    # Clean up temp file
+                    if os.path.exists(temp_path):
+                        os.unlink(temp_path)
+                        
+            except Exception as e:
+                logger.warning("gemini_stt_failed", error=str(e))
+                # Fall through to Google Cloud STT
+        
+        # Fallback 2: Try Google Cloud STT (requires credentials)
+        if self.google_cloud_client:
+            try:
+                logger.info("attempting_google_cloud_stt_fallback")
+                
+                # Configure audio
+                audio = speech.RecognitionAudio(content=audio_content)
+                
+                # Configure recognition
+                encoding_map = {
+                    "LINEAR16": speech.RecognitionConfig.AudioEncoding.LINEAR16,
+                    "MP3": speech.RecognitionConfig.AudioEncoding.MP3,
+                    "FLAC": speech.RecognitionConfig.AudioEncoding.FLAC,
+                    "WAV": speech.RecognitionConfig.AudioEncoding.LINEAR16,
+                    "OGG_OPUS": speech.RecognitionConfig.AudioEncoding.OGG_OPUS,
+                    "WEBM_OPUS": speech.RecognitionConfig.AudioEncoding.WEBM_OPUS
+                }
+                
+                config = speech.RecognitionConfig(
+                    encoding=encoding_map.get(encoding.upper(), speech.RecognitionConfig.AudioEncoding.LINEAR16),
+                    sample_rate_hertz=sample_rate,
+                    language_code=language_code,
+                    enable_automatic_punctuation=True,
+                    enable_word_time_offsets=False,
+                    model="default"
+                )
+                
+                # Perform transcription
+                response = self.google_cloud_client.recognize(config=config, audio=audio)
+                
+                # Process results
+                transcripts = []
+                for result in response.results:
+                    alternative = result.alternatives[0]
+                    transcripts.append({
+                        "transcript": alternative.transcript,
+                        "confidence": alternative.confidence
+                    })
+                
+                # Combine transcripts
+                full_transcript = " ".join([t["transcript"] for t in transcripts])
+                avg_confidence = sum([t["confidence"] for t in transcripts]) / len(transcripts) if transcripts else 0
+                
+                elapsed = time.time() - start_time
+                logger.info(
+                    "google_cloud_stt_success",
+                    transcript_length=len(full_transcript),
+                    confidence=avg_confidence,
+                    num_results=len(transcripts),
+                    elapsed_ms=int(elapsed * 1000)
+                )
+                
+                return {
+                    "success": True,
+                    "transcript": full_transcript,
+                    "confidence": avg_confidence,
+                    "language": language_code,
+                    "method": "google_cloud_stt",
+                    "results": transcripts,
+                    "elapsed_ms": int(elapsed * 1000)
+                }
+                
+            except Exception as e:
+                logger.warning("google_cloud_stt_failed", error=str(e))
+        
+        # All methods failed - return the Google Free API result even if it failed
+        logger.error("all_stt_methods_failed")
+        return result
     
-    def _mock_transcription(self, audio_content: bytes) -> dict:
+    def _google_free_api_transcription(self, audio_content: bytes) -> dict:
         """
         Offline transcription using SpeechRecognition library
         Supports WebM, MP3, WAV formats and uses Google's free Speech Recognition API

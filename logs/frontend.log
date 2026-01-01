@@ -52371,3 +52371,3437 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  POST /dashboard 200 in 93ms
  GET /favicon.ico?favicon.0b3bf435.ico 200 in 441ms
  GET / 200 in 264ms
+ GET / 200 in 251ms
+ GET / 200 in 218ms
+ GET / 200 in 251ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 394ms
+ GET / 200 in 306ms
+ GET / 200 in 226ms
+ GET / 200 in 188ms
+ GET / 200 in 190ms
+ GET / 200 in 328ms
+ GET / 200 in 222ms
+ GET / 200 in 276ms
+ GET / 200 in 263ms
+ GET / 200 in 202ms
+ GET / 200 in 316ms
+ GET / 200 in 195ms
+ GET / 200 in 205ms
+ GET / 200 in 351ms
+ GET / 200 in 235ms
+ GET / 200 in 217ms
+ GET / 200 in 315ms
+ GET / 200 in 274ms
+ GET / 200 in 244ms
+ GET / 200 in 221ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 228ms
+ GET / 200 in 218ms
+ GET / 200 in 200ms
+ GET / 200 in 227ms
+ GET / 200 in 248ms
+ GET / 200 in 242ms
+ GET / 200 in 444ms
+ GET / 200 in 247ms
+ GET / 200 in 262ms
+ GET / 200 in 247ms
+ GET / 200 in 232ms
+ GET / 200 in 238ms
+ GET / 200 in 211ms
+ GET / 200 in 228ms
+ GET / 200 in 233ms
+ GET / 200 in 231ms
+ GET / 200 in 249ms
+ GET / 200 in 228ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 240ms
+ GET / 200 in 248ms
+ GET / 200 in 222ms
+ GET / 200 in 180ms
+ GET / 200 in 188ms
+ GET / 200 in 232ms
+ GET / 200 in 213ms
+ GET / 200 in 320ms
+ GET / 200 in 392ms
+ GET / 200 in 266ms
+ GET / 200 in 211ms
+ GET / 200 in 235ms
+ GET / 200 in 252ms
+ GET / 200 in 230ms
+ GET / 200 in 278ms
+ GET / 200 in 276ms
+ GET / 200 in 400ms
+ GET /dashboard 200 in 261ms
+ POST /dashboard 200 in 165ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 573ms
+ POST /dashboard 200 in 188ms
+ GET / 200 in 274ms
+ GET / 200 in 350ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 222ms
+ GET / 200 in 207ms
+ GET / 200 in 217ms
+ GET / 200 in 234ms
+ GET / 200 in 702ms
+ GET / 200 in 235ms
+ GET / 200 in 223ms
+ GET / 200 in 251ms
+ GET / 200 in 235ms
+ GET / 200 in 271ms
+ GET / 200 in 225ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 353ms
+ GET / 200 in 869ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 249ms
+ GET /dashboard 200 in 224ms
+ POST /dashboard 200 in 133ms
+ POST /dashboard 200 in 89ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
+ GET / 200 in 249ms
+ GET / 200 in 236ms
+ GET / 200 in 275ms
+ GET / 200 in 661ms
+ GET / 200 in 554ms
+ GET / 200 in 255ms
+ GET / 200 in 426ms
+ GET / 200 in 371ms
+ GET / 200 in 329ms
+ GET / 200 in 289ms
+ GET / 200 in 308ms
+ GET / 200 in 303ms
+ GET / 200 in 527ms
+ GET / 200 in 412ms
+ GET / 200 in 295ms
+ GET / 200 in 278ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 689ms
+ GET / 200 in 359ms
+ GET /dashboard 200 in 302ms
+ POST /dashboard 200 in 212ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 476ms
+ POST /dashboard 200 in 173ms
+ GET / 200 in 239ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET /dashboard 200 in 401ms
+ POST /dashboard 200 in 240ms
+ POST /dashboard 200 in 111ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 449ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.138:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 933ms
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 11.7s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 12837ms
+ GET / 200 in 326ms
+ GET / 200 in 186ms
+ GET / 200 in 187ms
+ GET / 200 in 176ms
+ GET / 200 in 210ms
+ GET / 200 in 174ms
+ GET / 200 in 442ms
+ POST / 200 in 866ms
+ ○ Compiling /favicon.ico ...
+ GET / 200 in 415ms
+ POST / 303 in 1071ms
+ ✓ Compiled /favicon.ico in 1379ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2095ms
+ GET / 200 in 694ms
+ GET / 200 in 191ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 334ms
+ GET / 200 in 227ms
+ GET / 200 in 625ms
+ POST / 200 in 260ms
+ POST / 303 in 414ms
+ GET / 200 in 254ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7s
+ GET /dashboard 200 in 7609ms
+ POST /dashboard 200 in 230ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 743ms
+ GET /dashboard 404 in 951ms
+ POST /dashboard 303 in 2353ms
+ GET /dashboard 200 in 110ms
+ GET / 200 in 230ms
+ GET / 200 in 216ms
+ GET / 200 in 218ms
+ GET / 200 in 300ms
+ GET / 200 in 206ms
+ GET / 200 in 404ms
+ GET / 200 in 212ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 842ms
+ GET /sign-in 200 in 2013ms
+ POST /sign-in 200 in 205ms
+ POST /sign-in 200 in 238ms
+ GET /dashboard 200 in 260ms
+ GET /dashboard 200 in 481ms
+ GET / 200 in 259ms
+ GET / 200 in 282ms
+ POST / 200 in 164ms
+ POST / 200 in 132ms
+ GET /sign-in 200 in 320ms
+ GET /dashboard 200 in 556ms
+ GET /dashboard 200 in 522ms
+ GET / 200 in 441ms
+ GET / 200 in 319ms
+ GET / 200 in 302ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 228ms
+ GET / 200 in 219ms
+ GET / 200 in 232ms
+ GET / 200 in 236ms
+ GET / 200 in 231ms
+ GET /dashboard 200 in 162ms
+ GET /dashboard 200 in 154ms
+ GET / 200 in 236ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET /dashboard 200 in 267ms
+ POST /dashboard 200 in 149ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 580ms
+ POST /dashboard 200 in 161ms
+ ✓ Compiled in 1448ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.19.209:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1309ms
+ ✓ Ready in 3.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 26.2s
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 27675ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 341ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 8.1s
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /dashboard 200 in 8827ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ POST /dashboard 200 in 268ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 763ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /dashboard 404 in 962ms
+ POST /dashboard 303 in 4936ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 668ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1052ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 218ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 220ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 187ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 195ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 270ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 243ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 209ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 262ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 216ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 257ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 191ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 278ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 308ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 189ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 202ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 305ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 359ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 198ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 375ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 730ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ POST / 200 in 239ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ POST / 200 in 131ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1018ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /sign-in 200 in 2145ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /dashboard 200 in 288ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET /dashboard 200 in 473ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 278ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 347ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 314ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 335ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 333ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 618ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 508ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 605ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 415ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 207ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 252ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 289ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 199ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 216ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 403ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 502ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 479ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 567ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 548ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 428ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 1154ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 513ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 633ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 888ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 611ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 435ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 528ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 674ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 881ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 675ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 661ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 458ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 461ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 491ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 821ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 423ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 1202ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 615ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 826ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 765ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 508ms
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+ GET / 200 in 613ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.18.43:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1305ms
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.3s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 14849ms
+ GET / 200 in 582ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.4s
+ GET /dashboard 200 in 8040ms
+ POST /dashboard 200 in 278ms
+ ○ Compiling /favicon.ico ...
+ POST /dashboard 200 in 498ms
+ ✓ Compiled /favicon.ico in 1673ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2052ms
+ GET / 200 in 255ms
+ GET / 200 in 215ms
+ GET / 200 in 261ms
+ GET / 200 in 290ms
+ GET / 200 in 220ms
+ GET / 200 in 242ms
+ GET / 200 in 403ms
+ GET / 200 in 446ms
+ GET / 200 in 220ms
+ GET / 200 in 324ms
+ GET / 200 in 259ms
+ GET / 200 in 333ms
+ GET / 200 in 208ms
+ GET / 200 in 285ms
+ GET / 200 in 214ms
+ GET / 200 in 216ms
+ GET / 200 in 295ms
+ GET / 200 in 243ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 249ms
+ GET / 200 in 205ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 257ms
+ GET / 200 in 205ms
+ GET / 200 in 210ms
+ GET / 200 in 241ms
+ GET / 200 in 384ms
+ GET / 200 in 380ms
+ GET / 200 in 173ms
+ GET / 200 in 175ms
+ GET / 200 in 429ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1220ms
+ ✓ Ready in 3.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 15.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 17316ms
+ GET / 200 in 287ms
+ GET / 200 in 275ms
+ POST / 200 in 157ms
+ GET / 200 in 175ms
+ POST / 303 in 532ms
+ GET / 200 in 131ms
+ GET / 200 in 124ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 510ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 892ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1055ms
+ GET /sign-in 200 in 2139ms
+ GET / 200 in 255ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.3s
+ GET /dashboard 200 in 7969ms
+ POST /dashboard 200 in 243ms
+ POST /dashboard 200 in 292ms
+ GET / 200 in 221ms
+ GET / 200 in 255ms
+ GET / 200 in 224ms
+ GET / 200 in 264ms
+ GET / 200 in 339ms
+ GET /dashboard 200 in 158ms
+ GET / 200 in 238ms
+ GET /dashboard 200 in 230ms
+ GET / 200 in 264ms
+ GET / 200 in 259ms
+ GET / 200 in 229ms
+ GET / 200 in 602ms
+ GET / 200 in 202ms
+ GET / 200 in 229ms
+ GET / 200 in 215ms
+ GET / 200 in 366ms
+ GET / 200 in 216ms
+ GET / 200 in 246ms
+ GET / 200 in 235ms
+ GET /dashboard 200 in 317ms
+ GET / 200 in 318ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 315ms
+ GET / 200 in 305ms
+ GET / 200 in 286ms
+ GET / 200 in 347ms
+ GET / 200 in 233ms
+ GET / 200 in 272ms
+ GET / 200 in 260ms
+ GET / 200 in 241ms
+ GET / 200 in 264ms
+ GET / 200 in 270ms
+ GET / 200 in 275ms
+ GET / 200 in 282ms
+ GET / 200 in 656ms
+ GET / 200 in 228ms
+ GET / 200 in 282ms
+ GET / 200 in 249ms
+ GET / 200 in 229ms
+ GET / 200 in 227ms
+ GET / 200 in 266ms
+ GET / 200 in 197ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 218ms
+ GET / 200 in 283ms
+ GET / 200 in 235ms
+ GET / 200 in 196ms
+ GET / 200 in 202ms
+ GET / 200 in 203ms
+ GET / 200 in 342ms
+ GET / 200 in 226ms
+ GET / 200 in 214ms
+ GET / 200 in 196ms
+ GET / 200 in 344ms
+ GET / 200 in 356ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1407ms
+ ✓ Ready in 3.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 17.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 19017ms
+ GET / 200 in 423ms
+ GET / 200 in 368ms
+ GET / 200 in 378ms
+ GET / 200 in 378ms
+ GET / 200 in 252ms
+ GET / 200 in 351ms
+ GET / 200 in 369ms
+ GET / 200 in 243ms
+ GET / 200 in 218ms
+ GET / 200 in 291ms
+ GET / 200 in 254ms
+ GET / 200 in 226ms
+ GET / 200 in 284ms
+ GET / 200 in 409ms
+ GET / 200 in 423ms
+ GET / 200 in 265ms
+ GET / 200 in 253ms
+ GET / 200 in 226ms
+ GET / 200 in 240ms
+ GET / 200 in 294ms
+ GET / 200 in 205ms
+ GET / 200 in 252ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 266ms
+ GET / 200 in 193ms
+ GET / 200 in 312ms
+ GET / 200 in 221ms
+ GET / 200 in 260ms
+ GET / 200 in 278ms
+ GET / 200 in 432ms
+ GET / 200 in 383ms
+ GET / 200 in 327ms
+ GET / 200 in 404ms
+ GET / 200 in 364ms
+ GET / 200 in 268ms
+ GET / 200 in 220ms
+ GET / 200 in 334ms
+ GET / 200 in 269ms
+ GET / 200 in 292ms
+ GET / 200 in 502ms
+ GET / 200 in 337ms
+ GET / 200 in 238ms
+ GET / 200 in 389ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 228ms
+ GET / 200 in 326ms
+ GET / 200 in 428ms
+ GET / 200 in 264ms
+ GET / 200 in 347ms
+ GET / 200 in 309ms
+ GET / 200 in 252ms
+ GET / 200 in 243ms
+ GET / 200 in 286ms
+ GET / 200 in 294ms
+ GET / 200 in 277ms
+ GET / 200 in 487ms
+ GET / 200 in 288ms
+ GET / 200 in 306ms
+ GET / 200 in 308ms
+ GET / 200 in 272ms
+ GET / 200 in 228ms
+ GET / 200 in 278ms
+ GET / 200 in 233ms
+ GET / 200 in 290ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 702ms
+ GET / 200 in 487ms
+ GET / 200 in 335ms
+ GET / 200 in 244ms
+ GET / 200 in 238ms
+ GET / 200 in 239ms
+ GET / 200 in 224ms
+ GET / 200 in 379ms
+ GET / 200 in 286ms
+ GET / 200 in 247ms
+ GET / 200 in 222ms
+ GET / 200 in 249ms
+ GET / 200 in 484ms
+ GET / 200 in 257ms
+ GET / 200 in 235ms
+ GET / 200 in 320ms
+ GET / 200 in 223ms
+ GET / 200 in 331ms
+ GET / 200 in 297ms
+ GET / 200 in 215ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 207ms
+ GET / 200 in 332ms
+ GET / 200 in 265ms
+ GET / 200 in 231ms
+ GET / 200 in 348ms
+ GET / 200 in 347ms
+ GET / 200 in 373ms
+ GET / 200 in 315ms
+ GET / 200 in 694ms
+ GET / 200 in 243ms
+ GET / 200 in 259ms
+ GET / 200 in 229ms
+ GET / 200 in 246ms
+ GET / 200 in 245ms
+ GET / 200 in 265ms
+ GET / 200 in 228ms
+ GET / 200 in 303ms
+ GET / 200 in 286ms
+ GET / 200 in 424ms
+ GET / 200 in 650ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 264ms
+ GET / 200 in 288ms
+ GET / 200 in 424ms
+ GET / 200 in 332ms
+ GET / 200 in 232ms
+ GET / 200 in 363ms
+ GET / 200 in 250ms
+ GET / 200 in 332ms
+ GET / 200 in 275ms
+ GET / 200 in 222ms
+ GET / 200 in 209ms
+ GET / 200 in 346ms
+ GET / 200 in 251ms
+ GET / 200 in 251ms
+ GET / 200 in 228ms
+ GET / 200 in 239ms
+ GET / 200 in 261ms
+ GET / 200 in 241ms
+ GET / 200 in 243ms
+ GET / 200 in 285ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 335ms
+ GET / 200 in 223ms
+ GET / 200 in 220ms
+ GET / 200 in 265ms
+ GET / 200 in 282ms
+ GET / 200 in 273ms
+ GET / 200 in 260ms
+ GET / 200 in 467ms
+ GET / 200 in 2294ms
+ POST / 200 in 889ms
+ POST / 200 in 933ms
+ GET / 200 in 1230ms
+ POST / 303 in 2300ms
+ GET / 200 in 1238ms
+ POST / 303 in 2116ms
+ GET / 200 in 331ms
+ GET / 200 in 1007ms
+ GET / 200 in 1859ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 3.6s
+ GET /sign-up 200 in 4984ms
+ GET /sign-in 200 in 5022ms
+ POST /sign-up 200 in 1304ms
+ GET / 200 in 2587ms
+ POST /sign-in 200 in 2424ms
+ GET /sign-up 200 in 1766ms
+ POST /sign-up 303 in 4543ms
+ GET /sign-in 200 in 1782ms
+ POST /sign-in 303 in 3355ms
+ GET /sign-up 200 in 1564ms
+ GET /sign-up 200 in 2749ms
+ GET /sign-in 200 in 3166ms
+ ○ Compiling /sign-in/sso-callback ...
+ GET /sign-in/sso-callback 200 in 14656ms
+ GET / 200 in 2268ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ ✓ Compiled /sign-in/sso-callback in 25.5s
+ GET /dashboard 200 in 5208ms
+ GET /dashboard 200 in 26988ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 456ms
+ POST / 200 in 196ms
+ POST / 200 in 236ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 337ms
+ POST / 200 in 269ms
+ POST / 303 in 253ms
+ GET / 200 in 294ms
+ GET / 200 in 367ms
+ GET / 200 in 859ms
+ POST / 200 in 866ms
+ GET /sign-in 200 in 1009ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /sign-in 200 in 569ms
+ GET / 200 in 878ms
+ POST / 200 in 444ms
+ GET / 200 in 305ms
+ POST / 303 in 757ms
+ GET / 200 in 387ms
+ GET / 200 in 263ms
+ GET / 200 in 642ms
+ GET / 200 in 875ms
+ POST / 200 in 189ms
+ GET / 200 in 269ms
+ POST / 303 in 791ms
+ GET / 200 in 512ms
+ GET / 200 in 685ms
+ POST / 200 in 388ms
+ POST / 200 in 654ms
+ GET / 200 in 774ms
+ POST / 303 in 1471ms
+ GET / 200 in 862ms
+ POST / 303 in 1237ms
+ GET / 200 in 1149ms
+ GET / 200 in 670ms
+ GET / 200 in 914ms
+ POST / 200 in 371ms
+ POST / 200 in 548ms
+ GET / 200 in 594ms
+ POST / 303 in 1078ms
+ GET / 200 in 778ms
+ GET / 200 in 1097ms
+ POST / 303 in 1829ms
+ GET / 200 in 942ms
+ GET / 200 in 500ms
+ GET / 200 in 728ms
+ POST / 200 in 572ms
+ GET / 200 in 767ms
+ POST / 303 in 1285ms
+ POST / 200 in 1484ms
+ GET / 200 in 1774ms
+ GET / 200 in 1775ms
+ GET / 200 in 1801ms
+ POST / 303 in 3388ms
+ GET / 200 in 703ms
+ GET / 200 in 763ms
+ GET / 200 in 760ms
+ GET / 200 in 573ms
+ POST / 200 in 770ms
+ GET / 200 in 304ms
+ POST / 303 in 779ms
+ POST / 200 in 870ms
+ GET / 200 in 874ms
+ GET / 200 in 589ms
+ POST / 303 in 1061ms
+ GET / 200 in 848ms
+ GET / 200 in 996ms
+ GET / 200 in 735ms
+ GET / 200 in 524ms
+ GET / 200 in 1002ms
+ POST / 200 in 717ms
+ POST / 200 in 865ms
+ GET / 200 in 1856ms
+ POST / 303 in 2845ms
+ POST / 303 in 1861ms
+ GET / 200 in 1666ms
+ GET / 200 in 1601ms
+ GET /sign-in 200 in 983ms
+ GET / 200 in 623ms
+ GET / 200 in 532ms
+ GET / 200 in 391ms
+ ○ Compiling /favicon.ico ...
+ GET / 200 in 1386ms
+ POST / 200 in 945ms
+ ✓ Compiled /favicon.ico in 2.8s
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 4030ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 4088ms
+ GET / 200 in 482ms
+ POST / 303 in 1839ms
+ GET / 200 in 348ms
+ GET / 200 in 329ms
+ GET / 200 in 956ms
+ GET / 200 in 1782ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1262ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1264ms
+ POST / 200 in 1167ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1255ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1230ms
+ POST / 200 in 249ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ POST / 200 in 447ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /sign-in 200 in 967ms
+ GET /sign-up 200 in 1886ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1309ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1312ms
+ POST /sign-in 200 in 2074ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1334ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1354ms
+ GET /sign-in 200 in 710ms
+ POST /sign-in 303 in 1775ms
+ POST /sign-up 200 in 911ms
+ GET /sign-in 200 in 1097ms
+ GET /sign-in 200 in 706ms
+ GET /sign-up 200 in 747ms
+ POST /sign-up 303 in 1923ms
+ GET /sign-up 200 in 636ms
+ GET /sign-up 200 in 653ms
+ GET / 200 in 490ms
+ GET /dashboard 200 in 544ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 743ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 755ms
+ POST /dashboard 200 in 323ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 4.2s
+ GET /dashboard 404 in 5034ms
+ POST /dashboard 303 in 5423ms
+ GET /sign-in/sso-callback 200 in 614ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 665ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /dashboard 200 in 827ms
+ GET / 200 in 1279ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1000ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1021ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 981ms
+ ⨯ [Error: aborted]
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ ○ Compiling /_error ...
+ GET / 200 in 836ms
+ GET / 200 in 1118ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 3089ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 3108ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 3084ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2630ms
+ POST / 200 in 864ms
+ POST / 200 in 284ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ POST / 303 in 689ms
+ GET / 200 in 652ms
+ GET / 200 in 2268ms
+ GET / 200 in 2507ms
+ GET / 200 in 2515ms
+ ✓ Compiled /_error in 13.3s
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1434ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1451ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1381ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 856ms
+ POST / 200 in 710ms
+ POST / 200 in 837ms
+ GET /sign-in 200 in 1310ms
+ GET /sign-in 200 in 1292ms
+ GET / 200 in 1493ms
+ POST / 303 in 2643ms
+ GET / 200 in 948ms
+ GET / 200 in 422ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 552ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 502ms
+ POST / 200 in 273ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 402ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 723ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 658ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 750ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 730ms
+ GET / 200 in 674ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1229ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1235ms
+ POST / 200 in 683ms
+ GET / 200 in 1249ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1435ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1372ms
+ GET / 200 in 1498ms
+ POST / 200 in 663ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 705ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 709ms
+ POST / 200 in 466ms
+ GET / 200 in 473ms
+ POST / 200 in 1313ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 1613ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1539ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1559ms
+ POST / 200 in 1022ms
+ GET / 200 in 1090ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 773ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 749ms
+ POST / 200 in 1056ms
+ GET / 200 in 1207ms
+ POST / 200 in 1666ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 818ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 791ms
+ POST / 200 in 778ms
+ GET / 200 in 1124ms
+ POST / 303 in 1288ms
+ GET / 200 in 952ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 823ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 822ms
+ POST / 200 in 585ms
+ GET / 200 in 1172ms
+ GET /sign-in 200 in 2449ms
+ POST /sign-in 303 in 1058ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 967ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 924ms
+ GET / 200 in 1203ms
+ POST / 200 in 782ms
+ POST / 200 in 442ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET / 200 in 583ms
+ GET / 200 in 316ms
+ GET / 200 in 340ms
+ GET / 200 in 263ms
+ GET / 200 in 272ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 252ms
+ GET / 200 in 282ms
+ GET / 200 in 253ms
+ GET / 200 in 286ms
+ GET / 200 in 278ms
+ GET / 200 in 250ms
+ GET / 200 in 217ms
+ GET / 200 in 271ms
+ GET / 200 in 860ms
+ GET / 200 in 264ms
+ GET / 200 in 245ms
+ GET / 200 in 351ms
+ GET / 200 in 267ms
+ GET / 200 in 318ms
+ GET / 200 in 325ms
+ GET / 200 in 244ms
+ GET / 200 in 256ms
+ GET / 200 in 365ms
+ GET / 200 in 241ms
+ GET / 200 in 451ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 441ms
+ GET / 200 in 296ms
+ GET / 200 in 265ms
+ GET / 200 in 306ms
+ GET / 200 in 243ms
+ GET / 200 in 213ms
+ GET / 200 in 306ms
+ GET / 200 in 223ms
+ GET / 200 in 226ms
+ GET / 200 in 409ms
+ GET / 200 in 445ms
+ GET / 200 in 282ms
+ GET / 200 in 1022ms
+ GET / 200 in 363ms
+ GET / 200 in 383ms
+ GET / 200 in 346ms
+ GET / 200 in 343ms
+ GET / 200 in 258ms
+ GET / 200 in 246ms
+ GET / 200 in 243ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 246ms
+ GET / 200 in 245ms
+ GET / 200 in 244ms
+ GET / 200 in 264ms
+ GET / 200 in 264ms
+ GET / 200 in 611ms
+ GET / 200 in 222ms
+ GET / 200 in 241ms
+ GET / 200 in 244ms
+ GET / 200 in 266ms
+ GET / 200 in 207ms
+ GET / 200 in 212ms
+ GET / 200 in 273ms
+ GET / 200 in 240ms
+ GET / 200 in 235ms
+ GET / 200 in 238ms
+ GET / 200 in 564ms
+ GET / 200 in 274ms
+ GET / 200 in 688ms
+ GET / 200 in 283ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 212ms
+ GET / 200 in 316ms
+ GET / 200 in 273ms
+ GET / 200 in 270ms
+ GET / 200 in 264ms
+ GET / 200 in 219ms
+ GET / 200 in 403ms
+ GET / 200 in 220ms
+ GET / 200 in 251ms
+ GET / 200 in 227ms
+ GET / 200 in 292ms
+ GET / 200 in 306ms
+ GET / 200 in 221ms
+ GET / 200 in 290ms
+ GET / 200 in 501ms
+ GET / 200 in 426ms
+ GET / 200 in 283ms
+ GET / 200 in 257ms
+ GET / 200 in 231ms
+ GET / 200 in 227ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 292ms
+ GET / 200 in 255ms
+ GET / 200 in 235ms
+ GET / 200 in 450ms
+ GET / 200 in 212ms
+ GET / 200 in 529ms
+ GET / 200 in 242ms
+ GET / 200 in 213ms
+ GET / 200 in 219ms
+ GET / 200 in 233ms
+ GET / 200 in 269ms
+ GET / 200 in 312ms
+ GET / 200 in 296ms
+ GET / 200 in 220ms
+ GET / 200 in 205ms
+ GET / 200 in 262ms
+ GET / 200 in 233ms
+ GET / 200 in 252ms
+ GET / 200 in 277ms
+ GET / 200 in 1211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 250ms
+ GET / 200 in 206ms
+ GET / 200 in 207ms
+ GET / 200 in 216ms
+ GET / 200 in 204ms
+ GET / 200 in 236ms
+ GET / 200 in 225ms
+ GET / 200 in 432ms
+ GET / 200 in 339ms
+ GET / 200 in 260ms
+ GET / 200 in 496ms
+ GET / 200 in 355ms
+ GET / 200 in 703ms
+ GET / 200 in 353ms
+ GET / 200 in 268ms
+ GET / 200 in 345ms
+ GET / 200 in 258ms
+ GET / 200 in 379ms
+ GET / 200 in 200ms
+ GET / 200 in 216ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 330ms
+ GET / 200 in 250ms
+ GET / 200 in 242ms
+ GET / 200 in 276ms
+ GET / 200 in 236ms
+ GET / 200 in 325ms
+ GET / 200 in 218ms
+ GET / 200 in 994ms
+ GET / 200 in 223ms
+ GET / 200 in 206ms
+ GET / 200 in 199ms
+ GET / 200 in 197ms
+ GET / 200 in 219ms
+ GET / 200 in 221ms
+ GET / 200 in 206ms
+ GET / 200 in 238ms
+ GET / 200 in 244ms
+ GET / 200 in 246ms
+ GET / 200 in 214ms
+ GET / 200 in 260ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 224ms
+ GET / 200 in 205ms
+ GET / 200 in 235ms
+ GET / 200 in 993ms
+ GET / 200 in 908ms
+ GET / 200 in 226ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 255ms
+ GET / 200 in 265ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 590ms
+ POST / 200 in 220ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 277ms
+ GET /sign-in 200 in 289ms
+ GET /sign-in 200 in 232ms
+ GET / 200 in 421ms
+ POST / 303 in 3099ms
+ GET / 200 in 203ms
+ GET / 200 in 154ms
+ GET /sign-in 200 in 214ms
+ GET / 200 in 242ms
+ GET /dashboard 200 in 346ms
+ POST /dashboard 200 in 113ms
+ POST /dashboard 200 in 100ms
+ GET /dashboard 200 in 157ms
+ GET / 200 in 275ms
+ GET / 200 in 254ms
+ GET / 200 in 248ms
+ GET / 200 in 243ms
+ GET / 200 in 307ms
+ GET / 200 in 236ms
+ GET / 200 in 263ms
+ GET / 200 in 375ms
+ GET / 200 in 304ms
+ GET / 200 in 251ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1739ms
+ GET / 200 in 234ms
+ GET / 200 in 272ms
+ GET / 200 in 261ms
+ GET / 200 in 247ms
+ GET / 200 in 249ms
+ GET / 200 in 257ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a5dz58bfrcn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a5dz58bfrcn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1wpxxuhjtvm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1wpxxuhjtvm'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a5dz58bfrcn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a5dz58bfrcn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kz7n29ei428'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kz7n29ei428'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.88q6ulnr1c2'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.88q6ulnr1c2'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qzjpffqf2ni'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qzjpffqf2ni'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.6l87fhj9qur'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.6l87fhj9qur'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qzjpffqf2ni'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qzjpffqf2ni'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.5vwytkyggnq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.5vwytkyggnq'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ujs8ak702hm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ujs8ak702hm'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.85rj6sl3kjf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.85rj6sl3kjf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.l6n9ppvzzb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.l6n9ppvzzb'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.85rj6sl3kjf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.85rj6sl3kjf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.31er1k5z82u'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.31er1k5z82u'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.x2j24t3dcc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.x2j24t3dcc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s48o4zyz9xm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s48o4zyz9xm'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fnh4nwpily5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fnh4nwpily5'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s48o4zyz9xm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s48o4zyz9xm'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e49rui7zzxe'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e49rui7zzxe'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.v3dz99b9ukq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.v3dz99b9ukq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw4l7e6x9xq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw4l7e6x9xq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ks1jfvicqjg'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ks1jfvicqjg'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw4l7e6x9xq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw4l7e6x9xq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j3y7d7jvjpc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j3y7d7jvjpc'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.l3jwhrt77es'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.l3jwhrt77es'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wccu89f1pf9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wccu89f1pf9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.sgfj0ticr1'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.sgfj0ticr1'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wccu89f1pf9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wccu89f1pf9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.f0vev8qmji4'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.f0vev8qmji4'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ivl5zatapv'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ivl5zatapv'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ghx8tfb8px5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ghx8tfb8px5'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y8cqjed74j'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y8cqjed74j'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ghx8tfb8px5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ghx8tfb8px5'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zg41dew1fj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zg41dew1fj'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.0id6n6fl7li5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.0id6n6fl7li5'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ddo6ubnkb4p'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ddo6ubnkb4p'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ezyvlxkw89r'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ezyvlxkw89r'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ddo6ubnkb4p'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ddo6ubnkb4p'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xr20nqeudj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xr20nqeudj'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.0x31nobhzc8k'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.0x31nobhzc8k'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m4ih5ez3l3p'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m4ih5ez3l3p'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zgqj08hu0gj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zgqj08hu0gj'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m4ih5ez3l3p'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m4ih5ez3l3p'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8hadwnd8h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8hadwnd8h'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qekw3cj7jms'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qekw3cj7jms'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oz1t34zxj2'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oz1t34zxj2'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wrnt4e874nl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wrnt4e874nl'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oz1t34zxj2'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oz1t34zxj2'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.n1esvvo4w2q'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.n1esvvo4w2q'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8e051zeu5g'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8e051zeu5g'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rymtajs7qns'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rymtajs7qns'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ejiuz3hz1k4'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ejiuz3hz1k4'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rymtajs7qns'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rymtajs7qns'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hvuuc8s1nt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hvuuc8s1nt'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zx60m8c7kus'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zx60m8c7kus'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4tcia36ibni'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4tcia36ibni'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qez6b9x9iy8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qez6b9x9iy8'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4tcia36ibni'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4tcia36ibni'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9rl2cp9axpc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9rl2cp9axpc'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1gn18hq8l9hk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1gn18hq8l9hk'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7mkcsdpcuib'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7mkcsdpcuib'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7jlc961yim'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7jlc961yim'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7mkcsdpcuib'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7mkcsdpcuib'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.reqvzh6xls'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.reqvzh6xls'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ugfssd5s2sb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ugfssd5s2sb'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j4ql9uti0jl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j4ql9uti0jl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.c061rhrasb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.c061rhrasb'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j4ql9uti0jl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j4ql9uti0jl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.av3niyhxj24'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.av3niyhxj24'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hvvvlz0lrjo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hvvvlz0lrjo'
+}

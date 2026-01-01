@@ -1,6 +1,6 @@
 """
 Pitch Analysis Endpoint
-Analyzes recorded pitches using Gemini with uploaded document context
+Analyzes recorded pitches using OpenRouter with uploaded document context
 """
 
 from fastapi import APIRouter, HTTPException
@@ -8,8 +8,7 @@ from pydantic import BaseModel
 from typing import Dict, List, Optional
 import structlog
 
-from services.gemini_service import get_gemini_service
-from services.emotion_service import get_emotion_service
+from services.openrouter_service import get_openrouter_service
 from services.context_service import get_context_service
 
 logger = structlog.get_logger()
@@ -55,12 +54,11 @@ async def analyze_pitch(request: AnalyzePitchRequest):
         )
         
         # Get services
-        gemini_service = get_gemini_service()
-        emotion_service = get_emotion_service()
+        openrouter_service = get_openrouter_service()
         context_service = get_context_service()
         
-        # Analyze emotion from transcript
-        emotion_data = emotion_service.analyze(request.transcript, request.session_id)
+        # Analyze emotion from transcript using OpenRouter
+        emotion_data = await openrouter_service.detect_emotion(request.transcript)
         logger.info(
             "emotion_analyzed",
             dominant_emotion=emotion_data.get('dominant_emotion'),
@@ -122,8 +120,8 @@ Focus on:
 
 Be constructive, specific, and actionable in your feedback."""
         
-        # Generate analysis using Gemini
-        response_text = await gemini_service.generate_response(
+        # Generate analysis using OpenRouter
+        response_text = await openrouter_service.generate_reasoning_response(
             message=analysis_prompt,
             emotion_data=emotion_data,
             document_context=document_context
@@ -213,11 +211,13 @@ Be constructive, specific, and actionable in your feedback."""
 async def llm_status():
     """Check LLM service status"""
     try:
-        gemini_service = get_gemini_service()
+        openrouter_service = get_openrouter_service()
         return {
             "status": "operational",
-            "model": "gemini-2.0-flash-exp",
-            "has_api_key": bool(gemini_service.model)
+            "reasoning_model": openrouter_service.reasoning_model,
+            "emotion_model": openrouter_service.emotion_model,
+            "has_reasoning_keys": bool(openrouter_service.reasoning_keys),
+            "has_emotion_keys": bool(openrouter_service.emotion_keys)
         }
     except Exception as e:
         logger.error("llm_status_check_failed", error=str(e))
