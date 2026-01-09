@@ -10,6 +10,7 @@ import asyncio
 import structlog
 
 from services.gemini_live_service import GeminiLiveService
+from services.tts_service import get_tts_service, TTSService
 
 logger = structlog.get_logger()
 router = APIRouter()
@@ -128,20 +129,48 @@ async def live_session_endpoint(
             "message": "Welcome! I'm Marcus Sterling, and I'm here to help you refine your pitch. When you're ready, start presenting and I'll provide real-time feedback."
         })
         
+        # Get TTS service for converting text to speech
+        tts_service = get_tts_service()
+        
         # Create task for receiving from Gemini
         async def receive_from_gemini():
             """Background task to receive responses from Gemini and forward to client"""
             try:
                 async for response in live_service.receive_responses(session_id):
                     if response["type"] == "audio":
-                        # Send audio data as bytes
+                        # Send audio data as bytes (Gemini native audio)
                         await manager.send_audio(session_id, response["data"])
                     elif response["type"] == "text":
-                        # Send text as JSON
+                        # Convert text to speech using Edge TTS
+                        text_content = response["content"]
+                        
+                        # Send text message first (for transcript)
                         await manager.send_message(session_id, {
                             "type": "assistant_message",
-                            "content": response["content"]
+                            "content": text_content
                         })
+                        
+                        # Generate TTS audio and send
+                        try:
+                            logger.info("generating_tts_audio", text_length=len(text_content))
+                            
+                            # Stream TTS audio chunks
+                            async for audio_chunk in tts_service.generate_speech_stream(
+                                text=text_content,
+                                rate="+5%"  # Slightly faster for natural coaching feel
+                            ):
+                                await manager.send_audio(session_id, audio_chunk)
+                            
+                            logger.info("tts_audio_sent", session_id=session_id)
+                            
+                        except Exception as tts_error:
+                            logger.error("tts_generation_error", error=str(tts_error))
+                            # TTS failed, but text was already sent
+                            await manager.send_message(session_id, {
+                                "type": "tts_error",
+                                "message": "Voice synthesis unavailable"
+                            })
+                            
                     elif response["type"] == "metadata":
                         # Send metadata
                         await manager.send_message(session_id, {

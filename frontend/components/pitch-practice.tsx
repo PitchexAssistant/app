@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useAudioRecorder } from '@/hooks/use-audio-recorder';
 import { useSessions } from '@/hooks/use-sessions';
-import { LiveSessionLiveKit } from '@/components/live-session-livekit';
+import { InteractivePitchSession } from '@/components/interactive-pitch-session';
 import { api, Session as APISession } from '@/lib/api/client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -528,10 +528,11 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
           </Card>
         )}
 
-        {/* Live Session Mode - Show LiveKit Interface */}
+        {/* Live Session Mode - Interactive Pitch Coaching */}
         {pitchMode === 'live' && (
           <div className="fixed inset-0 z-50 bg-[#171717]">
-            <LiveSessionLiveKit
+            <InteractivePitchSession
+              sessionId={sessionId}
               onEndSession={handleEndSession}
               contextFiles={uploadedFiles}
             />

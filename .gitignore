@@ -3,10 +3,6 @@
 backend/venv
 
 # Environment Variables
-/.env
-.env
-.env.*
-backend/.env
 
 # Process ID Files
 *.pid

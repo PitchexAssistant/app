@@ -293,24 +293,86 @@ export function useLiveSession({
     }
   }, []);
 
-  // Play audio chunk
-  const playAudioChunk = async (blob: Blob) => {
-    try {
-      if (!audioContextRef.current) {
-        audioContextRef.current = new AudioContext({ sampleRate: 24000 });
-      }
+  // Play audio chunk - supports MP3 (Edge TTS) and PCM (Gemini native)
+  const audioQueueRef = useRef<Blob[]>([]);
+  const isPlayingRef = useRef<boolean>(false);
 
-      const arrayBuffer = await blob.arrayBuffer();
-      const audioBuffer = await audioContextRef.current.decodeAudioData(arrayBuffer);
-
-      const source = audioContextRef.current.createBufferSource();
-      source.buffer = audioBuffer;
-      source.connect(audioContextRef.current.destination);
-      source.start();
-    } catch (err) {
-      console.error('Error playing audio:', err);
+  const playNextInQueue = useCallback(async () => {
+    if (isPlayingRef.current || audioQueueRef.current.length === 0) {
+      return;
     }
-  };
+
+    isPlayingRef.current = true;
+    const blob = audioQueueRef.current.shift();
+
+    if (!blob) {
+      isPlayingRef.current = false;
+      return;
+    }
+
+    try {
+      // Check if it's MP3 format (Edge TTS output)
+      const isMP3 = blob.type === 'audio/mpeg' || blob.size > 1000;
+
+      if (isMP3) {
+        // Use HTML5 Audio for MP3 - more reliable for encoded audio
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+
+        audio.onended = () => {
+          URL.revokeObjectURL(url);
+          isPlayingRef.current = false;
+          // Play next in queue
+          playNextInQueue();
+        };
+
+        audio.onerror = (e) => {
+          console.error('[useLiveSession] MP3 playback error:', e);
+          URL.revokeObjectURL(url);
+          isPlayingRef.current = false;
+          // Try next in queue
+          playNextInQueue();
+        };
+
+        await audio.play();
+      } else {
+        // Use AudioContext for PCM (raw audio from Gemini)
+        if (!audioContextRef.current) {
+          audioContextRef.current = new AudioContext({ sampleRate: 24000 });
+        }
+
+        const arrayBuffer = await blob.arrayBuffer();
+
+        try {
+          const audioBuffer = await audioContextRef.current.decodeAudioData(arrayBuffer);
+          const source = audioContextRef.current.createBufferSource();
+          source.buffer = audioBuffer;
+          source.connect(audioContextRef.current.destination);
+
+          source.onended = () => {
+            isPlayingRef.current = false;
+            playNextInQueue();
+          };
+
+          source.start();
+        } catch (decodeError) {
+          console.error('[useLiveSession] PCM decode error, trying as raw:', decodeError);
+          isPlayingRef.current = false;
+          playNextInQueue();
+        }
+      }
+    } catch (err) {
+      console.error('[useLiveSession] Error playing audio:', err);
+      isPlayingRef.current = false;
+      playNextInQueue();
+    }
+  }, []);
+
+  const playAudioChunk = useCallback((blob: Blob) => {
+    // Add to queue and start playing if not already
+    audioQueueRef.current.push(blob);
+    playNextInQueue();
+  }, [playNextInQueue]);
 
   // Cleanup on unmount
   useEffect(() => {
@@ -321,6 +383,10 @@ export function useLiveSession({
       }
       // Don't pause VAD here as it might be used by other components or cause issues if paused too early
       // vad.pause(); 
+
+      // Clear audio queue
+      audioQueueRef.current = [];
+      isPlayingRef.current = false;
 
       if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
         try {

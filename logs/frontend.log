@@ -55850,3 +55850,1939 @@ Error: listen EADDRINUSE: address already in use :::3001
   port: 3001
 }
 [?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1299ms
+ ✓ Ready in 3.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.2s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 11312ms
+ GET / 200 in 238ms
+ GET / 200 in 217ms
+ GET / 200 in 203ms
+ GET / 200 in 284ms
+ GET / 200 in 195ms
+ GET / 200 in 279ms
+ GET / 200 in 302ms
+ GET / 200 in 208ms
+ GET / 200 in 253ms
+ GET / 200 in 194ms
+ GET / 200 in 188ms
+ GET / 200 in 242ms
+ GET / 200 in 217ms
+ GET / 200 in 189ms
+ GET / 200 in 214ms
+ GET / 200 in 192ms
+ GET / 200 in 191ms
+ GET / 200 in 243ms
+ GET / 200 in 210ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 201ms
+ GET / 200 in 194ms
+ GET / 200 in 199ms
+ GET / 200 in 185ms
+ GET / 200 in 193ms
+ GET / 200 in 252ms
+ GET / 200 in 222ms
+ GET / 200 in 262ms
+ GET / 200 in 206ms
+ GET / 200 in 184ms
+ GET / 200 in 184ms
+ GET / 200 in 195ms
+ GET / 200 in 177ms
+ GET / 200 in 296ms
+ GET / 200 in 254ms
+ GET / 200 in 196ms
+ GET / 200 in 177ms
+ GET / 200 in 184ms
+ GET / 200 in 276ms
+ GET / 200 in 208ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 185ms
+ GET / 200 in 183ms
+ GET / 200 in 273ms
+ GET / 200 in 205ms
+ GET / 200 in 193ms
+ GET / 200 in 196ms
+ GET / 200 in 249ms
+ GET / 200 in 199ms
+ GET / 200 in 246ms
+ GET / 200 in 182ms
+ GET / 200 in 213ms
+ GET / 200 in 199ms
+ GET / 200 in 182ms
+ GET / 200 in 179ms
+ GET / 200 in 196ms
+ GET / 200 in 183ms
+ GET / 200 in 223ms
+ GET / 200 in 214ms
+ GET / 200 in 196ms
+ GET / 200 in 311ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 466ms
+ GET / 200 in 186ms
+ GET / 200 in 192ms
+ GET / 200 in 212ms
+ GET / 200 in 192ms
+ GET / 200 in 183ms
+ GET / 200 in 184ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1196ms
+ ✓ Ready in 4.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 14.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 15410ms
+ GET / 200 in 274ms
+ GET / 200 in 261ms
+ GET / 200 in 190ms
+ GET / 200 in 283ms
+ GET / 200 in 286ms
+ POST / 200 in 575ms
+ ○ Compiling /favicon.ico ...
+ POST / 200 in 343ms
+ ✓ Compiled /favicon.ico in 1046ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1435ms
+ GET / 200 in 228ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1121ms
+ GET /sign-in 200 in 2244ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 10.2s
+ GET /dashboard 200 in 10495ms
+ GET /dashboard 200 in 525ms
+ GET / 200 in 247ms
+ GET / 200 in 250ms
+ GET / 200 in 374ms
+ GET / 200 in 268ms
+ GET / 200 in 307ms
+ GET / 200 in 269ms
+ GET / 200 in 260ms
+ GET / 200 in 255ms
+ GET / 200 in 268ms
+ GET / 200 in 478ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1310ms
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 14912ms
+ GET / 200 in 284ms
+ GET / 200 in 229ms
+ GET / 200 in 204ms
+ GET / 200 in 239ms
+ GET / 200 in 212ms
+ GET / 200 in 181ms
+ GET / 200 in 228ms
+ GET / 200 in 209ms
+ GET / 200 in 264ms
+ GET / 200 in 259ms
+ GET / 200 in 213ms
+ GET / 200 in 194ms
+ GET / 200 in 254ms
+ GET / 200 in 228ms
+ GET / 200 in 232ms
+ GET / 200 in 545ms
+ GET / 200 in 251ms
+ GET / 200 in 210ms
+ GET / 200 in 254ms
+ GET / 200 in 547ms
+ GET / 200 in 292ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 262ms
+ GET / 200 in 192ms
+ GET / 200 in 449ms
+ GET / 200 in 284ms
+ GET / 200 in 219ms
+ GET / 200 in 212ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 302ms
+ GET / 200 in 427ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 199ms
+ GET / 200 in 191ms
+ GET / 200 in 193ms
+ GET / 200 in 202ms
+ GET / 200 in 195ms
+ GET / 200 in 188ms
+ GET / 200 in 258ms
+ GET / 200 in 192ms
+ GET / 200 in 183ms
+ GET / 200 in 188ms
+ GET / 200 in 278ms
+ GET / 200 in 196ms
+ GET / 200 in 186ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 188ms
+ GET / 200 in 236ms
+ GET / 200 in 199ms
+ GET / 200 in 266ms
+ GET / 200 in 380ms
+ ○ Compiling /favicon.ico ...
+ POST / 200 in 527ms
+ POST / 200 in 300ms
+ ✓ Compiled /favicon.ico in 1409ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1963ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1314ms
+ GET / 200 in 294ms
+ GET /sign-in 200 in 2498ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 9.4s
+ GET /dashboard 200 in 9623ms
+ GET /dashboard 200 in 472ms
+ GET / 200 in 205ms
+ GET / 200 in 216ms
+ GET / 200 in 247ms
+ GET / 200 in 537ms
+ GET / 200 in 288ms
+ GET / 200 in 432ms
+ GET / 200 in 382ms
+ GET / 200 in 439ms
+ GET / 200 in 321ms
+ GET / 200 in 572ms
+ GET / 200 in 458ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1501ms
+ ✓ Ready in 4.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 24.4s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 26183ms
+ GET / 200 in 533ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 2.6s
+ GET /customers 404 in 3108ms
+ ⚠ Cross origin request detected from test.portal.localhost to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ POST /customers 404 in 1082ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1411ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1929ms
+ GET / 200 in 283ms
+ GET / 200 in 478ms
+ POST / 200 in 406ms
+ POST / 200 in 347ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 565ms
+ GET / 200 in 1067ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1004ms
+ GET /sign-in 200 in 2137ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 9s
+ GET /dashboard 200 in 9660ms
+ POST /dashboard 200 in 264ms
+ POST /dashboard 200 in 229ms
+ GET / 200 in 222ms
+ GET / 200 in 328ms
+ GET / 200 in 493ms
+ GET / 200 in 199ms
+ GET / 200 in 223ms
+ GET / 200 in 194ms
+ GET / 200 in 232ms
+ GET / 200 in 265ms
+ GET / 200 in 216ms
+ GET / 200 in 195ms
+ GET / 200 in 196ms
+ GET / 200 in 275ms
+ GET / 200 in 214ms
+ GET / 200 in 196ms
+ GET / 200 in 192ms
+ GET / 200 in 228ms
+ GET / 200 in 214ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 186ms
+ GET / 200 in 190ms
+ GET / 200 in 225ms
+ GET / 200 in 204ms
+ GET / 200 in 190ms
+ GET / 200 in 195ms
+ GET / 200 in 222ms
+ GET / 200 in 195ms
+ GET / 200 in 191ms
+ GET / 200 in 190ms
+ GET / 200 in 191ms
+ GET / 200 in 284ms
+ GET / 200 in 201ms
+ GET / 200 in 190ms
+ GET / 200 in 188ms
+ GET / 200 in 192ms
+ GET / 200 in 294ms
+ GET / 200 in 189ms
+ GET / 200 in 213ms
+ GET / 200 in 198ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 252ms
+ GET / 200 in 205ms
+ GET / 200 in 267ms
+ ✓ Compiled in 1490ms
+ ✓ Compiled /dashboard in 255ms
+ GET /dashboard 200 in 983ms
+ GET / 200 in 207ms
+ ✓ Compiled in 3.9s
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ POST /dashboard 200 in 1278ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /dashboard 200 in 1456ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ POST /dashboard 200 in 134ms
+ POST /dashboard 200 in 100ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 380ms
+ GET / 200 in 170ms
+ GET / 200 in 211ms
+ GET / 200 in 199ms
+ GET / 200 in 259ms
+ GET / 200 in 199ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 365ms
+ GET / 200 in 661ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 270ms
+ GET / 200 in 490ms
+ GET / 200 in 204ms
+ GET / 200 in 260ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 299ms
+ GET / 200 in 336ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 206ms
+ GET / 200 in 497ms
+ GET / 200 in 258ms
+ GET / 200 in 194ms
+ GET / 200 in 202ms
+ GET / 200 in 206ms
+ GET / 200 in 202ms
+ GET / 200 in 235ms
+ GET / 200 in 207ms
+ GET / 200 in 197ms
+ GET / 200 in 213ms
+ GET / 200 in 209ms
+ GET / 200 in 200ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 218ms
+ GET / 200 in 483ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 445ms
+ GET / 200 in 368ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 199ms
+ GET / 200 in 202ms
+ GET / 200 in 195ms
+ GET / 200 in 244ms
+ GET / 200 in 262ms
+ GET / 200 in 207ms
+ GET / 200 in 197ms
+ GET / 200 in 194ms
+ GET / 200 in 205ms
+ GET / 200 in 290ms
+ GET / 200 in 246ms
+ GET / 200 in 249ms
+ GET / 200 in 221ms
+ GET / 200 in 206ms
+ GET / 200 in 213ms
+ GET / 200 in 204ms
+ GET / 200 in 222ms
+ GET / 200 in 221ms
+ GET / 200 in 240ms
+ GET / 200 in 209ms
+ GET / 200 in 212ms
+ GET / 200 in 208ms
+ GET / 200 in 228ms
+ GET / 200 in 249ms
+ GET / 200 in 214ms
+ GET / 200 in 230ms
+ GET / 200 in 310ms
+ GET / 200 in 213ms
+ GET / 200 in 218ms
+ GET / 200 in 212ms
+ GET / 200 in 208ms
+ GET / 200 in 203ms
+ GET / 200 in 208ms
+ GET / 200 in 204ms
+ GET / 200 in 208ms
+ GET / 200 in 340ms
+ GET / 200 in 208ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 240ms
+ GET / 200 in 204ms
+ GET / 200 in 214ms
+ GET / 200 in 206ms
+ GET / 200 in 221ms
+ GET / 200 in 263ms
+ GET / 200 in 274ms
+ GET / 200 in 281ms
+ GET / 200 in 241ms
+ GET / 200 in 251ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 313ms
+ GET / 200 in 427ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 209ms
+ GET / 200 in 207ms
+ GET / 200 in 278ms
+ GET / 200 in 230ms
+ GET / 200 in 231ms
+ GET / 200 in 231ms
+ GET / 200 in 209ms
+ GET / 200 in 210ms
+ GET / 200 in 227ms
+ GET / 200 in 212ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 215ms
+ GET / 200 in 295ms
+ GET / 200 in 263ms
+ GET / 200 in 373ms
+ GET / 200 in 225ms
+ GET / 200 in 221ms
+ GET / 200 in 223ms
+ GET / 200 in 231ms
+ GET / 200 in 230ms
+ GET / 200 in 334ms
+ GET / 200 in 276ms
+ GET / 200 in 220ms
+ GET / 200 in 225ms
+ GET / 200 in 348ms
+ GET / 200 in 227ms
+ GET / 200 in 285ms
+ GET / 200 in 221ms
+ GET / 200 in 231ms
+ GET / 200 in 231ms
+ GET / 200 in 230ms
+ GET / 200 in 224ms
+ GET / 200 in 236ms
+ GET / 200 in 239ms
+ GET / 200 in 253ms
+ GET / 200 in 225ms
+ GET / 200 in 291ms
+ ✓ Compiled in 2.1s
+ GET / 200 in 226ms
+ GET / 200 in 317ms
+ GET / 200 in 313ms
+ GET / 200 in 225ms
+ GET / 200 in 267ms
+ GET / 200 in 218ms
+ GET / 200 in 215ms
+ GET / 200 in 206ms
+ GET / 200 in 204ms
+ GET / 200 in 283ms
+ GET / 200 in 323ms
+ GET / 200 in 250ms
+ GET / 200 in 221ms
+ GET / 200 in 665ms
+ GET / 200 in 218ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 226ms
+ GET / 200 in 220ms
+ GET / 200 in 236ms
+ GET / 200 in 223ms
+ GET / 200 in 614ms
+ GET / 200 in 298ms
+ GET / 200 in 232ms
+ GET / 200 in 496ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 375ms
+ GET / 200 in 1194ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 255ms
+ GET / 200 in 301ms
+ GET / 200 in 320ms
+ GET / 200 in 307ms
+ GET / 200 in 232ms
+ GET / 200 in 224ms
+ GET / 200 in 254ms
+ GET / 200 in 270ms
+ GET / 200 in 275ms
+ GET / 200 in 342ms
+ GET / 200 in 287ms
+ GET / 200 in 247ms
+ GET / 200 in 249ms
+ GET / 200 in 249ms
+ GET / 200 in 256ms
+ GET / 200 in 374ms
+ GET / 200 in 277ms
+ GET / 200 in 282ms
+ GET / 200 in 262ms
+ GET / 200 in 322ms
+ ✓ Compiled /dashboard in 218ms
+ GET /dashboard 200 in 2561ms
+ GET / 200 in 1194ms
+ POST /dashboard 200 in 661ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 857ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 775ms
+ GET /dashboard 404 in 194ms
+ POST /dashboard 303 in 604ms
+ GET / 200 in 219ms
+ GET / 200 in 244ms
+ GET / 200 in 206ms
+ GET / 200 in 274ms
+ GET / 200 in 231ms
+ GET / 200 in 226ms
+ GET / 200 in 217ms
+ GET / 200 in 257ms
+ GET / 200 in 246ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 415ms
+ GET / 200 in 269ms
+ GET / 200 in 240ms
+ GET / 200 in 234ms
+ GET / 200 in 281ms
+ GET / 200 in 504ms
+ GET / 200 in 289ms
+ GET / 200 in 219ms
+ GET / 200 in 232ms
+ GET / 200 in 237ms
+ GET / 200 in 243ms
+ GET / 200 in 330ms
+ GET / 200 in 237ms
+ GET / 200 in 232ms
+ GET / 200 in 257ms
+ GET / 200 in 221ms
+ GET / 200 in 226ms
+ GET / 200 in 310ms
+ GET / 200 in 277ms
+ GET / 200 in 237ms
+ GET / 200 in 249ms
+ GET / 200 in 218ms
+ GET / 200 in 244ms
+ GET / 200 in 221ms
+ GET / 200 in 268ms
+ GET / 200 in 222ms
+ GET / 200 in 252ms
+ GET / 200 in 223ms
+ GET / 200 in 315ms
+ GET / 200 in 444ms
+ GET / 200 in 1524ms
+ ⨯ ./components/pitch-practice.tsx:6:1
+Module not found: Can't resolve '@/components/interactive-pitch-session'
+[0m [90m 4 |[39m [36mimport[39m { useAudioRecorder } [36mfrom[39m [32m'@/hooks/use-audio-recorder'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { useSessions } [36mfrom[39m [32m'@/hooks/use-sessions'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mInteractivePitchSession[39m } [36mfrom[39m [32m'@/components/interactive-pitch-session'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { api[33m,[39m [33mSession[39m [36mas[39m [33mAPISession[39m } [36mfrom[39m [32m'@/lib/api/client'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m'@/components/ui/button'[39m[33m;[39m
+ [90m 9 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardDescription[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[33m;[39m[0m
+
+Import map: aliased to relative './components/interactive-pitch-session' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/pitch-practice.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/pitch-practice.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/pitch-practice.tsx:6:1
+Module not found: Can't resolve '@/components/interactive-pitch-session'
+[0m [90m 4 |[39m [36mimport[39m { useAudioRecorder } [36mfrom[39m [32m'@/hooks/use-audio-recorder'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { useSessions } [36mfrom[39m [32m'@/hooks/use-sessions'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mInteractivePitchSession[39m } [36mfrom[39m [32m'@/components/interactive-pitch-session'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { api[33m,[39m [33mSession[39m [36mas[39m [33mAPISession[39m } [36mfrom[39m [32m'@/lib/api/client'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m'@/components/ui/button'[39m[33m;[39m
+ [90m 9 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardDescription[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[33m;[39m[0m
+
+Import map: aliased to relative './components/interactive-pitch-session' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/pitch-practice.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/pitch-practice.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/pitch-practice.tsx:6:1
+Module not found: Can't resolve '@/components/interactive-pitch-session'
+[0m [90m 4 |[39m [36mimport[39m { useAudioRecorder } [36mfrom[39m [32m'@/hooks/use-audio-recorder'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { useSessions } [36mfrom[39m [32m'@/hooks/use-sessions'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mInteractivePitchSession[39m } [36mfrom[39m [32m'@/components/interactive-pitch-session'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { api[33m,[39m [33mSession[39m [36mas[39m [33mAPISession[39m } [36mfrom[39m [32m'@/lib/api/client'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m'@/components/ui/button'[39m[33m;[39m
+ [90m 9 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardDescription[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[33m;[39m[0m
+
+Import map: aliased to relative './components/interactive-pitch-session' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/pitch-practice.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/pitch-practice.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./components/pitch-practice.tsx:6:1
+Module not found: Can't resolve '@/components/interactive-pitch-session'
+[0m [90m 4 |[39m [36mimport[39m { useAudioRecorder } [36mfrom[39m [32m'@/hooks/use-audio-recorder'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { useSessions } [36mfrom[39m [32m'@/hooks/use-sessions'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mInteractivePitchSession[39m } [36mfrom[39m [32m'@/components/interactive-pitch-session'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { api[33m,[39m [33mSession[39m [36mas[39m [33mAPISession[39m } [36mfrom[39m [32m'@/lib/api/client'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m'@/components/ui/button'[39m[33m;[39m
+ [90m 9 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardDescription[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[33m;[39m[0m
+
+Import map: aliased to relative './components/interactive-pitch-session' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/pitch-practice.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/pitch-practice.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 200 in 225ms
+ GET / 200 in 380ms
+ GET / 200 in 232ms
+ GET / 200 in 271ms
+ GET / 200 in 235ms
+ GET / 200 in 281ms
+ GET / 200 in 222ms
+ GET / 200 in 261ms
+ GET / 200 in 231ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 259ms
+ GET / 200 in 234ms
+ ✓ Compiled in 3.1s
+ GET / 200 in 234ms
+ GET / 200 in 312ms
+ GET / 200 in 284ms
+ GET / 200 in 340ms
+ GET / 200 in 233ms
+ GET / 200 in 225ms
+ GET / 200 in 386ms
+ GET / 200 in 200ms
+ GET / 200 in 265ms
+ GET / 200 in 273ms
+ GET / 200 in 255ms
+ GET / 200 in 225ms
+ GET / 200 in 231ms
+ GET / 200 in 337ms
+ GET / 200 in 244ms
+ GET / 200 in 251ms
+ GET / 200 in 242ms
+ GET / 200 in 214ms
+ GET / 200 in 242ms
+ GET / 200 in 382ms
+ GET / 200 in 256ms
+ GET / 200 in 318ms
+ GET / 200 in 698ms
+ GET / 200 in 242ms
+ GET / 200 in 309ms
+ GET / 200 in 293ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 454ms
+ GET / 200 in 740ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 249ms
+ GET / 200 in 262ms
+ GET / 200 in 217ms
+ GET / 200 in 231ms
+ GET / 200 in 236ms
+ GET / 200 in 235ms
+ GET / 200 in 226ms
+ GET / 200 in 240ms
+ GET / 200 in 222ms
+ GET / 200 in 272ms
+ GET / 200 in 229ms
+ GET / 200 in 240ms
+ GET / 200 in 273ms
+ GET / 200 in 234ms
+ GET / 200 in 650ms
+ GET / 200 in 280ms
+ ✓ Compiled /dashboard in 86ms
+ GET /dashboard 200 in 1897ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 507ms
+ POST /dashboard 200 in 349ms
+ GET / 200 in 424ms
+ POST /dashboard 200 in 412ms
+ GET / 200 in 200ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 234ms
+ GET / 200 in 201ms
+ GET / 200 in 202ms
+ GET / 200 in 198ms
+ GET / 200 in 203ms
+ GET / 200 in 205ms
+ GET / 200 in 206ms
+ GET / 200 in 208ms
+ GET / 200 in 202ms
+ GET / 200 in 207ms
+ GET / 200 in 197ms
+ GET / 200 in 208ms
+ GET / 200 in 218ms
+ GET / 200 in 258ms
+ GET / 200 in 237ms
+ GET / 200 in 262ms
+ GET / 200 in 557ms
+ GET / 200 in 391ms
+ GET / 200 in 275ms
+ GET / 200 in 347ms
+ GET / 200 in 259ms
+ GET / 200 in 311ms
+ GET / 200 in 274ms
+ GET / 200 in 289ms
+ GET / 200 in 285ms
+ GET / 200 in 268ms
+ GET / 200 in 275ms
+ GET / 200 in 286ms
+ GET / 200 in 277ms
+ GET / 200 in 277ms
+ GET / 200 in 385ms
+ GET / 200 in 456ms
+ GET / 200 in 284ms
+ GET / 200 in 253ms
+ GET / 200 in 246ms
+ GET / 200 in 342ms
+ GET / 200 in 292ms
+ GET / 200 in 267ms
+ GET / 200 in 276ms
+ GET / 200 in 562ms
+ GET / 200 in 284ms
+ GET / 200 in 309ms
+ GET / 200 in 314ms
+ GET / 200 in 816ms
+ GET / 200 in 864ms
+ ✓ Compiled in 973ms
+ GET / 200 in 394ms
+ GET / 200 in 366ms
+ GET / 200 in 545ms
+ GET / 200 in 632ms
+ GET / 200 in 648ms
+ GET / 200 in 443ms
+ GET / 200 in 641ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 601ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 267ms
+ GET / 200 in 1094ms
+ GET / 200 in 292ms
+ GET / 200 in 266ms
+ GET / 200 in 264ms
+ GET / 200 in 281ms
+ GET / 200 in 278ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 288ms
+ GET / 200 in 296ms
+ GET / 200 in 246ms
+ GET / 200 in 266ms
+ GET / 200 in 278ms
+ GET / 200 in 278ms
+ GET / 200 in 275ms
+ GET / 200 in 281ms
+ GET / 200 in 272ms
+ GET / 200 in 277ms
+ GET / 200 in 564ms
+ GET / 200 in 265ms
+ GET / 200 in 280ms
+ GET / 200 in 282ms
+ GET / 200 in 357ms
+ GET / 200 in 291ms
+ GET / 200 in 290ms
+ GET / 200 in 283ms
+ GET / 200 in 263ms
+ GET / 200 in 276ms
+ GET / 200 in 279ms
+ GET / 200 in 285ms
+ GET / 200 in 274ms
+ GET / 200 in 541ms
+ GET / 200 in 302ms
+ GET / 200 in 283ms
+ GET / 200 in 283ms
+ GET / 200 in 269ms
+ GET / 200 in 301ms
+ GET / 200 in 471ms
+ GET / 200 in 449ms
+ GET / 200 in 259ms
+ GET / 200 in 283ms
+ GET / 200 in 286ms
+ GET / 200 in 795ms
+ GET / 200 in 294ms
+ GET / 200 in 297ms
+ GET / 200 in 291ms
+ GET / 200 in 343ms
+ GET / 200 in 294ms
+ GET / 200 in 278ms
+ GET / 200 in 278ms
+ GET / 200 in 275ms
+ GET /dashboard 200 in 1862ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 778ms
+ POST /dashboard 200 in 754ms
+ POST /dashboard 200 in 291ms
+ GET / 200 in 287ms
+ GET / 200 in 239ms
+ GET / 200 in 243ms
+ GET / 200 in 450ms
+ GET / 200 in 229ms
+ GET / 200 in 293ms
+ GET / 200 in 313ms
+ GET / 200 in 249ms
+ GET / 200 in 303ms
+ GET / 200 in 334ms
+ GET / 200 in 275ms
+ GET / 200 in 348ms
+ GET / 200 in 360ms
+ GET / 200 in 280ms
+ GET / 200 in 309ms
+ GET / 200 in 412ms
+ GET / 200 in 286ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 296ms
+ ✓ Compiled in 811ms
+ GET / 200 in 256ms
+ GET / 200 in 242ms
+ GET / 200 in 273ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1018ms
+ POST /dashboard 200 in 3581ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '3419021255' }
+ GET /dashboard 200 in 3944ms
+ POST /dashboard 200 in 228ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 489ms
+ POST /dashboard 200 in 124ms
+ GET / 200 in 242ms
+ GET / 200 in 209ms
+ GET / 200 in 223ms
+ GET / 200 in 215ms
+ GET / 200 in 220ms
+ GET / 200 in 202ms
+ GET / 200 in 231ms
+ GET / 200 in 224ms
+ GET / 200 in 241ms
+ GET / 200 in 243ms
+ GET / 200 in 254ms
+ GET / 200 in 250ms
+ GET / 200 in 239ms
+ GET / 200 in 244ms
+ GET / 200 in 229ms
+ GET / 200 in 245ms
+ GET / 200 in 246ms
+ GET / 200 in 241ms
+ GET / 200 in 267ms
+ GET / 200 in 261ms
+ GET / 200 in 237ms
+ GET / 200 in 253ms
+ ✓ Compiled in 884ms
+ GET / 200 in 550ms
+ GET / 200 in 241ms
+ GET / 200 in 1359ms
+ GET / 200 in 253ms
+ GET / 200 in 283ms
+ GET /dashboard 200 in 1375ms
+ POST /dashboard 200 in 162ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 430ms
+ POST /dashboard 200 in 165ms
+ GET / 200 in 200ms
+ GET / 200 in 200ms
+ GET / 200 in 199ms
+ GET / 200 in 579ms
+ GET / 200 in 222ms
+ GET / 200 in 263ms
+ GET / 200 in 283ms
+ GET / 200 in 277ms
+ GET / 200 in 206ms
+ GET / 200 in 294ms
+ GET / 200 in 246ms
+ GET / 200 in 243ms
+ GET / 200 in 219ms
+ GET / 200 in 218ms
+ GET / 200 in 248ms
+ GET / 200 in 244ms
+ GET / 200 in 244ms
+ GET / 200 in 248ms
+ GET / 200 in 274ms
+ GET / 200 in 236ms
+ GET / 200 in 237ms
+ GET / 200 in 280ms
+ GET / 200 in 240ms
+ GET / 200 in 258ms
+ GET / 200 in 252ms
+ GET / 200 in 242ms
+ GET / 200 in 250ms
+ GET / 200 in 273ms
+ GET / 200 in 244ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 249ms
+ GET / 200 in 287ms
+ GET / 200 in 254ms
+ GET / 200 in 325ms
+ GET / 200 in 246ms
+ GET / 200 in 239ms
+ GET / 200 in 274ms
+ GET / 200 in 277ms
+ GET / 200 in 249ms
+ GET / 200 in 254ms
+ GET / 200 in 273ms
+ GET / 200 in 273ms
+ GET / 200 in 254ms
+ GET / 200 in 304ms
+ GET / 200 in 234ms
+ GET / 200 in 264ms
+ GET / 200 in 276ms
+ GET / 200 in 334ms
+ GET / 200 in 276ms
+ GET / 200 in 277ms
+ GET / 200 in 261ms
+ GET / 200 in 280ms
+ GET / 200 in 277ms
+ GET / 200 in 1324ms
+ GET / 200 in 270ms
+ GET / 200 in 256ms
+ GET / 200 in 251ms
+ GET / 200 in 472ms
+ GET / 200 in 284ms
+ GET / 200 in 241ms
+ GET / 200 in 248ms
+ GET / 200 in 264ms
+ GET / 200 in 246ms
+ GET / 200 in 316ms
+ GET / 200 in 296ms
+ GET / 200 in 247ms
+ GET / 200 in 265ms
+ GET / 200 in 277ms
+ GET / 200 in 241ms
+ GET / 200 in 259ms
+ GET / 200 in 306ms
+ GET / 200 in 244ms
+ GET / 200 in 300ms
+ GET / 200 in 264ms
+ GET / 200 in 245ms
+ GET / 200 in 269ms
+ GET / 200 in 292ms
+ GET / 200 in 1674ms
+ GET / 200 in 240ms
+ GET / 200 in 284ms
+ GET / 200 in 257ms
+ GET / 200 in 264ms
+ GET / 200 in 354ms
+ GET / 200 in 265ms
+ GET / 200 in 302ms
+ GET / 200 in 269ms
+ GET / 200 in 258ms
+ GET / 200 in 462ms
+ GET / 200 in 271ms
+ GET / 200 in 269ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 280ms
+ GET / 200 in 284ms
+ GET / 200 in 265ms
+ GET / 200 in 261ms
+ GET / 200 in 278ms
+ GET / 200 in 260ms
+ GET / 200 in 287ms
+ GET / 200 in 280ms
+ GET / 200 in 274ms
+ GET / 200 in 276ms
+ GET / 200 in 281ms
+ GET / 200 in 305ms
+ ✓ Compiled in 776ms
+ GET / 200 in 627ms
+ GET / 200 in 1023ms
+ GET / 200 in 1063ms
+ GET / 200 in 632ms
+ GET / 200 in 681ms
+ GET / 200 in 779ms
+ GET / 200 in 334ms
+ GET / 200 in 592ms
+ GET / 200 in 759ms
+ GET / 200 in 244ms
+ GET / 200 in 658ms
+ GET / 200 in 779ms
+ GET / 200 in 304ms
+ GET / 200 in 332ms
+ GET / 200 in 322ms
+ GET / 200 in 329ms
+ GET / 200 in 432ms
+ GET / 200 in 302ms
+ GET / 200 in 346ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 409ms
+ GET / 200 in 507ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 540ms
+ GET / 200 in 253ms
+ GET / 200 in 1077ms
+ GET / 200 in 448ms
+ GET / 200 in 258ms
+ GET / 200 in 218ms
+ GET / 200 in 233ms
+ GET / 200 in 211ms
+ GET / 200 in 237ms
+ GET / 200 in 221ms
+ GET / 200 in 306ms
+ GET / 200 in 252ms
+ GET / 200 in 229ms
+ GET /dashboard 200 in 1728ms
+ POST /dashboard 200 in 352ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1146ms
+ POST /dashboard 200 in 177ms
+ GET / 200 in 297ms
+ GET / 200 in 261ms
+ GET / 200 in 473ms
+ GET / 200 in 249ms
+ GET / 200 in 232ms
+ GET / 200 in 269ms
+ GET / 200 in 259ms
+ GET / 200 in 262ms
+ GET / 200 in 225ms
+ ✓ Compiled in 974ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 214ms
+ GET / 200 in 572ms
+ GET / 200 in 235ms
+ GET /dashboard 200 in 1497ms
+ POST /dashboard 200 in 337ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 928ms
+ POST /dashboard 200 in 225ms
+ GET / 200 in 250ms
+ GET / 200 in 220ms
+ GET / 200 in 222ms
+ GET / 200 in 347ms
+ GET / 200 in 265ms
+ GET / 200 in 274ms
+ GET / 200 in 330ms
+ GET / 200 in 267ms
+ GET / 200 in 269ms
+ GET / 200 in 257ms
+ GET / 200 in 330ms
+ GET / 200 in 392ms
+ GET / 200 in 438ms
+ GET / 200 in 285ms
+ GET / 200 in 707ms
+ GET / 200 in 511ms
+ GET / 200 in 283ms
+ GET / 200 in 289ms
+ GET / 200 in 728ms
+ GET / 200 in 765ms
+ GET / 200 in 901ms
+ GET / 200 in 405ms
+ GET / 200 in 488ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 440ms
+ GET / 200 in 814ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 277ms
+ GET / 200 in 317ms
+ GET / 200 in 312ms
+ GET / 200 in 498ms
+ GET / 200 in 847ms
+ GET / 200 in 895ms
+ GET / 200 in 273ms
+ GET / 200 in 1504ms
+ GET / 200 in 2478ms
+ GET / 200 in 308ms
+ GET / 200 in 254ms
+ GET / 200 in 246ms
+ GET / 200 in 250ms
+ GET / 200 in 301ms
+ GET / 200 in 259ms
+ GET / 200 in 294ms
+ GET / 200 in 260ms
+ GET / 200 in 247ms
+ GET / 200 in 284ms
+ GET / 200 in 280ms
+ GET / 200 in 250ms
+ GET / 200 in 255ms
+ GET / 200 in 273ms
+ GET / 200 in 247ms
+ GET / 200 in 263ms
+ GET / 200 in 343ms
+ GET / 200 in 250ms
+ GET / 200 in 269ms
+ GET / 200 in 273ms
+ GET / 200 in 456ms
+ GET /dashboard 200 in 707ms
+ POST /dashboard 200 in 231ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 462ms
+ POST /dashboard 200 in 241ms
+ GET / 200 in 227ms
+ GET / 200 in 269ms
+ GET / 200 in 252ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1033ms
+ GET / 200 in 1786ms
+ GET / 200 in 5782ms
+ GET / 200 in 379ms
+ GET / 200 in 507ms
+ GET / 200 in 318ms
+ GET / 200 in 332ms
+ GET / 200 in 1994ms
+ GET / 200 in 397ms
+ GET / 200 in 322ms
+ GET / 200 in 296ms
+ GET / 200 in 299ms
+ GET / 200 in 315ms
+ GET / 200 in 487ms
+ GET / 200 in 806ms
+ GET / 200 in 317ms
+ GET / 200 in 319ms
+ GET / 200 in 350ms
+ GET / 200 in 400ms
+ GET / 200 in 277ms
+ GET / 200 in 412ms
+ GET / 200 in 343ms
+ GET / 200 in 376ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 581ms
+ GET / 200 in 1198ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 393ms
+ GET / 200 in 274ms
+ GET / 200 in 267ms
+ GET / 200 in 288ms
+ GET / 200 in 284ms
+ GET / 200 in 474ms
+ GET / 200 in 296ms
+ GET / 200 in 262ms
+ GET / 200 in 267ms
+ GET / 200 in 277ms
+ GET / 200 in 242ms
+ GET / 200 in 280ms
+ GET /dashboard 200 in 318ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 702ms
+ POST /dashboard 200 in 600ms
+ POST /dashboard 200 in 1242ms
+ GET / 200 in 1268ms
+ GET / 200 in 208ms
+ GET / 200 in 170ms
+ GET / 200 in 196ms
+ GET / 200 in 283ms
+ GET / 200 in 377ms
+ GET / 200 in 220ms
+ GET / 200 in 634ms
+ GET / 200 in 282ms
+ GET / 200 in 290ms
+ GET / 200 in 326ms
+ GET / 200 in 274ms
+ GET / 200 in 325ms
+ GET / 200 in 265ms
+ GET / 200 in 277ms
+ GET / 200 in 944ms
+ GET / 200 in 283ms
+ GET / 200 in 485ms
+ GET / 200 in 363ms
+ GET / 200 in 296ms
+ GET / 200 in 257ms
+ GET / 200 in 289ms
+ GET / 200 in 291ms
+ GET / 200 in 1062ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 287ms
+ GET / 200 in 295ms
+ GET / 200 in 256ms
+ ✓ Compiled in 529ms
+ GET / 200 in 304ms
+ GET / 200 in 292ms
+ GET / 200 in 260ms
+ GET / 200 in 296ms
+ GET / 200 in 292ms
+ GET /dashboard 200 in 2748ms
+ GET / 200 in 1740ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2014ms
+ POST /dashboard 200 in 1716ms
+ POST /dashboard 200 in 325ms
+ GET /dashboard 200 in 241ms
+ POST /dashboard 200 in 105ms
+ POST /dashboard 200 in 85ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 364ms
+ GET / 200 in 266ms
+ GET / 200 in 327ms
+ GET / 200 in 257ms
+ GET / 200 in 520ms
+ GET / 200 in 280ms
+ GET / 200 in 684ms
+ GET / 200 in 308ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 204ms
+ GET / 200 in 213ms
+ GET / 200 in 242ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 197ms
+ GET / 200 in 175ms
+ GET / 200 in 178ms
+ GET / 200 in 173ms
+ GET / 200 in 206ms
+ GET / 200 in 194ms
+ GET / 200 in 212ms
+ GET / 200 in 198ms
+ GET / 200 in 187ms
+ GET / 200 in 236ms
+ GET / 200 in 224ms
+ GET / 200 in 185ms
+ GET / 200 in 177ms
+ GET / 200 in 203ms
+ GET / 200 in 188ms
+ GET / 200 in 295ms
+ GET / 200 in 182ms
+ GET / 200 in 218ms
+ GET / 200 in 222ms
+ GET / 200 in 183ms
+ GET / 200 in 180ms
+ GET / 200 in 184ms
+ GET / 200 in 214ms
+ GET / 200 in 187ms
+ GET / 200 in 188ms
+ GET / 200 in 206ms
+ GET / 200 in 1360ms
+ GET /dashboard 200 in 309ms
+ POST /dashboard 200 in 139ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 420ms
+ POST /dashboard 200 in 125ms
+ GET / 200 in 249ms
+ GET / 200 in 223ms
+ GET / 200 in 231ms
+ GET / 200 in 301ms
+ GET / 200 in 234ms
+ GET / 200 in 232ms
+ GET / 200 in 238ms
+ GET / 200 in 252ms
+ GET / 200 in 389ms
+ GET / 200 in 417ms
+ GET / 200 in 384ms
+ GET / 200 in 335ms
+ GET / 200 in 369ms
+ GET / 200 in 476ms
+ GET / 200 in 357ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 577ms
+ GET / 200 in 359ms
+ GET / 200 in 292ms
+ GET / 200 in 461ms
+ GET / 200 in 312ms
+ GET / 200 in 311ms
+ GET / 200 in 291ms
+ GET / 200 in 531ms
+ GET / 200 in 265ms
+ GET / 200 in 285ms
+ GET / 200 in 264ms
+ GET / 200 in 259ms
+ GET / 200 in 252ms
+ GET / 200 in 279ms
+ GET / 200 in 637ms
+ GET / 200 in 315ms
+ GET / 200 in 267ms
+ GET / 200 in 222ms
+ GET / 200 in 301ms
+ GET / 200 in 269ms
+ GET / 200 in 309ms
+ GET / 200 in 1266ms
+ GET / 200 in 1139ms
+ GET / 200 in 1134ms
+ GET / 200 in 760ms
+ GET / 200 in 853ms
+ GET / 200 in 429ms
+ GET / 200 in 1292ms
+ GET / 200 in 277ms
+ GET / 200 in 902ms
+ GET / 200 in 1113ms
+ GET / 200 in 735ms
+ GET / 200 in 1098ms
+ GET / 200 in 697ms
+ GET / 200 in 733ms
+ GET / 200 in 1001ms
+ GET / 200 in 1076ms
+ GET / 200 in 1991ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 750ms
+ GET / 200 in 809ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 287ms
+ GET / 200 in 262ms
+ GET / 200 in 269ms
+ GET /dashboard 200 in 350ms
+ POST /dashboard 200 in 413ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 661ms
+ POST /dashboard 200 in 464ms
+ GET / 200 in 408ms
+ GET / 200 in 339ms
+ GET / 200 in 251ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 335ms
+ GET / 200 in 402ms
+ GET / 200 in 553ms
+ GET / 200 in 321ms
+ GET / 200 in 1182ms
+ GET / 200 in 1246ms
+ GET / 200 in 288ms
+ GET / 200 in 321ms
+ GET / 200 in 574ms
+ GET / 200 in 707ms
+ GET / 200 in 1442ms
+ GET / 200 in 1570ms
+ GET / 200 in 2005ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 516ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 637ms
+ GET / 200 in 714ms
+ GET / 200 in 536ms
+ GET / 200 in 257ms
+ GET / 200 in 332ms
+ GET / 200 in 306ms
+ GET / 200 in 363ms
+ GET / 200 in 537ms
+ GET /dashboard 200 in 317ms
+ POST /dashboard 200 in 135ms
+ POST /dashboard 200 in 112ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 452ms
+ GET / 200 in 313ms
+ GET / 200 in 230ms
+ GET / 200 in 265ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 328ms
+ GET / 200 in 213ms
+ GET / 200 in 213ms
+ GET / 200 in 427ms
+ GET / 200 in 240ms
+ GET / 200 in 230ms
+ GET / 200 in 250ms
+ GET / 200 in 253ms
+ GET / 200 in 244ms
+ GET / 200 in 258ms
+ GET / 200 in 369ms
+ GET / 200 in 232ms
+ GET / 200 in 238ms
+ GET / 200 in 236ms
+ GET / 200 in 261ms
+ GET / 200 in 247ms
+ GET / 200 in 310ms
+ GET /dashboard 200 in 510ms
+ POST /dashboard 200 in 284ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 438ms
+ POST /dashboard 200 in 206ms
+ GET / 200 in 253ms
+ GET / 200 in 257ms
+ GET / 200 in 261ms
+ GET / 200 in 253ms
+ GET / 200 in 230ms
+ GET / 200 in 284ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 312ms
+ GET / 200 in 440ms
+ GET / 200 in 566ms
+ GET / 200 in 358ms
+ GET / 200 in 880ms
+ GET / 200 in 644ms
+ GET / 200 in 393ms
+ GET / 200 in 454ms
+ GET / 200 in 711ms
+ GET / 200 in 296ms
+ GET / 200 in 441ms
+ GET / 200 in 673ms
+ GET / 200 in 312ms
+ GET / 200 in 363ms
+ GET / 200 in 369ms
+ GET / 200 in 318ms
+ GET / 200 in 352ms
+ GET / 200 in 380ms
+ GET / 200 in 305ms
+ GET / 200 in 499ms
+ GET / 200 in 748ms
+ GET / 200 in 487ms
+ GET / 200 in 352ms
+ GET / 200 in 432ms
+ GET / 200 in 1021ms
+ GET / 200 in 399ms
+ GET / 200 in 357ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 372ms
+ GET / 200 in 374ms
+ GET / 200 in 313ms
+ GET / 200 in 288ms
+ GET / 200 in 351ms
+ GET / 200 in 443ms
+ GET / 200 in 499ms
+ GET / 200 in 278ms
+ GET / 200 in 249ms
+ GET / 200 in 280ms
+ GET / 200 in 643ms
+ GET / 200 in 395ms
+ GET / 200 in 246ms
+ GET / 200 in 408ms
+ GET / 200 in 240ms
+ GET / 200 in 286ms
+ GET / 200 in 253ms
+ GET / 200 in 240ms
+ GET / 200 in 246ms
+ GET / 200 in 258ms
+ GET / 200 in 280ms
+ GET / 200 in 242ms
+ GET / 200 in 358ms
+ GET / 200 in 338ms
+ GET / 200 in 245ms
+ GET / 200 in 274ms
+ GET / 200 in 229ms
+ GET / 200 in 328ms
+ GET / 200 in 271ms
+ GET / 200 in 233ms
+ GET / 200 in 222ms
+ GET / 200 in 273ms
+ GET / 200 in 249ms
+ GET / 200 in 252ms
+ GET / 200 in 270ms
+ GET / 200 in 234ms
+ GET / 200 in 228ms
+ GET / 200 in 274ms
+ GET / 200 in 227ms
+ GET / 200 in 239ms
+ GET / 200 in 272ms
+ GET / 200 in 233ms
+ GET / 200 in 269ms
+ GET / 200 in 269ms
+ GET / 200 in 251ms
+ GET / 200 in 297ms
+ GET / 200 in 337ms
+ GET / 200 in 352ms
+ GET / 200 in 289ms
+ GET / 200 in 288ms
+ GET / 200 in 303ms
+ GET / 200 in 281ms
+ GET / 200 in 488ms
+ GET / 200 in 2297ms
+ GET / 200 in 253ms
+ GET / 200 in 227ms
+ GET / 200 in 553ms
+ GET / 200 in 930ms
+ GET / 200 in 287ms
+ GET / 200 in 252ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 245ms
+ GET / 200 in 1315ms
+ GET / 200 in 270ms
+ GET / 200 in 274ms
+ GET / 200 in 291ms
+ GET / 200 in 278ms
+ GET / 200 in 246ms
+ GET / 200 in 268ms
+ GET / 200 in 245ms
+ GET / 200 in 253ms
+ GET / 200 in 358ms
+ GET / 200 in 278ms
+ GET / 200 in 252ms
+ GET / 200 in 626ms
+ GET / 200 in 403ms
+ GET / 200 in 340ms
+ GET / 200 in 369ms
+ GET / 200 in 953ms
+ GET / 200 in 309ms
+ ✓ Compiled in 690ms
+ GET / 200 in 330ms
+ GET / 200 in 362ms
+ GET / 200 in 764ms
+ GET / 200 in 286ms
+ GET / 200 in 243ms
+ GET / 200 in 455ms
+ GET / 200 in 378ms
+ GET / 200 in 614ms
+ GET / 200 in 285ms
+ GET / 200 in 307ms
+ GET / 200 in 314ms
+ GET / 200 in 253ms
+ GET / 200 in 430ms
+ GET / 200 in 320ms
+ GET / 200 in 283ms
+ GET / 200 in 284ms
+ GET / 200 in 264ms
+ GET / 200 in 229ms
+ GET / 200 in 268ms
+ GET / 200 in 323ms
+ GET / 200 in 1393ms
+ GET / 200 in 836ms
+ GET / 200 in 384ms
+ GET / 200 in 862ms
+ GET / 200 in 673ms
+ GET / 200 in 339ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 295ms
+ GET / 200 in 261ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 224ms
+ GET / 200 in 202ms
+ GET / 200 in 213ms
+ GET / 200 in 192ms
+ GET / 200 in 200ms
+ GET / 200 in 216ms
+ GET / 200 in 206ms
+ GET / 200 in 274ms
+ GET / 200 in 204ms
+ GET / 200 in 218ms
+ GET / 200 in 230ms
+ GET / 200 in 380ms
+ GET / 200 in 292ms
+ GET / 200 in 256ms
+ GET / 200 in 229ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 233ms
+ GET / 200 in 250ms
+ GET / 200 in 222ms
+ GET / 200 in 246ms
+ GET / 200 in 262ms
+ GET / 200 in 222ms
+ GET / 200 in 228ms
+ GET / 200 in 245ms
+ GET / 200 in 226ms
+ GET / 200 in 228ms
+ GET / 200 in 248ms
+ GET / 200 in 226ms
+ GET / 200 in 357ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1072ms
+ GET / 200 in 179ms
+ GET / 200 in 426ms
+ GET / 200 in 441ms
+ GET / 200 in 391ms
+ GET / 200 in 236ms
+ GET / 200 in 290ms
+ GET / 200 in 1433ms
+ GET / 200 in 245ms
+ GET / 200 in 1680ms
+ GET / 200 in 248ms
+ GET / 200 in 477ms
