@@ -53,6 +53,12 @@ class Settings(BaseSettings):
     EMOTION_DETECTION_LLM_API_KEY: str = ""
     BACKUP_1_API_KEY: str = ""
     BACKUP_2_API_KEY: str = ""
+    
+    # OpenRouter Models (for recorded sessions)
+    # Using models WITHOUT privacy policy issues (no 404 errors)
+    REASONING_MODEL: str = "qwen/qwen3-4b:free"  # Works reliably, no privacy issues
+    EMOTION_DETECTION_MODEL: str = "nvidia/nemotron-nano-9b-v2:free"  # Reliable emotion detection
+    OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
 
     
     class Config:
