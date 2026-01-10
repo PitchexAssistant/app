@@ -1449,3 +1449,19 @@
 2026-01-01 23:38:42 [SUCCESS] Application startup complete!
 2026-01-01 23:38:42 [INFO] Press Ctrl+C to exit (services will continue running)
 2026-01-01 23:38:42 [INFO] Use ./stop-app.sh to stop all services
+2026-01-10 18:28:10 [SECTION] Pitchex Application Startup
+2026-01-10 18:28:10 [SECTION] Setting Up Directories
+2026-01-10 18:28:10 [SECTION] Checking Dependencies
+2026-01-10 18:28:10 [SUCCESS] Python3: Python 3.13.11
+2026-01-10 18:28:10 [SUCCESS] Node.js: v20.19.6
+2026-01-10 18:28:11 [SUCCESS] npm: 11.7.0
+2026-01-10 18:28:11 [SUCCESS] curl: Available
+2026-01-10 18:28:11 [SUCCESS] All dependencies satisfied
+2026-01-10 18:28:11 [SECTION] Checking Port Availability
+2026-01-10 18:28:11 [SUCCESS] Port 8000 (Backend) is available
+2026-01-10 18:28:11 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-10 18:28:11 [SECTION] Starting Backend (FastAPI)
+2026-01-10 18:28:11 [WARNING] Virtual environment not found, creating one...
+2026-01-10 18:28:13 [SUCCESS] Virtual environment created
+2026-01-10 18:28:13 [INFO] Installing/updating backend dependencies...
+2026-01-10 18:39:47 [WARNING] Received interrupt signal. Use ./stop-app.sh to stop services cleanly.
