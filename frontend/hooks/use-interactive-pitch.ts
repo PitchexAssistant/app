@@ -15,6 +15,7 @@ export interface Message {
     role: 'user' | 'assistant';
     content: string;
     timestamp: Date;
+    emotion?: any;
 }
 
 interface UseInteractivePitchOptions {
@@ -22,15 +23,15 @@ interface UseInteractivePitchOptions {
     onTranscription?: (text: string) => void;
     onResponse?: (text: string) => void;
     onError?: (error: string) => void;
+    onEmotion?: (emotion: any) => void;
 }
 
 export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
-    const {
-        sessionId = `session_${Date.now()}`,
-        onTranscription,
-        onResponse,
-        onError,
-    } = options;
+    const { sessionId = `session_${Date.now()}` } = options;
+
+    // Store callbacks in refs to avoid dependency chain issues
+    const callbacksRef = useRef(options);
+    callbacksRef.current = options;
 
     // State
     const [isConnected, setIsConnected] = useState(false);
@@ -40,16 +41,18 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
     const [isProcessing, setIsProcessing] = useState(false);
     const [messages, setMessages] = useState<Message[]>([]);
     const [error, setError] = useState<string | null>(null);
+    const [currentEmotion, setCurrentEmotion] = useState<any>(null);
 
     // Refs
     const wsRef = useRef<WebSocket | null>(null);
     const streamRef = useRef<MediaStream | null>(null);
     const audioContextRef = useRef<AudioContext | null>(null);
+    const playbackContextRef = useRef<AudioContext | null>(null);
     const analyserRef = useRef<AnalyserNode | null>(null);
     const processorRef = useRef<ScriptProcessorNode | null>(null);
-    const audioQueueRef = useRef<AudioBuffer[]>([]);
     const isPlayingRef = useRef(false);
     const isMountedRef = useRef(true);
+    const ttsAudioBufferRef = useRef<ArrayBuffer[]>([]);  // Buffer for TTS audio chunks
 
     // VAD state
     const vadActiveRef = useRef(false);
@@ -58,15 +61,14 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
     // Constants
     const VAD_THRESHOLD = 0.01;
-    const SILENCE_DURATION = 1200; // 1.2 seconds of silence before processing
+    const SILENCE_DURATION = 600;
     const SAMPLE_RATE = 16000;
 
-    // Convert Float32 samples to WAV
-    const float32ToWav = (samples: Float32Array, sampleRate: number): ArrayBuffer => {
+    // Helper: Float32 to WAV
+    const float32ToWav = useCallback((samples: Float32Array, sampleRate: number): ArrayBuffer => {
         const buffer = new ArrayBuffer(44 + samples.length * 2);
         const view = new DataView(buffer);
 
-        // WAV header
         const writeString = (offset: number, str: string) => {
             for (let i = 0; i < str.length; i++) {
                 view.setUint8(offset + i, str.charCodeAt(i));
@@ -87,7 +89,6 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         writeString(36, 'data');
         view.setUint32(40, samples.length * 2, true);
 
-        // Convert samples
         let offset = 44;
         for (let i = 0; i < samples.length; i++) {
             const s = Math.max(-1, Math.min(1, samples[i]));
@@ -96,19 +97,24 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         }
 
         return buffer;
-    };
+    }, []);
 
-    // Play audio response
+    // Helper: Play Audio
     const playAudio = useCallback(async (audioData: ArrayBuffer) => {
         try {
-            if (!audioContextRef.current) {
-                audioContextRef.current = new AudioContext({ sampleRate: 44100 });
+            if (!playbackContextRef.current || playbackContextRef.current.state === 'closed') {
+                playbackContextRef.current = new AudioContext({ sampleRate: 44100 });
             }
 
-            const audioBuffer = await audioContextRef.current.decodeAudioData(audioData);
-            const source = audioContextRef.current.createBufferSource();
+            if (playbackContextRef.current.state === 'suspended') {
+                await playbackContextRef.current.resume();
+            }
+
+            const audioBuffer = await playbackContextRef.current.decodeAudioData(audioData);
+            const source = playbackContextRef.current.createBufferSource();
+
             source.buffer = audioBuffer;
-            source.connect(audioContextRef.current.destination);
+            source.connect(playbackContextRef.current.destination);
 
             source.onended = () => {
                 isPlayingRef.current = false;
@@ -125,12 +131,13 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         }
     }, []);
 
-    // Handle WebSocket messages
+    // Handle WebSocket messages - NO external callback dependencies
     const handleMessage = useCallback((event: MessageEvent) => {
         if (event.data instanceof Blob) {
-            // Audio response from TTS
+            // Buffer audio chunks instead of playing immediately
             event.data.arrayBuffer().then(buffer => {
-                playAudio(buffer);
+                console.log('[Audio] Received chunk:', buffer.byteLength, 'bytes');
+                ttsAudioBufferRef.current.push(buffer);
             });
         } else {
             try {
@@ -148,8 +155,14 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
                             content: data.text,
                             timestamp: new Date()
                         }]);
-                        onTranscription?.(data.text);
+                        callbacksRef.current.onTranscription?.(data.text);
                         setIsProcessing(true);
+                        break;
+
+                    case 'emotion':
+                        console.log('[WS] Emotion:', data.data);
+                        setCurrentEmotion(data.data);
+                        callbacksRef.current.onEmotion?.(data.data);
                         break;
 
                     case 'response':
@@ -158,15 +171,30 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
                             content: data.text,
                             timestamp: new Date()
                         }]);
-                        onResponse?.(data.text);
+                        callbacksRef.current.onResponse?.(data.text);
                         setIsProcessing(false);
                         break;
 
                     case 'speaking_start':
                         setIsAISpeaking(true);
+                        // Clear audio buffer for new speech
+                        ttsAudioBufferRef.current = [];
                         break;
 
                     case 'speaking_end':
+                        // Combine all buffered audio chunks and play
+                        if (ttsAudioBufferRef.current.length > 0) {
+                            const totalLength = ttsAudioBufferRef.current.reduce((sum, buf) => sum + buf.byteLength, 0);
+                            const combined = new Uint8Array(totalLength);
+                            let offset = 0;
+                            for (const chunk of ttsAudioBufferRef.current) {
+                                combined.set(new Uint8Array(chunk), offset);
+                                offset += chunk.byteLength;
+                            }
+                            console.log('[Audio] Playing combined audio:', combined.byteLength, 'bytes');
+                            playAudio(combined.buffer);
+                            ttsAudioBufferRef.current = [];
+                        }
                         setIsAISpeaking(false);
                         break;
 
@@ -177,7 +205,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
                     case 'error':
                         setError(data.message);
                         setIsProcessing(false);
-                        onError?.(data.message);
+                        callbacksRef.current.onError?.(data.message);
                         break;
 
                     case 'pong':
@@ -187,7 +215,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
                 console.error('[WS] Parse error:', e);
             }
         }
-    }, [onTranscription, onResponse, onError, playAudio]);
+    }, [playAudio]); // Only depends on playAudio which is stable
 
     // Send audio to server
     const sendAudioToServer = useCallback(() => {
@@ -198,7 +226,6 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         setIsProcessing(true);
         setIsUserSpeaking(false);
 
-        // Combine all chunks
         const totalLength = audioChunksRef.current.reduce((sum, chunk) => sum + chunk.length, 0);
         const combined = new Float32Array(totalLength);
         let offset = 0;
@@ -207,27 +234,22 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             offset += chunk.length;
         }
 
-        // Normalize and amplify audio for better STT recognition
         let maxAbs = 0;
         for (let i = 0; i < combined.length; i++) {
             maxAbs = Math.max(maxAbs, Math.abs(combined[i]));
         }
 
-        // Apply gain (normalize to 80% + 2x boost for quiet audio)
         const targetLevel = 0.8;
         const gain = maxAbs > 0 ? Math.min((targetLevel / maxAbs), 3.0) : 1.0;
-        console.log('[Audio] Gain applied:', gain.toFixed(2), 'maxAbs:', maxAbs.toFixed(4));
 
         const normalized = new Float32Array(combined.length);
         for (let i = 0; i < combined.length; i++) {
             normalized[i] = Math.max(-1, Math.min(1, combined[i] * gain));
         }
 
-        // Convert to WAV
         const wavBuffer = float32ToWav(normalized, SAMPLE_RATE);
         const uint8Array = new Uint8Array(wavBuffer);
 
-        // Convert to base64 in chunks to avoid stack overflow
         let binary = '';
         const chunkSize = 8192;
         for (let i = 0; i < uint8Array.length; i += chunkSize) {
@@ -245,15 +267,13 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             sampleRate: SAMPLE_RATE
         }));
 
-        // Clear chunks
         audioChunksRef.current = [];
-    }, []);
+    }, [float32ToWav]);
 
     // Process audio for VAD
     const processAudio = useCallback((inputBuffer: AudioBuffer) => {
         const channelData = inputBuffer.getChannelData(0);
 
-        // Calculate RMS volume
         let sum = 0;
         for (let i = 0; i < channelData.length; i++) {
             sum += channelData[i] * channelData[i];
@@ -263,24 +283,19 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         const now = Date.now();
 
         if (rms > VAD_THRESHOLD) {
-            // Voice detected
             if (!vadActiveRef.current) {
                 console.log('[VAD] Voice started');
                 vadActiveRef.current = true;
                 setIsUserSpeaking(true);
             }
             silenceStartRef.current = null;
-
-            // Store audio chunk
             audioChunksRef.current.push(new Float32Array(channelData));
         } else if (vadActiveRef.current) {
-            // Silence after voice
             audioChunksRef.current.push(new Float32Array(channelData));
 
             if (silenceStartRef.current === null) {
                 silenceStartRef.current = now;
             } else if (now - silenceStartRef.current >= SILENCE_DURATION) {
-                // Enough silence - send audio
                 console.log('[VAD] Silence detected, sending audio');
                 vadActiveRef.current = false;
                 silenceStartRef.current = null;
@@ -311,16 +326,15 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
             streamRef.current = stream;
 
-            // Create audio context
-            audioContextRef.current = new AudioContext({ sampleRate: SAMPLE_RATE });
+            if (!audioContextRef.current || audioContextRef.current.state === 'closed') {
+                audioContextRef.current = new AudioContext({ sampleRate: SAMPLE_RATE });
+            }
             const source = audioContextRef.current.createMediaStreamSource(stream);
 
-            // Create analyser
             analyserRef.current = audioContextRef.current.createAnalyser();
             analyserRef.current.fftSize = 512;
             source.connect(analyserRef.current);
 
-            // Create script processor for capturing audio
             const bufferSize = 4096;
             processorRef.current = audioContextRef.current.createScriptProcessor(bufferSize, 1, 1);
 
@@ -334,18 +348,15 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
             setIsRecording(true);
             console.log('[Recording] Started with VAD');
-
         } catch (e: any) {
             console.error('[Recording] Failed:', e);
             setError(e.message || 'Failed to access microphone');
-            onError?.(e.message);
+            callbacksRef.current.onError?.(e.message);
         }
-    }, [isRecording, processAudio, onError]);
+    }, [isRecording, processAudio]);
 
     // Stop recording
     const stopRecording = useCallback(() => {
-        if (!isRecording) return;
-
         console.log('[Recording] Stopping...');
 
         if (processorRef.current) {
@@ -364,7 +375,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
         setIsRecording(false);
         setIsUserSpeaking(false);
-    }, [isRecording]);
+    }, []);
 
     // Connect to WebSocket
     const connect = useCallback(() => {
@@ -395,17 +406,18 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
                 setIsConnected(false);
                 wsRef.current = null;
 
-                // Retry connection after a delay
+                // Only retry on abnormal close when still mounted
                 if (isMountedRef.current && e.code !== 1000) {
-                    setTimeout(() => connect(), 2000);
+                    setTimeout(() => {
+                        if (isMountedRef.current) connect();
+                    }, 2000);
                 }
             };
         } catch (e: any) {
             console.error('[WS] Failed to create:', e);
             setError('Failed to connect');
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [sessionId]);
+    }, [sessionId, handleMessage]);
 
     // Send text message
     const sendText = useCallback((text: string) => {
@@ -436,16 +448,14 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             wsRef.current = null;
         }
 
-        // Stop audio playback immediately
-        if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
-            audioContextRef.current.close().catch(console.error);
-            audioContextRef.current = null;
+        if (playbackContextRef.current && playbackContextRef.current.state !== 'closed') {
+            playbackContextRef.current.close().catch(console.error);
         }
 
         setIsConnected(false);
     }, [stopRecording]);
 
-    // Auto-connect on mount
+    // Auto-connect on mount - ONLY depends on sessionId, not callbacks
     useEffect(() => {
         isMountedRef.current = true;
 
@@ -472,7 +482,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             }
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [sessionId]);
+    }, [sessionId]); // Only reconnect when sessionId changes
 
     return {
         isConnected,
@@ -488,5 +498,6 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         resetConversation,
         connect,
         disconnect,
+        currentEmotion
     };
 }

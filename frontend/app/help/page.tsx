@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { AppSidebar } from '@/components/app-sidebar'
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
@@ -77,9 +77,23 @@ export default function HelpPage() {
     })))
   }
 
+  // Handle anchor navigation (e.g., /help#faq)
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      // Small delay to ensure the DOM is ready
+      setTimeout(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    }
+  }, [])
+
   return (
     <SidebarProvider>
-      <AppSidebar 
+      <AppSidebar
         user={{
           name: user?.fullName || user?.firstName || 'User',
           email: user?.primaryEmailAddress?.emailAddress || '',
@@ -144,7 +158,7 @@ export default function HelpPage() {
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mb-12">
+          <div id="faq" className="max-w-4xl mx-auto mb-12 scroll-mt-8">
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Frequently Asked Questions</CardTitle>

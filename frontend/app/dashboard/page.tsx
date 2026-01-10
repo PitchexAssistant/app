@@ -11,6 +11,7 @@ import { UploadModal } from "@/components/upload-modal"
 import { ModeSelectionModal } from "@/components/mode-selection-modal"
 import { RecordedSession } from "@/components/recorded-session"
 import { ResultsPage } from "@/components/results-page"
+import { SettingsModal } from "@/components/settings-modal"
 import { useUser, useClerk } from "@clerk/nextjs"
 import { useEffect, useState } from "react"
 import { Users, Settings, LogOut, ChevronDown } from "lucide-react"
@@ -40,6 +41,7 @@ export default function Page() {
   const [selectedMode, setSelectedMode] = useState<'live' | 'recorded' | null>(null)
   const [showResults, setShowResults] = useState(false)
   const [resultsData, setResultsData] = useState<any>(null)
+  const [showSettings, setShowSettings] = useState(false)
   const { createSession, currentSession, setCurrentSession } = useSessions()
 
   useEffect(() => {
@@ -255,7 +257,10 @@ export default function Page() {
                 <span className="text-sm font-medium font-['Uber_Move']">Manage Plans</span>
               </DropdownMenuItem>
 
-              <DropdownMenuItem className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300">
+              <DropdownMenuItem 
+                onClick={() => setShowSettings(true)}
+                className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300"
+              >
                 <Settings className="w-4 h-4 mr-3" />
                 <span className="text-sm font-medium font-['Uber_Move']">Settings</span>
               </DropdownMenuItem>
@@ -389,6 +394,12 @@ export default function Page() {
           onContinue={handleModeSelection}
         />
       )}
+
+      {/* Settings Modal */}
+      <SettingsModal
+        open={showSettings}
+        onClose={() => setShowSettings(false)}
+      />
     </SidebarProvider>
   )
 }

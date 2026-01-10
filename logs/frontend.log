@@ -57786,3 +57786,5478 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 1680ms
  GET / 200 in 248ms
  GET / 200 in 477ms
+ GET / 200 in 297ms
+ GET / 200 in 252ms
+ GET / 200 in 327ms
+ GET / 200 in 330ms
+ GET / 200 in 295ms
+ GET / 200 in 215ms
+ GET / 200 in 265ms
+ GET / 200 in 207ms
+ GET / 200 in 292ms
+ GET / 200 in 373ms
+ GET / 200 in 216ms
+ GET / 200 in 264ms
+ GET / 200 in 245ms
+ GET / 200 in 237ms
+ GET / 200 in 242ms
+ GET / 200 in 242ms
+ GET / 200 in 205ms
+ GET / 200 in 186ms
+ GET / 200 in 199ms
+ GET / 200 in 188ms
+ GET / 200 in 191ms
+ GET / 200 in 211ms
+ GET / 200 in 192ms
+ GET / 200 in 197ms
+ GET / 200 in 208ms
+ GET / 200 in 233ms
+ GET / 200 in 256ms
+ GET / 200 in 201ms
+ GET / 200 in 230ms
+ GET / 200 in 224ms
+ GET / 200 in 266ms
+ GET / 200 in 293ms
+ GET / 200 in 210ms
+ GET / 200 in 209ms
+ GET / 200 in 173ms
+ GET / 200 in 190ms
+ GET / 200 in 183ms
+ GET / 200 in 253ms
+ GET / 200 in 220ms
+ GET / 200 in 226ms
+ GET / 200 in 1963ms
+ GET / 200 in 216ms
+ GET / 200 in 191ms
+ GET / 200 in 192ms
+ GET / 200 in 227ms
+ GET / 200 in 206ms
+ GET / 200 in 419ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 202ms
+ GET / 200 in 329ms
+ GET / 200 in 251ms
+ GET / 200 in 298ms
+ GET / 200 in 185ms
+ GET / 200 in 186ms
+ GET / 200 in 219ms
+ GET / 200 in 219ms
+ GET / 200 in 178ms
+ GET / 200 in 199ms
+ GET / 200 in 270ms
+ GET / 200 in 177ms
+ GET / 200 in 243ms
+ GET / 200 in 199ms
+ GET / 200 in 224ms
+ GET / 200 in 314ms
+ GET / 200 in 250ms
+ GET / 200 in 210ms
+ GET / 200 in 224ms
+ GET / 200 in 192ms
+ GET / 200 in 197ms
+ GET / 200 in 258ms
+ GET / 200 in 223ms
+ GET / 200 in 202ms
+ GET / 200 in 275ms
+ GET / 200 in 241ms
+ GET / 200 in 202ms
+ GET / 200 in 242ms
+ GET / 200 in 199ms
+ GET / 200 in 241ms
+ GET / 200 in 438ms
+ GET / 200 in 223ms
+ GET / 200 in 206ms
+ GET / 200 in 290ms
+ GET / 200 in 416ms
+ GET / 200 in 204ms
+ GET / 200 in 242ms
+ GET / 200 in 201ms
+ GET / 200 in 189ms
+ GET / 200 in 1527ms
+ GET / 200 in 216ms
+ GET / 200 in 190ms
+ GET / 200 in 269ms
+ GET / 200 in 200ms
+ GET / 200 in 248ms
+ GET / 200 in 226ms
+ GET / 200 in 216ms
+ GET / 200 in 193ms
+ GET / 200 in 209ms
+ GET / 200 in 220ms
+ GET / 200 in 232ms
+ GET / 200 in 255ms
+ GET / 200 in 205ms
+ GET / 200 in 261ms
+ GET / 200 in 242ms
+ GET / 200 in 233ms
+ GET / 200 in 200ms
+ GET / 200 in 216ms
+ GET / 200 in 209ms
+ GET / 200 in 204ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 245ms
+ GET / 200 in 196ms
+ GET / 200 in 365ms
+ GET / 200 in 212ms
+ GET / 200 in 183ms
+ GET / 200 in 205ms
+ GET / 200 in 247ms
+ GET / 200 in 193ms
+ GET / 200 in 193ms
+ GET / 200 in 230ms
+ GET / 200 in 200ms
+ GET / 200 in 278ms
+ GET / 200 in 311ms
+ GET / 200 in 229ms
+ GET / 200 in 211ms
+ GET / 200 in 343ms
+ GET / 200 in 242ms
+ GET / 200 in 252ms
+ GET / 200 in 229ms
+ GET / 200 in 200ms
+ GET / 200 in 191ms
+ GET / 200 in 261ms
+ GET / 200 in 301ms
+ GET / 200 in 192ms
+ GET / 200 in 254ms
+ GET / 200 in 993ms
+ GET / 200 in 246ms
+ GET / 200 in 266ms
+ GET / 200 in 239ms
+ GET / 200 in 197ms
+ GET / 200 in 204ms
+ GET / 200 in 227ms
+ GET / 200 in 214ms
+ GET / 200 in 273ms
+ GET / 200 in 285ms
+ GET / 200 in 259ms
+ GET / 200 in 288ms
+ GET / 200 in 435ms
+ GET / 200 in 278ms
+ GET / 200 in 266ms
+ GET / 200 in 275ms
+ GET / 200 in 202ms
+ GET / 200 in 256ms
+ GET / 200 in 313ms
+ GET / 200 in 293ms
+ GET / 200 in 338ms
+ GET / 200 in 241ms
+ GET / 200 in 244ms
+ GET / 200 in 216ms
+ GET / 200 in 245ms
+ GET / 200 in 211ms
+ GET / 200 in 277ms
+ GET / 200 in 221ms
+ GET / 200 in 190ms
+ GET / 200 in 245ms
+ GET / 200 in 196ms
+ GET / 200 in 188ms
+ GET / 200 in 206ms
+ GET / 200 in 257ms
+ GET / 200 in 228ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 310ms
+ GET / 200 in 228ms
+ GET / 200 in 224ms
+ GET / 200 in 270ms
+ GET / 200 in 236ms
+ GET / 200 in 270ms
+ GET / 200 in 313ms
+ GET / 200 in 246ms
+ GET / 200 in 178ms
+ GET / 200 in 222ms
+ GET / 200 in 207ms
+ GET / 200 in 1906ms
+ GET / 200 in 255ms
+ GET / 200 in 197ms
+ GET / 200 in 196ms
+ GET / 200 in 246ms
+ GET / 200 in 232ms
+ GET / 200 in 305ms
+ GET / 200 in 207ms
+ GET / 200 in 220ms
+ GET / 200 in 224ms
+ GET / 200 in 245ms
+ GET / 200 in 258ms
+ GET / 200 in 228ms
+ GET / 200 in 269ms
+ GET / 200 in 307ms
+ GET / 200 in 240ms
+ GET / 200 in 316ms
+ GET / 200 in 290ms
+ GET / 200 in 1048ms
+ GET / 200 in 283ms
+ GET / 200 in 320ms
+ GET / 200 in 329ms
+ GET / 200 in 268ms
+ GET / 200 in 221ms
+ GET / 200 in 221ms
+ GET / 200 in 202ms
+ GET / 200 in 209ms
+ GET / 200 in 216ms
+ GET / 200 in 213ms
+ GET / 200 in 196ms
+ GET / 200 in 217ms
+ GET / 200 in 270ms
+ GET / 200 in 200ms
+ GET / 200 in 263ms
+ GET / 200 in 201ms
+ GET / 200 in 209ms
+ GET / 200 in 193ms
+ GET / 200 in 189ms
+ GET / 200 in 193ms
+ GET / 200 in 183ms
+ GET / 200 in 200ms
+ GET / 200 in 216ms
+ GET / 200 in 210ms
+ GET / 200 in 205ms
+ GET / 200 in 181ms
+ GET / 200 in 186ms
+ GET / 200 in 293ms
+ GET / 200 in 213ms
+ GET / 200 in 235ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1915ms
+ GET / 200 in 1291ms
+ GET / 200 in 10005ms
+ GET / 200 in 972ms
+ GET / 200 in 1982ms
+ GET / 200 in 328ms
+ GET / 200 in 7576ms
+ GET / 200 in 1904ms
+ GET / 200 in 736ms
+ GET / 200 in 4795ms
+ GET / 200 in 8747ms
+ GET / 200 in 3231ms
+ GET / 200 in 15838ms
+ GET / 200 in 16018ms
+ GET / 200 in 13102ms
+ GET / 200 in 446ms
+ GET / 200 in 603ms
+ GET / 200 in 621ms
+ GET / 200 in 359ms
+ GET / 200 in 495ms
+ GET / 200 in 633ms
+ GET / 200 in 350ms
+ GET / 200 in 520ms
+ GET / 200 in 811ms
+ GET / 200 in 282ms
+ GET / 200 in 254ms
+ GET / 200 in 236ms
+ GET / 200 in 239ms
+ GET / 200 in 469ms
+ GET / 200 in 465ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 725ms
+ GET / 200 in 923ms
+ GET / 200 in 1012ms
+ GET / 200 in 210ms
+ GET / 200 in 263ms
+ GET / 200 in 357ms
+ GET / 200 in 261ms
+ GET / 200 in 301ms
+ GET / 200 in 266ms
+ GET / 200 in 222ms
+ GET / 200 in 244ms
+ GET / 200 in 301ms
+ GET / 200 in 227ms
+ GET / 200 in 194ms
+ GET / 200 in 194ms
+ GET / 200 in 263ms
+ GET / 200 in 422ms
+ GET / 200 in 224ms
+ GET / 200 in 231ms
+ GET / 200 in 255ms
+ GET / 200 in 229ms
+ GET / 200 in 195ms
+ GET / 200 in 1813ms
+ GET / 200 in 2075ms
+ GET / 200 in 311ms
+ GET / 200 in 229ms
+ GET / 200 in 196ms
+ GET / 200 in 1950ms
+ GET / 200 in 731ms
+ GET / 200 in 306ms
+ GET / 200 in 237ms
+ GET / 200 in 269ms
+ GET / 200 in 288ms
+ GET / 200 in 419ms
+ GET / 200 in 1244ms
+ GET / 200 in 587ms
+ GET / 200 in 382ms
+ GET / 200 in 284ms
+ GET / 200 in 246ms
+ GET / 200 in 278ms
+ GET / 200 in 298ms
+ GET / 200 in 348ms
+ GET / 200 in 3000ms
+ GET / 200 in 1288ms
+ GET / 200 in 2200ms
+ GET / 200 in 2807ms
+ GET / 200 in 840ms
+ GET / 200 in 3174ms
+ GET / 200 in 262ms
+ GET / 200 in 250ms
+ GET / 200 in 225ms
+ GET / 200 in 302ms
+ GET / 200 in 376ms
+ GET / 200 in 372ms
+ GET / 200 in 238ms
+ GET / 200 in 268ms
+ GET / 200 in 268ms
+ GET / 200 in 304ms
+ GET / 200 in 243ms
+ GET / 200 in 234ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 331ms
+ GET / 200 in 263ms
+ GET / 200 in 228ms
+ GET / 200 in 259ms
+ GET / 200 in 1019ms
+ GET / 200 in 253ms
+ GET / 200 in 287ms
+ GET / 200 in 256ms
+ GET / 200 in 294ms
+ GET / 200 in 664ms
+ GET / 200 in 1838ms
+ GET / 200 in 713ms
+ GET / 200 in 309ms
+ GET / 200 in 1993ms
+ GET / 200 in 4045ms
+ GET / 200 in 244ms
+ GET / 200 in 257ms
+ GET / 200 in 208ms
+ GET / 200 in 361ms
+ GET / 200 in 224ms
+ GET / 200 in 264ms
+ GET / 200 in 288ms
+ GET / 200 in 233ms
+ GET / 200 in 226ms
+ GET / 200 in 289ms
+ GET / 200 in 252ms
+ GET / 200 in 246ms
+ GET / 200 in 299ms
+ GET / 200 in 258ms
+ GET / 200 in 281ms
+ GET / 200 in 474ms
+ GET / 200 in 241ms
+ GET / 200 in 612ms
+ GET / 200 in 324ms
+ GET / 200 in 311ms
+ GET / 200 in 231ms
+ GET / 200 in 191ms
+ GET / 200 in 248ms
+ GET / 200 in 223ms
+ GET / 200 in 255ms
+ GET / 200 in 337ms
+ GET / 200 in 206ms
+ GET / 200 in 581ms
+ GET / 200 in 282ms
+ GET / 200 in 307ms
+ GET / 200 in 230ms
+ GET / 200 in 243ms
+ GET / 200 in 289ms
+ GET / 200 in 271ms
+ GET / 200 in 222ms
+ GET / 200 in 212ms
+ GET / 200 in 401ms
+ GET / 200 in 249ms
+ GET / 200 in 200ms
+ GET / 200 in 224ms
+ GET / 200 in 253ms
+ GET / 200 in 200ms
+ GET / 200 in 288ms
+ GET / 200 in 297ms
+ GET / 200 in 194ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 517ms
+ GET / 200 in 379ms
+ GET / 200 in 216ms
+ GET / 200 in 298ms
+ GET / 200 in 262ms
+ GET / 200 in 255ms
+ GET / 200 in 297ms
+ GET / 200 in 252ms
+ GET / 200 in 215ms
+ GET / 200 in 294ms
+ GET / 200 in 413ms
+ GET / 200 in 434ms
+ GET / 200 in 226ms
+ GET / 200 in 255ms
+ GET / 200 in 514ms
+ GET / 200 in 249ms
+ GET / 200 in 266ms
+ GET / 200 in 221ms
+ GET / 200 in 327ms
+ GET / 200 in 274ms
+ GET / 200 in 269ms
+ GET / 200 in 1748ms
+ GET / 200 in 250ms
+ GET / 200 in 375ms
+ GET / 200 in 274ms
+ GET / 200 in 318ms
+ GET / 200 in 646ms
+ GET / 200 in 265ms
+ GET / 200 in 272ms
+ GET / 200 in 358ms
+ GET / 200 in 272ms
+ GET / 200 in 227ms
+ GET / 200 in 246ms
+ GET / 200 in 327ms
+ GET / 200 in 263ms
+ GET / 200 in 229ms
+ GET / 200 in 247ms
+ GET / 200 in 447ms
+ GET / 200 in 220ms
+ GET / 200 in 447ms
+ GET / 200 in 294ms
+ GET / 200 in 239ms
+ GET / 200 in 266ms
+ GET / 200 in 232ms
+ GET / 200 in 266ms
+ GET / 200 in 289ms
+ GET / 200 in 253ms
+ GET / 200 in 239ms
+ GET / 200 in 207ms
+ GET / 200 in 264ms
+ GET / 200 in 230ms
+ GET / 200 in 284ms
+ GET / 200 in 248ms
+ GET / 200 in 269ms
+ GET / 200 in 399ms
+ GET / 200 in 221ms
+ GET / 200 in 243ms
+ GET / 200 in 207ms
+ GET / 200 in 233ms
+ GET / 200 in 226ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 255ms
+ GET / 200 in 340ms
+ GET / 200 in 622ms
+ GET / 200 in 262ms
+ GET / 200 in 291ms
+ GET / 200 in 234ms
+ GET / 200 in 218ms
+ GET / 200 in 251ms
+ GET / 200 in 239ms
+ GET / 200 in 276ms
+ GET / 200 in 263ms
+ GET / 200 in 837ms
+ GET / 200 in 293ms
+ GET / 200 in 214ms
+ GET / 200 in 286ms
+ GET / 200 in 215ms
+ GET / 200 in 220ms
+ GET / 200 in 223ms
+ GET / 200 in 262ms
+ GET / 200 in 218ms
+ GET / 200 in 439ms
+ GET / 200 in 193ms
+ GET / 200 in 223ms
+ GET / 200 in 240ms
+ GET / 200 in 234ms
+ GET / 200 in 207ms
+ GET / 200 in 223ms
+ GET / 200 in 407ms
+ GET / 200 in 212ms
+ GET / 200 in 218ms
+ GET / 200 in 234ms
+ GET / 200 in 265ms
+ GET / 200 in 231ms
+ GET / 200 in 376ms
+ GET / 200 in 414ms
+ GET / 200 in 310ms
+ GET / 200 in 308ms
+ GET / 200 in 232ms
+ GET / 200 in 265ms
+ GET / 200 in 243ms
+ GET / 200 in 243ms
+ GET / 200 in 284ms
+ GET / 200 in 242ms
+ GET / 200 in 458ms
+ GET / 200 in 252ms
+ GET / 200 in 349ms
+ GET / 200 in 361ms
+ GET / 200 in 280ms
+ GET / 200 in 277ms
+ GET / 200 in 281ms
+ GET / 200 in 231ms
+ GET / 200 in 355ms
+ GET / 200 in 229ms
+ GET / 200 in 261ms
+ GET / 200 in 277ms
+ GET / 200 in 225ms
+ GET / 200 in 250ms
+ GET / 200 in 249ms
+ GET / 200 in 217ms
+ GET / 200 in 242ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 321ms
+ GET / 200 in 460ms
+ GET / 200 in 351ms
+ GET / 200 in 315ms
+ GET / 200 in 244ms
+ GET / 200 in 244ms
+ GET / 200 in 212ms
+ GET / 200 in 247ms
+ GET / 200 in 265ms
+ GET / 200 in 222ms
+ GET / 200 in 512ms
+ GET / 200 in 235ms
+ GET / 200 in 271ms
+ GET / 200 in 224ms
+ GET / 200 in 257ms
+ GET / 200 in 222ms
+ GET / 200 in 269ms
+ GET / 200 in 247ms
+ GET / 200 in 267ms
+ GET / 200 in 257ms
+ GET / 200 in 233ms
+ GET / 200 in 319ms
+ GET / 200 in 311ms
+ GET / 200 in 225ms
+ GET / 200 in 256ms
+ GET / 200 in 235ms
+ GET / 200 in 214ms
+ GET / 200 in 236ms
+ GET / 200 in 236ms
+ GET / 200 in 341ms
+ GET / 200 in 221ms
+ GET / 200 in 296ms
+ GET / 200 in 283ms
+ GET / 200 in 256ms
+ GET / 200 in 253ms
+ GET / 200 in 245ms
+ GET / 200 in 288ms
+ GET / 200 in 412ms
+ GET / 200 in 233ms
+ GET / 200 in 202ms
+ GET / 200 in 262ms
+ GET / 200 in 278ms
+ GET / 200 in 707ms
+ GET / 200 in 242ms
+ GET / 200 in 224ms
+ GET / 200 in 249ms
+ GET / 200 in 334ms
+ GET / 200 in 240ms
+ GET / 200 in 236ms
+ GET / 200 in 234ms
+ GET / 200 in 213ms
+ GET / 200 in 296ms
+ GET / 200 in 814ms
+ GET / 200 in 224ms
+ GET / 200 in 238ms
+ GET / 200 in 239ms
+ GET / 200 in 988ms
+ GET / 200 in 1661ms
+ GET / 200 in 450ms
+ GET / 200 in 252ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 237ms
+ GET / 200 in 469ms
+ GET / 200 in 436ms
+ GET / 200 in 209ms
+ GET / 200 in 314ms
+ GET / 200 in 399ms
+ GET / 200 in 2107ms
+ GET / 200 in 376ms
+ GET / 200 in 264ms
+ GET / 200 in 265ms
+ GET / 200 in 260ms
+ GET / 200 in 233ms
+ GET / 200 in 216ms
+ GET / 200 in 290ms
+ GET / 200 in 226ms
+ GET / 200 in 217ms
+ GET / 200 in 238ms
+ GET / 200 in 230ms
+ GET / 200 in 218ms
+ GET / 200 in 283ms
+ GET / 200 in 289ms
+ GET / 200 in 372ms
+ GET / 200 in 262ms
+ GET / 200 in 218ms
+ GET / 200 in 270ms
+ GET / 200 in 381ms
+ GET / 200 in 223ms
+ GET / 200 in 262ms
+ GET / 200 in 257ms
+ GET / 200 in 209ms
+ GET / 200 in 229ms
+ GET / 200 in 252ms
+ GET / 200 in 216ms
+ GET / 200 in 256ms
+ GET / 200 in 261ms
+ GET / 200 in 193ms
+ GET / 200 in 260ms
+ GET / 200 in 210ms
+ GET / 200 in 316ms
+ GET / 200 in 199ms
+ GET / 200 in 261ms
+ GET / 200 in 210ms
+ GET / 200 in 277ms
+ GET / 200 in 212ms
+ GET / 200 in 223ms
+ GET / 200 in 199ms
+ GET / 200 in 230ms
+ GET / 200 in 234ms
+ GET / 200 in 256ms
+ GET / 200 in 220ms
+ GET / 200 in 258ms
+ GET / 200 in 364ms
+ GET / 200 in 343ms
+ GET / 200 in 216ms
+ GET / 200 in 239ms
+ GET / 200 in 258ms
+ GET / 200 in 266ms
+ GET / 200 in 264ms
+ GET / 200 in 234ms
+ GET / 200 in 227ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 294ms
+ GET / 200 in 238ms
+ GET / 200 in 1359ms
+ GET / 200 in 289ms
+ GET / 200 in 225ms
+ GET / 200 in 699ms
+ GET / 200 in 215ms
+ GET / 200 in 282ms
+ GET / 200 in 260ms
+ GET / 200 in 243ms
+ GET / 200 in 230ms
+ GET / 200 in 206ms
+ GET / 200 in 191ms
+ GET / 200 in 248ms
+ GET / 200 in 243ms
+ GET / 200 in 250ms
+ GET / 200 in 232ms
+ GET / 200 in 294ms
+ GET / 200 in 239ms
+ GET / 200 in 223ms
+ GET / 200 in 229ms
+ GET / 200 in 224ms
+ GET / 200 in 248ms
+ GET / 200 in 197ms
+ GET / 200 in 286ms
+ GET / 200 in 374ms
+ GET / 200 in 190ms
+ GET / 200 in 227ms
+ GET / 200 in 255ms
+ GET / 200 in 221ms
+ GET / 200 in 205ms
+ GET / 200 in 261ms
+ GET / 200 in 173ms
+ GET / 200 in 517ms
+ GET / 200 in 624ms
+ GET / 200 in 212ms
+ GET / 200 in 285ms
+ GET / 200 in 208ms
+ GET / 200 in 1459ms
+ GET / 200 in 188ms
+ GET / 200 in 233ms
+ GET / 200 in 236ms
+ GET / 200 in 242ms
+ GET / 200 in 356ms
+ GET / 200 in 206ms
+ GET / 200 in 234ms
+ GET / 200 in 357ms
+ GET / 200 in 201ms
+ GET / 200 in 249ms
+ GET / 200 in 410ms
+ GET / 200 in 192ms
+ GET / 200 in 221ms
+ GET / 200 in 277ms
+ GET / 200 in 201ms
+ GET / 200 in 196ms
+ GET / 200 in 316ms
+ GET / 200 in 182ms
+ GET / 200 in 230ms
+ GET / 200 in 191ms
+ GET / 200 in 515ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 3437ms
+ GET / 200 in 3586ms
+ GET / 200 in 1309ms
+ GET / 200 in 270ms
+ GET / 200 in 246ms
+ GET / 200 in 232ms
+ GET / 200 in 267ms
+ GET / 200 in 220ms
+ GET / 200 in 215ms
+ GET / 200 in 187ms
+ GET / 200 in 321ms
+ GET / 200 in 271ms
+ GET / 200 in 258ms
+ GET / 200 in 245ms
+ GET / 200 in 213ms
+ GET / 200 in 293ms
+ GET / 200 in 309ms
+ GET / 200 in 229ms
+ GET / 200 in 224ms
+ GET / 200 in 253ms
+ GET / 200 in 213ms
+ GET / 200 in 261ms
+ GET / 200 in 243ms
+ GET / 200 in 224ms
+ GET / 200 in 261ms
+ GET / 200 in 300ms
+ GET / 200 in 235ms
+ GET / 200 in 216ms
+ GET / 200 in 268ms
+ GET / 200 in 230ms
+ GET / 200 in 281ms
+ GET / 200 in 242ms
+ GET / 200 in 212ms
+ GET / 200 in 333ms
+ GET / 200 in 224ms
+ GET / 200 in 244ms
+ GET / 200 in 210ms
+ GET / 200 in 241ms
+ GET / 200 in 233ms
+ GET / 200 in 233ms
+ GET / 200 in 258ms
+ GET / 200 in 226ms
+ GET / 200 in 232ms
+ GET / 200 in 235ms
+ GET / 200 in 225ms
+ GET / 200 in 248ms
+ GET / 200 in 249ms
+ GET / 200 in 211ms
+ GET / 200 in 221ms
+ GET / 200 in 266ms
+ GET / 200 in 387ms
+ GET / 200 in 435ms
+ GET / 200 in 273ms
+ GET / 200 in 238ms
+ GET / 200 in 236ms
+ GET / 200 in 230ms
+ GET / 200 in 216ms
+ GET / 200 in 245ms
+ GET / 200 in 222ms
+ GET / 200 in 219ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 314ms
+ GET / 200 in 584ms
+ GET / 200 in 349ms
+ GET / 200 in 340ms
+ GET / 200 in 256ms
+ GET / 200 in 4437ms
+ GET / 200 in 297ms
+ GET / 200 in 268ms
+ GET / 200 in 364ms
+ GET / 200 in 274ms
+ GET / 200 in 233ms
+ GET / 200 in 217ms
+ GET / 200 in 231ms
+ GET / 200 in 211ms
+ GET / 200 in 223ms
+ GET / 200 in 479ms
+ GET / 200 in 263ms
+ GET / 200 in 219ms
+ GET / 200 in 246ms
+ GET / 200 in 248ms
+ GET / 200 in 384ms
+ GET / 200 in 256ms
+ GET / 200 in 249ms
+ GET / 200 in 253ms
+ GET / 200 in 349ms
+ GET / 200 in 241ms
+ GET / 200 in 216ms
+ GET / 200 in 283ms
+ GET / 200 in 273ms
+ GET / 200 in 287ms
+ GET / 200 in 419ms
+ GET / 200 in 248ms
+ GET / 200 in 238ms
+ GET / 200 in 471ms
+ GET / 200 in 201ms
+ GET / 200 in 211ms
+ GET / 200 in 270ms
+ GET / 200 in 312ms
+ GET / 200 in 249ms
+ GET / 200 in 335ms
+ GET / 200 in 238ms
+ GET / 200 in 290ms
+ GET / 200 in 176ms
+ GET / 200 in 244ms
+ GET / 200 in 204ms
+ GET / 200 in 229ms
+ GET / 200 in 225ms
+ GET / 200 in 194ms
+ GET / 200 in 182ms
+ GET / 200 in 316ms
+ GET / 200 in 193ms
+ GET / 200 in 227ms
+ GET / 200 in 206ms
+ GET / 200 in 174ms
+ GET / 200 in 173ms
+ GET / 200 in 242ms
+ GET / 200 in 170ms
+ GET / 200 in 230ms
+ GET / 200 in 186ms
+ GET / 200 in 212ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 171ms
+ GET / 200 in 202ms
+ GET / 200 in 170ms
+ GET / 200 in 214ms
+ GET / 200 in 184ms
+ GET / 200 in 173ms
+ GET / 200 in 238ms
+ GET / 200 in 206ms
+ GET / 200 in 166ms
+ GET / 200 in 175ms
+ GET / 200 in 207ms
+ GET / 200 in 197ms
+ GET / 200 in 213ms
+ GET / 200 in 510ms
+ GET / 200 in 173ms
+ GET / 200 in 179ms
+ GET / 200 in 221ms
+ GET / 200 in 170ms
+ GET / 200 in 1457ms
+ GET / 200 in 431ms
+ GET / 200 in 367ms
+ GET / 200 in 224ms
+ GET / 200 in 218ms
+ GET / 200 in 261ms
+ GET / 200 in 226ms
+ GET / 200 in 212ms
+ GET / 200 in 238ms
+ GET / 200 in 209ms
+ GET / 200 in 231ms
+ GET / 200 in 205ms
+ GET / 200 in 247ms
+ GET / 200 in 215ms
+ GET / 200 in 199ms
+ GET / 200 in 244ms
+ GET / 200 in 435ms
+ GET / 200 in 238ms
+ GET / 200 in 214ms
+ GET / 200 in 227ms
+ GET / 200 in 207ms
+ GET / 200 in 192ms
+ GET / 200 in 228ms
+ GET / 200 in 247ms
+ GET / 200 in 263ms
+ GET / 200 in 224ms
+ GET / 200 in 201ms
+ GET / 200 in 221ms
+ GET / 200 in 213ms
+ GET / 200 in 195ms
+ GET / 200 in 224ms
+ GET / 200 in 227ms
+ GET / 200 in 198ms
+ GET / 200 in 199ms
+ GET / 200 in 222ms
+ GET / 200 in 192ms
+ GET / 200 in 239ms
+ GET / 200 in 205ms
+ GET / 200 in 201ms
+ GET / 200 in 242ms
+ GET / 200 in 193ms
+ GET / 200 in 228ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 181ms
+ GET / 200 in 239ms
+ GET / 200 in 191ms
+ GET / 200 in 229ms
+ GET / 200 in 243ms
+ GET / 200 in 194ms
+ GET / 200 in 240ms
+ GET / 200 in 231ms
+ GET / 200 in 201ms
+ GET / 200 in 223ms
+ GET / 200 in 236ms
+ GET / 200 in 287ms
+ GET / 200 in 235ms
+ GET / 200 in 213ms
+ GET / 200 in 424ms
+ GET / 200 in 181ms
+ GET / 200 in 233ms
+ GET / 200 in 204ms
+ GET / 200 in 232ms
+ GET / 200 in 207ms
+ GET / 200 in 203ms
+ GET / 200 in 249ms
+ GET / 200 in 1122ms
+ GET / 200 in 263ms
+ GET / 200 in 259ms
+ GET / 200 in 243ms
+ GET / 200 in 257ms
+ GET / 200 in 247ms
+ GET / 200 in 216ms
+ GET / 200 in 218ms
+ GET / 200 in 249ms
+ GET / 200 in 227ms
+ GET / 200 in 320ms
+ GET / 200 in 207ms
+ GET / 200 in 229ms
+ GET / 200 in 195ms
+ GET / 200 in 374ms
+ GET / 200 in 216ms
+ GET / 200 in 193ms
+ GET / 200 in 243ms
+ GET / 200 in 200ms
+ GET / 200 in 205ms
+ GET / 200 in 217ms
+ GET / 200 in 188ms
+ GET / 200 in 199ms
+ GET / 200 in 218ms
+ GET / 200 in 234ms
+ GET / 200 in 305ms
+ GET / 200 in 212ms
+ GET / 200 in 210ms
+ GET / 200 in 517ms
+ GET / 200 in 188ms
+ GET / 200 in 207ms
+ GET / 200 in 193ms
+ GET / 200 in 277ms
+ GET / 200 in 232ms
+ GET / 200 in 221ms
+ GET / 200 in 232ms
+ GET / 200 in 330ms
+ GET / 200 in 223ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 285ms
+ GET / 200 in 247ms
+ GET / 200 in 232ms
+ GET / 200 in 281ms
+ GET / 200 in 229ms
+ GET / 200 in 209ms
+ GET / 200 in 252ms
+ GET / 200 in 203ms
+ GET / 200 in 244ms
+ GET / 200 in 225ms
+ GET / 200 in 212ms
+ GET / 200 in 220ms
+ GET / 200 in 210ms
+ GET / 200 in 233ms
+ GET / 200 in 221ms
+ GET / 200 in 270ms
+ GET / 200 in 242ms
+ GET / 200 in 217ms
+ GET / 200 in 291ms
+ GET / 200 in 298ms
+ GET / 200 in 254ms
+ GET / 200 in 209ms
+ GET / 200 in 294ms
+ GET / 200 in 330ms
+ GET / 200 in 267ms
+ GET / 200 in 231ms
+ GET / 200 in 213ms
+ GET / 200 in 371ms
+ GET / 200 in 253ms
+ GET / 200 in 205ms
+ GET / 200 in 237ms
+ GET / 200 in 254ms
+ GET / 200 in 242ms
+ GET / 200 in 243ms
+ GET / 200 in 253ms
+ GET / 200 in 216ms
+ GET / 200 in 225ms
+ GET / 200 in 418ms
+ GET / 200 in 251ms
+ GET / 200 in 257ms
+ GET / 200 in 231ms
+ GET / 200 in 212ms
+ GET / 200 in 244ms
+ GET / 200 in 265ms
+ GET / 200 in 227ms
+ GET / 200 in 292ms
+ GET / 200 in 241ms
+ GET / 200 in 226ms
+ GET / 200 in 301ms
+ GET / 200 in 262ms
+ GET / 200 in 442ms
+ GET / 200 in 292ms
+ GET / 200 in 239ms
+ GET / 200 in 225ms
+ GET / 200 in 288ms
+ GET / 200 in 273ms
+ GET / 200 in 260ms
+ GET / 200 in 208ms
+ GET / 200 in 270ms
+ GET / 200 in 217ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 278ms
+ GET / 200 in 229ms
+ GET / 200 in 207ms
+ GET / 200 in 220ms
+ GET / 200 in 255ms
+ GET / 200 in 221ms
+ GET / 200 in 256ms
+ GET / 200 in 264ms
+ GET / 200 in 215ms
+ GET / 200 in 220ms
+ GET / 200 in 265ms
+ GET / 200 in 218ms
+ GET / 200 in 300ms
+ GET / 200 in 252ms
+ GET / 200 in 217ms
+ GET / 200 in 225ms
+ GET / 200 in 255ms
+ GET / 200 in 232ms
+ GET / 200 in 624ms
+ GET / 200 in 228ms
+ GET / 200 in 412ms
+ GET / 200 in 183ms
+ GET / 200 in 251ms
+ GET / 200 in 229ms
+ GET / 200 in 227ms
+ GET / 200 in 211ms
+ GET / 200 in 201ms
+ GET / 200 in 173ms
+ GET / 200 in 251ms
+ GET / 200 in 244ms
+ GET / 200 in 235ms
+ GET / 200 in 223ms
+ GET / 200 in 186ms
+ GET / 200 in 365ms
+ GET / 200 in 224ms
+ GET / 200 in 645ms
+ GET / 200 in 851ms
+ GET / 200 in 2258ms
+ GET / 200 in 395ms
+ GET / 200 in 214ms
+ GET / 200 in 259ms
+ GET / 200 in 291ms
+ GET / 200 in 1553ms
+ GET / 200 in 1401ms
+ GET / 200 in 256ms
+ GET / 200 in 287ms
+ GET / 200 in 233ms
+ GET / 200 in 438ms
+ GET / 200 in 383ms
+ GET / 200 in 861ms
+ GET / 200 in 265ms
+ GET / 200 in 226ms
+ GET / 200 in 295ms
+ GET / 200 in 248ms
+ GET / 200 in 295ms
+ GET / 200 in 208ms
+ GET / 200 in 198ms
+ GET / 200 in 264ms
+ GET / 200 in 218ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 262ms
+ GET / 200 in 259ms
+ GET / 200 in 217ms
+ GET / 200 in 202ms
+ GET / 200 in 244ms
+ GET / 200 in 219ms
+ GET / 200 in 273ms
+ GET / 200 in 216ms
+ GET / 200 in 206ms
+ GET / 200 in 274ms
+ GET / 200 in 248ms
+ GET / 200 in 249ms
+ GET / 200 in 259ms
+ GET / 200 in 220ms
+ GET / 200 in 207ms
+ GET / 200 in 280ms
+ GET / 200 in 212ms
+ GET / 200 in 211ms
+ GET / 200 in 263ms
+ GET / 200 in 269ms
+ GET / 200 in 201ms
+ GET / 200 in 258ms
+ GET / 200 in 211ms
+ GET / 200 in 198ms
+ GET / 200 in 199ms
+ GET / 200 in 254ms
+ GET / 200 in 222ms
+ GET / 200 in 235ms
+ GET / 200 in 242ms
+ GET / 200 in 197ms
+ GET / 200 in 203ms
+ GET / 200 in 273ms
+ GET / 200 in 205ms
+ GET / 200 in 251ms
+ GET / 200 in 226ms
+ GET / 200 in 214ms
+ GET / 200 in 234ms
+ GET / 200 in 259ms
+ GET / 200 in 201ms
+ GET / 200 in 231ms
+ GET / 200 in 226ms
+ GET / 200 in 218ms
+ GET / 200 in 225ms
+ GET / 200 in 217ms
+ GET / 200 in 203ms
+ GET / 200 in 232ms
+ GET / 200 in 228ms
+ GET / 200 in 193ms
+ GET / 200 in 209ms
+ GET / 200 in 244ms
+ GET / 200 in 216ms
+ GET / 200 in 245ms
+ GET / 200 in 226ms
+ GET / 200 in 241ms
+ GET / 200 in 228ms
+ GET / 200 in 220ms
+ GET / 200 in 225ms
+ GET / 200 in 216ms
+ GET / 200 in 243ms
+ GET / 200 in 201ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 250ms
+ GET / 200 in 212ms
+ GET / 200 in 1053ms
+ GET / 200 in 204ms
+ GET / 200 in 196ms
+ GET / 200 in 189ms
+ GET / 200 in 199ms
+ GET / 200 in 215ms
+ GET / 200 in 227ms
+ GET / 200 in 196ms
+ GET / 200 in 214ms
+ GET / 200 in 193ms
+ GET / 200 in 225ms
+ GET / 200 in 259ms
+ GET / 200 in 188ms
+ GET / 200 in 224ms
+ GET / 200 in 380ms
+ GET / 200 in 196ms
+ GET / 200 in 215ms
+ GET / 200 in 257ms
+ GET / 200 in 185ms
+ GET / 200 in 212ms
+ GET / 200 in 194ms
+ GET / 200 in 167ms
+ GET / 200 in 180ms
+ GET / 200 in 226ms
+ GET / 200 in 181ms
+ GET / 200 in 216ms
+ GET / 200 in 206ms
+ GET / 200 in 174ms
+ GET / 200 in 205ms
+ GET / 200 in 199ms
+ GET / 200 in 179ms
+ GET / 200 in 215ms
+ GET / 200 in 202ms
+ GET / 200 in 176ms
+ GET / 200 in 204ms
+ GET / 200 in 205ms
+ GET / 200 in 172ms
+ GET / 200 in 217ms
+ GET / 200 in 203ms
+ GET / 200 in 185ms
+ GET / 200 in 179ms
+ GET / 200 in 224ms
+ GET / 200 in 178ms
+ GET / 200 in 238ms
+ GET / 200 in 179ms
+ GET / 200 in 170ms
+ GET / 200 in 222ms
+ GET / 200 in 193ms
+ GET / 200 in 170ms
+ GET / 200 in 209ms
+ GET / 200 in 209ms
+ GET / 200 in 178ms
+ GET / 200 in 202ms
+ GET / 200 in 211ms
+ GET / 200 in 168ms
+ GET / 200 in 229ms
+ GET / 200 in 193ms
+ GET / 200 in 188ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 220ms
+ GET / 200 in 204ms
+ GET / 200 in 194ms
+ GET / 200 in 228ms
+ GET / 200 in 202ms
+ GET / 200 in 169ms
+ GET / 200 in 185ms
+ GET / 200 in 241ms
+ GET / 200 in 179ms
+ GET / 200 in 219ms
+ GET / 200 in 189ms
+ GET / 200 in 206ms
+ GET / 200 in 240ms
+ GET / 200 in 181ms
+ GET / 200 in 177ms
+ GET / 200 in 173ms
+ GET / 200 in 233ms
+ GET / 200 in 184ms
+ GET / 200 in 223ms
+ GET / 200 in 222ms
+ GET / 200 in 185ms
+ GET / 200 in 350ms
+ GET / 200 in 185ms
+ GET / 200 in 188ms
+ GET / 200 in 182ms
+ GET / 200 in 235ms
+ GET / 200 in 196ms
+ GET / 200 in 223ms
+ GET / 200 in 198ms
+ GET / 200 in 184ms
+ GET / 200 in 216ms
+ GET / 200 in 214ms
+ GET / 200 in 179ms
+ GET / 200 in 206ms
+ GET / 200 in 246ms
+ GET / 200 in 193ms
+ GET / 200 in 204ms
+ GET / 200 in 223ms
+ GET / 200 in 183ms
+ GET / 200 in 262ms
+ GET / 200 in 194ms
+ GET / 200 in 186ms
+ GET / 200 in 235ms
+ GET / 200 in 186ms
+ GET / 200 in 165ms
+ GET / 200 in 176ms
+ GET / 200 in 236ms
+ GET / 200 in 195ms
+ GET / 200 in 242ms
+ GET / 200 in 188ms
+ GET / 200 in 190ms
+ GET / 200 in 237ms
+ GET / 200 in 190ms
+ GET / 200 in 180ms
+ GET / 200 in 179ms
+ GET / 200 in 353ms
+ GET / 200 in 248ms
+ GET / 200 in 231ms
+ GET / 200 in 192ms
+ GET / 200 in 210ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 388ms
+ GET / 200 in 191ms
+ GET / 200 in 282ms
+ GET / 200 in 203ms
+ GET / 200 in 196ms
+ GET / 200 in 211ms
+ GET / 200 in 235ms
+ GET / 200 in 224ms
+ GET / 200 in 198ms
+ GET / 200 in 201ms
+ GET / 200 in 262ms
+ GET / 200 in 202ms
+ GET / 200 in 228ms
+ GET / 200 in 246ms
+ GET / 200 in 210ms
+ GET / 200 in 264ms
+ GET / 200 in 210ms
+ GET / 200 in 215ms
+ GET / 200 in 276ms
+ GET / 200 in 202ms
+ GET / 200 in 183ms
+ GET / 200 in 190ms
+ GET / 200 in 252ms
+ GET / 200 in 215ms
+ GET / 200 in 268ms
+ GET / 200 in 218ms
+ GET / 200 in 246ms
+ GET / 200 in 222ms
+ GET / 200 in 221ms
+ GET / 200 in 212ms
+ GET / 200 in 236ms
+ GET / 200 in 225ms
+ GET / 200 in 198ms
+ GET / 200 in 199ms
+ GET / 200 in 253ms
+ GET / 200 in 224ms
+ GET / 200 in 257ms
+ GET / 200 in 215ms
+ GET / 200 in 1267ms
+ GET / 200 in 212ms
+ GET / 200 in 186ms
+ GET / 200 in 195ms
+ GET / 200 in 523ms
+ GET / 200 in 220ms
+ GET / 200 in 212ms
+ GET / 200 in 215ms
+ GET / 200 in 284ms
+ GET / 200 in 231ms
+ GET / 200 in 259ms
+ GET / 200 in 231ms
+ GET / 200 in 204ms
+ GET / 200 in 364ms
+ GET / 200 in 263ms
+ GET / 200 in 238ms
+ GET / 200 in 364ms
+ GET / 200 in 240ms
+ GET / 200 in 214ms
+ GET / 200 in 285ms
+ GET / 200 in 227ms
+ GET / 200 in 204ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 242ms
+ GET / 200 in 220ms
+ GET / 200 in 200ms
+ GET / 200 in 195ms
+ GET / 200 in 237ms
+ GET / 200 in 226ms
+ GET / 200 in 263ms
+ GET / 200 in 277ms
+ GET / 200 in 222ms
+ GET / 200 in 246ms
+ GET / 200 in 241ms
+ GET / 200 in 206ms
+ GET / 200 in 211ms
+ GET / 200 in 264ms
+ GET / 200 in 208ms
+ GET / 200 in 268ms
+ GET / 200 in 237ms
+ GET / 200 in 208ms
+ GET / 200 in 246ms
+ GET / 200 in 242ms
+ GET / 200 in 213ms
+ GET / 200 in 221ms
+ GET / 200 in 255ms
+ GET / 200 in 227ms
+ GET / 200 in 265ms
+ GET / 200 in 229ms
+ GET / 200 in 205ms
+ GET / 200 in 255ms
+ GET / 200 in 234ms
+ GET / 200 in 202ms
+ GET / 200 in 221ms
+ GET / 200 in 265ms
+ GET / 200 in 210ms
+ GET / 200 in 269ms
+ GET / 200 in 213ms
+ GET / 200 in 192ms
+ GET / 200 in 196ms
+ GET / 200 in 272ms
+ GET / 200 in 217ms
+ GET / 200 in 268ms
+ GET / 200 in 222ms
+ GET / 200 in 201ms
+ GET / 200 in 245ms
+ GET / 200 in 231ms
+ GET / 200 in 238ms
+ GET / 200 in 232ms
+ GET / 200 in 233ms
+ GET / 200 in 195ms
+ GET / 200 in 214ms
+ GET / 200 in 262ms
+ GET / 200 in 202ms
+ GET / 200 in 255ms
+ GET / 200 in 214ms
+ GET / 200 in 235ms
+ GET / 200 in 274ms
+ GET / 200 in 266ms
+ GET / 200 in 207ms
+ GET / 200 in 268ms
+ GET / 200 in 608ms
+ GET / 200 in 1388ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 216ms
+ GET / 200 in 204ms
+ GET / 200 in 290ms
+ GET / 200 in 222ms
+ GET / 200 in 185ms
+ GET / 200 in 201ms
+ GET / 200 in 226ms
+ GET / 200 in 199ms
+ GET / 200 in 198ms
+ GET / 200 in 201ms
+ GET / 200 in 225ms
+ GET / 200 in 215ms
+ GET / 200 in 246ms
+ GET / 200 in 224ms
+ GET / 200 in 201ms
+ GET / 200 in 216ms
+ GET / 200 in 243ms
+ GET / 200 in 200ms
+ GET / 200 in 254ms
+ GET / 200 in 225ms
+ GET / 200 in 199ms
+ GET / 200 in 236ms
+ GET / 200 in 226ms
+ GET / 200 in 224ms
+ GET / 200 in 230ms
+ GET / 200 in 226ms
+ GET / 200 in 226ms
+ GET / 200 in 199ms
+ GET / 200 in 264ms
+ GET / 200 in 221ms
+ GET / 200 in 240ms
+ GET / 200 in 229ms
+ GET / 200 in 197ms
+ GET / 200 in 224ms
+ GET / 200 in 244ms
+ GET / 200 in 189ms
+ GET / 200 in 199ms
+ GET / 200 in 249ms
+ GET / 200 in 209ms
+ GET / 200 in 270ms
+ GET / 200 in 222ms
+ GET / 200 in 186ms
+ GET / 200 in 254ms
+ GET / 200 in 212ms
+ GET / 200 in 189ms
+ GET / 200 in 196ms
+ GET / 200 in 244ms
+ GET / 200 in 233ms
+ GET / 200 in 263ms
+ GET / 200 in 201ms
+ GET / 200 in 183ms
+ GET / 200 in 183ms
+ GET / 200 in 243ms
+ GET / 200 in 203ms
+ GET / 200 in 248ms
+ GET / 200 in 229ms
+ GET / 200 in 199ms
+ GET / 200 in 234ms
+ GET / 200 in 233ms
+ GET / 200 in 195ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 186ms
+ GET / 200 in 245ms
+ GET / 200 in 187ms
+ GET / 200 in 231ms
+ GET / 200 in 223ms
+ GET / 200 in 206ms
+ GET / 200 in 225ms
+ GET / 200 in 228ms
+ GET / 200 in 201ms
+ GET / 200 in 226ms
+ GET / 200 in 229ms
+ GET / 200 in 187ms
+ GET / 200 in 191ms
+ GET / 200 in 240ms
+ GET / 200 in 191ms
+ GET / 200 in 258ms
+ GET / 200 in 213ms
+ GET / 200 in 191ms
+ GET / 200 in 237ms
+ GET / 200 in 223ms
+ GET / 200 in 190ms
+ GET / 200 in 199ms
+ GET / 200 in 250ms
+ GET / 200 in 188ms
+ GET / 200 in 260ms
+ GET / 200 in 202ms
+ GET / 200 in 182ms
+ GET / 200 in 219ms
+ GET / 200 in 797ms
+ GET / 200 in 1597ms
+ GET / 200 in 218ms
+ GET / 200 in 268ms
+ GET / 200 in 348ms
+ GET / 200 in 252ms
+ GET / 200 in 224ms
+ GET / 200 in 376ms
+ GET / 200 in 1436ms
+ GET / 200 in 240ms
+ GET / 200 in 190ms
+ GET / 200 in 1811ms
+ GET / 200 in 1438ms
+ GET / 200 in 473ms
+ GET / 200 in 243ms
+ GET / 200 in 243ms
+ GET / 200 in 215ms
+ GET / 200 in 221ms
+ GET / 200 in 268ms
+ GET / 200 in 217ms
+ GET / 200 in 284ms
+ GET / 200 in 227ms
+ GET / 200 in 230ms
+ GET / 200 in 299ms
+ GET / 200 in 231ms
+ GET / 200 in 203ms
+ GET / 200 in 254ms
+ GET / 200 in 259ms
+ GET / 200 in 311ms
+ GET / 200 in 214ms
+ GET / 200 in 264ms
+ GET / 200 in 221ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 300ms
+ GET / 200 in 234ms
+ GET / 200 in 272ms
+ GET / 200 in 288ms
+ GET / 200 in 254ms
+ GET / 200 in 216ms
+ GET / 200 in 248ms
+ GET / 200 in 249ms
+ GET / 200 in 208ms
+ GET / 200 in 220ms
+ GET / 200 in 257ms
+ GET / 200 in 218ms
+ GET / 200 in 263ms
+ GET / 200 in 233ms
+ GET / 200 in 220ms
+ GET / 200 in 238ms
+ GET / 200 in 244ms
+ GET / 200 in 219ms
+ GET / 200 in 320ms
+ GET / 200 in 241ms
+ GET / 200 in 209ms
+ GET / 200 in 243ms
+ GET / 200 in 224ms
+ GET / 200 in 200ms
+ GET / 200 in 230ms
+ GET / 200 in 273ms
+ GET / 200 in 253ms
+ GET / 200 in 220ms
+ GET / 200 in 348ms
+ GET / 200 in 258ms
+ GET / 200 in 213ms
+ GET / 200 in 259ms
+ GET / 200 in 207ms
+ GET / 200 in 293ms
+ GET / 200 in 229ms
+ GET / 200 in 204ms
+ GET / 200 in 197ms
+ GET / 200 in 257ms
+ GET / 200 in 202ms
+ GET / 200 in 254ms
+ GET / 200 in 230ms
+ GET / 200 in 237ms
+ GET / 200 in 240ms
+ GET / 200 in 237ms
+ GET / 200 in 205ms
+ GET / 200 in 247ms
+ GET / 200 in 237ms
+ GET / 200 in 218ms
+ GET / 200 in 255ms
+ GET / 200 in 240ms
+ GET / 200 in 221ms
+ GET / 200 in 250ms
+ GET / 200 in 246ms
+ GET / 200 in 217ms
+ GET / 200 in 248ms
+ GET / 200 in 230ms
+ GET / 200 in 204ms
+ GET / 200 in 315ms
+ GET / 200 in 222ms
+ GET / 200 in 411ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 199ms
+ GET / 200 in 261ms
+ GET / 200 in 630ms
+ GET / 200 in 320ms
+ GET / 200 in 197ms
+ GET / 200 in 210ms
+ GET / 200 in 212ms
+ GET / 200 in 216ms
+ GET / 200 in 190ms
+ GET / 200 in 195ms
+ GET / 200 in 265ms
+ GET / 200 in 227ms
+ GET / 200 in 229ms
+ GET / 200 in 247ms
+ GET / 200 in 219ms
+ GET / 200 in 252ms
+ GET / 200 in 203ms
+ GET / 200 in 198ms
+ GET / 200 in 206ms
+ GET / 200 in 280ms
+ GET / 200 in 222ms
+ GET / 200 in 255ms
+ GET / 200 in 261ms
+ GET / 200 in 212ms
+ GET / 200 in 237ms
+ GET / 200 in 280ms
+ GET / 200 in 296ms
+ GET / 200 in 282ms
+ GET / 200 in 256ms
+ GET / 200 in 203ms
+ GET / 200 in 207ms
+ GET / 200 in 266ms
+ GET / 200 in 202ms
+ GET / 200 in 268ms
+ GET / 200 in 224ms
+ GET / 200 in 198ms
+ GET / 200 in 240ms
+ GET / 200 in 235ms
+ GET / 200 in 215ms
+ GET / 200 in 219ms
+ GET / 200 in 271ms
+ GET / 200 in 213ms
+ GET / 200 in 264ms
+ GET / 200 in 226ms
+ GET / 200 in 249ms
+ GET / 200 in 207ms
+ GET / 200 in 266ms
+ GET / 200 in 200ms
+ GET / 200 in 265ms
+ GET / 200 in 252ms
+ GET / 200 in 211ms
+ GET / 200 in 286ms
+ GET / 200 in 248ms
+ GET / 200 in 199ms
+ GET / 200 in 238ms
+ GET / 200 in 242ms
+ GET / 200 in 198ms
+ GET / 200 in 212ms
+ GET / 200 in 255ms
+ GET / 200 in 214ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 426ms
+ GET / 200 in 607ms
+ GET / 200 in 633ms
+ GET / 200 in 272ms
+ GET / 200 in 325ms
+ GET / 200 in 421ms
+ GET / 200 in 231ms
+ GET / 200 in 245ms
+ GET / 200 in 351ms
+ GET / 200 in 180ms
+ GET / 200 in 246ms
+ GET / 200 in 198ms
+ GET / 200 in 236ms
+ GET / 200 in 220ms
+ GET / 200 in 206ms
+ GET / 200 in 221ms
+ GET / 200 in 230ms
+ GET / 200 in 200ms
+ GET / 200 in 213ms
+ GET / 200 in 264ms
+ GET / 200 in 225ms
+ GET / 200 in 177ms
+ GET / 200 in 244ms
+ GET / 200 in 200ms
+ GET / 200 in 239ms
+ GET / 200 in 209ms
+ GET / 200 in 196ms
+ GET / 200 in 299ms
+ GET / 200 in 277ms
+ GET / 200 in 218ms
+ GET / 200 in 285ms
+ GET / 200 in 225ms
+ GET / 200 in 208ms
+ GET / 200 in 879ms
+ GET / 200 in 2990ms
+ GET / 200 in 3359ms
+ GET / 200 in 199ms
+ GET / 200 in 190ms
+ GET / 200 in 200ms
+ GET / 200 in 1196ms
+ GET / 200 in 231ms
+ GET / 200 in 238ms
+ GET / 200 in 218ms
+ GET / 200 in 296ms
+ GET / 200 in 297ms
+ GET / 200 in 522ms
+ GET / 200 in 251ms
+ GET / 200 in 234ms
+ GET / 200 in 229ms
+ GET / 200 in 287ms
+ GET / 200 in 252ms
+ GET / 200 in 336ms
+ GET / 200 in 250ms
+ GET / 200 in 508ms
+ GET / 200 in 297ms
+ GET / 200 in 252ms
+ GET / 200 in 237ms
+ GET / 200 in 263ms
+ GET / 200 in 292ms
+ GET / 200 in 220ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 215ms
+ GET / 200 in 258ms
+ GET / 200 in 316ms
+ GET / 200 in 292ms
+ GET / 200 in 352ms
+ GET / 200 in 316ms
+ GET / 200 in 266ms
+ GET / 200 in 258ms
+ GET / 200 in 259ms
+ GET / 200 in 240ms
+ GET / 200 in 247ms
+ GET / 200 in 249ms
+ GET / 200 in 237ms
+ GET / 200 in 269ms
+ GET / 200 in 250ms
+ GET / 200 in 282ms
+ GET / 200 in 255ms
+ GET / 200 in 500ms
+ GET / 200 in 197ms
+ GET / 200 in 273ms
+ GET / 200 in 213ms
+ GET / 200 in 253ms
+ GET / 200 in 247ms
+ GET / 200 in 214ms
+ GET / 200 in 246ms
+ GET / 200 in 241ms
+ GET / 200 in 226ms
+ GET / 200 in 230ms
+ GET / 200 in 270ms
+ GET / 200 in 214ms
+ GET / 200 in 286ms
+ GET / 200 in 238ms
+ GET / 200 in 215ms
+ GET / 200 in 198ms
+ GET / 200 in 262ms
+ GET / 200 in 216ms
+ GET / 200 in 267ms
+ GET / 200 in 237ms
+ GET / 200 in 216ms
+ GET / 200 in 239ms
+ GET / 200 in 246ms
+ GET / 200 in 262ms
+ GET / 200 in 209ms
+ GET / 200 in 264ms
+ GET / 200 in 205ms
+ GET / 200 in 276ms
+ GET / 200 in 238ms
+ GET / 200 in 259ms
+ GET / 200 in 254ms
+ GET / 200 in 268ms
+ GET / 200 in 229ms
+ GET / 200 in 232ms
+ GET / 200 in 274ms
+ GET / 200 in 213ms
+ GET / 200 in 250ms
+ GET / 200 in 235ms
+ GET / 200 in 245ms
+ GET / 200 in 244ms
+ GET / 200 in 249ms
+ GET / 200 in 214ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 195ms
+ GET / 200 in 257ms
+ GET / 200 in 229ms
+ GET / 200 in 250ms
+ GET / 200 in 220ms
+ GET / 200 in 225ms
+ GET / 200 in 240ms
+ GET / 200 in 225ms
+ GET / 200 in 234ms
+ GET / 200 in 228ms
+ GET / 200 in 222ms
+ GET / 200 in 542ms
+ GET / 200 in 210ms
+ GET / 200 in 193ms
+ GET / 200 in 191ms
+ GET / 200 in 220ms
+ GET / 200 in 244ms
+ GET / 200 in 204ms
+ GET / 200 in 226ms
+ GET / 200 in 207ms
+ GET / 200 in 224ms
+ GET / 200 in 196ms
+ GET / 200 in 262ms
+ GET / 200 in 223ms
+ GET / 200 in 256ms
+ GET / 200 in 236ms
+ GET / 200 in 196ms
+ GET / 200 in 238ms
+ GET / 200 in 226ms
+ GET / 200 in 200ms
+ GET / 200 in 210ms
+ GET / 200 in 256ms
+ GET / 200 in 199ms
+ GET / 200 in 283ms
+ GET / 200 in 224ms
+ GET / 200 in 186ms
+ GET / 200 in 195ms
+ GET / 200 in 267ms
+ GET / 200 in 209ms
+ GET / 200 in 248ms
+ GET / 200 in 223ms
+ GET / 200 in 200ms
+ GET / 200 in 234ms
+ GET / 200 in 236ms
+ GET / 200 in 224ms
+ GET / 200 in 254ms
+ GET / 200 in 232ms
+ GET / 200 in 346ms
+ GET / 200 in 212ms
+ GET / 200 in 269ms
+ GET / 200 in 213ms
+ GET / 200 in 218ms
+ GET / 200 in 258ms
+ GET / 200 in 193ms
+ GET / 200 in 197ms
+ GET / 200 in 258ms
+ GET / 200 in 204ms
+ GET / 200 in 204ms
+ GET / 200 in 262ms
+ GET / 200 in 207ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 272ms
+ GET / 200 in 228ms
+ GET / 200 in 231ms
+ GET / 200 in 256ms
+ GET / 200 in 225ms
+ GET / 200 in 200ms
+ GET / 200 in 229ms
+ GET / 200 in 236ms
+ GET / 200 in 320ms
+ GET / 200 in 203ms
+ GET / 200 in 279ms
+ GET / 200 in 196ms
+ GET / 200 in 275ms
+ GET / 200 in 223ms
+ GET / 200 in 214ms
+ GET / 200 in 204ms
+ GET / 200 in 286ms
+ GET / 200 in 217ms
+ GET / 200 in 241ms
+ GET / 200 in 263ms
+ GET / 200 in 201ms
+ GET / 200 in 232ms
+ GET / 200 in 259ms
+ GET / 200 in 235ms
+ GET / 200 in 246ms
+ GET / 200 in 284ms
+ GET / 200 in 195ms
+ GET / 200 in 206ms
+ GET / 200 in 287ms
+ GET / 200 in 232ms
+ GET / 200 in 244ms
+ GET / 200 in 289ms
+ GET / 200 in 544ms
+ GET / 200 in 228ms
+ GET / 200 in 253ms
+ GET / 200 in 210ms
+ GET / 200 in 196ms
+ GET / 200 in 262ms
+ GET / 200 in 211ms
+ GET / 200 in 247ms
+ GET / 200 in 251ms
+ GET / 200 in 274ms
+ GET / 200 in 242ms
+ GET / 200 in 508ms
+ GET / 200 in 1317ms
+ GET / 200 in 222ms
+ GET / 200 in 179ms
+ GET / 200 in 188ms
+ GET / 200 in 229ms
+ GET / 200 in 222ms
+ GET / 200 in 206ms
+ GET / 200 in 274ms
+ GET / 200 in 216ms
+ GET / 200 in 198ms
+ GET / 200 in 285ms
+ GET / 200 in 217ms
+ GET / 200 in 208ms
+ GET / 200 in 191ms
+ GET / 200 in 257ms
+ GET / 200 in 206ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 289ms
+ GET / 200 in 218ms
+ GET / 200 in 186ms
+ GET / 200 in 192ms
+ GET / 200 in 274ms
+ GET / 200 in 208ms
+ GET / 200 in 252ms
+ GET / 200 in 224ms
+ GET / 200 in 194ms
+ GET / 200 in 248ms
+ GET / 200 in 236ms
+ GET / 200 in 199ms
+ GET / 200 in 208ms
+ GET / 200 in 268ms
+ GET / 200 in 206ms
+ GET / 200 in 279ms
+ GET / 200 in 214ms
+ GET / 200 in 188ms
+ GET / 200 in 196ms
+ GET / 200 in 263ms
+ GET / 200 in 196ms
+ GET / 200 in 260ms
+ GET / 200 in 212ms
+ GET / 200 in 198ms
+ GET / 200 in 308ms
+ GET / 200 in 222ms
+ GET / 200 in 213ms
+ GET / 200 in 211ms
+ GET / 200 in 276ms
+ GET / 200 in 204ms
+ GET / 200 in 251ms
+ GET / 200 in 210ms
+ GET / 200 in 184ms
+ GET / 200 in 296ms
+ GET / 200 in 210ms
+ GET / 200 in 184ms
+ GET / 200 in 178ms
+ GET / 200 in 255ms
+ GET / 200 in 199ms
+ GET / 200 in 250ms
+ GET / 200 in 227ms
+ GET / 200 in 195ms
+ GET / 200 in 242ms
+ GET / 200 in 232ms
+ GET / 200 in 192ms
+ GET / 200 in 199ms
+ GET / 200 in 256ms
+ GET / 200 in 214ms
+ GET / 200 in 259ms
+ GET / 200 in 225ms
+ GET / 200 in 206ms
+ GET / 200 in 236ms
+ GET / 200 in 222ms
+ GET / 200 in 194ms
+ GET / 200 in 233ms
+ GET / 200 in 229ms
+ GET / 200 in 223ms
+ GET / 200 in 230ms
+ GET / 200 in 224ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 231ms
+ GET / 200 in 228ms
+ GET / 200 in 214ms
+ GET / 200 in 236ms
+ GET / 200 in 238ms
+ GET / 200 in 186ms
+ GET / 200 in 207ms
+ GET / 200 in 282ms
+ GET / 200 in 210ms
+ GET / 200 in 278ms
+ GET / 200 in 209ms
+ GET / 200 in 188ms
+ GET / 200 in 182ms
+ GET / 200 in 318ms
+ GET / 200 in 213ms
+ GET / 200 in 255ms
+ GET / 200 in 205ms
+ GET / 200 in 188ms
+ GET / 200 in 273ms
+ GET / 200 in 1091ms
+ GET / 200 in 2060ms
+ GET / 200 in 226ms
+ GET / 200 in 190ms
+ GET / 200 in 198ms
+ GET / 200 in 214ms
+ GET / 200 in 217ms
+ GET / 200 in 183ms
+ GET / 200 in 312ms
+ GET / 200 in 215ms
+ GET / 200 in 202ms
+ GET / 200 in 216ms
+ GET / 200 in 293ms
+ GET / 200 in 235ms
+ GET / 200 in 244ms
+ GET / 200 in 223ms
+ GET / 200 in 225ms
+ GET / 200 in 243ms
+ GET / 200 in 278ms
+ GET / 200 in 234ms
+ GET / 200 in 320ms
+ GET / 200 in 269ms
+ GET / 200 in 205ms
+ GET / 200 in 257ms
+ GET / 200 in 254ms
+ GET / 200 in 212ms
+ GET / 200 in 218ms
+ GET / 200 in 295ms
+ GET / 200 in 223ms
+ GET / 200 in 277ms
+ GET / 200 in 300ms
+ GET / 200 in 212ms
+ GET / 200 in 265ms
+ GET / 200 in 298ms
+ GET / 200 in 210ms
+ GET / 200 in 241ms
+ GET / 200 in 281ms
+ GET / 200 in 218ms
+ GET / 200 in 298ms
+ GET / 200 in 226ms
+ GET / 200 in 213ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 290ms
+ GET / 200 in 229ms
+ GET / 200 in 207ms
+ GET / 200 in 190ms
+ GET / 200 in 273ms
+ GET / 200 in 209ms
+ GET / 200 in 258ms
+ GET / 200 in 312ms
+ GET / 200 in 216ms
+ GET / 200 in 256ms
+ GET / 200 in 313ms
+ GET / 200 in 215ms
+ GET / 200 in 267ms
+ GET / 200 in 252ms
+ GET / 200 in 272ms
+ GET / 200 in 278ms
+ GET / 200 in 245ms
+ GET / 200 in 206ms
+ GET / 200 in 248ms
+ GET / 200 in 257ms
+ GET / 200 in 270ms
+ GET / 200 in 234ms
+ GET / 200 in 328ms
+ GET / 200 in 241ms
+ GET / 200 in 279ms
+ GET / 200 in 245ms
+ GET / 200 in 224ms
+ GET / 200 in 244ms
+ GET / 200 in 236ms
+ GET / 200 in 239ms
+ GET / 200 in 259ms
+ GET / 200 in 246ms
+ GET / 200 in 223ms
+ GET / 200 in 265ms
+ GET / 200 in 251ms
+ GET / 200 in 206ms
+ GET / 200 in 252ms
+ GET / 200 in 264ms
+ GET / 200 in 220ms
+ GET / 200 in 212ms
+ GET / 200 in 289ms
+ GET / 200 in 205ms
+ GET / 200 in 259ms
+ GET / 200 in 291ms
+ GET / 200 in 289ms
+ GET / 200 in 267ms
+ GET / 200 in 224ms
+ GET / 200 in 195ms
+ GET / 200 in 250ms
+ GET / 200 in 236ms
+ GET / 200 in 213ms
+ GET / 200 in 219ms
+ GET / 200 in 242ms
+ GET / 200 in 187ms
+ GET / 200 in 242ms
+ GET / 200 in 208ms
+ GET / 200 in 279ms
+ GET / 200 in 306ms
+ GET / 200 in 188ms
+ GET / 200 in 190ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 229ms
+ GET / 200 in 226ms
+ GET / 200 in 196ms
+ GET / 200 in 182ms
+ GET / 200 in 223ms
+ GET / 200 in 196ms
+ GET / 200 in 226ms
+ GET / 200 in 273ms
+ GET / 200 in 221ms
+ GET / 200 in 259ms
+ GET / 200 in 229ms
+ GET / 200 in 203ms
+ GET / 200 in 281ms
+ GET / 200 in 339ms
+ GET / 200 in 214ms
+ GET / 200 in 267ms
+ GET / 200 in 295ms
+ GET / 200 in 219ms
+ GET / 200 in 235ms
+ GET / 200 in 233ms
+ GET / 200 in 202ms
+ GET / 200 in 249ms
+ GET / 200 in 258ms
+ GET / 200 in 212ms
+ GET / 200 in 219ms
+ GET / 200 in 281ms
+ GET / 200 in 221ms
+ GET / 200 in 229ms
+ GET / 200 in 265ms
+ GET / 200 in 198ms
+ GET / 200 in 308ms
+ GET / 200 in 229ms
+ GET / 200 in 256ms
+ GET / 200 in 251ms
+ GET / 200 in 269ms
+ GET / 200 in 218ms
+ GET / 200 in 258ms
+ GET / 200 in 265ms
+ GET / 200 in 191ms
+ GET / 200 in 174ms
+ GET / 200 in 256ms
+ GET / 200 in 243ms
+ GET / 200 in 443ms
+ GET / 200 in 262ms
+ GET / 200 in 229ms
+ GET / 200 in 220ms
+ GET / 200 in 219ms
+ GET / 200 in 281ms
+ GET / 200 in 191ms
+ GET / 200 in 241ms
+ GET / 200 in 180ms
+ GET / 200 in 256ms
+ GET / 200 in 192ms
+ GET / 200 in 168ms
+ GET / 200 in 175ms
+ GET / 200 in 241ms
+ GET / 200 in 185ms
+ GET / 200 in 239ms
+ GET / 200 in 210ms
+ GET / 200 in 198ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 190ms
+ GET / 200 in 233ms
+ GET / 200 in 182ms
+ GET / 200 in 235ms
+ GET / 200 in 200ms
+ GET / 200 in 196ms
+ GET / 200 in 258ms
+ GET / 200 in 194ms
+ GET / 200 in 190ms
+ GET / 200 in 255ms
+ GET / 200 in 193ms
+ GET / 200 in 168ms
+ GET / 200 in 164ms
+ GET / 200 in 256ms
+ GET / 200 in 209ms
+ GET / 200 in 247ms
+ GET / 200 in 204ms
+ GET / 200 in 195ms
+ GET / 200 in 231ms
+ GET / 200 in 216ms
+ GET / 200 in 203ms
+ GET / 200 in 195ms
+ GET / 200 in 247ms
+ GET / 200 in 210ms
+ GET / 200 in 248ms
+ GET / 200 in 195ms
+ GET / 200 in 229ms
+ GET / 200 in 185ms
+ GET / 200 in 152ms
+ GET / 200 in 172ms
+ GET / 200 in 165ms
+ GET / 200 in 181ms
+ GET / 200 in 179ms
+ GET / 200 in 261ms
+ GET / 200 in 288ms
+ GET / 200 in 226ms
+ GET / 200 in 243ms
+ GET / 200 in 1726ms
+ GET / 200 in 5236ms
+ GET / 200 in 199ms
+ GET / 200 in 158ms
+ GET / 200 in 178ms
+ GET / 200 in 186ms
+ GET / 200 in 191ms
+ GET / 200 in 186ms
+ GET / 200 in 236ms
+ GET / 200 in 180ms
+ GET / 200 in 181ms
+ GET / 200 in 190ms
+ GET / 200 in 217ms
+ GET / 200 in 200ms
+ GET / 200 in 240ms
+ GET / 200 in 216ms
+ GET / 200 in 255ms
+ GET / 200 in 291ms
+ GET / 200 in 284ms
+ GET / 200 in 237ms
+ GET / 200 in 276ms
+ GET / 200 in 266ms
+ GET / 200 in 242ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 300ms
+ GET / 200 in 259ms
+ GET / 200 in 239ms
+ GET / 200 in 297ms
+ GET / 200 in 272ms
+ GET / 200 in 214ms
+ GET / 200 in 584ms
+ GET / 200 in 250ms
+ GET / 200 in 421ms
+ GET / 200 in 348ms
+ GET / 200 in 257ms
+ GET / 200 in 208ms
+ GET / 200 in 207ms
+ GET / 200 in 236ms
+ GET / 200 in 196ms
+ GET / 200 in 290ms
+ GET / 200 in 227ms
+ GET / 200 in 232ms
+ GET / 200 in 200ms
+ GET / 200 in 267ms
+ GET / 200 in 235ms
+ GET / 200 in 359ms
+ GET / 200 in 251ms
+ GET / 200 in 188ms
+ GET / 200 in 353ms
+ GET / 200 in 288ms
+ GET / 200 in 204ms
+ GET / 200 in 218ms
+ GET / 200 in 274ms
+ GET / 200 in 179ms
+ GET / 200 in 253ms
+ GET / 200 in 233ms
+ GET / 200 in 259ms
+ GET / 200 in 468ms
+ GET / 200 in 223ms
+ GET / 200 in 199ms
+ GET / 200 in 344ms
+ GET / 200 in 220ms
+ GET / 200 in 324ms
+ GET / 200 in 213ms
+ GET / 200 in 326ms
+ GET / 200 in 210ms
+ GET / 200 in 298ms
+ GET / 200 in 206ms
+ GET / 200 in 407ms
+ GET / 200 in 193ms
+ GET / 200 in 370ms
+ GET / 200 in 317ms
+ GET / 200 in 328ms
+ GET / 200 in 245ms
+ GET / 200 in 246ms
+ GET / 200 in 301ms
+ GET / 200 in 258ms
+ GET / 200 in 230ms
+ GET / 200 in 253ms
+ GET / 200 in 311ms
+ GET / 200 in 268ms
+ GET / 200 in 289ms
+ GET / 200 in 316ms
+ GET / 200 in 348ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 284ms
+ GET / 200 in 318ms
+ GET / 200 in 255ms
+ GET / 200 in 283ms
+ GET / 200 in 260ms
+ GET / 200 in 269ms
+ GET / 200 in 260ms
+ GET / 200 in 212ms
+ GET / 200 in 219ms
+ GET / 200 in 248ms
+ GET / 200 in 208ms
+ GET / 200 in 216ms
+ GET / 200 in 215ms
+ GET / 200 in 245ms
+ GET / 200 in 201ms
+ GET / 200 in 345ms
+ GET / 200 in 275ms
+ GET / 200 in 240ms
+ GET / 200 in 289ms
+ GET / 200 in 269ms
+ GET / 200 in 287ms
+ GET / 200 in 287ms
+ GET / 200 in 230ms
+ GET / 200 in 300ms
+ GET / 200 in 251ms
+ GET / 200 in 4448ms
+ GET / 200 in 2475ms
+ GET / 200 in 285ms
+ GET / 200 in 210ms
+ GET / 200 in 253ms
+ GET / 200 in 270ms
+ GET / 200 in 1788ms
+ GET / 200 in 747ms
+ GET / 200 in 1078ms
+ GET / 200 in 512ms
+ GET / 200 in 877ms
+ GET / 200 in 1331ms
+ GET / 200 in 2968ms
+ GET / 200 in 844ms
+ GET / 200 in 3150ms
+ GET / 200 in 1900ms
+ GET / 200 in 2031ms
+ GET / 200 in 73314ms
+ GET / 200 in 25728ms
+ GET / 200 in 27133ms
+ GET / 200 in 378ms
+ GET / 200 in 263ms
+ GET / 200 in 381ms
+ GET / 200 in 247ms
+ GET / 200 in 405ms
+ GET / 200 in 283ms
+ GET / 200 in 339ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 265ms
+ GET / 200 in 242ms
+ GET / 200 in 899ms
+ GET / 200 in 530ms
+ GET / 200 in 334ms
+ GET / 200 in 697ms
+ GET / 200 in 375ms
+ GET / 200 in 279ms
+ GET / 200 in 413ms
+ GET / 200 in 899ms
+ GET / 200 in 304ms
+ GET / 200 in 344ms
+ GET / 200 in 280ms
+ GET / 200 in 422ms
+ GET / 200 in 447ms
+ GET / 200 in 520ms
+ GET / 200 in 359ms
+ GET / 200 in 315ms
+ GET / 200 in 341ms
+ GET / 200 in 313ms
+ GET / 200 in 613ms
+ GET / 200 in 357ms
+ GET / 200 in 307ms
+ GET / 200 in 356ms
+ GET / 200 in 289ms
+ GET / 200 in 278ms
+ GET / 200 in 345ms
+ GET / 200 in 2432ms
+ GET / 200 in 2109ms
+ GET / 200 in 514ms
+ GET / 200 in 658ms
+ GET / 200 in 537ms
+ GET / 200 in 394ms
+ GET / 200 in 291ms
+ GET / 200 in 259ms
+ GET /dashboard 200 in 6179ms
+ POST /dashboard 200 in 235ms
+ POST /dashboard 200 in 224ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 427ms
+ GET / 200 in 255ms
+ GET / 200 in 375ms
+ GET / 200 in 527ms
+ GET / 200 in 425ms
+ GET / 200 in 335ms
+ GET / 200 in 293ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 3.3s
+ ✓ Ready in 5.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 15.4s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 11971ms
+ GET / 200 in 11371ms
+ GET / 200 in 18068ms
+ GET / 200 in 422ms
+ GET / 200 in 958ms
+ GET / 200 in 1198ms
+ GET / 200 in 325ms
+ GET / 200 in 457ms
+ GET / 200 in 301ms
+ GET / 200 in 266ms
+ GET / 200 in 207ms
+ GET / 200 in 369ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1490ms
+ ✓ Ready in 3.6s
+ ○ Compiling / ...
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 21973ms
+ GET / 200 in 22588ms
+ GET / 200 in 21587ms
+ ✓ Compiled / in 35.3s
+ GET /dashboard 200 in 16850ms
+ POST /dashboard 200 in 351ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1190ms
+ POST /dashboard 200 in 692ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2091ms
+ GET / 200 in 288ms
+ GET / 200 in 382ms
+ GET / 200 in 620ms
+ GET / 200 in 1091ms
+ GET / 200 in 1415ms
+ GET / 200 in 2482ms
+ GET / 200 in 497ms
+ GET / 200 in 345ms
+ GET / 200 in 427ms
+ GET / 200 in 307ms
+ GET / 200 in 286ms
+ GET / 200 in 424ms
+ GET / 200 in 296ms
+ GET / 200 in 324ms
+ GET / 200 in 905ms
+ GET / 200 in 413ms
+ GET / 200 in 389ms
+ GET / 200 in 346ms
+ GET / 200 in 257ms
+ GET / 200 in 308ms
+ GET / 200 in 228ms
+ GET / 200 in 297ms
+ GET / 200 in 285ms
+ GET / 200 in 311ms
+ GET / 200 in 267ms
+ GET / 200 in 505ms
+ GET / 200 in 280ms
+ GET / 200 in 284ms
+ GET / 200 in 280ms
+ GET / 200 in 560ms
+ ✓ Compiled in 1755ms
+ GET / 200 in 325ms
+ GET / 200 in 251ms
+ GET / 200 in 243ms
+ ✓ Compiled in 1656ms
+ GET / 200 in 342ms
+ GET / 200 in 937ms
+ GET / 200 in 958ms
+ GET / 200 in 279ms
+ GET / 200 in 455ms
+ GET / 200 in 494ms
+ GET / 200 in 540ms
+ GET / 200 in 599ms
+ GET / 200 in 281ms
+ GET / 200 in 287ms
+ GET / 200 in 630ms
+ GET / 200 in 270ms
+ GET / 200 in 261ms
+ GET / 200 in 225ms
+ GET / 200 in 213ms
+ GET / 200 in 241ms
+ GET / 200 in 390ms
+ GET / 200 in 220ms
+ GET / 200 in 251ms
+ GET / 200 in 259ms
+ GET / 200 in 232ms
+ GET / 200 in 234ms
+ GET / 200 in 448ms
+ GET / 200 in 228ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 227ms
+ GET / 200 in 348ms
+ GET / 200 in 276ms
+ GET / 200 in 214ms
+ GET / 200 in 225ms
+ GET / 200 in 400ms
+ GET / 200 in 242ms
+ GET / 200 in 222ms
+ GET / 200 in 360ms
+ GET / 200 in 249ms
+ GET / 200 in 295ms
+ GET / 200 in 250ms
+ GET / 200 in 225ms
+ GET / 200 in 224ms
+ GET / 200 in 232ms
+ GET / 200 in 262ms
+ GET / 200 in 218ms
+ GET / 200 in 228ms
+ GET / 200 in 285ms
+ GET / 200 in 335ms
+ GET / 200 in 310ms
+ GET / 200 in 208ms
+ GET / 200 in 220ms
+ GET / 200 in 369ms
+ GET / 200 in 261ms
+ GET / 200 in 241ms
+ GET / 200 in 248ms
+ GET / 200 in 208ms
+ GET / 200 in 254ms
+ GET / 200 in 420ms
+ GET / 200 in 227ms
+ GET / 200 in 620ms
+ GET / 200 in 301ms
+ GET / 200 in 243ms
+ GET / 200 in 232ms
+ GET / 200 in 492ms
+ GET / 200 in 280ms
+ GET / 200 in 206ms
+ GET / 200 in 214ms
+ GET / 200 in 254ms
+ GET / 200 in 233ms
+ GET / 200 in 492ms
+ GET / 200 in 303ms
+ GET / 200 in 209ms
+ GET / 200 in 205ms
+ GET / 200 in 208ms
+ GET / 200 in 233ms
+ GET / 200 in 285ms
+ GET / 200 in 529ms
+ GET / 200 in 222ms
+ GET / 200 in 218ms
+ GET / 200 in 231ms
+ GET / 200 in 224ms
+ GET / 200 in 225ms
+ GET / 200 in 229ms
+ GET / 200 in 378ms
+ GET / 200 in 212ms
+ GET / 200 in 259ms
+ GET / 200 in 255ms
+ GET / 200 in 216ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 238ms
+ GET / 200 in 218ms
+ GET / 200 in 428ms
+ GET / 200 in 232ms
+ GET / 200 in 217ms
+ GET / 200 in 261ms
+ GET / 200 in 216ms
+ GET / 200 in 249ms
+ GET / 200 in 235ms
+ GET / 200 in 225ms
+ GET / 200 in 333ms
+ GET / 200 in 212ms
+ GET / 200 in 255ms
+ GET / 200 in 212ms
+ GET / 200 in 212ms
+ GET / 200 in 243ms
+ GET / 200 in 267ms
+ GET / 200 in 349ms
+ GET / 200 in 656ms
+ GET / 200 in 414ms
+ GET / 200 in 328ms
+ GET / 200 in 286ms
+ GET / 200 in 223ms
+ GET / 200 in 253ms
+ GET / 200 in 333ms
+ GET / 200 in 382ms
+ GET / 200 in 399ms
+ GET / 200 in 325ms
+ GET / 200 in 293ms
+ GET / 200 in 488ms
+ GET / 200 in 321ms
+ GET / 200 in 297ms
+ GET / 200 in 482ms
+ GET / 200 in 261ms
+ GET / 200 in 464ms
+ GET / 200 in 219ms
+ GET / 200 in 293ms
+ GET / 200 in 290ms
+ GET / 200 in 245ms
+ GET / 200 in 254ms
+ GET / 200 in 326ms
+ GET / 200 in 538ms
+ GET / 200 in 296ms
+ GET / 200 in 232ms
+ GET / 200 in 219ms
+ GET / 200 in 334ms
+ GET / 200 in 234ms
+ GET / 200 in 229ms
+ GET / 200 in 252ms
+ GET / 200 in 574ms
+ GET / 200 in 265ms
+ GET / 200 in 251ms
+ GET / 200 in 776ms
+ GET / 200 in 377ms
+ GET / 200 in 309ms
+ GET / 200 in 566ms
+ GET / 200 in 433ms
+ GET / 200 in 271ms
+ GET / 200 in 243ms
+ GET / 200 in 254ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 262ms
+ GET / 200 in 237ms
+ GET / 200 in 207ms
+ GET / 200 in 238ms
+ GET / 200 in 252ms
+ GET / 200 in 277ms
+ GET / 200 in 254ms
+ GET / 200 in 424ms
+ GET / 200 in 251ms
+ GET / 200 in 275ms
+ GET / 200 in 252ms
+ GET / 200 in 378ms
+ GET / 200 in 246ms
+ GET / 200 in 219ms
+ GET / 200 in 235ms
+ GET / 200 in 233ms
+ GET / 200 in 392ms
+ GET / 200 in 340ms
+ GET / 200 in 282ms
+ GET / 200 in 263ms
+ GET / 200 in 249ms
+ GET / 200 in 1136ms
+ GET / 200 in 362ms
+ GET / 200 in 565ms
+ GET / 200 in 229ms
+ GET / 200 in 277ms
+ GET / 200 in 679ms
+ GET / 200 in 271ms
+ GET / 200 in 229ms
+ GET / 200 in 232ms
+ GET / 200 in 443ms
+ GET / 200 in 247ms
+ GET / 200 in 225ms
+ GET / 200 in 247ms
+ GET / 200 in 316ms
+ GET / 200 in 488ms
+ GET / 200 in 337ms
+ GET / 200 in 320ms
+ GET / 200 in 330ms
+ GET / 200 in 339ms
+ GET / 200 in 423ms
+ GET / 200 in 318ms
+ GET / 200 in 322ms
+ GET / 200 in 555ms
+ GET / 200 in 461ms
+ GET / 200 in 1351ms
+ GET / 200 in 318ms
+ GET / 200 in 308ms
+ GET / 200 in 300ms
+ GET / 200 in 361ms
+ GET / 200 in 274ms
+ GET / 200 in 286ms
+ GET / 200 in 274ms
+ GET / 200 in 278ms
+ GET / 200 in 275ms
+ GET / 200 in 285ms
+ GET / 200 in 911ms
+ GET / 200 in 332ms
+ GET / 200 in 283ms
+ GET / 200 in 266ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 457ms
+ GET / 200 in 319ms
+ GET / 200 in 262ms
+ GET / 200 in 419ms
+ GET / 200 in 325ms
+ GET / 200 in 437ms
+ GET / 200 in 421ms
+ GET / 200 in 297ms
+ GET / 200 in 251ms
+ GET / 200 in 373ms
+ GET / 200 in 283ms
+ GET / 200 in 269ms
+ GET / 200 in 378ms
+ GET / 200 in 611ms
+ GET / 200 in 367ms
+ GET / 200 in 291ms
+ GET / 200 in 315ms
+ GET / 200 in 718ms
+ GET / 200 in 309ms
+ GET / 200 in 313ms
+ GET / 200 in 269ms
+ GET / 200 in 568ms
+ ✓ Compiled in 4.1s
+ GET / 200 in 1870ms
+ ✓ Compiled in 0ms
+ GET / 200 in 418ms
+ ✓ Compiled in 1021ms
+ ✓ Compiled in 515ms
+ GET / 200 in 836ms
+ GET / 200 in 299ms
+ GET / 200 in 511ms
+ ⨯ ./app/dashboard/page.tsx:29:10
+Ecmascript file had an error
+[0m [90m 27 |[39m [36mimport[39m { useRouter[33m,[39m useSearchParams } [36mfrom[39m [32m"next/navigation"[39m
+ [90m 28 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m [32m"next/image"[39m
+[31m[1m>[22m[39m[90m 29 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 30 |[39m
+ [90m 31 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mPage[39m() {
+ [90m 32 |[39m   [36mconst[39m { user[33m,[39m isLoaded } [33m=[39m useUser()[0m
+
+the name `SettingsModal` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+
+
+./app/dashboard/page.tsx:46:24
+Ecmascript file had an error
+[0m [90m 44 |[39m   [36mconst[39m [showSettings[33m,[39m setShowSettings] [33m=[39m useState([36mfalse[39m)
+ [90m 45 |[39m   [36mconst[39m [resultsData[33m,[39m setResultsData] [33m=[39m useState[33m<[39m[33many[39m[33m>[39m([36mnull[39m)
+[31m[1m>[22m[39m[90m 46 |[39m   [36mconst[39m [showSettings[33m,[39m setShowSettings] [33m=[39m useState([36mfalse[39m)
+ [90m    |[39m                        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 47 |[39m   [36mconst[39m { createSession[33m,[39m currentSession[33m,[39m setCurrentSession } [33m=[39m useSessions()
+ [90m 48 |[39m
+ [90m 49 |[39m   useEffect(() [33m=>[39m {[0m
+
+the name `setShowSettings` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+
+
+./app/dashboard/page.tsx:46:10
+Ecmascript file had an error
+[0m [90m 44 |[39m   [36mconst[39m [showSettings[33m,[39m setShowSettings] [33m=[39m useState([36mfalse[39m)
+ [90m 45 |[39m   [36mconst[39m [resultsData[33m,[39m setResultsData] [33m=[39m useState[33m<[39m[33many[39m[33m>[39m([36mnull[39m)
+[31m[1m>[22m[39m[90m 46 |[39m   [36mconst[39m [showSettings[33m,[39m setShowSettings] [33m=[39m useState([36mfalse[39m)
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 47 |[39m   [36mconst[39m { createSession[33m,[39m currentSession[33m,[39m setCurrentSession } [33m=[39m useSessions()
+ [90m 48 |[39m
+ [90m 49 |[39m   useEffect(() [33m=>[39m {[0m
+
+the name `showSettings` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.2s
+ GET /dashboard 500 in 4793ms
+ GET /favicon.ico 500 in 295ms
+ ✓ Compiled in 1113ms
+ ✓ Compiled /dashboard in 228ms
+ GET /dashboard 200 in 1806ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 607ms
+ POST /dashboard 200 in 629ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 811ms
+ POST /dashboard 200 in 354ms
+ GET /dashboard 200 in 249ms
+ POST /dashboard 200 in 543ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 675ms
+ GET / 200 in 511ms
+ POST /dashboard 200 in 502ms
+ GET / 200 in 373ms
+ GET / 200 in 315ms
+ GET /dashboard 200 in 229ms
+ POST /dashboard 200 in 955ms
+ POST /dashboard 200 in 116ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1127ms
+ ✓ Compiled in 935ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard 200 in 2593ms
+ POST /dashboard 200 in 216ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 382ms
+ POST /dashboard 200 in 238ms
+ GET / 200 in 284ms
+ GET / 200 in 311ms
+ GET / 200 in 279ms
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 3.2s
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /dashboard 500 in 190ms
+ GET /favicon.ico 500 in 288ms
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /dashboard 500 in 500ms
+ GET /favicon.ico 500 in 234ms
+ GET / 200 in 329ms
+ GET / 200 in 2265ms
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 200 in 3470ms
+ ⨯ ./app/dashboard/page.tsx:14:1
+Module not found: Can't resolve '@/components/settings-modal'
+[0m [90m 12 |[39m [36mimport[39m { [33mRecordedSession[39m } [36mfrom[39m [32m"@/components/recorded-session"[39m
+ [90m 13 |[39m [36mimport[39m { [33mResultsPage[39m } [36mfrom[39m [32m"@/components/results-page"[39m
+[31m[1m>[22m[39m[90m 14 |[39m [36mimport[39m { [33mSettingsModal[39m } [36mfrom[39m [32m"@/components/settings-modal"[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 15 |[39m [36mimport[39m { useUser[33m,[39m useClerk } [36mfrom[39m [32m"@clerk/nextjs"[39m
+ [90m 16 |[39m [36mimport[39m { useEffect[33m,[39m useState } [36mfrom[39m [32m"react"[39m
+ [90m 17 |[39m [36mimport[39m { [33mUsers[39m[33m,[39m [33mSettings[39m[33m,[39m [33mLogOut[39m[33m,[39m [33mChevronDown[39m } [36mfrom[39m [32m"lucide-react"[39m[0m
+
+Import map: aliased to relative './components/settings-modal' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /dashboard 500 in 156ms
+ GET /favicon.ico 500 in 131ms
+ GET / 200 in 493ms
+ GET / 200 in 280ms
+ GET / 200 in 324ms
+ GET / 200 in 313ms
+ GET / 200 in 280ms
+ GET / 200 in 387ms
+ GET / 200 in 359ms
+ GET / 200 in 299ms
+ GET / 200 in 276ms
+ GET / 200 in 305ms
+ GET / 200 in 271ms
+ GET / 200 in 312ms
+ GET / 200 in 1435ms
+ ✓ Compiled in 1691ms
+ GET / 200 in 321ms
+ ✓ Compiled /dashboard in 349ms
+ GET /dashboard 200 in 3018ms
+ GET / 200 in 1080ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 586ms
+ POST /dashboard 200 in 391ms
+ POST /dashboard 200 in 263ms
+ GET / 200 in 226ms
+ GET / 200 in 235ms
+ GET / 200 in 228ms
+ GET / 200 in 217ms
+ GET / 200 in 231ms
+ GET / 200 in 228ms
+ GET / 200 in 223ms
+ GET / 200 in 239ms
+ GET / 200 in 238ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 244ms
+ GET / 200 in 231ms
+ GET / 200 in 225ms
+ GET / 200 in 336ms
+ GET / 200 in 488ms
+ GET / 200 in 485ms
+ ✓ Compiled in 967ms
+ GET / 200 in 369ms
+ GET / 200 in 692ms
+ GET / 200 in 364ms
+ ✓ Compiled in 1327ms
+ GET / 200 in 1584ms
+ GET / 200 in 306ms
+ GET / 200 in 324ms
+ GET / 200 in 344ms
+ GET / 200 in 695ms
+ GET / 200 in 300ms
+ GET / 200 in 273ms
+ GET / 200 in 294ms
+ GET / 200 in 298ms
+ GET / 200 in 936ms
+ GET / 200 in 416ms
+ GET / 200 in 420ms
+ GET / 200 in 727ms
+ GET / 200 in 342ms
+ GET / 200 in 321ms
+ GET / 200 in 505ms
+ GET / 200 in 313ms
+ GET / 200 in 2070ms
+ GET / 200 in 289ms
+ GET / 200 in 287ms
+ GET / 200 in 315ms
+ GET / 200 in 305ms
+ GET / 200 in 541ms
+ GET / 200 in 324ms
+ GET / 200 in 414ms
+ GET / 200 in 318ms
+ GET / 200 in 266ms
+ GET /dashboard 200 in 2276ms
+ POST /dashboard 200 in 282ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 587ms
+ POST /dashboard 200 in 199ms
+ GET / 200 in 271ms
+ GET / 200 in 209ms
+ GET / 200 in 214ms
+ GET / 200 in 286ms
+ GET / 200 in 294ms
+ GET / 200 in 728ms
+ GET / 200 in 335ms
+ GET / 200 in 272ms
+ GET / 200 in 456ms
+ GET / 200 in 306ms
+ GET / 200 in 287ms
+ GET / 200 in 290ms
+ GET / 200 in 317ms
+ GET / 200 in 283ms
+ GET / 200 in 314ms
+ GET / 200 in 316ms
+ GET / 200 in 282ms
+ GET / 200 in 296ms
+ ○ Compiling /help ...
+ ✓ Compiled /help in 1376ms
+ GET /help 200 in 1531ms
+ GET / 200 in 225ms
+ GET / 200 in 878ms
+ GET / 200 in 327ms
+ GET / 200 in 231ms
+ GET / 200 in 221ms
+ GET / 200 in 214ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 237ms
+ GET / 200 in 222ms
+ GET / 200 in 227ms
+ GET / 200 in 238ms
+ GET / 200 in 222ms
+ GET / 200 in 221ms
+ GET / 200 in 402ms
+ GET / 200 in 401ms
+ GET / 200 in 293ms
+ GET / 200 in 242ms
+ GET / 200 in 450ms
+ GET / 200 in 405ms
+ GET / 200 in 217ms
+ GET / 200 in 231ms
+ GET / 200 in 285ms
+ GET / 200 in 266ms
+ GET / 200 in 230ms
+ GET / 200 in 217ms
+ GET / 200 in 260ms
+ GET / 200 in 218ms
+ GET / 200 in 211ms
+ GET / 200 in 245ms
+ GET / 200 in 236ms
+ GET / 200 in 229ms
+ GET / 200 in 242ms
+ GET / 200 in 227ms
+ GET / 200 in 223ms
+ GET / 200 in 434ms
+ GET / 200 in 252ms
+ GET / 200 in 231ms
+ GET / 200 in 252ms
+ GET / 200 in 212ms
+ GET / 200 in 281ms
+ GET / 200 in 216ms
+ GET / 200 in 240ms
+ GET / 200 in 227ms
+ GET / 200 in 228ms
+ GET / 200 in 238ms
+ GET / 200 in 278ms
+ GET / 200 in 258ms
+ GET / 200 in 214ms
+ GET / 200 in 226ms
+ GET / 200 in 257ms
+ GET / 200 in 355ms
+ GET / 200 in 261ms
+ GET / 200 in 241ms
+ GET / 200 in 233ms
+ GET / 200 in 260ms
+ GET / 200 in 248ms
+ GET / 200 in 228ms
+ GET / 200 in 219ms
+ GET / 200 in 255ms
+ GET / 200 in 265ms
+ GET / 200 in 230ms
+ GET / 200 in 292ms
+ GET / 200 in 244ms
+ GET / 200 in 221ms
+ GET / 200 in 220ms
+ GET / 200 in 240ms
+ GET / 200 in 217ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 262ms
+ GET / 200 in 224ms
+ GET / 200 in 226ms
+ ✓ Compiled in 3.5s
+ GET / 200 in 243ms
+ GET / 200 in 229ms
+ GET / 200 in 224ms
+ ✓ Compiled in 966ms
+ GET / 200 in 261ms
+ GET / 200 in 256ms
+ GET / 200 in 362ms
+ GET / 200 in 252ms
+ GET / 200 in 243ms
+ GET / 200 in 435ms
+ GET / 200 in 289ms
+ GET / 200 in 253ms
+ GET / 200 in 230ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e32v879ftxk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e32v879ftxk'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wpdrehh7pgp'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wpdrehh7pgp'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e32v879ftxk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.e32v879ftxk'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kqv5t33orn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kqv5t33orn'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rb81uijw12p'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rb81uijw12p'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kw0pxkjm3y'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kw0pxkjm3y'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.tprctl7vh8o'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.tprctl7vh8o'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kw0pxkjm3y'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.kw0pxkjm3y'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.cdav42i5oz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.cdav42i5oz'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.krtskakxb6n'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.krtskakxb6n'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wsuhhufrar9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wsuhhufrar9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.an18x7etpua'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.an18x7etpua'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wsuhhufrar9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wsuhhufrar9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.6suprsrv93'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.6suprsrv93'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i9zjwbvaq'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i9zjwbvaq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8i01e50xib'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8i01e50xib'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.p53g1skam7k'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.p53g1skam7k'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8i01e50xib'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.j8i01e50xib'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yr8venie0t'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yr8venie0t'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hpbtcnmmnsr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hpbtcnmmnsr'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gxvbwybiby'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gxvbwybiby'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.eystdxyib5s'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.eystdxyib5s'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gxvbwybiby'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gxvbwybiby'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wd3off425bf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wd3off425bf'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mmnv4wpjidf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mmnv4wpjidf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mynd5bmoev8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mynd5bmoev8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hahpgpiu19a'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.hahpgpiu19a'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mynd5bmoev8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mynd5bmoev8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ucyk84qhac'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ucyk84qhac'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oghp5qqxiem'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.oghp5qqxiem'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wgf84w0nck'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wgf84w0nck'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.n2pxu5t9pnk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.n2pxu5t9pnk'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wgf84w0nck'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wgf84w0nck'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a55q87hkejf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a55q87hkejf'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ir4iiauqpuo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ir4iiauqpuo'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m48nyeomeh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m48nyeomeh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xkpnstii8ja'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xkpnstii8ja'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m48nyeomeh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m48nyeomeh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lvfkdc74pkr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lvfkdc74pkr'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.bahh4iv0vg6'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.bahh4iv0vg6'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lu801xxzfr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lu801xxzfr'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7t4my53iack'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.7t4my53iack'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lu801xxzfr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lu801xxzfr'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xr7k1misr4'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xr7k1misr4'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wujx6op5kd'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.wujx6op5kd'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dgwfkhds1ql'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dgwfkhds1ql'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.8hn7w6dpmy6'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.8hn7w6dpmy6'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dgwfkhds1ql'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dgwfkhds1ql'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s05cg2l7y7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.s05cg2l7y7'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.v4zt83ecokn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.v4zt83ecokn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yol9u42m4so'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yol9u42m4so'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1lr7nvtxgbz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1lr7nvtxgbz'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yol9u42m4so'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.yol9u42m4so'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.udk2blvm98'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.udk2blvm98'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.278sgsjmer7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.278sgsjmer7'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.73qj8163czs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.73qj8163czs'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y9t3rfqrl2c'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y9t3rfqrl2c'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.73qj8163czs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.73qj8163czs'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.amyesugafdm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.amyesugafdm'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.squda06o7na'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.squda06o7na'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uz27eplbc2g'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uz27eplbc2g'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y2m11m2tcej'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.y2m11m2tcej'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uz27eplbc2g'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uz27eplbc2g'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9o3pzo5py68'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9o3pzo5py68'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i9qc2rmoen'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i9qc2rmoen'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.vhexkeby0rs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.vhexkeby0rs'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw6y1ra71'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pw6y1ra71'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.vhexkeby0rs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.vhexkeby0rs'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.cfhpw19ttui'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.cfhpw19ttui'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.3dw6f91grar'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.3dw6f91grar'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.exbrz0gtuf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.exbrz0gtuf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pdoo9m9rw9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.pdoo9m9rw9'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.exbrz0gtuf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.exbrz0gtuf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9pybroebumj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.9pybroebumj'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1zc38js5rcy'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.1zc38js5rcy'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xdhgmfpxtl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xdhgmfpxtl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.q7kgg703ui'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.q7kgg703ui'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xdhgmfpxtl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.xdhgmfpxtl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ak3mpw5iejw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.ak3mpw5iejw'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.aw9buc2f2zr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.aw9buc2f2zr'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8qgkgpxw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8qgkgpxw'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.62pvbuedu5u'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.62pvbuedu5u'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8qgkgpxw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k8qgkgpxw'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.aozipb2d0ce'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.aozipb2d0ce'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.59a1cs44jp'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.59a1cs44jp'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mxhnqy8795'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mxhnqy8795'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lla90v1s3l8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.lla90v1s3l8'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mxhnqy8795'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mxhnqy8795'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zkolxh3f1f'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.zkolxh3f1f'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.5flwqbgi0e5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.5flwqbgi0e5'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m7akf3knwr9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m7akf3knwr9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.h1b6dqvhews'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.h1b6dqvhews'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m7akf3knwr9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.m7akf3knwr9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.d2mrdeoqw19'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.d2mrdeoqw19'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.byag6h6bjcu'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.byag6h6bjcu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rqyb5ixx9ho'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rqyb5ixx9ho'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fdiocbwmb38'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fdiocbwmb38'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rqyb5ixx9ho'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.rqyb5ixx9ho'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uycdel6m2s'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.uycdel6m2s'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qm7z4jtzzjn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.qm7z4jtzzjn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dqjxhqu76en'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dqjxhqu76en'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.bfdkpm5zt1'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.bfdkpm5zt1'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dqjxhqu76en'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dqjxhqu76en'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gmy1lp9x5kn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.gmy1lp9x5kn'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k0it3vyx0fr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.k0it3vyx0fr'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.at7z8c1v6tu'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.at7z8c1v6tu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i7gdkmhzf6c'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.i7gdkmhzf6c'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.at7z8c1v6tu'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.at7z8c1v6tu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.w736c6kixxg'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.w736c6kixxg'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.31ur38zrjxs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.31ur38zrjxs'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mfyj2ergm5d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mfyj2ergm5d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.nwoiynkwpi'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.nwoiynkwpi'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mfyj2ergm5d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.mfyj2ergm5d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4unluc49e7h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.4unluc49e7h'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.jgeix172hl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.jgeix172hl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a0hkw7q3fz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.a0hkw7q3fz'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dos3fx21nne'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dos3fx21nne'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fj7osgwxqv'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.fj7osgwxqv'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dos3fx21nne'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.dos3fx21nne'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.56xrdo7771'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.56xrdo7771'
+}
+[Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.og2crpm18'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.og2crpm18'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.04273xvovgzt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/haseeb-raza/Desktop/Pitchex/frontend/.next/static/development/_buildManifest.js.tmp.04273xvovgzt'
+}
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1779ms
+ ✓ Ready in 4.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 12s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 13721ms
+ GET / 200 in 14072ms
+ GET / 200 in 14142ms
+ GET / 200 in 562ms
+ GET / 200 in 680ms
+ GET / 200 in 802ms
+ GET / 200 in 257ms
+ GET / 200 in 432ms
+ GET / 200 in 472ms
+ GET / 200 in 722ms
+ GET / 200 in 822ms
+ GET / 200 in 235ms
+ GET / 200 in 416ms
+ GET / 200 in 204ms
+ GET / 200 in 228ms
+ GET / 200 in 212ms
+ GET / 200 in 166ms
+ GET / 200 in 306ms
+ GET / 200 in 200ms
+ GET / 200 in 195ms
+ GET / 200 in 203ms
+ GET / 200 in 178ms
+ GET / 200 in 197ms
+ GET / 200 in 242ms
+ GET / 200 in 187ms
+ GET / 200 in 218ms
+ GET / 200 in 180ms
+ GET / 200 in 178ms
+ GET / 200 in 201ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.8s
+ GET /dashboard 200 in 8283ms
+ GET / 200 in 158ms
+ GET / 200 in 214ms
+ GET / 200 in 193ms
+ GET / 200 in 192ms
+ GET / 200 in 194ms
+ GET /dashboard 200 in 311ms
+ GET / 200 in 1158ms
+ GET / 200 in 1137ms
+ ○ Compiling /favicon.ico ...
+ GET / 200 in 1102ms
+ POST /dashboard 200 in 1168ms
+ POST /dashboard 200 in 780ms
+ GET / 200 in 301ms
+ ✓ Compiled /favicon.ico in 2.5s
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2967ms
+ GET / 200 in 415ms
+ GET / 200 in 313ms
+ GET / 200 in 465ms
+ GET / 200 in 834ms
+ GET / 200 in 586ms
+ GET / 200 in 767ms
+ GET / 200 in 193ms
+ GET / 200 in 278ms
+ GET / 200 in 493ms
+ GET / 200 in 194ms
+ GET / 200 in 214ms
+ GET / 200 in 304ms
+ GET / 200 in 259ms
+ GET / 200 in 257ms
+ GET / 200 in 456ms
+ GET / 200 in 256ms
+ ○ Compiling /help ...
+ ✓ Compiled /help in 1345ms
+ GET /help 200 in 1494ms
+ GET /dashboard 200 in 134ms
+ GET / 200 in 250ms
+ GET / 200 in 282ms
+ GET / 200 in 341ms
+ POST /dashboard 200 in 419ms
+ GET / 200 in 129ms
+ GET / 200 in 613ms
+ GET / 200 in 868ms
+ GET / 200 in 909ms
+ GET / 200 in 659ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1140ms
+ GET /sign-in 200 in 3022ms
+ GET /sign-in 200 in 315ms
+ GET /dashboard 200 in 248ms
+ POST /dashboard 200 in 152ms
+ POST /dashboard 200 in 146ms
+ GET / 200 in 223ms
+ GET / 200 in 232ms
+ GET / 200 in 202ms
+ GET / 200 in 659ms
+ GET / 200 in 251ms
+ GET / 200 in 255ms
+ GET / 200 in 211ms
+ GET / 200 in 258ms
+ GET / 200 in 264ms
+ GET / 200 in 288ms
+ GET / 200 in 245ms
+ GET / 200 in 205ms
+ GET / 200 in 229ms
+ GET / 200 in 214ms
+ GET / 200 in 211ms
+ GET / 200 in 269ms
+ GET / 200 in 207ms
+ GET / 200 in 221ms
+ GET / 200 in 235ms
+ GET / 200 in 208ms
+ GET / 200 in 266ms
+ GET / 200 in 291ms
+ GET / 200 in 264ms
+ GET / 200 in 228ms
+ GET / 200 in 249ms
+ GET / 200 in 397ms
+ GET / 200 in 325ms
+ GET / 200 in 213ms
+ GET / 200 in 344ms
+ GET / 200 in 247ms
+ GET / 200 in 279ms
+ GET / 200 in 225ms
+ GET / 200 in 217ms
+ GET / 200 in 270ms
+ GET / 200 in 225ms
+ GET / 200 in 275ms
+ GET / 200 in 231ms
+ GET / 200 in 302ms
+ GET / 200 in 209ms
+ GET / 200 in 280ms
+ GET / 200 in 300ms
+ GET / 200 in 369ms
+ GET / 200 in 266ms
+ GET / 200 in 252ms
+ GET / 200 in 417ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 609ms
+ GET / 200 in 585ms
+ GET / 200 in 849ms
+ GET / 200 in 1148ms
+ GET / 200 in 730ms
+ GET / 200 in 323ms
+ GET / 200 in 373ms
+ GET / 200 in 271ms
+ GET / 200 in 277ms
+ GET / 200 in 282ms
+ GET / 200 in 398ms
+ GET / 200 in 404ms
+ GET / 200 in 270ms
+ GET / 200 in 252ms
+ GET / 200 in 267ms
+ GET / 200 in 284ms
+ GET / 200 in 251ms
+ GET / 200 in 256ms
+ GET / 200 in 253ms
+ GET / 200 in 302ms
+ GET / 200 in 263ms
+ GET / 200 in 250ms
+ GET / 200 in 351ms
+ GET / 200 in 243ms
+ GET / 200 in 246ms
+ GET / 200 in 252ms
+ GET / 200 in 263ms
+ GET / 200 in 256ms
+ GET / 200 in 295ms
+ GET / 200 in 246ms
+ GET / 200 in 329ms
+ GET / 200 in 259ms
+ GET / 200 in 251ms
+ GET / 200 in 232ms
+ GET / 200 in 239ms
+ GET / 200 in 283ms
+ GET / 200 in 384ms
+ GET / 200 in 251ms
+ GET / 200 in 258ms
+ GET / 200 in 253ms
+ GET / 200 in 266ms
+ GET / 200 in 510ms
+ GET / 200 in 727ms
+ GET / 200 in 1100ms
+ GET / 200 in 851ms
+ GET / 200 in 281ms
+ GET / 200 in 259ms
+ GET / 200 in 558ms
+ GET / 200 in 236ms
+ GET / 200 in 248ms
+ GET / 200 in 322ms
+ GET / 200 in 264ms
+ GET / 200 in 720ms
+ GET / 200 in 540ms
+ GET / 200 in 444ms
+ GET / 200 in 292ms
+ GET / 200 in 582ms
+ GET / 200 in 255ms
+ GET / 200 in 246ms
+ GET / 200 in 251ms
+ GET / 200 in 255ms
+ GET / 200 in 704ms
+ GET / 200 in 246ms
+ GET / 200 in 249ms
+ GET / 200 in 265ms
+ GET / 200 in 274ms
+ GET / 200 in 248ms
+ GET / 200 in 321ms
+ GET / 200 in 375ms
+ GET / 200 in 297ms
+ GET / 200 in 266ms
+ GET / 200 in 598ms
+ GET / 200 in 256ms
+ GET / 200 in 268ms
+ GET / 200 in 249ms
+ GET / 200 in 290ms
+ GET / 200 in 257ms
+ GET / 200 in 251ms
+ GET / 200 in 237ms
+ GET / 200 in 241ms
+ GET / 200 in 289ms
+ GET / 200 in 315ms
+ GET / 200 in 338ms
+ GET / 200 in 320ms
+ GET / 200 in 235ms
+ GET / 200 in 306ms
+ GET / 200 in 251ms
+ GET / 200 in 240ms
+ GET / 200 in 269ms
+ GET / 200 in 247ms
+ GET / 200 in 416ms
+ GET / 200 in 340ms
+ GET / 200 in 1391ms
+ GET / 200 in 427ms
+ GET / 200 in 738ms
+ GET / 200 in 409ms
+ GET / 200 in 246ms
+ GET / 200 in 251ms
+ GET / 200 in 281ms
+ GET / 200 in 234ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 295ms
+ GET / 200 in 402ms
+ GET / 200 in 259ms
+ GET / 200 in 269ms
+ GET / 200 in 253ms
+ GET / 200 in 284ms
+ GET / 200 in 253ms
+ GET / 200 in 724ms
+ GET / 200 in 461ms
+ GET / 200 in 369ms
+ GET / 200 in 271ms
+ GET / 200 in 351ms
+ GET / 200 in 273ms
+ GET / 200 in 445ms
+ GET / 200 in 281ms
+ GET / 200 in 281ms
+ GET / 200 in 257ms
+ GET / 200 in 337ms
+ GET / 200 in 487ms
+ GET / 200 in 313ms
+ GET / 200 in 294ms
+ GET / 200 in 242ms
+ GET / 200 in 248ms
+ GET / 200 in 237ms
+ GET / 200 in 355ms
+ GET / 200 in 279ms
+ GET / 200 in 238ms
+ GET / 200 in 250ms
+ GET / 200 in 801ms
+ GET / 200 in 500ms
+ GET / 200 in 270ms
+ GET / 200 in 253ms
+ GET / 200 in 249ms
+ GET / 200 in 307ms
+ GET / 200 in 419ms
+ GET / 200 in 283ms
+ GET / 200 in 239ms
+ GET / 200 in 261ms
+ GET / 200 in 315ms
+ GET / 200 in 270ms
+ GET / 200 in 393ms
+ GET / 200 in 380ms
+ GET / 200 in 248ms
+ GET / 200 in 280ms
+ GET / 200 in 254ms
+ GET / 200 in 247ms
+ GET / 200 in 249ms
+ GET / 200 in 257ms
+ GET / 200 in 1406ms
+ GET / 200 in 444ms
+ GET / 200 in 279ms
+ GET / 200 in 312ms
+ GET / 200 in 383ms
+ GET / 200 in 511ms
+ GET / 200 in 915ms
+ GET / 200 in 272ms
+ GET / 200 in 350ms
+ GET / 200 in 464ms
+ GET / 200 in 450ms
+ GET / 200 in 460ms
+ GET / 200 in 402ms
+ GET / 200 in 711ms
+ GET / 200 in 242ms
+ GET / 200 in 463ms
+ GET / 200 in 278ms
+ GET / 200 in 364ms
+ GET / 200 in 264ms
+ GET / 200 in 296ms
+ GET / 200 in 328ms
+ GET / 200 in 287ms
+ GET / 200 in 492ms
+ GET / 200 in 339ms
+ GET / 200 in 270ms
+ GET / 200 in 326ms
+ GET / 200 in 648ms
+ GET / 200 in 254ms
+ GET / 200 in 277ms
+ GET / 200 in 231ms
+ GET / 200 in 365ms
+ GET / 200 in 462ms
+ GET / 200 in 295ms
+ GET / 200 in 249ms
+ GET / 200 in 267ms
+ GET / 200 in 334ms
+ GET / 200 in 301ms
+ GET / 200 in 485ms
+ GET / 200 in 475ms
+ GET / 200 in 416ms
+ GET / 200 in 1001ms
+ GET / 200 in 240ms
+ GET / 200 in 361ms
+ GET / 200 in 338ms
+ GET / 200 in 365ms
+ GET / 200 in 256ms
+ GET / 200 in 293ms
+ GET / 200 in 266ms
+ GET / 200 in 258ms
+ GET / 200 in 256ms
+ GET / 200 in 259ms
+ GET / 200 in 331ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 253ms
+ GET / 200 in 356ms
+ GET / 200 in 357ms
+ GET / 200 in 249ms
+ GET / 200 in 335ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 1476ms
+ GET /customers 404 in 1823ms
+ ⚠ Cross origin request detected from test.portal.localhost to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ POST /customers 404 in 185ms
+ GET / 200 in 531ms
+ GET / 200 in 1213ms
+ GET / 200 in 915ms
+ GET / 200 in 1011ms
+ GET / 200 in 920ms
+ GET / 200 in 894ms
+ GET / 200 in 1388ms
+ GET / 200 in 1063ms
+ GET / 200 in 539ms
+ GET / 200 in 1162ms
+ GET / 200 in 301ms
+ GET / 200 in 348ms
+ GET / 200 in 263ms
+ GET / 200 in 316ms
+ GET / 200 in 254ms
+ GET / 200 in 314ms
+ GET / 200 in 262ms
+ GET / 200 in 259ms
+ GET / 200 in 241ms
+ GET / 200 in 260ms
+ GET / 200 in 262ms
+ GET / 200 in 274ms
+ GET / 200 in 258ms
+ GET / 200 in 300ms
+ GET / 200 in 271ms
+ GET / 200 in 266ms
+ GET / 200 in 336ms
+ GET / 200 in 284ms
+ GET / 200 in 319ms
+ GET / 200 in 297ms
+ GET / 200 in 354ms
+ GET / 200 in 283ms
+ GET / 200 in 266ms
+ GET / 200 in 248ms
+ GET / 200 in 257ms
+ GET / 200 in 252ms
+ GET / 200 in 282ms
+ GET / 200 in 273ms
+ GET / 200 in 257ms
+ GET / 200 in 446ms
+ GET / 200 in 279ms
+ GET / 200 in 246ms
+ GET / 200 in 280ms
+ GET / 200 in 248ms
+ GET / 200 in 1075ms
+ GET / 200 in 378ms
+ GET / 200 in 258ms
+ GET / 200 in 492ms
+ GET / 200 in 275ms
+ GET / 200 in 270ms
+ GET / 200 in 611ms
+ GET / 200 in 308ms
+ GET / 200 in 264ms
+ GET / 200 in 276ms
+ GET / 200 in 380ms
+ GET / 200 in 306ms
+ GET / 200 in 292ms
+ GET / 200 in 266ms
+ GET / 200 in 299ms
+ GET / 200 in 272ms
+ GET / 200 in 253ms
+ GET / 200 in 357ms
+ GET / 200 in 381ms
+ GET / 200 in 289ms
+ GET / 200 in 262ms
+ GET / 200 in 284ms
+ GET / 200 in 440ms
+ GET / 200 in 260ms
+ GET / 200 in 401ms
+ GET / 200 in 258ms
+ GET / 200 in 271ms
+ GET / 200 in 247ms
+ GET / 200 in 253ms
+ GET / 200 in 294ms
+ GET / 200 in 247ms
+ GET / 200 in 274ms
+ GET / 200 in 267ms
+ GET / 200 in 251ms
+ GET / 200 in 424ms
+ GET / 200 in 266ms
+ GET / 200 in 286ms
+ GET / 200 in 274ms
+ GET / 200 in 263ms
+ GET / 200 in 263ms
+ GET / 200 in 334ms
+ GET / 200 in 303ms
+ GET / 200 in 283ms
+ GET / 200 in 262ms
+ GET / 200 in 294ms
+ GET / 200 in 384ms
+ GET / 200 in 268ms
+ GET / 200 in 377ms
+ GET / 200 in 262ms
+ GET / 200 in 295ms
+ GET / 200 in 267ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 428ms
+ GET / 200 in 301ms
+ GET / 200 in 500ms
+ GET / 200 in 247ms
+ GET / 200 in 268ms
+ GET / 200 in 296ms
+ GET / 200 in 253ms
+ GET / 200 in 332ms
+ GET / 200 in 308ms
+ GET / 200 in 240ms
+ GET / 200 in 271ms
+ GET / 200 in 261ms
+ GET / 200 in 392ms
+ GET / 200 in 273ms
+ GET / 200 in 248ms
+ GET / 200 in 293ms
+ GET / 200 in 265ms
+ GET / 200 in 286ms
+ GET / 200 in 309ms
+ GET / 200 in 252ms
+ GET / 200 in 267ms
+ GET / 200 in 262ms
+ GET / 200 in 618ms
+ GET / 200 in 321ms
+ GET / 200 in 248ms
+ GET / 200 in 281ms
+ GET / 200 in 269ms
+ GET / 200 in 260ms
+ GET / 200 in 238ms
+ GET / 200 in 299ms
+ GET / 200 in 268ms
+ GET / 200 in 279ms
+ GET / 200 in 329ms
+ GET / 200 in 280ms
+ GET / 200 in 268ms
+ GET / 200 in 261ms
+ GET / 200 in 269ms
+ GET / 200 in 252ms
+ GET / 200 in 1016ms
+ GET / 200 in 407ms
+ GET / 200 in 256ms
+ GET / 200 in 265ms
+ GET / 200 in 258ms
+ GET / 200 in 298ms
+ GET / 200 in 246ms
+ GET / 200 in 274ms
+ GET / 200 in 271ms
+ GET / 200 in 255ms
+ GET / 200 in 249ms
+ GET / 200 in 262ms
+ GET / 200 in 383ms
+ GET / 200 in 332ms
+ GET / 200 in 323ms
+ GET / 200 in 292ms
+ GET / 200 in 232ms
+ GET / 200 in 244ms
+ GET / 200 in 464ms
+ GET / 200 in 245ms
+ GET / 200 in 269ms
+ GET / 200 in 244ms
+ GET / 200 in 328ms
+ GET / 200 in 254ms
+ GET / 200 in 261ms
+ GET / 200 in 263ms
+ GET / 200 in 538ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 327ms
+ GET / 200 in 567ms
+ GET / 200 in 1328ms
+ GET / 200 in 488ms
+ GET / 200 in 644ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.194:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1238ms
+ ✓ Ready in 3.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 12.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 13339ms
+ GET / 200 in 247ms
+ GET / 200 in 248ms
+ GET / 200 in 243ms
+ GET / 200 in 232ms
+ GET / 200 in 189ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 264ms
+ GET / 200 in 302ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 214ms
+ GET / 200 in 205ms
+ GET / 200 in 320ms
+ GET / 200 in 211ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.9s
+ GET /dashboard 200 in 8501ms
+ POST /dashboard 200 in 299ms
+ POST /dashboard 200 in 531ms
+ GET / 200 in 288ms
+ GET / 200 in 326ms
+ GET / 200 in 249ms
+ GET /dashboard 200 in 399ms
+ GET / 200 in 272ms
+ GET / 200 in 301ms
+ GET / 200 in 275ms
+ GET / 200 in 281ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 307ms
+ GET / 200 in 342ms
+ GET / 200 in 251ms
+ GET / 200 in 614ms
+ ✓ Compiled in 1912ms
+ ✓ Compiled in 1155ms
+ GET / 200 in 610ms
+ GET / 200 in 236ms
+ GET / 200 in 322ms
+ GET / 200 in 400ms
+ GET / 200 in 329ms
+ GET / 200 in 247ms
+ GET / 200 in 271ms
+ GET / 200 in 245ms
+ GET / 200 in 321ms
+ ○ Compiling /favicon.ico ...
+ GET / 200 in 765ms
+ ✓ Compiled /favicon.ico in 1083ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1593ms
+ GET / 200 in 283ms
+ GET / 200 in 243ms
+ GET / 200 in 249ms
+ GET / 200 in 303ms
+ GET / 200 in 270ms
+ GET / 200 in 255ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 413ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 286ms
+ GET / 200 in 449ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 257ms
+ GET / 200 in 244ms
+ GET /dashboard 200 in 1534ms
+ POST /dashboard 200 in 93ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 340ms
+ POST /dashboard 200 in 142ms
+ GET / 200 in 276ms
+ GET / 200 in 250ms
+ GET / 200 in 324ms
+ GET / 200 in 298ms
+ GET / 200 in 289ms
+ GET / 200 in 790ms
+ GET / 200 in 271ms
+ GET / 200 in 306ms
+ GET / 200 in 294ms
+ GET / 200 in 228ms
+ GET / 200 in 243ms
+ GET / 200 in 410ms
+ GET / 200 in 225ms
+ GET / 200 in 256ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 226ms
+ GET / 200 in 199ms
+ GET / 200 in 327ms
+ GET / 200 in 584ms
+ GET / 200 in 238ms
+ GET / 200 in 258ms
+ GET / 200 in 283ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ GET / 200 in 262ms
+ GET / 200 in 279ms
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 318ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 371ms
+ GET / 200 in 320ms
+ GET / 200 in 280ms
+ GET /dashboard 200 in 273ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 362ms
+ POST /dashboard 200 in 252ms
+ POST /dashboard 200 in 450ms
+ GET / 200 in 225ms
+ GET / 200 in 242ms
+ GET / 200 in 247ms
+ GET / 200 in 231ms
+ GET / 200 in 276ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 314ms
+ GET / 200 in 252ms
+ GET / 200 in 254ms
+ GET / 200 in 317ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 263ms
+ GET / 200 in 237ms
+ GET / 200 in 240ms
+ GET / 200 in 253ms
+ ✓ Compiled in 1015ms
+ GET / 200 in 449ms
+ GET / 200 in 355ms
+ GET / 200 in 305ms
+ GET / 200 in 237ms
+ GET / 200 in 246ms
+ GET / 200 in 244ms
+ GET / 200 in 254ms
+ GET / 200 in 273ms
+ GET / 200 in 510ms
+ GET / 200 in 263ms
+ GET / 200 in 339ms
+ GET / 200 in 243ms
+ GET / 200 in 245ms
+ GET / 200 in 286ms
+ GET / 200 in 273ms
+ GET / 200 in 260ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 243ms
+ GET / 200 in 329ms
+ GET / 200 in 255ms
+ GET / 200 in 323ms
+ GET / 200 in 251ms
+ GET / 200 in 421ms
+ GET / 200 in 260ms
+ GET / 200 in 241ms
+ GET / 200 in 245ms
+ GET / 200 in 278ms
+ GET /dashboard 200 in 2559ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1053ms
+ POST /dashboard 200 in 888ms
+ POST /dashboard 200 in 471ms
+ GET / 200 in 216ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 300ms
+ GET / 200 in 245ms
+ GET / 200 in 246ms
+ GET / 200 in 238ms
+ GET / 200 in 308ms
+ GET / 200 in 260ms
+ GET / 200 in 249ms
+ GET / 200 in 261ms
+ GET / 200 in 431ms
+ GET / 200 in 290ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 312ms
+ GET / 200 in 344ms
+ GET / 200 in 246ms
+ GET /dashboard 200 in 184ms
+ GET / 200 in 752ms
+ GET / 200 in 236ms
+ GET / 200 in 315ms
+ GET / 200 in 257ms
+ GET / 200 in 366ms
+ ✓ Compiled in 1744ms
+ GET / 200 in 272ms
+ GET / 200 in 225ms
+ GET / 200 in 263ms
+ GET / 200 in 257ms
+ GET / 200 in 276ms
+ GET / 200 in 247ms
+ GET / 200 in 252ms
+ GET / 200 in 598ms
+ GET / 200 in 452ms
+ GET / 200 in 260ms
+ GET / 200 in 310ms
+ GET / 200 in 507ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 323ms
+ GET / 200 in 276ms
+ GET / 200 in 249ms
+ GET / 200 in 413ms
+ GET / 200 in 682ms
+ GET / 200 in 261ms
+ GET / 200 in 501ms
+ GET / 200 in 270ms
+ GET / 200 in 256ms
+ GET / 200 in 269ms
+ GET / 200 in 288ms
+ GET / 200 in 257ms
+ ✓ Compiled in 964ms
+ GET / 200 in 525ms
+ GET / 200 in 261ms
+ GET / 200 in 260ms
+ GET / 200 in 240ms
+ GET / 200 in 242ms
+ GET / 200 in 259ms
+ GET / 200 in 300ms
+ GET / 200 in 239ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 253ms
+ GET / 200 in 269ms
+ GET / 200 in 350ms
+ GET / 200 in 272ms
+ GET / 200 in 235ms
+ GET / 200 in 235ms
+ GET / 200 in 232ms
+ GET / 200 in 242ms
+ GET / 200 in 248ms
+ GET / 200 in 239ms
+ GET / 200 in 240ms
+ GET / 200 in 255ms
+ GET / 200 in 624ms
+ GET / 200 in 266ms
+ GET / 200 in 247ms
+ GET / 200 in 247ms
+ GET / 200 in 269ms
+ GET / 200 in 245ms
+ GET / 200 in 250ms
+ GET / 200 in 333ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 241ms
+ GET / 200 in 246ms
+ GET / 200 in 548ms
+ GET / 200 in 253ms
+ GET / 200 in 241ms
+ GET / 200 in 263ms
+ GET / 200 in 239ms
+ GET / 200 in 249ms
+ GET / 200 in 264ms
+ GET / 200 in 259ms
+ GET / 200 in 255ms
+ GET / 200 in 250ms
+ GET / 200 in 269ms
+ GET / 200 in 779ms
+ GET / 200 in 390ms
+ GET / 200 in 240ms
+ GET / 200 in 263ms
+ GET / 200 in 263ms
+ GET / 200 in 247ms
+ GET / 200 in 245ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 267ms
+ GET / 200 in 254ms
+ GET / 200 in 252ms
+ GET / 200 in 274ms
+ GET / 200 in 273ms
+ GET / 200 in 253ms
+ GET / 200 in 247ms
+ GET / 200 in 267ms
+ GET / 200 in 262ms
+ GET / 200 in 249ms
+ GET / 200 in 348ms
+ GET / 200 in 252ms
+ GET / 200 in 246ms
+ GET / 200 in 253ms
+ GET / 200 in 270ms
+ GET / 200 in 321ms
+ GET / 200 in 922ms
+ GET / 200 in 241ms
+ GET / 200 in 257ms
+ GET / 200 in 242ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 256ms
+ GET / 200 in 249ms
+ GET / 200 in 272ms
+ GET / 200 in 248ms
+ GET / 200 in 244ms
+ GET / 200 in 281ms
+ GET / 200 in 249ms
+ GET / 200 in 316ms
+ GET / 200 in 250ms
+ GET / 200 in 248ms
+ GET / 200 in 243ms
+ GET / 200 in 255ms
+ GET / 200 in 252ms
+ GET / 200 in 246ms
+ GET / 200 in 248ms
+ GET / 200 in 266ms
+ GET / 200 in 259ms
+ GET / 200 in 1362ms
+ GET / 200 in 263ms
+ GET / 200 in 250ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 255ms
+ GET / 200 in 239ms
+ GET / 200 in 242ms
+ GET / 200 in 248ms
+ GET / 200 in 245ms
+ GET / 200 in 252ms
+ GET / 200 in 251ms
+ GET / 200 in 246ms
+ GET / 200 in 238ms
+ GET / 200 in 561ms
+ GET / 200 in 314ms
+ GET / 200 in 413ms
+ GET / 200 in 296ms
+ GET / 200 in 624ms
+ GET / 200 in 229ms
+ GET / 200 in 242ms
+ GET / 200 in 265ms
+ GET / 200 in 266ms
+ GET / 200 in 225ms
+ GET / 200 in 217ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 265ms
+ GET / 200 in 410ms
+ GET / 200 in 225ms
+ GET / 200 in 240ms
+ GET / 200 in 231ms
+ GET / 200 in 229ms
+ GET / 200 in 219ms
+ GET / 200 in 241ms
+ GET / 200 in 218ms
+ GET / 200 in 223ms
+ GET / 200 in 220ms
+ GET / 200 in 230ms
+ GET / 200 in 237ms
+ GET / 200 in 314ms
+ GET / 200 in 256ms
+ GET / 200 in 231ms
+ GET / 200 in 271ms
+ GET / 200 in 251ms
+ GET / 200 in 309ms
+ GET / 200 in 504ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 284ms
+ GET / 200 in 348ms
+ GET / 200 in 318ms
+ GET / 200 in 393ms
+ GET / 200 in 329ms
+ GET / 200 in 452ms
+ GET / 200 in 429ms
+ GET / 200 in 273ms
+ GET / 200 in 332ms
+ GET / 200 in 367ms
+ GET / 200 in 608ms
+ GET / 200 in 316ms
+ GET / 200 in 413ms
+ GET / 200 in 334ms
+ GET / 200 in 324ms
+ GET / 200 in 373ms
+ GET / 200 in 278ms
+ GET / 200 in 375ms
+ GET / 200 in 537ms
+ GET / 200 in 390ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=b1q0cigf5kg9wvfsv53fuwjdz1x87kpkhknlz574&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 325ms
+ GET / 200 in 319ms
+ GET / 200 in 313ms
+ GET / 200 in 330ms
+ GET / 200 in 327ms
+ GET / 200 in 397ms
+ GET / 200 in 638ms
+ GET / 200 in 442ms
+ GET / 200 in 585ms
+ GET / 200 in 332ms
+ GET / 200 in 344ms
+ GET / 200 in 1103ms
+ GET / 200 in 391ms
+ GET / 200 in 333ms
+ GET / 200 in 375ms
+ GET / 200 in 333ms
+ GET / 200 in 405ms
+ GET / 200 in 338ms
+ GET / 200 in 337ms
+ GET / 200 in 409ms

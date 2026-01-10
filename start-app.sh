@@ -9,6 +9,17 @@
 
 # Note: Don't use set -e as we handle errors explicitly
 
+# Parse command line arguments
+INSTALL_DEPS="false"
+for arg in "$@"; do
+    case $arg in
+        --install)
+            INSTALL_DEPS="true"
+            shift
+            ;;
+    esac
+done
+
 # Color codes for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -200,10 +211,15 @@ start_backend() {
         log_success "Virtual environment created"
     fi
     
-    # Activate virtual environment and install dependencies
-    log_info "Installing/updating backend dependencies..."
-    venv/bin/pip install -q --upgrade pip
-    venv/bin/pip install -q -r requirements.txt 2>&1 | tee -a "${BACKEND_LOG}"
+    # Skip pip install by default (much faster startup)
+    # Use --install flag to force dependency installation
+    if [ "${INSTALL_DEPS}" = "true" ]; then
+        log_info "Installing/updating backend dependencies..."
+        venv/bin/pip install -q --upgrade pip
+        venv/bin/pip install -q -r requirements.txt 2>&1 | tee -a "${BACKEND_LOG}"
+    else
+        log_info "Skipping dependency install (use --install flag to force)"
+    fi
     
     # Start backend server
     log_info "Starting FastAPI server on port ${BACKEND_PORT}..."
