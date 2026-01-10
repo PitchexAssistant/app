@@ -3,10 +3,6 @@
 backend/venv
 
 # Environment Variables
-/.env
-.env
-.env.*
-backend/.env
 
 # Process ID Files
 *.pid
@@ -87,3 +83,5 @@ open_router_models.txt
 
 *.pid
 backend.pid
+
+

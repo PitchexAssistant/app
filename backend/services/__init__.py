@@ -2,6 +2,7 @@
 from .emotion_service import EmotionService, get_emotion_service
 from .gemini_service import GeminiService, get_gemini_service
 from .stt_service import STTService, get_stt_service
+from .tts_service import TTSService, get_tts_service
 
 __all__ = [
     "EmotionService",
@@ -10,4 +11,7 @@ __all__ = [
     "get_gemini_service",
     "STTService",
     "get_stt_service",
+    "TTSService",
+    "get_tts_service",
 ]
+

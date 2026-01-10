@@ -8,6 +8,14 @@ const nextConfig: NextConfig = {
         hostname: 'www.figma.com',
         pathname: '/api/mcp/asset/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.clerk.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.clerk.dev',
+      },
     ],
   },
   async rewrites() {
