@@ -1046,3 +1046,5 @@ INFO:     127.0.0.1:49560 - "POST /api/v1/sessions/session_85_1767294775/complet
 INFO:     127.0.0.1:59116 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:47454 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:47908 - "GET /api/v1/health HTTP/1.1" 200 OK
+WARNING: The candidate selected for download or install is a yanked version: 'transformers' candidate (version 4.46.0 at https://files.pythonhosted.org/packages/db/88/1ef8a624a33d7fe460a686b9e0194a7916320fc0d67d4e38e570beeac039/transformers-4.46.0-py3-none-any.whl (from https://pypi.org/simple/transformers/) (requires-python:>=3.8.0))
+Reason for being yanked: This version unfortunately does not work with 3.8 but we did not drop the support yet 
