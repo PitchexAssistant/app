@@ -46,6 +46,8 @@ class Settings(BaseSettings):
     LIVEKIT_API_KEY: str = ""
     LIVEKIT_API_SECRET: str = ""
     OPENROUTER_API_KEY: str = ""
+    OPENROUTER_LIVE_BACKUP_1: str = ""
+    OPENROUTER_LIVE_BACKUP_2: str = ""
     DEEPGRAM_API_KEY: str = ""
 
     # Additional LLM API Keys (OpenRouter)

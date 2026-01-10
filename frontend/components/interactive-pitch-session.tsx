@@ -47,6 +47,7 @@ export function InteractivePitchSession({
         sendText,
         resetConversation,
         disconnect,
+        currentEmotion,
     } = useInteractivePitch({
         sessionId,
         onTranscription: (text) => console.log('[Session] You:', text),
@@ -68,10 +69,21 @@ export function InteractivePitchSession({
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
-    // Auto-start recording when connected (always listening)
+    // Auto-start recording when connected (only once per connection)
+    const hasAutoStarted = useRef(false);
     useEffect(() => {
-        if (isConnected && !isRecording && !isPaused) {
-            startRecording();
+        if (isConnected && !isRecording && !isPaused && !hasAutoStarted.current) {
+            hasAutoStarted.current = true;
+            // Small delay to ensure WebSocket is fully ready
+            const timer = setTimeout(() => {
+                startRecording();
+            }, 200);
+            return () => clearTimeout(timer);
+        }
+
+        // Reset the flag when disconnected
+        if (!isConnected) {
+            hasAutoStarted.current = false;
         }
     }, [isConnected, isRecording, isPaused, startRecording]);
 
@@ -141,6 +153,36 @@ export function InteractivePitchSession({
     const orbColors: [string, string] = ['#FFA500', '#FF9500'];
     const agentState = getAgentState();
 
+    // Helper to get emotion color indicator
+    const getEmotionDisplay = (emotionData: any) => {
+        if (!emotionData) return null;
+
+        const { dominant_emotion } = emotionData;
+
+        switch (dominant_emotion) {
+            case 'joy':
+            case 'enthusiasm':
+                return { label: 'Enthusiastic', dotColor: 'bg-green-400', textColor: 'text-green-400' };
+            case 'confidence':
+                return { label: 'Confident', dotColor: 'bg-blue-400', textColor: 'text-blue-400' };
+            case 'nervousness':
+            case 'fear':
+                return { label: 'Nervous', dotColor: 'bg-yellow-400', textColor: 'text-yellow-400' };
+            case 'surprise':
+                return { label: 'Surprised', dotColor: 'bg-purple-400', textColor: 'text-purple-400' };
+            case 'anger':
+                return { label: 'Frustrated', dotColor: 'bg-red-400', textColor: 'text-red-400' };
+            case 'sadness':
+                return { label: 'Uncertain', dotColor: 'bg-indigo-400', textColor: 'text-indigo-400' };
+            case 'neutral':
+                return { label: 'Neutral', dotColor: 'bg-gray-400', textColor: 'text-gray-400' };
+            default:
+                return { label: dominant_emotion || 'Unknown', dotColor: 'bg-gray-400', textColor: 'text-gray-400' };
+        }
+    };
+
+    const emotionDisplay = getEmotionDisplay(currentEmotion);
+
     return (
         <SidebarProvider>
             <div className="relative w-full h-screen bg-[#171717] flex">
@@ -154,9 +196,21 @@ export function InteractivePitchSession({
                         </div>
                     </div>
 
+                    {/* Emotion Badge - Below Timer */}
+                    {emotionDisplay && (
+                        <div className="absolute top-[110px] left-1/2 transform -translate-x-1/2">
+                            <div className="animate-in fade-in slide-in-from-top-2 duration-300 flex items-center gap-2">
+                                <span className={cn("w-2 h-2 rounded-full", emotionDisplay.dotColor)} />
+                                <span className={cn("text-xs font-medium capitalize", emotionDisplay.textColor)}>
+                                    {emotionDisplay.label}
+                                </span>
+                            </div>
+                        </div>
+                    )}
+
                     {/* Error */}
                     {error && (
-                        <div className="absolute top-[130px] left-1/2 transform -translate-x-1/2">
+                        <div className="absolute top-[170px] left-1/2 transform -translate-x-1/2">
                             <div className="px-4 py-2 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
                                 {error}
                             </div>
@@ -165,7 +219,7 @@ export function InteractivePitchSession({
 
                     {/* Main Orb */}
                     <div className="flex flex-col items-center justify-center gap-8">
-                        <div className="w-[250px] h-[250px] flex items-center justify-center">
+                        <div className="w-[250px] h-[250px] flex items-center justify-center relative">
                             <Orb
                                 colors={orbColors}
                                 agentState={agentState}

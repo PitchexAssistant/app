@@ -6,12 +6,13 @@ Handles STT → OpenRouter LLM → TTS pipeline for interactive sessions
 import asyncio
 import io
 import struct
-from typing import Optional, List, Dict, AsyncGenerator
+from typing import Optional, List, Dict, AsyncGenerator, Union
 import structlog
 
 from services.tts_service import get_tts_service
 from services.stt_service import STTService
 from services.openrouter_service import get_openrouter_service
+from services.emotion_service import get_emotion_service
 from core.config import settings
 
 logger = structlog.get_logger()
@@ -60,6 +61,7 @@ class LivePitchCoachAgent:
         self.stt_service = STTService()
         self.openrouter_service = get_openrouter_service()
         self.tts_service = get_tts_service()
+        self.emotion_service = get_emotion_service()
         self.conversation_history: List[Dict[str, str]] = []
         self.is_processing = False
         
@@ -143,68 +145,92 @@ class LivePitchCoachAgent:
     
     async def _call_openrouter(self, messages: List[Dict[str, str]]) -> str:
         """
-        Call OpenRouter API for response generation
-        Uses openai/gpt-oss-20b:free model
+        Call OpenRouter API with robust failover strategy
         """
         import httpx
         
-        api_key = settings.OPENROUTER_API_KEY
-        if not api_key:
-            raise ValueError("OPENROUTER_API_KEY not configured")
+        # 3-Key Failover Strategy
+        api_keys = [
+            settings.OPENROUTER_API_KEY,
+            settings.OPENROUTER_LIVE_BACKUP_1,
+            settings.OPENROUTER_LIVE_BACKUP_2
+        ]
         
+        # Filter empty keys
+        valid_keys = [k for k in api_keys if k]
+        
+        if not valid_keys:
+            raise ValueError("No OPENROUTER_API_KEYs configured (checked primary + 2 backups)")
+
         headers = {
-            "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
             "HTTP-Referer": "https://pitchex.ai",
             "X-Title": "Pitchex Live Coach"
         }
         
-        # Try primary model first, with fallbacks
+        # Order matters - put most reliable models first
+        # User-specified model priority
         models_to_try = [
-            "nex-agi/deepseek-v3.1-nex-n1:free",
-            "deepseek/deepseek-chat-v3-0324:free",
-            "meta-llama/llama-3.3-70b-instruct:free",
-            "mistralai/mistral-small-3.1-24b-instruct:free",
+            "nvidia/nemotron-3-nano-30b-a3b:free",  # Primary - user specified
+            "openai/gpt-oss-20b:free",               # Second fallback - user specified
+            "meta-llama/llama-3.3-70b-instruct:free",  # Backup
         ]
-        
+
         last_error = None
         
-        for model in models_to_try:
-            try:
-                payload = {
-                    "model": model,
-                    "messages": messages,
-                    "temperature": 0.7,
-                    "max_tokens": 300,  # Short responses for real-time
-                }
-                
-                async with httpx.AsyncClient(timeout=30.0) as client:
-                    response = await client.post(
-                        "https://openrouter.ai/api/v1/chat/completions",
-                        headers=headers,
-                        json=payload
-                    )
+        # Try each key in order
+        for key_idx, api_key in enumerate(valid_keys):
+            headers["Authorization"] = f"Bearer {api_key}"
+            
+            for model in models_to_try:
+                try:
+                    payload = {
+                        "model": model,
+                        "messages": messages,
+                        "temperature": 0.7,
+                        "max_tokens": 300,
+                    }
                     
-                    if response.status_code == 200:
-                        data = response.json()
-                        content = data["choices"][0]["message"]["content"]
-                        logger.info("openrouter_success", model=model)
-                        return content
-                    elif response.status_code == 429:
-                        logger.warning("openrouter_rate_limited", model=model)
-                        last_error = "Rate limited"
-                        continue
-                    else:
-                        last_error = f"HTTP {response.status_code}"
-                        logger.warning("openrouter_error", model=model, status=response.status_code)
-                        continue
+                    async with httpx.AsyncClient(timeout=15.0) as client:
+                        response = await client.post(
+                            f"{settings.OPENROUTER_BASE_URL}/chat/completions",
+                            headers=headers,
+                            json=payload
+                        )
                         
-            except Exception as e:
-                last_error = str(e)
-                logger.error("openrouter_request_failed", model=model, error=str(e))
-                continue
-        
-        raise Exception(f"All models failed: {last_error}")
+                        if response.status_code == 200:
+                            data = response.json()
+                            content = data["choices"][0]["message"]["content"]
+                            
+                            # CRITICAL: Validate response is not empty
+                            if content and content.strip():
+                                logger.info("openrouter_success", model=model, key_index=key_idx, content_length=len(content))
+                                return content
+                            else:
+                                # Empty response - try next model
+                                logger.warning("openrouter_empty_response", model=model)
+                                last_error = f"Empty response from {model}"
+                                continue
+                                
+                        elif response.status_code in [401, 402, 429]:
+                            logger.warning("openrouter_auth_rate_error", status=response.status_code, key_index=key_idx)
+                            # Break inner loop to try next key
+                            break 
+                        else:
+                            last_error = f"HTTP {response.status_code}"
+                            continue
+                            
+                except Exception as e:
+                    last_error = str(e)
+                    logger.error("openrouter_request_failed", model=model, error=str(e))
+                    continue
+            
+            # If we are here, the current key failed all models (or hit auth error)
+            logger.warning("switching_to_backup_key", failed_key_index=key_idx, next_key_index=key_idx+1)
+
+        # Fallback if ALL keys fail
+        logger.error("all_api_keys_failed", last_error=last_error)
+        return "I'm having trouble connecting to my brain right now. Please try again in a moment."
     
     async def synthesize_speech(self, text: str) -> AsyncGenerator[bytes, None]:
         """
@@ -231,15 +257,15 @@ class LivePitchCoachAgent:
             logger.error("speech_synthesis_error", error=str(e))
             raise
     
-    async def process_turn(self, audio_data: bytes) -> AsyncGenerator[bytes, None]:
+    async def process_turn(self, audio_data: bytes) -> AsyncGenerator[Union[bytes, Dict], None]:
         """
-        Complete processing turn: STT → LLM → TTS
+        Complete processing turn: STT → Emotion → LLM → TTS
         
         Args:
             audio_data: User's audio input
             
         Yields:
-            Response audio chunks
+            Response audio chunks AND emotion data AND transcription/response text
         """
         if self.is_processing:
             logger.warning("already_processing_skipping")
@@ -253,21 +279,35 @@ class LivePitchCoachAgent:
             
             if not transcript:
                 logger.info("no_transcript_skipping")
+                yield {"type": "no_speech"}
                 return
             
             logger.info("user_said", transcript=transcript[:100])
             
-            # Step 2: Generate response
+            # Step 1.5: Send transcription to frontend immediately
+            yield {"type": "transcription", "text": transcript}
+            
+            # Step 2: Analyze Emotion (Fast, Local)
+            # Run immediately so frontend gets it while waiting for LLM
+            emotion_result = self.emotion_service.analyze(transcript)
+            yield {"type": "emotion", "data": emotion_result}
+            
+            # Step 3: Generate response
             response = await self.generate_response(transcript)
             
             logger.info("coach_response", response=response[:100])
             
-            # Step 3: Synthesize and stream audio
+            # Step 3.5: Send response text to frontend before audio
+            yield {"type": "response", "text": response}
+            
+            # Step 4: Synthesize and stream audio
             async for audio_chunk in self.synthesize_speech(response):
                 yield audio_chunk
                 
         finally:
             self.is_processing = False
+                
+
     
     def reset_conversation(self):
         """Reset conversation history for new session"""

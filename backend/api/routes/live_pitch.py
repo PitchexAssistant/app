@@ -217,49 +217,25 @@ async def interactive_pitch_session(
 async def process_and_respond(session_id: str, audio_data: bytes, agent):
     """Process audio and send response"""
     try:
-        # Transcribe audio
-        transcript = await agent.process_audio_input(audio_data)
+        # Process streamed response
+        is_speaking_started = False
         
-        if not transcript:
-            await session_manager.send_json(session_id, {
-                "type": "no_speech",
-                "message": "No speech detected"
-            })
-            return
-        
-        # Send transcription to client
-        await session_manager.send_json(session_id, {
-            "type": "transcription",
-            "text": transcript
-        })
-        
-        # Generate response
-        response = await agent.generate_response(transcript)
-        
-        # Send response text
-        await session_manager.send_json(session_id, {
-            "type": "response",
-            "text": response
-        })
-        
-        # Notify client that coach is speaking
-        await session_manager.send_json(session_id, {
-            "type": "speaking_start"
-        })
-        
-        # Generate complete audio buffer
-        full_audio_buffer = bytearray()
-        async for audio_chunk in agent.synthesize_speech(response):
-            full_audio_buffer.extend(audio_chunk)
+        async for chunk in agent.process_turn(audio_data):
+            if isinstance(chunk, dict):
+                # JSON message (emotion, etc)
+                await session_manager.send_json(session_id, chunk)
             
-        # Send audio
-        if len(full_audio_buffer) > 0:
-            await session_manager.send_audio(session_id, bytes(full_audio_buffer))
-        
+            elif isinstance(chunk, bytes):
+                # Audio chunk
+                if not is_speaking_started:
+                    await session_manager.send_json(session_id, {"type": "speaking_start"})
+                    is_speaking_started = True
+                
+                await session_manager.send_audio(session_id, chunk)
+                
         # Notify client that coach finished speaking
-        await session_manager.send_json(session_id, {
-            "type": "speaking_end"
-        })
+        if is_speaking_started:
+            await session_manager.send_json(session_id, {"type": "speaking_end"})
         
     except Exception as e:
         logger.error("process_and_respond_error", session_id=session_id, error=str(e))
