@@ -19,8 +19,10 @@ from docx import Document as DocxDocument
 # LangChain for text processing
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_core.documents import Document
+
+from Reasoning import get_reasoning_instance
 
 from core.config import settings
 
@@ -36,16 +38,17 @@ class ContextService:
     ALLOWED_EXTENSIONS = {'.pdf', '.docx'}
     
     def __init__(self):
-        self.upload_dir = Path("./uploads")
-        self.upload_dir.mkdir(exist_ok=True)
+        self.upload_dir = Path("./data/documents")
+        self.upload_dir.mkdir(parents=True, exist_ok=True)
         
-        # Initialize embeddings
+        # Initialize embeddings (HuggingFace to match Reasoning module)
         try:
-            self.embeddings = GoogleGenerativeAIEmbeddings(
-                model="models/embedding-001",
-                google_api_key=settings.GEMINI_API_KEY
+            self.embedding_model_name = "all-MiniLM-L6-v2"
+            self.embeddings = HuggingFaceEmbeddings(
+                model_name=self.embedding_model_name,
+                model_kwargs={"device": "cpu"}
             )
-            logger.info("context_service_initialized")
+            logger.info("context_service_initialized", model=self.embedding_model_name)
         except Exception as e:
             logger.error("context_service_initialization_failed", error=str(e))
             self.embeddings = None
@@ -135,7 +138,15 @@ class ContextService:
                 
                 self.session_contexts[session_id]["files"][file_index] = context_data
                 
-                # Build/update vector store for semantic search
+                # Ingest into GLOBAL RAG for permanent use across all sessions
+                try:
+                    reasoning_service = get_reasoning_instance()
+                    reasoning_service.ingest_documents(documents)
+                    logger.info("documents_ingested_to_global_rag", session_id=session_id)
+                except Exception as e:
+                    logger.error("global_rag_ingestion_failed", error=str(e))
+                
+                # Build/update session-specific vector store (optional, for session-only search)
                 await self._update_vector_store(session_id)
                 
                 logger.info(
@@ -162,9 +173,8 @@ class ContextService:
                 }
                 
             finally:
-                # Clean up temporary file
-                if temp_path.exists():
-                    temp_path.unlink()
+                # We no longer delete the file as we want persistent storage
+                pass
                     
         except Exception as e:
             logger.error(
@@ -567,11 +577,13 @@ class ContextService:
         return hash_obj.hexdigest()[:16]
     
     def _save_temp_file(self, content: bytes, file_id: str) -> Path:
-        """Save file temporarily for processing"""
-        temp_path = self.upload_dir / f"{file_id}.pdf"
-        with open(temp_path, 'wb') as f:
-            f.write(content)
-        return temp_path
+        """Save file PERMANENTLY for processing and archival"""
+        permanent_path = self.upload_dir / f"{file_id}.pdf"
+        # We don't overwrite if it exists to avoid corrupting indexed docs
+        if not permanent_path.exists():
+            with open(permanent_path, 'wb') as f:
+                f.write(content)
+        return permanent_path
 
 
 # Singleton instance

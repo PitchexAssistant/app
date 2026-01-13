@@ -37,15 +37,15 @@ class GeminiService:
         ]
         
         self.model = genai.GenerativeModel(
-            model_name='gemini-2.0-flash-exp',
+            model_name='gemini-2.5-flash',
             generation_config=generation_config,
             safety_settings=safety_settings
         )
         
         self.prompt_templates = PromptTemplates()
         
-        logger.info("initializing_gemini_model", model="gemini-2.0-flash-exp")
-        logger.info("gemini_model_initialized", model="gemini-2.0-flash-exp")
+        logger.info("initializing_gemini_model", model="gemini-2.5-flash")
+        logger.info("gemini_model_initialized", model="gemini-2.5-flash")
     
     async def generate_response(
         self, 

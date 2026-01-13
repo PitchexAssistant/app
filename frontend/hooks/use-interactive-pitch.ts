@@ -20,6 +20,8 @@ export interface Message {
 
 interface UseInteractivePitchOptions {
     sessionId?: string;
+    userId?: string;
+    resume?: boolean;
     onTranscription?: (text: string) => void;
     onResponse?: (text: string) => void;
     onError?: (error: string) => void;
@@ -27,7 +29,11 @@ interface UseInteractivePitchOptions {
 }
 
 export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
-    const { sessionId = `session_${Date.now()}` } = options;
+    const {
+        sessionId = `session_${Date.now()}`,
+        userId,
+        resume = false
+    } = options;
 
     // Store callbacks in refs to avoid dependency chain issues
     const callbacksRef = useRef(options);
@@ -42,6 +48,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
     const [messages, setMessages] = useState<Message[]>([]);
     const [error, setError] = useState<string | null>(null);
     const [currentEmotion, setCurrentEmotion] = useState<any>(null);
+    const [isResumed, setIsResumed] = useState(false);
 
     // Refs
     const wsRef = useRef<WebSocket | null>(null);
@@ -61,7 +68,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
     // Constants
     const VAD_THRESHOLD = 0.01;
-    const SILENCE_DURATION = 600;
+    const SILENCE_DURATION = 2000;
     const SAMPLE_RATE = 16000;
 
     // Helper: Float32 to WAV
@@ -146,7 +153,8 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
 
                 switch (data.type) {
                     case 'connected':
-                        console.log('[WS] Session ready');
+                        console.log('[WS] Session ready, resumed:', data.resumed);
+                        setIsResumed(data.resumed || false);
                         break;
 
                     case 'transcription':
@@ -382,7 +390,12 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         if (wsRef.current?.readyState === WebSocket.OPEN) return;
         if (wsRef.current?.readyState === WebSocket.CONNECTING) return;
 
-        const wsUrl = `${process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000'}/api/v1/ws/pitch/${sessionId}`;
+        // Build URL with optional user_id and resume params for session persistence
+        const baseUrl = `${process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000'}/api/v1/ws/pitch/${sessionId}`;
+        const params = new URLSearchParams();
+        if (userId) params.append('user_id', userId);
+        if (resume) params.append('resume', 'true');
+        const wsUrl = params.toString() ? `${baseUrl}?${params.toString()}` : baseUrl;
         console.log('[WS] Connecting to:', wsUrl);
 
         try {
@@ -417,7 +430,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             console.error('[WS] Failed to create:', e);
             setError('Failed to connect');
         }
-    }, [sessionId, handleMessage]);
+    }, [sessionId, userId, resume, handleMessage]);
 
     // Send text message
     const sendText = useCallback((text: string) => {
@@ -498,6 +511,7 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
         resetConversation,
         connect,
         disconnect,
-        currentEmotion
+        currentEmotion,
+        isResumed
     };
 }

@@ -30,6 +30,7 @@ class SessionUpdate(BaseModel):
     analysis: Optional[dict] = None
     summary: Optional[str] = None
     duration: Optional[int] = None
+    chat_history: Optional[List[dict]] = None  # Conversation memory for session resume
 
 
 class Session(BaseModel):
@@ -44,6 +45,7 @@ class Session(BaseModel):
     summary: Optional[str] = None
     duration: Optional[int] = None  # in seconds
     status: str = "active"  # 'active', 'completed', 'archived'
+    chat_history: Optional[List[dict]] = None  # [{role: "human/ai", content: "..."}]
 
 
 def _get_user_sessions_file(user_id: str) -> Path:

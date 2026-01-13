@@ -30,21 +30,28 @@ class STTService:
     def _initialize_clients(self):
         """Initialize STT clients (Gemini + Google Cloud)"""
         # Initialize Gemini for fast STT
-        try:
-            logger.info("initializing_gemini_stt")
-            genai.configure(api_key=settings.GEMINI_API_KEY)
-            self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
-            logger.info("gemini_stt_initialized")
-        except Exception as e:
-            logger.warning("gemini_stt_initialization_failed", error=str(e))
+        if settings.GEMINI_API_KEY:
+            try:
+                logger.info("initializing_gemini_stt")
+                genai.configure(api_key=settings.GEMINI_API_KEY)
+                self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
+                logger.info("gemini_stt_initialized")
+            except Exception as e:
+                logger.warning("gemini_stt_initialization_failed", error=str(e))
+        else:
+            logger.warning("gemini_api_key_missing_skipping_gemini_stt")
         
         # Initialize Google Cloud STT as fallback
-        try:
-            logger.info("initializing_google_cloud_stt")
-            self.google_cloud_client = speech.SpeechClient()
-            logger.info("google_cloud_stt_initialized")
-        except Exception as e:
-            logger.warning("google_cloud_stt_initialization_failed", error=str(e))
+        # Only attempt if GOOGLE_APPLICATION_CREDENTIALS is set to avoid long blocks
+        if os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+            try:
+                logger.info("initializing_google_cloud_stt")
+                self.google_cloud_client = speech.SpeechClient()
+                logger.info("google_cloud_stt_initialized")
+            except Exception as e:
+                logger.warning("google_cloud_stt_initialization_failed", error=str(e))
+        else:
+            logger.info("google_application_credentials_missing_skipping_google_cloud_stt")
     
     def transcribe_audio(
         self,

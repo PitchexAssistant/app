@@ -474,11 +474,19 @@ main() {
     
     # Keep script running to show it's managing the processes
     echo ""
-    echo -e "${YELLOW}Monitoring application... (Ctrl+C to exit)${NC}"
+    echo -e "${YELLOW}Monitoring application logs... (Ctrl+C to exit)${NC}"
+    echo -e "${CYAN}Showing: Backend (blue prefix) | Frontend (green prefix)${NC}"
     echo ""
-    
-    # Tail logs in real-time
-    tail -f "${HEALTH_LOG}" 2>/dev/null || sleep infinity
+
+    # Tail both backend and frontend logs in real-time with color-coded prefixes
+    tail -f "${BACKEND_LOG}" 2>/dev/null | sed "s/^/${BLUE}[BACKEND]${NC} /" &
+    TAIL_BACKEND_PID=$!
+    tail -f "${FRONTEND_LOG}" 2>/dev/null | sed "s/^/${GREEN}[FRONTEND]${NC} /" &
+    TAIL_FRONTEND_PID=$!
+
+    # Wait for interrupt and cleanup tail processes
+    trap "kill $TAIL_BACKEND_PID $TAIL_FRONTEND_PID 2>/dev/null; exit 0" INT TERM
+    wait
 }
 
 # Run main function

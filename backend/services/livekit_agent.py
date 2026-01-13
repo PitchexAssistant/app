@@ -10,9 +10,9 @@ from typing import Optional, List, Dict, AsyncGenerator, Union
 import structlog
 
 from services.tts_service import get_tts_service
-from services.stt_service import STTService
-from services.openrouter_service import get_openrouter_service
+from services.stt_service import get_stt_service
 from services.emotion_service import get_emotion_service
+from Reasoning import get_reasoning_instance
 from core.config import settings
 
 logger = structlog.get_logger()
@@ -53,19 +53,19 @@ class LivePitchCoachAgent:
     """
     Real-time voice pitch coaching agent using:
     - STT: Google Free API / Gemini fallback
-    - LLM: OpenRouter (openai/gpt-oss-20b:free)
+    - LLM: RAG Reasoning (Gemini 2.5 Flash + FAISS + Tavily)
     - TTS: Edge TTS (en-US-GuyNeural)
     """
-    
-    def __init__(self):
-        self.stt_service = STTService()
-        self.openrouter_service = get_openrouter_service()
+
+    def __init__(self, session_id: str = "default"):
+        self.session_id = session_id
+        self.stt_service = get_stt_service()
+        self.reasoning_service = get_reasoning_instance()
         self.tts_service = get_tts_service()
         self.emotion_service = get_emotion_service()
-        self.conversation_history: List[Dict[str, str]] = []
         self.is_processing = False
-        
-        logger.info("live_pitch_coach_agent_initialized")
+
+        logger.info("live_pitch_coach_agent_initialized", session_id=session_id)
     
     async def process_audio_input(self, audio_data: bytes, sample_rate: int = 16000) -> Optional[str]:
         """
@@ -103,134 +103,33 @@ class LivePitchCoachAgent:
     
     async def generate_response(self, user_message: str) -> str:
         """
-        Generate coach response using OpenRouter LLM
-        
+        Generate coach response using RAG Reasoning model
+
         Args:
             user_message: User's transcribed message
-            
+
         Returns:
             Coach's response text
         """
         try:
-            logger.info("generating_llm_response", 
+            logger.info("generating_reasoning_response",
                        message_length=len(user_message),
-                       history_length=len(self.conversation_history))
-            
-            # Add user message to history
-            self.conversation_history.append({
-                "role": "user",
-                "content": user_message
-            })
-            
-            # Build messages with system prompt
-            messages = [
-                {"role": "system", "content": MARCUS_STERLING_PROMPT}
-            ] + self.conversation_history[-10:]  # Keep last 10 messages for context
-            
-            # Use OpenRouter to generate response
-            response = await self._call_openrouter(messages)
-            
-            # Add assistant response to history
-            self.conversation_history.append({
-                "role": "assistant", 
-                "content": response
-            })
-            
-            logger.info("llm_response_generated", response_length=len(response))
+                       session_id=self.session_id)
+
+            # Use RAG Reasoning service with session-specific memory
+            response = await self.reasoning_service.generate_response(
+                user_input=user_message,
+                session_id=self.session_id
+            )
+
+            logger.info("reasoning_response_generated",
+                       response_length=len(response),
+                       session_id=self.session_id)
             return response
-            
+
         except Exception as e:
-            logger.error("llm_generation_error", error=str(e))
+            logger.error("reasoning_generation_error", error=str(e), session_id=self.session_id)
             return "I apologize, I'm having trouble processing that. Could you repeat your question about your pitch?"
-    
-    async def _call_openrouter(self, messages: List[Dict[str, str]]) -> str:
-        """
-        Call OpenRouter API with robust failover strategy
-        """
-        import httpx
-        
-        # 3-Key Failover Strategy
-        api_keys = [
-            settings.OPENROUTER_API_KEY,
-            settings.OPENROUTER_LIVE_BACKUP_1,
-            settings.OPENROUTER_LIVE_BACKUP_2
-        ]
-        
-        # Filter empty keys
-        valid_keys = [k for k in api_keys if k]
-        
-        if not valid_keys:
-            raise ValueError("No OPENROUTER_API_KEYs configured (checked primary + 2 backups)")
-
-        headers = {
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://pitchex.ai",
-            "X-Title": "Pitchex Live Coach"
-        }
-        
-        # Order matters - put most reliable models first
-        # User-specified model priority
-        models_to_try = [
-            "nvidia/nemotron-3-nano-30b-a3b:free",  # Primary - user specified
-            "openai/gpt-oss-20b:free",               # Second fallback - user specified
-            "meta-llama/llama-3.3-70b-instruct:free",  # Backup
-        ]
-
-        last_error = None
-        
-        # Try each key in order
-        for key_idx, api_key in enumerate(valid_keys):
-            headers["Authorization"] = f"Bearer {api_key}"
-            
-            for model in models_to_try:
-                try:
-                    payload = {
-                        "model": model,
-                        "messages": messages,
-                        "temperature": 0.7,
-                        "max_tokens": 300,
-                    }
-                    
-                    async with httpx.AsyncClient(timeout=15.0) as client:
-                        response = await client.post(
-                            f"{settings.OPENROUTER_BASE_URL}/chat/completions",
-                            headers=headers,
-                            json=payload
-                        )
-                        
-                        if response.status_code == 200:
-                            data = response.json()
-                            content = data["choices"][0]["message"]["content"]
-                            
-                            # CRITICAL: Validate response is not empty
-                            if content and content.strip():
-                                logger.info("openrouter_success", model=model, key_index=key_idx, content_length=len(content))
-                                return content
-                            else:
-                                # Empty response - try next model
-                                logger.warning("openrouter_empty_response", model=model)
-                                last_error = f"Empty response from {model}"
-                                continue
-                                
-                        elif response.status_code in [401, 402, 429]:
-                            logger.warning("openrouter_auth_rate_error", status=response.status_code, key_index=key_idx)
-                            # Break inner loop to try next key
-                            break 
-                        else:
-                            last_error = f"HTTP {response.status_code}"
-                            continue
-                            
-                except Exception as e:
-                    last_error = str(e)
-                    logger.error("openrouter_request_failed", model=model, error=str(e))
-                    continue
-            
-            # If we are here, the current key failed all models (or hit auth error)
-            logger.warning("switching_to_backup_key", failed_key_index=key_idx, next_key_index=key_idx+1)
-
-        # Fallback if ALL keys fail
-        logger.error("all_api_keys_failed", last_error=last_error)
-        return "I'm having trouble connecting to my brain right now. Please try again in a moment."
     
     async def synthesize_speech(self, text: str) -> AsyncGenerator[bytes, None]:
         """
@@ -310,18 +209,37 @@ class LivePitchCoachAgent:
 
     
     def reset_conversation(self):
-        """Reset conversation history for new session"""
-        self.conversation_history = []
-        logger.info("conversation_reset")
+        """Reset conversation history for this session"""
+        self.reasoning_service.clear_session(self.session_id)
+        logger.info("conversation_reset", session_id=self.session_id)
+
+    def save_conversation_history(self) -> List[Dict[str, str]]:
+        """Get conversation history for persistence"""
+        return self.reasoning_service.save_memory_to_dict(self.session_id)
+
+    def load_conversation_history(self, history: List[Dict[str, str]]):
+        """Restore conversation history from storage"""
+        if history:
+            self.reasoning_service.load_memory_from_dict(self.session_id, history)
+            logger.info("loaded_conversation_history", session_id=self.session_id, count=len(history))
 
 
-# Singleton instance
-_agent_instance: Optional[LivePitchCoachAgent] = None
+# Session-based agent instances
+_agent_instances: dict[str, LivePitchCoachAgent] = {}
 
 
-def get_live_pitch_agent() -> LivePitchCoachAgent:
-    """Get or create the live pitch coach agent"""
-    global _agent_instance
-    if _agent_instance is None:
-        _agent_instance = LivePitchCoachAgent()
-    return _agent_instance
+def get_live_pitch_agent(session_id: str = "default") -> LivePitchCoachAgent:
+    """Get or create the live pitch coach agent for a session"""
+    global _agent_instances
+    if session_id not in _agent_instances:
+        _agent_instances[session_id] = LivePitchCoachAgent(session_id)
+    return _agent_instances[session_id]
+
+
+def cleanup_agent(session_id: str):
+    """Clean up agent instance when session ends"""
+    global _agent_instances
+    if session_id in _agent_instances:
+        _agent_instances[session_id].reset_conversation()
+        del _agent_instances[session_id]
+        logger.info("agent_cleaned_up", session_id=session_id)

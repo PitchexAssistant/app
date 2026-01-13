@@ -1,6 +1,6 @@
 # FastAPI and ASGI Server
-fastapi==0.115.0
-uvicorn[standard]==0.32.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
 python-multipart==0.0.12
 
 # Google Cloud Services
@@ -8,14 +8,15 @@ google-cloud-speech==2.28.0
 google-generativeai==0.8.3
 
 # AI/ML Libraries
-transformers==4.46.0
-torch==2.5.0
-sentencepiece==0.2.0
+transformers>=4.46.3
+torch>=2.5.0
+sentencepiece==0.2.1
 accelerate==1.0.1
+sentence-transformers
 
 # Database
 sqlalchemy==2.0.35
-asyncpg==0.29.0
+asyncpg==0.31.0
 alembic==1.13.3
 
 # Redis
@@ -28,12 +29,12 @@ passlib[bcrypt]==1.7.4
 
 # Environment
 python-dotenv==1.0.1
-pydantic==2.9.2
-pydantic-settings==2.5.1
+pydantic>=2.9.2
+pydantic-settings
 
 # Audio Processing
-numpy==2.1.3
-scipy==1.14.1
+numpy>=2.1.3
+scipy>=1.14.1
 
 # Logging and Monitoring
 structlog==24.4.0
@@ -49,7 +50,7 @@ websockets==13.1
 # Audio Processing for Live
 pyaudio==0.2.14
 opencv-python==4.10.0.84
-pillow==10.4.0
+pillow>=10.4.0
 
 # Gemini SDK (updated for Live API)
 google-genai==0.2.2
@@ -74,12 +75,12 @@ PyPDF2==3.0.1
 pypdf==5.1.0
 python-docx==1.1.2
 faiss-cpu==1.13.2
-tiktoken==0.8.0
+tiktoken
 
 # LiveKit
-livekit-agents==1.3.3
-livekit-plugins-openai==1.3.3
-livekit-plugins-deepgram==1.3.3
-livekit-plugins-silero==1.3.3
+livekit-agents
+livekit-plugins-openai
+livekit-plugins-deepgram
+livekit-plugins-silero
 edge-tts==7.2.7
 

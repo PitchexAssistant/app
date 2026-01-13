@@ -1,16 +1,18 @@
 """
 WebSocket endpoint for Interactive Live Pitch Coaching
-Uses STT → OpenRouter LLM → TTS pipeline for real-time voice interaction
+Uses STT → RAG Reasoning → TTS pipeline for real-time voice interaction
 """
 
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Query
 from typing import Optional
+from datetime import datetime
 import json
 import asyncio
 import base64
 import structlog
 
-from services.livekit_agent import get_live_pitch_agent
+from services.livekit_agent import get_live_pitch_agent, cleanup_agent
+from api.routes.sessions import _load_sessions, _save_sessions
 
 logger = structlog.get_logger()
 router = APIRouter()
@@ -82,22 +84,28 @@ session_manager = LiveSessionManager()
 async def interactive_pitch_session(
     websocket: WebSocket,
     session_id: str,
-    context: Optional[str] = Query(default=None)
+    context: Optional[str] = Query(default=None),
+    user_id: Optional[str] = Query(default=None),
+    resume: Optional[bool] = Query(default=False)
 ):
     """
     Interactive pitch coaching WebSocket endpoint
-    
+
+    Query params:
+    - user_id: User ID for session persistence
+    - resume: If true, load previous conversation history
+
     Message format:
     - Binary: Raw PCM audio data (16kHz, mono, 16-bit)
     - JSON: Control messages
-    
+
     Control messages:
     - {"type": "start_speaking"}: User started speaking
     - {"type": "stop_speaking"}: User stopped speaking, process audio
     - {"type": "text", "content": "..."}: Text input
     - {"type": "reset"}: Reset conversation
     - {"type": "ping"}: Keep-alive ping
-    
+
     Response messages:
     - {"type": "transcription", "text": "..."}: User's speech transcription
     - {"type": "response", "text": "..."}: Coach's text response
@@ -106,18 +114,32 @@ async def interactive_pitch_session(
     - Binary: MP3 audio response
     """
     await session_manager.connect(session_id, websocket)
-    agent = get_live_pitch_agent()
-    
-    # Reset conversation for new session
-    agent.reset_conversation()
-    
-    # Send welcome message
-    await session_manager.send_json(session_id, {
-        "type": "connected",
-        "message": "Connected to pitch coach. Start speaking to begin."
-    })
-    
     try:
+        agent = get_live_pitch_agent(session_id)
+
+        # Handle session resume vs new session
+        resumed = False
+        if resume and user_id:
+            try:
+                sessions = _load_sessions(user_id)
+                session_data = next((s for s in sessions if s["id"] == session_id), None)
+                if session_data and session_data.get("chat_history"):
+                    agent.load_conversation_history(session_data["chat_history"])
+                    resumed = True
+                    logger.info("resumed_session", session_id=session_id, history_count=len(session_data["chat_history"]))
+            except Exception as e:
+                logger.warning("failed_to_load_session_history", session_id=session_id, error=str(e))
+
+        if not resumed:
+            agent.reset_conversation()
+
+        # Send welcome message
+        await session_manager.send_json(session_id, {
+            "type": "connected",
+            "message": "Welcome back! Let's continue." if resumed else "Connected to pitch coach. Start speaking to begin.",
+            "resumed": resumed
+        })
+        
         while True:
             message = await websocket.receive()
             
@@ -211,7 +233,22 @@ async def interactive_pitch_session(
     except Exception as e:
         logger.error("websocket_error", session_id=session_id, error=str(e))
     finally:
+        # Save conversation history before cleanup
+        if user_id:
+            try:
+                sessions = _load_sessions(user_id)
+                for s in sessions:
+                    if s["id"] == session_id:
+                        s["chat_history"] = agent.save_conversation_history()
+                        s["updated_at"] = datetime.now().isoformat()
+                        break
+                _save_sessions(user_id, sessions)
+                logger.info("saved_session_history", session_id=session_id, user_id=user_id)
+            except Exception as e:
+                logger.error("failed_to_save_chat_history", session_id=session_id, error=str(e))
+
         session_manager.disconnect(session_id)
+        cleanup_agent(session_id)
 
 
 async def process_and_respond(session_id: str, audio_data: bytes, agent):
