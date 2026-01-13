@@ -8,6 +8,8 @@ from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis
 from services.emotion_service import EmotionService
 from services.gemini_service import GeminiService
 from services.gemini_live_service import GeminiLiveService
+from Reasoning import get_reasoning_instance
+from services.context_service import get_context_service
 
 # Configure structured logging
 structlog.configure(
@@ -42,7 +44,19 @@ async def lifespan(app: FastAPI):
         gemini_live_service = GeminiLiveService()
         app.state.gemini_live_service = gemini_live_service
         logger.info("gemini_live_service_initialized")
-        
+
+        # Initialize RAG Reasoning service (loads embeddings model)
+        logger.info("initializing_reasoning_service")
+        reasoning_service = get_reasoning_instance()
+        app.state.reasoning_service = reasoning_service
+        logger.info("reasoning_service_initialized")
+
+        # Initialize Context service (handles document uploads)
+        logger.info("initializing_context_service")
+        context_service = get_context_service()
+        app.state.context_service = context_service
+        logger.info("context_service_initialized")
+
     except Exception as e:
         logger.error("service_initialization_failed", error=str(e))
         raise

@@ -62,7 +62,9 @@ class Settings(BaseSettings):
     EMOTION_DETECTION_MODEL: str = "nvidia/nemotron-nano-9b-v2:free"  # Reliable emotion detection
     OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
 
-    
+    # Tavily API (for web search)
+    TAVILY_API_KEY: str = ""
+
     class Config:
         env_file = ".env"
         case_sensitive = True

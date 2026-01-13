@@ -54,18 +54,22 @@ async def analyze_pitch(request: AnalyzePitchRequest):
         )
         
         # Get services
-        openrouter_service = get_openrouter_service()
+        from Reasoning import get_reasoning_instance
+        from services.emotion_service import get_emotion_service
+        
+        reasoning_service = get_reasoning_instance()
+        emotion_service = get_emotion_service()
         context_service = get_context_service()
         
-        # Analyze emotion from transcript using OpenRouter
-        emotion_data = await openrouter_service.detect_emotion(request.transcript)
+        # Analyze emotion from transcript using local service
+        emotion_data = emotion_service.analyze(request.transcript)
         logger.info(
             "emotion_analyzed",
             dominant_emotion=emotion_data.get('dominant_emotion'),
             confidence=emotion_data.get('confidence')
         )
         
-        # Get document context for this session
+        # Get document context for this session (Reasoning service also handles this via RAG)
         document_context = await context_service.get_session_context(request.session_id)
         
         if document_context:
@@ -75,131 +79,53 @@ async def analyze_pitch(request: AnalyzePitchRequest):
                 context_length=len(document_context)
             )
         
-        # Build comprehensive analysis prompt
-        analysis_prompt = f"""You are an expert investor and pitch coach. Analyze this recorded pitch presentation.
-
-PITCH TRANSCRIPT:
-{request.transcript}
-
-PITCH DURATION: {request.duration} seconds ({request.duration // 60}:{request.duration % 60:02d})
-
-EMOTIONAL TONE: {emotion_data.get('dominant_emotion', 'neutral')} (confidence: {emotion_data.get('confidence', 0):.2f})
-
-{"BUSINESS CONTEXT (from uploaded documents):" if document_context else ""}
-{document_context if document_context else "No additional context provided"}
-
-Provide a comprehensive pitch analysis in JSON format with:
-1. **summary**: A concise 2-3 sentence overall assessment of the pitch
-2. **feedback_items**: An array of 5-7 specific, actionable feedback points
-3. **scores**: Scoring metrics (0-100) for:
-   - overall: Overall pitch quality
-   - clarity: Message clarity and structure
-   - confidence: Delivery confidence
-   - engagement: Audience engagement potential
-
-Format your response as valid JSON matching this structure:
-{{
-  "summary": "...",
-  "feedback_items": ["...", "...", ...],
-  "scores": {{
-    "overall": 0-100,
-    "clarity": 0-100,
-    "confidence": 0-100,
-    "engagement": 0-100
-  }}
-}}
-
-Focus on:
-- Problem-solution fit
-- Market opportunity
-- Value proposition
-- Team credibility (if mentioned)
-- Financial projections (if mentioned)
-- Call to action
-- Overall investor appeal
-
-Be constructive, specific, and actionable in your feedback."""
-        
-        # Generate analysis using OpenRouter
-        response_text = await openrouter_service.generate_reasoning_response(
-            message=analysis_prompt,
-            emotion_data=emotion_data,
-            document_context=document_context
+        # Generate critique using our RAG Reasoning service with specialized template
+        logger.info("generating_critique_via_reasoning_service")
+        response_text = await reasoning_service.generate_critique(
+            user_input=request.transcript,
+            session_id=request.session_id
         )
         
+        # Parse JSON results from the AI
+        import json
+        import re
+        try:
+            # Extract JSON from markdown if necessary
+            json_match = re.search(r'(\{[\s\S]*\})', response_text)
+            if json_match:
+                analysis_data = json.loads(json_match.group(1))
+            else:
+                analysis_data = json.loads(response_text)
+        except Exception as e:
+            logger.error("failed_to_parse_analysis_json", error=str(e))
+            # Fallback
+            analysis_data = {
+                "summary": response_text[:300],
+                "feedback_items": ["Detailed analysis could not be parsed as JSON, but the raw feedback is available in the summary."],
+                "scores": {"overall": 70}
+            }
+
         logger.info(
             "analysis_generated",
             response_length=len(response_text)
         )
-        
-        # Parse response (handle both JSON and text responses)
-        import json
-        import re
-        
-        try:
-            # Try to extract JSON from response
-            json_match = re.search(r'\{[\s\S]*\}', response_text)
-            if json_match:
-                analysis_data = json.loads(json_match.group())
-            else:
-                # Fallback to structured text parsing
-                raise ValueError("No JSON found in response")
-                
-        except (json.JSONDecodeError, ValueError) as e:
-            logger.warning("failed_to_parse_json_response", error=str(e))
-            
-            # Fallback: Structure the text response
-            analysis_data = {
-                "summary": response_text[:500] if len(response_text) > 500 else response_text,
-                "feedback_items": [
-                    line.strip()
-                    for line in response_text.split('\n')
-                    if line.strip() and len(line.strip()) > 20
-                ][:7],
-                "scores": {
-                    "overall": 75,
-                    "clarity": 70,
-                    "confidence": 80,
-                    "engagement": 75
-                }
-            }
-        
-        # Ensure all required fields exist
-        if "summary" not in analysis_data:
-            analysis_data["summary"] = "Your pitch shows promise and demonstrates understanding of your market."
-        
-        if "feedback_items" not in analysis_data or not analysis_data["feedback_items"]:
-            analysis_data["feedback_items"] = [
-                "Consider strengthening your problem statement",
-                "Add more specific market size data",
-                "Emphasize your unique value proposition",
-                "Include customer validation examples",
-                "Clarify your business model"
-            ]
-        
-        if "scores" not in analysis_data:
-            analysis_data["scores"] = {
-                "overall": 75,
-                "clarity": 70,
-                "confidence": 80,
-                "engagement": 75
-            }
-        
-        logger.info(
-            "analysis_complete",
-            session_id=request.session_id,
-            feedback_count=len(analysis_data["feedback_items"]),
-            overall_score=analysis_data["scores"].get("overall", 0)
-        )
-        
+
         return AnalyzePitchResponse(
-            summary=analysis_data["summary"],
-            feedback_items=analysis_data["feedback_items"],
-            scores=analysis_data["scores"],
+            summary=analysis_data.get("summary", ""),
+            feedback_items=analysis_data.get("feedback_items", []),
+            scores=analysis_data.get("scores", {}),
             emotion_data=emotion_data
         )
         
     except Exception as e:
+        error_str = str(e).lower()
+        if "quota" in error_str or "rate limit" in error_str or "429" in error_str:
+            logger.error("gemini_quota_exceeded", error=str(e))
+            raise HTTPException(
+                status_code=429,
+                detail="AI service is currently at capacity or quota limit reached. Please wait a moment and try again."
+            )
+            
         logger.error("pitch_analysis_failed", error=str(e))
         raise HTTPException(
             status_code=500,
