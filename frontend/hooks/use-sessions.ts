@@ -13,6 +13,7 @@ export function useSessions() {
   const [currentSession, setCurrentSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   // Normalize user ID to always have user_ prefix
   const getUserId = useCallback(() => {
@@ -22,33 +23,53 @@ export function useSessions() {
 
   /**
    * Load all sessions for the current user
+   * @param silent - If true, don't show loading state (used for background refresh)
    */
-  const loadSessions = useCallback(async () => {
+  const loadSessions = useCallback(async (silent: boolean = false) => {
     const userId = getUserId();
-    console.log('[useSessions] Loading sessions for user:', userId);
     if (!userId) return;
 
-    setLoading(true);
+    // Only show loading on initial load, not on background refresh
+    if (!silent && isInitialLoad) {
+      setLoading(true);
+    }
     setError(null);
 
     try {
       const data = await sessionsAPI.list(userId, 50);
-      console.log('[useSessions] Loaded sessions:', data.length, 'sessions');
       setSessions(data);
+
+      // Mark initial load as complete
+      if (isInitialLoad) {
+        setIsInitialLoad(false);
+      }
     } catch (err: any) {
       console.error('[useSessions] Failed to load sessions:', err);
       setError(err.message || 'Failed to load sessions');
     } finally {
-      setLoading(false);
+      if (!silent && isInitialLoad) {
+        setLoading(false);
+      }
     }
-  }, [getUserId]);
+  }, [getUserId, isInitialLoad]);
 
   // Load sessions on mount and when user changes
   useEffect(() => {
     if (getUserId()) {
-      loadSessions();
+      loadSessions(false); // Initial load with loading state
     }
-  }, [getUserId, loadSessions]);
+  }, [getUserId]); // Remove loadSessions from deps to prevent infinite loop
+
+  // Auto-refresh sessions every 10 seconds for real-time updates (silent, no loading)
+  useEffect(() => {
+    if (!getUserId()) return;
+
+    const interval = setInterval(() => {
+      loadSessions(true); // Silent refresh - no loading state
+    }, 10000); // Refresh every 10 seconds (less aggressive)
+
+    return () => clearInterval(interval);
+  }, [getUserId]);
 
   /**
    * Create a new session
@@ -96,6 +117,12 @@ export function useSessions() {
       analysis?: any;
       summary?: string;
       duration?: number;
+      chat_history?: Array<{
+        role: 'user' | 'assistant' | 'human' | 'ai';
+        content: string;
+        timestamp?: number;
+        emotion?: Record<string, number>;
+      }>;
     }
   ): Promise<Session | null> => {
     const userId = getUserId();

@@ -81,7 +81,5 @@ QA-REPORT.md
 QA-TESTING-GUIDE.md
 open_router_models.txt
 
-*.pid
-backend.pid
 
 

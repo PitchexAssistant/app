@@ -10,8 +10,13 @@ from pydantic import BaseModel
 import json
 import os
 from pathlib import Path
+import structlog
+
+# Import title generator
+from utils.title_generator import TitleGenerator
 
 router = APIRouter()
+logger = structlog.get_logger(__name__)
 
 # Session storage path
 SESSIONS_DIR = Path(__file__).parent.parent.parent / "data" / "sessions"
@@ -45,6 +50,7 @@ class Session(BaseModel):
     summary: Optional[str] = None
     duration: Optional[int] = None  # in seconds
     status: str = "active"  # 'active', 'completed', 'archived'
+    completed_at: Optional[str] = None  # ISO timestamp when session completed
     chat_history: Optional[List[dict]] = None  # [{role: "human/ai", content: "..."}]
 
 
@@ -129,25 +135,109 @@ async def get_session(session_id: str, user_id: str):
 
 @router.patch("/sessions/{session_id}", response_model=Session)
 async def update_session(session_id: str, user_id: str, updates: SessionUpdate):
-    """Update a session"""
+    """Update a session with auto-title generation on first message"""
     sessions = _load_sessions(user_id)
     
     session_index = next((i for i, s in enumerate(sessions) if s["id"] == session_id), None)
     if session_index is None:
         raise HTTPException(status_code=404, detail="Session not found")
     
-    # Update fields
     session = sessions[session_index]
     update_data = updates.dict(exclude_unset=True)
     
+    # Check if chat_history is being updated  
+    if "chat_history" in update_data:
+        new_chat_history = update_data["chat_history"]
+        existing_chat = session.get("chat_history", [])
+        
+        # Check if this update adds a first user message
+        if new_chat_history and len(existing_chat) == 0:
+            # Find first user/human message
+            first_user_msg = None
+            for msg in new_chat_history:
+                if msg.get("role") in ["user", "human"]:
+                    first_user_msg = msg.get("content")
+                    break
+            
+            # Auto-generate title if message found and title is still default
+            if first_user_msg and session.get("title", "").startswith("Live Session"):
+                try:
+                    # Initialize title generator
+                    title_gen = TitleGenerator()
+                    
+                    # Generate title
+                    new_title = await title_gen.generate_from_message(
+                        message=first_user_msg,
+                        mode=session.get("mode", "pitch"),
+                        max_words=5
+                    )
+                    
+                    # Ensure unique title
+                    existing_titles = [s["title"] for s in sessions if s["id"] != session_id]
+                    new_title = title_gen.ensure_unique_title(new_title, existing_titles)
+                    
+                    session["title"] = new_title
+                    logger.info("auto_title_generated", session_id=session_id, title=new_title)
+                    
+                except Exception as e:
+                    logger.error("title_generation_failed", error=str(e))
+                    # Continue with update even if title generation fails
+    
+    # Update all other fields
     for field, value in update_data.items():
         session[field] = value
     
     session["updated_at"] = datetime.now().isoformat()
     
+    sessions[session_index] = session
     _save_sessions(user_id, sessions)
     
     return Session(**session)
+
+
+@router.post("/sessions/{session_id}/complete")
+async def complete_session(session_id: str, user_id: str):
+    """
+    Mark a session as completed.
+    - Sets status = 'completed'
+    - Sets completed_at timestamp
+    - Generates transcript from chat_history if needed
+    """
+    sessions = _load_sessions(user_id)
+    
+    session_index = next((i for i, s in enumerate(sessions) if s["id"] == session_id), None)
+    if session_index is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+    
+    session = sessions[session_index]
+    
+    # Update session status
+    session["status"] = "completed"
+    session["completed_at"] = datetime.now().isoformat()
+    session["updated_at"] = datetime.now().isoformat()
+    
+    # Generate transcript from chat_history if exists but no transcript
+    if session.get("chat_history") and not session.get("transcript"):
+        transcript_lines = []
+        for turn in session["chat_history"]:
+            role = "You" if turn.get("role") in ["user", "human"] else "Marcus Sterling"
+            content = turn.get("content", "")
+            transcript_lines.append(f"{role}: {content}")
+        
+        session["transcript"] = "\n\n".join(transcript_lines)
+        logger.info("transcript_generated", session_id=session_id)
+    
+    # Save updated session
+    sessions[session_index] = session
+    _save_sessions(user_id, sessions)
+    
+    logger.info("session_completed", session_id=session_id)
+    
+    return {
+        "success": True,
+        "session": Session(**session),
+        "message": "Session completed successfully"
+    }
 
 
 @router.delete("/sessions/{session_id}")

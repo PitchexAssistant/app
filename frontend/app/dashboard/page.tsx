@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useRouter, useSearchParams } from "next/navigation"
 import Image from "next/image"
+import { ChatTranscriptView } from "@/components/chat-transcript-view"
 
 export default function Page() {
   const { user, isLoaded } = useUser()
@@ -42,7 +43,9 @@ export default function Page() {
   const [showResults, setShowResults] = useState(false)
   const [resultsData, setResultsData] = useState<any>(null)
   const [showSettings, setShowSettings] = useState(false)
-  const { createSession, currentSession, setCurrentSession } = useSessions()
+  const [activeView, setActiveView] = useState<'dashboard' | 'practice' | 'transcript' | 'results'>('dashboard')
+  const [selectedSessionForView, setSelectedSessionForView] = useState<Session | null>(null)
+  const { createSession, currentSession, setCurrentSession, completeSession } = useSessions()
 
   useEffect(() => {
     setMounted(true)
@@ -90,15 +93,36 @@ export default function Page() {
   }
 
   const handleSelectSession = (session: Session) => {
-    // Load the existing session
-    setCurrentSession(session)
-    setShowPractice(true)
+    console.log('[Dashboard] Session selected:', session.id, 'status:', session.status)
+
+    // Route based on session status
+    if (session.status === 'completed') {
+      // Show chat transcript for completed sessions
+      setSelectedSessionForView(session)
+      setActiveView('transcript')
+    } else {
+      // Show live UI for active sessions (resume)
+      setCurrentSession(session)
+      setActiveView('practice')
+      setShowPractice(true)
+    }
   }
 
   const handleBackToSessions = () => {
     // Clear current session and return to landing page with session list visible
-    setCurrentSession(null);
-    setShowPractice(false);
+    setCurrentSession(null)
+    setSelectedSessionForView(null)
+    setActiveView('dashboard')
+    setShowPractice(false)
+  }
+
+  // Handle session completion - navigate immediately to transcript view
+  const handleSessionComplete = (completedSession: Session) => {
+    console.log('[Dashboard] Session completed:', completedSession.id, 'status:', completedSession.status)
+    setCurrentSession(null)
+    setShowPractice(false)
+    setSelectedSessionForView(completedSession)
+    setActiveView('transcript')
   }
 
   const handleSignOut = async () => {
@@ -220,10 +244,14 @@ export default function Page() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <button className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-zinc-800/50 transition-colors cursor-pointer focus:outline-none">
-                <div className="w-10 h-10 bg-orange-500 rounded-full inline-flex flex-col justify-center items-center">
-                  <div className="text-white text-sm font-semibold font-['Uber_Move']">
-                    {userData.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
-                  </div>
+                <div className="w-10 h-10 bg-orange-500 rounded-full inline-flex flex-col justify-center items-center overflow-hidden">
+                  {userData.avatar ? (
+                    <img src={userData.avatar} alt={userData.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="text-white text-sm font-semibold font-['Uber_Move']">
+                      {userData.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
+                    </div>
+                  )}
                 </div>
                 <ChevronDown className="w-5 h-5 text-zinc-400" />
               </button>
@@ -235,10 +263,14 @@ export default function Page() {
               {/* User Info Header */}
               <div className="px-4 py-3 border-b border-zinc-700">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-orange-500 rounded-full inline-flex flex-col justify-center items-center">
-                    <div className="text-white text-sm font-semibold font-['Uber_Move']">
-                      {userData.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
-                    </div>
+                  <div className="w-10 h-10 bg-orange-500 rounded-full inline-flex flex-col justify-center items-center overflow-hidden">
+                    {userData.avatar ? (
+                      <img src={userData.avatar} alt={userData.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="text-white text-sm font-semibold font-['Uber_Move']">
+                        {userData.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
+                      </div>
+                    )}
                   </div>
                   <div className="flex flex-col gap-0.5 overflow-hidden">
                     <div className="text-zinc-100 text-sm font-bold font-['Uber_Move'] truncate">
@@ -279,15 +311,46 @@ export default function Page() {
         </header>
 
         <div className="flex-1 overflow-y-auto">
-          {showResults ? (
+          {/* View Routing - Only ONE view at a time */}
+          {activeView === 'transcript' && selectedSessionForView ? (
+            /* Chat Transcript View for Completed Sessions */
+            <ChatTranscriptView
+              sessionId={selectedSessionForView.id}
+              chatHistory={selectedSessionForView.chat_history || []}
+              metadata={{
+                title: selectedSessionForView.title,
+                mode: selectedSessionForView.mode,
+                created_at: selectedSessionForView.created_at,
+                completed_at: selectedSessionForView.completed_at
+              }}
+              onBack={handleBackToSessions}
+              onExport={() => {
+                console.log('Export session:', selectedSessionForView.id)
+              }}
+              onShare={() => {
+                console.log('Share session:', selectedSessionForView.id)
+              }}
+              onViewAnalysis={() => {
+                if (selectedSessionForView.analysis) {
+                  setResultsData({
+                    audioBlob: null,
+                    transcript: selectedSessionForView.transcript || '',
+                    analysis: selectedSessionForView.analysis
+                  })
+                  setActiveView('results')
+                  setShowResults(true)
+                }
+              }}
+            />
+          ) : activeView === 'results' && showResults && resultsData ? (
             /* Results Page */
             <ResultsPage
               transcript={resultsData.transcript}
               analysis={resultsData.analysis}
             />
-          ) : showPractice ? (
+          ) : (activeView === 'practice' || showPractice) ? (
+            /* Practice Views */
             selectedMode === 'recorded' ? (
-              /* Recorded Session Component */
               <RecordedSession
                 uploadedFiles={contextFiles}
                 onEndSession={handleEndRecordedSession}
@@ -295,33 +358,25 @@ export default function Page() {
                 sessionId={currentSession?.id || ''}
               />
             ) : (
-              /* AI Pitch Practice Component (Live mode) */
               <PitchPractice
                 uploadedFiles={contextFiles}
                 onBack={handleBackToSessions}
+                onComplete={handleSessionComplete}
                 onDeleteFile={handleDeleteFile}
                 initialSession={currentSession}
               />
             )
           ) : (
-            /* Dashboard Landing Page - Exact Figma Match */
+            /* Dashboard Landing Page - Default View */
             <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-x-hidden overflow-y-hidden">
-              {/* Main Content - Centered */}
               <div className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 gap-6 sm:gap-8">
-                {/* Orb - Exact from Figma with gradient overlay */}
                 <div
                   className="relative w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[220px] lg:h-[220px] rounded-full overflow-hidden flex-shrink-0"
-                  style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
-                  } as React.CSSProperties}
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
                 >
-                  {/* Base gradient image with rotation and increased opacity */}
                   <div
                     className="absolute inset-0"
-                    style={{
-                      animation: 'orb-rotate 20s linear infinite',
-                      opacity: 0.7
-                    } as React.CSSProperties}
+                    style={{ animation: 'orb-rotate 20s linear infinite', opacity: 0.7 }}
                   >
                     <Image
                       src="/mas-circle.png"
@@ -332,8 +387,6 @@ export default function Page() {
                       priority
                     />
                   </div>
-
-                  {/* Animated gradient overlay - matching Figma exactly */}
                   <div
                     className="absolute inset-0 rounded-full"
                     style={{
@@ -341,10 +394,8 @@ export default function Page() {
                       backgroundSize: '200% 200%',
                       animation: 'gradient-shift 8s ease infinite',
                       mixBlendMode: 'screen' as 'screen'
-                    } as React.CSSProperties}
-                  ></div>
-
-                  {/* Outer glow for depth */}
+                    }}
+                  />
                   <div
                     className="absolute inset-[-10px] rounded-full"
                     style={{
@@ -352,11 +403,9 @@ export default function Page() {
                       filter: 'blur(20px)',
                       zIndex: -1,
                       pointerEvents: 'none' as 'none'
-                    } as React.CSSProperties}
-                  ></div>
+                    }}
+                  />
                 </div>
-
-                {/* Text Content - Exact Figma Typography */}
                 <div className="max-w-[90%] sm:max-w-[546px] text-center flex flex-col gap-2 sm:gap-3">
                   <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-[#f0f0f0] leading-tight lg:leading-[44px] tracking-tight lg:tracking-[-0.72px]">
                     Turn Ideas into Winning Pitches
@@ -365,8 +414,6 @@ export default function Page() {
                     Collaborate, refine, and present your story with confidence. Pitchex helps you craft and deliver powerful pitches effortlessly.
                   </p>
                 </div>
-
-                {/* CTA Button - Exact Figma Design */}
                 <button
                   onClick={handleStartPitching}
                   className="w-full max-w-[260px] sm:w-[260px] h-[44px] bg-[#f0f0f0] text-[#0d0d0f] rounded-[12px] font-bold text-sm sm:text-base leading-tight hover:bg-white transition-colors border border-[#0d0d0f] flex items-center justify-center"

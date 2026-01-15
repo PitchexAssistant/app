@@ -275,7 +275,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
 
                 <CollapsibleContent>
                   <div className="self-stretch flex flex-col justify-start items-start gap-1">
-                    {loading ? (
+                    {loading && sessions.length === 0 ? (
                       <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
                         <div className="text-neutral-500 text-sm font-['Inter']">Loading...</div>
                       </div>

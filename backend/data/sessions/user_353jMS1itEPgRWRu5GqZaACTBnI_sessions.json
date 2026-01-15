@@ -1467,5 +1467,101 @@
     "summary": null,
     "duration": null,
     "status": "active"
+  },
+  {
+    "id": "session_112_1768460430",
+    "title": "Live Session - 1/15/2026, 12:00:30 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:00:30.536337",
+    "updated_at": "2026-01-15T12:01:48.026344",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 4,
+    "status": "completed",
+    "completed_at": "2026-01-15T12:01:48.026326"
+  },
+  {
+    "id": "session_113_1768460939",
+    "title": "Live Session - 1/15/2026, 12:08:59 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:08:59.273598",
+    "updated_at": "2026-01-15T12:14:40.892793",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 269,
+    "status": "completed",
+    "completed_at": "2026-01-15T12:14:40.892759"
+  },
+  {
+    "id": "session_114_1768461745",
+    "title": "Live Session - 1/15/2026, 12:22:25 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:22:25.313556",
+    "updated_at": "2026-01-15T12:23:22.817670",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 5,
+    "status": "completed",
+    "completed_at": "2026-01-15T12:23:22.817651"
+  },
+  {
+    "id": "session_115_1768462680",
+    "title": "Live Session - 1/15/2026, 12:38:00 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:38:00.801737",
+    "updated_at": "2026-01-15T12:39:27.820110",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 82,
+    "status": "completed",
+    "completed_at": "2026-01-15T12:39:27.820089"
+  },
+  {
+    "id": "session_116_1768463234",
+    "title": "Live Session - 1/15/2026, 12:47:14 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:47:14.734349",
+    "updated_at": "2026-01-15T12:48:19.738846",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 3,
+    "status": "completed",
+    "completed_at": "2026-01-15T12:48:19.738825"
+  },
+  {
+    "id": "session_117_1768463450",
+    "title": "Live Session: High Marks Today Going Business",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T12:50:50.525645",
+    "updated_at": "2026-01-15T12:51:48.382453",
+    "transcript": "You: so high marks how are you so today I am going business idea which is shoplift Lee it is actually you can say a direct to consumer a model I am using right now\nMarcus Sterling: Thanks for the overview. For a Shopify-based DTC, I need to see strong unit economics and a clear defensible moat. What are your projected CAC/LTV numbers, and how do you plan to achieve that defensibility beyond product curation? Please send over your full pitch deck.",
+    "analysis": null,
+    "summary": "Session completed with 2 messages",
+    "duration": 56,
+    "status": "completed",
+    "chat_history": [
+      {
+        "role": "human",
+        "content": "so high marks how are you so today I am going business idea which is shoplift Lee it is actually you can say a direct to consumer a model I am using right now",
+        "timestamp": 1768463508
+      },
+      {
+        "role": "ai",
+        "content": "Thanks for the overview. For a Shopify-based DTC, I need to see strong unit economics and a clear defensible moat. What are your projected CAC/LTV numbers, and how do you plan to achieve that defensibility beyond product curation? Please send over your full pitch deck.",
+        "timestamp": 1768463508
+      }
+    ],
+    "completed_at": "2026-01-15T12:51:48.382435"
   }
 ]
