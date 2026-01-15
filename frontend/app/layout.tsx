@@ -1,31 +1,14 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import { ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
-import { Geist } from "next/font/google";
-import localFont from "next/font/local"; // 1. Import localFont
+import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 
-// 2. Configure the default sans-serif font (Geist)
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Configure Funnel Display as the primary font
+const funnelDisplay = Funnel_Display({
+  variable: "--font-funnel-display",
   subsets: ["latin"],
-});
-
-// 3. Configure the local heading font (Uber Move)
-const uberMove = localFont({
-  src: [
-    {
-      path: './fonts/UberMoveMedium.otf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './fonts/UberMoveBold.otf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: "--font-uber-move", // Create a CSS variable for it
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -46,8 +29,7 @@ export default function RootLayout({
       signUpFallbackRedirectUrl="/dashboard"
     >
       <html lang="en" className="dark">
-        {/* 4. Combine the font variables in the body className */}
-        <body className={`${geistSans.variable} ${uberMove.variable} font-sans`} suppressHydrationWarning>
+        <body className={`${funnelDisplay.variable} font-sans`} suppressHydrationWarning>
           <GoogleOneTap />
           {children}
         </body>
