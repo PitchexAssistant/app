@@ -93,18 +93,50 @@ export default function Page() {
   }
 
   const handleSelectSession = (session: Session) => {
-    console.log('[Dashboard] Session selected:', session.id, 'status:', session.status)
+    console.log('[Dashboard] Session selected:', session.id, 'status:', session.status, 'mode:', session.mode)
 
-    // Route based on session status
+    // Route based on session status and mode
     if (session.status === 'completed') {
-      // Show chat transcript for completed sessions
-      setSelectedSessionForView(session)
-      setActiveView('transcript')
+      // For completed recorded sessions with analysis, show ResultsPage
+      if (session.mode === 'recorded' && session.analysis) {
+        console.log('[Dashboard] Routing to results page for recorded session')
+        setResultsData({
+          audioBlob: null,
+          transcript: session.transcript || '',
+          analysis: session.analysis
+        })
+        setActiveView('results')
+        setShowResults(true)
+      } else {
+        // Show chat transcript for completed live sessions
+        console.log('[Dashboard] Routing to transcript for live session')
+        setSelectedSessionForView(session)
+        setActiveView('transcript')
+      }
     } else {
-      // Show live UI for active sessions (resume)
-      setCurrentSession(session)
-      setActiveView('practice')
-      setShowPractice(true)
+      // For active sessions, check mode
+      if (session.mode === 'recorded') {
+        // Don't resume recording - show message or redirect to results if analysis exists
+        if (session.analysis) {
+          setResultsData({
+            audioBlob: null,
+            transcript: session.transcript || '',
+            analysis: session.analysis
+          })
+          setActiveView('results')
+          setShowResults(true)
+        } else {
+          // Session was abandoned before processing - just show dashboard
+          console.log('[Dashboard] Recorded session has no analysis, showing dashboard')
+          setActiveView('dashboard')
+        }
+      } else {
+        // Show live UI for active live sessions (resume)
+        setCurrentSession(session)
+        setSelectedMode('live')
+        setActiveView('practice')
+        setShowPractice(true)
+      }
     }
   }
 
@@ -225,6 +257,7 @@ export default function Page() {
       analysis
     })
     setShowResults(true)
+    setActiveView('results')  // Navigate to results view
   }
 
   return (
@@ -323,6 +356,7 @@ export default function Page() {
                 created_at: selectedSessionForView.created_at,
                 completed_at: selectedSessionForView.completed_at
               }}
+              userAvatar={userData.avatar}
               onBack={handleBackToSessions}
               onExport={() => {
                 console.log('Export session:', selectedSessionForView.id)
@@ -356,6 +390,7 @@ export default function Page() {
                 onEndSession={handleEndRecordedSession}
                 onShowResults={handleShowResults}
                 sessionId={currentSession?.id || ''}
+                userId={user?.id || ''}
               />
             ) : (
               <PitchPractice

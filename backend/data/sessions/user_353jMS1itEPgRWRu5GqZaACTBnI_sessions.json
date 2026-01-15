@@ -1563,5 +1563,197 @@
       }
     ],
     "completed_at": "2026-01-15T12:51:48.382435"
+  },
+  {
+    "id": "session_118_1768473595",
+    "title": "Recorded Session - 1/15/2026, 3:39:55 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T15:39:55.858233",
+    "updated_at": "2026-01-15T15:39:55.858247",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_119_1768475004",
+    "title": "Live Session - 1/15/2026, 4:03:24 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:03:24.506538",
+    "updated_at": "2026-01-15T16:03:24.506545",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_120_1768475009",
+    "title": "Live Session - 1/15/2026, 4:03:29 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:03:29.729886",
+    "updated_at": "2026-01-15T16:03:29.729895",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_121_1768475021",
+    "title": "Live Session: Practice - Jan 15, 04:03 PM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:03:41.684984",
+    "updated_at": "2026-01-15T16:04:16.779853",
+    "transcript": "You: how are you\nMarcus Sterling: I'm well, thank you. Let's get straight to it. Given your gross margin, what's your current Customer Acquisition Cost (CAC), and what's the specific market you're targeting for defensibility?",
+    "analysis": null,
+    "summary": "Session completed with 2 messages",
+    "duration": 30,
+    "status": "completed",
+    "chat_history": [
+      {
+        "role": "human",
+        "content": "how are you",
+        "timestamp": 1768475052
+      },
+      {
+        "role": "ai",
+        "content": "I'm well, thank you. Let's get straight to it. Given your gross margin, what's your current Customer Acquisition Cost (CAC), and what's the specific market you're targeting for defensibility?",
+        "timestamp": 1768475052
+      }
+    ],
+    "completed_at": "2026-01-15T16:04:16.779833"
+  },
+  {
+    "id": "session_122_1768475081",
+    "title": "Live Session: Uploaded Business Proposal Think Ask",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:04:41.376296",
+    "updated_at": "2026-01-15T16:05:42.451051",
+    "transcript": "You: so I have uploaded the business proposal can you think ask me the question related to the IT\nMarcus Sterling: Thanks for the proposal. On your AI roadmap: how will you build and sustain that core IP for a defensible moat, and what are the projected development costs impacting your gross margin and LTV?",
+    "analysis": null,
+    "summary": "Session completed with 2 messages",
+    "duration": 55,
+    "status": "completed",
+    "chat_history": [
+      {
+        "role": "human",
+        "content": "so I have uploaded the business proposal can you think ask me the question related to the IT",
+        "timestamp": 1768475138
+      },
+      {
+        "role": "ai",
+        "content": "Thanks for the proposal. On your AI roadmap: how will you build and sustain that core IP for a defensible moat, and what are the projected development costs impacting your gross margin and LTV?",
+        "timestamp": 1768475138
+      }
+    ],
+    "completed_at": "2026-01-15T16:05:42.451030"
+  },
+  {
+    "id": "session_123_1768476227",
+    "title": "Recorded Session - 1/15/2026, 4:23:47 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:23:47.502540",
+    "updated_at": "2026-01-15T16:23:47.502563",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_124_1768478290",
+    "title": "Recorded Session - 1/15/2026, 4:58:10 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T16:58:10.697916",
+    "updated_at": "2026-01-15T16:58:10.697928",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_125_1768479323",
+    "title": "Recorded Session - 1/15/2026, 5:15:23 PM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T17:15:23.019861",
+    "updated_at": "2026-01-15T17:15:23.019875",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
+  },
+  {
+    "id": "session_126_1768480025",
+    "title": "Recorded Session: Everyone World Shifting Towards...",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T17:27:05.714944",
+    "updated_at": "2026-01-15T17:28:14.688873",
+    "transcript": "everyone we all know the world is shifting towards sustainability but let's be honest actually living a sustainable lifestyle is difficult as a consumer if you want to go eco friendly you face three major barriers products are often significantly overpriced they are hard to find inverse of scattered across dozens of random websites it creates massive decision fatigue and a lack of trust you want to buy green but you don't know who is actually verified and who is just greenwashing the demand is there this is a 150 billion dollar global market but the buying experience is Broken Angel Broking E-Commerce platform that solve this by offering a single trusted source for verified products we are not created Marketplace we target urban millennials And Gen Z consultancy cities in Pakistan who values sustainability but demand convenience we offer a transparently source the range of products from reusable bamboo kitchenwares and sustainable fashion accessories we operate on a direct to consumer DTC model powered by shopify which allows us to scale rapidly with low overhead are unit economics are already showing strong potential or average order value 35 dollars we operate with the healthy gross margin of approximately 40% most importantly our customer acquisition cost is just $7 and 50 Cents against the lifetime value of 856 is driven by a mix of revenue streams which includes direct product sales subscription based Eco kids to drive revenue and bundle packages we have a clear path to profitability in your one project 420000 in revenue with net profit scaling to 2.5 million dollars in revenue with the net profit of 800000 within just 14 18 months a road map includes expanding beyond Pakistan into the middle east and South Asia personalisation to further increase growth we are seeking 250000 in seed funding in exchange for 15% equity value at 1.67 million to become sustainability we have the unit economics chapter 1 by you to join us in making sustainable living accessible affordable installation thank you",
+    "analysis": {
+      "summary": "This pitch attempts to cover essential components, including market opportunity, problem, solution, and financials. However, its overall impact is severely undermined by pervasive grammatical errors, awkward phrasing, and an inferred rushed delivery. The lack of linguistic precision and a completely incoherent closing statement significantly detract from professionalism and persuasiveness.",
+      "feedback_items": [
+        "**Tone & Delivery:** The pitch reads as rushed and lacks the confident, modulated tone necessary to convey conviction. Grammatical stumbles and unclear articulation (e.g., 'Angel Broking E-Commerce platform,' 'consultancy cities') suggest a lack of polish and rehearsal, making it difficult for the audience to fully grasp the message.",
+        "**Confidence Level:** While specific numbers are cited, the frequent grammatical errors and linguistic inconsistencies ('we are not created Marketplace' contradicts the solution's essence) erode perceived confidence. The closing is particularly weak and disjointed, indicating a severe lack of preparedness for a critical part of the pitch.",
+        "**Grammar & Vocabulary:** This is a major area for improvement. The transcript is riddled with significant grammatical mistakes and awkward constructions (e.g., 'inverse of scattered,' 'are unit economics,' 'in your one project,' 'to become sustainability we have the unit economics chapter 1 by you to join us in making sustainable living accessible affordable installation'). These errors impede understanding and professionalism, despite the appropriate use of business-specific vocabulary.",
+        "**Logic & Structure:** The pitch generally follows a standard structure (problem, solution, market, financials, ask). However, inconsistencies (e.g., the 'not created Marketplace' statement versus the 'curated sustainability' goal) and the linguistic breakdown disrupt the logical flow. The financial projections, while present, are delivered in a convoluted manner that makes them harder to process.",
+        "**Presentation Presence:** The cumulative effect of grammatical errors, confusing phrases, and an inferred rushed delivery creates a presence that struggles to be authoritative or engaging. The audience would likely find it challenging to connect with the speaker or fully trust the information due to the persistent linguistic hurdles."
+      ],
+      "scores": {
+        "overall": 38,
+        "clarity": 30,
+        "confidence": 35,
+        "engagement": 25,
+        "persuasiveness": 30,
+        "structure": 50,
+        "delivery": 30
+      },
+      "emotion_data": {
+        "dominant_emotion": "neutral",
+        "emotions": {
+          "neutral": 0.7471,
+          "surprise": 0.1347,
+          "sadness": 0.0501,
+          "anger": 0.0383,
+          "fear": 0.015,
+          "disgust": 0.012,
+          "joy": 0.0028
+        },
+        "confidence": 0.7471,
+        "metrics": {
+          "nervousness_score": 0.0401,
+          "nervousness_level": "low",
+          "enthusiasm_score": 0.0432,
+          "enthusiasm_level": "low",
+          "confidence_score": 0.3468,
+          "confidence_level": "medium",
+          "emotional_stability": 0.6873
+        },
+        "timestamp": "2026-01-15T12:27:57.073375",
+        "text_length": 2030
+      }
+    },
+    "summary": null,
+    "duration": null,
+    "status": "completed",
+    "chat_history": [
+      {
+        "role": "human",
+        "content": "everyone we all know the world is shifting towards sustainability but let's be honest actually living a sustainable lifestyle is difficult as a consumer if you want to go eco friendly you face three major barriers products are often significantly overpriced they are hard to find inverse of scattered across dozens of random websites it creates massive decision fatigue and a lack of trust you want to buy green but you don't know who is actually verified and who is just greenwashing the demand is there this is a 150 billion dollar global market but the buying experience is Broken Angel Broking E-Commerce platform that solve this by offering a single trusted source for verified products we are not created Marketplace we target urban millennials And Gen Z consultancy cities in Pakistan who values sustainability but demand convenience we offer a transparently source the range of products from reusable bamboo kitchenwares and sustainable fashion accessories we operate on a direct to consumer DTC model powered by shopify which allows us to scale rapidly with low overhead are unit economics are already showing strong potential or average order value 35 dollars we operate with the healthy gross margin of approximately 40% most importantly our customer acquisition cost is just $7 and 50 Cents against the lifetime value of 856 is driven by a mix of revenue streams which includes direct product sales subscription based Eco kids to drive revenue and bundle packages we have a clear path to profitability in your one project 420000 in revenue with net profit scaling to 2.5 million dollars in revenue with the net profit of 800000 within just 14 18 months a road map includes expanding beyond Pakistan into the middle east and South Asia personalisation to further increase growth we are seeking 250000 in seed funding in exchange for 15% equity value at 1.67 million to become sustainability we have the unit economics chapter 1 by you to join us in making sustainable living accessible affordable installation thank you"
+      }
+    ],
+    "completed_at": "2026-01-15T17:28:14.688859"
   }
 ]

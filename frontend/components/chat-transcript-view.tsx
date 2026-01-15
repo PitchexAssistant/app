@@ -36,6 +36,7 @@ interface ChatTranscriptViewProps {
     onExport?: () => void
     onShare?: () => void
     onViewAnalysis?: () => void
+    userAvatar?: string  // User's profile picture URL
 }
 
 export function ChatTranscriptView({
@@ -45,7 +46,8 @@ export function ChatTranscriptView({
     onBack,
     onExport,
     onShare,
-    onViewAnalysis
+    onViewAnalysis,
+    userAvatar
 }: ChatTranscriptViewProps) {
     const duration = calculateDuration(metadata.created_at, metadata.completed_at)
     const formattedDate = formatDate(metadata.created_at)
@@ -134,6 +136,7 @@ export function ChatTranscriptView({
                             key={index}
                             turn={turn}
                             isUser={turn.role === 'user' || turn.role === 'human'}
+                            userAvatar={userAvatar}
                         />
                     ))
                 ) : (
@@ -151,9 +154,10 @@ export function ChatTranscriptView({
 interface ChatMessageProps {
     turn: ConversationTurn
     isUser: boolean
+    userAvatar?: string
 }
 
-function ChatMessage({ turn, isUser }: ChatMessageProps) {
+function ChatMessage({ turn, isUser, userAvatar }: ChatMessageProps) {
     const hasEmotions = turn.emotion && (
         (turn.emotion.confidence && turn.emotion.confidence > 0.3) ||
         (turn.emotion.joy && turn.emotion.joy > 0.3) ||
@@ -166,15 +170,19 @@ function ChatMessage({ turn, isUser }: ChatMessageProps) {
             {/* Avatar */}
             <div
                 className={`
-          w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center flex-shrink-0
+          w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden
           ${isUser ? 'bg-[#ff6b00]' : 'bg-[#262626]'}
         `}
             >
                 {isUser ? (
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                        <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" />
-                    </svg>
+                    userAvatar ? (
+                        <img src={userAvatar} alt="You" className="w-full h-full object-cover" />
+                    ) : (
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                            <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" />
+                        </svg>
+                    )
                 ) : (
                     <span className="text-white text-xs sm:text-sm font-bold">M</span>
                 )}

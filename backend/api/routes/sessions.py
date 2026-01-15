@@ -35,6 +35,7 @@ class SessionUpdate(BaseModel):
     analysis: Optional[dict] = None
     summary: Optional[str] = None
     duration: Optional[int] = None
+    status: Optional[str] = None  # 'active', 'completed', 'archived'
     chat_history: Optional[List[dict]] = None  # Conversation memory for session resume
 
 
@@ -159,16 +160,29 @@ async def update_session(session_id: str, user_id: str, updates: SessionUpdate):
                     first_user_msg = msg.get("content")
                     break
             
+            # Check if title is still default (Live Session or Recorded Session with timestamp)
+            current_title = session.get("title", "")
+            is_default_title = (
+                current_title.startswith("Live Session") or 
+                current_title.startswith("Recorded Session") or
+                current_title.startswith("New Session")
+            )
+            
             # Auto-generate title if message found and title is still default
-            if first_user_msg and session.get("title", "").startswith("Live Session"):
+            if first_user_msg and is_default_title:
                 try:
                     # Initialize title generator
                     title_gen = TitleGenerator()
                     
+                    # Determine session type from mode
+                    session_mode = session.get("mode", "pitch")
+                    session_type = "recorded" if session_mode == "recorded" else "live"
+                    
                     # Generate title
                     new_title = await title_gen.generate_from_message(
                         message=first_user_msg,
-                        mode=session.get("mode", "pitch"),
+                        mode=session_mode,
+                        session_type=session_type,
                         max_words=5
                     )
                     

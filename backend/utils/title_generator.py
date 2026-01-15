@@ -43,6 +43,7 @@ class TitleGenerator:
         self, 
         message: str,
         mode: str = "pitch",
+        session_type: str = "live",  # "live" or "recorded"
         max_words: int = 5
     ) -> str:
         """
@@ -51,35 +52,39 @@ class TitleGenerator:
         Args:
             message: First user message
             mode: Session mode (pitch, qa, negotiation)
+            session_type: Type of session ("live" or "recorded")
             max_words: Maximum words in title (default: 5)
             
         Returns:
             Generated title (e.g., "Live Session: SaaS product market")
         """
+        # Determine prefix based on session type
+        prefix = "Recorded Session" if session_type == "recorded" else "Live Session"
+        
         try:
             # Clean message
             cleaned = self._clean_message(message)
             
             if len(cleaned) < 10:
                 # Too short, use fallback
-                return self._fallback_title(mode)
+                return self._fallback_title(mode, prefix)
             
             # Try LLM extraction if service available
             if self.gemini_service:
                 try:
                     title_keywords = await self._extract_keywords_llm(cleaned, max_words)
                     if title_keywords:
-                        final_title = f"Live Session: {title_keywords}"
-                        return self._sanitize_title(final_title)
+                        final_title = f"{prefix}: {title_keywords}"
+                        return self._sanitize_title(final_title, prefix)
                 except Exception as e:
                     logger.warning(f"LLM title extraction failed: {e}")
             
             # Fallback to rule-based extraction
-            return self._fallback_title_from_text(cleaned, max_words)
+            return self._fallback_title_from_text(cleaned, max_words, prefix)
                 
         except Exception as e:
             logger.error(f"Title generation failed: {e}")
-            return self._fallback_title(mode)
+            return self._fallback_title(mode, prefix)
     
     async def _extract_keywords_llm(self, text: str, max_words: int) -> Optional[str]:
         """Use Gemini to extract key topics."""
@@ -141,7 +146,7 @@ Keywords:"""
         
         return cleaned
     
-    def _fallback_title_from_text(self, text: str, max_words: int) -> str:
+    def _fallback_title_from_text(self, text: str, max_words: int, prefix: str = "Live Session") -> str:
         """Rule-based keyword extraction if LLM fails."""
         words = text.split()
         keywords = []
@@ -159,12 +164,12 @@ Keywords:"""
                 keywords.append(clean_word.capitalize())
         
         if keywords:
-            title = f"Live Session: {' '.join(keywords)}"
-            return self._sanitize_title(title)
+            title = f"{prefix}: {' '.join(keywords)}"
+            return self._sanitize_title(title, prefix)
         else:
-            return self._fallback_title("pitch")
+            return self._fallback_title("pitch", prefix)
     
-    def _fallback_title(self, mode: str) -> str:
+    def _fallback_title(self, mode: str, prefix: str = "Live Session") -> str:
         """Final fallback with timestamp."""
         time_str = datetime.now().strftime("%b %d, %I:%M %p")
         mode_map = {
@@ -173,15 +178,15 @@ Keywords:"""
             "negotiation": "Negotiation Practice"
         }
         mode_name = mode_map.get(mode, "Practice")
-        return f"Live Session: {mode_name} - {time_str}"
+        return f"{prefix}: {mode_name} - {time_str}"
     
-    def _sanitize_title(self, title: str) -> str:
+    def _sanitize_title(self, title: str, prefix: str = "Live Session") -> str:
         """Remove inappropriate content, special chars, and limit length."""
         # Check for profanity
         lower_title = title.lower()
         for word in self.PROFANITY_LIST:
             if word in lower_title:
-                return "Live Session: Practice"
+                return f"{prefix}: Practice"
         
         # Remove excessive special characters (keep letters, numbers, spaces, hyphens, colons)
         title = re.sub(r'[^\w\s:-]', '', title)
@@ -194,6 +199,7 @@ Keywords:"""
             title = title[:self.MAX_TITLE_LENGTH].rsplit(' ', 1)[0] + "..."
         
         return title
+    
     
     def ensure_unique_title(self, title: str, existing_titles: list) -> str:
         """Append (2), (3) etc if title exists."""
