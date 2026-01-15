@@ -39,7 +39,7 @@ function MetricBar({ label, score, index, isHovered, onHover }: MetricBarProps) 
 
     return (
         <div
-            className="flex flex-col items-center gap-2 cursor-pointer flex-1 min-w-0"
+            className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer flex-1 min-w-[40px] max-w-[60px]"
             onMouseEnter={() => onHover(index)}
             onMouseLeave={() => onHover(null)}
         >
@@ -52,7 +52,7 @@ function MetricBar({ label, score, index, isHovered, onHover }: MetricBarProps) 
                     scale: isHovered ? 1.1 : 1
                 }}
                 className={`
-                    px-2 py-1 rounded-lg text-xs font-bold
+                    px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] sm:text-xs font-bold
                     ${isHovered ? 'bg-[#ff6b00] text-white' : 'bg-[#262626] text-[#f0f0f0]'}
                     transition-colors duration-200
                 `}
@@ -62,9 +62,9 @@ function MetricBar({ label, score, index, isHovered, onHover }: MetricBarProps) 
 
             {/* Bar container */}
             <div
-                className="relative w-8 rounded-lg overflow-hidden"
+                className="relative w-6 sm:w-8 lg:w-10 rounded-lg overflow-hidden"
                 style={{
-                    height: maxHeight,
+                    height: Math.min(maxHeight, 160),
                     backgroundColor: 'rgba(38, 38, 38, 0.8)'
                 }}
             >
@@ -92,9 +92,9 @@ function MetricBar({ label, score, index, isHovered, onHover }: MetricBarProps) 
             <motion.span
                 animate={{
                     color: isHovered ? '#ff6b00' : '#9e9e9e',
-                    scale: isHovered ? 1.1 : 1
+                    scale: isHovered ? 1.05 : 1
                 }}
-                className={`text-[10px] font-medium text-center ${isHovered ? 'whitespace-nowrap z-10 bg-[#171717] px-1 rounded' : 'truncate w-full'}`}
+                className={`text-[9px] sm:text-[10px] font-medium text-center leading-tight ${isHovered ? 'whitespace-nowrap z-10 bg-[#171717] px-1 rounded' : 'truncate w-full'}`}
             >
                 {label}
             </motion.span>
@@ -115,9 +115,9 @@ function CircularProgress({ score, label }: { score: number; label: string }) {
     }
 
     return (
-        <div className="flex flex-col items-center gap-1">
-            <div className="relative w-20 h-20">
-                <svg className="w-20 h-20 transform -rotate-90">
+        <div className="flex flex-col items-center gap-1 flex-shrink-0">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                <svg className="w-full h-full transform -rotate-90" viewBox="0 0 80 80">
                     {/* Background circle */}
                     <circle
                         cx="40"
@@ -151,13 +151,13 @@ function CircularProgress({ score, label }: { score: number; label: string }) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5 }}
-                        className="text-lg font-bold text-[#f0f0f0]"
+                        className="text-base sm:text-lg font-bold text-[#f0f0f0]"
                     >
                         {score}%
                     </motion.span>
                 </div>
             </div>
-            <span className="text-xs text-[#9e9e9e]">{label}</span>
+            <span className="text-[10px] sm:text-xs text-[#9e9e9e] text-center">{label}</span>
         </div>
     )
 }
@@ -197,10 +197,10 @@ export function PerformanceRadarChart({ data }: PerformanceRadarChartProps) {
                     Hover over bars for details
                 </CardDescription>
             </CardHeader>
-            <CardContent className="pb-4">
+            <CardContent className="pb-3 sm:pb-4">
                 {/* Bar Chart */}
-                <div className="bg-[#171717] rounded-xl p-4 mb-4 overflow-hidden">
-                    <div className="flex justify-between items-end gap-1">
+                <div className="bg-[#171717] rounded-xl p-2 sm:p-3 lg:p-4 mb-3 sm:mb-4 overflow-x-auto overflow-y-hidden">
+                    <div className="flex justify-between items-end gap-1 min-w-[280px]">
                         {metrics.map((metric, index) => (
                             <MetricBar
                                 key={metric.key}
@@ -215,7 +215,7 @@ export function PerformanceRadarChart({ data }: PerformanceRadarChartProps) {
                 </div>
 
                 {/* Circular Progress Summary */}
-                <div className="flex justify-around items-center bg-[#171717] rounded-xl p-4">
+                <div className="flex flex-wrap justify-center sm:justify-around items-center gap-4 sm:gap-6 bg-[#171717] rounded-xl p-3 sm:p-4 overflow-hidden">
                     <CircularProgress score={average} label="Average" />
                     <CircularProgress score={highest} label="Highest" />
                     <CircularProgress score={lowest} label="Lowest" />

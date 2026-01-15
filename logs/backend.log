@@ -5427,3 +5427,1074 @@ INFO:     127.0.0.1:42700 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42332 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42334 - "GET /api/v1/health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42346 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [194545] using WatchFiles
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis, documents, livekit_token, live_pitch
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/chat.py", line 18, in <module>
+    from services.context_service import get_context_service
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/context_service.py", line 25, in <module>
+    from Reasoning import get_reasoning_instance
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 19, in <module>
+    class Reasoning:
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 126, in Reasoning
+    def ingest_documents(self, documents: List[Document]):
+                                               ^^^^^^^^
+NameError: name 'Document' is not defined
+INFO:     Stopping reloader process [194545]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [195372] using WatchFiles
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 7, in <module>
+    from api.routes import stt, llm, emotion, chat, health, live, sessions, analysis, documents, livekit_token, live_pitch
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/api/routes/chat.py", line 18, in <module>
+    from services.context_service import get_context_service
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/services/context_service.py", line 25, in <module>
+    from Reasoning import get_reasoning_instance
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 19, in <module>
+    class Reasoning:
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 126, in Reasoning
+    def ingest_documents(self, documents: List[Document]):
+                                               ^^^^^^^^
+NameError: name 'Document' is not defined
+INFO:     Stopping reloader process [195372]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [196546] using WatchFiles
+INFO:     Started server process [196559]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T08:52:02.594363Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T08:52:02.594469Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T08:52:03.849651Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T08:52:03.849819Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T08:52:03.849977Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T08:52:03.850051Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T08:52:03.850110Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T08:52:03.856632Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T08:52:03.856761Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T08:52:03.856825Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T08:52:03.856874Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"error": "Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.", "event": "service_initialization_failed", "timestamp": "2026-01-14T08:52:03.904652Z", "level": "error"}
+ERROR:    Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/langchain_community/embeddings/huggingface.py", line 84, in __init__
+    import sentence_transformers
+ModuleNotFoundError: No module named 'sentence_transformers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 50, in lifespan
+    reasoning_service = get_reasoning_instance()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 272, in get_reasoning_instance
+    _reasoning_instance = Reasoning()
+                          ^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 36, in __init__
+    self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/langchain_core/_api/deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/langchain_community/embeddings/huggingface.py", line 87, in __init__
+    raise ImportError(
+ImportError: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+
+ERROR:    Application startup failed. Exiting.
+INFO:     Stopping reloader process [196546]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [197754] using WatchFiles
+INFO:     Started server process [197767]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T08:55:53.293899Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T08:55:53.294056Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T08:55:54.473309Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T08:55:54.473422Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T08:55:54.473636Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T08:55:54.473771Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T08:55:54.473846Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T08:55:54.479962Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T08:55:54.480083Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T08:55:54.480164Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T08:55:54.480259Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"error": "1 validation error for TavilySearchAPIWrapper\n  Value error, Did not find tavily_api_key, please add an environment variable `TAVILY_API_KEY` which contains it, or pass `tavily_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.9/v/value_error", "event": "service_initialization_failed", "timestamp": "2026-01-14T08:56:01.712454Z", "level": "error"}
+ERROR:    Traceback (most recent call last):
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/main.py", line 50, in lifespan
+    reasoning_service = get_reasoning_instance()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 272, in get_reasoning_instance
+    _reasoning_instance = Reasoning()
+                          ^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py", line 55, in __init__
+    self.search_tool = TavilySearchResults(max_results = 3,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/langchain_core/tools/base.py", line 442, in __init__
+    super().__init__(**kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/langchain_core/load/serializable.py", line 130, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/haseeb-raza/Desktop/Pitchex/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TavilySearchAPIWrapper
+  Value error, Did not find tavily_api_key, please add an environment variable `TAVILY_API_KEY` which contains it, or pass `tavily_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/value_error
+
+ERROR:    Application startup failed. Exiting.
+INFO:     Stopping reloader process [197754]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [198543] using WatchFiles
+INFO:     Started server process [198556]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T09:00:03.477470Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T09:00:03.477630Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T09:00:10.179302Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T09:00:10.179431Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T09:00:10.179623Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T09:00:10.179717Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T09:00:10.179782Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:00:10.185879Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:00:10.186010Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T09:00:10.186065Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T09:00:10.186100Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T09:00:15.414769Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T09:00:15.419804Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T09:00:15.419934Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T09:00:19.886530Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T09:00:19.886614Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60338 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45214 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48712 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+{"event": "shutting_down_application", "timestamp": "2026-01-14T09:01:20.918058Z", "level": "info"}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [198556]
+INFO:     Stopping reloader process [198543]
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [199127] using WatchFiles
+INFO:     Started server process [199142]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T09:01:37.249393Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T09:01:37.249512Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T09:01:38.344181Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T09:01:38.344327Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T09:01:38.344495Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T09:01:38.344567Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T09:01:38.344630Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:01:38.349092Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:01:38.349172Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T09:01:38.349210Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T09:01:38.349241Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T09:01:42.498743Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T09:01:42.504325Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T09:01:42.504405Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T09:01:46.146271Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T09:01:46.146392Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:42600 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42610 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60146 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [200347] using WatchFiles
+INFO:     Started server process [200360]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T09:03:20.155556Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T09:03:20.155666Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T09:03:21.251961Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T09:03:21.252304Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T09:03:21.252606Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T09:03:21.252693Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T09:03:21.252777Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:03:21.260074Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T09:03:21.260167Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T09:03:21.260233Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T09:03:21.260298Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T09:03:25.997975Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T09:03:26.004384Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T09:03:26.004488Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T09:03:30.146036Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T09:03:30.146210Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41218 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58454 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58552 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59512 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46736 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46088 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41754 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48182 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40538 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55482 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [205346] using WatchFiles
+INFO:     Started server process [205359]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T11:22:26.084505Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T11:22:26.084657Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T11:22:27.147372Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T11:22:27.147486Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T11:22:27.147630Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T11:22:27.147688Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T11:22:27.147775Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T11:22:27.152099Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T11:22:27.152196Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T11:22:27.152260Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T11:22:27.152305Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T11:22:31.782434Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T11:22:31.788291Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T11:22:31.788398Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T11:22:36.762745Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T11:22:36.762888Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59510 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [211958] using WatchFiles
+INFO:     Started server process [211971]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T11:55:12.947893Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T11:55:12.948074Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T11:55:14.063306Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T11:55:14.063415Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T11:55:14.063599Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T11:55:14.063665Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T11:55:14.063727Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T11:55:14.071067Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T11:55:14.071160Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T11:55:14.071213Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T11:55:14.071266Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T11:55:18.369365Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T11:55:18.378507Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T11:55:18.379345Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T11:55:21.831598Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T11:55:21.831726Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49472 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [214284] using WatchFiles
+INFO:     Started server process [214297]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T12:03:21.185216Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T12:03:21.185339Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T12:03:22.300106Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T12:03:22.300255Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T12:03:22.300435Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T12:03:22.300508Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T12:03:22.300575Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T12:03:22.306083Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T12:03:22.306175Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T12:03:22.306232Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T12:03:22.306286Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T12:03:26.308817Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T12:03:26.314006Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T12:03:26.314117Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T12:03:29.687820Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T12:03:29.687942Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:34512 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [250423] using WatchFiles
+INFO:     Started server process [250436]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-14T15:39:48.562683Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-14T15:39:48.562779Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-14T15:39:49.994598Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-14T15:39:49.994691Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-14T15:39:49.994867Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-14T15:39:49.994948Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-14T15:39:49.995010Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T15:39:50.002072Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-14T15:39:50.002178Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-14T15:39:50.002212Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-14T15:39:50.002255Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-14T15:39:54.492631Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-14T15:39:54.501597Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-14T15:39:54.501739Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-14T15:39:58.379662Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-14T15:39:58.379772Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50768 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/haseeb-raza/Desktop/Pitchex/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [6831] using WatchFiles
+INFO:     Started server process [6881]
+INFO:     Waiting for application startup.
+{"environment": "development", "event": "starting_application", "timestamp": "2026-01-15T05:05:50.364294Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-15T05:05:50.364435Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-15T05:05:52.033873Z", "level": "info"}
+{"event": "emotion_service_initialized", "timestamp": "2026-01-15T05:05:52.034113Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "initializing_gemini_model", "timestamp": "2026-01-15T05:05:52.034297Z", "level": "info"}
+{"model": "gemini-2.5-flash", "event": "gemini_model_initialized", "timestamp": "2026-01-15T05:05:52.034426Z", "level": "info"}
+{"event": "gemini_service_initialized", "timestamp": "2026-01-15T05:05:52.034498Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-15T05:05:52.041764Z", "level": "info"}
+{"event": "gemini_live_service_initialized", "timestamp": "2026-01-15T05:05:52.041874Z", "level": "info"}
+{"event": "initializing_reasoning_service", "timestamp": "2026-01-15T05:05:52.041921Z", "level": "info"}
+{"event": "Initializing Reasoning", "timestamp": "2026-01-15T05:05:52.041951Z", "level": "info"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:36: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings_model = HuggingFaceEmbeddings(model_name=self.embedding_model_name,
+{"message": "Web search will be disabled", "event": "tavily_api_key_not_set", "timestamp": "2026-01-15T05:05:57.113521Z", "level": "warning"}
+/home/haseeb-raza/Desktop/Pitchex/backend/Reasoning/__init__.py:78: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(memory_key="chat_history",
+{"event": "reasoning_service_initialized", "timestamp": "2026-01-15T05:05:57.123299Z", "level": "info"}
+{"event": "initializing_context_service", "timestamp": "2026-01-15T05:05:57.123400Z", "level": "info"}
+{"model": "all-MiniLM-L6-v2", "event": "context_service_initialized", "timestamp": "2026-01-15T05:06:00.804663Z", "level": "info"}
+{"event": "context_service_initialized", "timestamp": "2026-01-15T05:06:00.804805Z", "level": "info"}
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52142 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39308 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59318 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35608 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54640 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54646 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54646 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54640 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60178 - "OPTIONS /api/v1/sessions/session_109_1768050877/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60178 - "POST /api/v1/sessions/session_109_1768050877/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37494 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38230 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35656 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44024 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55254 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51398 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44612 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34152 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35818 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54012 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46530 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56532 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57114 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38608 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58650 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36836 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58872 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41970 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43382 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39548 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45242 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40226 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37160 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52902 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34142 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40484 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47212 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39508 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41360 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47864 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51308 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35664 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52668 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45942 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47652 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50064 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44192 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46140 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60042 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "OPTIONS /api/v1/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"length": 6261, "event": "pdf_extracted_successfully", "timestamp": "2026-01-15T05:28:44.912017Z", "level": "info"}
+{"filename": "Business Proposal_ ShopLiftly-Testing.pdf", "chunks": 8, "event": "document_chunks_created", "timestamp": "2026-01-15T05:28:44.914231Z", "level": "info"}
+{"count": 8, "event": "ingesting_documents_to_global_rag", "timestamp": "2026-01-15T05:28:44.914414Z", "level": "info"}
+{"path": "./faiss_db", "event": "global_rag_updated_and_saved", "timestamp": "2026-01-15T05:28:45.677300Z", "level": "info"}
+{"session_id": "session_110_1768454924", "event": "documents_ingested_to_global_rag", "timestamp": "2026-01-15T05:28:45.677430Z", "level": "info"}
+{"session_id": "session_110_1768454924", "total_documents": 8, "event": "vector_store_updated", "timestamp": "2026-01-15T05:28:46.073979Z", "level": "info"}
+{"session_id": "session_110_1768454924", "file_id": "2bb348be57c8765f", "filename": "Business Proposal_ ShopLiftly-Testing.pdf", "text_length": 6261, "event": "document_uploaded_successfully", "timestamp": "2026-01-15T05:28:46.074114Z", "level": "info"}
+{"session_id": "session_110_1768454924", "filename": "Business Proposal_ ShopLiftly-Testing.pdf", "file_index": 0, "file_id": "2bb348be57c8765f", "event": "document_uploaded", "timestamp": "2026-01-15T05:28:46.074209Z", "level": "info"}
+INFO:     127.0.0.1:49554 - "POST /api/v1/documents/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49562 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49562 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49562 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 49566) - "WebSocket /api/v1/ws/pitch/session_1768454926136" [accepted]
+{"session_id": "session_1768454926136", "event": "live_session_connected", "timestamp": "2026-01-15T05:28:46.351387Z", "level": "info"}
+{"event": "initializing_gemini_stt", "timestamp": "2026-01-15T05:28:46.351522Z", "level": "info"}
+{"event": "gemini_stt_initialized", "timestamp": "2026-01-15T05:28:46.351647Z", "level": "info"}
+{"event": "google_application_credentials_missing_skipping_google_cloud_stt", "timestamp": "2026-01-15T05:28:46.351732Z", "level": "info"}
+{"voice": "en-US-GuyNeural", "event": "tts_service_initialized", "timestamp": "2026-01-15T05:28:46.352053Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "event": "initializing_emotion_model", "timestamp": "2026-01-15T05:28:46.352173Z", "level": "info"}
+{"model": "j-hartmann/emotion-english-distilroberta-base", "device": "cpu", "event": "emotion_model_initialized", "timestamp": "2026-01-15T05:28:47.394702Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "live_pitch_coach_agent_initialized", "timestamp": "2026-01-15T05:28:47.394849Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "conversation_reset", "timestamp": "2026-01-15T05:28:47.394917Z", "level": "info"}
+INFO:     connection open
+INFO:     127.0.0.1:42166 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 1223400, "event": "audio_data_received", "timestamp": "2026-01-15T05:29:16.731934Z", "level": "info"}
+{"audio_size": 917548, "event": "processing_audio_input", "timestamp": "2026-01-15T05:29:16.736131Z", "level": "info"}
+{"audio_size": 917548, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:29:16.736235Z", "level": "info"}
+{"audio_size": 917548, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:29:16.736301Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:29:16.737298Z", "level": "info"}
+{"transcript_length": 216, "method": "google_free_api", "transcript": "high markets how are you so as you know I have given you my document name with you can say a shoplif...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:29:22.410092Z", "level": "info"}
+{"transcript_length": 216, "elapsed_ms": 5674, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:29:22.410746Z", "level": "info"}
+{"transcript_length": 216, "elapsed_ms": 5674, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:29:22.410878Z", "level": "info"}
+{"transcript": "high markets how are you so as you know I have given you my document name with you can say a shoplif", "event": "user_said", "timestamp": "2026-01-15T05:29:22.410945Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.6364, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:29:23.483936Z", "level": "info"}
+{"message_length": 216, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:29:23.484253Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "created_session_memory", "timestamp": "2026-01-15T05:29:23.484524Z", "level": "info"}
+{"query": "high markets how are you so as you know I have given you my document name with you can say a shoplifting so the whole idea is present so can you ask me the question so I get a maximum profit or you can say investment", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:29:23.484630Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:29:23.577119Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:29:23.577259Z", "level": "info"}
+INFO:     127.0.0.1:39132 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "response_length": 247, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:29:30.537459Z", "level": "info"}
+{"response_length": 247, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:29:30.537561Z", "level": "info"}
+{"response": "Thanks for the ShopLiftly proposal. The eco-friendly market and unit economics are interesting. My i", "event": "coach_response", "timestamp": "2026-01-15T05:29:30.537647Z", "level": "info"}
+{"text_length": 247, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:29:30.537976Z", "level": "info"}
+{"text_length": 247, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:29:30.538098Z", "level": "info"}
+{"chunks": 127, "total_bytes": 90864, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:29:33.448831Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:29:33.448946Z", "level": "info"}
+INFO:     127.0.0.1:37168 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 415120, "event": "audio_data_received", "timestamp": "2026-01-15T05:30:00.356690Z", "level": "info"}
+{"audio_size": 311340, "event": "processing_audio_input", "timestamp": "2026-01-15T05:30:00.361703Z", "level": "info"}
+{"audio_size": 311340, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:30:00.364886Z", "level": "info"}
+{"audio_size": 311340, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:30:00.364996Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:30:00.365730Z", "level": "info"}
+{"transcript_length": 58, "method": "google_free_api", "transcript": "can you see my the diagram flow I have presented in my pdf", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:30:02.437309Z", "level": "info"}
+{"transcript_length": 58, "elapsed_ms": 2072, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:30:02.437719Z", "level": "info"}
+{"transcript_length": 58, "elapsed_ms": 2072, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:30:02.437896Z", "level": "info"}
+{"transcript": "can you see my the diagram flow I have presented in my pdf", "event": "user_said", "timestamp": "2026-01-15T05:30:02.437984Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.8791, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:30:02.492283Z", "level": "info"}
+{"message_length": 58, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:30:02.492641Z", "level": "info"}
+{"query": "can you see my the diagram flow I have presented in my pdf", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:30:02.492741Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:30:02.511804Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:30:02.511909Z", "level": "info"}
+{"session_id": "session_1768454926136", "response_length": 292, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:30:09.406060Z", "level": "info"}
+{"response_length": 292, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:30:09.406181Z", "level": "info"}
+{"response": "I have the details from your document, including the strategic flow you outlined. To proceed, let's ", "event": "coach_response", "timestamp": "2026-01-15T05:30:09.406273Z", "level": "info"}
+{"text_length": 292, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:30:09.406531Z", "level": "info"}
+{"text_length": 292, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:30:09.406627Z", "level": "info"}
+{"chunks": 139, "total_bytes": 99936, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:30:12.209413Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:30:12.210061Z", "level": "info"}
+INFO:     127.0.0.1:51264 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 240360, "event": "audio_data_received", "timestamp": "2026-01-15T05:30:35.902950Z", "level": "info"}
+{"audio_size": 180268, "event": "processing_audio_input", "timestamp": "2026-01-15T05:30:35.904280Z", "level": "info"}
+{"audio_size": 180268, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:30:35.904431Z", "level": "info"}
+{"audio_size": 180268, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:30:35.904516Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:30:35.905063Z", "level": "info"}
+{"transcript_length": 51, "method": "google_free_api", "transcript": "give me the answer can you able to read my document", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:30:37.556457Z", "level": "info"}
+{"transcript_length": 51, "elapsed_ms": 1652, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:30:37.556896Z", "level": "info"}
+{"transcript_length": 51, "elapsed_ms": 1652, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:30:37.557009Z", "level": "info"}
+{"transcript": "give me the answer can you able to read my document", "event": "user_said", "timestamp": "2026-01-15T05:30:37.557080Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.7968, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:30:37.609262Z", "level": "info"}
+{"message_length": 51, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:30:37.609584Z", "level": "info"}
+{"query": "give me the answer can you able to read my document", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:30:37.609677Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:30:37.626750Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:30:37.626977Z", "level": "info"}
+{"session_id": "session_1768454926136", "response_length": 183, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:30:40.367763Z", "level": "info"}
+{"response_length": 183, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:30:40.367923Z", "level": "info"}
+{"response": "Yes, I have the document. Let's focus on the **founding team's specific experience** in e-commerce a", "event": "coach_response", "timestamp": "2026-01-15T05:30:40.368004Z", "level": "info"}
+{"text_length": 183, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:30:40.368236Z", "level": "info"}
+{"text_length": 183, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:30:40.368343Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 218512, "event": "audio_data_received", "timestamp": "2026-01-15T05:30:43.079965Z", "level": "info"}
+{"event": "already_processing_skipping", "timestamp": "2026-01-15T05:30:43.081315Z", "level": "warning"}
+{"chunks": 91, "total_bytes": 65088, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:30:43.394571Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:30:43.394689Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 218512, "event": "audio_data_received", "timestamp": "2026-01-15T05:30:50.051444Z", "level": "info"}
+{"audio_size": 163884, "event": "processing_audio_input", "timestamp": "2026-01-15T05:30:50.052764Z", "level": "info"}
+{"audio_size": 163884, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:30:50.052904Z", "level": "info"}
+{"audio_size": 163884, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:30:50.052976Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:30:50.053535Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:30:51.380046Z", "level": "warning"}
+{"audio_size": 163884, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:30:51.380368Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 2.465235856s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 2\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:30:57.687171Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:30:57.687289Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:30:57.687351Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:30:57.687434Z", "level": "info"}
+INFO:     127.0.0.1:34436 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 152976, "event": "audio_data_received", "timestamp": "2026-01-15T05:30:57.692656Z", "level": "info"}
+{"audio_size": 114732, "event": "processing_audio_input", "timestamp": "2026-01-15T05:30:57.697916Z", "level": "info"}
+{"audio_size": 114732, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:30:57.698050Z", "level": "info"}
+{"audio_size": 114732, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:30:57.698122Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:30:57.700108Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:30:59.160743Z", "level": "warning"}
+{"audio_size": 114732, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:30:59.161351Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 57.695928457s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 57\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:31:02.280948Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:31:02.281090Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:31:02.281161Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:31:02.281250Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 262204, "event": "audio_data_received", "timestamp": "2026-01-15T05:31:02.285069Z", "level": "info"}
+{"audio_size": 196652, "event": "processing_audio_input", "timestamp": "2026-01-15T05:31:02.287478Z", "level": "info"}
+{"audio_size": 196652, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:31:02.288733Z", "level": "info"}
+{"audio_size": 196652, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:31:02.288883Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:31:02.289578Z", "level": "info"}
+{"transcript_length": 50, "method": "google_free_api", "transcript": "what do you think I don't know anything about this", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:31:04.168877Z", "level": "info"}
+{"transcript_length": 50, "elapsed_ms": 1880, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:31:04.169217Z", "level": "info"}
+{"transcript_length": 50, "elapsed_ms": 1880, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:31:04.169291Z", "level": "info"}
+{"transcript": "what do you think I don't know anything about this", "event": "user_said", "timestamp": "2026-01-15T05:31:04.169352Z", "level": "info"}
+{"dominant": "surprise", "confidence": 0.6848, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:31:04.210967Z", "level": "info"}
+{"message_length": 50, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:31:04.211484Z", "level": "info"}
+{"query": "what do you think I don't know anything about this", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:31:04.211697Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:31:04.232136Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:31:04.232388Z", "level": "info"}
+{"session_id": "session_1768454926136", "response_length": 278, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:31:07.940392Z", "level": "info"}
+{"response_length": 278, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:31:07.940532Z", "level": "info"}
+{"response": "I appreciate your candor. To move forward, it's essential to clarify the **founding team's specific ", "event": "coach_response", "timestamp": "2026-01-15T05:31:07.940610Z", "level": "info"}
+{"text_length": 278, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:31:07.941261Z", "level": "info"}
+{"text_length": 278, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:31:07.941419Z", "level": "info"}
+{"chunks": 135, "total_bytes": 97056, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:31:10.669518Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:31:10.669623Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 196668, "event": "audio_data_received", "timestamp": "2026-01-15T05:31:16.595068Z", "level": "info"}
+{"audio_size": 147500, "event": "processing_audio_input", "timestamp": "2026-01-15T05:31:16.595989Z", "level": "info"}
+{"audio_size": 147500, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:31:16.596102Z", "level": "info"}
+{"audio_size": 147500, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:31:16.596167Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:31:16.596563Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:31:17.898153Z", "level": "warning"}
+{"audio_size": 147500, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:31:17.898439Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 38.727729743s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 38\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:31:21.248053Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:31:21.248155Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:31:21.248229Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:31:21.248300Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 142056, "event": "audio_data_received", "timestamp": "2026-01-15T05:31:21.250623Z", "level": "info"}
+{"audio_size": 106540, "event": "processing_audio_input", "timestamp": "2026-01-15T05:31:21.251714Z", "level": "info"}
+{"audio_size": 106540, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:31:21.251861Z", "level": "info"}
+{"audio_size": 106540, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:31:21.251923Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:31:21.252432Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:31:22.403163Z", "level": "warning"}
+{"audio_size": 106540, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:31:22.403450Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 34.747004291s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 34\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:31:25.228157Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:31:25.228276Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:31:25.228363Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:31:25.228442Z", "level": "info"}
+INFO:     127.0.0.1:41922 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 1190632, "event": "audio_data_received", "timestamp": "2026-01-15T05:31:56.452993Z", "level": "info"}
+{"audio_size": 892972, "event": "processing_audio_input", "timestamp": "2026-01-15T05:31:56.456833Z", "level": "info"}
+{"audio_size": 892972, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:31:56.456928Z", "level": "info"}
+{"audio_size": 892972, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:31:56.456993Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:31:56.457850Z", "level": "info"}
+{"transcript_length": 277, "method": "google_free_api", "transcript": "so actually you can say the market strategy I am actually this is the business of direct to customer...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:32:01.582238Z", "level": "info"}
+{"transcript_length": 277, "elapsed_ms": 5126, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:32:01.583345Z", "level": "info"}
+{"transcript_length": 277, "elapsed_ms": 5126, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:32:01.583474Z", "level": "info"}
+{"transcript": "so actually you can say the market strategy I am actually this is the business of direct to customer", "event": "user_said", "timestamp": "2026-01-15T05:32:01.583659Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.7187, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:32:01.732501Z", "level": "info"}
+{"message_length": 277, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:32:01.732914Z", "level": "info"}
+{"query": "so actually you can say the market strategy I am actually this is the business of direct to customer it is actually a day to see business and I am seeking of like 250000 of a seed funding like and I am sure that within 18 months I can expand this business more and written back", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:32:01.733091Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:32:01.766042Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:32:01.766162Z", "level": "info"}
+INFO:     127.0.0.1:48368 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 120208, "event": "audio_data_received", "timestamp": "2026-01-15T05:32:04.088604Z", "level": "info"}
+{"event": "already_processing_skipping", "timestamp": "2026-01-15T05:32:04.089390Z", "level": "warning"}
+{"session_id": "session_1768454926136", "response_length": 258, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:32:06.228701Z", "level": "info"}
+{"response_length": 258, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:32:06.228813Z", "level": "info"}
+{"response": "I understand your DTC strategy and the $250k seed ask for 18-month profitability. To assess that tim", "event": "coach_response", "timestamp": "2026-01-15T05:32:06.228908Z", "level": "info"}
+{"text_length": 258, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:32:06.229174Z", "level": "info"}
+{"text_length": 258, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:32:06.229304Z", "level": "info"}
+{"chunks": 128, "total_bytes": 92016, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:32:08.679263Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:32:08.679382Z", "level": "info"}
+INFO:     127.0.0.1:41838 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 1146940, "event": "audio_data_received", "timestamp": "2026-01-15T05:32:52.877551Z", "level": "info"}
+{"audio_size": 860204, "event": "processing_audio_input", "timestamp": "2026-01-15T05:32:52.881552Z", "level": "info"}
+{"audio_size": 860204, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:32:52.881653Z", "level": "info"}
+{"audio_size": 860204, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:32:52.881726Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:32:52.882695Z", "level": "info"}
+{"transcript_length": 269, "method": "google_free_api", "transcript": "oh my the my target audience are the you can say the my demographic audience is the USA base citizen...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:32:58.773539Z", "level": "info"}
+{"transcript_length": 269, "elapsed_ms": 5892, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:32:58.774055Z", "level": "info"}
+{"transcript_length": 269, "elapsed_ms": 5892, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:32:58.774148Z", "level": "info"}
+{"transcript": "oh my the my target audience are the you can say the my demographic audience is the USA base citizen", "event": "user_said", "timestamp": "2026-01-15T05:32:58.774218Z", "level": "info"}
+{"dominant": "surprise", "confidence": 0.9619, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:32:58.846366Z", "level": "info"}
+{"message_length": 269, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:32:58.846735Z", "level": "info"}
+{"query": "oh my the my target audience are the you can say the my demographic audience is the USA base citizens you know that the Genesis are much you can say intelligence such products so I can barely see I can see that like you can say I can maximum profit out from that market", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:32:58.846944Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:32:58.874256Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:32:58.874346Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 109288, "event": "audio_data_received", "timestamp": "2026-01-15T05:33:01.252796Z", "level": "info"}
+{"event": "already_processing_skipping", "timestamp": "2026-01-15T05:33:01.253529Z", "level": "warning"}
+{"session_id": "session_1768454926136", "response_length": 231, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:33:02.236385Z", "level": "info"}
+{"response_length": 231, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:33:02.236481Z", "level": "info"}
+{"response": "Understood on the USA Gen Z target, though your proposal listed Pakistan/MEA. This makes your **team", "event": "coach_response", "timestamp": "2026-01-15T05:33:02.236567Z", "level": "info"}
+{"text_length": 231, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:33:02.237032Z", "level": "info"}
+{"text_length": 231, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:33:02.237137Z", "level": "info"}
+INFO:     127.0.0.1:46478 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"chunks": 124, "total_bytes": 89280, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:33:04.871389Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:33:04.871489Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 196668, "event": "audio_data_received", "timestamp": "2026-01-15T05:33:29.093703Z", "level": "info"}
+{"audio_size": 147500, "event": "processing_audio_input", "timestamp": "2026-01-15T05:33:29.095094Z", "level": "info"}
+{"audio_size": 147500, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:33:29.095264Z", "level": "info"}
+{"audio_size": 147500, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:33:29.095338Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:33:29.096046Z", "level": "info"}
+{"transcript_length": 33, "method": "google_free_api", "transcript": "do you know about Pakistan versus", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:33:30.701923Z", "level": "info"}
+{"transcript_length": 33, "elapsed_ms": 1606, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:33:30.702223Z", "level": "info"}
+{"transcript_length": 33, "elapsed_ms": 1606, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:33:30.702330Z", "level": "info"}
+{"transcript": "do you know about Pakistan versus", "event": "user_said", "timestamp": "2026-01-15T05:33:30.702396Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.7434, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:33:30.745866Z", "level": "info"}
+{"message_length": 33, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:33:30.746204Z", "level": "info"}
+{"query": "do you know about Pakistan versus", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:33:30.746312Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:33:30.762996Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:33:30.763098Z", "level": "info"}
+INFO:     127.0.0.1:57750 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "response_length": 319, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:33:34.288676Z", "level": "info"}
+{"response_length": 319, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:33:34.288798Z", "level": "info"}
+{"response": "Understanding regional dynamics is part of market analysis. However, given your pivot to the **USA G", "event": "coach_response", "timestamp": "2026-01-15T05:33:34.288889Z", "level": "info"}
+{"text_length": 319, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:33:34.289141Z", "level": "info"}
+{"text_length": 319, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:33:34.289221Z", "level": "info"}
+{"chunks": 152, "total_bytes": 109440, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:33:37.415473Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:33:37.415587Z", "level": "info"}
+INFO:     127.0.0.1:53286 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 1004944, "event": "audio_data_received", "timestamp": "2026-01-15T05:34:23.969355Z", "level": "info"}
+{"audio_size": 753708, "event": "processing_audio_input", "timestamp": "2026-01-15T05:34:23.972876Z", "level": "info"}
+{"audio_size": 753708, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:34:23.972970Z", "level": "info"}
+{"audio_size": 753708, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:34:23.973050Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:34:23.974116Z", "level": "info"}
+{"transcript_length": 249, "method": "google_free_api", "transcript": "the problem statement I am going to like shoplifting is solving is actually there are overpriced pro...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:34:28.953818Z", "level": "info"}
+{"transcript_length": 249, "elapsed_ms": 4981, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:34:28.954340Z", "level": "info"}
+{"transcript_length": 249, "elapsed_ms": 4981, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:34:28.954453Z", "level": "info"}
+{"transcript": "the problem statement I am going to like shoplifting is solving is actually there are overpriced pro", "event": "user_said", "timestamp": "2026-01-15T05:34:28.954526Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.3431, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:34:29.021616Z", "level": "info"}
+{"message_length": 249, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:34:29.021937Z", "level": "info"}
+{"query": "the problem statement I am going to like shoplifting is solving is actually there are overpriced products and how to find such products poorly branded products consumer wants achieve the eco friendly alternatives so here is the shop list three comes", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:34:29.022074Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:34:29.051456Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:34:29.051617Z", "level": "info"}
+INFO:     127.0.0.1:52592 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "response_length": 316, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:34:33.730800Z", "level": "info"}
+{"response_length": 316, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:34:33.730965Z", "level": "info"}
+{"response": "I understand the problem you're addressing regarding overpriced and poorly branded eco-friendly prod", "event": "coach_response", "timestamp": "2026-01-15T05:34:33.731090Z", "level": "info"}
+{"text_length": 316, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:34:33.731393Z", "level": "info"}
+{"text_length": 316, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:34:33.731531Z", "level": "info"}
+{"chunks": 147, "total_bytes": 105408, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:34:36.539287Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:34:36.539458Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 152976, "event": "audio_data_received", "timestamp": "2026-01-15T05:34:41.450368Z", "level": "info"}
+{"audio_size": 114732, "event": "processing_audio_input", "timestamp": "2026-01-15T05:34:41.451379Z", "level": "info"}
+{"audio_size": 114732, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:34:41.451483Z", "level": "info"}
+{"audio_size": 114732, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:34:41.451544Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:34:41.455940Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:34:42.580490Z", "level": "warning"}
+{"audio_size": 114732, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:34:42.580947Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 14.758673735s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 14\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:34:45.200372Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:34:45.200529Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:34:45.200586Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:34:45.200658Z", "level": "info"}
+INFO:     127.0.0.1:56776 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 830184, "event": "audio_data_received", "timestamp": "2026-01-15T05:35:13.983947Z", "level": "info"}
+{"audio_size": 622636, "event": "processing_audio_input", "timestamp": "2026-01-15T05:35:13.987102Z", "level": "info"}
+{"audio_size": 622636, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:35:13.987224Z", "level": "info"}
+{"audio_size": 622636, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:35:13.987296Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:35:13.988141Z", "level": "info"}
+{"transcript_length": 131, "method": "google_free_api", "transcript": "you want to ask me some question like you have to prepare me the pitching process so I can negotiate...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:35:17.804847Z", "level": "info"}
+{"transcript_length": 131, "elapsed_ms": 3818, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:35:17.805377Z", "level": "info"}
+{"transcript_length": 131, "elapsed_ms": 3818, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:35:17.805539Z", "level": "info"}
+{"transcript": "you want to ask me some question like you have to prepare me the pitching process so I can negotiate", "event": "user_said", "timestamp": "2026-01-15T05:35:17.805617Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.8892, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:35:17.858842Z", "level": "info"}
+{"message_length": 131, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:35:17.859140Z", "level": "info"}
+{"query": "you want to ask me some question like you have to prepare me the pitching process so I can negotiate much better what is your daily", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:35:17.859281Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:35:17.879177Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:35:17.879271Z", "level": "info"}
+{"session_id": "session_1768454926136", "response_length": 260, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:35:24.160076Z", "level": "info"}
+{"response_length": 260, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:35:24.160201Z", "level": "info"}
+{"response": "Alright, let's prepare your pitch and negotiation strategy. As a VC, I look for a clear problem and ", "event": "coach_response", "timestamp": "2026-01-15T05:35:24.160246Z", "level": "info"}
+{"text_length": 260, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:35:24.160499Z", "level": "info"}
+{"text_length": 260, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:35:24.160599Z", "level": "info"}
+INFO:     127.0.0.1:49776 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"chunks": 127, "total_bytes": 91440, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:35:39.415201Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:35:39.415336Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 163900, "event": "audio_data_received", "timestamp": "2026-01-15T05:35:44.778943Z", "level": "info"}
+{"audio_size": 122924, "event": "processing_audio_input", "timestamp": "2026-01-15T05:35:44.779991Z", "level": "info"}
+{"audio_size": 122924, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:35:44.780128Z", "level": "info"}
+{"audio_size": 122924, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:35:44.780194Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:35:44.780714Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:35:46.080563Z", "level": "warning"}
+{"audio_size": 122924, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:35:46.080874Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 10.599763951s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 10\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:35:49.374390Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:35:49.374529Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:35:49.374609Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:35:49.374685Z", "level": "info"}
+INFO:     127.0.0.1:44502 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "size": 1387240, "event": "audio_data_received", "timestamp": "2026-01-15T05:36:33.149020Z", "level": "info"}
+{"audio_size": 1040428, "event": "processing_audio_input", "timestamp": "2026-01-15T05:36:33.156994Z", "level": "info"}
+{"audio_size": 1040428, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:36:33.157266Z", "level": "info"}
+{"audio_size": 1040428, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:36:33.157538Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:36:33.158999Z", "level": "info"}
+{"transcript_length": 264, "method": "google_free_api", "transcript": "so if you if I tell you truth I don't have any idea what about the team is looking for actually I am...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:36:39.860036Z", "level": "info"}
+{"transcript_length": 264, "elapsed_ms": 6703, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:36:39.860553Z", "level": "info"}
+{"transcript_length": 264, "elapsed_ms": 6703, "event": "stt_transcription_success", "timestamp": "2026-01-15T05:36:39.860636Z", "level": "info"}
+{"transcript": "so if you if I tell you truth I don't have any idea what about the team is looking for actually I am", "event": "user_said", "timestamp": "2026-01-15T05:36:39.860707Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.8986, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:36:39.940235Z", "level": "info"}
+{"message_length": 264, "session_id": "session_1768454926136", "event": "generating_reasoning_response", "timestamp": "2026-01-15T05:36:39.940983Z", "level": "info"}
+{"query": "so if you if I tell you truth I don't have any idea what about the team is looking for actually I am single one doing this whole task so like what should be I expect from my team or like how to deals such cost and appropriately in a front of in front of such event", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:36:39.941425Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:36:39.969377Z", "level": "info"}
+{"event": "generating_answer_with_context", "timestamp": "2026-01-15T05:36:39.969469Z", "level": "info"}
+INFO:     127.0.0.1:36762 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "response_length": 289, "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:36:44.160385Z", "level": "info"}
+{"response_length": 289, "session_id": "session_1768454926136", "event": "reasoning_response_generated", "timestamp": "2026-01-15T05:36:44.160559Z", "level": "info"}
+{"response": "Thanks for your honesty. A strong, diverse founding team is crucial for execution, scalability, and ", "event": "coach_response", "timestamp": "2026-01-15T05:36:44.160659Z", "level": "info"}
+{"text_length": 289, "event": "synthesizing_speech", "timestamp": "2026-01-15T05:36:44.160917Z", "level": "info"}
+{"text_length": 289, "voice": "en-US-GuyNeural", "event": "tts_streaming_speech", "timestamp": "2026-01-15T05:36:44.161014Z", "level": "info"}
+{"chunks": 155, "total_bytes": 111456, "event": "tts_stream_complete", "timestamp": "2026-01-15T05:36:47.950863Z", "level": "info"}
+{"event": "speech_synthesis_complete", "timestamp": "2026-01-15T05:36:47.951069Z", "level": "info"}
+{"session_id": "session_1768454926136", "size": 109288, "event": "audio_data_received", "timestamp": "2026-01-15T05:36:55.034698Z", "level": "info"}
+{"audio_size": 81964, "event": "processing_audio_input", "timestamp": "2026-01-15T05:36:55.035567Z", "level": "info"}
+{"audio_size": 81964, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:36:55.035703Z", "level": "info"}
+{"audio_size": 81964, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:36:55.035770Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:36:55.037596Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:36:56.998766Z", "level": "warning"}
+{"audio_size": 81964, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:36:56.999127Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 58.576489081s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 58\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:37:01.420227Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:37:01.420359Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:37:01.420427Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:37:01.420497Z", "level": "info"}
+INFO:     127.0.0.1:33068 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"session_id": "session_1768454926136", "error": "Cannot call \"receive\" once a disconnect message has been received.", "event": "websocket_error", "timestamp": "2026-01-15T05:37:12.881799Z", "level": "error"}
+{"session_id": "session_1768454926136", "event": "live_session_disconnected", "timestamp": "2026-01-15T05:37:12.881947Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "cleared_session_memory", "timestamp": "2026-01-15T05:37:12.882062Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "conversation_reset", "timestamp": "2026-01-15T05:37:12.882133Z", "level": "info"}
+{"session_id": "session_1768454926136", "event": "agent_cleaned_up", "timestamp": "2026-01-15T05:37:12.882201Z", "level": "info"}
+INFO:     connection closed
+INFO:     127.0.0.1:33084 - "OPTIONS /api/v1/sessions/session_110_1768454924?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33084 - "PATCH /api/v1/sessions/session_110_1768454924?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33084 - "OPTIONS /api/v1/sessions/session_110_1768454924/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33084 - "POST /api/v1/sessions/session_110_1768454924/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59664 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59670 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59670 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59664 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 59684) - "WebSocket /api/v1/ws/pitch/session_1768455441523" [accepted]
+{"session_id": "session_1768455441523", "event": "live_session_connected", "timestamp": "2026-01-15T05:37:21.782801Z", "level": "info"}
+{"session_id": "session_1768455441523", "event": "live_pitch_coach_agent_initialized", "timestamp": "2026-01-15T05:37:21.782928Z", "level": "info"}
+{"session_id": "session_1768455441523", "event": "conversation_reset", "timestamp": "2026-01-15T05:37:21.783358Z", "level": "info"}
+INFO:     connection open
+{"session_id": "session_1768455441523", "size": 109288, "event": "audio_data_received", "timestamp": "2026-01-15T05:37:24.775904Z", "level": "info"}
+{"audio_size": 81964, "event": "processing_audio_input", "timestamp": "2026-01-15T05:37:24.776762Z", "level": "info"}
+{"audio_size": 81964, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:37:24.777191Z", "level": "info"}
+{"audio_size": 81964, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:37:24.777443Z", "level": "info"}
+{"from_format": "wav", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:37:24.778211Z", "level": "info"}
+{"event": "offline_transcription_no_speech_detected", "timestamp": "2026-01-15T05:37:26.564038Z", "level": "warning"}
+{"audio_size": 81964, "event": "attempting_gemini_stt_fallback", "timestamp": "2026-01-15T05:37:26.564505Z", "level": "info"}
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\nPlease retry in 30.248242607s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 30\n}\n]", "event": "gemini_stt_failed", "timestamp": "2026-01-15T05:37:29.842151Z", "level": "warning"}
+{"event": "all_stt_methods_failed", "timestamp": "2026-01-15T05:37:29.842295Z", "level": "error"}
+{"result": {"success": false, "transcript": "", "confidence": 0.0, "language": "en-US", "method": "google_free_api", "error": "Could not understand audio - please speak more clearly or check your microphone"}, "event": "stt_transcription_empty", "timestamp": "2026-01-15T05:37:29.842378Z", "level": "warning"}
+{"event": "no_transcript_skipping", "timestamp": "2026-01-15T05:37:29.842457Z", "level": "info"}
+{"session_id": "session_1768455441523", "error": "Cannot call \"receive\" once a disconnect message has been received.", "event": "websocket_error", "timestamp": "2026-01-15T05:37:31.543570Z", "level": "error"}
+{"session_id": "session_1768455441523", "event": "live_session_disconnected", "timestamp": "2026-01-15T05:37:31.543714Z", "level": "info"}
+{"session_id": "session_1768455441523", "event": "conversation_reset", "timestamp": "2026-01-15T05:37:31.543804Z", "level": "info"}
+{"session_id": "session_1768455441523", "event": "agent_cleaned_up", "timestamp": "2026-01-15T05:37:31.543881Z", "level": "info"}
+INFO:     connection closed
+INFO:     127.0.0.1:33104 - "OPTIONS /api/v1/sessions/session_109_1768050877?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33104 - "PATCH /api/v1/sessions/session_109_1768050877?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33104 - "OPTIONS /api/v1/sessions/session_109_1768050877/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33104 - "POST /api/v1/sessions/session_109_1768050877/complete?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40570 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45728 - "POST /api/v1/sessions HTTP/1.1" 200 OK
+{"length": 6261, "event": "pdf_extracted_successfully", "timestamp": "2026-01-15T05:37:50.391477Z", "level": "info"}
+{"filename": "Business Proposal_ ShopLiftly-Testing.pdf", "chunks": 8, "event": "document_chunks_created", "timestamp": "2026-01-15T05:37:50.394789Z", "level": "info"}
+{"count": 8, "event": "ingesting_documents_to_global_rag", "timestamp": "2026-01-15T05:37:50.394978Z", "level": "info"}
+{"path": "./faiss_db", "event": "global_rag_updated_and_saved", "timestamp": "2026-01-15T05:37:51.024296Z", "level": "info"}
+{"session_id": "session_111_1768455469", "event": "documents_ingested_to_global_rag", "timestamp": "2026-01-15T05:37:51.024393Z", "level": "info"}
+{"session_id": "session_111_1768455469", "total_documents": 8, "event": "vector_store_updated", "timestamp": "2026-01-15T05:37:51.517835Z", "level": "info"}
+{"session_id": "session_111_1768455469", "file_id": "2bb348be57c8765f", "filename": "Business Proposal_ ShopLiftly-Testing.pdf", "text_length": 6261, "event": "document_uploaded_successfully", "timestamp": "2026-01-15T05:37:51.517927Z", "level": "info"}
+{"session_id": "session_111_1768455469", "filename": "Business Proposal_ ShopLiftly-Testing.pdf", "file_index": 0, "file_id": "2bb348be57c8765f", "event": "document_uploaded", "timestamp": "2026-01-15T05:37:51.518001Z", "level": "info"}
+INFO:     127.0.0.1:45728 - "POST /api/v1/documents/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35080 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46980 - "GET /api/v1/health HTTP/1.1" 200 OK
+{"filename": "recording.mp3", "content_type": "audio/webm", "size": 577996, "event": "transcribe_request", "timestamp": "2026-01-15T05:38:43.120412Z", "level": "info"}
+{"audio_size": 577996, "event": "attempting_google_free_api_stt", "timestamp": "2026-01-15T05:38:43.120520Z", "level": "info"}
+{"audio_size": 577996, "event": "attempting_offline_transcription", "timestamp": "2026-01-15T05:38:43.120594Z", "level": "info"}
+{"from_format": "webm", "to_format": "wav", "event": "converting_audio_format", "timestamp": "2026-01-15T05:38:43.121294Z", "level": "info"}
+{"transcript_length": 421, "method": "google_free_api", "transcript": "so this is my all business you can say if we the business proposal is about shoplifting and it is ac...", "event": "offline_transcription_success", "timestamp": "2026-01-15T05:38:52.860102Z", "level": "info"}
+{"transcript_length": 421, "elapsed_ms": 9740, "event": "google_free_api_stt_success", "timestamp": "2026-01-15T05:38:52.860944Z", "level": "info"}
+INFO:     127.0.0.1:46990 - "POST /api/v1/stt/transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46990 - "OPTIONS /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+{"session_id": "session_111_1768455469", "transcript_length": 421, "duration": 35, "event": "analyze_pitch_request", "timestamp": "2026-01-15T05:38:52.872978Z", "level": "info"}
+{"dominant": "neutral", "confidence": 0.9401, "session_id": null, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:38:53.016519Z", "level": "info"}
+{"dominant_emotion": "neutral", "confidence": 0.9401, "event": "emotion_analyzed", "timestamp": "2026-01-15T05:38:53.016640Z", "level": "info"}
+{"session_id": "session_111_1768455469", "context_length": 1545, "files_count": 1, "event": "session_context_retrieved", "timestamp": "2026-01-15T05:38:53.016719Z", "level": "info"}
+{"session_id": "session_111_1768455469", "context_length": 1545, "event": "using_document_context", "timestamp": "2026-01-15T05:38:53.016840Z", "level": "info"}
+{"event": "generating_critique_via_reasoning_service", "timestamp": "2026-01-15T05:38:53.016879Z", "level": "info"}
+{"query": "so this is my all business you can say if we the business proposal is about shoplifting and it is actually a d2c business you can see as you see in my document I have mentioned all the problem statement and our solution so what are the possible questions or you can say what is the actual feedback you want to give me so I can prepare much better and in more detail to gain the maximum investment from the venture capital", "event": "smart_rag_search_activated", "timestamp": "2026-01-15T05:38:53.016930Z", "level": "info"}
+{"event": "smart_search_found_local_docs", "timestamp": "2026-01-15T05:38:53.053111Z", "level": "info"}
+{"event": "generating_critique_with_context", "timestamp": "2026-01-15T05:38:53.053218Z", "level": "info"}
+{"session_id": "session_111_1768455469", "response_length": 1858, "event": "critique_generated", "timestamp": "2026-01-15T05:39:03.656871Z", "level": "info"}
+{"response_length": 1858, "event": "analysis_generated", "timestamp": "2026-01-15T05:39:03.657237Z", "level": "info"}
+INFO:     127.0.0.1:46990 - "POST /api/v1/llm/analyze-pitch HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59428 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38884 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54472 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48722 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33844 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43378 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45406 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39062 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47920 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54882 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38934 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35560 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58314 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42830 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49038 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52854 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40452 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39948 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33528 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43532 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40478 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39264 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52518 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57724 - "OPTIONS /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57724 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55002 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44218 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60286 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33066 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38686 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51986 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48380 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43392 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53338 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53288 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56398 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52696 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40788 - "GET /api/v1/sessions?user_id=user_353jMS1itEPgRWRu5GqZaACTBnI&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37630 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57800 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33452 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55832 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41292 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53490 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34476 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36636 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46086 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37214 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38530 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51334 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39878 - "GET /api/v1/health HTTP/1.1" 200 OK

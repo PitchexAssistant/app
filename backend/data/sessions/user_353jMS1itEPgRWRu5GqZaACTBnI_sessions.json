@@ -1435,11 +1435,37 @@
     "mode": "live",
     "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
     "created_at": "2026-01-10T18:14:37.111205",
-    "updated_at": "2026-01-10T18:15:10.386934",
+    "updated_at": "2026-01-15T10:37:31.635543",
     "transcript": null,
     "analysis": null,
     "summary": "Session completed with 0 messages",
-    "duration": 32,
+    "duration": 10,
     "status": "completed"
+  },
+  {
+    "id": "session_110_1768454924",
+    "title": "Live Session - 1/15/2026, 10:28:44 AM",
+    "mode": "live",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T10:28:44.453887",
+    "updated_at": "2026-01-15T10:37:13.209327",
+    "transcript": null,
+    "analysis": null,
+    "summary": "Session completed with 0 messages",
+    "duration": 506,
+    "status": "completed"
+  },
+  {
+    "id": "session_111_1768455469",
+    "title": "Recorded Session - 1/15/2026, 10:37:49 AM",
+    "mode": "recorded",
+    "user_id": "user_353jMS1itEPgRWRu5GqZaACTBnI",
+    "created_at": "2026-01-15T10:37:49.653643",
+    "updated_at": "2026-01-15T10:37:49.653652",
+    "transcript": null,
+    "analysis": null,
+    "summary": null,
+    "duration": null,
+    "status": "active"
   }
 ]

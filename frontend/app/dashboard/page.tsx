@@ -257,7 +257,7 @@ export default function Page() {
                 <span className="text-sm font-medium font-['Uber_Move']">Manage Plans</span>
               </DropdownMenuItem>
 
-              <DropdownMenuItem 
+              <DropdownMenuItem
                 onClick={() => setShowSettings(true)}
                 className="px-4 py-2.5 text-zinc-400 hover:bg-zinc-800 cursor-pointer focus:bg-zinc-800 focus:text-zinc-300"
               >
@@ -305,12 +305,12 @@ export default function Page() {
             )
           ) : (
             /* Dashboard Landing Page - Exact Figma Match */
-            <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-hidden">
+            <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-x-hidden overflow-y-hidden">
               {/* Main Content - Centered */}
-              <div className="flex-1 flex flex-col items-center justify-center px-8 gap-8">
+              <div className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 gap-6 sm:gap-8">
                 {/* Orb - Exact from Figma with gradient overlay */}
                 <div
-                  className="relative w-[220px] h-[220px] rounded-full overflow-hidden"
+                  className="relative w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[220px] lg:h-[220px] rounded-full overflow-hidden flex-shrink-0"
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.1)'
                   } as React.CSSProperties}
@@ -357,11 +357,11 @@ export default function Page() {
                 </div>
 
                 {/* Text Content - Exact Figma Typography */}
-                <div className="max-w-[546px] text-center flex flex-col gap-3">
-                  <h1 className="text-[36px] font-bold text-[#f0f0f0] leading-[44px] tracking-[-0.72px]">
+                <div className="max-w-[90%] sm:max-w-[546px] text-center flex flex-col gap-2 sm:gap-3">
+                  <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-[#f0f0f0] leading-tight lg:leading-[44px] tracking-tight lg:tracking-[-0.72px]">
                     Turn Ideas into Winning Pitches
                   </h1>
-                  <p className="text-[16px] font-medium text-white leading-[24px]">
+                  <p className="text-sm sm:text-base lg:text-[16px] font-medium text-white leading-relaxed lg:leading-[24px]">
                     Collaborate, refine, and present your story with confidence. Pitchex helps you craft and deliver powerful pitches effortlessly.
                   </p>
                 </div>
@@ -369,7 +369,7 @@ export default function Page() {
                 {/* CTA Button - Exact Figma Design */}
                 <button
                   onClick={handleStartPitching}
-                  className="w-[260px] h-[44px] bg-[#f0f0f0] text-[#0d0d0f] rounded-[12px] font-bold text-[16px] leading-[24px] hover:bg-white transition-colors border border-[#0d0d0f] flex items-center justify-center"
+                  className="w-full max-w-[260px] sm:w-[260px] h-[44px] bg-[#f0f0f0] text-[#0d0d0f] rounded-[12px] font-bold text-sm sm:text-base leading-tight hover:bg-white transition-colors border border-[#0d0d0f] flex items-center justify-center"
                 >
                   Start Pitching
                 </button>
