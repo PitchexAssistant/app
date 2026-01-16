@@ -3,10 +3,10 @@
 import { useSignIn, useAuth } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function SignInPage() {
   const { isLoaded, signIn, setActive } = useSignIn()
@@ -59,7 +59,7 @@ export default function SignInPage() {
     try {
       await signIn.authenticateWithRedirect({
         strategy: "oauth_google",
-        redirectUrl: "/sso-callback",
+        redirectUrl: "/sign-in/sso-callback",
         redirectUrlComplete: "/dashboard",
       })
     } catch (err: any) {
@@ -71,25 +71,26 @@ export default function SignInPage() {
   // Show loading while checking auth status
   if (!isLoaded || isSignedIn) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      <div className="flex min-h-screen items-center justify-center bg-surface-0">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-accent-lime"></div>
       </div>
     )
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold">Sign In</CardTitle>
-          <CardDescription>
+    <div className="flex min-h-screen items-center justify-center p-4 bg-surface-0">
+      <div className="w-full max-w-md rounded-2xl bg-surface-1 border border-surface-3 p-8 shadow-2xl">
+        <div className="space-y-2 mb-6">
+          <h1 className="text-2xl font-bold text-text-primary">Sign In</h1>
+          <p className="text-text-secondary text-sm">
             Enter your email and password to sign in to your account
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
+          </p>
+        </div>
+
+        <div className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="text-text-primary">Email</Label>
               <Input
                 id="email"
                 type="email"
@@ -98,10 +99,11 @@ export default function SignInPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={loading}
+                className="bg-surface-2 border-surface-3 text-text-primary placeholder:text-text-tertiary focus:border-accent-lime focus:ring-accent-lime/20"
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password" className="text-text-primary">Password</Label>
               <Input
                 id="password"
                 type="password"
@@ -109,10 +111,11 @@ export default function SignInPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 disabled={loading}
+                className="bg-surface-2 border-surface-3 text-text-primary placeholder:text-text-tertiary focus:border-accent-lime focus:ring-accent-lime/20"
               />
             </div>
             {error && (
-              <div className="text-sm text-red-500">{error}</div>
+              <div className="text-sm text-red">{error}</div>
             )}
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? "Signing in..." : "Sign In"}
@@ -121,10 +124,10 @@ export default function SignInPage() {
 
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t" />
+              <span className="w-full border-t border-surface-3" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-2 text-muted-foreground">
+              <span className="bg-surface-1 px-2 text-text-tertiary">
                 Or continue with
               </span>
             </div>
@@ -133,7 +136,7 @@ export default function SignInPage() {
           <Button
             variant="outline"
             type="button"
-            className="w-full"
+            className="w-full border-surface-3 text-text-primary hover:bg-surface-2"
             onClick={handleGoogleSignIn}
             disabled={loading}
           >
@@ -158,14 +161,14 @@ export default function SignInPage() {
             Sign in with Google
           </Button>
 
-          <div className="text-center text-sm">
+          <div className="text-center text-sm text-text-secondary">
             Don't have an account?{" "}
-            <a href="/sign-up" className="underline hover:text-primary">
+            <Link href="/sign-up" className="text-accent-lime hover:underline">
               Sign up
-            </a>
+            </Link>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   )
 }
