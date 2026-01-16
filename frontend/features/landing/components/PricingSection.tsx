@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Link from "next/link";
 import { Check, Zap, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -182,13 +183,16 @@ export function PricingSection() {
 
                                 {/* CTA Button */}
                                 <Button
+                                    asChild
                                     className={`w-full py-6 rounded-xl font-semibold transition-all duration-300 ${plan.highlighted
                                         ? "bg-accent-lime text-surface-0 hover:bg-accent-lime/90"
                                         : "bg-surface-2 text-text-primary hover:bg-surface-3 border border-surface-3"
                                         }`}
                                 >
-                                    {plan.highlighted && <Zap className="w-4 h-4 mr-2" />}
-                                    {plan.cta}
+                                    <Link href="/sign-up">
+                                        {plan.highlighted && <Zap className="w-4 h-4 mr-2" />}
+                                        {plan.cta}
+                                    </Link>
                                 </Button>
                             </div>
                         ))}

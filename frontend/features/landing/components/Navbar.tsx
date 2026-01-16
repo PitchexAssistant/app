@@ -59,12 +59,12 @@ export const Navbar = () => {
                     {/* Desktop Login and CTA */}
                     <div className="hidden items-center gap-2 md:flex">
                         <Button variant="nav" asChild>
-                            <Link href="/login">
+                            <Link href="/sign-in">
                                 Log in
                             </Link>
                         </Button>
                         <Button asChild>
-                            <Link href="/contact">
+                            <Link href="/sign-up">
                                 Get started
                             </Link>
                         </Button>
@@ -105,13 +105,13 @@ export const Navbar = () => {
 
                         {/* Mobile Login and CTA */}
                         <Button variant="nav" className="w-full" asChild>
-                            <Link href="/login" onClick={closeMobileMenu}>
+                            <Link href="/sign-in" onClick={closeMobileMenu}>
                                 Log in
                             </Link>
                         </Button>
                         <Button variant="outline" className="w-full" asChild>
-                            <Link href="/contact" onClick={closeMobileMenu}>
-                                Contact sales
+                            <Link href="/sign-up" onClick={closeMobileMenu}>
+                                Get started
                             </Link>
                         </Button>
                     </div>
