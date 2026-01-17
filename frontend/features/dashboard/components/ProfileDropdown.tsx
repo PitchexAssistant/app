@@ -52,7 +52,7 @@ export function ProfileDropdown({
                             </div>
                         </div>
                     )}
-                    <ChevronDown className="w-5 h-5 text-[var(--text-tertiary)]" />
+                    <ChevronDown className="w-5 h-5 text-[var(--text-tertiary)] hover:text-[var(--text-primary)]" />
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
@@ -81,7 +81,7 @@ export function ProfileDropdown({
                             <div className="text-[var(--text-primary)] text-base font-semibold truncate">
                                 {userData.name}
                             </div>
-                            <div className="text-[var(--text-tertiary)] text-sm truncate">
+                            <div className="text-[var(--text-secondary)] text-sm truncate">
                                 {userData.email}
                             </div>
                         </div>
@@ -90,10 +90,10 @@ export function ProfileDropdown({
 
                 {/* Upgrade to Pro Card */}
                 <div className="px-3 py-3 border-b border-[var(--border-gray)]">
-                    <div className="p-3 rounded-xl bg-gradient-to-r from-[var(--surface-2)] to-[var(--surface-1)] border border-[var(--border-gray)]">
+                    <div className="p-3 rounded-lg bg-gradient-to-r from-[var(--surface-2)] to-[var(--surface-1)] border border-[var(--border-gray)]">
                         <div className="flex items-start gap-3">
-                            <div className="w-8 h-8 rounded-lg bg-[var(--green)]/10 flex items-center justify-center flex-shrink-0">
-                                <Sparkles className="w-4 h-4 text-[var(--green)]" />
+                            <div className="w-8 h-8 rounded-md bg-accent-lime/10 flex items-center justify-center flex-shrink-0">
+                                <Sparkles className="w-4 h-4 text-[var(--accent-lime)]" />
                             </div>
                             <div className="flex-1 min-w-0">
                                 <div className="flex items-center gap-2 mb-1">
@@ -102,12 +102,12 @@ export function ProfileDropdown({
                                     </span>
                                     <Badge
                                         variant="outline"
-                                        className="bg-[var(--green)]/10 text-[var(--green)] border-0 text-[10px] font-bold px-1.5 py-0"
+                                        className="bg-[var(--accent-lime)]/10 text-[var(--accent-lime)] border-0 text-[10px] font-bold rounded-sm px-2 py-1"
                                     >
                                         PRO
                                     </Badge>
                                 </div>
-                                <p className="text-[var(--text-tertiary)] text-xs leading-relaxed">
+                                <p className="text-[var(--text-secondary)] text-xs leading-relaxed">
                                     Unlimited sessions & advanced AI tools
                                 </p>
                             </div>
@@ -117,9 +117,9 @@ export function ProfileDropdown({
                 </div>
 
                 {/* Menu Items */}
-                <div className="py-2">
-                    <DropdownMenuItem className="px-4 py-2.5 text-[var(--text-secondary)] hover:bg-[var(--surface-2)] cursor-pointer focus:bg-[var(--surface-2)] focus:text-[var(--text-primary)]">
-                        <Users className="w-4 h-4 mr-3" />
+                <div className="p-2">
+                    <DropdownMenuItem className="group px-4 py-2.5 text-text-primary hover:bg-surface-2 cursor-pointer focus:bg-surface-2 rounded-md">
+                        <Users className="w-4 h-4 mr-3 text-text-primary group-hover:text-accent-lime transition-colors" />
                         <span className="text-sm font-medium">
                             {DASHBOARD_COPY.dropdown.managePlans}
                         </span>
@@ -127,9 +127,9 @@ export function ProfileDropdown({
 
                     <DropdownMenuItem
                         onClick={onSettingsClick}
-                        className="px-4 py-2.5 text-[var(--text-secondary)] hover:bg-[var(--surface-2)] cursor-pointer focus:bg-[var(--surface-2)] focus:text-[var(--text-primary)]"
+                        className="group px-4 py-2.5 text-text-primary hover:bg-surface-2 cursor-pointer focus:bg-surface-2 rounded-md"
                     >
-                        <Settings className="w-4 h-4 mr-3" />
+                        <Settings className="w-4 h-4 mr-3 text-text-primary group-hover:text-accent-lime transition-colors" />
                         <span className="text-sm font-medium">
                             {DASHBOARD_COPY.dropdown.settings}
                         </span>
@@ -137,9 +137,9 @@ export function ProfileDropdown({
 
                     <DropdownMenuItem
                         onClick={() => router.push('/help')}
-                        className="px-4 py-2.5 text-[var(--text-secondary)] hover:bg-[var(--surface-2)] cursor-pointer focus:bg-[var(--surface-2)] focus:text-[var(--text-primary)]"
+                        className="group px-4 py-2.5 text-text-primary hover:bg-surface-2 cursor-pointer focus:bg-surface-2 rounded-md"
                     >
-                        <HelpCircle className="w-4 h-4 mr-3" />
+                        <HelpCircle className="w-4 h-4 mr-3 text-text-primary group-hover:text-accent-lime transition-colors" />
                         <span className="text-sm font-medium">
                             Help & Support
                         </span>
@@ -149,12 +149,12 @@ export function ProfileDropdown({
                 <DropdownMenuSeparator className="bg-[var(--border-gray)] m-0" />
 
                 {/* Logout */}
-                <div className="py-2">
+                <div className="p-2">
                     <DropdownMenuItem
                         onClick={onSignOut}
-                        className="px-4 py-2.5 text-[var(--text-secondary)] hover:bg-[var(--surface-2)] cursor-pointer focus:bg-[var(--surface-2)] focus:text-[var(--text-primary)]"
+                        className="group px-4 py-2.5 text-text-primary hover:bg-surface-2 cursor-pointer focus:bg-surface-2 rounded-md"
                     >
-                        <LogOut className="w-4 h-4 mr-3" />
+                        <LogOut className="w-4 h-4 mr-3 text-text-primary group-hover:text-accent-lime transition-colors" />
                         <span className="text-sm font-medium">
                             {DASHBOARD_COPY.dropdown.logout}
                         </span>
