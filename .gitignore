@@ -57,7 +57,7 @@ Thumbs.db
 *.jpeg
 *.jpg
 *.png
-FYP*.pdf
+
 
 # Python
 __pycache__/

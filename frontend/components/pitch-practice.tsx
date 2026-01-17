@@ -72,8 +72,8 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
         // Parse transcript back into messages
         const lines = initialSession.transcript.split('\n');
         const loadedMessages: Message[] = lines
-          .filter(line => line.includes(':'))
-          .map(line => {
+          .filter((line: string) => line.includes(':'))
+          .map((line: string) => {
             const [role, ...contentParts] = line.split(':');
             return {
               role: role.trim().toLowerCase() as 'user' | 'assistant',

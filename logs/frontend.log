@@ -66107,3 +66107,4 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 276ms
  GET /dashboard 200 in 148ms
  GET / 200 in 264ms
+ GET / 200 in 258ms
