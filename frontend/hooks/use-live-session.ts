@@ -388,13 +388,14 @@ export function useLiveSession({
       audioQueueRef.current = [];
       isPlayingRef.current = false;
 
-      if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+      const ctx = audioContextRef.current;
+      if (ctx && ctx.state !== 'closed') {
+        audioContextRef.current = null;
         try {
-          audioContextRef.current.close();
+          ctx.close();
         } catch (e) {
           console.error('[useLiveSession] Error closing AudioContext:', e);
         }
-        audioContextRef.current = null;
       }
     };
   }, []); // Remove vad from dependencies to prevent unnecessary re-runs

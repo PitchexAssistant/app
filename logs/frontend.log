@@ -64977,3 +64977,3416 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 204ms
  GET / 200 in 184ms
  GET / 200 in 140ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.102:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 269ms
+ ✓ Ready in 1288ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 6001ms
+ GET / 200 in 74ms
+ GET / 200 in 105ms
+ GET / 200 in 84ms
+ GET / 200 in 400ms
+ GET / 200 in 651ms
+ ○ Compiling /favicon.ico ...
+ POST / 200 in 759ms
+ POST / 200 in 99ms
+ POST / 303 in 363ms
+ ✓ Compiled /favicon.ico in 1354ms
+ GET / 200 in 166ms
+ GET / 200 in 65ms
+ POST / 303 in 449ms
+ GET / 200 in 38ms
+ GET / 200 in 31ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 425ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 294ms
+ GET / 200 in 77ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 431ms
+ GET /sign-in 200 in 852ms
+ GET / 200 in 90ms
+ ✓ Compiled /_not-found/page in 324ms
+ GET /sso-callback 404 in 465ms
+ POST /sso-callback 404 in 34ms
+ GET / 200 in 115ms
+ POST / 200 in 54ms
+ POST / 200 in 28ms
+ GET /sign-in 200 in 62ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 2.1s
+ GET /dashboard 200 in 2250ms
+ GET /dashboard 200 in 144ms
+ GET / 200 in 101ms
+ GET / 200 in 102ms
+ GET / 200 in 103ms
+ GET / 200 in 88ms
+ GET /dashboard 200 in 108ms
+ GET / 200 in 65ms
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 997ms
+ POST /undefined/api/v1/stt/transcribe 500 in 1572ms
+ GET / 200 in 91ms
+ GET / 200 in 111ms
+ GET / 200 in 67ms
+ GET / 200 in 76ms
+ GET / 200 in 115ms
+ GET / 200 in 109ms
+ GET / 200 in 101ms
+ GET / 200 in 140ms
+ GET / 200 in 129ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.102:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 225ms
+ ✓ Ready in 1270ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 3030ms
+ GET / 200 in 71ms
+ GET / 200 in 84ms
+ GET / 200 in 88ms
+ GET / 200 in 207ms
+ GET / 200 in 77ms
+ GET / 200 in 83ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 2.4s
+ GET /dashboard 200 in 2466ms
+ ✓ Compiled /favicon.ico in 306ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 609ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 236ms
+ GET / 200 in 70ms
+ GET / 200 in 105ms
+ GET / 200 in 100ms
+ GET / 200 in 81ms
+ GET / 200 in 108ms
+ GET / 200 in 95ms
+ GET / 200 in 85ms
+ GET / 200 in 107ms
+ GET / 200 in 99ms
+ GET / 200 in 79ms
+ GET / 200 in 100ms
+ GET / 200 in 88ms
+ GET / 200 in 90ms
+ GET / 200 in 102ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 77ms
+ GET / 200 in 81ms
+ GET / 200 in 89ms
+ GET / 200 in 86ms
+ GET / 200 in 73ms
+ GET / 200 in 86ms
+ GET / 200 in 75ms
+ GET / 200 in 109ms
+ GET / 200 in 141ms
+ GET / 200 in 93ms
+ GET / 200 in 94ms
+ GET / 200 in 160ms
+ GET / 200 in 111ms
+ GET / 200 in 100ms
+ GET / 200 in 90ms
+ GET / 200 in 95ms
+ GET / 200 in 167ms
+ GET / 200 in 93ms
+ GET / 200 in 133ms
+ GET / 200 in 106ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 83ms
+ GET / 200 in 116ms
+ GET / 200 in 111ms
+ GET / 200 in 274ms
+ GET / 200 in 110ms
+ GET / 200 in 85ms
+ GET / 200 in 159ms
+ GET / 200 in 178ms
+ GET / 200 in 101ms
+ GET / 200 in 93ms
+ GET / 200 in 119ms
+ GET / 200 in 148ms
+ GET / 200 in 125ms
+ GET / 200 in 92ms
+ GET / 200 in 93ms
+ GET / 200 in 93ms
+ GET / 200 in 318ms
+ GET / 200 in 158ms
+ GET / 200 in 405ms
+ GET / 200 in 155ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 130ms
+ GET / 200 in 94ms
+ GET / 200 in 160ms
+ GET / 200 in 86ms
+ GET / 200 in 104ms
+ GET / 200 in 87ms
+ GET / 200 in 97ms
+ GET / 200 in 125ms
+ GET / 200 in 122ms
+ GET / 200 in 146ms
+ GET / 200 in 102ms
+ GET / 200 in 91ms
+ GET / 200 in 88ms
+ GET / 200 in 110ms
+ GET / 200 in 91ms
+ GET / 200 in 86ms
+ GET / 200 in 88ms
+ GET / 200 in 88ms
+ GET / 200 in 95ms
+ GET / 200 in 115ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 109ms
+ GET / 200 in 113ms
+ GET / 200 in 107ms
+ GET / 200 in 110ms
+ GET / 200 in 116ms
+ GET / 200 in 93ms
+ GET / 200 in 92ms
+ GET / 200 in 474ms
+ GET / 200 in 160ms
+ GET / 200 in 154ms
+ GET / 200 in 122ms
+ GET / 200 in 139ms
+ GET / 200 in 89ms
+ POST /dashboard 200 in 137ms
+ GET / 200 in 59ms
+ GET / 200 in 61ms
+ GET / 200 in 64ms
+ GET / 200 in 103ms
+ GET / 200 in 100ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 874ms
+ GET /sign-in 200 in 1444ms
+ GET /sign-in 200 in 91ms
+ GET / 200 in 141ms
+ GET /dashboard 200 in 271ms
+ POST /dashboard 200 in 31ms
+ POST /dashboard 200 in 318ms
+ GET /dashboard 200 in 122ms
+ POST /dashboard 200 in 60ms
+ POST /dashboard 200 in 40ms
+ GET / 200 in 133ms
+ GET / 200 in 109ms
+ GET / 200 in 195ms
+ GET / 200 in 104ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 413ms
+ GET / 200 in 222ms
+ GET / 200 in 96ms
+ GET / 200 in 108ms
+ GET / 200 in 131ms
+ GET / 200 in 109ms
+ GET / 200 in 100ms
+ GET / 200 in 99ms
+ GET / 200 in 118ms
+ GET / 200 in 110ms
+ GET / 200 in 123ms
+ GET / 200 in 153ms
+ GET / 200 in 112ms
+ GET / 200 in 118ms
+ ✓ Compiled in 772ms
+ GET / 200 in 108ms
+ ✓ Compiled in 236ms
+ GET / 200 in 156ms
+ GET / 200 in 100ms
+ GET / 200 in 127ms
+ GET / 200 in 154ms
+ GET / 200 in 218ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 114ms
+ ✓ Compiled middleware in 6ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled middleware in 39ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ○ Compiling / ...
+ ✓ Compiled / in 648ms
+ ✓ Compiled in 2.8s
+ GET / 200 in 2147ms
+ ✓ Compiled /dashboard in 23ms
+ GET /dashboard 200 in 944ms
+ GET /dashboard 200 in 264ms
+ POST /dashboard 200 in 71ms
+ POST /dashboard 200 in 173ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 391ms
+ ✓ Compiled middleware in 19ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /dashboard in 23ms
+ GET /dashboard 200 in 830ms
+ GET /dashboard 200 in 642ms
+ POST /dashboard 200 in 145ms
+ POST /dashboard 200 in 29ms
+ ✓ Compiled middleware in 18ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /dashboard in 25ms
+ GET /dashboard 200 in 1170ms
+ GET /dashboard 200 in 792ms
+ POST /dashboard 200 in 177ms
+ POST /dashboard 200 in 31ms
+ GET /favicon.ico?favicon.36e54ad6.ico 200 in 370ms
+ ✓ Compiled / in 27ms
+ GET / 200 in 180ms
+ GET / 200 in 120ms
+ ✓ Compiled middleware in 19ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /dashboard in 31ms
+ GET /dashboard 200 in 751ms
+ GET /dashboard 200 in 720ms
+ POST /dashboard 200 in 121ms
+ POST /dashboard 200 in 46ms
+ ✓ Compiled middleware in 6ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /dashboard in 56ms
+ GET /dashboard 200 in 1388ms
+ GET /dashboard 200 in 1015ms
+ POST /dashboard 200 in 96ms
+ POST /dashboard 200 in 110ms
+ GET /favicon.ico?favicon.0601158a.ico 200 in 297ms
+ ✓ Compiled / in 29ms
+ GET / 200 in 167ms
+ ✓ Compiled middleware in 8ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 852ms
+ ✓ Compiled /dashboard in 116ms
+ GET /dashboard 200 in 856ms
+ GET /dashboard 200 in 808ms
+ POST /dashboard 200 in 114ms
+ POST /dashboard 200 in 45ms
+ ✓ Compiled / in 72ms
+ GET / 200 in 407ms
+ ✓ Compiled middleware in 12ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 1501ms
+ ✓ Compiled /dashboard in 82ms
+ GET /dashboard 200 in 1600ms
+ GET /dashboard 200 in 1213ms
+ POST /dashboard 200 in 60ms
+ POST /dashboard 200 in 28ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 269ms
+ ✓ Compiled / in 31ms
+ GET / 200 in 528ms
+ POST /dashboard 200 in 82ms
+ GET / 200 in 44ms
+ GET / 200 in 185ms
+ GET / 200 in 192ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 384ms
+ GET / 200 in 147ms
+ GET / 200 in 118ms
+ GET / 200 in 131ms
+ GET / 200 in 121ms
+ GET / 200 in 128ms
+ GET / 200 in 138ms
+ GET / 200 in 120ms
+ GET / 200 in 137ms
+ GET / 200 in 127ms
+ GET / 200 in 118ms
+ ✓ Compiled in 682ms
+ ✓ Compiled in 929ms
+ GET / 200 in 1118ms
+ GET / 200 in 162ms
+ POST / 200 in 219ms
+ POST / 200 in 48ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 468ms
+ GET / 200 in 140ms
+ GET / 200 in 96ms
+ ✓ Compiled in 304ms
+ ✓ Compiled in 133ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 867ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 568ms
+ GET /dashboard 404 in 659ms
+ GET / 200 in 755ms
+ POST / 200 in 165ms
+ POST / 200 in 88ms
+ GET / 200 in 87ms
+ GET / 200 in 74ms
+ GET / 200 in 60ms
+ GET / 200 in 60ms
+ GET / 200 in 55ms
+ GET / 200 in 129ms
+ GET /login 404 in 50ms
+ GET /login 404 in 61ms
+ POST /login 404 in 51ms
+ GET / 200 in 206ms
+ POST / 200 in 64ms
+ POST / 200 in 66ms
+ GET / 200 in 170ms
+ POST / 200 in 85ms
+ POST / 200 in 178ms
+ GET / 200 in 211ms
+ GET / 200 in 125ms
+ GET / 200 in 126ms
+ GET / 200 in 121ms
+ ✓ Compiled in 139ms
+ GET / 200 in 685ms
+ GET / 200 in 158ms
+ GET / 200 in 161ms
+ GET / 200 in 126ms
+ GET / 200 in 116ms
+ ✓ Compiled in 267ms
+ GET / 200 in 572ms
+ GET / 200 in 143ms
+ GET / 200 in 441ms
+ ✓ Compiled in 161ms
+ ✓ Compiled in 88ms
+ ✓ Compiled in 95ms
+ GET / 200 in 572ms
+ ✓ Compiled in 97ms
+ ✓ Compiled in 74ms
+ ✓ Compiled in 93ms
+ ✓ Compiled in 105ms
+ ✓ Compiled in 68ms
+ ✓ Compiled in 92ms
+ GET / 200 in 694ms
+ ✓ Compiled in 135ms
+ GET / 200 in 494ms
+ GET / 200 in 128ms
+ ✓ Compiled in 138ms
+ GET / 200 in 539ms
+ ✓ Compiled in 107ms
+ GET / 200 in 644ms
+ ✓ Compiled in 325ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 913ms
+ GET / 200 in 135ms
+ ✓ Compiled in 117ms
+ ✓ Compiled in 78ms
+ ✓ Compiled in 107ms
+ GET / 200 in 1159ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 90ms
+ ✓ Compiled in 63ms
+ GET / 200 in 117ms
+ ✓ Compiled in 251ms
+ ✓ Compiled in 160ms
+ GET / 200 in 469ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 246ms
+ ✓ Compiled in 292ms
+ ✓ Compiled in 90ms
+ ✓ Compiled in 100ms
+ GET / 200 in 533ms
+ ✓ Compiled in 175ms
+ GET / 200 in 458ms
+ ✓ Compiled in 102ms
+ ✓ Compiled in 97ms
+ ✓ Compiled in 92ms
+ ✓ Compiled in 124ms
+ GET / 200 in 641ms
+ ✓ Compiled in 326ms
+ ✓ Compiled in 300ms
+ GET / 200 in 126ms
+ ✓ Compiled in 152ms
+ ✓ Compiled in 153ms
+ ✓ Compiled in 122ms
+ GET / 200 in 1473ms
+ ✓ Compiled in 495ms
+ GET / 200 in 911ms
+ GET / 200 in 149ms
+ GET / 200 in 111ms
+ GET / 200 in 178ms
+ GET / 200 in 197ms
+ GET / 200 in 126ms
+ GET / 200 in 211ms
+ GET / 200 in 125ms
+ GET / 200 in 184ms
+ GET / 200 in 144ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 144ms
+ GET / 200 in 1553ms
+ GET / 200 in 225ms
+ GET / 200 in 134ms
+ GET / 200 in 184ms
+ GET / 200 in 121ms
+ GET / 200 in 132ms
+ ✓ Compiled in 604ms
+ ✓ Compiled in 155ms
+ ✓ Compiled in 161ms
+ GET / 200 in 168ms
+ ✓ Compiled in 167ms
+ ✓ Compiled in 352ms
+ GET / 200 in 1994ms
+ ✓ Compiled in 90ms
+ GET / 200 in 1307ms
+ ✓ Compiled in 133ms
+ ✓ Compiled in 107ms
+ GET / 200 in 870ms
+ ✓ Compiled in 332ms
+ GET / 200 in 1588ms
+ GET / 200 in 271ms
+ GET / 200 in 164ms
+ GET / 200 in 185ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled / in 468ms
+ ⚠ Fast Refresh had to perform a full reload when ./node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 727ms
+ ✓ Compiled in 4.3s
+ GET / 200 in 6249ms
+ GET / 200 in 4183ms
+ GET / 200 in 307ms
+ GET / 200 in 269ms
+ POST / 200 in 239ms
+ POST / 200 in 56ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 548ms
+ ✓ Compiled in 219ms
+ GET / 200 in 114ms
+ GET / 200 in 106ms
+ GET / 200 in 181ms
+ ✓ Compiled in 183ms
+ GET / 200 in 2709ms
+ ✓ Compiled in 216ms
+ GET / 200 in 772ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 150ms
+ GET / 200 in 611ms
+ GET / 200 in 152ms
+ GET / 200 in 123ms
+ ✓ Compiled in 707ms
+ GET / 200 in 1446ms
+ ✓ Compiled in 622ms
+ GET / 200 in 695ms
+ GET / 200 in 325ms
+ ✓ Compiled in 199ms
+ ✓ Compiled in 173ms
+ ✓ Compiled in 96ms
+ GET / 200 in 1606ms
+ ✓ Compiled in 160ms
+ GET / 200 in 867ms
+ ✓ Compiled in 272ms
+ ✓ Compiled in 102ms
+ ✓ Compiled in 134ms
+ GET / 200 in 801ms
+ ✓ Compiled in 107ms
+ GET / 200 in 1040ms
+ ✓ Compiled in 232ms
+ ✓ Compiled in 167ms
+ ✓ Compiled in 96ms
+ ✓ Compiled in 98ms
+ GET / 200 in 1211ms
+ GET / 200 in 383ms
+ GET / 200 in 198ms
+ GET / 200 in 218ms
+ GET / 200 in 487ms
+ GET / 200 in 151ms
+ GET / 200 in 119ms
+ GET / 200 in 151ms
+ GET / 200 in 149ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 302ms
+ GET / 200 in 153ms
+ GET / 200 in 216ms
+ GET / 200 in 135ms
+ GET / 200 in 130ms
+ GET / 200 in 237ms
+ GET / 200 in 199ms
+ GET / 200 in 129ms
+ GET / 200 in 170ms
+ GET / 200 in 150ms
+ GET / 200 in 133ms
+ GET / 200 in 208ms
+ GET / 200 in 244ms
+ GET / 200 in 227ms
+ GET / 200 in 245ms
+ GET / 200 in 157ms
+ GET / 200 in 136ms
+ GET / 200 in 175ms
+ GET / 200 in 148ms
+ GET / 200 in 166ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 158ms
+ ✓ Compiled in 3.6s
+ GET / 200 in 10519ms
+ GET / 200 in 538ms
+ GET / 200 in 184ms
+ GET / 200 in 270ms
+ GET / 200 in 184ms
+ GET / 200 in 122ms
+ GET / 200 in 132ms
+ GET / 200 in 694ms
+ GET / 200 in 172ms
+ GET / 200 in 121ms
+ GET / 200 in 652ms
+ GET / 200 in 182ms
+ GET / 200 in 150ms
+ ✓ Compiled in 1159ms
+ GET / 200 in 4069ms
+ GET / 200 in 151ms
+ GET / 200 in 225ms
+ ✓ Compiled in 238ms
+ GET / 200 in 1391ms
+ GET / 200 in 202ms
+ ✓ Compiled in 419ms
+ GET / 200 in 5006ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 328ms
+ GET / 200 in 293ms
+ ✓ Compiled in 313ms
+ ✓ Compiled in 122ms
+ GET / 200 in 3372ms
+ ✓ Compiled in 118ms
+ ✓ Compiled in 430ms
+ GET / 200 in 1855ms
+ ✓ Compiled in 143ms
+ ✓ Compiled in 165ms
+ GET / 200 in 918ms
+ ✓ Compiled in 108ms
+ GET / 200 in 1625ms
+ ✓ Compiled in 190ms
+ GET / 200 in 1173ms
+ ✓ Compiled in 113ms
+ GET / 200 in 1160ms
+ ✓ Compiled in 145ms
+ ✓ Compiled in 139ms
+ ✓ Compiled in 99ms
+ GET / 200 in 2229ms
+ ✓ Compiled in 121ms
+ GET / 200 in 1019ms
+ ✓ Compiled in 262ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 331ms
+ ✓ Compiled in 126ms
+ GET / 200 in 1824ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 237ms
+ ✓ Compiled in 132ms
+ GET / 200 in 1449ms
+ ✓ Compiled in 133ms
+ ✓ Compiled in 294ms
+ ✓ Compiled in 119ms
+ ✓ Compiled / in 83ms
+ GET / 200 in 622ms
+ GET / 200 in 949ms
+ ✓ Compiled in 149ms
+ ✓ Compiled in 80ms
+ ✓ Compiled in 420ms
+ ✓ Compiled in 106ms
+ GET / 200 in 1434ms
+ ✓ Compiled in 102ms
+ ✓ Compiled in 128ms
+ GET / 200 in 1232ms
+ ✓ Compiled in 179ms
+ ✓ Compiled in 166ms
+ GET / 200 in 2111ms
+ ✓ Compiled in 183ms
+ ✓ Compiled in 124ms
+ ✓ Compiled in 305ms
+ GET / 200 in 2553ms
+ ✓ Compiled in 131ms
+ ✓ Compiled in 97ms
+ GET / 200 in 1143ms
+ ✓ Compiled in 411ms
+ ✓ Compiled in 89ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 129ms
+ ✓ Compiled in 109ms
+ GET / 200 in 1566ms
+ ✓ Compiled in 86ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 695ms
+ ✓ Compiled in 87ms
+ ✓ Compiled in 70ms
+ GET / 200 in 676ms
+ GET / 200 in 204ms
+ ✓ Compiled in 242ms
+ ✓ Compiled in 109ms
+ ✓ Compiled in 107ms
+ GET / 200 in 1862ms
+ ✓ Compiled in 137ms
+ ✓ Compiled in 107ms
+ ✓ Compiled in 95ms
+ GET / 200 in 1600ms
+ ✓ Compiled in 93ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 172ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 342ms
+ GET / 200 in 915ms
+ ✓ Compiled in 139ms
+ ✓ Compiled in 384ms
+ ✓ Compiled in 89ms
+ GET / 200 in 970ms
+ ✓ Compiled in 100ms
+ ✓ Compiled in 114ms
+ ✓ Compiled in 79ms
+ GET / 200 in 838ms
+ GET / 200 in 146ms
+ GET / 200 in 169ms
+ ✓ Compiled in 399ms
+ GET / 200 in 1876ms
+ ✓ Compiled in 357ms
+ GET / 200 in 968ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 178ms
+ ✓ Compiled in 799ms
+ GET / 200 in 4114ms
+ ✓ Compiled in 102ms
+ GET / 200 in 1339ms
+ GET / 200 in 175ms
+ GET / 200 in 838ms
+ ✓ Compiled in 729ms
+ GET / 200 in 2798ms
+ GET / 200 in 179ms
+ GET / 200 in 155ms
+ ✓ Compiled in 303ms
+ GET / 200 in 1338ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 96ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 838ms
+ ✓ Compiled in 98ms
+ ✓ Compiled in 293ms
+ ✓ Compiled in 104ms
+ GET / 200 in 147ms
+ ✓ Compiled in 94ms
+ ✓ Compiled in 322ms
+ GET / 200 in 876ms
+ ✓ Compiled in 113ms
+ ✓ Compiled in 99ms
+ GET / 200 in 2292ms
+ ✓ Compiled in 125ms
+ ✓ Compiled in 116ms
+ GET / 200 in 2468ms
+ ✓ Compiled in 209ms
+ ✓ Compiled in 275ms
+ ✓ Compiled in 259ms
+ ✓ Compiled in 141ms
+ GET / 200 in 3578ms
+ GET / 200 in 174ms
+ GET / 200 in 274ms
+ ✓ Compiled in 345ms
+ GET / 200 in 1929ms
+ GET / 200 in 285ms
+ ✓ Compiled in 107ms
+ GET / 200 in 1177ms
+ GET / 200 in 234ms
+ ✓ Compiled in 234ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 2s
+ GET /sign-up 200 in 2753ms
+ GET / 200 in 755ms
+ GET / 200 in 477ms
+ GET / 200 in 175ms
+ GET / 200 in 309ms
+ GET / 200 in 196ms
+ GET / 200 in 89ms
+ GET / 200 in 194ms
+ ✓ Compiled in 423ms
+ ✓ Compiled in 274ms
+ GET / 200 in 2616ms
+ ✓ Compiled in 271ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 13028ms
+ GET / 200 in 745ms
+ GET / 200 in 1108ms
+ GET / 200 in 361ms
+ GET / 200 in 405ms
+ GET / 200 in 155ms
+ GET / 200 in 273ms
+ GET / 200 in 190ms
+ GET / 200 in 226ms
+ GET / 200 in 344ms
+ ✓ Compiled in 1903ms
+ GET / 200 in 6086ms
+ ✓ Compiled in 179ms
+ GET / 200 in 1416ms
+ GET / 200 in 249ms
+ GET / 200 in 377ms
+ POST / 200 in 556ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 916ms
+ POST / 200 in 247ms
+ GET / 200 in 575ms
+ GET / 200 in 184ms
+ GET / 200 in 232ms
+ GET / 200 in 179ms
+ ✓ Compiled in 595ms
+ GET / 200 in 3705ms
+ GET / 200 in 171ms
+ GET / 200 in 268ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 225ms
+ GET / 200 in 140ms
+ GET / 200 in 133ms
+ GET / 200 in 1857ms
+ GET / 200 in 229ms
+ GET / 200 in 247ms
+ GET / 200 in 204ms
+ GET / 200 in 275ms
+ POST / 200 in 524ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 749ms
+ POST / 200 in 205ms
+ GET / 200 in 225ms
+ GET / 200 in 182ms
+ ✓ Compiled in 697ms
+ GET / 200 in 4724ms
+ ✓ Compiled in 201ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 164ms
+ GET / 200 in 1434ms
+ POST / 200 in 160ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 519ms
+ POST / 200 in 289ms
+ GET / 200 in 123ms
+ GET / 200 in 148ms
+ ✓ Compiled in 258ms
+ GET / 200 in 1216ms
+ ✓ Compiled in 153ms
+ ✓ Compiled in 270ms
+ ✓ Compiled in 295ms
+ ✓ Compiled in 141ms
+ GET / 200 in 1151ms
+ ✓ Compiled in 96ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 175ms
+ GET / 200 in 1884ms
+ ✓ Compiled in 394ms
+ ✓ Compiled in 708ms
+ ✓ Compiled in 152ms
+ GET / 200 in 2790ms
+ GET / 200 in 248ms
+ GET / 200 in 198ms
+ ✓ Compiled in 211ms
+ ✓ Compiled in 154ms
+ ✓ Compiled in 120ms
+ GET / 200 in 1411ms
+ ✓ Compiled in 115ms
+ ✓ Compiled in 97ms
+ ✓ Compiled in 493ms
+ GET / 200 in 1350ms
+ ✓ Compiled in 115ms
+ ✓ Compiled in 393ms
+ ✓ Compiled in 170ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1552ms
+ GET / 200 in 191ms
+ ✓ Compiled in 138ms
+ ✓ Compiled in 93ms
+ GET / 200 in 1171ms
+ ✓ Compiled in 287ms
+ ✓ Compiled in 92ms
+ ✓ Compiled in 100ms
+ ✓ Compiled in 400ms
+ GET / 200 in 3002ms
+ ✓ Compiled in 382ms
+ GET / 200 in 1098ms
+ ✓ Compiled in 142ms
+ ✓ Compiled in 98ms
+ ✓ Compiled in 94ms
+ ✓ Compiled in 79ms
+ ✓ Compiled in 73ms
+ ✓ Compiled in 119ms
+ ✓ Compiled in 106ms
+ ✓ Compiled in 62ms
+ ✓ Compiled in 979ms
+ GET / 200 in 15622ms
+ ✓ Compiled in 915ms
+ ✓ Compiled in 181ms
+ ✓ Compiled in 147ms
+ ✓ Compiled in 244ms
+ ✓ Compiled in 1ms
+ GET / 200 in 3562ms
+ GET / 200 in 258ms
+ GET / 200 in 323ms
+ GET / 200 in 384ms
+ GET / 200 in 527ms
+ ✓ Compiled in 1151ms
+ GET / 200 in 4123ms
+ GET / 200 in 339ms
+ GET / 200 in 627ms
+ GET / 200 in 308ms
+ GET / 200 in 557ms
+ ✓ Compiled in 1124ms
+ ✓ Compiled in 168ms
+ ✓ Compiled in 105ms
+ ✓ Compiled in 202ms
+ ✓ Compiled in 4ms
+ GET / 200 in 5636ms
+ ✓ Compiled in 229ms
+ ✓ Compiled in 389ms
+ GET / 200 in 2095ms
+ ⚠ Server is approaching the used memory threshold, restarting...
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.102:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 233ms
+ ✓ Ready in 1289ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 3918ms
+ GET / 200 in 144ms
+ GET / 200 in 316ms
+ GET / 200 in 137ms
+ GET / 200 in 110ms
+ GET / 200 in 113ms
+ GET / 200 in 124ms
+ GET / 200 in 277ms
+ GET / 200 in 334ms
+ POST / 200 in 299ms
+ ○ Compiling /favicon.ico ...
+ POST / 200 in 226ms
+ ✓ Compiled /favicon.ico in 830ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1112ms
+ GET / 200 in 113ms
+ GET / 200 in 163ms
+ GET / 200 in 107ms
+ GET / 200 in 113ms
+ ✓ Compiled in 587ms
+ GET / 200 in 326ms
+ GET / 200 in 164ms
+ GET / 200 in 99ms
+ GET / 200 in 153ms
+ GET / 200 in 132ms
+ ✓ Compiled in 364ms
+ GET / 200 in 341ms
+ GET / 200 in 119ms
+ GET / 200 in 136ms
+ ✓ Compiled in 481ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 416ms
+ GET / 200 in 110ms
+ GET / 200 in 349ms
+ GET / 200 in 132ms
+ GET / 200 in 164ms
+ GET / 200 in 155ms
+ GET / 200 in 120ms
+ GET / 200 in 130ms
+ ✓ Compiled in 618ms
+ GET / 200 in 484ms
+ GET / 200 in 116ms
+ GET / 200 in 122ms
+ ✓ Compiled in 146ms
+ GET / 200 in 415ms
+ GET / 200 in 153ms
+ GET / 200 in 116ms
+ GET / 200 in 126ms
+ ✓ Compiled in 449ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 120ms
+ POST / 200 in 656ms
+ GET / 200 in 722ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '28012489' }
+ POST / 200 in 155ms
+ POST / 200 in 87ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 325ms
+ GET / 200 in 144ms
+ GET / 200 in 129ms
+ GET / 200 in 159ms
+ GET / 200 in 121ms
+ GET / 200 in 177ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 129ms
+ ✓ Compiled in 614ms
+ GET / 200 in 397ms
+ GET / 200 in 127ms
+ GET / 200 in 113ms
+ POST / 200 in 214ms
+ POST / 200 in 39ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 494ms
+ GET / 200 in 128ms
+ ✓ Compiled in 139ms
+ ✓ Compiled in 86ms
+ ✓ Compiled in 84ms
+ ✓ Compiled in 79ms
+ GET / 200 in 405ms
+ POST / 200 in 124ms
+ POST / 200 in 33ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 368ms
+ GET / 200 in 143ms
+ POST / 200 in 71ms
+ POST / 200 in 36ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 288ms
+ GET / 200 in 109ms
+ ✓ Compiled in 224ms
+ GET / 200 in 461ms
+ POST / 200 in 71ms
+ POST / 200 in 51ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 304ms
+ GET / 200 in 137ms
+ GET / 200 in 114ms
+ GET / 200 in 114ms
+ GET / 200 in 146ms
+ GET / 200 in 228ms
+ GET / 200 in 118ms
+ GET / 200 in 131ms
+ GET / 200 in 116ms
+ GET / 200 in 113ms
+ ✓ Compiled in 620ms
+ GET / 200 in 142ms
+ ✓ Compiled in 695ms
+ GET / 200 in 434ms
+ ✓ Compiled in 151ms
+ GET / 200 in 364ms
+ GET / 200 in 140ms
+ GET / 200 in 132ms
+ ✓ Compiled in 296ms
+ ⨯ ./features/landing/components/PricingSection.tsx:204:1
+Parsing ecmascript source code failed
+[0m [90m 202 |[39m         [33m<[39m[33m/[39m[33msection[39m[33m>[39m
+ [90m 203 |[39m     )[33m;[39m
+[31m[1m>[22m[39m[90m 204 |[39m }
+ [90m     |[39m [31m[1m^[22m[39m
+ [90m 205 |[39m[0m
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./features/landing/components/PricingSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./features/landing/components/PricingSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1263ms
+ GET / 500 in 1512ms
+ ✓ Compiled in 142ms
+ ✓ Compiled / in 55ms
+ GET / 200 in 258ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 382ms
+ GET / 200 in 168ms
+ ✓ Compiled in 138ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 122ms
+ GET / 200 in 422ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 98ms
+ ✓ Compiled in 79ms
+ ✓ Compiled in 113ms
+ ✓ Compiled in 284ms
+ GET / 200 in 432ms
+ ✓ Compiled in 117ms
+ ✓ Compiled in 131ms
+ ✓ Compiled in 145ms
+ GET / 200 in 406ms
+ ✓ Compiled in 183ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 86ms
+ GET / 200 in 305ms
+ ✓ Compiled in 132ms
+ GET / 200 in 347ms
+ GET / 200 in 156ms
+ GET / 200 in 169ms
+ GET / 200 in 127ms
+ GET / 200 in 150ms
+ GET / 200 in 172ms
+ GET / 200 in 158ms
+ GET / 200 in 157ms
+ GET / 200 in 151ms
+ ✓ Compiled in 414ms
+ GET / 200 in 451ms
+ GET / 200 in 184ms
+ POST / 200 in 99ms
+ POST / 200 in 37ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 422ms
+ GET / 200 in 170ms
+ GET / 200 in 145ms
+ GET / 200 in 133ms
+ ✓ Compiled in 192ms
+ GET / 200 in 547ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 172ms
+ GET / 200 in 137ms
+ GET / 200 in 152ms
+ GET / 200 in 114ms
+ GET / 200 in 118ms
+ GET / 200 in 101ms
+ ✓ Compiled in 388ms
+ GET / 200 in 433ms
+ GET / 200 in 154ms
+ GET / 200 in 120ms
+ GET / 200 in 199ms
+ GET / 200 in 111ms
+ ✓ Compiled in 250ms
+ ✓ Compiled in 101ms
+ GET / 200 in 478ms
+ ✓ Compiled in 137ms
+ ✓ Compiled in 98ms
+ GET / 200 in 414ms
+ ✓ Compiled in 125ms
+ ✓ Compiled in 125ms
+ ✓ Compiled / in 24ms
+ GET / 200 in 94ms
+ ✓ Compiled in 180ms
+ ✓ Compiled in 121ms
+ ✓ Compiled / in 42ms
+ GET / 200 in 106ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 99ms
+ ✓ Compiled / in 14ms
+ GET / 200 in 85ms
+ ✓ Compiled in 103ms
+ GET / 200 in 1061ms
+ GET / 200 in 172ms
+ ✓ Compiled in 167ms
+ GET / 200 in 654ms
+ GET / 200 in 251ms
+ POST / 200 in 53ms
+ POST / 200 in 65ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 288ms
+ ✓ Compiled in 111ms
+ GET / 200 in 399ms
+ ✓ Compiled in 134ms
+ ✓ Compiled in 345ms
+ GET / 200 in 608ms
+ GET / 200 in 184ms
+ GET / 200 in 224ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 139ms
+ GET / 200 in 214ms
+ GET / 200 in 163ms
+ GET / 200 in 169ms
+ GET / 200 in 148ms
+ GET / 200 in 296ms
+ ✓ Compiled in 538ms
+ GET / 200 in 137ms
+ ✓ Compiled in 557ms
+ GET / 200 in 1324ms
+ ✓ Compiled in 156ms
+ GET / 200 in 494ms
+ GET / 200 in 230ms
+ GET / 200 in 154ms
+ GET / 200 in 161ms
+ GET / 200 in 148ms
+ ✓ Compiled in 391ms
+ GET / 200 in 466ms
+ GET / 200 in 140ms
+ GET / 200 in 190ms
+ GET / 200 in 230ms
+ POST / 200 in 229ms
+ POST / 200 in 78ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 304ms
+ GET / 200 in 201ms
+ GET / 200 in 153ms
+ GET / 200 in 158ms
+ GET / 200 in 166ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 149ms
+ GET / 200 in 143ms
+ GET / 200 in 162ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.102:3001
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 521ms
+ ✓ Ready in 1870ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.3s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 4904ms
+ GET / 200 in 169ms
+ GET / 200 in 299ms
+ GET / 200 in 154ms
+ GET / 200 in 207ms
+ POST / 200 in 875ms
+ POST / 200 in 323ms
+ GET / 200 in 160ms
+ GET / 200 in 164ms
+ GET / 200 in 144ms
+ GET / 200 in 209ms
+ GET / 200 in 146ms
+ GET / 200 in 161ms
+ GET / 200 in 188ms
+ GET / 200 in 365ms
+ GET / 200 in 141ms
+ GET / 200 in 206ms
+ ✓ Compiled in 1142ms
+ GET / 200 in 577ms
+ GET / 200 in 174ms
+ GET / 200 in 155ms
+ GET / 200 in 191ms
+ GET / 200 in 152ms
+ GET / 200 in 202ms
+ GET / 200 in 174ms
+ ✓ Compiled in 441ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 621ms
+ GET / 200 in 166ms
+ ✓ Compiled in 197ms
+ ✓ Compiled in 223ms
+ ✓ Compiled in 179ms
+ ✓ Compiled in 203ms
+ GET / 200 in 562ms
+ GET / 200 in 164ms
+ GET / 200 in 363ms
+ GET / 200 in 248ms
+ GET / 200 in 118ms
+ GET / 200 in 281ms
+ GET / 200 in 146ms
+ ✓ Compiled in 299ms
+ GET / 200 in 724ms
+ GET / 200 in 191ms
+ ✓ Compiled in 628ms
+ GET / 200 in 602ms
+ GET / 200 in 233ms
+ GET / 200 in 177ms
+ GET / 200 in 184ms
+ GET / 200 in 197ms
+ GET / 200 in 177ms
+ GET / 200 in 167ms
+ GET / 200 in 247ms
+ ✓ Compiled in 523ms
+ GET / 200 in 728ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 203ms
+ GET / 200 in 208ms
+ GET / 200 in 177ms
+ GET / 200 in 316ms
+ GET / 200 in 168ms
+ GET / 200 in 159ms
+ ✓ Compiled in 516ms
+ ⨯ ReferenceError: avatars is not defined
+    at FloatingAvatarsVisual (features/landing/components/ShowcaseSection.tsx:358:14)
+  356 |         <div ref={containerRef} className="relative w-full h-96 flex items-center justify-center">
+  357 |             {/* Floating Avatars */}
+> 358 |             {avatars.map((avatar, index) => (
+      |              ^
+  359 |                 <div
+  360 |                     key={index}
+  361 |                     className="floating-avatar absolute opacity-0" {
+  digest: '378876293'
+}
+ GET / 500 in 837ms
+ ⨯ ReferenceError: avatars is not defined
+    at FloatingAvatarsVisual (features/landing/components/ShowcaseSection.tsx:358:14)
+  356 |         <div ref={containerRef} className="relative w-full h-96 flex items-center justify-center">
+  357 |             {/* Floating Avatars */}
+> 358 |             {avatars.map((avatar, index) => (
+      |              ^
+  359 |                 <div
+  360 |                     key={index}
+  361 |                     className="floating-avatar absolute opacity-0" {
+  digest: '378876293'
+}
+ GET / 500 in 122ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 252ms
+ POST / 200 in 1326ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '28012489' }
+ GET / 200 in 1529ms
+ POST / 200 in 103ms
+ POST / 200 in 103ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1466ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1753ms
+ GET / 200 in 247ms
+ GET / 200 in 153ms
+ GET / 200 in 206ms
+ GET / 200 in 202ms
+ ✓ Compiled in 236ms
+ GET / 200 in 1498ms
+ POST / 200 in 137ms
+ POST / 200 in 73ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 505ms
+ GET / 200 in 273ms
+ ✓ Compiled in 157ms
+ ✓ Compiled in 209ms
+ GET / 200 in 1046ms
+ ✓ Compiled in 199ms
+ ✓ Compiled in 130ms
+ GET / 200 in 1052ms
+ ✓ Compiled in 257ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 186ms
+ GET / 200 in 1018ms
+ POST / 200 in 210ms
+ POST / 200 in 50ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 528ms
+ GET / 200 in 293ms
+ GET / 200 in 227ms
+ POST / 200 in 235ms
+ POST / 200 in 46ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 507ms
+ GET / 200 in 243ms
+ POST / 200 in 278ms
+ POST / 200 in 60ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 549ms
+ GET / 200 in 193ms
+ POST / 200 in 160ms
+ POST / 200 in 81ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 383ms
+ GET / 200 in 197ms
+ GET / 200 in 195ms
+ GET / 200 in 215ms
+ GET / 200 in 197ms
+ ✓ Compiled in 480ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 855ms
+ GET / 200 in 145ms
+ GET / 200 in 256ms
+ GET / 200 in 225ms
+ GET / 200 in 180ms
+ GET / 200 in 223ms
+ GET / 200 in 287ms
+ ✓ Compiled in 624ms
+ GET / 200 in 1858ms
+ GET / 200 in 227ms
+ GET / 200 in 200ms
+ GET / 200 in 287ms
+ ✓ Compiled in 397ms
+ ✓ Compiled in 177ms
+ ✓ Compiled in 195ms
+ ✓ Compiled in 153ms
+ GET / 200 in 2763ms
+ ✓ Compiled in 243ms
+ ✓ Compiled in 185ms
+ GET / 200 in 821ms
+ GET / 200 in 217ms
+ GET / 200 in 215ms
+ GET / 200 in 297ms
+ GET / 200 in 247ms
+ ✓ Compiled in 692ms
+ GET / 200 in 1422ms
+ ✓ Compiled in 162ms
+ ✓ Compiled in 86ms
+ GET / 200 in 192ms
+ ✓ Compiled in 103ms
+ ✓ Compiled in 76ms
+ ✓ Compiled in 150ms
+ ✓ Compiled in 143ms
+ GET / 200 in 811ms
+ ✓ Compiled in 394ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 794ms
+ ✓ Compiled in 326ms
+ GET / 200 in 1264ms
+ GET / 200 in 228ms
+ ✓ Compiled in 210ms
+ ✓ Compiled in 387ms
+ GET / 200 in 1049ms
+ ✓ Compiled in 280ms
+ ✓ Compiled in 110ms
+ GET / 200 in 1018ms
+ ✓ Compiled in 470ms
+ GET / 200 in 646ms
+ ✓ Compiled in 532ms
+ GET / 200 in 615ms
+ GET / 200 in 189ms
+ GET / 200 in 340ms
+ ✓ Compiled in 678ms
+ ✓ Compiled in 141ms
+ GET / 200 in 1533ms
+ ✓ Compiled in 269ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1604ms
+ GET /sign-in 200 in 2272ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 527ms
+ GET / 200 in 827ms
+ ✓ Compiled in 172ms
+ ✓ Compiled in 329ms
+ ✓ Compiled in 209ms
+ ✓ Compiled in 178ms
+ ✓ Compiled in 125ms
+ GET / 200 in 800ms
+ ✓ Compiled in 134ms
+ ✓ Compiled in 190ms
+ GET / 200 in 866ms
+ ✓ Compiled in 285ms
+ ✓ Compiled in 621ms
+ ✓ Compiled in 187ms
+ GET / 200 in 1030ms
+ ✓ Compiled in 170ms
+ ✓ Compiled in 132ms
+ ✓ Compiled in 168ms
+ GET / 200 in 1265ms
+ ✓ Compiled in 218ms
+ ✓ Compiled in 784ms
+ ✓ Compiled in 143ms
+ GET / 200 in 938ms
+ ✓ Compiled in 449ms
+ ✓ Compiled in 513ms
+ GET / 200 in 247ms
+ POST / 200 in 99ms
+ POST / 200 in 91ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 484ms
+ GET / 200 in 236ms
+ ✓ Compiled in 168ms
+ GET / 200 in 2068ms
+ GET / 200 in 168ms
+ ✓ Compiled in 146ms
+ ✓ Compiled in 300ms
+ ✓ Compiled in 124ms
+ GET / 200 in 989ms
+ ✓ Compiled in 159ms
+ ✓ Compiled in 251ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 1255ms
+ ✓ Compiled in 513ms
+ GET / 200 in 1113ms
+ GET / 200 in 279ms
+ GET / 200 in 205ms
+ ✓ Compiled in 471ms
+ GET / 200 in 1363ms
+ GET / 200 in 171ms
+ GET / 200 in 312ms
+ GET / 200 in 195ms
+ GET / 200 in 325ms
+ ✓ Compiled in 567ms
+ GET / 200 in 2467ms
+ GET / 200 in 252ms
+ GET / 200 in 245ms
+ ✓ Compiled in 293ms
+ ✓ Compiled in 424ms
+ GET / 200 in 192ms
+ ✓ Compiled in 201ms
+ ✓ Compiled in 131ms
+ ✓ Compiled in 148ms
+ ✓ Compiled in 381ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 114ms
+ GET / 200 in 1312ms
+ ✓ Compiled in 118ms
+ ✓ Compiled in 84ms
+ ✓ Compiled in 176ms
+ GET / 200 in 2210ms
+ ✓ Compiled in 278ms
+ ✓ Compiled in 152ms
+ ✓ Compiled in 131ms
+ ✓ Compiled in 149ms
+ ✓ Compiled in 109ms
+ ✓ Compiled in 132ms
+ ✓ Compiled in 116ms
+ GET / 200 in 886ms
+ ✓ Compiled in 415ms
+ GET / 200 in 3310ms
+ ✓ Compiled in 379ms
+ ✓ Compiled in 138ms
+ GET / 200 in 1283ms
+ ✓ Compiled in 149ms
+ ✓ Compiled in 172ms
+ GET / 200 in 1465ms
+ GET / 200 in 568ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 197ms
+ GET / 200 in 179ms
+ ✓ Compiled in 305ms
+ GET / 200 in 1334ms
+ GET / 200 in 148ms
+ GET / 200 in 554ms
+ GET / 200 in 199ms
+ ✓ Compiled in 1146ms
+ GET / 200 in 3380ms
+ GET / 200 in 257ms
+ GET / 200 in 280ms
+ GET / 200 in 213ms
+ ✓ Compiled in 331ms
+ GET / 200 in 4589ms
+ GET / 200 in 3764ms
+ POST / 200 in 373ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 878ms
+ POST / 200 in 203ms
+ GET / 200 in 257ms
+ GET / 200 in 248ms
+ POST / 200 in 174ms
+ POST / 200 in 61ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 406ms
+ GET / 200 in 257ms
+ POST / 200 in 187ms
+ POST / 200 in 74ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 438ms
+ GET / 200 in 311ms
+ POST / 200 in 130ms
+ POST / 200 in 53ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 424ms
+ GET / 200 in 334ms
+ GET / 200 in 267ms
+ GET / 200 in 248ms
+ GET / 200 in 294ms
+ ✓ Compiled in 929ms
+ ✓ Compiled in 310ms
+ GET / 200 in 4147ms
+ ✓ Compiled in 761ms
+ GET / 200 in 3701ms
+ ✓ Compiled in 289ms
+ GET / 200 in 2757ms
+ ✓ Compiled in 223ms
+ GET / 200 in 953ms
+ ✓ Compiled in 120ms
+ GET / 200 in 1458ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 198ms
+ GET / 200 in 168ms
+ GET / 200 in 188ms
+ GET / 200 in 258ms
+ POST / 200 in 163ms
+ POST / 200 in 40ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 361ms
+ GET / 200 in 250ms
+ GET / 200 in 224ms
+ GET / 200 in 422ms
+ GET / 200 in 214ms
+ ✓ Compiled in 550ms
+ GET / 200 in 3453ms
+ GET / 200 in 413ms
+ GET / 200 in 251ms
+ POST / 200 in 144ms
+ POST / 200 in 71ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 363ms
+ GET / 200 in 250ms
+ GET / 200 in 194ms
+ GET / 200 in 189ms
+ POST / 200 in 309ms
+ POST / 200 in 76ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 1118ms
+ GET /sign-up 200 in 1823ms
+ GET / 200 in 238ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 505ms
+ GET /login 404 in 686ms
+ GET /login 404 in 143ms
+ POST /login 404 in 278ms
+ GET / 200 in 321ms
+ POST / 200 in 119ms
+ POST / 200 in 59ms
+ GET / 200 in 199ms
+ GET / 200 in 191ms
+ POST / 200 in 127ms
+ POST / 200 in 297ms
+ GET /sign-up 200 in 66ms
+ GET / 200 in 275ms
+ GET / 200 in 164ms
+ GET / 200 in 270ms
+ ✓ Compiled in 454ms
+ ✓ Compiled in 180ms
+ ✓ Compiled in 161ms
+ GET / 200 in 4914ms
+ ✓ Compiled in 0ms
+ GET / 200 in 1038ms
+ GET / 200 in 246ms
+ GET / 200 in 309ms
+ GET / 200 in 273ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 199ms
+ GET / 200 in 186ms
+ GET / 200 in 191ms
+ GET / 200 in 519ms
+ GET / 200 in 263ms
+ GET / 200 in 179ms
+ GET / 200 in 299ms
+ ✓ Compiled in 147ms
+ GET / 200 in 245ms
+ GET / 200 in 223ms
+ GET / 200 in 191ms
+ ✓ Compiled in 633ms
+ GET / 200 in 213ms
+ GET / 200 in 191ms
+ GET / 200 in 195ms
+ ✓ Compiled in 920ms
+ GET / 200 in 246ms
+ GET / 200 in 506ms
+ GET / 200 in 219ms
+ POST / 200 in 166ms
+ POST / 200 in 82ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 528ms
+ GET /sign-in 200 in 1564ms
+ GET / 200 in 221ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 3.2s
+ GET /dashboard 200 in 4708ms
+ POST /dashboard 200 in 1429ms
+ POST /dashboard 200 in 751ms
+ POST /dashboard 200 in 108ms
+ GET / 200 in 59ms
+ GET / 200 in 170ms
+ GET / 200 in 177ms
+ GET /sign-up 200 in 1027ms
+ GET / 200 in 203ms
+ GET / 200 in 600ms
+ GET /sign-up 200 in 1310ms
+ POST /sign-up 200 in 194ms
+ POST /sign-up 200 in 64ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 377ms
+ GET / 200 in 416ms
+ GET / 200 in 231ms
+ POST /sign-up 200 in 77ms
+ GET /sign-up 200 in 342ms
+ GET /dashboard 200 in 374ms
+ GET /dashboard 200 in 204ms
+ POST /dashboard 200 in 94ms
+ GET / 200 in 66ms
+ GET / 200 in 147ms
+ GET / 200 in 182ms
+ GET /sign-in 200 in 234ms
+ GET / 200 in 231ms
+ POST /sign-in 200 in 90ms
+ GET /dashboard 200 in 101ms
+ GET /sign-in 200 in 103ms
+ GET /dashboard 200 in 167ms
+ GET /dashboard 200 in 79ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 208ms
+ GET / 200 in 203ms
+ GET / 200 in 342ms
+ GET / 200 in 198ms
+ GET / 200 in 420ms
+ GET / 200 in 207ms
+ GET / 200 in 197ms
+ GET / 200 in 225ms
+ GET / 200 in 365ms
+ GET / 200 in 215ms
+ GET / 200 in 219ms
+ GET / 200 in 187ms
+ GET / 200 in 176ms
+ ✓ Compiled in 1489ms
+ ✓ Compiled in 0ms
+ ✓ Compiled /dashboard in 62ms
+ GET /dashboard 200 in 1839ms
+ GET / 200 in 257ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c72slwt006k'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c72slwt006k'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1713ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rsox36zc9jk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rsox36zc9jk'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c72slwt006k'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c72slwt006k'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sl2telsdog'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sl2telsdog'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.d9f9cxsk4ue'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.d9f9cxsk4ue'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8zk1b2mil8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8zk1b2mil8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rk14xyrdk8c'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rk14xyrdk8c'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8zk1b2mil8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8zk1b2mil8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yud3mfqu8bl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yud3mfqu8bl'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.u267wj4krgr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.u267wj4krgr'
+}
+ ✓ Compiled in 221ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.o35kfkojujl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.o35kfkojujl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.y6w8bup1d1e'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.y6w8bup1d1e'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.o35kfkojujl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.o35kfkojujl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.m85iusqnny'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.m85iusqnny'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.krp3vttd7qc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.krp3vttd7qc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.il0vkpodiwf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.il0vkpodiwf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.5jqy8yxqs3t'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.5jqy8yxqs3t'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.il0vkpodiwf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.il0vkpodiwf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.weyjxt544ue'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.weyjxt544ue'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.f9vlu0eo7r'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.f9vlu0eo7r'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.j0bflfgbytc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.j0bflfgbytc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.seu1z97tjph'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.seu1z97tjph'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.j0bflfgbytc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.j0bflfgbytc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.byluqry26lw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.byluqry26lw'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.xiuwhgqnf2'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.xiuwhgqnf2'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zksisdb9ii'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zksisdb9ii'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.se6uhlml9m'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.se6uhlml9m'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zksisdb9ii'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zksisdb9ii'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.bdtrlcfsexh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.bdtrlcfsexh'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.ai7nl4az7v9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.ai7nl4az7v9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.526jtd7v67'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.526jtd7v67'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yg8g6wfod4k'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yg8g6wfod4k'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.526jtd7v67'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.526jtd7v67'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.iphpsetcl1e'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.iphpsetcl1e'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.k5xcy4t8nkc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.k5xcy4t8nkc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.q6sdqpdisgb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.q6sdqpdisgb'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.a9rht62mzba'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.a9rht62mzba'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.q6sdqpdisgb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.q6sdqpdisgb'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.lskpb62mfy'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.lskpb62mfy'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7cou5odbwdh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7cou5odbwdh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.36c3yf2m0hf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.36c3yf2m0hf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.kmrrm7l79c'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.kmrrm7l79c'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.36c3yf2m0hf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.36c3yf2m0hf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.0c7ky2bctw9f'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.0c7ky2bctw9f'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.cejt55t4adn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.cejt55t4adn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrx90c4g0sh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrx90c4g0sh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c8edoy20uw'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.c8edoy20uw'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrx90c4g0sh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrx90c4g0sh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9dfjd6q55pf'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9dfjd6q55pf'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.5dxm7incw87'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.5dxm7incw87'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sydf3c3izvj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sydf3c3izvj'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.ielpkq4rdbj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.ielpkq4rdbj'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sydf3c3izvj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.sydf3c3izvj'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.iznzkxtab8e'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.iznzkxtab8e'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.245evm8ztn3'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.245evm8ztn3'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.oo1wdxydnoc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.oo1wdxydnoc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yed0qdtz29'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yed0qdtz29'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.oo1wdxydnoc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.oo1wdxydnoc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9532n34hrt5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9532n34hrt5'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7w96jpsw6h8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7w96jpsw6h8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hs7a0i723c'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hs7a0i723c'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.691dqlp8ztu'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.691dqlp8ztu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.grppkea5die'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.grppkea5die'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.691dqlp8ztu'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.691dqlp8ztu'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7w2014y6x2u'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7w2014y6x2u'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.k4gmx5zyk7d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.k4gmx5zyk7d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hxrcbe3xsd'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hxrcbe3xsd'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.irdudo5m23'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.irdudo5m23'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hxrcbe3xsd'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hxrcbe3xsd'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.y3jgdhdxjd'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.y3jgdhdxjd'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.stbn86ppuci'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.stbn86ppuci'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4gbnh201mtt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4gbnh201mtt'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.w80sardl9h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.w80sardl9h'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zma0i0ad1f8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.zma0i0ad1f8'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.w80sardl9h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.w80sardl9h'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.lyquuv6vzi'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.lyquuv6vzi'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7vucmdsdomn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.7vucmdsdomn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4vq5b76cjj7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4vq5b76cjj7'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.07y0d3felez8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.07y0d3felez8'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4vq5b76cjj7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.4vq5b76cjj7'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9e05ok93c8s'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9e05ok93c8s'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8ybscdo6h6d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.8ybscdo6h6d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.x3170x68b9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.x3170x68b9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yv0ysmigp6l'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.yv0ysmigp6l'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.x3170x68b9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.x3170x68b9'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9mso3nblnnt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.9mso3nblnnt'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.xgtm2dotmha'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.xgtm2dotmha'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rv9bn3ffprl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rv9bn3ffprl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.vwlo18nx93h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.vwlo18nx93h'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rv9bn3ffprl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.rv9bn3ffprl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.l0q00tywn6m'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.l0q00tywn6m'
+}
+[Error: ENOENT: no such file or directory, open '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrghmllhxkl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/ibrahimnadeem/Documents/code/Pitchex/app/frontend/.next/static/development/_buildManifest.js.tmp.hrghmllhxkl'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4136577966'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4136577966'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4136577966'
+}
+ ⨯ [Error: Module 40622 was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.] {
+  digest: '2302212373'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '3259082673'
+}
+[Error: Module 40622 was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.]
+ ⨯ [Error: Module 40622 was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.]
+ ⨯ [Error: Module 40622 was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.] {
+  page: '/'
+}
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1544038710'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1544038710'
+}
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1544038710'
+}
+ GET / 500 in 32961ms
+ GET / 200 in 557ms
+ GET / 200 in 522ms
+ GET /dashboard 200 in 5019ms
+ GET / 200 in 504ms
+ POST /dashboard 200 in 434ms
+ POST /dashboard 200 in 56ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 689ms
+ GET / 200 in 287ms
+ GET / 200 in 271ms
+ GET / 200 in 610ms
+ GET / 200 in 222ms
+ GET / 200 in 189ms
+ GET / 200 in 1596ms
+ GET / 200 in 247ms
+ GET / 200 in 325ms
+ GET / 200 in 217ms
+ GET / 200 in 249ms
+ GET / 200 in 261ms
+ GET / 200 in 231ms
+ GET / 200 in 241ms
+ GET / 200 in 221ms
+ GET / 200 in 228ms
+ GET / 200 in 205ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 982ms
+ ✓ Compiled in 2.6s
+ GET / 200 in 403ms
+ GET / 200 in 744ms
+ GET / 200 in 270ms
+ GET /dashboard 200 in 1953ms
+ GET / 200 in 442ms
+ ○ Compiling /help ...
+ ✓ Compiled /help in 2.3s
+ GET /help 200 in 2485ms
+ GET /help 200 in 93ms
+ GET /help 200 in 150ms
+ GET / 200 in 253ms
+ GET /help 200 in 88ms
+ GET /dashboard 200 in 86ms
+ GET / 200 in 275ms
+ GET / 200 in 209ms
+ GET / 200 in 210ms
+ GET / 200 in 281ms
+ GET / 200 in 188ms
+ GET / 200 in 319ms
+ GET / 200 in 249ms
+ ✓ Compiled in 1733ms
+ GET / 200 in 1149ms
+ GET / 200 in 195ms
+ ✓ Compiled in 2.2s
+ GET / 200 in 289ms
+ GET / 200 in 482ms
+ GET / 200 in 229ms
+ GET / 200 in 198ms
+ GET /dashboard 200 in 5877ms
+ POST /dashboard 200 in 2127ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1958ms
+ POST /dashboard 200 in 2285ms
+ GET / 200 in 230ms
+ ✓ Compiled in 1029ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 234ms
+ GET / 200 in 588ms
+ GET / 200 in 241ms
+ ✓ Compiled in 829ms
+ GET / 200 in 349ms
+ GET /dashboard 200 in 1779ms
+ GET /dashboard 200 in 118ms
+ GET / 200 in 338ms
+ GET / 200 in 194ms
+ GET / 200 in 933ms
+ GET / 200 in 702ms
+ GET / 200 in 256ms
+ GET / 200 in 625ms
+ GET / 200 in 316ms
+ GET / 200 in 322ms
+ GET / 200 in 231ms
+ GET / 200 in 174ms
+ GET / 200 in 304ms
+ GET / 200 in 217ms
+ GET / 200 in 240ms
+ ✓ Compiled in 2.5s
+ GET / 200 in 1273ms
+ ✓ Compiled in 782ms
+ GET / 200 in 417ms
+ GET / 200 in 216ms
+ ✓ Compiled in 830ms
+ ✓ Compiled in 171ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 319ms
+ ✓ Compiled in 174ms
+ GET / 200 in 393ms
+ ✓ Compiled in 206ms
+ ✓ Compiled in 146ms
+ ✓ Compiled in 157ms
+ GET / 200 in 441ms
+ ✓ Compiled in 191ms
+ ✓ Compiled in 150ms
+ ✓ Compiled in 138ms
+ GET / 200 in 212ms
+ ✓ Compiled in 151ms
+ ✓ Compiled in 270ms
+ ✓ Compiled in 147ms
+ ✓ Compiled in 126ms
+ ✓ Compiled in 166ms
+ ✓ Compiled in 239ms
+ GET / 200 in 192ms
+ ✓ Compiled in 228ms
+ GET / 200 in 228ms
+ ✓ Compiled in 511ms
+ ✓ Compiled in 245ms
+ ✓ Compiled in 145ms
+ GET / 200 in 202ms
+ ✓ Compiled in 133ms
+ ✓ Compiled in 130ms
+ ✓ Compiled in 153ms
+ ✓ Compiled in 195ms
+ ✓ Compiled in 143ms
+ GET / 200 in 219ms
+ ✓ Compiled in 162ms
+ ✓ Compiled in 279ms
+ ✓ Compiled in 387ms
+ ✓ Compiled in 170ms
+ ✓ Compiled in 135ms
+ GET / 200 in 236ms
+ ✓ Compiled in 178ms
+ GET /dashboard 200 in 5589ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 2726ms
+ POST /dashboard 200 in 2833ms
+ POST /dashboard 200 in 1474ms
+ GET / 200 in 246ms
+ GET / 200 in 255ms
+ GET / 200 in 224ms
+ GET / 200 in 209ms
+ ✓ Compiled in 571ms
+ GET / 200 in 265ms
+ GET / 200 in 222ms
+ ✓ Compiled in 171ms
+ ✓ Compiled in 170ms
+ ✓ Compiled in 186ms
+ ✓ Compiled in 262ms
+ ✓ Compiled in 178ms
+ GET / 200 in 204ms
+ ✓ Compiled in 287ms
+ ✓ Compiled in 334ms
+ GET / 200 in 250ms
+ ✓ Compiled in 172ms
+ GET / 200 in 213ms
+ ✓ Compiled in 144ms
+ ✓ Compiled in 180ms
+ ✓ Compiled in 385ms
+ ✓ Compiled in 128ms
+ ✓ Compiled in 238ms
+ ✓ Compiled in 160ms
+ GET / 200 in 206ms
+ GET / 200 in 214ms
+ ✓ Compiled in 209ms
+ ✓ Compiled in 150ms
+ ✓ Compiled in 97ms
+ ✓ Compiled in 148ms
+ ✓ Compiled in 72ms
+ ✓ Compiled in 162ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 267ms
+ ✓ Compiled in 141ms
+ ✓ Compiled in 155ms
+ ✓ Compiled in 96ms
+ GET /dashboard 200 in 1405ms
+ GET / 200 in 580ms
+ GET / 200 in 192ms
+ ✓ Compiled in 132ms
+ ✓ Compiled in 154ms
+ ✓ Compiled in 168ms
+ ✓ Compiled in 135ms
+ ✓ Compiled in 143ms
+ GET / 200 in 311ms
+ ✓ Compiled in 245ms
+ GET / 200 in 201ms
+ GET / 200 in 218ms
+ GET / 200 in 222ms
+ ✓ Compiled in 438ms
+ GET / 200 in 438ms
+ GET / 200 in 267ms
+ GET / 200 in 228ms
+ GET / 200 in 421ms
+ ✓ Compiled in 340ms
+ GET / 200 in 310ms
+ ✓ Compiled in 602ms
+ GET / 200 in 214ms
+ ✓ Compiled in 200ms
+ GET / 200 in 284ms
+ GET / 200 in 230ms
+ ✓ Compiled in 206ms
+ GET / 200 in 226ms
+ GET / 200 in 382ms
+ GET / 200 in 266ms
+ GET / 200 in 210ms
+ GET / 200 in 226ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 201ms
+ GET / 200 in 234ms
+ ✓ Compiled in 1030ms
+ ✓ Compiled in 299ms
+ ✓ Compiled in 1636ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ POST /dashboard 200 in 1292ms
+ GET /dashboard 200 in 5962ms
+ ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '28012489' }
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 4085ms
+ GET / 200 in 9792ms
+ POST /dashboard 200 in 12503ms
+ POST /dashboard 200 in 75ms
+ POST /dashboard 200 in 64ms
+ POST /dashboard 200 in 52ms
+ POST /dashboard 200 in 390ms
+ GET / 200 in 93ms
+ GET / 200 in 493ms
+ GET / 200 in 538ms
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4136577966'
+}
+ GET /sign-in 200 in 971ms
+ ⨯ Failed to generate static paths for /sign-in/[[...sign-in]]:
+Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_508528d1._.js:1:1914) {
+  type: 'Error'
+}
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_508528d1._.js:1:1914) {
+  type: 'Error',
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 955ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_508528d1._.js:1:1914) {
+  type: 'Error',
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 370ms
+ GET / 200 in 269ms
+ GET / 200 in 457ms
+ POST / 200 in 223ms
+ POST / 200 in 95ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 506ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_508528d1._.js:1:1914) {
+  type: 'Error',
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 490ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_508528d1._.js:1:1914) {
+  type: 'Error',
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 330ms
+ GET / 200 in 452ms
+ POST / 200 in 177ms
+ POST / 200 in 115ms
+ ⨯ Error: Could not find the module "[project]/node_modules/next/dist/esm/next-devtools/userspace/app/segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4136577966'
+}
+ ⨯ Failed to generate static paths for /sign-up/[[...sign-up]]:
+Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_993f36f0._.js:1:60)
+    at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/_791e0297._.js:1:1914) {
+  type: 'Error'
+}
+ GET /sign-up 200 in 671ms
+ GET / 200 in 189ms
+ GET / 200 in 277ms
+ GET / 200 in 553ms
+ GET / 200 in 313ms
+ GET / 200 in 407ms
+   Reload env: .env.local
+ GET / 200 in 6235ms
+ GET / 200 in 22633ms
+ POST / 200 in 1847ms
+ POST / 200 in 2935ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at Object.<anonymous> (.next/server/app/sign-in/[[...sign-in]]/page.js:23:3) {
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 5487ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at Object.<anonymous> (.next/server/app/sign-in/[[...sign-in]]/page.js:23:3) {
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 966ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at Object.<anonymous> (.next/server/app/sign-in/[[...sign-in]]/page.js:23:3) {
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 166ms
+ ⨯ Error: Module 47290 was instantiated because it was required from module 19519, but the module factory is not available.
+    at Object.<anonymous> (.next/server/app/sign-in/[[...sign-in]]/page.js:23:3) {
+  page: '/sign-in'
+}
+ GET /sign-in 500 in 956ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.0.102:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 266ms
+ ✓ Ready in 1251ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.8s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 3366ms
+ GET / 200 in 139ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 488ms
+ GET /sign-in 200 in 918ms
+ POST /sign-in 200 in 230ms
+ POST /sign-in 200 in 66ms
+ GET / 200 in 238ms
+ POST / 200 in 214ms
+ POST / 200 in 91ms
+ GET /sign-in 200 in 78ms
+ ○ Compiling /dashboard ...
+ GET / 200 in 201ms
+ ✓ Compiled /dashboard in 2.4s
+ GET /dashboard 200 in 2608ms
+ POST /dashboard 200 in 396ms
+ POST /dashboard 200 in 115ms
+ GET / 200 in 175ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 902ms
+ GET /dashboard 200 in 1548ms
+ POST /dashboard 200 in 423ms
+ ○ Compiling /favicon.ico ...
+ POST /dashboard 200 in 91ms
+ ✓ Compiled /favicon.ico in 1271ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1636ms
+ POST /dashboard 200 in 84ms
+ GET / 200 in 89ms
+ GET / 200 in 311ms
+ GET / 200 in 317ms
+ GET /sign-in 200 in 94ms
+ GET /dashboard 200 in 128ms
+ POST /dashboard 200 in 502ms
+ GET / 200 in 195ms
+ POST /dashboard 200 in 174ms
+ GET /dashboard 200 in 73ms
+ GET /dashboard 200 in 69ms
+ GET / 200 in 170ms
+ GET /dashboard 200 in 73ms
+ GET / 200 in 202ms
+ ✓ Compiled in 565ms
+ GET / 200 in 197ms
+ ✓ Compiled in 252ms
+ GET / 200 in 362ms
+ ✓ Compiled in 176ms
+ ✓ Compiled in 236ms
+ GET / 200 in 164ms
+ ✓ Compiled in 372ms
+ GET / 200 in 163ms
+ ✓ Compiled in 255ms
+ ✓ Compiled in 290ms
+ ✓ Compiled in 209ms
+ GET / 200 in 184ms
+ ✓ Compiled in 202ms
+ GET / 200 in 158ms
+ ✓ Compiled in 349ms
+ ✓ Compiled in 213ms
+ ✓ Compiled in 184ms
+ GET / 200 in 354ms
+ ✓ Compiled in 230ms
+ ✓ Compiled in 241ms
+ GET / 200 in 325ms
+ ✓ Compiled in 200ms
+ ✓ Compiled in 193ms
+ GET / 200 in 178ms
+ ✓ Compiled in 185ms
+ ✓ Compiled in 292ms
+ GET / 200 in 259ms
+ ✓ Compiled in 242ms
+ ✓ Compiled in 252ms
+ GET /dashboard 200 in 186ms
+ ✓ Compiled in 317ms
+ ✓ Compiled in 203ms
+ GET / 200 in 212ms
+ ✓ Compiled in 333ms
+ ✓ Compiled in 210ms
+ ✓ Compiled in 266ms
+ ✓ Compiled in 248ms
+ GET / 200 in 340ms
+ ✓ Compiled in 150ms
+ GET / 200 in 206ms
+ ✓ Compiled in 294ms
+ GET / 200 in 163ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 213ms
+ ✓ Compiled in 256ms
+ ✓ Compiled in 320ms
+ ✓ Compiled in 191ms
+ GET / 200 in 201ms
+ GET / 200 in 193ms
+ GET / 200 in 182ms
+ GET / 200 in 372ms
+ GET / 200 in 272ms
+ ✓ Compiled in 433ms
+ ✓ Compiled in 209ms
+ GET /dashboard 200 in 303ms
+ GET / 200 in 189ms
+ ✓ Compiled in 480ms
+ ✓ Compiled in 249ms
+ GET /dashboard 200 in 188ms
+ GET /dashboard 200 in 260ms
+ GET / 200 in 307ms
+ GET /dashboard 200 in 64ms
+ GET /dashboard 200 in 54ms
+ GET /dashboard 200 in 95ms
+ GET /dashboard 200 in 564ms
+ POST /dashboard 200 in 168ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 659ms
+ POST /dashboard 200 in 233ms
+ GET /dashboard 200 in 156ms
+ GET / 200 in 205ms
+ GET / 200 in 184ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 279ms
+ GET / 200 in 167ms
+ GET / 200 in 180ms
+ ✓ Compiled in 462ms
+ GET / 200 in 206ms
+ ✓ Compiled in 192ms
+ GET / 200 in 438ms
+ GET / 200 in 171ms
+ GET / 200 in 215ms
+ GET / 200 in 206ms
+ GET / 200 in 154ms
+ GET / 200 in 141ms
+ GET / 200 in 162ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 145ms
+ GET / 200 in 164ms
+ GET / 200 in 198ms
+ GET / 200 in 157ms
+ GET / 200 in 185ms
+ GET / 200 in 148ms
+ GET / 200 in 152ms
+ GET / 200 in 154ms
+ GET / 200 in 139ms
+ GET / 200 in 218ms
+ GET / 200 in 175ms
+ GET / 200 in 142ms
+ ✓ Compiled in 487ms
+ ✓ Compiled in 314ms
+ GET / 200 in 161ms
+ ✓ Compiled in 2.9s
+ GET / 200 in 258ms
+ GET / 200 in 181ms
+ GET / 200 in 197ms
+ GET / 200 in 164ms
+ GET / 200 in 205ms
+ ✓ Compiled in 523ms
+ ✓ Compiled in 1033ms
+ GET / 200 in 189ms
+ ✓ Compiled in 940ms
+ GET / 200 in 218ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 182ms
+ ✓ Compiled in 242ms
+ GET / 200 in 172ms
+ GET /dashboard 200 in 919ms
+ POST /dashboard 200 in 289ms
+ POST /dashboard 200 in 50ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 462ms
+ ✓ Compiled in 368ms
+ GET /dashboard 200 in 860ms
+ POST /dashboard 200 in 110ms
+ POST /dashboard 200 in 45ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 298ms
+ GET / 200 in 170ms
+ ✓ Compiled in 605ms
+ GET / 200 in 321ms
+ GET /dashboard 200 in 770ms
+ POST /dashboard 200 in 147ms
+ POST /dashboard 200 in 111ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 351ms
+ ✓ Compiled in 486ms
+ GET / 200 in 196ms
+ ✓ Compiled in 195ms
+ GET / 200 in 291ms
+ GET / 200 in 224ms
+ GET / 200 in 180ms
+ GET / 200 in 191ms
+ ✓ Compiled in 593ms
+ GET / 200 in 181ms
+ ✓ Compiled in 274ms
+ ✓ Compiled in 208ms
+ ✓ Compiled in 222ms
+ ✓ Compiled in 197ms
+ ✓ Compiled in 229ms
+ ✓ Compiled in 172ms
+ GET / 200 in 217ms
+ ✓ Compiled in 178ms
+ ✓ Compiled in 181ms
+ GET /dashboard 200 in 1313ms
+ GET / 200 in 531ms
+ POST /dashboard 200 in 207ms
+ POST /dashboard 200 in 54ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 409ms
+ GET / 200 in 216ms
+ GET / 200 in 169ms
+ ✓ Compiled in 782ms
+ GET / 200 in 190ms
+ GET /dashboard 200 in 711ms
+ POST /dashboard 200 in 116ms
+ POST /dashboard 200 in 54ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 412ms
+ GET / 200 in 257ms
+ ✓ Compiled in 305ms
+ ✓ Compiled in 212ms
+ ✓ Compiled in 370ms
+ GET / 200 in 178ms
+ ✓ Compiled in 562ms
+ ✓ Compiled in 299ms
+ GET /dashboard 200 in 963ms
+ POST /dashboard 200 in 147ms
+ POST /dashboard 200 in 58ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 349ms
+ GET / 200 in 262ms
+ ✓ Compiled in 330ms
+ ✓ Compiled in 191ms
+ ✓ Compiled in 166ms
+ GET / 200 in 253ms
+ ✓ Compiled in 245ms
+ ✓ Compiled in 313ms
+ ✓ Compiled in 147ms
+ ✓ Compiled in 261ms
+ ✓ Compiled in 263ms
+ ✓ Compiled in 208ms
+ ✓ Compiled in 167ms
+ GET / 200 in 634ms
+ ✓ Compiled in 222ms
+ ✓ Compiled in 307ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 226ms
+ ✓ Compiled in 493ms
+ ✓ Compiled in 268ms
+ ✓ Compiled in 202ms
+ GET / 200 in 249ms
+ ✓ Compiled in 250ms
+ ✓ Compiled in 251ms
+ ✓ Compiled in 277ms
+ ✓ Compiled in 266ms
+ ✓ Compiled in 425ms
+ ✓ Compiled in 199ms
+ GET / 200 in 198ms
+ ✓ Compiled in 347ms
+ ✓ Compiled in 264ms
+ GET /dashboard 200 in 1031ms
+ POST /dashboard 200 in 68ms
+ POST /dashboard 200 in 119ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 281ms
+ ✓ Compiled in 310ms
+ ✓ Compiled in 324ms
+ GET / 200 in 196ms
+ ✓ Compiled in 300ms
+ GET /dashboard 200 in 868ms
+ POST /dashboard 200 in 73ms
+ POST /dashboard 200 in 49ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 275ms
+ ✓ Compiled in 168ms
+ GET / 200 in 162ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 211ms
+ ✓ Compiled in 171ms
+ ✓ Compiled in 205ms
+ GET / 200 in 173ms
+ ✓ Compiled in 298ms
+ ✓ Compiled in 198ms
+ ✓ Compiled in 190ms
+ ✓ Compiled in 188ms
+ ✓ Compiled in 189ms
+ GET / 200 in 216ms
+ GET / 200 in 199ms
+ ✓ Compiled in 461ms
+ ✓ Compiled in 248ms
+ ✓ Compiled in 173ms
+ ✓ Compiled in 111ms
+ GET / 200 in 161ms
+ ✓ Compiled in 283ms
+ ⨯ ReferenceError: impor is not defined
+    at __TURBOPACK__module__evaluation__ (features/dashboard/components/DashboardLanding.tsx:7:1)
+    at __TURBOPACK__module__evaluation__ (features/dashboard/components/DashboardPage.tsx:14:1)
+    at __TURBOPACK__module__evaluation__ (features/dashboard/components/index.ts:1:1)
+    at __TURBOPACK__module__evaluation__ (features/dashboard/index.ts:2:1)
+    at __TURBOPACK__module__evaluation__ (app/dashboard/page.tsx:3:1)
+   5 | import gsap from "gsap";
+   6 | import { useGSAP } from "@gsap/react";
+>  7 | impor
+     | ^
+   8 | interface DashboardLandingProps {
+   9 |     onStartPitching: () => void;
+  10 | } {
+  digest: '3053574749'
+}
+ GET /dashboard 500 in 1953ms
+ ✓ Compiled in 5ms
+ POST /dashboard 200 in 717ms
+ POST /dashboard 200 in 78ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 564ms
+ GET / 200 in 221ms
+ ✓ Compiled in 378ms
+ ✓ Compiled in 873ms
+ ✓ Compiled /dashboard in 44ms
+ GET /dashboard 200 in 251ms
+ ✓ Compiled in 175ms
+ GET / 200 in 241ms
+ GET / 200 in 198ms
+ GET / 200 in 182ms
+ ✓ Compiled in 429ms
+ GET / 200 in 187ms
+ ✓ Compiled in 196ms
+ ✓ Compiled in 189ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 143ms
+ GET / 200 in 200ms
+ ✓ Compiled in 437ms
+ ✓ Compiled in 263ms
+ GET / 200 in 197ms
+ ✓ Compiled in 188ms
+ ✓ Compiled in 79ms
+ ✓ Compiled in 251ms
+ ✓ Compiled in 204ms
+ ✓ Compiled in 112ms
+ GET / 200 in 246ms
+ GET / 200 in 153ms
+ GET / 200 in 156ms
+ GET / 200 in 331ms
+ ✓ Compiled in 218ms
+ ✓ Compiled in 173ms
+ ✓ Compiled in 156ms
+ ✓ Compiled in 362ms
+ GET /dashboard 200 in 1570ms
+ POST /dashboard 200 in 100ms
+ POST /dashboard 200 in 71ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 361ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 193ms
+ ✓ Compiled in 188ms
+ ✓ Compiled in 195ms
+ GET / 200 in 213ms
+ ✓ Compiled in 144ms
+ ✓ Compiled in 158ms
+ GET / 200 in 189ms
+ ✓ Compiled in 190ms
+ ✓ Compiled in 143ms
+ GET /dashboard 200 in 934ms
+ POST /dashboard 200 in 130ms
+ POST /dashboard 200 in 272ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 385ms
+ GET / 200 in 182ms
+ ✓ Compiled in 383ms
+ ✓ Compiled in 300ms
+ ✓ Compiled in 248ms
+ GET /dashboard 200 in 703ms
+ POST /dashboard 200 in 129ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 354ms
+ GET / 200 in 238ms
+ POST /dashboard 200 in 235ms
+ ✓ Compiled in 210ms
+ ✓ Compiled in 167ms
+ GET /dashboard 200 in 671ms
+ GET / 200 in 296ms
+ GET /dashboard 200 in 237ms
+ POST /dashboard 200 in 128ms
+ POST /dashboard 200 in 51ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 741ms
+ ✓ Compiled in 201ms
+ ✓ Compiled in 284ms
+ GET / 200 in 178ms
+ ✓ Compiled in 313ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 324ms
+ ✓ Compiled in 198ms
+ ✓ Compiled in 141ms
+ GET / 200 in 184ms
+ GET / 200 in 171ms
+ ✓ Compiled in 135ms
+ ✓ Compiled in 141ms
+ GET / 200 in 185ms
+ ✓ Compiled in 183ms
+ ✓ Compiled in 135ms
+ GET /dashboard 200 in 1209ms
+ POST /dashboard 200 in 165ms
+ POST /dashboard 200 in 76ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 413ms
+ GET / 200 in 136ms
+ ✓ Compiled in 183ms
+ GET / 200 in 243ms
+ ✓ Compiled in 173ms
+ GET /dashboard 200 in 1153ms
+ POST /dashboard 200 in 147ms
+ POST /dashboard 200 in 42ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 318ms
+ GET / 200 in 154ms
+ ✓ Compiled in 187ms
+ ✓ Compiled in 184ms
+ ✓ Compiled in 176ms
+ ✓ Compiled in 169ms
+ ✓ Compiled in 189ms
+ ✓ Compiled in 174ms
+ GET / 200 in 178ms
+ ✓ Compiled in 162ms
+ ✓ Compiled in 175ms
+ ✓ Compiled in 270ms
+ GET /dashboard 200 in 926ms
+ POST /dashboard 200 in 360ms
+ POST /dashboard 200 in 40ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 712ms
+ GET / 200 in 195ms
+ GET / 200 in 166ms
+ GET / 200 in 170ms
+ ✓ Compiled in 392ms
+ ✓ Compiled in 559ms
+ GET / 200 in 282ms
+ ✓ Compiled in 140ms
+ ✓ Compiled in 215ms
+ ✓ Compiled in 296ms
+ ✓ Compiled in 198ms
+ GET /dashboard 200 in 820ms
+ ✓ Compiled in 324ms
+ GET / 200 in 658ms
+ ✓ Compiled in 195ms
+ GET /dashboard 200 in 683ms
+ GET /dashboard 200 in 171ms
+ POST /dashboard 200 in 107ms
+ POST /dashboard 200 in 82ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 427ms
+ ✓ Compiled in 431ms
+ ✓ Compiled in 305ms
+ GET / 200 in 181ms
+ ✓ Compiled in 184ms
+ GET /dashboard 200 in 870ms
+ POST /dashboard 200 in 160ms
+ POST /dashboard 200 in 58ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 327ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 202ms
+ ✓ Compiled in 199ms
+ ✓ Compiled in 226ms
+ ✓ Compiled in 352ms
+ GET / 200 in 235ms
+ ✓ Compiled in 287ms
+ ✓ Compiled in 160ms
+ ✓ Compiled in 229ms
+ ✓ Compiled in 209ms
+ GET / 200 in 337ms
+ ✓ Compiled in 205ms
+ ✓ Compiled in 173ms
+ GET /dashboard 200 in 952ms
+ POST /dashboard 200 in 161ms
+ POST /dashboard 200 in 68ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 377ms
+ GET / 200 in 148ms
+ POST /dashboard 200 in 86ms
+ GET / 200 in 106ms
+ GET / 200 in 122ms
+ GET / 200 in 134ms
+ GET / 200 in 325ms
+ GET / 200 in 189ms
+ GET / 200 in 222ms
+ GET /sign-in 200 in 107ms
+ GET / 200 in 169ms
+ GET /dashboard 200 in 115ms
+ POST /dashboard 200 in 118ms
+ POST /dashboard 200 in 119ms
+ GET / 200 in 247ms
+ ✓ Compiled in 240ms
+ GET /dashboard 200 in 1458ms
+ POST /dashboard 200 in 134ms
+ POST /dashboard 200 in 48ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 289ms
+ GET / 200 in 236ms
+ ✓ Compiled in 282ms
+ ✓ Compiled in 201ms
+ GET /dashboard 200 in 1022ms
+ POST /dashboard 200 in 121ms
+ POST /dashboard 200 in 46ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 302ms
+ ✓ Compiled in 217ms
+ ✓ Compiled in 332ms
+ ✓ Compiled in 181ms
+ ✓ Compiled in 145ms
+ GET / 200 in 235ms
+ ✓ Compiled in 135ms
+ ✓ Compiled in 144ms
+ GET /dashboard 200 in 1456ms
+ POST /dashboard 200 in 907ms
+ POST /dashboard 200 in 52ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1006ms
+ ✓ Compiled in 193ms
+ ✓ Compiled in 397ms
+ ✓ Compiled in 323ms
+ ✓ Compiled /dashboard in 99ms
+ GET /dashboard 200 in 757ms
+ GET /dashboard 200 in 902ms
+ POST /dashboard 200 in 162ms
+ GET / 200 in 253ms
+ POST /dashboard 200 in 227ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 401ms
+ GET /dashboard 200 in 146ms
+ POST /dashboard 200 in 864ms
+ POST /dashboard 200 in 161ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1005ms
+ GET / 200 in 218ms
+ GET /dashboard 200 in 289ms
+ POST /dashboard 200 in 117ms
+ POST /dashboard 200 in 74ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 567ms
+ GET / 200 in 305ms
+ GET / 200 in 180ms
+ GET / 200 in 373ms
+ GET / 200 in 326ms
+ GET / 200 in 187ms
+ GET / 200 in 278ms
+ GET / 200 in 309ms
+ ✓ Compiled in 1749ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 290ms
+ ✓ Compiled in 1166ms
+ GET / 200 in 572ms
+ ✓ Compiled in 213ms
+ ✓ Compiled in 203ms
+ ✓ Compiled in 239ms
+ GET / 200 in 301ms
+ ✓ Compiled in 200ms
+ ✓ Compiled in 189ms
+ ✓ Compiled in 222ms
+ ✓ Compiled in 197ms
+ ✓ Compiled in 349ms
+ ✓ Compiled in 246ms
+ GET / 200 in 237ms
+ GET / 200 in 265ms
+ GET / 200 in 230ms
+ GET / 200 in 250ms
+ ✓ Compiled in 372ms
+ ✓ Compiled in 225ms
+ ✓ Compiled in 254ms
+ ✓ Compiled in 190ms
+ ✓ Compiled in 331ms
+ GET / 200 in 241ms
+ ✓ Compiled in 194ms
+ ✓ Compiled in 215ms
+ ✓ Compiled in 279ms
+ ✓ Compiled in 220ms
+ GET / 200 in 199ms
+ GET / 200 in 377ms
+ ✓ Compiled in 236ms
+ ✓ Compiled in 156ms
+ ✓ Compiled in 237ms
+ ✓ Compiled in 154ms
+ GET / 200 in 231ms
+ GET / 200 in 303ms
+ ✓ Compiled in 368ms
+ GET / 200 in 516ms
+ ✓ Compiled in 507ms
+ ✓ Compiled in 286ms
+ GET / 200 in 291ms
+ ✓ Compiled in 363ms
+ ✓ Compiled in 306ms
+ GET / 200 in 538ms
+ GET / 200 in 305ms
+ ✓ Compiled in 646ms
+ GET / 200 in 288ms
+ GET / 200 in 162ms
+ GET / 200 in 235ms
+ ✓ Compiled in 576ms
+ ✓ Compiled in 280ms
+ GET / 200 in 204ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 190ms
+ POST /dashboard 200 in 636ms
+ GET / 200 in 60ms
+ GET / 200 in 188ms
+ GET / 200 in 191ms
+ GET / 200 in 185ms
+ GET / 200 in 230ms
+ POST / 200 in 113ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 358ms
+ POST / 200 in 87ms
+ GET / 200 in 240ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 2.2s
+ GET /sign-up 200 in 2937ms
+ GET /sign-up 200 in 121ms
+ GET / 200 in 171ms
+ ○ Compiling /sign-up/sso-callback ...
+ ✓ Compiled /sign-up/sso-callback in 500ms
+ GET /sign-up/sso-callback 200 in 1819ms
+ POST /sign-up/sso-callback 200 in 507ms
+ POST /sign-up/sso-callback 200 in 44ms
+ GET /sign-up/sso-callback 200 in 60ms
+ POST /sign-up/sso-callback 200 in 124ms
+ GET /dashboard 200 in 84ms
+ GET /dashboard 200 in 337ms
+ GET / 200 in 208ms
+ POST /dashboard 200 in 85ms
+ GET / 200 in 69ms
+ GET / 200 in 114ms
+ GET / 200 in 119ms
+ GET / 200 in 246ms
+ GET / 200 in 230ms
+ GET / 200 in 195ms
+ GET / 200 in 291ms
+ GET / 200 in 178ms
+ GET / 200 in 233ms
+ GET / 200 in 170ms
+ GET / 200 in 207ms
+ GET / 200 in 188ms
+ GET / 200 in 252ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 369ms
+ POST / 200 in 200ms
+ POST / 200 in 80ms
+ GET / 200 in 257ms
+ GET /sign-up 200 in 139ms
+ GET /sign-up/sso-callback 200 in 171ms
+ POST /sign-up/sso-callback 200 in 74ms
+ POST /sign-up/sso-callback 200 in 71ms
+ GET /sign-up/sso-callback 200 in 353ms
+ POST /sign-up/sso-callback 200 in 175ms
+ GET /dashboard 200 in 60ms
+ GET /dashboard 200 in 1040ms
+ GET / 200 in 212ms
+ GET / 200 in 344ms
+ GET / 200 in 161ms
+ GET / 200 in 162ms
+ GET / 200 in 125ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 158ms
+ GET / 200 in 271ms
+ GET / 200 in 155ms
+ GET / 200 in 153ms
+ GET / 200 in 136ms
+ GET / 200 in 147ms
+ GET / 200 in 172ms
+ GET / 200 in 165ms
+ GET / 200 in 197ms
+ GET / 200 in 151ms
+ GET / 200 in 161ms
+ GET / 200 in 153ms
+ GET / 200 in 181ms
+ GET / 200 in 142ms
+ GET / 200 in 176ms
+ GET / 200 in 149ms
+ GET / 200 in 161ms
+ GET / 200 in 157ms
+ GET / 200 in 157ms
+ GET / 200 in 294ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=56sjhgpm11i8udcyguxktkh8c5enupn93rj5s3cb&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 345ms
+ GET / 200 in 274ms
+ GET / 200 in 393ms
+ GET /dashboard 200 in 3216ms
+ POST /dashboard 200 in 201ms
+ POST /dashboard 200 in 74ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 457ms
+ ✓ Compiled in 503ms
+ GET / 200 in 700ms
+ ✓ Compiled in 300ms
+ GET / 200 in 228ms
+ GET / 200 in 219ms
+ GET / 200 in 220ms
+ GET / 200 in 291ms

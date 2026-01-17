@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { LucideIcon } from 'lucide-react';
 
 export interface ShowcaseCard {
     id: number;
@@ -7,7 +7,7 @@ export interface ShowcaseCard {
 }
 
 export interface Feature {
-    icon: ReactNode;
+    icon: LucideIcon;
     title: string;
     description: string;
 }

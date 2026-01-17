@@ -450,18 +450,70 @@ const AnalysisVisual = () => {
         </div>
     );
 };
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
 export function FeaturesSection() {
+    const sectionRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        if (!sectionRef.current) return;
+
+        const ctx = gsap.context(() => {
+            // Section header reveal
+            const header = sectionRef.current?.querySelector('.features-header');
+            if (header) {
+                gsap.fromTo(header,
+                    { opacity: 0, y: 40 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.8,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: sectionRef.current,
+                            start: "top 80%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            }
+
+            // Feature cards staggered reveal
+            const cards = sectionRef.current?.querySelectorAll('.feature-card');
+            if (cards) {
+                gsap.fromTo(cards,
+                    { opacity: 0, y: 50, scale: 0.95 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        duration: 0.7,
+                        stagger: 0.15,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: sectionRef.current,
+                            start: "top 70%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            }
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="py-30 bg-surface-0 relative overflow-hidden">
+        <section ref={sectionRef} className="py-30 bg-surface-0 relative overflow-hidden">
             {/* Background Glows */}
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-magenta/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-950/20 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
-                <div className="text-center space-y-4 mb-20">
+                <div className="features-header text-center space-y-4 mb-20 opacity-0">
 
                     <h2 className="text-4xl md:text-5xl font-semibold text-text-primary">
                         AI with full context – <br />
@@ -474,7 +526,7 @@ export function FeaturesSection() {
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Feature 1 */}
-                    <div className="group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl">
+                    <div className="feature-card group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl opacity-0">
                         {/* Top Visual Area */}
                         <div className="flex-1 relative bg-gradient-to-b from-[#121212] to-surface-1 min-h-[220px] flex items-center justify-center overflow-hidden">
                             <AudioVisual />
@@ -497,7 +549,7 @@ export function FeaturesSection() {
                     </div>
 
                     {/* Feature 2 */}
-                    <div className="group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl">
+                    <div className="feature-card group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl opacity-0">
                         {/* Top Visual Area */}
                         <div className="flex-1 relative bg-gradient-to-b from-[#121212] to-surface-1 min-h-[220px] flex items-center justify-center overflow-hidden">
                             <ChatVisual />
@@ -519,7 +571,7 @@ export function FeaturesSection() {
                     </div>
 
                     {/* Feature 3 */}
-                    <div className="group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl">
+                    <div className="feature-card group flex flex-col rounded-3xl bg-surface-1 border border-surface-3 transition-all duration-300 hover:border-surface-3/80 overflow-hidden cursor-default shadow-2xl opacity-0">
                         {/* Top Visual Area */}
                         <div className="flex-1 relative bg-gradient-to-b from-[#121212] to-surface-1 min-h-[220px] flex items-center justify-center overflow-hidden">
                             <AnalysisVisual />

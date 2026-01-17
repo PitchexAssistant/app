@@ -377,6 +377,12 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             streamRef.current = null;
         }
 
+        const ctx = audioContextRef.current;
+        if (ctx && ctx.state !== 'closed') {
+            audioContextRef.current = null;
+            ctx.close().catch(console.error);
+        }
+
         vadActiveRef.current = false;
         silenceStartRef.current = null;
         audioChunksRef.current = [];
@@ -461,8 +467,10 @@ export function useInteractivePitch(options: UseInteractivePitchOptions = {}) {
             wsRef.current = null;
         }
 
-        if (playbackContextRef.current && playbackContextRef.current.state !== 'closed') {
-            playbackContextRef.current.close().catch(console.error);
+        const playbackCtx = playbackContextRef.current;
+        if (playbackCtx && playbackCtx.state !== 'closed') {
+            playbackContextRef.current = null;
+            playbackCtx.close().catch(console.error);
         }
 
         setIsConnected(false);

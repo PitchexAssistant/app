@@ -92,10 +92,12 @@ export function useAudioRecorder(): UseAudioRecorderResult {
         streamRef.current.getTracks().forEach(track => track.stop());
       }
 
-      // Close audio context only if it exists and is not already closed
+      // Close audio context and nullify ref to prevent double-closing
       try {
-        if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
-          audioContextRef.current.close();
+        const ctx = audioContextRef.current;
+        if (ctx && ctx.state !== 'closed') {
+          audioContextRef.current = null;
+          ctx.close();
         }
       } catch (err) {
         // Ignore errors when closing AudioContext during unmount
@@ -175,8 +177,10 @@ export function useAudioRecorder(): UseAudioRecorderResult {
 
         // Safely close audio context
         try {
-          if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
-            audioContextRef.current.close();
+          const ctx = audioContextRef.current;
+          if (ctx && ctx.state !== 'closed') {
+            audioContextRef.current = null;
+            ctx.close();
           }
         } catch (err) {
           // Ignore errors when closing AudioContext during cleanup

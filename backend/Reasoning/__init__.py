@@ -6,6 +6,7 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.documents import Document
 from langchain.tools import tool
 from core.config import settings
 from langchain.memory import ConversationBufferMemory

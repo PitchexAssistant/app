@@ -1,85 +1,207 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
-import { Twitter, Linkedin } from "lucide-react";
+import { Mail, Twitter, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const footerLinks = {
-    Product: [
-        { name: "AI Pitch Practice", href: "/product/pitch-practice" },
-        { name: "Feedback & Analytics", href: "/product/analytics" },
-        { name: "Investor Personas", href: "/product/personas" },
-    ],
-    Company: [
-        { name: "About", href: "/about" },
-        { name: "Careers", href: "/careers" },
-        { name: "Contact", href: "/contact" },
-    ],
-    Resources: [
-        { name: "Blog", href: "/blog" },
-        { name: "Privacy Policy", href: "/privacy" },
-        { name: "Terms of Service", href: "/terms" },
-    ],
+// Footer content constants
+const FOOTER_CONTENT = {
+    TITLE_LINE_1: "Ready to perfect",
+    TITLE_LINE_2: "your pitch?",
+    SUBTITLE: "Join thousands of founders who are closing deals faster.",
+    EMAIL_PLACEHOLDER: "Enter your email",
+    SUBSCRIBE_BUTTON: "Subscribe",
+    PRIVACY_NOTE: "We respect your privacy. Unsubscribe anytime.",
+    COPYRIGHT: `© ${new Date().getFullYear()} Pitchex, Inc. All rights reserved.`,
 };
 
-export function Footer() {
+// Footer navigation links
+const FOOTER_LINKS = {
+    PRODUCT: {
+        title: "Product",
+        links: [
+            { name: "AI Pitch Practice", href: "/product/pitch-practice" },
+            { name: "Feedback & Analytics", href: "/product/analytics" },
+            { name: "Investor Personas", href: "/product/personas" },
+        ],
+    },
+    TOOLS: {
+        title: "Tools",
+        links: [
+            { name: "Pitch Deck Builder", href: "/tools/deck-builder" },
+            { name: "Investor CRM", href: "/tools/crm" },
+            { name: "Q&A Library", href: "/tools/qa-library" },
+        ],
+    },
+    COMPANY: {
+        title: "Company",
+        links: [
+            { name: "About", href: "/about" },
+            { name: "Careers", href: "/careers" },
+            { name: "Contact", href: "/contact" },
+        ],
+    },
+    LEGAL: {
+        title: "Legal",
+        links: [
+            { name: "Privacy Policy", href: "/privacy" },
+            { name: "Terms of Service", href: "/terms" },
+            { name: "Cookie Policy", href: "/cookies" },
+        ],
+    },
+};
+
+interface FooterProps {
+    isAuthenticated?: boolean;
+}
+
+// Floating particle component - same as HeroSection
+function FloatingParticles() {
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!containerRef.current) return;
+
+        const container = containerRef.current;
+        const particleCount = 40;
+        const particles: HTMLDivElement[] = [];
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement("div");
+            const size = Math.random() * 3 + 1;
+            const isGlow = Math.random() > 0.7;
+
+            particle.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                border-radius: 50%;
+                background: ${isGlow ? 'rgba(251, 255, 80, 0.8)' : 'rgba(255, 255, 255, 0.4)'};
+                box-shadow: ${isGlow ? '0 0 10px rgba(251, 255, 80, 0.5)' : 'none'};
+                pointer-events: none;
+            `;
+
+            container.appendChild(particle);
+            particles.push(particle);
+
+            const startX = Math.random() * 100;
+            const startY = Math.random() * 100;
+
+            gsap.set(particle, {
+                left: `${startX}%`,
+                top: `${startY}%`,
+                opacity: 0,
+            });
+
+            const tl = gsap.timeline({ repeat: -1, delay: Math.random() * 5 });
+
+            tl.to(particle, {
+                opacity: Math.random() * 0.6 + 0.2,
+                duration: Math.random() * 2 + 1,
+                ease: "power1.inOut",
+            })
+                .to(particle, {
+                    y: -Math.random() * 150 - 50,
+                    x: (Math.random() - 0.5) * 80,
+                    duration: Math.random() * 8 + 6,
+                    ease: "none",
+                }, 0)
+                .to(particle, {
+                    opacity: 0,
+                    duration: 2,
+                    ease: "power1.inOut",
+                }, "-=2");
+        }
+
+        return () => {
+            particles.forEach(p => p.remove());
+        };
+    }, []);
+
+    return (
+        <div
+            ref={containerRef}
+            className="absolute inset-0 overflow-hidden pointer-events-none"
+        />
+    );
+}
+
+// Glowing orbs that float around - same as HeroSection but softer
+function GlowingOrbs() {
+    const orbsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        orbsRef.current.forEach((orb, i) => {
+            if (!orb) return;
+
+            gsap.to(orb, {
+                x: `random(-40, 40)`,
+                y: `random(-25, 25)`,
+                scale: `random(0.8, 1.2)`,
+                duration: `random(5, 9)`,
+                ease: "sine.inOut",
+                repeat: -1,
+                yoyo: true,
+                delay: i * 0.6,
+            });
+
+            gsap.to(orb, {
+                opacity: `random(0.2, 0.5)`,
+                duration: `random(3, 5)`,
+                ease: "sine.inOut",
+                repeat: -1,
+                yoyo: true,
+                delay: i * 0.4,
+            });
+        });
+    }, []);
+
+    return (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div
+                ref={el => { orbsRef.current[0] = el }}
+                className="absolute -top-10 -left-10 w-48 h-48 rounded-full opacity-30"
+                style={{
+                    background: 'radial-gradient(circle, rgba(251, 255, 80, 0.2) 0%, transparent 70%)',
+                    filter: 'blur(50px)',
+                }}
+            />
+            <div
+                ref={el => { orbsRef.current[1] = el }}
+                className="absolute top-1/2 -right-10 w-40 h-40 rounded-full opacity-20"
+                style={{
+                    background: 'radial-gradient(circle, rgba(88, 97, 248, 0.3) 0%, transparent 70%)',
+                    filter: 'blur(40px)',
+                }}
+            />
+            <div
+                ref={el => { orbsRef.current[2] = el }}
+                className="absolute bottom-10 left-1/3 w-32 h-32 rounded-full opacity-25"
+                style={{
+                    background: 'radial-gradient(circle, rgba(212, 55, 160, 0.25) 0%, transparent 70%)',
+                    filter: 'blur(35px)',
+                }}
+            />
+        </div>
+    );
+}
+
+export function Footer({ isAuthenticated = false }: FooterProps) {
+    const [email, setEmail] = useState("");
     const footerRef = useRef<HTMLElement>(null);
-    const watermarkRef = useRef<HTMLDivElement>(null);
-    const particlesRef = useRef<HTMLDivElement>(null);
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Subscribe:", email);
+        setEmail("");
+    };
 
     useEffect(() => {
         if (!footerRef.current) return;
 
         const ctx = gsap.context(() => {
-            // Watermark engaging animation with float effect
-            if (watermarkRef.current) {
-                // Initial reveal
-                gsap.fromTo(watermarkRef.current,
-                    { opacity: 0, y: 50, scale: 0.9 },
-                    {
-                        opacity: 1,
-                        y: 0,
-                        scale: 1,
-                        duration: 1.5,
-                        ease: "power3.out",
-                        scrollTrigger: {
-                            trigger: footerRef.current,
-                            start: "top 90%",
-                            toggleActions: "play none none none"
-                        }
-                    }
-                );
-
-                // Continuous subtle float animation
-                gsap.to(watermarkRef.current, {
-                    y: -15,
-                    duration: 4,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 1.5
-                });
-            }
-
-            // Ambient glow animation
-            const glowOrbs = footerRef.current?.querySelectorAll('.footer-glow');
-            if (glowOrbs) {
-                glowOrbs.forEach((orb, i) => {
-                    gsap.to(orb, {
-                        x: `random(-30, 30)`,
-                        y: `random(-20, 20)`,
-                        scale: `random(0.9, 1.1)`,
-                        opacity: `random(0.3, 0.6)`,
-                        duration: `random(4, 7)`,
-                        repeat: -1,
-                        yoyo: true,
-                        ease: "sine.inOut",
-                        delay: i * 0.5
-                    });
-                });
-            }
-
             // Link columns staggered fade-in
             const linkColumns = footerRef.current?.querySelectorAll('.footer-column');
             if (linkColumns) {
@@ -120,152 +242,183 @@ export function Footer() {
             }
         }, footerRef);
 
-        // Create floating particles
-        if (particlesRef.current) {
-            const container = particlesRef.current;
-            const particles: HTMLDivElement[] = [];
-
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement("div");
-                const size = Math.random() * 3 + 1;
-
-                particle.style.cssText = `
-                    position: absolute;
-                    width: ${size}px;
-                    height: ${size}px;
-                    border-radius: 50%;
-                    background: rgba(251, 255, 80, ${Math.random() * 0.4 + 0.1});
-                    pointer-events: none;
-                `;
-
-                container.appendChild(particle);
-                particles.push(particle);
-
-                gsap.set(particle, {
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                    opacity: 0,
-                });
-
-                gsap.to(particle, {
-                    opacity: Math.random() * 0.5 + 0.2,
-                    y: -Math.random() * 100 - 50,
-                    duration: Math.random() * 6 + 4,
-                    repeat: -1,
-                    delay: Math.random() * 3,
-                    ease: "none"
-                });
-            }
-
-            return () => {
-                ctx.revert();
-                particles.forEach(p => p.remove());
-            };
-        }
-
         return () => ctx.revert();
     }, []);
 
     return (
-        <footer ref={footerRef} className="relative py-28 bg-surface-1 border-t border-surface-3 overflow-hidden">
-            {/* Floating particles */}
-            <div ref={particlesRef} className="absolute inset-0 pointer-events-none" />
-
-            {/* Ambient glow orbs */}
-            <div className="footer-glow absolute top-1/4 left-1/4 w-64 h-64 bg-accent-lime/10 rounded-full blur-[100px] pointer-events-none opacity-40" />
-            <div className="footer-glow absolute bottom-1/4 right-1/4 w-48 h-48 bg-magenta/10 rounded-full blur-[80px] pointer-events-none opacity-30" />
-            <div className="footer-glow absolute top-1/2 right-1/3 w-32 h-32 bg-purple/10 rounded-full blur-[60px] pointer-events-none opacity-30" />
-
-            {/* Large watermark background text with gradient */}
+        <footer
+            ref={footerRef}
+            className="relative mx-auto w-full max-w-[1366px] border border-border-default bg-surface-1 my-20 rounded-3xl overflow-hidden"
+        >
+            {/* Soft animated hazy background gradient */}
             <div
-                ref={watermarkRef}
-                className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-0"
-            >
-                <span
-                    className="text-[30vw] font-bold tracking-tighter leading-none"
-                    style={{
-                        background: 'linear-gradient(180deg, rgba(240, 240, 240, 0.08) 0%, rgba(251, 255, 80, 0.04) 50%, rgba(240, 240, 240, 0.02) 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                    }}
-                >
-                    Pitchex
-                </span>
-            </div>
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                    background: `radial-gradient(ellipse at 30% 20%, rgba(251, 255, 80, 0.1) 0%, transparent 50%),
+                                 radial-gradient(ellipse at 70% 80%, rgba(88, 97, 248, 0.1) 0%, transparent 50%),
+                                 radial-gradient(ellipse at 50% 50%, rgba(212, 55, 160, 0.1) 0%, transparent 60%)`
+                }}
+            />
 
-            <div className="container relative mx-auto px-6">
-                {/* Main footer content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-                    {/* Logo & Description */}
-                    <div className="footer-logo lg:col-span-2 space-y-6">
-                        <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-full bg-accent-lime flex items-center justify-center">
-                                <span className="text-surface-0 font-bold text-sm">P</span>
+            {/* GSAP Animated Effects - same as HeroSection */}
+            <FloatingParticles />
+            <GlowingOrbs />
+
+            <div className="relative px-8 md:px-16 py-12 md:py-16">
+                {/* Top Section - Title and Email Form (conditional on !isAuthenticated) */}
+                {!isAuthenticated && (
+                    <>
+                        <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+                            {/* Left: Title and Subtitle */}
+                            <div className="flex flex-col gap-3">
+                                <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-text-primary">
+                                    {FOOTER_CONTENT.TITLE_LINE_1}
+                                    <br />
+                                    <span className="text-accent-lime">
+                                        {FOOTER_CONTENT.TITLE_LINE_2}
+                                    </span>
+                                </h2>
+                                <p className="text-base text-text-secondary">
+                                    {FOOTER_CONTENT.SUBTITLE}
+                                </p>
                             </div>
-                            <span className="text-xl font-semibold text-text-primary">Pitchex</span>
+
+                            {/* Right: Email Form - matching button roundness (rounded-lg) */}
+                            <div className="flex flex-col gap-2 w-full md:w-auto">
+                                <form
+                                    onSubmit={handleSubmit}
+                                    className="flex items-center gap-2 rounded-lg bg-surface-2 border border-surface-3 p-1.5"
+                                >
+                                    <input
+                                        type="email"
+                                        placeholder={FOOTER_CONTENT.EMAIL_PLACEHOLDER}
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        className="flex-1 h-9 px-4 bg-transparent text-sm text-text-primary placeholder:text-text-tertiary focus:outline-none min-w-[180px] rounded-lg"
+                                    />
+                                    <Button type="submit" size="sm">
+                                        <Mail className="h-4 w-4" />
+                                        {FOOTER_CONTENT.SUBSCRIBE_BUTTON}
+                                    </Button>
+                                </form>
+                                <p className="text-sm text-text-tertiary text-center">
+                                    {FOOTER_CONTENT.PRIVACY_NOTE}
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-text-secondary text-sm max-w-xs leading-relaxed">
-                            AI-powered pitch practice that helps founders refine their story and nail investor conversations.
-                        </p>
 
-                        {/* Badges section - optional */}
-                        <div className="flex items-center gap-3 pt-4">
-                            <div className="px-3 py-1 rounded-full border border-accent-lime/30 text-accent-lime text-xs">
-                                SOC2 Compliant
-                            </div>
+                        {/* Separator */}
+                        <div className="w-full h-px bg-surface-3 my-12 md:my-16" />
+                    </>
+                )}
+
+                {/* Bottom Section - 5 columns with separator between 4th and 5th */}
+                <div className={`flex flex-col lg:flex-row lg:justify-between gap-8 ${isAuthenticated ? "mt-0" : ""}`}>
+                    {/* Column 1: Product */}
+                    <div className="footer-column flex flex-col gap-5">
+                        <p className="text-xs font-medium tracking-wider text-text-tertiary uppercase">
+                            {FOOTER_LINKS.PRODUCT.title}
+                        </p>
+                        <div className="flex flex-col gap-3">
+                            {FOOTER_LINKS.PRODUCT.links.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Link Columns */}
-                    {Object.entries(footerLinks).map(([category, links]) => (
-                        <div key={category} className="footer-column space-y-4">
-                            <h3 className="text-sm font-semibold text-text-primary">
-                                {category}
-                            </h3>
-                            <ul className="space-y-3">
-                                {links.map((link) => (
-                                    <li key={link.name}>
-                                        <Link
-                                            href={link.href}
-                                            className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
-                                        >
-                                            {link.name}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
+                    {/* Column 2: Tools */}
+                    <div className="footer-column flex flex-col gap-5">
+                        <p className="text-xs font-medium tracking-wider text-text-tertiary uppercase">
+                            {FOOTER_LINKS.TOOLS.title}
+                        </p>
+                        <div className="flex flex-col gap-3">
+                            {FOOTER_LINKS.TOOLS.links.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
                         </div>
-                    ))}
-                </div>
+                    </div>
 
-                {/* Divider */}
-                <div className="border-t border-surface-3 pt-8">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                    {/* Column 3: Company */}
+                    <div className="footer-column flex flex-col gap-5">
+                        <p className="text-xs font-medium tracking-wider text-text-tertiary uppercase">
+                            {FOOTER_LINKS.COMPANY.title}
+                        </p>
+                        <div className="flex flex-col gap-3">
+                            {FOOTER_LINKS.COMPANY.links.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Column 4: Legal */}
+                    <div className="footer-column flex flex-col gap-5">
+                        <p className="text-xs font-medium tracking-wider text-text-tertiary uppercase">
+                            {FOOTER_LINKS.LEGAL.title}
+                        </p>
+                        <div className="flex flex-col gap-3">
+                            {FOOTER_LINKS.LEGAL.links.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Vertical Separator between column 4 and 5 */}
+                    <div className="hidden lg:block w-px bg-surface-3 self-stretch" />
+
+                    {/* Column 5: Logo Section */}
+                    <div className="footer-logo flex flex-col items-start gap-5">
+                        {/* Logo */}
+                        <div className="flex items-center gap-2">
+                            <img
+                                src="/pitchex-logo.png"
+                                alt="Pitchex"
+                                className="h-8 w-auto"
+                            />
+                        </div>
+
+                        {/* Compliance Badges */}
+                        <div className="flex items-center gap-3">
+                            <img
+                                src="/soc2-compliance.png"
+                                alt="SOC2 Compliant"
+                                className="h-10 w-auto"
+                            />
+                            <img
+                                src="/gdpr-compliance.png"
+                                alt="GDPR Compliant"
+                                className="h-10 w-auto"
+                            />
+                        </div>
+
+
                         {/* Copyright */}
                         <p className="text-sm text-text-tertiary">
-                            © {new Date().getFullYear()} Pitchex, Inc. All rights reserved.
+                            {FOOTER_CONTENT.COPYRIGHT}
                         </p>
-
-                        {/* Social Links */}
-                        <div className="flex items-center gap-4">
-                            <Link
-                                href="https://twitter.com/pitchex"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-9 h-9 rounded-full bg-surface-2 flex items-center justify-center text-text-tertiary hover:text-text-primary hover:bg-surface-3 transition-all duration-200"
-                            >
-                                <Twitter className="w-4 h-4" />
-                            </Link>
-                            <Link
-                                href="https://linkedin.com/company/pitchex"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-9 h-9 rounded-full bg-surface-2 flex items-center justify-center text-text-tertiary hover:text-text-primary hover:bg-surface-3 transition-all duration-200"
-                            >
-                                <Linkedin className="w-4 h-4" />
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>

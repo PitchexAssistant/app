@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react"
 import { X, Upload, File as FileIcon, Check, Trash2 } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 interface UploadedFile {
   id: string
@@ -92,21 +92,21 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(26,26,26,0.7)] backdrop-blur-sm">
-      <div className="bg-[#262626] rounded-[24px] p-6 w-[480px] shadow-[0px_20px_24px_-4px_rgba(10,13,18,0.08),0px_8px_8px_-4px_rgba(10,13,18,0.03)]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+      <div className="bg-surface-1 rounded-2xl border border-border-primary p-6 w-[480px] shadow-2xl">
         {/* Header */}
         <div className="flex items-start justify-between mb-5">
           <div className="flex-1">
-            <h2 className="text-[18px] font-bold text-[#f0f0f0] leading-[28px] mb-2">
+            <h2 className="text-lg font-bold text-text-primary mb-2">
               Upload and attach files
             </h2>
-            <p className="text-[14px] font-medium text-[#f0f0f0] leading-[20px]">
+            <p className="text-sm font-medium text-text-primary">
               Upload supporting PDFs or documents so our AI can assist you more effectively.
             </p>
           </div>
           <button
             onClick={onClose}
-            className="w-6 h-6 flex items-center justify-center text-[#9e9e9e] hover:text-white transition-colors"
+            className="w-6 h-6 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -114,7 +114,7 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
 
         {/* Upload Area */}
         <div
-          className={`bg-[#171717] rounded-[16px] p-6 mb-4 border-2 border-dashed transition-colors ${isDragging ? "border-[#ff6b00]" : "border-transparent"
+          className={`bg-surface-2 rounded-2xl p-6 mb-4 border-2 border-dashed border-border-primary transition-colors ${isDragging ? "border-accent-lime" : "border-transparent"
             }`}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
@@ -122,8 +122,8 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
         >
           <div className="flex flex-col items-center gap-3">
             {/* Upload Icon */}
-            <div className="w-10 h-10 bg-[#404040] rounded-full flex items-center justify-center">
-              <Upload className="w-5 h-5 text-[#9e9e9e]" />
+            <div className="w-10 h-10 bg-surface-3 rounded-full flex items-center justify-center">
+              <Upload className="w-5 h-5 text-text-secondary" />
             </div>
 
             {/* Upload Text */}
@@ -131,15 +131,15 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
               <div className="flex items-center gap-1">
                 <button
                   onClick={() => fileInputRef.current?.click()}
-                  className="text-[14px] font-bold text-[#ff6b00] leading-[20px] hover:underline"
+                  className="text-sm font-bold text-accent-lime hover:underline"
                 >
                   Click to upload
                 </button>
-                <span className="text-[14px] font-medium text-[#9e9e9e] leading-[20px]">
+                <span className="text-sm font-medium text-text-secondary">
                   or drag and drop
                 </span>
               </div>
-              <p className="text-[12px] font-normal text-[#9e9e9e] leading-[18px] text-center">
+              <p className="text-xs font-normal text-text-secondary text-center">
                 .pdf, .docx (max. 10 MB)
               </p>
             </div>
@@ -152,31 +152,31 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
             {uploadedFiles.map((file) => (
               <div
                 key={file.id}
-                className="bg-[#171717] rounded-[16px] p-4 flex items-start gap-4"
+                className="bg-surface-2 rounded-2xl p-4 flex items-start gap-4"
               >
                 {/* File Icon */}
-                <div className="w-8 h-8 bg-[#404040] rounded-full flex items-center justify-center flex-shrink-0">
-                  <FileIcon className="w-4 h-4 text-[#9e9e9e]" />
+                <div className="w-8 h-8 bg-surface-3 rounded-full flex items-center justify-center flex-shrink-0">
+                  <FileIcon className="w-4 h-4 text-text-secondary" />
                 </div>
 
                 {/* File Info */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-[14px] font-medium text-[#9e9e9e] leading-[20px] truncate">
+                  <p className="text-sm font-medium text-text-secondary truncate">
                     {file.name}
                   </p>
-                  <p className="text-[14px] font-medium text-[#666666] leading-[20px]">
+                  <p className="text-sm font-medium text-text-tertiary">
                     {file.size}
                   </p>
 
                   {/* Progress Bar */}
                   <div className="flex items-center gap-3 mt-1">
-                    <div className="flex-1 h-2 bg-[#9e9e9e] rounded-full overflow-hidden">
+                    <div className="flex-1 h-2 bg-text-secondary rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#ff6b00] rounded-full transition-all duration-300"
+                        className="h-full bg-accent-lime rounded-full transition-all duration-300"
                         style={{ width: `${file.progress}%` }}
                       />
                     </div>
-                    <span className="text-[14px] font-bold text-[#666666] leading-[20px] whitespace-nowrap">
+                    <span className="text-sm font-bold text-text-tertiary whitespace-nowrap">
                       {file.progress}%
                     </span>
                   </div>
@@ -185,13 +185,13 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
                 {/* Status Icons */}
                 <div className="flex items-center gap-2 flex-shrink-0">
                   {file.completed && (
-                    <div className="w-4 h-4 bg-[#ff6b00] rounded flex items-center justify-center">
-                      <Check className="w-3 h-3 text-white" strokeWidth={3} />
+                    <div className="w-4 h-4 bg-accent-lime rounded flex items-center justify-center">
+                      <Check className="w-3 h-3 text-surface-0" strokeWidth={3} />
                     </div>
                   )}
                   <button
                     onClick={() => handleDeleteFile(file.id)}
-                    className="w-5 h-5 flex items-center justify-center text-[#ef4444] hover:text-[#dc2626] transition-colors"
+                    className="w-5 h-5 flex items-center justify-center text-red hover:text-red/80 transition-colors"
                     title="Delete file"
                   >
                     <Trash2 className="w-4 h-4" />
@@ -204,22 +204,21 @@ export function UploadModal({ onClose, onNext }: UploadModalProps) {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
-          <button
+          <Button
+            variant="nav"
             onClick={() => onNext([])}
-            className="flex-1 bg-[#404040] text-[#f0f0f0] rounded-[12px] px-4 py-2.5 text-[14px] font-semibold leading-[20px] hover:bg-[#4a4a4a] transition-colors"
+            className="flex-1"
           >
             Skip
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="default"
             onClick={() => onNext(uploadedFiles.map(f => f.file))}
             disabled={uploadedFiles.length === 0}
-            className={`flex-1 rounded-[12px] px-4 py-2.5 text-[14px] font-semibold leading-[20px] transition-colors border ${uploadedFiles.length === 0
-                ? "bg-[#404040] text-[#9e9e9e] border-[#404040] cursor-not-allowed"
-                : "bg-[#f0f0f0] text-[#0a0a0a] hover:bg-white border-[#f0f0f0]"
-              }`}
+            className="flex-1"
           >
             Next
-          </button>
+          </Button>
         </div>
       </div>
 

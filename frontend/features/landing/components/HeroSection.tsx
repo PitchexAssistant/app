@@ -236,6 +236,68 @@ function GlowingOrbs() {
 }
 
 export function HeroSection() {
+    const heroContentRef = useRef<HTMLDivElement>(null);
+
+    // Text reveal animation
+    useEffect(() => {
+        if (!heroContentRef.current) return;
+
+        const ctx = gsap.context(() => {
+            // Animate heading lines
+            const headingLines = heroContentRef.current?.querySelectorAll('.hero-heading-line');
+            if (headingLines) {
+                gsap.fromTo(headingLines,
+                    {
+                        y: 60,
+                        opacity: 0,
+                        clipPath: 'inset(100% 0% 0% 0%)'
+                    },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        clipPath: 'inset(0% 0% 0% 0%)',
+                        duration: 0.8,
+                        stagger: 0.15,
+                        ease: "power3.out"
+                    }
+                );
+            }
+
+            // Animate subheading
+            const subheading = heroContentRef.current?.querySelector('.hero-subheading');
+            if (subheading) {
+                gsap.fromTo(subheading,
+                    { y: 30, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.7,
+                        ease: "power2.out",
+                        delay: 0.5
+                    }
+                );
+            }
+
+            // Animate buttons
+            const buttons = heroContentRef.current?.querySelectorAll('.hero-button');
+            if (buttons) {
+                gsap.fromTo(buttons,
+                    { y: 20, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.5,
+                        stagger: 0.1,
+                        ease: "power2.out",
+                        delay: 0.7
+                    }
+                );
+            }
+        }, heroContentRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <section className="relative min-h-screen overflow-hidden bg-surface-0">
             {/* Lovable-style diffused circular gradient */}
@@ -251,29 +313,32 @@ export function HeroSection() {
             <GlowingOrbs />
 
             <div className="container relative mx-auto px-6 pt-32 pb-20">
-                <div className="flex flex-col items-center text-center">
+                <div ref={heroContentRef} className="flex flex-col items-center text-center">
 
                     {/* Heading */}
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-text-primary leading-tight mb-6 max-w-4xl">
-                        No Investors.
-                        <br />
-                        <span className="text-text-primary">No feedback. No clarity?</span>
+                        <span className="hero-heading-line block overflow-hidden">
+                            <span className="block">No Investors.</span>
+                        </span>
+                        <span className="hero-heading-line block overflow-hidden">
+                            <span className="block text-text-primary">No feedback. No clarity?</span>
+                        </span>
                     </h1>
 
                     {/* Subheading */}
-                    <p className="text-text-primary max-w-2xl text-xl mb-10">
+                    <p className="hero-subheading text-text-primary max-w-2xl text-xl mb-10 opacity-0">
                         Meet Pitchex — an AI pitching room where founders face real investor-style questions, refine their story, and sharpen their ideas before it matters.
                     </p>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row items-center gap-4 mb-16">
-                        <Button size="lg" asChild>
+                        <Button size="lg" asChild className="hero-button opacity-0">
                             <Link href="/sign-up" className="gap-2">
                                 Start Pitching for Free
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                         </Button>
-                        <Button variant="outline" size="lg" asChild>
+                        <Button variant="outline" size="lg" asChild className="hero-button opacity-0">
                             <Link href="/demo">
                                 Book a demo
                             </Link>

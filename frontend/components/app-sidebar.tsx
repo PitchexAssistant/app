@@ -4,24 +4,20 @@ import * as React from "react"
 import {
   Plus,
   Monitor,
-  ChevronUp,
+  ChevronDown,
   Mic,
-  Info,
-  ArrowUpRight,
-  LogOut,
   Trash2,
   MoreVertical,
   Edit2,
   Copy,
-  Archive,
   CheckCircle,
   Download,
+  Link2,
 } from "lucide-react"
 import Image from "next/image"
 import { useClerk } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
 
-import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -30,11 +26,14 @@ import {
   SidebarRail,
   SidebarSeparator,
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarMenuSub,
+  SidebarMenuSubItem,
   useSidebar,
+  SidebarTrigger,
+  SidebarMenuSkeleton,
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Badge } from "./ui/badge"
@@ -63,8 +62,8 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
 }
 
 export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: AppSidebarProps) {
-  const [isPreviousSessionsOpen, setIsPreviousSessionsOpen] = React.useState(true)
-  const { signOut, user: clerkUser } = useClerk()
+  const [isHistoryOpen, setIsHistoryOpen] = React.useState(true)
+  const { user: clerkUser } = useClerk()
   const router = useRouter()
   const { state } = useSidebar()
   const isCollapsed = state === "collapsed"
@@ -81,20 +80,12 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
     loadSessions,
   } = useSessions()
 
-  const handleLogout = async () => {
-    await signOut()
-    router.push("/")
-  }
-
   const handleNewSession = () => {
-    // Navigate to dashboard
     router.push('/dashboard')
-    // Trigger the callback which will show the modal
     onNewSession?.()
   }
 
   const handleSessionClick = (session: Session) => {
-    // Navigate to dashboard when selecting a session
     router.push('/dashboard')
     onSelectSession?.(session)
   }
@@ -161,259 +152,203 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
     return date.toLocaleDateString()
   }
 
-  // Get mode icon
-  const getModeIcon = (mode: string) => {
-    return <Mic className="w-5 h-5 text-stone-500" />
-  }
-
   return (
-    <Sidebar collapsible="icon" {...props} className="bg-[var(--bg-dark-grey)] border-r border-zinc-800">
-      {/* Header */}
-      <SidebarHeader className="pt-3 pl-0 pr-5 bg-[var(--bg-dark-grey)]">
+    <Sidebar
+      collapsible="icon"
+      {...props}
+      className="bg-surface-1 border-0  overflow-x-hidden"
+    >
+      {/* Header with Logo */}
+      <SidebarHeader className="py-4 bg-surface-1">
         {isCollapsed ? (
-          <div className="w-6 h-6 ml-2.5 flex items-center justify-center">
+          <div className="flex px-1 items-center justify-center">
             <Image
               src="/logo-sidebar-collapsed.svg"
-              alt="Logo"
-              width={32}
+              alt="Pitchex"
+              width={28}
               height={20}
-              className="w-8 h-5"
+              className="w-7 h-5"
             />
           </div>
         ) : (
-          <div className="inline-flex mt-3 justify-start pl-6 items-center gap-2">
-            <div className="w-20 h-5 relative overflow-hidden">
+          <div className="flex items-center justify-between pl-1">
+            <div className="flex items-center">
               <Image
                 src="/pitchexLogo.png"
-                alt="Logo"
-                width={180}
-                height={180}
-                className="w-full h-full object-contain"
+                alt="Pitchex"
+                width={100}
+                height={24}
+                className="h-6 w-auto object-contain"
               />
             </div>
+            <SidebarTrigger className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
           </div>
         )}
       </SidebarHeader>
 
-      <SidebarContent className="px-3 flex flex-col justify-between overflow-y-auto overflow-x-hidden scrollbar-hide bg-[var(--bg-dark-grey)]">
-        <div className="flex flex-col justify-start items-start gap-6">
-          {/* Integrations Section */}
-          {!isCollapsed && (
-            <div className="self-stretch h-10 px-3 inline-flex justify-between items-center">
-              <div className="text-neutral-400 text-base font-medium font-['Inter']">Integrations</div>
-              <Image
-                src="/integrations-icon-custom.svg"
-                alt="Integrations"
-                width={64}
-                height={12}
-                className="h-10"
-              />
-            </div>
-          )}
+      <SidebarContent className="bg-surface-1 overflow-x-hidden">
+        {/* Main Menu Group */}
+        <SidebarGroup>
+          <SidebarMenu>
+            {/* 1. New Session - Styled as Button */}
+            <SidebarMenuItem className="mb-1">
+              <SidebarMenuButton
+                onClick={handleNewSession}
+                tooltip="New Session"
+                className="h-10 bg-surface-2 text-text-primary hover:bg-surface-3 hover:text-text-primary rounded-lg group justify-start px-3"
+              >
+                <Plus className="w-5 h-5 shrink-0 text-accent-lime" />
+                <span className="text-sm font-medium truncate">New Session</span>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
 
-          {isCollapsed && (
-            <div className="w-full flex justify-center">
-
-            </div>
-          )}
-
-          {/* Separator */}
-          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
-
-          {/* Actions Section */}
-          <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            {/* New Session Button */}
-            <div
-              onClick={handleNewSession}
-              className={`w-10 h-8 px-0 py-2  inline-flex justify-start items-center  rounded-xl cursor-pointer overflow-hidden ${isCollapsed ? 'justify-center px-0' : 'gap-3 px-2 w-full h-11 hover:bg-zinc-900'}`}
-            >
-              <Plus className={`w-6 h-6 text-stone-500 ${isCollapsed ? 'h-6 w-6 p-0' : 'mr-0'}`} />
-              {!isCollapsed && (
-                <div className="text-neutral-400 text-base font-medium font-['Inter']">New Session</div>
-              )}
-            </div>
-
-            {/* Pitch Maker */}
-            <div className={`self-stretch rounded-xl inline-flex justify-start items-start ${isCollapsed ? 'justify-center' : 'hover:bg-zinc-900 rounded-xl cursor-pointer'}`}>
-              <div className={`flex-1 h-11 px-0 py-2 rounded-xl flex items-center overflow-hidden ${isCollapsed ? 'justify-center' : 'justify-start gap-3 px-3 hover:bg-zinc-900 rounded-xl cursor-pointe'}`}>
-                <Monitor className="w-5 h-5 text-stone-500 cursor-pointer" />
+            {/* 3. Pitcher with Coming Soon */}
+            <SidebarMenuItem>
+              <SidebarMenuButton
+                tooltip="Pitcher"
+                className="h-10 text-text-primary hover:bg-surface-2 hover:text-text-primary rounded-lg"
+              >
+                <Monitor className="w-5 h-5 shrink-0" />
+                <span className="text-sm font-normal flex-1 truncate">Pitcher</span>
                 {!isCollapsed && (
-                  <div className="flex justify-between w-full">
-                    <div className="text-neutral-400 text-s font-medium font-['Inter']">Pitcher</div>
-                    <div className="h-6 px-2 py-[5px] bg-amber-500/10 rounded-md flex justify-center items-center">
-                      <div className="text-amber-500 text-xs font-bold font-['Inter']">Coming Soon</div>
-                    </div>
-                  </div>
+                  <Badge
+                    variant="outline"
+                    className="bg-accent-lime/10 py-1 text-accent-lime rounded-sm border-0 text-xs font-normal shrink-0"
+                  >
+                    Coming Soon
+                  </Badge>
                 )}
-              </div>
-            </div>
-          </div>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroup>
 
-          {/* Separator */}
-          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
+        <SidebarSeparator className="bg-surface-2 mx-2" />
 
-          {/* Previous Sessions Section */}
-          <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            {!isCollapsed ? (
-              <Collapsible open={isPreviousSessionsOpen} onOpenChange={setIsPreviousSessionsOpen} className="w-full">
-                <div className="self-stretch w-full h-11 px-3 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden">
-                  <div className="flex justify-start items-center gap-3">
-                    <Mic className="w-5 h-5 text-stone-500" />
-                    <div className="text-neutral-400 text-base font-medium font-['Inter']">Recents </div>
-                    {sessions.length > 0 && (
-                      <div className="h-6 px-2 py-[5px] bg-pink-500/10 rounded-[5.13px] flex justify-center items-center">
-                        <div className="text-pink-500 text-xs font-bold font-['Inter']">{sessions.length}</div>
-                      </div>
-                    )}
-                  </div>
-                  <CollapsibleTrigger asChild>
-                    <Button variant="ghost" size="sm" className="h-6 w-6 p-0 hover:bg-transparent">
-                      <ChevronUp className={`w-5 h-5 text-neutral-400 transition-transform ${isPreviousSessionsOpen ? 'rotate-0' : 'rotate-180'}`} />
-                    </Button>
-                  </CollapsibleTrigger>
-                </div>
-
-                <CollapsibleContent>
-                  <div className="self-stretch flex flex-col justify-start items-start gap-1">
-                    {loading ? (
-                      <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
-                        <div className="text-neutral-500 text-sm font-['Inter']">Loading...</div>
-                      </div>
-                    ) : sessions.length === 0 ? (
-                      <div className="self-stretch h-11 pl-12 pr-3 py-2 flex items-center">
-                        <div className="text-neutral-500 text-sm font-['Inter']">No sessions yet</div>
-                      </div>
-                    ) : (
-                      sessions.slice(0, 10).map((session) => (
-                        <div
-                          key={session.id}
-                          onClick={() => handleSessionClick(session)}
-                          className={`self-stretch group pl-12 pr-2 py-2 rounded-xl inline-flex justify-between items-center overflow-hidden hover:bg-zinc-900 cursor-pointer ${currentSession?.id === session.id ? 'bg-zinc-900' : ''
-                            }`}
-                        >
-                          <div className="flex justify-start items-center gap-3 flex-1 min-w-0">
-                            {getModeIcon(session.mode)}
-                            <div className="flex flex-col min-w-0 flex-1">
-                              <div className="text-neutral-400 text-sm font-medium font-['Inter'] truncate">
-                                {session.title}
-                              </div>
-                              <div className="text-stone-600 text-xs font-['Inter']">
-                                {formatDate(session.updated_at)}
-                              </div>
-                            </div>
-                          </div>
-                          <DropdownMenu>
-                            <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100 hover:bg-zinc-800"
-                              >
-                                <MoreVertical className="w-4 h-4 text-neutral-400" />
-                              </Button>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" className="bg-zinc-900 border-zinc-800">
-                              <DropdownMenuItem
-                                onClick={(e) => handleRenameSession(e, session)}
-                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
-                              >
-                                <Edit2 className="w-4 h-4 mr-2" />
-                                Rename
-                              </DropdownMenuItem>
-                              <DropdownMenuItem
-                                onClick={(e) => handleDuplicateSession(e, session)}
-                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
-                              >
-                                <Copy className="w-4 h-4 mr-2" />
-                                Duplicate
-                              </DropdownMenuItem>
-                              <DropdownMenuItem
-                                onClick={(e) => handleMarkComplete(e, session.id)}
-                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
-                              >
-                                <CheckCircle className="w-4 h-4 mr-2" />
-                                Mark Complete
-                              </DropdownMenuItem>
-                              <DropdownMenuItem
-                                onClick={(e) => handleDownloadTranscript(e, session)}
-                                className="text-neutral-400 focus:text-neutral-300 focus:bg-zinc-800"
-                              >
-                                <Download className="w-4 h-4 mr-2" />
-                                Download Transcript
-                              </DropdownMenuItem>
-                              <DropdownMenuItem
-                                onClick={(e) => handleDeleteSession(e, session.id)}
-                                className="text-red-400 focus:text-red-300 focus:bg-zinc-800"
-                              >
-                                <Trash2 className="w-4 h-4 mr-2" />
-                                Delete
-                              </DropdownMenuItem>
-                            </DropdownMenuContent>
-                          </DropdownMenu>
-                        </div>
-                      ))
-                    )}
-                  </div>
-                </CollapsibleContent>
-              </Collapsible>
-            ) : (
-              <div className="w-full flex justify-center">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-8 w-8 p-0 hover:bg-zinc-900 rounded-md"
-                  onClick={handleNewSession}
+        {/* Chat History Group */}
+        <SidebarGroup>
+          <Collapsible
+            open={isHistoryOpen}
+            onOpenChange={setIsHistoryOpen}
+            className="group/collapsible"
+          >
+            <SidebarMenuItem className="list-none">
+              <CollapsibleTrigger asChild>
+                <SidebarMenuButton
+                  tooltip="Recents"
+                  className="h-10 text-[var(--text-primary)] hover:bg-[var(--surface-2)] hover:text-[var(--text-primary)] rounded-lg"
                 >
-                  <Mic className="w-5 h-5 text-neutral-400" />
-                </Button>
-              </div>
-            )}
-          </div>
-        </div>
+                  <Mic className="w-5 h-5 shrink-0" />
+                  <span className="text-sm font-normal flex-1 truncate">Recents</span>
+                  {!isCollapsed && sessions.length > 0 && (
+                    <Badge
+                      variant="outline"
+                      className="bg-pink-500/10 text-pink-500 border-0 text-xs font-normal mr-1 shrink-0"
+                    >
+                      {sessions.length}
+                    </Badge>
+                  )}
+                  {!isCollapsed && (
+                    <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${isHistoryOpen ? 'rotate-0' : '-rotate-90'}`} />
+                  )}
+                </SidebarMenuButton>
+              </CollapsibleTrigger>
+            </SidebarMenuItem>
 
-        {/* Bottom Section */}
-        <div className="self-stretch pb-8 flex flex-col justify-start items-start gap-6">
-          {/* Separator */}
-          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
-
-          {/* Help & Support */}
-          <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            <div
-              onClick={() => router.push('/help')}
-              className={`self-stretch h-11 py-2 rounded-xl cursor-pointer inline-flex items-center overflow-hidden  ${isCollapsed ? 'justify-center' : 'justify-start  px-3  gap-3 hover:bg-zinc-900'}`}
-            >
-              <Info className="w-6 h-6 text-stone-500" />
-              {!isCollapsed && (
-                <div className="text-neutral-400 text-base font-medium font-['Inter']">Help & Support</div>
-              )}
-            </div>
-          </div>
-
-          {/* Upgrade to Pro Card */}
-          {!isCollapsed && (
-            <div className="self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-zinc-800 flex flex-col justify-start items-start gap-3">
-              <div className="h-6 px-2 py-2 bg-neutral-800 rounded-md inline-flex justify-center items-center">
-                <div className="text-green-600 text-xs font-bold font-['Inter']">Pro</div>
-              </div>
-              <div className="text-stone-300 text-base font-medium font-['Inter']">Upgrade to Pro</div>
-              <div className="text-neutral-500 text-sm font-medium font-['Inter']">
-                Unlock unlimited sessions, priority support, and advanced AI tools to take your pitches to the next level.
-              </div>
-              <div className="h-8 px-3 py-[5px] rounded-lg outline outline-1 outline-offset-[-1px] outline-zinc-800 inline-flex justify-start items-center gap-[3px] hover:bg-zinc-900 cursor-pointer">
-                <div className="text-stone-300 text-xs font-medium font-['Inter']">Upgrade Now</div>
-                <ArrowUpRight className="w-3 h-3 text-stone-300" />
-              </div>
-            </div>
-          )}
-
-          {/* Separator */}
-          <div className="self-stretch h-0 outline outline-[0.70px] outline-offset-[-0.35px] outline-zinc-800"></div>
-        </div>
+            <CollapsibleContent>
+              <SidebarMenuSub className="border-l-surface-2 ml-4 mt-1">
+                {loading ? (
+                  Array.from({ length: 3 }).map((_, index) => (
+                    <SidebarMenuSubItem key={index}>
+                      <SidebarMenuSkeleton showIcon />
+                    </SidebarMenuSubItem>
+                  ))
+                ) : sessions.length === 0 ? (
+                  <SidebarMenuSubItem>
+                    <div className="px-2 py-2 text-[var(--text-tertiary)] text-sm font-normal">
+                      No sessions yet
+                    </div>
+                  </SidebarMenuSubItem>
+                ) : (
+                  sessions.slice(0, 10).map((session) => (
+                    <SidebarMenuSubItem key={session.id}>
+                      <div
+                        onClick={() => handleSessionClick(session)}
+                        className={`group/session flex w-full items-center justify-between px-1 py-2 rounded-lg cursor-pointer hover:bg-[var(--surface-2)] ${currentSession?.id === session.id ? 'bg-[var(--surface-1)]' : ''
+                          }`}
+                      >
+                        <div className="flex flex-col min-w-0 flex-1">
+                          <span className="text-[var(--text-secondary)] text-sm font-normal truncate">
+                            {session.title}
+                          </span>
+                          <span className="text-[var(--text-tertiary)] text-xs font-normal">
+                            {formatDate(session.updated_at)}
+                          </span>
+                        </div>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-6 w-6 p-0 opacity-0 rounded-sm group-hover/session:opacity-100 hover:bg-[var(--surface-3)] shrink-0"
+                            >
+                              <MoreVertical className="w-4 h-4 text-[var(--text-tertiary)]" />
+                            </Button>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent align="end" className="bg-[var(--surface-2)] border-[var(--border-gray)]">
+                            <DropdownMenuItem
+                              onClick={(e) => handleRenameSession(e, session)}
+                              className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"
+                            >
+                              <Edit2 className="w-4 h-4 mr-2" />
+                              Rename
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                              onClick={(e) => handleDuplicateSession(e, session)}
+                              className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"
+                            >
+                              <Copy className="w-4 h-4 mr-2" />
+                              Duplicate
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                              onClick={(e) => handleMarkComplete(e, session.id)}
+                              className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"
+                            >
+                              <CheckCircle className="w-4 h-4 mr-2" />
+                              Mark Complete
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                              onClick={(e) => handleDownloadTranscript(e, session)}
+                              className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"
+                            >
+                              <Download className="w-4 h-4 mr-2" />
+                              Download Transcript
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                              onClick={(e) => handleDeleteSession(e, session.id)}
+                              className="text-[var(--red)] focus:text-[var(--red)] focus:bg-[var(--surface-2)]"
+                            >
+                              <Trash2 className="w-4 h-4 mr-2" />
+                              Delete
+                            </DropdownMenuItem>
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </div>
+                    </SidebarMenuSubItem>
+                  ))
+                )}
+              </SidebarMenuSub>
+            </CollapsibleContent>
+          </Collapsible>
+        </SidebarGroup>
       </SidebarContent>
 
-      {/* Footer - Empty for now */}
-      <SidebarFooter className="pb-8 bg-[var(--bg-dark-grey)]">
-        {/* Profile moved to top right header */}
+      <SidebarFooter className="bg-[var(--surface-0)] p-4">
+        {isCollapsed && (
+          <div className="flex justify-center">
+            <SidebarTrigger className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
+          </div>
+        )}
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

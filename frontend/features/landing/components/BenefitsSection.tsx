@@ -1,56 +1,81 @@
-import Image from "next/image";
-import { CheckCircle } from 'lucide-react';
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const benefits = [
+    "AI-POWERED FEEDBACK",
+    "REAL-TIME PRACTICE",
+    "INVESTOR SIMULATIONS"
+];
 
 export function BenefitsSection() {
+    const sectionRef = useRef<HTMLElement>(null);
+    const marqueeRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!marqueeRef.current || !sectionRef.current) return;
+
+        const marqueeContent = marqueeRef.current.querySelector('.marquee-content');
+        if (!marqueeContent) return;
+
+        // Get the width of the marquee content
+        const contentWidth = marqueeContent.scrollWidth / 2;
+
+        // Create infinite scroll animation
+        const ctx = gsap.context(() => {
+            // Scroll-triggered reveal animation
+            gsap.fromTo(marqueeRef.current,
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+
+            // Infinite marquee scroll
+            gsap.to(marqueeContent, {
+                x: -contentWidth,
+                duration: 20,
+                ease: "none",
+                repeat: -1
+            });
+        });
+
+        return () => ctx.revert();
+    }, []);
+
+    // Create the benefit items with dots
+    const MarqueeItems = () => (
+        <>
+            {benefits.map((benefit, index) => (
+                <span key={index} className="flex items-center gap-8">
+                    <span className="text-text-primary font-semibold text-2xl md:text-3xl lg:text-4xl tracking-wide whitespace-nowrap">
+                        {benefit}
+                    </span>
+                    <span className="w-3 h-3 rounded-full bg-accent-lime flex-shrink-0" />
+                </span>
+            ))}
+        </>
+    );
+
     return (
-        <section className="py-20">
-            <div className="container mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="space-y-8">
-                        <div className="space-y-4">
-                            <h2 className="text-3xl lg:text-4xl font-bold">
-                                Why Choose Pitchex?
-                            </h2>
-                            <p className="text-xl text-muted-foreground">
-                                Join thousands of entrepreneurs, startups, and professionals who have
-                                transformed their pitching game with Pitchex.
-                            </p>
-                        </div>
-
-                        <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                                <CheckCircle className="w-6 h-6 text-[var(--orange-accent)] mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold text-lg">AI-Powered Feedback</h3>
-                                    <p className="text-muted-foreground">Get instant, intelligent feedback on your pitch content, delivery, and structure.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-4">
-                                <CheckCircle className="w-6 h-6 text-[var(--orange-accent)] mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold text-lg">Industry-Specific Training</h3>
-                                    <p className="text-muted-foreground">Practice with scenarios tailored to your industry and target audience.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-4">
-                                <CheckCircle className="w-6 h-6 text-[var(--orange-accent)] mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold text-lg">Real-Time Collaboration</h3>
-                                    <p className="text-muted-foreground">Work with your team in live sessions to refine and perfect your pitch.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="relative">
-                        <Image
-                            src="/Home-1.png"
-                            alt="Pitchex Logo"
-                            width={500}
-                            height={500}
-                            className="w-full h-auto opacity-80"
-                        />
-                    </div>
+        <section ref={sectionRef} className="py-12 bg-surface-0 overflow-hidden">
+            <div ref={marqueeRef} className="relative opacity-0">
+                <div className="marquee-content flex items-center gap-8">
+                    {/* Duplicate content for seamless loop */}
+                    <MarqueeItems />
+                    <MarqueeItems />
                 </div>
             </div>
         </section>
