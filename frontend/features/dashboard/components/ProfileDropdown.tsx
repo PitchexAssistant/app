@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import { UserData } from "../types";
 import { DASHBOARD_COPY } from "../constants";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface ProfileDropdownProps {
     userData: UserData;
@@ -36,11 +37,21 @@ export function ProfileDropdown({
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <button className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[var(--surface-1)] transition-colors cursor-pointer focus:outline-none">
-                    <div className="w-10 h-10 bg-[var(--voltage-orange)] rounded-full inline-flex flex-col justify-center items-center">
-                        <div className="text-white text-sm font-semibold">
-                            {initials}
+                    {userData.avatar ? (
+                        <Image
+                            src={userData.avatar}
+                            alt={userData.name || "User"}
+                            width={40}
+                            height={40}
+                            className="w-10 h-10 rounded-full object-cover"
+                        />
+                    ) : (
+                        <div className="w-10 h-10 bg-[var(--voltage-orange)] rounded-full inline-flex flex-col justify-center items-center">
+                            <div className="text-white text-sm font-semibold">
+                                {initials}
+                            </div>
                         </div>
-                    </div>
+                    )}
                     <ChevronDown className="w-5 h-5 text-[var(--text-tertiary)]" />
                 </button>
             </DropdownMenuTrigger>
@@ -51,11 +62,21 @@ export function ProfileDropdown({
                 {/* User Info Header */}
                 <div className="px-4 py-4 border-b border-[var(--border-gray)]">
                     <div className="flex items-center gap-3">
-                        <div className="w-11 h-11 bg-[var(--voltage-orange)] rounded-full inline-flex flex-col justify-center items-center">
-                            <div className="text-white text-base font-semibold">
-                                {initials}
+                        {userData.avatar ? (
+                            <Image
+                                src={userData.avatar}
+                                alt={userData.name || "User"}
+                                width={44}
+                                height={44}
+                                className="w-11 h-11 rounded-full object-cover"
+                            />
+                        ) : (
+                            <div className="w-11 h-11 bg-[var(--voltage-orange)] rounded-full inline-flex flex-col justify-center items-center">
+                                <div className="text-white text-base font-semibold">
+                                    {initials}
+                                </div>
                             </div>
-                        </div>
+                        )}
                         <div className="flex flex-col gap-0.5 overflow-hidden flex-1">
                             <div className="text-[var(--text-primary)] text-base font-semibold truncate">
                                 {userData.name}

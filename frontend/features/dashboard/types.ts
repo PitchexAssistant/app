@@ -47,6 +47,8 @@ export interface ResultsData {
     analysis: AnalysisData;
 }
 
+export type ActiveView = 'dashboard' | 'practice' | 'transcript' | 'results';
+
 export interface DashboardState {
     mounted: boolean;
     showPractice: boolean;
@@ -58,6 +60,8 @@ export interface DashboardState {
     showResults: boolean;
     resultsData: ResultsData | null;
     showSettings: boolean;
+    activeView: ActiveView;
+    selectedSessionForView: Session | null;
 }
 
 export interface DashboardActions {
@@ -71,7 +75,9 @@ export interface DashboardActions {
     handleModeSelection: (mode: 'live' | 'recorded') => Promise<void>;
     handleEndRecordedSession: () => void;
     handleShowResults: (audioBlob: Blob, transcript: string, analysis: AnalysisData) => void;
+    handleSessionComplete: (completedSession: Session) => void;
     setShowUploadModal: (show: boolean) => void;
     setShowModeSelection: (show: boolean) => void;
     setShowSettings: (show: boolean) => void;
+    setActiveView: (view: ActiveView) => void;
 }

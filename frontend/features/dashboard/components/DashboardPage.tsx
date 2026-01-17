@@ -8,17 +8,24 @@ import { ModeSelectionModal } from "@/components/mode-selection-modal";
 import { RecordedSession } from "@/components/recorded-session";
 import { ResultsPage } from "@/components/results-page";
 import { SettingsModal } from "@/components/settings-modal";
+import { ChatTranscriptView } from "@/components/chat-transcript-view";
+import { useUser } from "@clerk/nextjs";
 
 import { useDashboardState } from "../hooks";
 import { DashboardHeader } from "./DashboardHeader";
 import { DashboardLanding } from "./DashboardLanding";
 import { Loader } from "@/components/ui/loader";
 
-// ...
-
 export function DashboardPage() {
     const { state, actions, userData, isLoading, currentSession } =
         useDashboardState();
+    const { user } = useUser();
+
+    // Get normalized user ID
+    const getUserId = () => {
+        if (!user?.id) return '';
+        return user.id.startsWith('user_') ? user.id : `user_${user.id}`;
+    };
 
     if (isLoading) {
         return (
@@ -27,6 +34,70 @@ export function DashboardPage() {
             </div>
         );
     }
+
+    // Determine header styling based on active view
+    const isLandingView = state.activeView === 'dashboard' && !state.showPractice && !state.showResults;
+
+    // Render content based on activeView
+    const renderContent = () => {
+        switch (state.activeView) {
+            case 'results':
+                if (state.resultsData) {
+                    return (
+                        <ResultsPage
+                            transcript={state.resultsData.transcript}
+                            analysis={state.resultsData.analysis}
+                        />
+                    );
+                }
+                return <DashboardLanding onStartPitching={actions.handleStartPitching} />;
+
+            case 'transcript':
+                if (state.selectedSessionForView) {
+                    return (
+                        <ChatTranscriptView
+                            sessionId={state.selectedSessionForView.id}
+                            chatHistory={state.selectedSessionForView.chat_history || []}
+                            metadata={{
+                                title: state.selectedSessionForView.title,
+                                mode: state.selectedSessionForView.mode,
+                                created_at: state.selectedSessionForView.created_at,
+                                completed_at: state.selectedSessionForView.completed_at,
+                            }}
+                            onBack={actions.handleBackToSessions}
+                            userAvatar={userData.avatar}
+                        />
+                    );
+                }
+                return <DashboardLanding onStartPitching={actions.handleStartPitching} />;
+
+            case 'practice':
+                if (state.selectedMode === "recorded") {
+                    return (
+                        <RecordedSession
+                            uploadedFiles={state.contextFiles}
+                            onEndSession={actions.handleEndRecordedSession}
+                            onShowResults={actions.handleShowResults}
+                            sessionId={currentSession?.id || ""}
+                            userId={getUserId()}
+                        />
+                    );
+                }
+                return (
+                    <PitchPractice
+                        uploadedFiles={state.contextFiles}
+                        onBack={actions.handleBackToSessions}
+                        onDeleteFile={actions.handleDeleteFile}
+                        initialSession={currentSession}
+                        onComplete={actions.handleSessionComplete}
+                    />
+                );
+
+            case 'dashboard':
+            default:
+                return <DashboardLanding onStartPitching={actions.handleStartPitching} />;
+        }
+    };
 
     return (
         <SidebarProvider>
@@ -40,34 +111,11 @@ export function DashboardPage() {
                     userData={userData}
                     onSettingsClick={() => actions.setShowSettings(true)}
                     onSignOut={actions.handleSignOut}
-                    className={!state.showResults && !state.showPractice ? "absolute top-0 left-0 right-0 z-50 bg-transparent border-transparent" : ""}
+                    className={isLandingView ? "absolute top-0 left-0 right-0 z-50 bg-transparent border-transparent" : ""}
                 />
 
-                <div className={`flex-1 overflow-y-auto ${!state.showResults && !state.showPractice ? "h-screen p-0" : ""}`}>
-                    {state.showResults && state.resultsData ? (
-                        <ResultsPage
-                            transcript={state.resultsData.transcript}
-                            analysis={state.resultsData.analysis}
-                        />
-                    ) : state.showPractice ? (
-                        state.selectedMode === "recorded" ? (
-                            <RecordedSession
-                                uploadedFiles={state.contextFiles}
-                                onEndSession={actions.handleEndRecordedSession}
-                                onShowResults={actions.handleShowResults}
-                                sessionId={currentSession?.id || ""}
-                            />
-                        ) : (
-                            <PitchPractice
-                                uploadedFiles={state.contextFiles}
-                                onBack={actions.handleBackToSessions}
-                                onDeleteFile={actions.handleDeleteFile}
-                                initialSession={currentSession}
-                            />
-                        )
-                    ) : (
-                        <DashboardLanding onStartPitching={actions.handleStartPitching} />
-                    )}
+                <div className={`flex-1 overflow-y-auto ${isLandingView ? "h-screen p-0" : ""}`}>
+                    {renderContent()}
                 </div>
             </SidebarInset>
 

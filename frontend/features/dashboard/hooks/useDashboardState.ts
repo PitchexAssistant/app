@@ -5,7 +5,7 @@ import { useUser, useClerk } from "@clerk/nextjs";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSessions } from "@/hooks/use-sessions";
 import { Session } from "@/lib/api/client";
-import { AnalysisData, ContextFile, ResultsData, UserData, DashboardState, DashboardActions } from "../types";
+import { AnalysisData, ContextFile, ResultsData, UserData, DashboardState, DashboardActions, ActiveView } from "../types";
 import { API_ENDPOINTS } from "../constants";
 
 interface UseDashboardStateReturn {
@@ -33,6 +33,8 @@ export function useDashboardState(): UseDashboardStateReturn {
     const [showResults, setShowResults] = useState(false);
     const [resultsData, setResultsData] = useState<ResultsData | null>(null);
     const [showSettings, setShowSettings] = useState(false);
+    const [activeView, setActiveView] = useState<ActiveView>('dashboard');
+    const [selectedSessionForView, setSelectedSessionForView] = useState<Session | null>(null);
 
     useEffect(() => {
         setMounted(true);
@@ -63,20 +65,76 @@ export function useDashboardState(): UseDashboardStateReturn {
 
     const handleNewSession = useCallback(() => {
         setCurrentSession(null);
+        setSelectedSessionForView(null);
+        setActiveView('dashboard');
         setShowUploadModal(true);
     }, [setCurrentSession]);
 
     const handleSelectSession = useCallback(
         (session: Session) => {
-            setCurrentSession(session);
-            setShowPractice(true);
+            console.log('[Dashboard] Session selected:', session.id, 'status:', session.status, 'mode:', session.mode);
+
+            // Route based on session status and mode
+            if (session.status === 'completed') {
+                // For completed recorded sessions with analysis, show ResultsPage
+                if (session.mode === 'recorded' && session.analysis) {
+                    console.log('[Dashboard] Routing to results page for recorded session');
+                    setResultsData({
+                        audioBlob: new Blob(), // No audio blob for past sessions
+                        transcript: session.transcript || '',
+                        analysis: session.analysis
+                    });
+                    setActiveView('results');
+                    setShowResults(true);
+                } else {
+                    // Show chat transcript for completed live sessions
+                    console.log('[Dashboard] Routing to transcript for live session');
+                    setSelectedSessionForView(session);
+                    setActiveView('transcript');
+                }
+            } else {
+                // For active sessions, check mode
+                if (session.mode === 'recorded') {
+                    // Don't resume recording - show message or redirect to results if analysis exists
+                    if (session.analysis) {
+                        setResultsData({
+                            audioBlob: new Blob(),
+                            transcript: session.transcript || '',
+                            analysis: session.analysis
+                        });
+                        setActiveView('results');
+                        setShowResults(true);
+                    } else {
+                        // Session was abandoned before processing - just show dashboard
+                        console.log('[Dashboard] Recorded session has no analysis, showing dashboard');
+                        setActiveView('dashboard');
+                    }
+                } else {
+                    // Show live UI for active live sessions (resume)
+                    setCurrentSession(session);
+                    setSelectedMode('live');
+                    setActiveView('practice');
+                    setShowPractice(true);
+                }
+            }
         },
         [setCurrentSession]
     );
 
     const handleBackToSessions = useCallback(() => {
         setCurrentSession(null);
+        setSelectedSessionForView(null);
+        setActiveView('dashboard');
         setShowPractice(false);
+        setShowResults(false);
+    }, [setCurrentSession]);
+
+    const handleSessionComplete = useCallback((completedSession: Session) => {
+        console.log('[Dashboard] Session completed:', completedSession.id, 'status:', completedSession.status);
+        setCurrentSession(null);
+        setShowPractice(false);
+        setSelectedSessionForView(completedSession);
+        setActiveView('transcript');
     }, [setCurrentSession]);
 
     const handleSignOut = useCallback(async () => {
@@ -147,6 +205,7 @@ export function useDashboardState(): UseDashboardStateReturn {
                 }
 
                 setContextFiles(uploadedFileData);
+                setActiveView('practice');
                 setShowPractice(true);
             } catch (error) {
                 console.error("Error uploading files:", error);
@@ -164,6 +223,7 @@ export function useDashboardState(): UseDashboardStateReturn {
         setUploadedFiles([]);
         setShowResults(false);
         setResultsData(null);
+        setActiveView('dashboard');
     }, []);
 
     const handleShowResults = useCallback(
@@ -173,6 +233,7 @@ export function useDashboardState(): UseDashboardStateReturn {
                 transcript,
                 analysis,
             });
+            setActiveView('results');
             setShowResults(true);
         },
         []
@@ -189,6 +250,8 @@ export function useDashboardState(): UseDashboardStateReturn {
         showResults,
         resultsData,
         showSettings,
+        activeView,
+        selectedSessionForView,
     };
 
     const actions: DashboardActions = {
@@ -202,9 +265,11 @@ export function useDashboardState(): UseDashboardStateReturn {
         handleModeSelection,
         handleEndRecordedSession,
         handleShowResults,
+        handleSessionComplete,
         setShowUploadModal,
         setShowModeSelection,
         setShowSettings,
+        setActiveView,
     };
 
     return {
