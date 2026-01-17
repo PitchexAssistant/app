@@ -51,11 +51,19 @@ class Reasoning:
             )
             self.vector_store.save_local(self.vector_store_path)
 
-        # initializing Tavily Search Tool (For networksearch)
-        self.search_tool = TavilySearchResults(max_results = 3,
-                            search_depth = "advanced", # or "basic"
-                            api_wrapper_kwargs={
-                            "tavily_api_key": self.tavily_api_key})
+        # initializing Tavily Search Tool (For networksearch) - Only if API key is available
+        self.search_tool = None
+        if self.tavily_api_key:
+            try:
+                self.search_tool = TavilySearchResults(max_results = 3,
+                                    search_depth = "advanced", # or "basic"
+                                    api_wrapper_kwargs={
+                                    "tavily_api_key": self.tavily_api_key})
+                logger.info("tavily_search_initialized")
+            except Exception as e:
+                logger.warning("tavily_search_initialization_failed", error=str(e))
+        else:
+            logger.warning("tavily_api_key_not_set", message="Web search will be disabled")
 
         # list of tools
         self.tools = [self.smart_RAG_search]
@@ -156,7 +164,11 @@ class Reasoning:
             logger.info("smart_search_found_local_docs")
             return "\n\n".join([doc.page_content for doc in filtered_docs])
         else:
-            # Search Web
+            # Search Web - only if Tavily is configured
+            if self.search_tool is None:
+                logger.info("smart_search_web_unavailable", message="Tavily API key not configured")
+                return "No relevant information was found."
+                
             logger.info("smart_search_using_web_search")
             try:
                 search_results = self.search_tool.invoke(user_prompt)

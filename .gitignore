@@ -57,7 +57,7 @@ Thumbs.db
 *.jpeg
 *.jpg
 *.png
-FYP*.pdf
+
 
 # Python
 __pycache__/
@@ -81,7 +81,5 @@ QA-REPORT.md
 QA-TESTING-GUIDE.md
 open_router_models.txt
 
-*.pid
-backend.pid
 
 

@@ -36,18 +36,19 @@ export function EmotionTrendChart({ data }: EmotionTrendChartProps) {
             </CardHeader>
             <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
-                    <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                    <LineChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="#404040" />
                         <XAxis
                             dataKey="timestamp"
                             tickFormatter={formatTime}
                             stroke="#9e9e9e"
-                            style={{ fontSize: '12px', fontFamily: 'Uber Move' }}
+                            style={{ fontSize: '11px', fontFamily: 'Uber Move' }}
                         />
                         <YAxis
                             stroke="#9e9e9e"
-                            style={{ fontSize: '12px', fontFamily: 'Uber Move' }}
+                            style={{ fontSize: '11px', fontFamily: 'Uber Move' }}
                             domain={[0, 100]}
+                            width={35}
                         />
                         <Tooltip
                             contentStyle={{
@@ -63,7 +64,7 @@ export function EmotionTrendChart({ data }: EmotionTrendChartProps) {
                         <Legend
                             wrapperStyle={{
                                 fontFamily: 'Uber Move',
-                                fontSize: '12px',
+                                fontSize: '11px',
                                 color: '#9e9e9e'
                             }}
                         />
@@ -72,40 +73,40 @@ export function EmotionTrendChart({ data }: EmotionTrendChartProps) {
                             dataKey="joy"
                             stroke="#10b981"
                             strokeWidth={2}
-                            dot={{ fill: '#10b981', r: 4 }}
-                            activeDot={{ r: 6 }}
+                            dot={{ fill: '#10b981', r: 3 }}
+                            activeDot={{ r: 5 }}
                         />
                         <Line
                             type="monotone"
                             dataKey="confidence"
                             stroke="#3b82f6"
                             strokeWidth={2}
-                            dot={{ fill: '#3b82f6', r: 4 }}
-                            activeDot={{ r: 6 }}
+                            dot={{ fill: '#3b82f6', r: 3 }}
+                            activeDot={{ r: 5 }}
                         />
                         <Line
                             type="monotone"
                             dataKey="nervousness"
                             stroke="#f59e0b"
                             strokeWidth={2}
-                            dot={{ fill: '#f59e0b', r: 4 }}
-                            activeDot={{ r: 6 }}
+                            dot={{ fill: '#f59e0b', r: 3 }}
+                            activeDot={{ r: 5 }}
                         />
                         <Line
                             type="monotone"
                             dataKey="anger"
                             stroke="#ef4444"
                             strokeWidth={2}
-                            dot={{ fill: '#ef4444', r: 4 }}
-                            activeDot={{ r: 6 }}
+                            dot={{ fill: '#ef4444', r: 3 }}
+                            activeDot={{ r: 5 }}
                         />
                         <Line
                             type="monotone"
                             dataKey="surprise"
                             stroke="#a855f7"
                             strokeWidth={2}
-                            dot={{ fill: '#a855f7', r: 4 }}
-                            activeDot={{ r: 6 }}
+                            dot={{ fill: '#a855f7', r: 3 }}
+                            activeDot={{ r: 5 }}
                         />
                     </LineChart>
                 </ResponsiveContainer>

@@ -27,15 +27,22 @@ interface UploadedPreview {
 }
 
 interface PitchPracticeProps {
-  onBack?: () => void;
-  uploadedFiles?: UploadedPreview[];
-  onDeleteFile?: (index: number) => void;
-  initialSession?: APISession | null;
+  uploadedFiles: Array<{
+    filename: string
+    file_id: string
+    file_index: number
+    text_length: number
+    local_url: string
+  }>
+  onDeleteFile?: (index: number) => void
+  onBack?: () => void
+  onComplete?: (session: any) => void  // Called when session is completed, receives completed session
+  initialSession?: any // Existing session data for resumption
 }
 
 type PitchMode = 'select' | 'record' | 'live' | 'upload';
 
-export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initialSession }: PitchPracticeProps) {
+export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDeleteFile, initialSession }: PitchPracticeProps) {
   const { user } = useUser();
   const [pitchMode, setPitchMode] = useState<PitchMode>('select');
   const [messages, setMessages] = useState<Message[]>([]);
@@ -65,8 +72,8 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
         // Parse transcript back into messages
         const lines = initialSession.transcript.split('\n');
         const loadedMessages: Message[] = lines
-          .filter(line => line.includes(':'))
-          .map(line => {
+          .filter((line: string) => line.includes(':'))
+          .map((line: string) => {
             const [role, ...contentParts] = line.split(':');
             return {
               role: role.trim().toLowerCase() as 'user' | 'assistant',
@@ -236,6 +243,21 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       setMessages(prev => [...prev, userMessage, assistantMessage]);
       setCurrentEmotion(result.emotion);
 
+      // Save chat_history to trigger title generation (especially on first message)
+      if (currentSession) {
+        const updatedMessages = [...messages, userMessage, assistantMessage];
+        const chatHistory = updatedMessages.map(m => ({
+          role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+          content: m.content,
+          timestamp: m.timestamp ? Math.floor(m.timestamp.getTime() / 1000) : undefined
+        }));
+
+        // Update session with chat_history - this triggers auto-title on first message
+        updateSession(currentSession.id, { chat_history: chatHistory }).catch(err => {
+          console.error('Failed to update chat_history:', err);
+        });
+      }
+
       // Clear uploaded audio after processing
       handleRemoveAudio();
     } catch (err: any) {
@@ -259,18 +281,32 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       // Calculate duration
       const duration = Math.floor((new Date().getTime() - startTime.getTime()) / 1000);
 
-      // Update session with final data
+      // Update session with final data including chat_history for title generation
       if (currentSession && user?.id) {
         const transcript = messages.map(m => `${m.role}: ${m.content}`).join('\n');
         const summaryText = `Session completed with ${messages.length} messages`;
+
+        // Convert messages to chat_history format for backend title generation
+        const chatHistory = messages.map(m => ({
+          role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+          content: m.content,
+          timestamp: m.timestamp ? Math.floor(m.timestamp.getTime() / 1000) : undefined
+        }));
 
         await updateSession(currentSession.id, {
           transcript: transcript || undefined,
           summary: summaryText || undefined,
           duration: duration > 0 ? duration : undefined,
+          chat_history: chatHistory.length > 0 ? chatHistory : undefined,
         });
 
-        await completeSession(currentSession.id);
+        const completedSession = await completeSession(currentSession.id);
+
+        // Navigate to transcript view if onComplete provided
+        if (completedSession && onComplete) {
+          onComplete(completedSession);
+          return; // Don't call onBack if navigating to transcript
+        }
       }
     } catch (error) {
       console.error('Error saving session:', error);
@@ -280,7 +316,7 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
     // End live session if active
     // LiveKit session handling is managed within the component
 
-    // Go back to dashboard
+    // Go back to dashboard (fallback if no onComplete)
     onBack?.();
   };
 
@@ -338,12 +374,18 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       setMessages(newMessages);
       setCurrentEmotion(result.emotion);
 
-      // Auto-save session with new messages
+      // Auto-save session with new messages and chat_history for title generation
       if (currentSession && user?.id) {
         const transcript = newMessages.map(m => `${m.role}: ${m.content}`).join('\n');
+        const chatHistory = newMessages.map(m => ({
+          role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+          content: m.content,
+          timestamp: m.timestamp ? Math.floor(m.timestamp.getTime() / 1000) : undefined
+        }));
         await updateSession(currentSession.id, {
           transcript,
           analysis: result.emotion,
+          chat_history: chatHistory,
         }).catch(err => console.error('Failed to auto-save session:', err));
       }
 
@@ -401,12 +443,18 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
       setMessages(newMessages);
       setCurrentEmotion(result.emotion);
 
-      // Auto-save session with new messages
+      // Auto-save session with new messages and chat_history for title generation
       if (currentSession && user?.id) {
         const transcript = newMessages.map(m => `${m.role}: ${m.content}`).join('\n');
+        const chatHistory = newMessages.map(m => ({
+          role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+          content: m.content,
+          timestamp: m.timestamp ? Math.floor(m.timestamp.getTime() / 1000) : undefined
+        }));
         await updateSession(currentSession.id, {
           transcript,
           analysis: result.emotion,
+          chat_history: chatHistory,
         }).catch(err => console.error('Failed to auto-save session:', err));
       }
 
@@ -532,8 +580,9 @@ export function PitchPractice({ onBack, uploadedFiles = [], onDeleteFile, initia
         {pitchMode === 'live' && (
           <div className="fixed inset-0 z-50 bg-[#171717]">
             <InteractivePitchSession
-              sessionId={sessionId}
+              sessionId={currentSession?.id || sessionId}
               onEndSession={handleEndSession}
+              onComplete={onComplete}
               contextFiles={uploadedFiles}
             />
           </div>

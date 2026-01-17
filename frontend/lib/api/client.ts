@@ -24,7 +24,7 @@ async function fetchAPI<T>(
   options: RequestInit = {}
 ): Promise<T> {
   const url = `${API_BASE_URL}${endpoint}`;
-  
+
   const defaultHeaders: HeadersInit = {
     'Content-Type': 'application/json',
   };
@@ -94,7 +94,7 @@ export const sttAPI = {
     }
 
     const result = await response.json();
-    
+
     // Check if transcription was successful
     if (!result.success) {
       throw new APIError(
@@ -103,7 +103,7 @@ export const sttAPI = {
         result
       );
     }
-    
+
     return result;
   },
 
@@ -130,7 +130,7 @@ export const sttAPI = {
     }
 
     const result = await response.json();
-    
+
     // Check if transcription was successful
     if (!result.success) {
       throw new APIError(
@@ -139,7 +139,7 @@ export const sttAPI = {
         result
       );
     }
-    
+
     return result;
   },
 };
@@ -280,6 +280,13 @@ export interface Session {
   summary?: string;
   duration?: number;
   status: string;
+  completed_at?: string;
+  chat_history?: Array<{
+    role: 'user' | 'assistant' | 'human' | 'ai';
+    content: string;
+    timestamp?: number;
+    emotion?: Record<string, number>;
+  }>;
 }
 
 export const sessionsAPI = {
@@ -304,7 +311,7 @@ export const sessionsAPI = {
     const params = new URLSearchParams({ user_id: userId });
     if (limit) params.append('limit', limit.toString());
     if (status) params.append('status', status);
-    
+
     return fetchAPI<Session[]>(`/api/v1/sessions?${params.toString()}`);
   },
 
@@ -327,6 +334,12 @@ export const sessionsAPI = {
       analysis?: any;
       summary?: string;
       duration?: number;
+      chat_history?: Array<{
+        role: 'user' | 'assistant' | 'human' | 'ai';
+        content: string;
+        timestamp?: number;
+        emotion?: Record<string, number>;
+      }>;
     }
   ): Promise<Session> => {
     return fetchAPI<Session>(`/api/v1/sessions/${sessionId}?user_id=${userId}`, {
@@ -351,12 +364,13 @@ export const sessionsAPI = {
    * Mark session as completed
    */
   complete: async (sessionId: string, userId: string): Promise<Session> => {
-    return fetchAPI<Session>(
+    const response = await fetchAPI<{ success: boolean; session: Session; message: string }>(
       `/api/v1/sessions/${sessionId}/complete?user_id=${userId}`,
       {
         method: 'POST',
       }
     );
+    return response.session;
   },
 
   /**

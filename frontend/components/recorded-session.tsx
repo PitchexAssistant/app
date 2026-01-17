@@ -16,13 +16,15 @@ interface RecordedSessionProps {
   onEndSession: () => void
   onShowResults: (audioBlob: Blob, transcript: string, analysis: any) => void
   sessionId: string
+  userId: string  // User ID for API authentication
 }
 
 export function RecordedSession({
   uploadedFiles,
   onEndSession,
   onShowResults,
-  sessionId
+  sessionId,
+  userId
 }: RecordedSessionProps) {
   const [isRecording, setIsRecording] = useState(false)
   const [hasRecording, setHasRecording] = useState(false)
@@ -238,6 +240,32 @@ export function RecordedSession({
 
       const transcriptionData = await transcribeResponse.json()
 
+      // Update session with chat_history to trigger auto-title generation
+      if (sessionId) {
+        try {
+          console.log('[RecordedSession] Updating session with transcript for title generation:', sessionId)
+          const updateResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}?user_id=${userId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_history: [{ role: 'human', content: transcriptionData.transcript }],
+              transcript: transcriptionData.transcript
+            })
+          })
+          if (updateResponse.ok) {
+            const updatedSession = await updateResponse.json()
+            console.log('[RecordedSession] Session updated, new title:', updatedSession.title)
+          } else {
+            const errorData = await updateResponse.json().catch(() => ({}))
+            console.error('[RecordedSession] Session update failed:', updateResponse.status, errorData)
+          }
+        } catch (err) {
+          console.error('[RecordedSession] Failed to update session title:', err)
+        }
+      } else {
+        console.warn('[RecordedSession] No sessionId provided, cannot update title')
+      }
+
       // Get analysis with context
       const analysisResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/llm/analyze-pitch`, {
         method: 'POST',
@@ -256,6 +284,31 @@ export function RecordedSession({
       }
 
       const analysisData = await analysisResponse.json()
+
+      // Update session with analysis data and mark as complete
+      if (sessionId) {
+        try {
+          console.log('[RecordedSession] Saving analysis and marking session complete')
+          // First update with analysis
+          await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}?user_id=${userId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              analysis: analysisData,
+              transcript: transcriptionData.transcript,
+              status: 'completed'
+            })
+          })
+          // Then mark as complete via the complete endpoint
+          await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}/complete?user_id=${userId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+          })
+          console.log('[RecordedSession] Session marked as complete')
+        } catch (err) {
+          console.error('[RecordedSession] Failed to mark session complete:', err)
+        }
+      }
 
       // Show results page
       onShowResults(audioBlob, transcriptionData.transcript, analysisData)
@@ -371,6 +424,32 @@ export function RecordedSession({
 
       const transcriptionData = await transcribeResponse.json()
 
+      // Update session with chat_history to trigger auto-title generation
+      if (sessionId) {
+        try {
+          console.log('[RecordedSession Upload] Updating session with transcript for title generation:', sessionId)
+          const updateResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}?user_id=${userId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_history: [{ role: 'human', content: transcriptionData.transcript }],
+              transcript: transcriptionData.transcript
+            })
+          })
+          if (updateResponse.ok) {
+            const updatedSession = await updateResponse.json()
+            console.log('[RecordedSession Upload] Session updated, new title:', updatedSession.title)
+          } else {
+            const errorData = await updateResponse.json().catch(() => ({}))
+            console.error('[RecordedSession Upload] Session update failed:', updateResponse.status, errorData)
+          }
+        } catch (err) {
+          console.error('[RecordedSession Upload] Failed to update session title:', err)
+        }
+      } else {
+        console.warn('[RecordedSession Upload] No sessionId provided, cannot update title')
+      }
+
       const analysisResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/llm/analyze-pitch`, {
         method: 'POST',
         headers: {
@@ -388,6 +467,32 @@ export function RecordedSession({
       }
 
       const analysisData = await analysisResponse.json()
+
+      // Update session with analysis data and mark as complete
+      if (sessionId) {
+        try {
+          console.log('[RecordedSession Upload] Saving analysis and marking session complete')
+          // First update with analysis
+          await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}?user_id=${userId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              analysis: analysisData,
+              transcript: transcriptionData.transcript,
+              status: 'completed'
+            })
+          })
+          // Then mark as complete via the complete endpoint
+          await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/sessions/${sessionId}/complete?user_id=${userId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+          })
+          console.log('[RecordedSession Upload] Session marked as complete')
+        } catch (err) {
+          console.error('[RecordedSession Upload] Failed to mark session complete:', err)
+        }
+      }
+
       onShowResults(uploadedAudioFile, transcriptionData.transcript, analysisData)
 
     } catch (error) {

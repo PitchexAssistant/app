@@ -14,19 +14,24 @@ import { cn } from '@/lib/utils';
 import { AppSidebar } from '@/components/app-sidebar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { useUser } from '@clerk/nextjs';
+import { useSessions } from '@/hooks/use-sessions';
+import { Session } from '@/lib/api/client';
 
 interface InteractivePitchSessionProps {
     sessionId?: string;
     onEndSession: () => void;
+    onComplete?: (session: Session) => void;  // Called when session ends with completed session data
     contextFiles?: any[];
 }
 
 export function InteractivePitchSession({
     sessionId,
     onEndSession,
+    onComplete,
     contextFiles = []
 }: InteractivePitchSessionProps) {
     const { user } = useUser();
+    const { updateSession, completeSession, loadSession } = useSessions();
     const [isPaused, setIsPaused] = useState(false);
     const [showTranscript, setShowTranscript] = useState(false);
     const [textInput, setTextInput] = useState('');
@@ -68,6 +73,22 @@ export function InteractivePitchSession({
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
+
+    // Save chat_history to backend whenever messages change - triggers auto-title generation
+    useEffect(() => {
+        if (!sessionId || messages.length === 0) return;
+
+        const chatHistory = messages.map(m => ({
+            role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+            content: m.content,
+            timestamp: Math.floor(Date.now() / 1000)
+        }));
+
+        // Save chat_history to backend (triggers auto-title on first user message)
+        updateSession(sessionId, { chat_history: chatHistory }).catch(err => {
+            console.error('[InteractivePitchSession] Failed to save chat_history:', err);
+        });
+    }, [messages, sessionId, updateSession]);
 
     // Auto-start recording when connected (only once per connection)
     const hasAutoStarted = useRef(false);
@@ -138,9 +159,49 @@ export function InteractivePitchSession({
         }
     };
 
-    const handleEndSession = () => {
+    const handleEndSession = async () => {
         stopRecording();
         disconnect();
+
+        // Complete the session and save final data
+        if (sessionId) {
+            try {
+                // Calculate duration
+                const duration = Math.floor((Date.now() - startTime) / 1000);
+
+                // Build transcript and chat_history from messages
+                const transcript = messages.map(m =>
+                    `${m.role === 'user' ? 'You' : 'Marcus Sterling'}: ${m.content}`
+                ).join('\n');
+
+                const chatHistory = messages.map(m => ({
+                    role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
+                    content: m.content,
+                    timestamp: Math.floor(Date.now() / 1000)
+                }));
+
+                // Update session with final data
+                await updateSession(sessionId, {
+                    transcript,
+                    duration,
+                    chat_history: chatHistory,
+                    summary: `Session completed with ${messages.length} messages`
+                });
+
+                // Mark session as completed
+                const completedSession = await completeSession(sessionId);
+
+                // Navigate to transcript view if onComplete provided
+                if (completedSession && onComplete) {
+                    onComplete(completedSession);
+                    return;
+                }
+            } catch (error) {
+                console.error('[InteractivePitchSession] Failed to complete session:', error);
+            }
+        }
+
+        // Fallback to onEndSession
         onEndSession();
     };
 
