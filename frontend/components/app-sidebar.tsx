@@ -48,6 +48,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { ConfirmDialog } from "@/components/ui/confirm-dialog"
+import { InputDialog } from "@/components/ui/input-dialog"
 import { useSessions } from "@/hooks/use-sessions"
 import { Session } from "@/lib/api/client"
 
@@ -67,6 +69,12 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
   const router = useRouter()
   const { state } = useSidebar()
   const isCollapsed = state === "collapsed"
+
+  // Dialog states
+  const [deleteDialogOpen, setDeleteDialogOpen] = React.useState(false)
+  const [renameDialogOpen, setRenameDialogOpen] = React.useState(false)
+  const [alertDialogOpen, setAlertDialogOpen] = React.useState(false)
+  const [selectedSession, setSelectedSession] = React.useState<Session | null>(null)
 
   // Use sessions hook
   const {
@@ -90,19 +98,30 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
     onSelectSession?.(session)
   }
 
-  const handleDeleteSession = async (e: React.MouseEvent, sessionId: string) => {
+  const handleDeleteSession = (e: React.MouseEvent, session: Session) => {
     e.stopPropagation()
-    if (confirm('Are you sure you want to delete this session?')) {
-      await deleteSession(sessionId)
+    setSelectedSession(session)
+    setDeleteDialogOpen(true)
+  }
+
+  const confirmDeleteSession = async () => {
+    if (selectedSession) {
+      await deleteSession(selectedSession.id)
+      setSelectedSession(null)
     }
   }
 
-  const handleRenameSession = async (e: React.MouseEvent, session: Session) => {
+  const handleRenameSession = (e: React.MouseEvent, session: Session) => {
     e.stopPropagation()
-    const newTitle = prompt('Enter new session name:', session.title)
-    if (newTitle && newTitle.trim() !== session.title) {
-      await updateSession(session.id, { title: newTitle.trim() })
+    setSelectedSession(session)
+    setRenameDialogOpen(true)
+  }
+
+  const confirmRenameSession = async (newTitle: string) => {
+    if (selectedSession && newTitle !== selectedSession.title) {
+      await updateSession(selectedSession.id, { title: newTitle })
     }
+    setSelectedSession(null)
   }
 
   const handleDuplicateSession = async (e: React.MouseEvent, session: Session) => {
@@ -121,7 +140,8 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
   const handleDownloadTranscript = (e: React.MouseEvent, session: Session) => {
     e.stopPropagation()
     if (!session.transcript) {
-      alert('No transcript available for this session')
+      setSelectedSession(session)
+      setAlertDialogOpen(true)
       return
     }
 
@@ -325,7 +345,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                               Download Transcript
                             </DropdownMenuItem>
                             <DropdownMenuItem
-                              onClick={(e) => handleDeleteSession(e, session.id)}
+                              onClick={(e) => handleDeleteSession(e, session)}
                               className="text-[var(--red)] focus:text-[var(--red)] focus:bg-[var(--surface-2)]"
                             >
                               <Trash2 className="w-4 h-4 mr-2" />
@@ -351,6 +371,39 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
         )}
       </SidebarFooter>
       <SidebarRail />
+
+      {/* Delete Confirmation Dialog */}
+      <ConfirmDialog
+        open={deleteDialogOpen}
+        onOpenChange={setDeleteDialogOpen}
+        title="Delete Session"
+        description={`Are you sure you want to delete "${selectedSession?.title}"? This action cannot be undone.`}
+        onConfirm={confirmDeleteSession}
+        confirmLabel="Delete"
+        variant="destructive"
+      />
+
+      {/* Rename Dialog */}
+      <InputDialog
+        open={renameDialogOpen}
+        onOpenChange={setRenameDialogOpen}
+        title="Rename Session"
+        description="Enter a new name for this session."
+        defaultValue={selectedSession?.title || ""}
+        placeholder="Session name"
+        onConfirm={confirmRenameSession}
+        confirmLabel="Rename"
+      />
+
+      {/* No Transcript Alert */}
+      <ConfirmDialog
+        open={alertDialogOpen}
+        onOpenChange={setAlertDialogOpen}
+        title="No Transcript Available"
+        description="This session does not have a transcript yet. Complete the session to generate a transcript."
+        onConfirm={() => { }}
+        confirmLabel="OK"
+      />
     </Sidebar>
   )
 }

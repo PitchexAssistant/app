@@ -375,6 +375,30 @@
   .text-disable-grey {
     color: var(--disable-grey);
   }
+
+  /* Subtle scrollbar for dark UI */
+  .scrollbar-subtle {
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) var(--surface-1);
+  }
+
+  .scrollbar-subtle::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-subtle::-webkit-scrollbar-track {
+    background: var(--surface-1);
+    border-radius: 3px;
+  }
+
+  .scrollbar-subtle::-webkit-scrollbar-thumb {
+    background: var(--surface-3);
+    border-radius: 3px;
+  }
+
+  .scrollbar-subtle::-webkit-scrollbar-thumb:hover {
+    background: var(--text-tertiary);
+  }
 }
 
 /* Orb animations - ElevenLabs style */
