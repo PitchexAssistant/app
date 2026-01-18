@@ -1,8 +1,11 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { EmotionTrendChart } from './charts/emotion-trend-chart'
 import { PerformanceRadarChart } from './charts/performance-radar-chart'
+import { SessionAnalysisModal } from '@/features/session-analysis'
+import { Button } from '@/components/ui/button'
+import { Presentation } from 'lucide-react'
 
 interface ResultsPageProps {
   transcript: string
@@ -30,6 +33,8 @@ interface ResultsPageProps {
 }
 
 export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
+  const [isModalOpen, setIsModalOpen] = useState(true)
+
   useEffect(() => {
     // Log for debugging
     console.log('Results Page Loaded:', { transcript, analysis })
@@ -67,8 +72,8 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
 
   return (
     <div className="flex flex-col h-full bg-[#171717] overflow-x-hidden">
-      {/* Back Button - Aligned with content */}
-      <div className="px-[32px] pt-[32px] pb-[16px]">
+      {/* Back Button and View Analysis CTA */}
+      <div className="px-[32px] pt-[32px] pb-[16px] flex items-center justify-between">
         <button
           className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#262626] hover:bg-[#2c2c33] transition-colors cursor-pointer"
           onClick={() => window.history.back()}
@@ -77,6 +82,15 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
             <path d="M15 18l-6-6 6-6" stroke="#f0f0f0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
+
+        <Button
+          variant="default"
+          onClick={() => setIsModalOpen(true)}
+          className="gap-2"
+        >
+          <Presentation className="size-4" />
+          View Full Analysis
+        </Button>
       </div>
 
       {/* Main Content */}
@@ -209,6 +223,19 @@ export function ResultsPage({ transcript, analysis }: ResultsPageProps) {
           </details>
         </div>
       )}
+
+      {/* Session Analysis Carousel Modal */}
+      <SessionAnalysisModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        analysis={analysis}
+        transcript={transcript}
+        onPracticeAgain={() => {
+          setIsModalOpen(false)
+          window.location.reload()
+        }}
+      />
     </div>
   )
 }
+
