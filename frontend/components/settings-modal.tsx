@@ -5,6 +5,7 @@ import { X, Settings, Users, CreditCard, LayoutDashboard, HelpCircle, MessageCir
 import { useUser, useClerk } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 type SettingsTab = 'general' | 'people' | 'billing' | 'integrations' | 'help' | 'support'
 
@@ -184,39 +185,39 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md p-4">
-        <div className="bg-[#111111] border border-[#323232] rounded-[24px] w-full max-w-[1000px] h-auto max-h-[85vh] shadow-[0px_20px_24px_-4px_rgba(10,13,18,0.08),0px_8px_8px_-4px_rgba(10,13,18,0.03)] flex overflow-hidden">
+        <div className="bg-[var(--surface-1)] border border-[var(--border-gray)] rounded-xl w-[75vw] h-[75vh] shadow-[0px_20px_24px_-4px_rgba(10,13,18,0.08),0px_8px_8px_-4px_rgba(10,13,18,0.03)] flex overflow-hidden">
           {/* Sidebar */}
-          <div className="w-[240px] px-4 py-6 flex flex-col gap-3">
+          <div className="w-[240px] bg-[var(--surface-1)] px-4 py-6 flex flex-col gap-3">
             {/* User Info */}
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-10 h-10 bg-[#ff6b00] rounded-full flex items-center justify-center overflow-hidden shadow-[0px_0.8px_1.6px_0px_rgba(10,13,18,0.05)]">
+              <div className="w-10 h-10 bg-[var(--accent-lime)] rounded-full flex items-center justify-center overflow-hidden shadow-[0px_0.8px_1.6px_0px_rgba(10,13,18,0.05)]">
                 {userData.avatar ? (
                   <Image src={userData.avatar} alt={userData.name} width={40} height={40} className="w-full h-full object-cover" />
                 ) : (
-                  <span className="text-[#f0f0f0] text-sm font-semibold">{userData.initials}</span>
+                  <span className="text-[var(--surface-0)] text-sm font-semibold">{userData.initials}</span>
                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[#f0f0f0] text-sm font-semibold truncate">{userData.name}</p>
+                <p className="text-[var(--text-primary)] text-sm font-semibold truncate">{userData.name}</p>
               </div>
             </div>
 
             {/* Settings Section */}
             <div className="flex flex-col">
               <div className="px-4 py-2">
-                <p className="text-[#9e9e9e] text-xs font-normal">SETTINGS</p>
+                <p className="text-[var(--text-secondary)] text-xs font-normal">SETTINGS</p>
               </div>
               {sidebarItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`flex items-center gap-3 px-4 py-2 rounded-xl transition-colors ${activeTab === item.id
-                      ? 'bg-[#202020]'
-                      : 'hover:bg-[#202020]/50'
+                  className={`group flex items-center gap-3 px-4 py-2.5 rounded-md transition-colors ${activeTab === item.id
+                    ? 'bg-[var(--surface-2)]'
+                    : 'hover:bg-[var(--surface-2)]'
                     }`}
                 >
-                  <item.icon className={`w-4 h-4 ${activeTab === item.id ? 'text-[#ff6b00]' : 'text-[#dadcdd]'}`} />
-                  <span className="text-[#dadcdd] text-sm font-medium">{item.label}</span>
+                  <item.icon className={`w-4 h-4 transition-colors ${activeTab === item.id ? 'text-[var(--accent-lime)]' : 'text-[var(--text-primary)] group-hover:text-[var(--accent-lime)]'}`} />
+                  <span className="text-[var(--text-primary)] text-sm font-medium">{item.label}</span>
                 </button>
               ))}
             </div>
@@ -224,36 +225,36 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
             {/* Help Section */}
             <div className="flex flex-col">
               <div className="px-4 py-2">
-                <p className="text-[#9e9e9e] text-xs font-normal">HELP</p>
+                <p className="text-[var(--text-secondary)] text-xs font-normal">HELP</p>
               </div>
               {helpItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`flex items-center gap-3 px-4 py-2 rounded-xl transition-colors ${activeTab === item.id
-                      ? 'bg-[#202020]'
-                      : 'hover:bg-[#202020]/50'
+                  className={`group flex items-center gap-3 px-4 py-2.5 rounded-md transition-colors ${activeTab === item.id
+                    ? 'bg-[var(--surface-2)]'
+                    : 'hover:bg-[var(--surface-2)]'
                     }`}
                 >
-                  <item.icon className={`w-4 h-4 ${activeTab === item.id ? 'text-[#ff6b00]' : 'text-[#dadcdd]'}`} />
-                  <span className="text-[#dadcdd] text-sm font-medium">{item.label}</span>
+                  <item.icon className={`w-4 h-4 transition-colors ${activeTab === item.id ? 'text-[var(--accent-lime)]' : 'text-[var(--text-primary)] group-hover:text-[var(--accent-lime)]'}`} />
+                  <span className="text-[var(--text-primary)] text-sm font-medium">{item.label}</span>
                 </button>
               ))}
             </div>
           </div>
 
           {/* Content Area */}
-          <div className="flex-1 bg-[#111111] border-l border-[#323232] flex flex-col overflow-hidden min-h-[500px]">
+          <div className="flex-1 bg-[var(--surface-0)] border-l border-[var(--border-gray)] flex flex-col overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4">
-              <h2 className="text-[#f0f0f0] text-base font-semibold capitalize">
+              <h2 className="text-[var(--text-primary)] text-base font-semibold capitalize">
                 {activeTab === 'billing' ? 'Billing & Plans' : activeTab}
               </h2>
               <button
                 onClick={onClose}
-                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#202020] transition-colors"
+                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[var(--surface-2)] transition-colors"
               >
-                <X className="w-[13px] h-[13px] text-[#dadcdd]" />
+                <X className="w-[13px] h-[13px] text-[var(--text-primary)]" />
               </button>
             </div>
 
@@ -310,44 +311,48 @@ function InviteMemberModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-[#111111] border border-[#323232] rounded-2xl w-full max-w-[440px] p-6">
+      <div className="bg-[var(--surface-1)] border border-[var(--border-gray)] rounded-xl w-full max-w-[440px] p-6">
         <div className="flex items-center justify-between mb-6">
-          <h3 className="text-[#f0f0f0] text-lg font-semibold">Invite Team Member</h3>
+          <h3 className="text-[var(--text-primary)] text-lg font-semibold">Invite Team Member</h3>
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#202020] transition-colors"
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[var(--surface-2)] transition-colors"
           >
-            <X className="w-4 h-4 text-[#dadcdd]" />
+            <X className="w-4 h-4 text-[var(--text-primary)]" />
           </button>
         </div>
 
         <div className="flex flex-col gap-4">
           <div>
-            <label className="text-[#dadcdd] text-sm font-medium mb-2 block">Email Address</label>
+            <label className="text-[var(--text-primary)] text-sm font-medium mb-2 block">Email Address</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="colleague@company.com"
-              className="w-full h-11 px-4 py-3 bg-[#202020] border border-[#323232] rounded-xl text-[#f0f0f0] text-base placeholder:text-[#9e9e9e] focus:outline-none focus:border-[#ff6b00]"
+              className="w-full h-11 px-4 py-3 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-xl text-[var(--text-primary)] text-base placeholder:text-[var(--text-secondary)] focus:outline-none focus:border-[var(--accent-lime)]"
             />
           </div>
 
-          <p className="text-[#9e9e9e] text-sm">
+          <p className="text-[var(--text-secondary)] text-sm">
             An invitation email will be sent to this address to join your team on Pitchex.
           </p>
 
           <div className="flex items-center gap-3 mt-2">
-            <button
+            <Button
+              variant="secondary"
+              size="default"
               onClick={onClose}
-              className="flex-1 h-10 px-4 py-2.5 bg-[#202020] rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors"
+              className="flex-1"
             >
               Cancel
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="default"
+              size="default"
               onClick={handleSendInvite}
               disabled={isSending || !email}
-              className="flex-1 h-10 px-4 py-2.5 bg-[#ff6b00] rounded-full flex items-center justify-center gap-2 text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex-1"
             >
               {isSending ? (
                 <Loader2 className="w-4 h-4 animate-spin" />
@@ -357,7 +362,7 @@ function InviteMemberModal({ onClose }: { onClose: () => void }) {
                   Send Invite
                 </>
               )}
-            </button>
+            </Button>
           </div>
         </div>
       </div>
@@ -380,54 +385,58 @@ function SupportFormModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-[#111111] border border-[#323232] rounded-2xl w-full max-w-[500px] p-6">
+      <div className="bg-[var(--surface-1)] border border-[var(--border-gray)] rounded-lg w-full max-w-[500px] p-6">
         <div className="flex items-center justify-between mb-6">
-          <h3 className="text-[#f0f0f0] text-lg font-semibold">Contact Support</h3>
+          <h3 className="text-[var(--text-primary)] text-lg font-semibold">Contact Support</h3>
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#202020] transition-colors"
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-[var(--surface-2)] transition-colors"
           >
-            <X className="w-4 h-4 text-[#dadcdd]" />
+            <X className="w-4 h-4 text-[var(--text-primary)]" />
           </button>
         </div>
 
         <div className="flex flex-col gap-4">
           <div>
-            <label className="text-[#dadcdd] text-sm font-medium mb-2 block">Subject</label>
+            <label className="text-[var(--text-primary)] text-sm font-medium mb-2 block">Subject</label>
             <input
               type="text"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="What do you need help with?"
-              className="w-full h-11 px-4 py-3 bg-[#202020] border border-[#323232] rounded-xl text-[#f0f0f0] text-base placeholder:text-[#9e9e9e] focus:outline-none focus:border-[#ff6b00]"
+              className="w-full h-11 px-4 py-3 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-md text-[var(--text-primary)] text-base placeholder:text-[var(--text-secondary)] focus:outline-none focus:border-[var(--accent-lime)]"
             />
           </div>
 
           <div>
-            <label className="text-[#dadcdd] text-sm font-medium mb-2 block">Message</label>
+            <label className="text-[var(--text-primary)] text-sm font-medium mb-2 block">Message</label>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Describe your issue or question..."
               rows={4}
-              className="w-full px-4 py-3 bg-[#202020] border border-[#323232] rounded-xl text-[#f0f0f0] text-base placeholder:text-[#9e9e9e] focus:outline-none focus:border-[#ff6b00] resize-none"
+              className="w-full px-4 py-3 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-md text-[var(--text-primary)] text-base placeholder:text-[var(--text-secondary)] focus:outline-none focus:border-[var(--accent-lime)] resize-none"
             />
           </div>
 
           <div className="flex items-center gap-3 mt-2">
-            <button
+            <Button
+              variant="secondary"
+              size="default"
               onClick={onClose}
-              className="flex-1 h-10 px-4 py-2.5 bg-[#202020] rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors"
+              className="flex-1"
             >
               Cancel
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="default"
+              size="default"
               onClick={handleSubmit}
-              className="flex-1 h-10 px-4 py-2.5 bg-[#ff6b00] rounded-full flex items-center justify-center gap-2 text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors"
+              className="flex-1"
             >
               <Mail className="w-4 h-4" />
               Send Message
-            </button>
+            </Button>
           </div>
         </div>
       </div>
@@ -497,12 +506,12 @@ function GeneralContent({
   return (
     <div className="flex flex-col gap-4">
       {/* Free Plan Banner */}
-      <div className="bg-[rgba(255,107,0,0.15)] border border-[#ff6b00] rounded-2xl px-5 py-4">
+      <div className="bg-accent-lime/10 border border-accent-lime/30 rounded-lg px-5 py-4">
         <div className="flex flex-col gap-0.5">
-          <p className="text-[#f0f0f0] text-base font-semibold">Free</p>
-          <p className="text-[#f0f0f0] text-sm font-normal">
+          <p className="text-[var(--text-primary)] text-base font-semibold">Free</p>
+          <p className="text-[var(--text-primary)] text-sm font-normal">
             You&apos;re on the Free plan.{' '}
-            <span className="underline font-medium cursor-pointer hover:text-[#ff6b00]">Upgrade your plan</span>
+            <span className="underline font-medium cursor-pointer hover:text-[var(--accent-lime)]">Upgrade your plan</span>
             {' '}for more scans and reports.
           </p>
         </div>
@@ -510,44 +519,44 @@ function GeneralContent({
 
       {/* Profile Settings */}
       <div className="flex flex-col gap-4 items-end">
-        <div className="w-full bg-[#0a0a0a] border border-[#323232] rounded-2xl px-5 py-4 flex flex-col gap-4">
+        <div className="w-full bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg px-5 py-4 flex flex-col gap-4">
           {/* First Name */}
           <div className="flex items-center justify-between">
-            <span className="text-[#dadcdd] text-sm font-medium">First Name</span>
+            <span className="text-[var(--text-primary)] text-sm font-medium">First Name</span>
             <input
               type="text"
               value={firstName}
               onChange={(e) => onFirstNameChange(e.target.value)}
-              className="w-[180px] h-10 px-3.5 py-2.5 bg-[#202020] border border-[#323232] rounded-xl text-[#f0f0f0] text-base font-normal shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] focus:outline-none focus:border-[#ff6b00]"
+              className="w-[180px] h-10 px-3.5 py-2.5 bg-[var(--surface-1)] border border-[var(--border-gray)] rounded-md text-[var(--text-primary)] text-base font-normal shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] focus:outline-none focus:border-[var(--accent-lime)]"
             />
           </div>
 
-          <div className="w-full h-px bg-[#323232]" />
+          <div className="w-full h-px bg-[var(--border-gray)]" />
 
           {/* Last Name */}
           <div className="flex items-center justify-between">
-            <span className="text-[#dadcdd] text-sm font-medium">Last Name</span>
+            <span className="text-[var(--text-primary)] text-sm font-medium">Last Name</span>
             <input
               type="text"
               value={lastName}
               onChange={(e) => onLastNameChange(e.target.value)}
-              className="w-[180px] h-10 px-3.5 py-2.5 bg-[#202020] border border-[#323232] rounded-xl text-[#f0f0f0] text-base font-normal shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] focus:outline-none focus:border-[#ff6b00]"
+              className="w-[180px] h-10 px-3.5 py-2.5 bg-[var(--surface-1)] border border-[var(--border-gray)] rounded-md text-[var(--text-primary)] text-base font-normal shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] focus:outline-none focus:border-[var(--accent-lime)]"
             />
           </div>
 
-          <div className="w-full h-px bg-[#323232]" />
+          <div className="w-full h-px bg-[var(--border-gray)]" />
 
           {/* Email */}
           <div className="flex items-center justify-between">
-            <span className="text-[#dadcdd] text-sm font-medium">Email</span>
-            <span className="text-[#9e9e9e] text-base font-normal">{email}</span>
+            <span className="text-[var(--text-primary)] text-sm font-medium">Email</span>
+            <span className="text-[var(--text-secondary)] text-base font-normal">{email}</span>
           </div>
 
-          <div className="w-full h-px bg-[#323232]" />
+          <div className="w-full h-px bg-[var(--border-gray)]" />
 
           {/* Profile Picture */}
           <div className="flex items-center justify-between">
-            <span className="text-[#dadcdd] text-sm font-medium">Profile Picture</span>
+            <span className="text-[var(--text-primary)] text-sm font-medium">Profile Picture</span>
             <div className="relative">
               <input
                 ref={fileInputRef}
@@ -559,10 +568,10 @@ function GeneralContent({
               <button
                 onClick={handleImageClick}
                 disabled={isUploadingImage}
-                className="w-10 h-10 bg-[#ff6b00] rounded-full flex items-center justify-center overflow-hidden shadow-[0px_0.8px_1.6px_0px_rgba(10,13,18,0.05)] relative group cursor-pointer hover:ring-2 hover:ring-[#ff6b00]/50 transition-all"
+                className="w-10 h-10 bg-[var(--accent-lime)] rounded-full flex items-center justify-center overflow-hidden shadow-[0px_0.8px_1.6px_0px_rgba(10,13,18,0.05)] relative group cursor-pointer hover:ring-2 hover:ring-[rgba(251,255,80,0.5)] transition-all"
               >
                 {isUploadingImage ? (
-                  <Loader2 className="w-5 h-5 text-white animate-spin" />
+                  <Loader2 className="w-5 h-5 text-[var(--surface-0)] animate-spin" />
                 ) : avatar ? (
                   <>
                     <Image src={avatar} alt="Profile" width={40} height={40} className="w-full h-full object-cover" />
@@ -572,7 +581,7 @@ function GeneralContent({
                   </>
                 ) : (
                   <>
-                    <span className="text-[#f0f0f0] text-sm font-semibold">{initials}</span>
+                    <span className="text-[var(--surface-0)] text-sm font-semibold">{initials}</span>
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                       <Camera className="w-4 h-4 text-white" />
                     </div>
@@ -584,40 +593,43 @@ function GeneralContent({
         </div>
 
         {/* Save Button */}
-        <button
+        <Button
+          variant="secondary"
+          size="sm"
           onClick={onSave}
           disabled={isSaving}
-          className="h-9 px-4 py-2.5 bg-[#202020] rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors flex items-center gap-2 disabled:opacity-50"
         >
           {isSaving && <Loader2 className="w-4 h-4 animate-spin" />}
           Save
-        </button>
+        </Button>
       </div>
 
       {/* Account Actions */}
-      <div className="w-full bg-[#0a0a0a] border border-[#323232] rounded-2xl px-5 py-4 flex flex-col gap-4">
+      <div className="w-full bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg px-5 py-4 flex flex-col gap-4">
         {/* Logout */}
         <div className="flex items-center justify-between">
-          <span className="text-[#dadcdd] text-sm font-medium">Log out your account</span>
-          <button
+          <span className="text-[var(--text-primary)] text-sm font-medium">Log out your account</span>
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={onLogout}
-            className="h-9 px-4 py-2.5 bg-[#202020] rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors"
           >
             Logout
-          </button>
+          </Button>
         </div>
 
-        <div className="w-full h-px bg-[#323232]" />
+        <div className="w-full h-px bg-[var(--border-gray)]" />
 
         {/* Delete Account */}
         <div className="flex items-center justify-between">
-          <span className="text-[#dadcdd] text-sm font-medium">Delete account</span>
-          <button
+          <span className="text-[var(--text-primary)] text-sm font-medium">Delete account</span>
+          <Button
+            variant="destructive"
+            size="sm"
             onClick={onDeleteAccount}
-            className="h-9 px-4 py-2.5 bg-[rgba(239,68,68,0.2)] rounded-full text-[#ef4444] text-sm font-medium hover:bg-[rgba(239,68,68,0.3)] transition-colors"
           >
             Delete
-          </button>
+          </Button>
         </div>
       </div>
     </div>
@@ -645,79 +657,80 @@ function PeopleContent({ teamMembers, searchQuery, onSearchChange, onInviteClick
     <div className="flex flex-col gap-3 h-full">
       {/* Header */}
       <div className="flex items-center">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold">Team members</h3>
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold">Team members</h3>
       </div>
 
       {hasMembers ? (
         <>
           {/* Search and Actions Bar */}
           <div className="flex items-center justify-between">
-            <div className="w-[250px] flex items-center gap-2 px-3.5 py-2.5 bg-[#202020] border border-[#323232] rounded-xl shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
-              <Search className="w-5 h-5 text-[#9e9e9e]" />
+            <div className="w-[250px] flex items-center gap-2 px-3.5 py-2.5 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-xl shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+              <Search className="w-5 h-5 text-[var(--text-secondary)]" />
               <input
                 type="text"
                 placeholder="Search"
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="flex-1 bg-transparent text-[#9e9e9e] text-base font-normal placeholder:text-[#9e9e9e] focus:outline-none"
+                className="flex-1 bg-transparent text-[var(--text-secondary)] text-base font-normal placeholder:text-[var(--text-secondary)] focus:outline-none"
               />
             </div>
 
             <div className="flex items-center gap-3">
-              <button className="h-9 px-4 py-2.5 bg-[#202020] rounded-full flex items-center gap-2 text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors">
+              <Button variant="secondary" size="sm">
                 <Download className="w-4 h-4" />
                 Export
-              </button>
-              <button
+              </Button>
+              <Button
+                variant="default"
+                size="sm"
                 onClick={onInviteClick}
-                className="h-9 px-4 py-2.5 bg-[#ff6b00] rounded-full flex items-center gap-2 text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors"
               >
                 <Plus className="w-4 h-4" />
                 Invite members
-              </button>
+              </Button>
             </div>
           </div>
 
           {/* Team Members Table */}
-          <div className="flex-1 bg-[#0a0a0a] border border-[#323232] rounded-2xl overflow-hidden shadow-[0px_1px_3px_0px_rgba(10,13,18,0.1),0px_1px_2px_0px_rgba(10,13,18,0.06)]">
-            <div className="flex items-center border-b border-[#323232] h-11">
+          <div className="flex-1 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg overflow-hidden shadow-[0px_1px_3px_0px_rgba(10,13,18,0.1),0px_1px_2px_0px_rgba(10,13,18,0.06)]">
+            <div className="flex items-center border-b border-[var(--border-gray)] h-11">
               <div className="flex-1 px-6 py-3">
-                <span className="text-[#9e9e9e] text-xs font-medium">Name</span>
+                <span className="text-[var(--text-secondary)] text-xs font-medium">Name</span>
               </div>
               <div className="w-[120px] px-6 py-3 flex items-center gap-1">
-                <span className="text-[#9e9e9e] text-xs font-medium">Status</span>
-                <ChevronDown className="w-[10.67px] h-[10.67px] text-[#9e9e9e]" />
+                <span className="text-[var(--text-secondary)] text-xs font-medium">Status</span>
+                <ChevronDown className="w-[10.67px] h-[10.67px] text-[var(--text-secondary)]" />
               </div>
               <div className="w-[176px] px-6 py-3">
-                <span className="text-[#9e9e9e] text-xs font-medium">Role</span>
+                <span className="text-[var(--text-secondary)] text-xs font-medium">Role</span>
               </div>
               <div className="px-6 py-3">
-                <span className="text-[#9e9e9e] text-xs font-medium">Project</span>
+                <span className="text-[var(--text-secondary)] text-xs font-medium">Project</span>
               </div>
               <div className="w-[68px]" />
             </div>
 
             {filteredMembers.map((member) => (
-              <div key={member.id} className="flex items-center h-[72px] hover:bg-[#0f0f0f] transition-colors">
+              <div key={member.id} className="flex items-center h-[72px] hover:bg-[var(--surface-1)] transition-colors">
                 <div className="flex-1 px-6 py-4">
                   <div className="flex flex-col">
-                    <span className="text-[#f0f0f0] text-sm font-medium">{member.name}</span>
-                    <span className="text-[#dadcdd] text-sm font-normal">{member.email}</span>
+                    <span className="text-[var(--text-primary)] text-sm font-medium">{member.name}</span>
+                    <span className="text-[var(--text-primary)] text-sm font-normal">{member.email}</span>
                   </div>
                 </div>
                 <div className="w-[120px] px-6 py-4">
                   <StatusBadge status={member.status} />
                 </div>
                 <div className="w-[176px] px-6 py-4 flex items-center gap-3">
-                  <span className="text-[#dadcdd] text-sm font-normal">{member.role}</span>
-                  <ChevronDown className="w-[10.67px] h-[10.67px] text-[#dadcdd]" />
+                  <span className="text-[var(--text-primary)] text-sm font-normal">{member.role}</span>
+                  <ChevronDown className="w-[10.67px] h-[10.67px] text-[var(--text-primary)]" />
                 </div>
                 <div className="px-6 py-4">
-                  <span className="text-[#dadcdd] text-sm font-normal">{member.project}</span>
+                  <span className="text-[var(--text-primary)] text-sm font-normal">{member.project}</span>
                 </div>
                 <div className="w-[68px] px-6 py-4">
-                  <button className="hover:bg-[#202020] rounded p-1 transition-colors">
-                    <MoreVertical className="w-5 h-5 text-[#9e9e9e]" />
+                  <button className="hover:bg-[var(--surface-2)] rounded p-1 transition-colors">
+                    <MoreVertical className="w-5 h-5 text-[var(--text-secondary)]" />
                   </button>
                 </div>
               </div>
@@ -726,17 +739,17 @@ function PeopleContent({ teamMembers, searchQuery, onSearchChange, onInviteClick
         </>
       ) : (
         /* Empty State */
-        <div className="flex-1 bg-[#0a0a0a] border border-[#323232] rounded-2xl flex items-center justify-center shadow-[0px_1px_3px_0px_rgba(10,13,18,0.1),0px_1px_2px_0px_rgba(10,13,18,0.06)]">
+        <div className="flex-1 bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg flex items-center justify-center shadow-[0px_1px_3px_0px_rgba(10,13,18,0.1),0px_1px_2px_0px_rgba(10,13,18,0.06)]">
           <div className="flex flex-col items-center gap-6 max-w-[352px]">
             {/* Illustration */}
             <div className="relative w-[120px] h-[130px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
                   <div className="w-[80px] h-[50px] bg-gradient-to-br from-[#666] to-[#333] rounded-lg transform rotate-[-5deg]" />
-                  <div className="absolute -top-2 -right-4 w-6 h-6 bg-[#ff6b00] rounded-full flex items-center justify-center">
-                    <Users className="w-3 h-3 text-[#0a0a0a]" />
+                  <div className="absolute -top-2 -right-4 w-6 h-6 bg-[var(--accent-lime)] rounded-full flex items-center justify-center">
+                    <Users className="w-3 h-3 text-[var(--surface-0)]" />
                   </div>
-                  <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-[#c3630a] rounded-full flex items-center justify-center">
+                  <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-[rgba(251,255,80,0.6)] rounded-full flex items-center justify-center">
                     <Users className="w-3 h-3 text-white" />
                   </div>
                 </div>
@@ -745,27 +758,29 @@ function PeopleContent({ teamMembers, searchQuery, onSearchChange, onInviteClick
 
             {/* Text */}
             <div className="flex flex-col gap-1 text-center">
-              <h4 className="text-[#f0f0f0] text-base font-semibold">Invite your team</h4>
-              <p className="text-[#dadcdd] text-sm font-normal">
+              <h4 className="text-[var(--text-primary)] text-base font-semibold">Invite your team</h4>
+              <p className="text-[var(--text-primary)] text-sm font-normal">
                 Invite teammates to start collaborating on projects.
               </p>
             </div>
 
             {/* Buttons */}
             <div className="flex flex-col gap-1.5">
-              <button
+              <Button
+                variant="default"
+                size="default"
                 onClick={onInviteClick}
-                className="h-10 px-4 py-2.5 bg-[#ff6b00] rounded-full flex items-center justify-center gap-2 text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors"
               >
                 <Plus className="w-4 h-4" />
                 Invite members
-              </button>
-              <button
+              </Button>
+              <Button
+                variant="ghost"
+                size="default"
                 onClick={onLearnMoreClick}
-                className="h-10 px-4 py-2.5 rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#202020] transition-colors"
               >
                 Learn more
-              </button>
+              </Button>
             </div>
           </div>
         </div>
@@ -794,16 +809,16 @@ function StatusBadge({ status }: { status: 'active' | 'pending' | 'inactive' }) 
 function BillingContent() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-[#0a0a0a] border border-[#323232] rounded-2xl p-6">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold mb-4">Current Plan</h3>
-        <div className="flex items-center justify-between p-4 bg-[#202020] rounded-xl">
+      <div className="bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg p-6">
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold mb-4">Current Plan</h3>
+        <div className="flex items-center justify-between p-4 bg-[var(--surface-1)] rounded-lg">
           <div>
-            <p className="text-[#f0f0f0] text-base font-medium">Free Plan</p>
-            <p className="text-[#9e9e9e] text-sm">Basic features for getting started</p>
+            <p className="text-[var(--text-primary)] text-base font-medium">Free Plan</p>
+            <p className="text-[var(--text-secondary)] text-sm">Basic features for getting started</p>
           </div>
-          <button className="h-9 px-4 py-2.5 bg-[#ff6b00] rounded-full text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors">
+          <Button variant="default" size="sm">
             Upgrade
-          </button>
+          </Button>
         </div>
       </div>
     </div>
@@ -814,9 +829,9 @@ function BillingContent() {
 function IntegrationsContent() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-[#0a0a0a] border border-[#323232] rounded-2xl p-6">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold mb-4">Connected Apps</h3>
-        <p className="text-[#9e9e9e] text-sm">No integrations connected yet.</p>
+      <div className="bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg p-6">
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold mb-4">Connected Apps</h3>
+        <p className="text-[var(--text-secondary)] text-sm">No integrations connected yet.</p>
       </div>
     </div>
   )
@@ -830,27 +845,27 @@ interface HelpCenterContentProps {
 function HelpCenterContent({ onNavigate }: HelpCenterContentProps) {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-[#0a0a0a] border border-[#323232] rounded-2xl p-6">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold mb-4">Help Center</h3>
-        <p className="text-[#9e9e9e] text-sm mb-4">Find answers to common questions and learn how to get the most out of Pitchex.</p>
+      <div className="bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg p-6">
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold mb-4">Help Center</h3>
+        <p className="text-[var(--text-secondary)] text-sm mb-4">Find answers to common questions and learn how to get the most out of Pitchex.</p>
         <div className="flex flex-col gap-3">
           <button
             onClick={() => onNavigate()}
-            className="text-[#ff6b00] text-sm font-medium hover:underline text-left flex items-center gap-2"
+            className="text-[var(--accent-lime)] text-sm font-medium hover:underline text-left flex items-center gap-2"
           >
             Getting Started Guide
             <ExternalLink className="w-3 h-3" />
           </button>
           <button
             onClick={() => onNavigate('faq')}
-            className="text-[#ff6b00] text-sm font-medium hover:underline text-left flex items-center gap-2"
+            className="text-[var(--accent-lime)] text-sm font-medium hover:underline text-left flex items-center gap-2"
           >
             FAQ
             <ExternalLink className="w-3 h-3" />
           </button>
           <button
             onClick={() => onNavigate()}
-            className="text-[#ff6b00] text-sm font-medium hover:underline text-left flex items-center gap-2"
+            className="text-[var(--accent-lime)] text-sm font-medium hover:underline text-left flex items-center gap-2"
           >
             Video Tutorials
             <ExternalLink className="w-3 h-3" />
@@ -870,42 +885,44 @@ interface SupportContentProps {
 function SupportContent({ onStartConversation, onShowForm }: SupportContentProps) {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-[#0a0a0a] border border-[#323232] rounded-2xl p-6">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold mb-4">Contact Support</h3>
-        <p className="text-[#9e9e9e] text-sm mb-4">Need help? Our support team is here for you.</p>
+      <div className="bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg p-6">
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold mb-4">Contact Support</h3>
+        <p className="text-[var(--text-secondary)] text-sm mb-4">Need help? Our support team is here for you.</p>
         <div className="flex items-center gap-3">
-          <button
+          <Button
+            variant="default"
+            size="sm"
             onClick={onStartConversation}
-            className="h-9 px-4 py-2.5 bg-[#ff6b00] rounded-full text-[#0a0a0a] text-sm font-medium hover:bg-[#ff8533] transition-colors"
           >
             Start a conversation
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={onShowForm}
-            className="h-9 px-4 py-2.5 bg-[#202020] rounded-full text-[#dadcdd] text-sm font-medium hover:bg-[#303030] transition-colors"
           >
             Write a message
-          </button>
+          </Button>
         </div>
       </div>
 
       {/* Support Emails */}
-      <div className="bg-[#0a0a0a] border border-[#323232] rounded-2xl p-6">
-        <h3 className="text-[#f0f0f0] text-lg font-semibold mb-4">Contact Our Team</h3>
-        <p className="text-[#9e9e9e] text-sm mb-4">Reach out directly to our team via email:</p>
+      <div className="bg-[var(--surface-2)] border border-[var(--border-gray)] rounded-lg p-6">
+        <h3 className="text-[var(--text-primary)] text-lg font-semibold mb-4">Contact Our Team</h3>
+        <p className="text-[var(--text-secondary)] text-sm mb-4">Reach out directly to our team via email:</p>
         <div className="flex flex-col gap-2">
           {SUPPORT_EMAILS.map((email) => (
             <a
               key={email}
               href={`mailto:${email}`}
-              className="text-[#ff6b00] text-sm font-medium hover:underline"
+              className="text-[var(--accent-lime)] text-sm font-medium hover:underline"
             >
               {email}
             </a>
           ))}
         </div>
-        <p className="text-[#9e9e9e] text-xs mt-4">
-          <strong className="text-[#dadcdd]">Response Time:</strong> We typically respond within 24 hours on business days
+        <p className="text-[var(--text-secondary)] text-xs mt-4">
+          <strong className="text-[var(--text-primary)]">Response Time:</strong> We typically respond within 24 hours on business days
         </p>
       </div>
     </div>
