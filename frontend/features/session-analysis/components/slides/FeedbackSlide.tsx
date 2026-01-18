@@ -51,7 +51,7 @@ export function FeedbackSlide({
                         feedbackItems.slice(0, 3).map((feedback, index) => (
                             <div
                                 key={index}
-                                className="bg-surface-2/50 rounded-lg p-3"
+                                className="bg-surface-2/50 rounded-lg p-6 border border-gray"
                             >
                                 <p className="text-caption text-text-secondary leading-relaxed">
                                     {renderFeedback(feedback)}

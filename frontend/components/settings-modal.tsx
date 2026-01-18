@@ -57,16 +57,14 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
   }, [user])
 
   const handleLogout = async () => {
-    await signOut()
-    router.push("/")
     onClose()
+    await signOut({ redirectUrl: "/" })
   }
 
   const handleDeleteAccount = async () => {
     if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
-      await signOut()
-      router.push("/")
       onClose()
+      await signOut({ redirectUrl: "/" })
     }
   }
 

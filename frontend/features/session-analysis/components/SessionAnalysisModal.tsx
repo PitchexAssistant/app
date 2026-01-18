@@ -16,17 +16,19 @@ import { SummarySlide } from './slides/SummarySlide'
 import { ScoresSlide } from './slides/ScoresSlide'
 import { PerformanceSlide } from './slides/PerformanceSlide'
 import { FeedbackSlide } from './slides/FeedbackSlide'
+import { TranscriptSlide } from './slides/TranscriptSlide'
 import type { SessionAnalysisModalProps } from '../types'
 
 export function SessionAnalysisModal({
     isOpen,
     onClose,
     analysis,
+    transcript,
     onPracticeAgain,
     onShare
 }: SessionAnalysisModalProps) {
     const containerRef = useRef<HTMLDivElement>(null)
-    const totalSlides = 4
+    const totalSlides = 5
 
     const {
         currentSlide,
@@ -57,6 +59,10 @@ export function SessionAnalysisModal({
             key="feedback"
             summary={analysis.summary}
             feedbackItems={analysis.feedback_items}
+        />,
+        <TranscriptSlide
+            key="transcript"
+            transcript={transcript || ''}
         />
     ]
 
