@@ -82,16 +82,7 @@ export function ModeSelectionModal({ onClose, onContinue }: ModeSelectionModalPr
             </div>
 
             {/* Feature Tags - Simple, static labels */}
-            <div className="flex flex-wrap gap-2 pt-2">
-              {liveFeatures.map((feature, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1.5 rounded-md text-xs font-medium bg-surface-3/50 text-text-secondary"
-                >
-                  {feature}
-                </span>
-              ))}
-            </div>
+            
           </button>
 
           {/* Recorded Session Card */}
@@ -132,17 +123,7 @@ export function ModeSelectionModal({ onClose, onContinue }: ModeSelectionModalPr
               </p>
             </div>
 
-            {/* Feature Tags - Simple, static labels */}
-            <div className="flex flex-wrap gap-2 pt-2">
-              {recordedFeatures.map((feature, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1.5 rounded-md text-xs font-medium bg-surface-3/50 text-text-secondary"
-                >
-                  {feature}
-                </span>
-              ))}
-            </div>
+           
           </button>
         </div>
 

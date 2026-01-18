@@ -285,7 +285,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
             </SidebarMenuItem>
 
             <CollapsibleContent>
-              <SidebarMenuSub className="border-l-surface-2 ml-4 mt-1">
+              <SidebarMenuSub className="border-l-surface-3 mx-0 px-1 mt-1">
                 {loading ? (
                   Array.from({ length: 3 }).map((_, index) => (
                     <SidebarMenuSubItem key={index}>
@@ -294,7 +294,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                   ))
                 ) : sessions.length === 0 ? (
                   <SidebarMenuSubItem>
-                    <div className="px-2 py-2 text-[var(--text-tertiary)] text-sm font-normal">
+                    <div className="px-3 py-2 text-text-tertiary text-sm font-normal">
                       No sessions yet
                     </div>
                   </SidebarMenuSubItem>
@@ -303,7 +303,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                     <SidebarMenuSubItem key={session.id}>
                       <div
                         onClick={() => handleSessionClick(session)}
-                        className={`group/session flex w-full items-center justify-between px-1 py-2 rounded-lg cursor-pointer hover:bg-[var(--surface-2)] ${currentSession?.id === session.id ? 'bg-[var(--surface-1)]' : ''
+                        className={`group/session flex w-full items-center justify-between px-2 py-2 rounded-md cursor-pointer hover:bg-surface-2 ${currentSession?.id === session.id ? 'bg-surface-2' : ''
                           }`}
                       >
                         <div className="flex flex-col min-w-0 flex-1">
@@ -324,7 +324,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                               <MoreVertical className="w-4 h-4 text-[var(--text-tertiary)]" />
                             </Button>
                           </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end" className="bg-[var(--surface-2)] border-[var(--border-gray)]">
+                          <DropdownMenuContent align="end" className="bg-[var(--surface-2)] ml-2rounded-sm border-[var(--border-gray)]">
                             <DropdownMenuItem
                               onClick={(e) => handleRenameSession(e, session)}
                               className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"

@@ -12,6 +12,9 @@ const buttonVariants = cva(
         // Primary CTA button (accent-lime background)
         default:
           "bg-accent-lime font-medium text-surface-0 hover:bg-accent-lime/80",
+        // Active state button (white background)
+        active:
+          "bg-text-primary font-medium text-surface-0 hover:bg-text-primary/80",
         // Nav button (surface-2 background)
         nav:
           "bg-surface-2 text-text-primary hover:bg-surface-3",
@@ -26,7 +29,13 @@ const buttonVariants = cva(
           "border border-text-primary bg-transparent text-text-primary hover:bg-text-primary hover:text-surface-0",
         // Destructive button
         destructive:
-          "bg-destructive text-white hover:bg-destructive/60",
+          "bg-destructive/20 text-destructive hover:bg-destructive/15",
+        // Mic idle state
+        mic:
+          "bg-surface-2 border-2 border-surface-3 text-text-primary hover:bg-surface-3",
+        // Mic recording state (destructive-like)
+        micRecording:
+          "bg-red border-2 border-red text-text-primary hover:bg-red/80",
         // Link style
         link: "text-primary underline-offset-4 hover:underline",
       },

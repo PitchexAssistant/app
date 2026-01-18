@@ -14,6 +14,7 @@ import "@livekit/components-styles";
 import { Orb, AgentState } from '@/components/ui/orb';
 import { Pause, Play, Mic, MicOff, HelpCircle, X, FileText } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 import { AppSidebar } from '@/components/app-sidebar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { useUser } from '@clerk/nextjs';
@@ -51,23 +52,23 @@ export function LiveSessionLiveKit({ sessionId = "default-room", onEndSession, c
 
     if (error) {
         return (
-            <div className="flex flex-col items-center justify-center h-full bg-[#171717] text-white gap-4">
-                <div className="text-red-500 text-lg font-medium">Connection Error</div>
-                <div className="text-gray-400">{error}</div>
-                <button
+            <div className="flex flex-col items-center justify-center h-full bg-surface-0 text-text-primary gap-4">
+                <div className="text-red text-lg font-medium">Connection Error</div>
+                <div className="text-text-secondary">{error}</div>
+                <Button
                     onClick={onEndSession}
-                    className="px-4 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
+                    variant="destructive"
                 >
                     Close
-                </button>
+                </Button>
             </div>
         );
     }
 
     if (!token || !url) {
         return (
-            <div className="flex items-center justify-center h-full bg-[#171717] text-white">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+            <div className="flex items-center justify-center h-full bg-surface-0 text-text-primary">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent-lime"></div>
                 <span className="ml-3">Initializing session...</span>
             </div>
         );
@@ -85,7 +86,7 @@ export function LiveSessionLiveKit({ sessionId = "default-room", onEndSession, c
                 console.error("LiveKit Room Error:", e);
                 setError("Connection failed. Please try again.");
             }}
-            className="h-full w-full bg-[#171717]"
+            className="h-full w-full bg-surface-0"
         >
             <LiveKitOrbInterface
                 onEndSession={onEndSession}
@@ -203,7 +204,7 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
         avatar: user?.imageUrl || '',
     };
 
-    const orbColors: [string, string] = ['#FFA500', '#FF9500'];
+    const orbColors: [string, string] = ['#FBFF50', '#355592'];
     const contextFileName = contextFiles && contextFiles.length > 0 ? contextFiles[0].filename : undefined;
 
     // Status message mapping
@@ -220,16 +221,16 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
 
     return (
         <SidebarProvider>
-            <div className="relative w-full h-screen bg-[#171717] flex">
+            <div className="relative w-full h-screen bg-surface-0 flex">
                 <AppSidebar
                     user={sidebarUser}
                     onNewSession={() => console.log('New session requested')}
                 />
 
-                <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-[#171717]">
+                <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-surface-0">
                     {/* Timer */}
                     <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2">
-                        <div className="px-6 py-2 rounded-full bg-white text-[#171717] font-medium text-[18px] shadow-lg">
+                        <div className="px-6 py-2 rounded-full bg-text-primary text-surface-0 font-medium text-[18px] shadow-lg">
                             {formatTime(elapsedTime)}
                         </div>
                     </div>
@@ -237,9 +238,9 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
                     {/* Context Badge */}
                     {isConnected && contextFileName && (
                         <div className="absolute top-[130px] left-1/2 transform -translate-x-1/2 flex items-center gap-3">
-                            <div className="px-4 py-2 rounded-lg bg-[#262626] border border-[#404040] flex items-center gap-2">
-                                <FileText className="w-4 h-4 text-[#888]" />
-                                <span className="text-sm text-[#f0f0f0]">Context: {contextFileName}</span>
+                            <div className="px-4 py-2 rounded-lg bg-surface-2 border border-surface-3 flex items-center gap-2">
+                                <FileText className="w-4 h-4 text-text-tertiary" />
+                                <span className="text-sm text-text-primary">Context: {contextFileName}</span>
                             </div>
                         </div>
                     )}
@@ -259,19 +260,19 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
                         </div>
 
                         <div className="flex flex-col items-center gap-6">
-                            <p className="text-[20px] font-medium text-[#f0f0f0]">
+                            <p className="text-[20px] font-medium text-text-primary">
                                 {getStatusMessage()}
                             </p>
 
                             {isConnected && (
                                 <div className="flex items-center gap-3">
-                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === null ? "bg-[#262626] border-[#404040] text-[#f0f0f0]" : "bg-transparent border-[#2e2e2e] text-[#666666]")}>
+                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === null ? "bg-surface-2 border-surface-3 text-text-primary" : "bg-transparent border-surface-3 text-text-tertiary")}>
                                         <span className="text-sm font-medium">Idle</span>
                                     </div>
-                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === 'listening' ? "bg-blue-500/10 border-blue-500/30 text-blue-400" : "bg-transparent border-[#2e2e2e] text-[#666666]")}>
+                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === 'listening' ? "bg-blue/10 border-blue/30 text-blue" : "bg-transparent border-surface-3 text-text-tertiary")}>
                                         <span className="text-sm font-medium">Listening</span>
                                     </div>
-                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === 'talking' ? "bg-[#FF6B00]/10 border-[#FF6B00]/30 text-[#FF6B00]" : "bg-transparent border-[#2e2e2e] text-[#666666]")}>
+                                    <div className={cn("px-4 py-2 rounded-lg border transition-all", agentState === 'talking' ? "bg-accent-lime/10 border-accent-lime/30 text-accent-lime" : "bg-transparent border-surface-3 text-text-tertiary")}>
                                         <span className="text-sm font-medium">Talking</span>
                                     </div>
                                 </div>
@@ -283,28 +284,28 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
                     <div className="absolute bottom-[60px] left-0 right-0 flex items-center justify-center px-8">
                         <div className="w-full max-w-[1000px] flex items-center justify-between">
                             <div className="flex items-center gap-4">
-                                <button
+                                <Button
                                     onClick={handlePause}
                                     disabled={!isConnected}
+                                    variant={isPaused ? "default" : "nav"}
                                     className={cn(
-                                        "h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium border",
-                                        !isConnected && "opacity-40 cursor-not-allowed",
-                                        isPaused ? "bg-[#FF6B00] text-white border-[#FF6B00]" : "bg-[#262626] text-[#f0f0f0] border-[#404040]"
+                                        "gap-2.5",
+                                        !isConnected && "opacity-40 cursor-not-allowed"
                                     )}
                                 >
                                     <div className="w-5 h-5 flex items-center justify-center">
                                         {isPaused ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
                                     </div>
-                                    <span className="text-[15px]">{isPaused ? 'Resume' : 'Pause'}</span>
-                                </button>
+                                    <span>{isPaused ? 'Resume' : 'Pause'}</span>
+                                </Button>
 
                                 <button
                                     onClick={handleMute}
                                     disabled={!isConnected}
                                     className={cn(
-                                        "h-12 w-12 rounded-lg flex items-center justify-center transition-all border",
+                                        "h-11 w-11 rounded-lg flex items-center justify-center transition-all border",
                                         !isConnected && "opacity-40 cursor-not-allowed",
-                                        isMuted ? "bg-red-500/10 text-red-400 border-red-500/30" : "bg-[#262626] text-[#f0f0f0] border-[#404040]"
+                                        isMuted ? "bg-red/10 text-red border-red/30" : "bg-surface-2 text-text-primary border-surface-3"
                                     )}
                                 >
                                     {isMuted ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
@@ -312,17 +313,23 @@ function LiveKitOrbInterface({ onEndSession, contextFiles }: LiveKitOrbInterface
                             </div>
 
                             <div className="flex items-center gap-4">
-                                <button className={cn("h-12 w-12 rounded-lg flex items-center justify-center transition-all bg-[#262626] text-[#f0f0f0] border border-[#404040]", !isConnected && "opacity-40 cursor-not-allowed")}>
+                                <Button
+                                    variant="nav"
+                                    size="icon"
+                                    disabled={!isConnected}
+                                    className={cn(!isConnected && "opacity-40 cursor-not-allowed")}
+                                >
                                     <HelpCircle className="w-5 h-5" />
-                                </button>
+                                </Button>
 
-                                <button
+                                <Button
                                     onClick={onEndSession}
-                                    className="h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium bg-red-600/90 hover:bg-red-600 text-white border border-red-600 shadow-lg shadow-red-600/20"
+                                    variant="destructive"
+                                    className="gap-2.5"
                                 >
                                     <X className="w-4 h-4" />
-                                    <span className="text-[15px]">End Session</span>
-                                </button>
+                                    <span>End Session</span>
+                                </Button>
                             </div>
                         </div>
                     </div>

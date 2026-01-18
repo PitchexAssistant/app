@@ -489,16 +489,16 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                 variant="ghost"
                 size="icon"
                 onClick={onBack}
-                className="text-white hover:bg-gray-800"
+                className="text-text-primary hover:bg-surface-2"
               >
                 <ArrowLeft className="h-5 w-5" />
               </Button>
             )}
             <div>
-              <h1 className="text-3xl font-bold text-white">
+              <h1 className="text-3xl font-bold text-text-primary">
                 {currentSession?.title || 'AI Pitch Practice'}
               </h1>
-              <p className="text-gray-400 mt-1">
+              <p className="text-text-secondary mt-1">
                 {pitchMode === 'live'
                   ? 'Live pitch coaching with Marcus Sterling AI'
                   : 'Practice your pitch with real-time emotion analysis and AI feedback'}
@@ -528,7 +528,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                     >
                       <button
                         onClick={() => setSelectedFileIndex(i)}
-                        className={`px-3 py-2 pr-8 rounded-lg border ${i === selectedFileIndex ? 'border-green-500 bg-green-500/10' : 'border-zinc-800'} text-sm text-white transition-all`}
+                        className={`px-3 py-2 pr-8 rounded-lg border ${i === selectedFileIndex ? 'border-accent-lime/30 bg-accent-lime/10' : 'border-surface-3'} text-sm text-text-primary transition-all`}
                       >
                         {f.filename}
                       </button>
@@ -540,17 +540,17 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                               onDeleteFile(i);
                             }
                           }}
-                          className="absolute right-1 top-1/2 -translate-y-1/2 p-1 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
+                          className="absolute right-1 top-1/2 -translate-y-1/2 p-1 rounded-full bg-red/80 hover:bg-red transition-colors"
                           title="Delete file"
                         >
-                          <X className="h-3 w-3 text-white" />
+                          <X className="h-3 w-3 text-text-primary" />
                         </button>
                       )}
                     </div>
                   ))}
                 </div>
 
-                <div className="w-full h-96 bg-black/80 rounded-md overflow-hidden">
+                <div className="w-full h-96 bg-surface-1/80 rounded-md overflow-hidden">
                   {uploadedFiles[selectedFileIndex]?.local_url ? (
                     <iframe
                       title={uploadedFiles[selectedFileIndex].filename}
@@ -558,7 +558,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                       className="w-full h-full"
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center text-sm text-zinc-400">
+                    <div className="w-full h-full flex items-center justify-center text-sm text-text-tertiary">
                       No preview available
                     </div>
                   )}
@@ -578,7 +578,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
 
         {/* Live Session Mode - Interactive Pitch Coaching */}
         {pitchMode === 'live' && (
-          <div className="fixed inset-0 z-50 bg-[#171717]">
+          <div className="fixed inset-0 z-50 bg-surface-0">
             <InteractivePitchSession
               sessionId={currentSession?.id || sessionId}
               onEndSession={handleEndSession}
@@ -615,7 +615,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
               <CardContent className="space-y-4">
                 {/* Show errors */}
                 {(error || uploadError) && (
-                  <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-lg text-red-500 text-sm">
+                  <div className="p-3 bg-red/10 border border-red/20 rounded-lg text-red text-sm">
                     {error || uploadError}
                   </div>
                 )}
@@ -623,7 +623,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                 {/* Initial State - Show both record and upload options */}
                 {audioMode === 'none' && !isRecording && (
                   <div className="space-y-4">
-                    <p className="text-center text-muted-foreground">
+                    <p className="text-center text-text-secondary">
                       Press to record or upload
                     </p>
                     <div className="flex items-center justify-center gap-4">
@@ -663,7 +663,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                     <div className="text-center space-y-4">
                       <LiveWaveform
                         active={isRecording}
-                        barColor="#ff6b00"
+                        barColor="#FBFF50"
                         height={60}
                         barWidth={6}
                         barGap={10}
@@ -671,7 +671,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                       <p className="text-2xl font-mono font-bold text-primary">
                         {formatTime(recordingTime)}
                       </p>
-                      <p className="text-sm text-muted-foreground">Recording...</p>
+                      <p className="text-sm text-text-secondary">Recording...</p>
                     </div>
                     <div className="flex justify-center">
                       <Button
@@ -691,7 +691,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                   <div className="space-y-4">
                     <div className="text-center space-y-3">
                       <div className="flex items-center justify-center gap-2">
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-text-secondary">
                           {audioMode === 'record'
                             ? `Recording ready • ${formatTime(recordingTime)}`
                             : `Audio uploaded: ${uploadedAudioFile?.name}`
@@ -699,10 +699,10 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                         </p>
                         <button
                           onClick={handleRemoveAudio}
-                          className="p-1.5 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
+                          className="p-1.5 rounded-full bg-red/80 hover:bg-red transition-colors"
                           title="Remove audio"
                         >
-                          <X className="h-3.5 w-3.5 text-white" />
+                          <X className="h-3.5 w-3.5 text-text-primary" />
                         </button>
                       </div>
                       <audio
@@ -761,19 +761,19 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                   {currentEmotion.metrics && (
                     <div className="grid grid-cols-3 gap-4 pt-4 border-t">
                       <div>
-                        <p className="text-sm text-muted-foreground">Nervousness</p>
+                        <p className="text-sm text-text-secondary">Nervousness</p>
                         <p className="text-lg font-semibold">
                           {Math.round(currentEmotion.metrics.nervousness_score * 100)}%
                         </p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Enthusiasm</p>
+                        <p className="text-sm text-text-secondary">Enthusiasm</p>
                         <p className="text-lg font-semibold capitalize">
                           {currentEmotion.metrics.enthusiasm_level}
                         </p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Confidence</p>
+                        <p className="text-sm text-text-secondary">Confidence</p>
                         <p className="text-lg font-semibold capitalize">
                           {currentEmotion.metrics.confidence_indicator}
                         </p>
@@ -792,7 +792,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
               <CardContent>
                 <div className="space-y-4 max-h-[500px] overflow-y-auto">
                   {messages.length === 0 ? (
-                    <p className="text-center text-muted-foreground py-8">
+                    <p className="text-center text-text-secondary py-8">
                       No messages yet. Start by recording your pitch!
                     </p>
                   ) : (
@@ -808,17 +808,17 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                           className={cn(
                             "max-w-[80%] rounded-lg px-4 py-3",
                             message.role === 'user'
-                              ? 'bg-primary text-primary-foreground'
-                              : 'bg-muted'
+                              ? 'bg-accent-lime/10 border border-accent-lime/30 text-text-primary'
+                              : 'bg-surface-2 text-text-primary'
                           )}
                         >
                           <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                           {message.emotion && (
-                            <div className="mt-2 pt-2 border-t border-primary-foreground/20">
+                            <div className="mt-2 pt-2 border-t border-surface-3">
                               <EmotionIndicator emotion={message.emotion} />
                             </div>
                           )}
-                          <p className="text-xs opacity-70 mt-2">
+                          <p className="text-xs text-text-tertiary mt-2">
                             {message.timestamp.toLocaleTimeString()}
                           </p>
                         </div>
@@ -856,13 +856,13 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
               </CardHeader>
               <CardContent className="space-y-4">
                 {/* File Upload Section */}
-                <div className="flex flex-col items-center justify-center gap-4 p-8 border-2 border-dashed border-zinc-700 rounded-lg hover:border-purple-500 transition-colors">
-                  <Upload className="h-12 w-12 text-zinc-400" />
+                <div className="flex flex-col items-center justify-center gap-4 p-8 border-2 border-dashed border-surface-3 rounded-lg hover:border-accent-lime transition-colors">
+                  <Upload className="h-12 w-12 text-text-tertiary" />
                   <div className="text-center">
-                    <p className="text-sm text-zinc-300 mb-2">
+                    <p className="text-sm text-text-secondary mb-2">
                       {uploadedAudioFile ? uploadedAudioFile.name : 'No file selected'}
                     </p>
-                    <p className="text-xs text-zinc-500 mb-4">
+                    <p className="text-xs text-text-tertiary mb-4">
                       Supported formats: MP3, WAV (Max size: 10MB)
                     </p>
                     <label htmlFor="audio-file-input">
@@ -887,8 +887,8 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
 
                 {/* Error Display */}
                 {uploadError && (
-                  <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20">
-                    <p className="text-sm text-red-400">{uploadError}</p>
+                  <div className="p-3 rounded-lg bg-red/10 border border-red/20">
+                    <p className="text-sm text-red">{uploadError}</p>
                   </div>
                 )}
 
@@ -930,19 +930,19 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                   {currentEmotion.metrics && (
                     <div className="grid grid-cols-3 gap-4 pt-4 border-t">
                       <div>
-                        <p className="text-sm text-muted-foreground">Nervousness</p>
+                        <p className="text-sm text-text-secondary">Nervousness</p>
                         <p className="text-lg font-semibold">
                           {Math.round(currentEmotion.metrics.nervousness_score * 100)}%
                         </p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Enthusiasm</p>
+                        <p className="text-sm text-text-secondary">Enthusiasm</p>
                         <p className="text-lg font-semibold capitalize">
                           {currentEmotion.metrics.enthusiasm_level}
                         </p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Confidence</p>
+                        <p className="text-sm text-text-secondary">Confidence</p>
                         <p className="text-lg font-semibold capitalize">
                           {currentEmotion.metrics.confidence_indicator}
                         </p>
@@ -962,7 +962,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
               <CardContent>
                 <div className="space-y-4 max-h-[500px] overflow-y-auto">
                   {messages.length === 0 ? (
-                    <p className="text-center text-muted-foreground py-8">
+                    <p className="text-center text-text-secondary py-8">
                       Upload an audio file to receive analysis and feedback.
                     </p>
                   ) : (
@@ -978,17 +978,17 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
                           className={cn(
                             "max-w-[80%] rounded-lg px-4 py-3",
                             message.role === 'user'
-                              ? 'bg-primary text-primary-foreground'
-                              : 'bg-muted'
+                              ? 'bg-accent-lime/10 border border-accent-lime/30 text-text-primary'
+                              : 'bg-surface-2 text-text-primary'
                           )}
                         >
                           <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                           {message.emotion && (
-                            <div className="mt-2 pt-2 border-t border-primary-foreground/20">
+                            <div className="mt-2 pt-2 border-t border-surface-3">
                               <EmotionIndicator emotion={message.emotion} />
                             </div>
                           )}
-                          <p className="text-xs opacity-70 mt-2">
+                          <p className="text-xs text-text-tertiary mt-2">
                             {message.timestamp.toLocaleTimeString()}
                           </p>
                         </div>
