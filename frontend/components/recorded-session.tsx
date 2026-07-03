@@ -254,7 +254,7 @@ export function RecordedSession({
 
       // Upload and transcribe
       const formData = new FormData()
-      formData.append('file', audioToUpload, 'recording.mp3')
+      formData.append('file', audioToUpload, 'recording.webm')
 
       const transcribeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/stt/transcribe`, {
         method: 'POST',

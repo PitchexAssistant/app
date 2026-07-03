@@ -72683,3 +72683,2947 @@ You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/cl
  GET / 200 in 150ms
  GET / 200 in 170ms
  GET / 200 in 154ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 489ms
+ ✓ Ready in 1729ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.9s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 9294ms
+ GET / 200 in 324ms
+ GET / 200 in 261ms
+ GET / 200 in 226ms
+ GET / 200 in 162ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1247ms
+ GET /dashboard 200 in 1447ms
+ POST /dashboard 200 in 150ms
+ ○ Compiling /favicon.ico ...
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 719ms
+ ✓ Compiled /favicon.ico in 742ms
+ GET /dashboard 404 in 815ms
+ POST /dashboard 303 in 944ms
+ GET / 200 in 174ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3001)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h
+ GET / 200 in 166ms
+ GET / 200 in 221ms
+ GET / 200 in 254ms
+ GET / 200 in 240ms
+ GET / 200 in 213ms
+ GET / 200 in 162ms
+ GET / 200 in 217ms
+ GET / 200 in 179ms
+ GET / 200 in 212ms
+ GET / 200 in 199ms
+ GET / 200 in 204ms
+ GET / 200 in 203ms
+ GET / 200 in 166ms
+ GET / 200 in 164ms
+ GET / 200 in 176ms
+ GET / 200 in 286ms
+ GET / 200 in 213ms
+ GET / 200 in 240ms
+ GET / 200 in 206ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 211ms
+ GET /dashboard 200 in 150ms
+ POST /dashboard 200 in 87ms
+ POST /dashboard 200 in 73ms
+ GET / 200 in 219ms
+ GET / 200 in 230ms
+ GET /soc2-compliance.png 404 in 312ms
+ GET /gdpr-compliance.png 404 in 253ms
+ POST / 200 in 155ms
+ GET / 200 in 85ms
+ POST / 303 in 170ms
+ GET / 200 in 92ms
+ GET / 200 in 71ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 259ms
+ GET / 200 in 187ms
+ GET / 200 in 346ms
+ GET / 200 in 2584ms
+ GET / 200 in 276ms
+ GET / 200 in 211ms
+ GET / 200 in 223ms
+ GET / 200 in 220ms
+ GET / 200 in 214ms
+ GET / 200 in 214ms
+ GET / 200 in 240ms
+ GET / 200 in 213ms
+ GET / 200 in 231ms
+ GET / 200 in 214ms
+ GET / 200 in 205ms
+ GET / 200 in 691ms
+ GET /dashboard 200 in 341ms
+ POST /dashboard 200 in 105ms
+ POST /dashboard 200 in 201ms
+ GET / 200 in 171ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 178ms
+ GET / 200 in 218ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 337ms
+ ✓ Ready in 1335ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.5s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5278ms
+ GET / 200 in 160ms
+ GET / 200 in 250ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 535ms
+ GET /soc2-compliance.png 404 in 643ms
+ GET /gdpr-compliance.png 404 in 83ms
+ POST / 200 in 57ms
+ GET / 200 in 70ms
+ POST / 303 in 199ms
+ GET / 200 in 71ms
+ GET / 200 in 61ms
+ ✓ Compiled /favicon.ico in 302ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 589ms
+ GET / 200 in 189ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 524ms
+ GET /sign-up 200 in 1109ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 260ms
+ GET / 200 in 248ms
+ ✓ Compiled /sign-up/sso-callback in 431ms
+ GET /sign-up/sso-callback 200 in 580ms
+ POST /sign-up/sso-callback 200 in 54ms
+ POST /sign-up/sso-callback 200 in 82ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 271ms
+ POST /sign-up/sso-callback 200 in 70ms
+ POST /sign-up/sso-callback 200 in 70ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 992ms
+ GET /dashboard 200 in 1061ms
+ GET /dashboard 200 in 141ms
+ GET /dashboard 200 in 180ms
+ GET /dashboard 200 in 64ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 368ms
+ GET / 200 in 207ms
+ GET /dashboard 200 in 82ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 261ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 252ms
+ GET / 200 in 228ms
+ GET / 200 in 236ms
+ GET / 200 in 249ms
+ GET / 200 in 252ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 310ms
+ ✓ Ready in 1196ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.4s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5143ms
+ GET / 200 in 151ms
+ GET / 200 in 201ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1177ms
+ GET /dashboard 200 in 1360ms
+ POST /dashboard 200 in 109ms
+ ✓ Compiled /favicon.ico in 257ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 542ms
+ POST /dashboard 200 in 210ms
+ GET /dashboard 200 in 100ms
+ GET / 200 in 152ms
+ GET / 200 in 216ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 291ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 242ms
+ GET / 200 in 243ms
+ GET / 200 in 227ms
+ GET / 200 in 262ms
+ GET / 200 in 237ms
+ GET / 200 in 247ms
+ GET / 200 in 249ms
+ GET / 200 in 276ms
+ GET / 200 in 233ms
+ GET / 200 in 237ms
+ GET / 200 in 229ms
+ GET / 200 in 231ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.16.142:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 316ms
+ ✓ Ready in 1543ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.1s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 4792ms
+ GET / 200 in 146ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1360ms
+ GET /dashboard 200 in 1566ms
+ POST /dashboard 200 in 139ms
+ ✓ Compiled /favicon.ico in 208ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 492ms
+ ✓ Compiled /_not-found/page in 445ms
+ GET /dashboard 404 in 563ms
+ POST /dashboard 303 in 2685ms
+ GET /dashboard 200 in 146ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 243ms
+ GET / 200 in 290ms
+ GET / 200 in 285ms
+ GET / 200 in 352ms
+ GET /soc2-compliance.png 404 in 518ms
+ GET /gdpr-compliance.png 404 in 342ms
+ POST / 200 in 111ms
+ GET / 200 in 163ms
+ POST / 303 in 289ms
+ GET / 200 in 106ms
+ GET / 200 in 73ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 249ms
+ GET / 200 in 199ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 605ms
+ GET /sign-in 200 in 1176ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 251ms
+ GET / 200 in 320ms
+ GET /dashboard 200 in 195ms
+ POST /dashboard 200 in 71ms
+ POST /dashboard 200 in 51ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 391ms
+ GET /dashboard 200 in 121ms
+ GET / 200 in 237ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 284ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 281ms
+ GET / 200 in 269ms
+ GET / 200 in 342ms
+ GET / 200 in 279ms
+ GET / 200 in 243ms
+ GET / 200 in 322ms
+ GET /dashboard 200 in 251ms
+ POST /dashboard 200 in 126ms
+ POST /dashboard 200 in 85ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 364ms
+ GET / 200 in 161ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.16.142:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 349ms
+ ✓ Ready in 1482ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.2s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 4949ms
+ GET / 200 in 165ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1273ms
+ GET /dashboard 200 in 1427ms
+ POST /dashboard 200 in 113ms
+ POST /dashboard 200 in 131ms
+ ✓ Compiled /favicon.ico in 378ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 702ms
+ GET / 200 in 289ms
+ GET / 200 in 303ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 1063ms
+ POST / 200 in 271ms
+ GET /soc2-compliance.png 404 in 1275ms
+ GET /gdpr-compliance.png 404 in 825ms
+ POST / 200 in 107ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 251ms
+ GET / 200 in 358ms
+ GET / 200 in 306ms
+ GET / 200 in 350ms
+ GET / 200 in 402ms
+ GET / 200 in 326ms
+ GET / 200 in 420ms
+ GET /soc2-compliance.png 404 in 554ms
+ GET /gdpr-compliance.png 404 in 310ms
+ POST / 200 in 111ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 349ms
+ POST / 200 in 98ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ GET / 200 in 393ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 987ms
+ GET /sign-in 200 in 1742ms
+ GET /dashboard 200 in 131ms
+ GET /dashboard 200 in 114ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 309ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 316ms
+ GET / 200 in 230ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 296ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 253ms
+ GET / 200 in 199ms
+ GET / 200 in 214ms
+ GET / 200 in 296ms
+ GET / 200 in 230ms
+ GET / 200 in 235ms
+ GET / 200 in 276ms
+ GET / 200 in 240ms
+ GET / 200 in 397ms
+ GET / 200 in 266ms
+ GET / 200 in 259ms
+ GET / 200 in 418ms
+ GET / 200 in 382ms
+ GET / 200 in 339ms
+ GET / 200 in 459ms
+ GET / 200 in 342ms
+ GET / 200 in 308ms
+ GET / 200 in 320ms
+ GET / 200 in 374ms
+ GET / 200 in 340ms
+ GET / 200 in 384ms
+ GET / 200 in 311ms
+ GET / 200 in 320ms
+ GET / 200 in 317ms
+ GET / 200 in 315ms
+ GET / 200 in 347ms
+ GET / 200 in 314ms
+ GET / 200 in 302ms
+ GET / 200 in 302ms
+ GET / 200 in 299ms
+ GET / 200 in 398ms
+ GET / 200 in 311ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 357ms
+ GET / 200 in 316ms
+ GET / 200 in 313ms
+ GET / 200 in 412ms
+ GET / 200 in 318ms
+ GET / 200 in 307ms
+ GET / 200 in 310ms
+ GET / 200 in 310ms
+ GET / 200 in 318ms
+ GET / 200 in 325ms
+ GET / 200 in 322ms
+ GET / 200 in 331ms
+ GET / 200 in 321ms
+ GET / 200 in 327ms
+ GET / 200 in 324ms
+ GET / 200 in 444ms
+ GET / 200 in 319ms
+ GET / 200 in 297ms
+ GET / 200 in 309ms
+ GET / 200 in 311ms
+ GET / 200 in 308ms
+ GET / 200 in 310ms
+ GET / 200 in 486ms
+ POST /dashboard 200 in 151ms
+ GET / 200 in 106ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 366ms
+ GET /soc2-compliance.png 404 in 384ms
+ GET /gdpr-compliance.png 404 in 397ms
+ GET / 200 in 160ms
+ GET / 200 in 198ms
+ GET / 200 in 368ms
+ GET / 200 in 175ms
+ GET / 200 in 299ms
+ GET / 200 in 286ms
+ GET / 200 in 308ms
+ GET / 200 in 274ms
+ GET /soc2-compliance.png 404 in 312ms
+ GET /gdpr-compliance.png 404 in 196ms
+ POST / 200 in 65ms
+ POST / 200 in 45ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 258ms
+ GET / 200 in 194ms
+ GET /sign-in 200 in 118ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 256ms
+ GET /dashboard 200 in 317ms
+ POST /dashboard 200 in 70ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 250ms
+ POST /dashboard 200 in 45ms
+ GET / 200 in 179ms
+ GET /dashboard 200 in 75ms
+ GET / 200 in 327ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 282ms
+ GET / 200 in 333ms
+ GET / 200 in 303ms
+ GET / 200 in 271ms
+ GET / 200 in 340ms
+ GET / 200 in 389ms
+ GET / 200 in 221ms
+ GET / 200 in 236ms
+ GET / 200 in 324ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 353ms
+ GET /dashboard 200 in 134ms
+ GET / 200 in 302ms
+ GET / 200 in 216ms
+ GET / 200 in 428ms
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1575ms
+ POST /undefined/api/v1/stt/transcribe 500 in 2781ms
+ GET / 200 in 215ms
+ GET / 200 in 298ms
+ GET / 200 in 381ms
+ GET / 200 in 310ms
+ GET / 200 in 202ms
+ GET / 200 in 249ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.17.215:3001
+
+ ✓ Starting...
+ ✓ Compiled middleware in 362ms
+ ✓ Ready in 1430ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5797ms
+ GET / 200 in 172ms
+ GET / 200 in 311ms
+ GET / 200 in 295ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 703ms
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ⨯ [Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action]
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1305ms
+ POST /undefined/api/v1/stt/transcribe 500 in 3009ms
+ GET / 200 in 285ms
+ GET / 200 in 301ms
+ GET / 200 in 280ms
+ GET / 200 in 300ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.17.215:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 422ms
+ ✓ Ready in 1604ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.8s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 6738ms
+ GET / 200 in 182ms
+ GET / 200 in 181ms
+ GET / 200 in 224ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 150ms
+ ✓ Compiled /_not-found/page in 898ms
+ GET /gdpr-compliance.png 404 in 1091ms
+ GET /soc2-compliance.png 404 in 1315ms
+ GET / 200 in 199ms
+ POST / 303 in 514ms
+ GET / 200 in 180ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ GET / 200 in 246ms
+ GET / 200 in 266ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 1400ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 1296ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 320ms
+ GET /sign-in 200 in 2295ms
+ GET / 200 in 333ms
+ GET /sign-in 200 in 179ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 277ms
+ GET / 200 in 198ms
+ GET / 200 in 165ms
+ GET / 200 in 176ms
+ GET / 200 in 335ms
+ GET / 200 in 280ms
+ GET / 200 in 341ms
+ GET / 200 in 326ms
+ GET / 200 in 298ms
+ GET / 200 in 288ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1379ms
+ GET /dashboard 200 in 1587ms
+ POST /dashboard 200 in 64ms
+ POST /dashboard 200 in 51ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 279ms
+ GET / 200 in 376ms
+ GET / 200 in 282ms
+ GET / 200 in 331ms
+ GET / 200 in 341ms
+ GET / 200 in 532ms
+ GET / 200 in 543ms
+ GET / 200 in 327ms
+ GET / 200 in 339ms
+ GET / 200 in 400ms
+ GET / 200 in 683ms
+ GET / 200 in 305ms
+ GET / 200 in 284ms
+ GET / 200 in 330ms
+ GET / 200 in 319ms
+ GET / 200 in 334ms
+ GET / 200 in 334ms
+ GET / 200 in 334ms
+ GET / 200 in 324ms
+ GET / 200 in 333ms
+ GET / 200 in 331ms
+ GET / 200 in 344ms
+ GET / 200 in 300ms
+ GET / 200 in 325ms
+ GET / 200 in 396ms
+ GET / 200 in 345ms
+ GET / 200 in 318ms
+ GET / 200 in 314ms
+ GET / 200 in 349ms
+ GET / 200 in 357ms
+ GET / 200 in 301ms
+ GET / 200 in 339ms
+ GET / 200 in 323ms
+ GET / 200 in 351ms
+ GET / 200 in 333ms
+ GET / 200 in 356ms
+ GET / 200 in 322ms
+ GET / 200 in 351ms
+ GET / 200 in 393ms
+ GET / 200 in 343ms
+ GET / 200 in 311ms
+ GET / 200 in 342ms
+ GET / 200 in 307ms
+ GET / 200 in 327ms
+ GET / 200 in 352ms
+ GET / 200 in 319ms
+ GET / 200 in 301ms
+ GET / 200 in 339ms
+ GET / 200 in 327ms
+ GET / 200 in 362ms
+ GET / 200 in 338ms
+ GET / 200 in 321ms
+ GET / 200 in 317ms
+ GET / 200 in 271ms
+ GET / 200 in 148ms
+ GET / 200 in 314ms
+ GET / 200 in 299ms
+ GET / 200 in 299ms
+ GET / 200 in 179ms
+ GET / 200 in 237ms
+ GET / 200 in 301ms
+ GET / 200 in 373ms
+ GET / 200 in 287ms
+ GET / 200 in 322ms
+ GET / 200 in 342ms
+ GET / 200 in 371ms
+ GET / 200 in 314ms
+ GET / 200 in 331ms
+ GET / 200 in 311ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 314ms
+ GET / 200 in 331ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 273ms
+ GET / 200 in 401ms
+ GET / 200 in 577ms
+ GET / 200 in 348ms
+ GET / 200 in 357ms
+ GET / 200 in 360ms
+ GET / 200 in 423ms
+ GET / 200 in 339ms
+ GET / 200 in 317ms
+ GET / 200 in 342ms
+ GET / 200 in 316ms
+ GET / 200 in 312ms
+ GET / 200 in 319ms
+ GET / 200 in 291ms
+ GET / 200 in 323ms
+ GET / 200 in 292ms
+ GET / 200 in 299ms
+ GET / 200 in 313ms
+ GET / 200 in 295ms
+ GET / 200 in 296ms
+ GET / 200 in 293ms
+ GET / 200 in 299ms
+ GET / 200 in 325ms
+ GET / 200 in 292ms
+ GET / 200 in 291ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.17.215:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 327ms
+ ✓ Ready in 1493ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.5s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5274ms
+ GET / 200 in 144ms
+ GET / 200 in 304ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 115ms
+ ✓ Compiled /_not-found/page in 737ms
+ GET /gdpr-compliance.png 404 in 790ms
+ GET /soc2-compliance.png 404 in 986ms
+ GET / 200 in 97ms
+ POST / 303 in 265ms
+ GET / 200 in 81ms
+ GET / 200 in 62ms
+ GET / 200 in 320ms
+ ✓ Compiled /favicon.ico in 486ms
+ GET / 200 in 177ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 859ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 247ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 593ms
+ GET /sign-in 200 in 1157ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 235ms
+ GET / 200 in 279ms
+ GET / 200 in 311ms
+ GET / 200 in 289ms
+ GET / 200 in 271ms
+ GET / 200 in 311ms
+ GET / 200 in 328ms
+ GET / 200 in 325ms
+ GET / 200 in 344ms
+ GET / 200 in 265ms
+ GET / 200 in 280ms
+ GET / 200 in 272ms
+ GET / 200 in 268ms
+ GET / 200 in 356ms
+ GET / 200 in 273ms
+ GET / 200 in 281ms
+ GET / 200 in 308ms
+ GET /soc2-compliance.png 404 in 452ms
+ GET /gdpr-compliance.png 404 in 337ms
+ POST / 200 in 105ms
+ POST / 200 in 54ms
+ GET /sign-in 200 in 109ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1114ms
+ GET /dashboard 200 in 1198ms
+ GET /dashboard 200 in 125ms
+ GET / 200 in 152ms
+ GET / 200 in 163ms
+ GET / 200 in 349ms
+ GET / 200 in 337ms
+ GET / 200 in 152ms
+ GET / 200 in 336ms
+ GET / 200 in 362ms
+ GET / 200 in 323ms
+ GET / 200 in 334ms
+ GET / 200 in 334ms
+ GET / 200 in 321ms
+ GET / 200 in 389ms
+ GET / 200 in 319ms
+ GET / 200 in 307ms
+ GET / 200 in 196ms
+ GET / 200 in 380ms
+ GET / 200 in 323ms
+ GET / 200 in 360ms
+ GET / 200 in 337ms
+ GET / 200 in 304ms
+ GET / 200 in 329ms
+ GET / 200 in 285ms
+ GET / 200 in 333ms
+ GET / 200 in 329ms
+ GET / 200 in 286ms
+ GET / 200 in 412ms
+ GET / 200 in 295ms
+ GET / 200 in 318ms
+ GET / 200 in 348ms
+ GET / 200 in 226ms
+ GET / 200 in 352ms
+ GET / 200 in 294ms
+ GET / 200 in 330ms
+ GET / 200 in 338ms
+ GET / 200 in 414ms
+ GET / 200 in 332ms
+ GET / 200 in 341ms
+ GET / 200 in 335ms
+ GET / 200 in 440ms
+ GET / 200 in 184ms
+ GET / 200 in 359ms
+ GET / 200 in 214ms
+ GET / 200 in 348ms
+ GET / 200 in 305ms
+ GET / 200 in 408ms
+ GET / 200 in 343ms
+ GET / 200 in 338ms
+ GET / 200 in 327ms
+ GET / 200 in 324ms
+ GET / 200 in 275ms
+ GET / 200 in 336ms
+ GET / 200 in 175ms
+ GET / 200 in 304ms
+ GET / 200 in 328ms
+ GET / 200 in 385ms
+ GET / 200 in 343ms
+ GET / 200 in 331ms
+ GET / 200 in 360ms
+ GET / 200 in 343ms
+ GET / 200 in 285ms
+ GET / 200 in 307ms
+ GET / 200 in 180ms
+ GET / 200 in 356ms
+ GET / 200 in 430ms
+ GET / 200 in 262ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.26.84:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 427ms
+ ✓ Ready in 1603ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 6563ms
+ GET / 200 in 197ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.26.84:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 439ms
+ ✓ Ready in 1450ms
+ ○ Compiling / ...
+ ✓ Compiled / in 15.4s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 10597ms
+ GET / 200 in 16461ms
+ GET / 200 in 9340ms
+ GET / 200 in 381ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 137ms
+ ✓ Compiled /_not-found/page in 763ms
+ GET /gdpr-compliance.png 404 in 747ms
+ GET /soc2-compliance.png 404 in 963ms
+ GET / 200 in 75ms
+ POST / 303 in 211ms
+ GET / 200 in 69ms
+ GET / 200 in 167ms
+ ✓ Compiled /favicon.ico in 246ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 522ms
+ GET / 200 in 214ms
+ GET / 200 in 202ms
+ GET / 200 in 215ms
+ GET / 200 in 274ms
+ GET / 200 in 214ms
+ GET / 200 in 422ms
+ GET / 200 in 214ms
+ GET / 200 in 219ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.26.84:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 363ms
+ ✓ Ready in 1410ms
+ ○ Compiling / ...
+ ✓ Compiled / in 45.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 42865ms
+ GET / 200 in 46547ms
+ GET / 200 in 43853ms
+ GET / 200 in 139ms
+ GET / 200 in 237ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 84ms
+ ✓ Compiled /_not-found/page in 635ms
+ GET /soc2-compliance.png 404 in 834ms
+ GET /gdpr-compliance.png 404 in 680ms
+ GET / 200 in 81ms
+ POST / 303 in 219ms
+ GET / 200 in 78ms
+ GET / 200 in 66ms
+ ✓ Compiled /favicon.ico in 384ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 693ms
+ GET / 200 in 213ms
+ GET / 200 in 253ms
+ GET / 200 in 367ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 631ms
+ GET /sign-in 200 in 1223ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 290ms
+ GET / 200 in 246ms
+ GET / 200 in 235ms
+ GET / 200 in 265ms
+ GET / 200 in 243ms
+ GET / 200 in 235ms
+ GET / 200 in 238ms
+ GET / 200 in 236ms
+ GET / 200 in 165ms
+ GET / 200 in 209ms
+ GET / 200 in 206ms
+ GET / 200 in 202ms
+ GET / 200 in 194ms
+ GET / 200 in 216ms
+ GET / 200 in 245ms
+ GET / 200 in 204ms
+ GET / 200 in 214ms
+ GET / 200 in 192ms
+ GET / 200 in 191ms
+ GET / 200 in 232ms
+ GET / 200 in 236ms
+ GET / 200 in 173ms
+ GET / 200 in 213ms
+ GET / 200 in 230ms
+ GET / 200 in 243ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1063ms
+ GET /dashboard 200 in 1213ms
+ POST /dashboard 200 in 89ms
+ POST /dashboard 200 in 62ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 299ms
+ GET / 200 in 257ms
+ GET / 200 in 227ms
+ GET / 200 in 213ms
+ GET /dashboard 200 in 131ms
+ GET / 200 in 222ms
+ GET / 200 in 222ms
+ GET / 200 in 219ms
+ GET / 200 in 234ms
+ GET / 200 in 234ms
+ GET / 200 in 308ms
+ GET / 200 in 196ms
+ GET / 200 in 161ms
+ GET / 200 in 176ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 245ms
+ GET / 200 in 242ms
+ GET / 200 in 219ms
+ GET / 200 in 162ms
+ GET / 200 in 279ms
+ GET / 200 in 391ms
+ GET / 200 in 284ms
+ GET / 200 in 242ms
+ GET / 200 in 235ms
+ GET / 200 in 245ms
+ GET / 200 in 236ms
+ GET / 200 in 228ms
+ GET / 200 in 174ms
+ GET / 200 in 251ms
+ GET / 200 in 285ms
+ GET / 200 in 238ms
+ GET / 200 in 238ms
+ GET / 200 in 221ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 234ms
+ GET / 200 in 242ms
+ GET / 200 in 317ms
+ GET / 200 in 226ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 425ms
+ ✓ Ready in 1507ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5457ms
+ GET / 200 in 261ms
+ GET / 200 in 239ms
+ GET / 200 in 223ms
+ GET / 200 in 266ms
+ GET / 200 in 235ms
+ GET / 200 in 237ms
+ GET / 200 in 226ms
+ GET / 200 in 292ms
+ GET / 200 in 228ms
+ GET / 200 in 225ms
+ GET / 200 in 291ms
+ GET / 200 in 397ms
+ GET / 200 in 359ms
+ GET / 200 in 377ms
+ GET / 200 in 390ms
+ GET / 200 in 327ms
+ GET / 200 in 351ms
+ GET / 200 in 365ms
+ GET / 200 in 434ms
+ GET / 200 in 385ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 358ms
+ GET / 200 in 382ms
+ GET / 200 in 466ms
+ GET / 200 in 457ms
+ GET / 200 in 403ms
+ GET / 200 in 412ms
+ GET / 200 in 407ms
+ GET / 200 in 371ms
+ GET / 200 in 349ms
+ GET / 200 in 491ms
+ GET / 200 in 386ms
+ GET / 200 in 373ms
+ GET / 200 in 378ms
+ GET / 200 in 494ms
+ GET / 200 in 428ms
+ GET / 200 in 410ms
+ GET / 200 in 424ms
+ GET / 200 in 428ms
+ GET / 200 in 547ms
+ GET / 200 in 331ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 409ms
+ GET / 200 in 423ms
+ GET / 200 in 333ms
+ GET / 200 in 425ms
+ GET / 200 in 404ms
+ GET / 200 in 418ms
+ GET / 200 in 428ms
+ GET / 200 in 503ms
+ GET / 200 in 431ms
+ GET / 200 in 409ms
+ GET / 200 in 416ms
+ GET / 200 in 403ms
+ GET / 200 in 502ms
+ GET / 200 in 480ms
+ GET / 200 in 406ms
+ GET / 200 in 415ms
+ GET / 200 in 415ms
+ GET / 200 in 536ms
+ GET / 200 in 439ms
+ GET / 200 in 432ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 450ms
+ GET / 200 in 390ms
+ GET / 200 in 388ms
+ GET / 200 in 413ms
+ GET / 200 in 413ms
+ GET / 200 in 413ms
+ GET / 200 in 378ms
+ GET / 200 in 496ms
+ GET / 200 in 432ms
+ GET / 200 in 365ms
+ GET / 200 in 394ms
+ GET / 200 in 421ms
+ GET / 200 in 434ms
+ GET / 200 in 439ms
+ GET / 200 in 411ms
+ GET / 200 in 416ms
+ GET / 200 in 409ms
+ GET / 200 in 442ms
+ GET / 200 in 436ms
+ GET / 200 in 431ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 467ms
+ GET / 200 in 446ms
+ GET / 200 in 457ms
+ GET / 200 in 582ms
+ GET / 200 in 427ms
+ GET / 200 in 366ms
+ GET / 200 in 438ms
+ GET / 200 in 413ms
+ GET / 200 in 420ms
+ GET / 200 in 572ms
+ GET / 200 in 441ms
+ GET / 200 in 442ms
+ GET / 200 in 430ms
+ GET / 200 in 445ms
+ GET / 200 in 447ms
+ GET / 200 in 422ms
+ GET / 200 in 407ms
+ GET / 200 in 487ms
+ GET / 200 in 428ms
+ GET / 200 in 417ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 550ms
+ GET / 200 in 414ms
+ GET / 200 in 399ms
+ GET / 200 in 415ms
+ GET / 200 in 421ms
+ GET / 200 in 390ms
+ GET / 200 in 446ms
+ GET / 200 in 414ms
+ GET / 200 in 423ms
+ GET / 200 in 441ms
+ GET / 200 in 405ms
+ GET / 200 in 432ms
+ GET / 200 in 424ms
+ GET / 200 in 499ms
+ GET / 200 in 372ms
+ GET / 200 in 431ms
+ GET / 200 in 421ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 348ms
+ ✓ Ready in 1364ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5418ms
+ GET / 200 in 155ms
+ GET / 200 in 210ms
+ GET / 200 in 201ms
+ GET / 200 in 204ms
+ GET / 200 in 233ms
+ GET / 200 in 215ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 765ms
+ POST / 200 in 199ms
+ GET /gdpr-compliance.png 404 in 991ms
+ GET /soc2-compliance.png 404 in 1068ms
+ GET / 200 in 86ms
+ POST / 303 in 380ms
+ GET / 200 in 65ms
+ GET / 200 in 53ms
+ ✓ Compiled /favicon.ico in 302ms
+ GET /favicon.ico?favicon.d0a58032.ico 200 in 587ms
+ GET / 200 in 176ms
+ GET / 200 in 155ms
+ GET / 200 in 155ms
+ GET / 200 in 168ms
+ GET / 200 in 154ms
+ GET / 200 in 155ms
+ GET / 200 in 179ms
+ GET / 200 in 152ms
+ GET / 200 in 158ms
+ GET / 200 in 150ms
+ GET / 200 in 147ms
+ GET / 200 in 180ms
+ GET / 200 in 167ms
+ GET / 200 in 169ms
+ GET / 200 in 163ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 161ms
+ GET / 200 in 153ms
+ GET / 200 in 161ms
+ GET / 200 in 150ms
+ GET / 200 in 206ms
+ GET / 200 in 168ms
+ GET / 200 in 166ms
+ GET / 200 in 162ms
+ GET / 200 in 157ms
+ GET / 200 in 160ms
+ GET / 200 in 151ms
+ GET / 200 in 165ms
+ GET / 200 in 157ms
+ GET / 200 in 174ms
+ GET / 200 in 155ms
+ GET / 200 in 153ms
+ GET / 200 in 158ms
+ GET / 200 in 212ms
+ GET / 200 in 159ms
+ GET / 200 in 154ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 156ms
+ GET / 200 in 197ms
+ GET / 200 in 192ms
+ GET / 200 in 163ms
+ GET / 200 in 163ms
+ GET / 200 in 160ms
+ GET / 200 in 205ms
+ GET / 200 in 178ms
+ GET / 200 in 148ms
+ GET / 200 in 140ms
+ GET / 200 in 191ms
+ GET / 200 in 246ms
+ GET / 200 in 156ms
+ GET / 200 in 148ms
+ GET / 200 in 196ms
+ GET / 200 in 189ms
+ GET / 200 in 175ms
+ GET / 200 in 270ms
+ GET / 200 in 211ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 213ms
+ GET / 200 in 202ms
+ GET / 200 in 210ms
+ GET / 200 in 166ms
+ GET / 200 in 195ms
+ GET / 200 in 196ms
+ GET / 200 in 195ms
+ GET / 200 in 191ms
+ GET / 200 in 256ms
+ GET / 200 in 221ms
+ GET / 200 in 206ms
+ GET / 200 in 197ms
+ GET / 200 in 194ms
+ GET / 200 in 193ms
+ GET / 200 in 172ms
+ GET / 200 in 195ms
+ GET / 200 in 156ms
+ GET / 200 in 155ms
+ GET / 200 in 160ms
+ GET / 200 in 174ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 210ms
+ GET / 200 in 201ms
+ GET / 200 in 192ms
+ GET / 200 in 189ms
+ GET / 200 in 184ms
+ GET / 200 in 197ms
+ GET / 200 in 194ms
+ GET / 200 in 196ms
+ GET / 200 in 196ms
+ GET / 200 in 195ms
+ GET / 200 in 202ms
+ GET / 200 in 222ms
+ GET / 200 in 203ms
+ GET / 200 in 203ms
+ GET / 200 in 193ms
+ GET / 200 in 194ms
+ GET / 200 in 205ms
+ GET / 200 in 217ms
+ GET / 200 in 225ms
+ GET / 200 in 201ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 202ms
+ GET / 200 in 194ms
+ GET / 200 in 202ms
+ GET / 200 in 177ms
+ GET / 200 in 174ms
+ GET / 200 in 147ms
+ GET / 200 in 199ms
+ GET / 200 in 188ms
+ GET / 200 in 199ms
+ GET / 200 in 204ms
+ GET / 200 in 199ms
+ GET / 200 in 195ms
+ GET / 200 in 194ms
+ GET / 200 in 204ms
+ GET / 200 in 191ms
+ GET / 200 in 206ms
+ GET / 200 in 202ms
+ GET / 200 in 172ms
+ GET / 200 in 164ms
+ GET / 200 in 148ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 179ms
+ GET / 200 in 159ms
+ GET / 200 in 152ms
+ GET / 200 in 159ms
+ GET / 200 in 145ms
+ GET / 200 in 142ms
+ GET / 200 in 151ms
+ GET / 200 in 168ms
+ GET / 200 in 219ms
+ GET / 200 in 198ms
+ GET / 200 in 150ms
+ GET / 200 in 178ms
+ GET / 200 in 210ms
+ GET / 200 in 149ms
+ GET / 200 in 273ms
+ GET / 200 in 141ms
+ GET / 200 in 161ms
+ GET / 200 in 173ms
+ GET / 200 in 196ms
+ GET / 200 in 151ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 152ms
+ GET / 200 in 156ms
+ GET / 200 in 172ms
+ GET / 200 in 176ms
+ GET / 200 in 192ms
+ GET / 200 in 187ms
+ GET / 200 in 145ms
+ GET / 200 in 169ms
+ GET / 200 in 162ms
+ GET / 200 in 160ms
+ GET / 200 in 170ms
+ GET / 200 in 180ms
+ GET / 200 in 173ms
+ GET / 200 in 156ms
+ GET / 200 in 164ms
+ GET / 200 in 180ms
+ GET / 200 in 191ms
+ GET / 200 in 196ms
+ GET / 200 in 165ms
+ GET / 200 in 160ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 158ms
+ GET / 200 in 161ms
+ GET / 200 in 166ms
+ GET / 200 in 160ms
+ GET / 200 in 282ms
+ GET / 200 in 224ms
+ GET / 200 in 177ms
+ GET / 200 in 166ms
+ GET / 200 in 191ms
+ GET / 200 in 197ms
+ GET / 200 in 190ms
+ GET / 200 in 181ms
+ GET / 200 in 203ms
+ GET / 200 in 214ms
+ GET / 200 in 199ms
+ GET / 200 in 192ms
+ GET / 200 in 198ms
+ GET / 200 in 185ms
+ GET / 200 in 209ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 229ms
+ GET / 200 in 193ms
+ GET / 200 in 191ms
+ GET / 200 in 194ms
+ GET / 200 in 180ms
+ GET / 200 in 191ms
+ GET / 200 in 192ms
+ GET / 200 in 190ms
+ GET / 200 in 188ms
+ GET / 200 in 279ms
+ GET / 200 in 219ms
+ GET / 200 in 199ms
+ GET / 200 in 198ms
+ GET / 200 in 187ms
+ GET / 200 in 190ms
+ GET / 200 in 188ms
+ GET / 200 in 193ms
+ GET / 200 in 184ms
+ GET / 200 in 206ms
+ GET / 200 in 189ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 183ms
+ GET / 200 in 185ms
+ GET / 200 in 184ms
+ GET / 200 in 194ms
+ GET / 200 in 186ms
+ GET / 200 in 195ms
+ GET / 200 in 227ms
+ GET / 200 in 213ms
+ GET / 200 in 195ms
+ GET / 200 in 200ms
+ GET / 200 in 200ms
+ GET / 200 in 185ms
+ GET / 200 in 200ms
+ GET / 200 in 194ms
+ GET / 200 in 202ms
+ GET / 200 in 210ms
+ GET / 200 in 189ms
+ GET / 200 in 186ms
+ GET / 200 in 188ms
+ GET / 200 in 198ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 192ms
+ GET / 200 in 196ms
+ GET / 200 in 189ms
+ GET / 200 in 190ms
+ GET / 200 in 187ms
+ GET / 200 in 254ms
+ GET / 200 in 213ms
+ GET / 200 in 195ms
+ GET / 200 in 193ms
+ GET / 200 in 191ms
+ GET / 200 in 189ms
+ GET / 200 in 187ms
+ GET / 200 in 191ms
+ GET / 200 in 184ms
+ GET / 200 in 203ms
+ GET / 200 in 194ms
+ GET / 200 in 189ms
+ GET / 200 in 188ms
+ GET / 200 in 182ms
+ GET / 200 in 191ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 188ms
+ GET / 200 in 184ms
+ GET / 200 in 189ms
+ GET / 200 in 190ms
+ GET / 200 in 202ms
+ GET / 200 in 220ms
+ GET / 200 in 202ms
+ GET / 200 in 197ms
+ GET / 200 in 197ms
+ GET / 200 in 193ms
+ GET / 200 in 190ms
+ GET / 200 in 188ms
+ GET / 200 in 192ms
+ GET / 200 in 187ms
+ GET / 200 in 218ms
+ GET / 200 in 189ms
+ GET / 200 in 193ms
+ GET / 200 in 185ms
+ GET / 200 in 184ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 184ms
+ GET / 200 in 183ms
+ GET / 200 in 187ms
+ GET / 200 in 184ms
+ GET / 200 in 186ms
+ GET / 200 in 222ms
+ GET / 200 in 195ms
+ GET / 200 in 190ms
+ GET / 200 in 189ms
+ GET / 200 in 196ms
+ GET / 200 in 194ms
+ GET / 200 in 192ms
+ GET / 200 in 186ms
+ GET / 200 in 185ms
+ GET / 200 in 200ms
+ GET / 200 in 202ms
+ GET / 200 in 192ms
+ GET / 200 in 187ms
+ GET / 200 in 189ms
+ GET / 200 in 191ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 192ms
+ GET / 200 in 187ms
+ GET / 200 in 189ms
+ GET / 200 in 192ms
+ GET / 200 in 196ms
+ GET / 200 in 195ms
+ GET / 200 in 217ms
+ GET / 200 in 197ms
+ GET / 200 in 191ms
+ GET / 200 in 189ms
+ GET / 200 in 196ms
+ GET / 200 in 195ms
+ GET / 200 in 189ms
+ GET / 200 in 195ms
+ GET / 200 in 189ms
+ GET / 200 in 194ms
+ GET / 200 in 234ms
+ GET / 200 in 190ms
+ GET / 200 in 193ms
+ GET / 200 in 191ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 192ms
+ GET / 200 in 188ms
+ GET / 200 in 187ms
+ GET / 200 in 184ms
+ GET / 200 in 201ms
+ GET / 200 in 199ms
+ GET / 200 in 195ms
+ GET / 200 in 201ms
+ GET / 200 in 226ms
+ GET / 200 in 194ms
+ GET / 200 in 191ms
+ GET / 200 in 192ms
+ GET / 200 in 201ms
+ GET / 200 in 195ms
+ GET / 200 in 197ms
+ GET / 200 in 192ms
+ GET / 200 in 195ms
+ GET / 200 in 192ms
+ GET / 200 in 190ms
+ GET / 200 in 372ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 229ms
+ GET / 200 in 196ms
+ GET / 200 in 203ms
+ GET / 200 in 201ms
+ GET / 200 in 204ms
+ GET / 200 in 199ms
+ GET / 200 in 197ms
+ GET / 200 in 197ms
+ GET / 200 in 191ms
+ GET / 200 in 208ms
+ GET / 200 in 194ms
+ GET / 200 in 286ms
+ GET / 200 in 193ms
+ GET / 200 in 194ms
+ GET / 200 in 194ms
+ GET / 200 in 198ms
+ GET / 200 in 206ms
+ GET / 200 in 187ms
+ GET / 200 in 193ms
+ GET / 200 in 187ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 190ms
+ GET / 200 in 197ms
+ GET / 200 in 198ms
+ GET / 200 in 186ms
+ GET / 200 in 224ms
+ GET / 200 in 201ms
+ GET / 200 in 204ms
+ GET / 200 in 201ms
+ GET / 200 in 198ms
+ GET / 200 in 187ms
+ GET / 200 in 197ms
+ GET / 200 in 202ms
+ GET / 200 in 201ms
+ GET / 200 in 201ms
+ GET / 200 in 201ms
+ GET / 200 in 251ms
+ GET / 200 in 200ms
+ GET / 200 in 195ms
+ GET / 200 in 196ms
+ GET / 200 in 194ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 195ms
+ GET / 200 in 185ms
+ GET / 200 in 196ms
+ GET / 200 in 198ms
+ GET / 200 in 199ms
+ GET / 200 in 196ms
+ GET / 200 in 194ms
+ GET / 200 in 187ms
+ GET / 200 in 285ms
+ GET / 200 in 226ms
+ GET / 200 in 201ms
+ GET / 200 in 204ms
+ GET / 200 in 201ms
+ GET / 200 in 201ms
+ GET / 200 in 199ms
+ GET / 200 in 196ms
+ GET / 200 in 205ms
+ GET / 200 in 193ms
+ GET / 200 in 207ms
+ GET / 200 in 206ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 193ms
+ GET / 200 in 318ms
+ GET / 200 in 211ms
+ GET / 200 in 197ms
+ GET / 200 in 195ms
+ GET / 200 in 189ms
+ GET / 200 in 194ms
+ GET / 200 in 195ms
+ GET / 200 in 189ms
+ GET / 200 in 193ms
+ GET / 200 in 197ms
+ GET / 200 in 199ms
+ GET / 200 in 198ms
+ GET / 200 in 195ms
+ GET / 200 in 201ms
+ GET / 200 in 285ms
+ GET / 200 in 235ms
+ GET / 200 in 214ms
+ GET / 200 in 206ms
+ GET / 200 in 198ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 204ms
+ GET / 200 in 197ms
+ GET / 200 in 206ms
+ GET / 200 in 204ms
+ GET / 200 in 202ms
+ GET / 200 in 202ms
+ GET / 200 in 201ms
+ GET / 200 in 198ms
+ GET / 200 in 193ms
+ GET / 200 in 206ms
+ GET / 200 in 200ms
+ GET / 200 in 197ms
+ GET / 200 in 189ms
+ GET / 200 in 200ms
+ GET / 200 in 192ms
+ GET / 200 in 207ms
+ GET / 200 in 208ms
+ GET / 200 in 192ms
+ GET / 200 in 203ms
+ GET / 200 in 202ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 198ms
+ GET / 200 in 190ms
+ GET / 200 in 278ms
+ GET / 200 in 222ms
+ GET / 200 in 212ms
+ GET / 200 in 205ms
+ GET / 200 in 201ms
+ GET / 200 in 200ms
+ GET / 200 in 208ms
+ GET / 200 in 204ms
+ GET / 200 in 201ms
+ GET / 200 in 208ms
+ GET / 200 in 201ms
+ GET / 200 in 209ms
+ GET / 200 in 206ms
+ GET / 200 in 204ms
+ GET / 200 in 215ms
+ GET / 200 in 200ms
+ GET / 200 in 200ms
+ GET / 200 in 201ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 199ms
+ GET / 200 in 204ms
+ GET / 200 in 205ms
+ GET / 200 in 205ms
+ GET / 200 in 197ms
+ GET / 200 in 194ms
+ GET / 200 in 194ms
+ GET / 200 in 196ms
+ GET / 200 in 208ms
+ GET / 200 in 193ms
+ GET / 200 in 193ms
+ GET / 200 in 217ms
+ GET / 200 in 316ms
+ GET / 200 in 209ms
+ GET / 200 in 179ms
+ GET / 200 in 192ms
+ GET / 200 in 206ms
+ GET / 200 in 198ms
+ GET / 200 in 198ms
+ GET / 200 in 192ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 199ms
+ GET / 200 in 169ms
+ GET / 200 in 197ms
+ GET / 200 in 195ms
+ GET / 200 in 201ms
+ GET / 200 in 203ms
+ GET / 200 in 274ms
+ GET / 200 in 214ms
+ GET / 200 in 199ms
+ GET / 200 in 202ms
+ GET / 200 in 203ms
+ GET / 200 in 200ms
+ GET / 200 in 201ms
+ GET / 200 in 197ms
+ GET / 200 in 198ms
+ GET / 200 in 200ms
+ GET / 200 in 197ms
+ GET / 200 in 203ms
+ GET / 200 in 204ms
+ GET / 200 in 206ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 195ms
+ GET / 200 in 199ms
+ GET / 200 in 254ms
+ GET / 200 in 234ms
+ GET / 200 in 207ms
+ GET / 200 in 205ms
+ GET / 200 in 213ms
+ GET / 200 in 217ms
+ GET / 200 in 204ms
+ GET / 200 in 199ms
+ GET / 200 in 212ms
+ GET / 200 in 222ms
+ GET / 200 in 202ms
+ GET / 200 in 212ms
+ GET / 200 in 201ms
+ GET / 200 in 212ms
+ GET / 200 in 209ms
+ GET / 200 in 185ms
+ GET / 200 in 271ms
+ GET / 200 in 197ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 191ms
+ GET / 200 in 201ms
+ GET / 200 in 258ms
+ GET / 200 in 184ms
+ GET / 200 in 185ms
+ GET / 200 in 191ms
+ GET / 200 in 197ms
+ GET / 200 in 179ms
+ GET / 200 in 252ms
+ GET / 200 in 175ms
+ GET / 200 in 181ms
+ GET / 200 in 194ms
+ GET / 200 in 193ms
+ GET / 200 in 199ms
+ GET / 200 in 202ms
+ GET / 200 in 244ms
+ GET / 200 in 239ms
+ GET / 200 in 217ms
+ GET / 200 in 210ms
+ GET / 200 in 224ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 202ms
+ GET / 200 in 214ms
+ GET / 200 in 214ms
+ GET / 200 in 216ms
+ GET / 200 in 203ms
+ GET / 200 in 213ms
+ GET / 200 in 208ms
+ GET / 200 in 214ms
+ GET / 200 in 206ms
+ GET / 200 in 198ms
+ GET / 200 in 197ms
+ GET / 200 in 197ms
+ GET / 200 in 230ms
+ GET / 200 in 196ms
+ GET / 200 in 205ms
+ GET / 200 in 201ms
+ GET / 200 in 209ms
+ GET / 200 in 194ms
+ GET / 200 in 204ms
+ GET / 200 in 206ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 202ms
+ GET / 200 in 212ms
+ GET / 200 in 203ms
+ GET / 200 in 204ms
+ GET / 200 in 177ms
+ GET / 200 in 204ms
+ GET / 200 in 250ms
+ GET / 200 in 181ms
+ GET / 200 in 177ms
+ GET / 200 in 201ms
+ GET / 200 in 171ms
+ GET / 200 in 176ms
+ GET / 200 in 169ms
+ GET / 200 in 217ms
+ GET / 200 in 178ms
+ GET / 200 in 168ms
+ GET / 200 in 161ms
+ GET / 200 in 165ms
+ GET / 200 in 147ms
+ GET / 200 in 176ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 165ms
+ GET / 200 in 161ms
+ GET / 200 in 163ms
+ GET / 200 in 217ms
+ GET / 200 in 214ms
+ GET / 200 in 201ms
+ GET / 200 in 251ms
+ GET / 200 in 175ms
+ GET / 200 in 175ms
+ GET / 200 in 206ms
+ GET / 200 in 232ms
+ GET / 200 in 179ms
+ GET / 200 in 212ms
+ GET / 200 in 164ms
+ GET / 200 in 168ms
+ GET / 200 in 182ms
+ GET / 200 in 178ms
+ GET / 200 in 165ms
+ GET / 200 in 182ms
+ GET / 200 in 229ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 223ms
+ GET / 200 in 161ms
+ GET / 200 in 180ms
+ GET / 200 in 158ms
+ GET / 200 in 481ms
+ GET / 200 in 231ms
+ GET / 200 in 214ms
+ GET / 200 in 251ms
+ GET / 200 in 233ms
+ GET / 200 in 223ms
+ GET / 200 in 224ms
+ GET / 200 in 175ms
+ GET / 200 in 170ms
+ GET / 200 in 191ms
+ GET / 200 in 218ms
+ GET / 200 in 233ms
+ GET / 200 in 226ms
+ GET / 200 in 164ms
+[?25h
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 321ms
+ ✓ Ready in 1332ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.2s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 4923ms
+ GET / 200 in 139ms
+ GET / 200 in 211ms
+ GET / 200 in 207ms
+ GET / 200 in 211ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 650ms
+ GET /gdpr-compliance.png 404 in 931ms
+ GET /soc2-compliance.png 404 in 1001ms
+ POST / 200 in 294ms
+ POST / 200 in 50ms
+ GET / 200 in 150ms
+ GET / 200 in 148ms
+ GET / 200 in 148ms
+ GET / 200 in 144ms
+ GET / 200 in 156ms
+ GET / 200 in 164ms
+ GET / 200 in 152ms
+ GET / 200 in 152ms
+ GET / 200 in 178ms
+ GET / 200 in 156ms
+ ✓ Compiled /sign-in/[[...sign-in]] in 455ms
+ GET /sign-in 200 in 998ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 955ms
+ GET /dashboard 200 in 1132ms
+ POST /dashboard 200 in 91ms
+ POST /dashboard 200 in 41ms
+ GET / 200 in 141ms
+ GET /dashboard 200 in 68ms
+ GET /dashboard 200 in 75ms
+ GET /dashboard 200 in 70ms
+ GET /dashboard 200 in 72ms
+ GET /dashboard 200 in 78ms
+ GET /dashboard 200 in 59ms
+ GET / 200 in 211ms
+ GET / 200 in 200ms
+ GET / 200 in 201ms
+ GET / 200 in 246ms
+ GET / 200 in 197ms
+ GET /dashboard 200 in 67ms
+ GET / 200 in 173ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 213ms
+ GET / 200 in 161ms
+ GET / 200 in 226ms
+ GET / 200 in 202ms
+ GET / 200 in 201ms
+ GET / 200 in 197ms
+ GET / 200 in 258ms
+ GET / 200 in 199ms
+ GET / 200 in 191ms
+ GET / 200 in 224ms
+ GET / 200 in 245ms
+ GET / 200 in 238ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.10.141:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 315ms
+ ✓ Ready in 1299ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.3s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 5077ms
+ GET / 200 in 170ms
+ GET / 200 in 397ms
+ GET / 200 in 208ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1110ms
+ GET /dashboard 200 in 1318ms
+ POST /dashboard 200 in 111ms
+ POST /dashboard 200 in 41ms
+ GET / 200 in 211ms
+ GET / 200 in 184ms
+ GET / 200 in 181ms
+ GET / 200 in 200ms
+ GET / 200 in 191ms
+ GET / 200 in 183ms
+ GET / 200 in 179ms
+ GET / 200 in 205ms
+ GET / 200 in 185ms
+ GET / 200 in 221ms
+ GET / 200 in 170ms
+ GET / 200 in 181ms
+ GET / 200 in 176ms
+ GET / 200 in 192ms
+ GET / 200 in 165ms
+ GET / 200 in 226ms
+ GET / 200 in 155ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 174ms
+ GET / 200 in 197ms
+ GET / 200 in 250ms
+ GET / 200 in 183ms
+ GET / 200 in 145ms
+ GET / 200 in 248ms
+ GET / 200 in 217ms
+ GET / 200 in 199ms
+ GET / 200 in 183ms
+ GET / 200 in 141ms
+ GET / 200 in 198ms
+ GET / 200 in 196ms
+ GET / 200 in 162ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.80:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 331ms
+ ✓ Ready in 1391ms
+ ○ Compiling / ...
+ ✓ Compiled / in 15s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 15738ms
+ GET / 200 in 139ms
+ GET / 200 in 299ms
+ GET / 200 in 295ms
+ GET / 200 in 281ms
+ GET / 200 in 266ms
+ GET / 200 in 260ms
+ GET / 200 in 252ms
+ GET / 200 in 317ms
+ GET / 200 in 289ms
+ GET / 200 in 260ms
+ GET / 200 in 253ms
+ GET / 200 in 254ms
+ GET / 200 in 237ms
+ GET / 200 in 241ms
+ GET / 200 in 287ms
+ GET / 200 in 333ms
+ GET / 200 in 249ms
+ GET / 200 in 250ms
+ GET / 200 in 301ms
+ GET / 200 in 254ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.155:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 424ms
+ ✓ Ready in 1854ms
+ ○ Compiling / ...
+ ✓ Compiled / in 6.9s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 7683ms
+ GET / 200 in 153ms
+ GET / 200 in 300ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 195ms
+ POST / 200 in 86ms
+ ✓ Compiled /_not-found/page in 976ms
+ GET /gdpr-compliance.png 404 in 1209ms
+ GET /soc2-compliance.png 404 in 1218ms
+ GET / 200 in 153ms
+ GET / 200 in 346ms
+ GET / 200 in 344ms
+ GET / 200 in 298ms
+ GET / 200 in 264ms
+ GET / 200 in 321ms
+ GET / 200 in 297ms
+ GET / 200 in 288ms
+ GET / 200 in 338ms
+ GET / 200 in 275ms
+ GET / 200 in 263ms
+ GET / 200 in 281ms
+ GET / 200 in 272ms
+ GET / 200 in 245ms
+ GET / 200 in 334ms
+ GET / 200 in 250ms
+ GET / 200 in 256ms
+ GET / 200 in 279ms
+ GET / 200 in 292ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 316ms
+ GET / 200 in 289ms
+ GET / 200 in 284ms
+ GET / 200 in 342ms
+ GET / 200 in 285ms
+ GET / 200 in 285ms
+ GET / 200 in 224ms
+ GET / 200 in 343ms
+ GET / 200 in 479ms
+ GET / 200 in 382ms
+ GET / 200 in 323ms
+ GET / 200 in 277ms
+ GET / 200 in 218ms
+ GET / 200 in 202ms
+ GET / 200 in 191ms
+ GET / 200 in 202ms
+ GET / 200 in 225ms
+ GET / 200 in 247ms
+ GET / 200 in 228ms
+ GET / 200 in 207ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 212ms
+ GET / 200 in 193ms
+ GET / 200 in 267ms
+ GET / 200 in 193ms
+ GET / 200 in 206ms
+ GET / 200 in 213ms
+ GET / 200 in 252ms
+ GET / 200 in 219ms
+ GET / 200 in 200ms
+ GET / 200 in 192ms
+ GET / 200 in 198ms
+ GET / 200 in 240ms
+ GET / 200 in 223ms
+ GET / 200 in 202ms
+ GET / 200 in 205ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.155:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 745ms
+ ✓ Ready in 2.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 7.4s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 8388ms
+ GET / 200 in 179ms
+ GET / 200 in 411ms
+ GET / 200 in 395ms
+ GET / 200 in 396ms
+ ○ Compiling /_not-found/page ...
+ POST / 200 in 217ms
+ POST / 200 in 119ms
+ ✓ Compiled /_not-found/page in 1050ms
+ GET /gdpr-compliance.png 404 in 1379ms
+ GET /soc2-compliance.png 404 in 1454ms
+ ○ Compiling /sign-up/[[...sign-up]] ...
+ ✓ Compiled /sign-up/[[...sign-up]] in 884ms
+ GET /sign-up 200 in 1771ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 2.1s
+ GET /dashboard 200 in 2231ms
+ GET /dashboard 200 in 223ms
+ GET / 200 in 306ms
+ GET / 200 in 430ms
+ GET / 200 in 382ms
+ GET / 200 in 370ms
+ GET / 200 in 432ms
+ GET / 200 in 365ms
+ GET / 200 in 332ms
+ GET / 200 in 385ms
+ GET / 200 in 409ms
+ GET / 200 in 358ms
+ GET / 200 in 376ms
+ GET / 200 in 451ms
+ GET / 200 in 362ms
+ GET / 200 in 369ms
+ GET / 200 in 356ms
+ GET / 200 in 288ms
+ GET /dashboard 200 in 168ms
+ GET /dashboard 200 in 169ms
+ GET / 200 in 285ms
+ GET /dashboard 200 in 205ms
+ GET /dashboard 200 in 207ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 280ms
+ GET / 200 in 252ms
+ GET / 200 in 247ms
+ GET / 200 in 243ms
+ GET / 200 in 252ms
+ GET / 200 in 308ms
+ GET / 200 in 321ms
+ GET / 200 in 310ms
+ GET / 200 in 258ms
+ GET / 200 in 260ms
+ GET / 200 in 328ms
+ GET / 200 in 332ms
+ GET / 200 in 252ms
+ GET / 200 in 293ms
+ GET / 200 in 287ms
+ GET / 200 in 279ms
+ GET / 200 in 282ms
+ GET / 200 in 395ms
+ GET / 200 in 308ms
+ GET / 200 in 291ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 247ms
+ GET / 200 in 367ms
+ GET / 200 in 367ms
+ GET / 200 in 243ms
+ GET / 200 in 259ms
+ GET / 200 in 282ms
+ GET / 200 in 418ms
+ GET / 200 in 302ms
+ GET / 200 in 361ms
+ GET / 200 in 279ms
+ GET / 200 in 323ms
+ GET / 200 in 337ms
+ GET / 200 in 263ms
+ GET / 200 in 241ms
+ GET / 200 in 256ms
+ GET / 200 in 328ms
+ GET / 200 in 267ms
+ GET / 200 in 294ms
+ GET / 200 in 247ms
+ GET / 200 in 264ms
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.155:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 743ms
+ ✓ Ready in 3s
+ ○ Compiling / ...
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 17481ms
+ ✓ Compiled / in 17.5s
+ GET /dashboard 200 in 1862ms
+ GET / 200 in 387ms
+ POST /dashboard 200 in 101ms
+ POST /dashboard 200 in 51ms
+ GET / 200 in 430ms
+ GET / 200 in 414ms
+ GET / 200 in 381ms
+ GET / 200 in 456ms
+ GET / 200 in 365ms
+ GET / 200 in 382ms
+ GET / 200 in 459ms
+ GET / 200 in 421ms
+ GET / 200 in 363ms
+ GET / 200 in 376ms
+ GET / 200 in 441ms
+ GET / 200 in 366ms
+ GET / 200 in 360ms
+ GET / 200 in 368ms
+ GET / 200 in 404ms
+ GET / 200 in 356ms
+ GET / 200 in 362ms
+ GET / 200 in 377ms
+ GET / 200 in 354ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 364ms
+ GET / 200 in 364ms
+ GET / 200 in 398ms
+ GET / 200 in 377ms
+ GET / 200 in 360ms
+ GET / 200 in 417ms
+ GET / 200 in 371ms
+ GET / 200 in 339ms
+ GET / 200 in 369ms
+ GET / 200 in 354ms
+ GET / 200 in 430ms
+ GET / 200 in 401ms
+ GET / 200 in 353ms
+ GET / 200 in 372ms
+ GET / 200 in 378ms
+ GET / 200 in 346ms
+ GET / 200 in 355ms
+ GET / 200 in 248ms
+ GET / 200 in 352ms
+ GET / 200 in 425ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 384ms
+ GET / 200 in 328ms
+ GET / 200 in 341ms
+ GET / 200 in 358ms
+ GET / 200 in 474ms
+ GET / 200 in 370ms
+ GET / 200 in 369ms
+ GET / 200 in 365ms
+ GET / 200 in 354ms
+ GET / 200 in 429ms
+ GET / 200 in 431ms
+ GET / 200 in 395ms
+ GET / 200 in 389ms
+ GET / 200 in 356ms
+ GET / 200 in 226ms
+ GET / 200 in 212ms
+ GET / 200 in 193ms
+ GET / 200 in 187ms
+ GET / 200 in 191ms
+ GET / 200 in 221ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 211ms
+ GET / 200 in 192ms
+ GET / 200 in 194ms
+ GET / 200 in 193ms
+ GET / 200 in 223ms
+ GET / 200 in 199ms
+ GET / 200 in 190ms
+ GET / 200 in 191ms
+ GET / 200 in 195ms
+ GET / 200 in 193ms
+ GET / 200 in 216ms
+ GET / 200 in 196ms
+ GET /dashboard 200 in 131ms
+ POST /dashboard 200 in 45ms
+ POST /dashboard 200 in 44ms
+ GET / 200 in 157ms
+ POST /dashboard 200 in 57ms
+ GET / 200 in 70ms
+ GET / 200 in 128ms
+ ✓ Compiled /_not-found/page in 471ms
+ GET /dashboard 404 in 542ms
+ GET /gdpr-compliance.png 404 in 696ms
+ GET /soc2-compliance.png 404 in 703ms
+ GET / 200 in 149ms
+ GET / 200 in 144ms
+ GET / 200 in 140ms
+ GET / 200 in 161ms
+ GET / 200 in 157ms
+ GET / 200 in 158ms
+ ✓ Compiled /sign-up/[[...sign-up]] in 465ms
+ GET /sign-up 200 in 998ms
+ GET /dashboard 200 in 154ms
+ GET / 200 in 142ms
+ GET /dashboard 200 in 110ms
+ POST /dashboard 200 in 43ms
+ POST /dashboard 200 in 42ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 193ms
+ GET / 200 in 208ms
+ GET / 200 in 196ms
+ GET / 200 in 197ms
+ GET / 200 in 201ms
+ GET / 200 in 229ms
+ GET / 200 in 201ms
+ GET / 200 in 201ms
+ GET / 200 in 191ms
+ GET / 200 in 192ms
+ GET / 200 in 262ms
+ GET / 200 in 191ms
+ GET / 200 in 188ms
+ GET / 200 in 232ms
+ GET / 200 in 186ms
+ GET / 200 in 192ms
+ GET / 200 in 188ms
+ GET / 200 in 214ms
+ GET / 200 in 194ms
+ GET / 200 in 204ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 207ms
+ GET / 200 in 213ms
+ GET / 200 in 216ms
+ GET / 200 in 207ms
+ GET / 200 in 204ms
+ GET / 200 in 203ms
+ GET / 200 in 194ms
+ GET / 200 in 196ms
+ GET / 200 in 206ms
+ GET / 200 in 224ms
+ GET / 200 in 207ms
+ GET / 200 in 208ms
+ GET / 200 in 203ms
+ GET / 200 in 196ms
+ GET / 200 in 207ms
+ GET / 200 in 210ms
+ GET / 200 in 208ms
+ GET / 200 in 199ms
+ GET / 200 in 192ms
+ GET / 200 in 200ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 208ms
+ GET / 200 in 210ms
+ GET / 200 in 228ms
+ GET / 200 in 208ms
+ GET / 200 in 202ms
+ GET / 200 in 204ms
+ GET / 200 in 206ms
+ GET / 200 in 205ms
+ GET / 200 in 222ms
+ GET / 200 in 206ms
+ GET / 200 in 201ms
+ GET / 200 in 201ms
+ GET / 200 in 200ms
+ GET / 200 in 203ms
+ GET / 200 in 211ms
+ GET / 200 in 225ms
+ GET / 200 in 212ms
+ GET / 200 in 203ms
+ GET / 200 in 204ms
+ GET / 200 in 202ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 207ms
+ GET / 200 in 216ms
+ GET / 200 in 215ms
+ GET / 200 in 204ms
+ GET / 200 in 204ms
+ GET / 200 in 203ms
+ GET / 200 in 200ms
+ GET / 200 in 207ms
+ GET / 200 in 198ms
+ GET / 200 in 227ms
+ GET / 200 in 209ms
+ GET / 200 in 205ms
+ GET / 200 in 209ms
+ GET / 200 in 211ms
+ GET / 200 in 207ms
+ GET / 200 in 206ms
+ GET / 200 in 212ms
+ GET / 200 in 200ms
+ GET / 200 in 200ms
+ GET / 200 in 201ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 204ms
+ GET / 200 in 198ms
+ GET / 200 in 204ms
+ GET / 200 in 212ms
+ GET / 200 in 228ms
+ GET / 200 in 211ms
+ GET / 200 in 209ms
+ GET / 200 in 208ms
+ GET / 200 in 203ms
+ GET / 200 in 203ms
+ GET / 200 in 201ms
+ GET / 200 in 243ms
+ GET / 200 in 212ms
+ GET / 200 in 199ms
+ GET / 200 in 207ms
+ GET / 200 in 203ms
+ GET / 200 in 206ms
+ GET / 200 in 207ms
+ GET / 200 in 202ms
+ GET / 200 in 209ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 240ms
+ GET / 200 in 236ms
+ GET / 200 in 215ms
+ GET / 200 in 215ms
+ GET / 200 in 203ms
+ GET / 200 in 205ms
+ GET / 200 in 202ms
+ GET / 200 in 239ms
+ GET / 200 in 211ms
+ GET / 200 in 211ms
+ GET / 200 in 208ms
+ GET / 200 in 204ms
+ GET / 200 in 215ms
+ GET / 200 in 205ms
+ GET / 200 in 230ms
+ GET / 200 in 204ms
+ GET / 200 in 210ms
+ GET / 200 in 258ms
+ GET / 200 in 232ms
+ GET / 200 in 209ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 212ms
+ GET / 200 in 212ms
+ GET / 200 in 205ms
+ GET / 200 in 202ms
+ GET / 200 in 202ms
+ GET / 200 in 208ms
+ GET / 200 in 218ms
+ GET / 200 in 212ms
+ GET / 200 in 207ms
+ GET / 200 in 200ms
+ GET / 200 in 209ms
+ GET / 200 in 202ms
+ GET / 200 in 206ms
+ GET / 200 in 205ms
+ GET / 200 in 206ms
+ GET / 200 in 342ms
+ GET / 200 in 234ms
+ GET / 200 in 210ms
+ GET / 200 in 216ms
+ GET / 200 in 211ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 212ms
+ GET / 200 in 206ms
+ GET / 200 in 200ms
+ GET / 200 in 204ms
+ GET / 200 in 208ms
+ GET / 200 in 208ms
+ GET / 200 in 308ms
+ GET / 200 in 309ms
+ GET / 200 in 300ms
+[?25h
+
+> app@0.1.0 dev
+> next dev --turbopack -p 3001
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/ahmad/Desktop/Pitchex_v3/app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/ahmad/Desktop/Pitchex_v3/app/frontend/package-lock.json
+
+   ▲ Next.js 15.5.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.21.155:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 356ms
+ ✓ Ready in 1695ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.6s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 8398ms
+ GET / 200 in 144ms
+ GET / 200 in 291ms
+ GET / 200 in 280ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1648ms
+ GET /dashboard 200 in 1852ms
+ POST /dashboard 200 in 71ms
+ POST /dashboard 200 in 51ms
+ GET / 200 in 336ms
+ GET / 200 in 377ms
+ GET / 200 in 323ms
+ GET / 200 in 344ms
+ GET / 200 in 372ms
+ GET / 200 in 319ms
+ GET / 200 in 426ms
+ GET / 200 in 395ms
+ GET / 200 in 329ms
+ GET / 200 in 384ms
+ GET / 200 in 375ms
+ GET / 200 in 394ms
+ GET / 200 in 345ms
+ GET / 200 in 417ms
+ GET / 200 in 344ms
+ GET / 200 in 331ms
+ GET / 200 in 348ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 338ms
+ GET / 200 in 397ms
+ GET / 200 in 411ms
+ GET / 200 in 335ms
+ GET / 200 in 450ms
+ GET / 200 in 388ms
+ GET / 200 in 353ms
+ GET / 200 in 413ms
+ GET / 200 in 337ms
+ POST /dashboard 200 in 151ms
+ GET / 200 in 93ms
+ GET / 200 in 235ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 802ms
+ GET /gdpr-compliance.png 404 in 1176ms
+ GET /soc2-compliance.png 404 in 1189ms
+ GET / 200 in 265ms
+ GET / 200 in 71ms
+ GET / 200 in 219ms
+ GET / 200 in 225ms
+ GET / 200 in 218ms
+ GET / 200 in 291ms
+ GET / 200 in 240ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 701ms
+ GET /sign-in 200 in 1347ms
+ GET /dashboard 200 in 215ms
+ POST /dashboard 200 in 76ms
+ POST /dashboard 200 in 68ms
+ GET / 200 in 391ms
+ GET / 200 in 426ms
+ GET / 200 in 362ms
+ GET / 200 in 393ms
+ GET / 200 in 415ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 508ms
+ GET / 200 in 432ms
+ GET / 200 in 393ms
+ GET / 200 in 378ms
+ GET / 200 in 338ms
+ GET / 200 in 452ms
+ GET / 200 in 362ms
+ GET / 200 in 380ms
+ GET / 200 in 377ms
+ GET / 200 in 346ms
+ GET / 200 in 386ms
+ GET / 200 in 399ms
+ GET / 200 in 335ms
+ GET / 200 in 338ms
+ GET / 200 in 373ms
+ GET / 200 in 351ms
+ GET / 200 in 390ms
+ GET / 200 in 368ms
+ GET / 200 in 393ms
+ GET / 200 in 369ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 332ms
+ GET / 200 in 420ms
+ GET / 200 in 365ms
+ GET / 200 in 388ms
+ GET / 200 in 339ms
+ GET / 200 in 313ms
+ GET / 200 in 525ms
+ GET / 200 in 394ms
+ GET / 200 in 403ms
+ GET / 200 in 372ms
+ GET / 200 in 366ms
+ GET / 200 in 322ms
+ GET / 200 in 550ms
+ GET / 200 in 379ms
+ GET / 200 in 375ms
+ GET / 200 in 376ms
+ GET / 200 in 303ms
+ GET / 200 in 389ms
+ GET / 200 in 423ms
+ GET / 200 in 352ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 397ms
+ GET / 200 in 363ms
+ GET / 200 in 351ms
+ GET / 200 in 517ms
+ GET / 200 in 369ms
+ GET / 200 in 373ms
+ GET / 200 in 374ms
+ GET / 200 in 288ms
+ GET / 200 in 308ms
+ GET / 200 in 348ms
+ GET / 200 in 437ms
+ GET / 200 in 350ms
+ GET / 200 in 392ms
+ GET / 200 in 367ms
+ GET / 200 in 350ms
+ GET / 200 in 349ms
+ GET / 200 in 338ms
+ GET / 200 in 403ms
+ GET / 200 in 327ms
+ GET / 200 in 372ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=d6qfv1g2inlbh78oiavu3jombdnqtqepvwdf6mw6&return_url=http%3A%2F%2Flocalhost%3A3001%2F
+
+ GET / 200 in 379ms
+ GET / 200 in 384ms
+ GET / 200 in 395ms
+ GET / 200 in 320ms
+ GET / 200 in 340ms
+ GET / 200 in 333ms
+ GET / 200 in 376ms
+ GET / 200 in 357ms
+ GET / 200 in 348ms
+ GET / 200 in 334ms
+ GET / 200 in 361ms
+ GET / 200 in 342ms
+ GET / 200 in 300ms
+ GET / 200 in 337ms
+ GET / 200 in 524ms
