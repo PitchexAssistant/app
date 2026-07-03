@@ -4,9 +4,8 @@ import { useState, useEffect } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { AppSidebar } from '@/components/app-sidebar'
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ChevronDown, Mail, MessageSquare, FileText, Users } from 'lucide-react'
+import { ChevronDown, Mail, MessageSquare, FileText, Users, ArrowLeft } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface FAQItem {
@@ -101,145 +100,143 @@ export default function HelpPage() {
         }}
       />
       <SidebarInset>
-        <div className="min-h-screen bg-[#171717] p-8">
+        <div className="min-h-screen bg-surface-0 p-20">
           {/* Header */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h1 className="text-4xl font-bold text-white mb-4">Help & Support</h1>
-            <p className="text-lg text-gray-400">
-              Get answers to common questions and learn how to make the most of Pitchex
-            </p>
+          <div className="max-w-4xl flex gap-4 mx-auto mb-12">
+            {/* Back Button */}
+            <Button
+              variant="secondary"
+              onClick={() => window.history.back()}
+              
+            >
+              <ArrowLeft className="w-8 h-8" />
+             
+            </Button>
+             <div>
+                <h1 className="text-4xl font-bold text-text-primary mb-2">Help & Support</h1>
+                <p className="text-lg text-text-secondary">
+                  Get answers to common questions and learn how to make the most of Pitchex
+                </p>
+              </div>
+
+            
           </div>
 
           {/* Quick Stats */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="bg-gradient-to-br from-[#FF6B00]/20 to-[#FF6B00]/5 border-[#FF6B00]/30">
-                <CardContent className="pt-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-[#FF6B00]/20 rounded-lg">
-                      <Users className="w-6 h-6 text-[#FF6B00]" />
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">1000+</p>
-                      <p className="text-sm text-gray-400">Active Users</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              {/* Stat Card 1 */}
+              <div className="bg-accent-lime/10 border border-accent-lime/30 rounded-xl p-6 flex flex-col justify-between min-h-[140px]">
+                <Users className="w-6 h-6 text-accent-lime mb-8" />
+                <div>
+                  <p className="text-2xl font-bold text-text-primary">1000+</p>
+                  <p className="text-sm text-text-secondary">Active Users</p>
+                </div>
+              </div>
 
-              <Card className="bg-gradient-to-br from-[#FF6B00]/20 to-[#FF6B00]/5 border-[#FF6B00]/30">
-                <CardContent className="pt-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-[#FF6B00]/20 rounded-lg">
-                      <MessageSquare className="w-6 h-6 text-[#FF6B00]" />
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">5000+</p>
-                      <p className="text-sm text-gray-400">Practice Sessions</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              {/* Stat Card 2 */}
+              <div className="bg-accent-lime/10 border border-accent-lime/30 rounded-xl p-6 flex flex-col justify-between min-h-[140px]">
+                <MessageSquare className="w-6 h-6 text-accent-lime mb-8" />
+                <div>
+                  <p className="text-2xl font-bold text-text-primary">5000+</p>
+                  <p className="text-sm text-text-secondary">Practice Sessions</p>
+                </div>
+              </div>
 
-              <Card className="bg-gradient-to-br from-[#FF6B00]/20 to-[#FF6B00]/5 border-[#FF6B00]/30">
-                <CardContent className="pt-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-[#FF6B00]/20 rounded-lg">
-                      <FileText className="w-6 h-6 text-[#FF6B00]" />
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">24/7</p>
-                      <p className="text-sm text-gray-400">AI Support</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              {/* Stat Card 3 */}
+              <div className="bg-accent-lime/10 border border-accent-lime/30 rounded-xl p-6 flex flex-col justify-between min-h-[140px]">
+                <FileText className="w-6 h-6 text-accent-lime mb-8" />
+                <div>
+                  <p className="text-2xl font-bold text-text-primary">24/7</p>
+                  <p className="text-sm text-text-secondary">AI Support</p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* FAQ Section */}
           <div id="faq" className="max-w-4xl mx-auto mb-12 scroll-mt-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Frequently Asked Questions</CardTitle>
-                <CardDescription>Find answers to the most common questions about Pitchex</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
+            <div className="bg-surface-2 rounded-xl border border-surface-3 overflow-hidden">
+              <div className="p-6">
+                <h2 className="text-2xl font-bold text-text-primary">Frequently Asked Questions</h2>
+                <p className="text-text-secondary mt-1">Find answers to the most common questions about Pitchex</p>
+              </div>
+              <div className="p-6 space-y-4">
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="border border-zinc-800 rounded-lg overflow-hidden"
+                    className="bg-surface-2 border border-surface-3 rounded-lg overflow-hidden"
                   >
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full flex items-center justify-between p-4 text-left hover:bg-zinc-900/50 transition-colors"
+                      className="w-full flex items-center justify-between p-4 text-left hover:bg-surface-3/30 transition-colors"
                     >
-                      <span className="font-medium text-white">{faq.question}</span>
+                      <span className="font-medium text-text-primary">{faq.question}</span>
                       <ChevronDown
                         className={cn(
-                          "w-5 h-5 text-gray-400 transition-transform",
+                          "w-5 h-5 text-text-secondary transition-transform",
                           faq.isOpen && "transform rotate-180"
                         )}
                       />
                     </button>
                     {faq.isOpen && (
-                      <div className="px-4 pb-4 text-gray-400 border-t border-zinc-800 pt-4">
+                      <div className="px-4 pb-4 text-text-secondary border-t border-surface-3 pt-4">
                         {faq.answer}
                       </div>
                     )}
                   </div>
                 ))}
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
 
           {/* Contact Section */}
           <div className="max-w-4xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Still Need Help?</CardTitle>
-                <CardDescription>Our team is here to assist you</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <div className="bg-surface-2 rounded-xl border border-surface-3 overflow-hidden">
+              <div className="p-6 border-b border-surface-3">
+                <h2 className="text-2xl font-bold text-text-primary">Still Need Help?</h2>
+                <p className="text-text-secondary mt-1">Our team is here to assist you</p>
+              </div>
+              <div className="p-6">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                      <Mail className="w-5 h-5 text-[#FF6B00]" />
+                    <h3 className="text-lg font-semibold text-text-primary mb-4 flex items-center gap-2">
+                      <Mail className="w-5 h-5 text-accent-lime" />
                       Contact Our Team
                     </h3>
-                    <p className="text-gray-400 mb-4">
+                    <p className="text-text-secondary mb-4">
                       Have a specific question or need personalized support? Reach out to our team via email:
                     </p>
                     <div className="space-y-2">
                       <a
                         href="mailto:bscs22115@itu.edu.pk"
-                        className="block text-[#FF6B00] hover:text-[#FF8533] transition-colors"
+                        className="block text-accent-lime hover:text-accent-lime/80 transition-colors"
                       >
                         bscs22115@itu.edu.pk
                       </a>
                       <a
                         href="mailto:bscs22071@itu.edu.pk"
-                        className="block text-[#FF6B00] hover:text-[#FF8533] transition-colors"
+                        className="block text-accent-lime hover:text-accent-lime/80 transition-colors"
                       >
                         bscs22071@itu.edu.pk
                       </a>
                       <a
                         href="mailto:bscs22025@itu.edu.pk"
-                        className="block text-[#FF6B00] hover:text-[#FF8533] transition-colors"
+                        className="block text-accent-lime hover:text-accent-lime/80 transition-colors"
                       >
                         bscs22025@itu.edu.pk
                       </a>
                     </div>
                   </div>
 
-                  <div className="pt-6 border-t border-zinc-800">
-                    <p className="text-sm text-gray-400">
-                      <strong className="text-white">Response Time:</strong> We typically respond within 24 hours on business days
+                  <div className="pt-6 border-t border-surface-3">
+                    <p className="text-sm text-text-secondary">
+                      <strong className="text-text-primary">Response Time:</strong> We typically respond within 24 hours on business days
                     </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </SidebarInset>

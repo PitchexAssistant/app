@@ -9,6 +9,10 @@ interface ModeSelectionModalProps {
   onContinue: (mode: 'live' | 'recorded') => void
 }
 
+// Feature tags for each mode
+const liveFeatures = ["Real-time audio", "AI feedback", "Live emotions"]
+const recordedFeatures = ["Record audio","Upload audio","Detailed analysis"]
+
 export function ModeSelectionModal({ onClose, onContinue }: ModeSelectionModalProps) {
   const [selectedMode, setSelectedMode] = useState<'live' | 'recorded'>('recorded')
 
@@ -18,100 +22,116 @@ export function ModeSelectionModal({ onClose, onContinue }: ModeSelectionModalPr
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-      <div className="bg-surface-1 rounded-2xl border border-border-primary p-6 w-[850px] h-[496px] shadow-2xl flex flex-col justify-end gap-8">
+      <div className="bg-surface-1 rounded-2xl border border-border-primary p-6 w-[850px] shadow-2xl flex flex-col gap-6">
         {/* Header */}
-        <div className="flex-1 flex flex-col gap-5">
-          <div className="flex items-start justify-between">
-            <div className="flex-1">
-              <h2 className="text-lg font-bold text-text-primary mb-2">
-                Choose How You Want to Pitch
-              </h2>
-              <p className="text-sm font-medium text-text-primary">
-                Pick the mode that best fits your preparation style.
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <h2 className="text-xl font-bold text-text-primary mb-1">
+              Choose How You Want to Pitch
+            </h2>
+            <p className="text-sm font-medium text-text-secondary">
+              Pick the mode that best fits your preparation style.
+            </p>
+          </div>
+          <button
+            onClick={onClose}
+            className="w-8 h-8 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-surface-2"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Mode Selection Cards */}
+        <div className="flex gap-4">
+          {/* Live Session Card */}
+          <button
+            onClick={() => setSelectedMode('live')}
+            className={`relative flex-1 bg-surface-2 rounded-2xl p-6 flex flex-col gap-3 transition-all duration-300
+              ${selectedMode === 'live'
+                ? 'border border-accent-lime/80'
+                : 'border border-surface-3 hover:border-text-tertiary'
+              }`}
+          >
+            {/* Top Row: Icon and Selection Indicator */}
+            <div className="flex items-start justify-between">
+              {/* Icon Container - No visible border */}
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center">
+                <Radio className={`w-7 h-7 transition-colors duration-300 ${selectedMode === 'live' ? 'text-accent-lime' : 'text-text-primary'}`} />
+              </div>
+
+              {/* Selection Indicator */}
+              <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300
+                ${selectedMode === 'live'
+                  ? 'border-accent-lime'
+                  : 'border-surface-3'
+                }`}>
+                {selectedMode === 'live' && (
+                  <div className="w-3 h-3 rounded-full bg-accent-lime"></div>
+                )}
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col gap-2 text-left flex-1">
+              <h3 className="text-2xl font-bold text-text-primary leading-tight">
+                Live Session
+              </h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                Connect with a live AI investor call. Simulate the high-pressure environment of an actual interview.
               </p>
             </div>
-            <button
-              onClick={onClose}
-              className="w-6 h-6 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
 
-          {/* Mode Selection Cards */}
-          <div className="flex-1 flex gap-4">
-            {/* Live Session Card */}
-            <button
-              onClick={() => setSelectedMode('live')}
-              className={`flex-1 bg-surface-2 rounded-2xl p-6 flex flex-col justify-between transition-all border ${selectedMode === 'live'
-                ? 'border-accent-lime'
-                : 'border-border-primary'
-                }`}
-            >
-              <div className="flex items-start justify-between">
-                <div className="w-14 h-14 bg-surface-3 rounded-full flex items-center justify-center">
-                  <Radio className="w-6 h-6 text-text-secondary" />
-                </div>
-                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${selectedMode === 'live'
-                  ? 'border-accent-lime bg-transparent'
-                  : 'border-surface-3 bg-transparent'
-                  }`}>
-                  {selectedMode === 'live' && (
-                    <div className="w-3 h-3 rounded-full bg-accent-lime"></div>
-                  )}
-                </div>
+            {/* Feature Tags - Simple, static labels */}
+            
+          </button>
+
+          {/* Recorded Session Card */}
+          <button
+            onClick={() => setSelectedMode('recorded')}
+            className={`relative flex-1 bg-surface-2 rounded-2xl p-6 flex flex-col gap-3 transition-all duration-300
+              ${selectedMode === 'recorded'
+                ? 'border border-accent-lime/80'
+                : 'border border-surface-3 hover:border-text-tertiary'
+              }`}
+          >
+            {/* Top Row: Icon and Selection Indicator */}
+            <div className="flex items-start justify-between">
+              {/* Icon Container - No visible border */}
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center">
+                <Mic className={`w-7 h-7 transition-colors duration-300 ${selectedMode === 'recorded' ? 'text-accent-lime' : 'text-text-primary'}`} />
               </div>
 
-              <div className="flex flex-col gap-1.5 text-left">
-                <p className="text-base font-bold text-text-primary leading-6">
-                  Live Session
-                </p>
-                <p className="text-base font-medium text-text-secondary leading-6">
-                  Join a live AI investor call that reacts, questions, and scores your performanc
-                </p>
+              {/* Selection Indicator */}
+              <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300
+                ${selectedMode === 'recorded'
+                  ? 'border-accent-lime'
+                  : 'border-surface-3'
+                }`}>
+                {selectedMode === 'recorded' && (
+                  <div className="w-3 h-3 rounded-full bg-accent-lime"></div>
+                )}
               </div>
-            </button>
+            </div>
 
-            {/* Recorded Session Card */}
-            <button
-              onClick={() => setSelectedMode('recorded')}
-              className={`flex-1 bg-surface-2 rounded-2xl p-6 flex flex-col justify-between transition-all border ${selectedMode === 'recorded'
-                ? 'border-accent-lime'
-                : 'border-border-primary'
-                }`}
-            >
-              <div className="flex items-start justify-between">
-                <div className="w-14 h-14 bg-surface-3 rounded-full flex items-center justify-center">
-                  <Mic className="w-6 h-6 text-text-secondary" />
-                </div>
-                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${selectedMode === 'recorded'
-                  ? 'border-accent-lime bg-transparent'
-                  : 'border-surface-3 bg-transparent'
-                  }`}>
-                  {selectedMode === 'recorded' && (
-                    <div className="w-3 h-3 rounded-full bg-accent-lime"></div>
-                  )}
-                </div>
-              </div>
+            {/* Content */}
+            <div className="flex flex-col gap-2 text-left flex-1">
+              <h3 className="text-2xl font-bold text-text-primary leading-tight">
+                Recorded Session
+              </h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                Record your pitch, upload it, and receive detailed investor-style feedback at your own pace.
+              </p>
+            </div>
 
-              <div className="flex flex-col gap-1.5 text-left">
-                <p className="text-base font-bold text-text-primary leading-6">
-                  Recorded Session
-                </p>
-                <p className="text-base font-medium text-text-secondary leading-6">
-                  Record your pitch, upload it, and receive detailed investor-style feedback.
-                </p>
-              </div>
-            </button>
-          </div>
+           
+          </button>
         </div>
 
         {/* Continue Button */}
-        <div className="flex justify-end">
+        <div className="flex justify-end pt-2">
           <Button
             variant="default"
             onClick={handleContinue}
-            
           >
             Continue
           </Button>

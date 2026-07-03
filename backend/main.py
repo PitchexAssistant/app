@@ -62,7 +62,7 @@ async def lifespan(app: FastAPI):
         raise
     
     yield
-    
+
     # Cleanup on shutdown
     logger.info("shutting_down_application")
 

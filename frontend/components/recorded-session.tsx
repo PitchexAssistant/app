@@ -1,9 +1,17 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Mic, Square, Paperclip } from "lucide-react"
+import { Mic, Square, Paperclip, X, Upload, Send, Loader2 } from "lucide-react"
 import Image from "next/image"
 import { LiveWaveform } from "@/components/ui/live-waveform"
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { AppSidebar } from "@/components/app-sidebar"
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
+import { useUser } from "@clerk/nextjs"
+import { useSessions } from "@/hooks/use-sessions"
 
 interface RecordedSessionProps {
   uploadedFiles: Array<{
@@ -26,6 +34,9 @@ export function RecordedSession({
   sessionId,
   userId
 }: RecordedSessionProps) {
+  const { user } = useUser()
+  const { } = useSessions() // For potential session operations
+
   const [isRecording, setIsRecording] = useState(false)
   const [hasRecording, setHasRecording] = useState(false)
   const [recordingTime, setRecordingTime] = useState(0)
@@ -39,6 +50,22 @@ export function RecordedSession({
   const [uploadedAudioFile, setUploadedAudioFile] = useState<File | null>(null)
   const [uploadedAudioURL, setUploadedAudioURL] = useState<string | null>(null)
   const [uploadError, setUploadError] = useState<string | null>(null)
+
+  // User data for sidebar
+  const sidebarUser = {
+    name: user?.fullName || 'User',
+    email: user?.primaryEmailAddress?.emailAddress || '',
+    avatar: user?.imageUrl || '',
+  }
+
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useGSAP(() => {
+    gsap.fromTo(".session-gradient",
+      { y: "-100%", opacity: 0.8 },
+      { y: "-40%", duration: 5, ease: "power2.out", delay: 0.3 }
+    );
+  }, { scope: containerRef });
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])
@@ -227,7 +254,7 @@ export function RecordedSession({
 
       // Upload and transcribe
       const formData = new FormData()
-      formData.append('file', audioToUpload, 'recording.mp3')
+      formData.append('file', audioToUpload, 'recording.webm')
 
       const transcribeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/stt/transcribe`, {
         method: 'POST',
@@ -506,198 +533,218 @@ export function RecordedSession({
 
 
   return (
-    <div className="flex-1 bg-[#171717] rounded-tl-[40px] border-l border-t border-[#2c2c33] flex flex-col min-h-screen overflow-y-auto scrollbar-hide">
-      {/* Main Content Container */}
-      <div className="flex-1 flex items-center justify-center p-8">
-        {/* Centered Card - Exact Figma Design */}
-        <div className="w-full max-w-[600px] bg-[#262626] rounded-[24px] p-[24px] flex flex-col gap-[20px]">
-          {/* Header */}
-          <div className="flex items-center justify-between">
-            <h2 className="font-['Inter'] font-bold text-[18px] text-[#f0f0f0] leading-[28px]">
-              Analysis & Feedback
-            </h2>
-          </div>
+    <SidebarProvider>
+      <div ref={containerRef} className="fixed inset-0 z-50 bg-surface-0 flex overflow-hidden">
+        <AppSidebar user={sidebarUser} onNewSession={onEndSession} />
 
-          {/* Context Info */}
-          <div className="bg-[#171717] rounded-[16px] p-[12px]">
-            <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e] leading-[24px]">
-              Join a live AI investor call that reacts, questions, and scores your performance
-            </p>
-          </div>
-
-          {/* Waveform / Status Display */}
-          <div className="flex flex-col items-center gap-[16px] py-8">
-            <LiveWaveform
-              active={isRecording}
-              barColor="#ff6b00"
-              height={60}
-              barWidth={6}
-              barGap={10}
-              fadeEdges={false}
+        <SidebarInset className="flex-1 flex items-center justify-center relative bg-surface-0 overflow-hidden">
+          {/* Gradient Background Layer */}
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            {/* Left Globe - Pink center to dark outer */}
+            <div
+              className="session-gradient absolute -bottom-[40%] -left-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+              style={{
+                background: `
+                          radial-gradient(circle at center, 
+                              rgba(205, 100, 120, 0.9) 0%, 
+                              rgba(160, 85, 110, 0.7) 25%, 
+                              rgba(110, 70, 95, 0.5) 50%, 
+                              rgba(70, 55, 75, 0.3) 75%, 
+                              transparent 100%
+                          )
+                      `,
+                transform: "translateY(100%)"
+              }}
             />
+            {/* Right Globe - Pink center to dark outer */}
+            <div
+              className="session-gradient absolute -bottom-[40%] -right-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+              style={{
+                background: `
+                          radial-gradient(circle at center, 
+                              rgba(205, 100, 120, 0.9) 0%, 
+                              rgba(160, 85, 110, 0.7) 25%, 
+                              rgba(110, 70, 95, 0.5) 50%, 
+                              rgba(70, 55, 75, 0.3) 75%,
+                              transparent 100%
+                          )
+                      `,
+                transform: "translateY(100%)"
+              }}
+            />
+          </div>
 
-            {/* Recording Status Text */}
-            {isRecording && (
-              <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e]">
-                Recording your pitch...
+          <div className="relative z-10 w-full max-w-lg px-6 flex flex-col items-center">
+            {/* Header - No background wrapper */}
+            <div className="text-center mb-12">
+              <h2 className="font-semibold text-text-primary mb-4">
+                AI-Powered Pitch Analysis
+              </h2>
+              <p className="text-text-primary text-base leading-relaxed max-w-md mx-auto">
+                Our advanced AI captures your emotions, tone, and delivery in real-time,
+                providing comprehensive feedback to help you improve.
               </p>
+            </div>
+
+            {/* Waveform - Always visible */}
+            <div className="mb-12 w-full max-w-md">
+              <LiveWaveform
+                active={isRecording}
+                barColor="#FBFF50"
+                height={60}
+                barWidth={4}
+                barGap={3}
+                barRadius={2}
+                fadeEdges={true}
+                fadeWidth={40}
+                smoothingTimeConstant={0.85}
+              />
+            </div>
+
+            {/* Recording Status */}
+            {isRecording && (
+              <div className="text-center mb-8">
+                <p className="text-4xl font-mono font-bold text-text-primary">
+                  {formatTime(recordingTime)}
+                </p>
+                <p className="text-sm text-text-secondary mt-2">Recording...</p>
+              </div>
             )}
 
+            {/* Main Record Button - Large Round Secondary */}
             {!isRecording && !hasRecording && (
-              <p className="font-['Uber_Move'] text-[16px] text-[#9e9e9e]">
-                Press to record or upload
-              </p>
+              <button
+                onClick={startRecording}
+                disabled={isProcessing}
+                className="size-28 rounded-full bg-surface-2 hover:bg-surface-3 text-white flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed mb-12 border border-gray"
+              >
+                <Mic className="size-10" />
+              </button>
             )}
 
-            {/* Recording Time Display - Only for recorded audio */}
+            {/* Stop Recording Button */}
             {isRecording && (
-              <p className="font-['Uber_Move'] text-[24px] text-[#f0f0f0] font-medium">
-                {formatTime(recordingTime)}
-              </p>
+              <Button
+                size="lg"
+                variant="destructive"
+                onClick={stopRecording}
+                className="size-28 rounded-full animate-pulse flex items-center justify-center p-0 mb-8"
+              >
+                <Square className="size-10 fill-current" />
+              </Button>
             )}
 
             {/* Uploaded Audio File Display */}
             {audioMode === 'upload' && hasRecording && uploadedAudioFile && (
-              <div className="bg-[#171717] rounded-[16px] p-[12px] flex items-center gap-[12px] w-full max-w-[300px] relative">
-                <div className="w-[40px] h-[40px] bg-[#262626] rounded-[8px] flex items-center justify-center flex-shrink-0">
-                  🎵
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-['Uber_Move'] text-[14px] text-[#f0f0f0] truncate">
-                    {uploadedAudioFile.name}
-                  </p>
-                  <p className="font-['Uber_Move'] text-[12px] text-[#9e9e9e]">
-                    {(uploadedAudioFile.size / 1024).toFixed(1)} KB
-                  </p>
+              <div className="w-full max-w-sm bg-surface-1/50 backdrop-blur-sm rounded-xl p-4 border border-surface-3 flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="size-10 rounded-full bg-accent-lime/10 flex items-center justify-center text-accent-lime">
+                    <Upload className="size-5" />
+                  </div>
+                  <div>
+                    <p className="text-text-primary font-medium text-sm truncate max-w-[180px]">
+                      {uploadedAudioFile.name}
+                    </p>
+                    <p className="text-text-tertiary text-xs">
+                      {(uploadedAudioFile.size / 1024).toFixed(1)} KB
+                    </p>
+                  </div>
                 </div>
                 <button
                   onClick={handleRemoveAudio}
-                  className="w-[24px] h-[24px] rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-colors flex-shrink-0"
+                  className="p-2 rounded-full hover:bg-surface-2 text-text-tertiary hover:text-red transition-colors"
                   title="Remove audio"
                 >
-                  <svg className="w-[12px] h-[12px] text-[#f0f0f0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                  <X className="size-4" />
                 </button>
               </div>
             )}
 
-            {/* Recorded Audio Time Display */}
+            {/* Recorded Audio Ready Display */}
             {audioMode === 'record' && hasRecording && !isRecording && (
-              <p className="font-['Uber_Move'] text-[24px] text-[#f0f0f0] font-medium">
-                {formatTime(recordingTime)}
-              </p>
-            )}
-          </div>
-
-          {/* File Display (After Recording) */}
-          {hasRecording && uploadedFiles.length > 0 && (
-            <div className="bg-[#171717] rounded-[16px] p-[12px] flex items-center gap-[12px]">
-              <div className="w-[40px] h-[40px] bg-[#262626] rounded-[8px] flex items-center justify-center">
-                📄
-              </div>
-              <div className="flex-1">
-                <p className="font-['Uber_Move'] text-[14px] text-[#f0f0f0]">
-                  {uploadedFiles[0].filename}
-                </p>
-                <p className="font-['Uber_Move'] text-[12px] text-[#9e9e9e]">
-                  {Math.round(uploadedFiles[0].file.size / 1024)} KB
-                </p>
-              </div>
-            </div>
-          )}
-
-          {/* Action Buttons */}
-          <div className="flex items-center gap-[16px]">
-            {/* Show both Record and Upload buttons initially */}
-            {!hasRecording && (
-              <>
+              <div className="w-full max-w-sm bg-surface-1/50 backdrop-blur-sm rounded-xl p-4 border border-surface-3 flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="size-10 rounded-full bg-accent-lime/10 flex items-center justify-center text-accent-lime">
+                    <Mic className="size-5" />
+                  </div>
+                  <div>
+                    <p className="text-text-primary font-medium text-sm">
+                      Recorded Session
+                    </p>
+                    <p className="text-text-secondary text-xs">
+                      {formatTime(recordingTime)}
+                    </p>
+                  </div>
+                </div>
                 <button
-                  onClick={isRecording ? stopRecording : startRecording}
-                  disabled={isProcessing}
-                  className={`flex-1 h-[44px] rounded-[12px] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px] transition-colors ${isRecording
-                    ? 'bg-[#902f31] text-[#f0f0f0]'
-                    : 'bg-[#f0f0f0] text-[#262626]'
-                    }`}
+                  onClick={handleRemoveAudio}
+                  className="p-2 rounded-full hover:bg-surface-2 text-text-tertiary hover:text-red transition-colors"
+                  title="Remove audio"
                 >
-                  {isRecording ? (
+                  <X className="size-4" />
+                </button>
+              </div>
+            )}
+
+            {/* Action Buttons (Proceed) - After recording */}
+            {hasRecording && !isRecording && (
+              <div className="w-full flex justify-center items-center max-w-sm">
+                <Button
+                  size="lg"
+                  onClick={handleProceedWithPitch}
+                  disabled={isProcessing}
+                  className=" h-11 text-base rounded-xl gap-2 bg-accent-lime hover:bg-accent-lime/90 text-surface-0 font-medium"
+                >
+                  {isProcessing ? (
                     <>
-                      <Square className="w-[20px] h-[20px] fill-current" />
-                      Stop
+                      <Loader2 className="h-6 w-6 animate-spin" />
+                      Processing...
                     </>
                   ) : (
                     <>
-                      <Mic className="w-[20px] h-[20px]" />
-                      Record
+                      <Send className="h-6 w-6" />
+                      Proceed with Pitch
                     </>
                   )}
-                </button>
-
-                {/* Upload Button */}
-                {!isRecording && (
-                  <button
-                    onClick={() => document.getElementById('audio-upload-input')?.click()}
-                    disabled={isProcessing}
-                    className="w-[44px] h-[44px] rounded-[12px] bg-[#ff6b00] flex items-center justify-center hover:bg-[#ff8c00] transition-colors"
-                    title="Upload audio file"
-                  >
-                    <Paperclip className="w-[20px] h-[20px] text-[#f0f0f0] rotate-45" />
-                  </button>
-                )}
-
-                <input
-                  id="audio-upload-input"
-                  type="file"
-                  accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
-                  onChange={handleAudioFileSelect}
-                  className="hidden"
-                />
-              </>
+                </Button>
+              </div>
             )}
 
-            {/* Re-record Button (After Recording/Upload) */}
-            {hasRecording && (
-              <button
-                onClick={handleRemoveAudio}
-                disabled={isProcessing}
-                className="flex-1 h-[44px] rounded-[12px] bg-[#f0f0f0] text-[#262626] flex items-center justify-center gap-[8px] font-['Uber_Move'] font-medium text-[16px]"
-              >
-                <Mic className="w-[20px] h-[20px]" />
-                Re-record
-              </button>
+            {/* Bottom Buttons - Upload and Cancel */}
+            {!isRecording && !hasRecording && (
+              <div className="flex items-center gap-4 w-full max-w-sm">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="flex-1 h-11 rounded-lg bg-surface-2 backdrop-blur-sm border-surface-3 text-text-secondary hover:text-text-primary hover:bg-surface-2 gap-2"
+                  onClick={() => document.getElementById('audio-upload-input')?.click()}
+                  disabled={isProcessing}
+                >
+                  <Upload className="size-4" />
+                  Upload
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="lg"
+                  className="flex-1 h-11 rounded-lg gap-2"
+                  onClick={handleEndSession}
+                >
+                  <X className="size-4" />
+                  End Session
+                </Button>
+              </div>
             )}
+
+            <input
+              id="audio-upload-input"
+              type="file"
+              accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
+              onChange={handleAudioFileSelect}
+              className="hidden"
+            />
           </div>
-
-          {/* Processing Indicator */}
-          {isProcessing && (
-            <div className="bg-[#171717] rounded-[16px] p-[12px] text-center">
-              <p className="font-['Uber_Move'] text-[14px] text-[#ff6b00] animate-pulse">
-                Processing your pitch...
-              </p>
-            </div>
-          )}
-
-          {/* Proceed with Pitch Button (shows after recording) */}
-          {hasRecording && (
-            <button
-              onClick={handleProceedWithPitch}
-              disabled={isProcessing}
-              className="w-full h-[44px] rounded-[12px] bg-[#ff6b00] text-[#f0f0f0] font-['Uber_Move'] font-bold text-[16px] disabled:opacity-50 hover:bg-[#ff8c00] transition-colors"
-            >
-              {isProcessing ? 'Processing...' : 'Proceed with recorded pitch'}
-            </button>
-          )}
-
-          {/* End Session Button (always visible) */}
-          <button
-            onClick={handleEndSession}
-            disabled={isProcessing}
-            className="w-full h-[44px] rounded-[12px] bg-[#404040] text-[#f0f0f0] font-['Uber_Move'] font-medium text-[16px] disabled:opacity-50 hover:bg-[#505050] transition-colors"
-          >
-            Cancel Session
-          </button>
-        </div>
+        </SidebarInset>
       </div>
-    </div>
+    </SidebarProvider>
   )
 }

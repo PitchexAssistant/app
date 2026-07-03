@@ -138,9 +138,8 @@ export function useDashboardState(): UseDashboardStateReturn {
     }, [setCurrentSession]);
 
     const handleSignOut = useCallback(async () => {
-        await signOut();
-        router.push("/");
-    }, [signOut, router]);
+        await signOut({ redirectUrl: "/" });
+    }, [signOut]);
 
     const handleStartPitching = useCallback(() => {
         setShowUploadModal(true);

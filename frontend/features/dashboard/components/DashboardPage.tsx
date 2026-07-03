@@ -47,6 +47,8 @@ export function DashboardPage() {
                         <ResultsPage
                             transcript={state.resultsData.transcript}
                             analysis={state.resultsData.analysis}
+                            onBack={actions.handleBackToSessions}
+                            onPracticeAgain={actions.handleNewSession}
                         />
                     );
                 }

@@ -12,6 +12,9 @@ import { LiveWaveform } from '@/components/ui/live-waveform';
 import { Mic, Square, Loader2, Send, ArrowLeft, X, Radio, Upload, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -60,6 +63,14 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
   const [uploadError, setUploadError] = useState<string | null>(null);
 
   const { createSession, updateSession, completeSession, currentSession, setCurrentSession } = useSessions();
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.fromTo(".session-gradient",
+      { y: "-100%", opacity: 0.8 },
+      { y: "-40%", duration: 5, ease: "power2.out", delay: 0.5 }
+    );
+  }, { scope: containerRef });
 
   // Set the session if passed from parent and load its data
   useEffect(() => {
@@ -480,105 +491,218 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-5xl">
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {onBack && (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={onBack}
-                className="text-white hover:bg-gray-800"
-              >
-                <ArrowLeft className="h-5 w-5" />
-              </Button>
-            )}
-            <div>
-              <h1 className="text-3xl font-bold text-white">
-                {currentSession?.title || 'AI Pitch Practice'}
-              </h1>
-              <p className="text-gray-400 mt-1">
-                {pitchMode === 'live'
-                  ? 'Live pitch coaching with Marcus Sterling AI'
-                  : 'Practice your pitch with real-time emotion analysis and AI feedback'}
-              </p>
-            </div>
-          </div>
-        </div>
+    <div ref={containerRef} className="relative w-full h-[calc(100vh-64px)] bg-surface-0 flex items-center justify-center overflow-hidden">
+      {/* Gradient Background Layer */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Left Globe */}
+        <div
+          className="session-gradient absolute -bottom-[40%] -left-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+          style={{
+            background: `
+                        radial-gradient(circle at center, 
+                            rgba(64, 83, 214, 0.85) 0%, 
+                            rgba(45, 140, 255, 0.55) 25%, 
+                            rgba(88, 28, 135, 0.35) 50%, 
+                            rgba(128, 0, 255, 0.25) 75%, 
+                            transparent 100%
+                        )
+                    `,
+            transform: "translateY(100%)"
+          }}
+        />
+        {/* Right Globe */}
+        <div
+          className="session-gradient absolute -bottom-[40%] -right-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+          style={{
+            background: `
+                        radial-gradient(circle at center, 
+                            rgba(64, 83, 214, 0.85) 0%, 
+                            rgba(45, 140, 255, 0.55) 25%, 
+                            rgba(88, 28, 135, 0.35) 50%, 
+                            rgba(128, 0, 255, 0.25) 75%,
+                            transparent 100%
+                        )
+                    `,
+            transform: "translateY(100%)"
+          }}
+        />
+      </div>
 
-
+      <div className="relative z-10 w-full max-w-2xl px-6">
 
         {/* Document Preview - Show for all modes except select */}
         {pitchMode !== 'select' && uploadedFiles && uploadedFiles.length > 0 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>Uploaded Documents</CardTitle>
-              <CardDescription>Preview the documents you uploaded for this session</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3 flex-wrap">
-                  {uploadedFiles.map((f, i) => (
-                    <div
-                      key={i}
-                      className="relative"
-                      onMouseEnter={() => setHoveredFileIndex(i)}
-                      onMouseLeave={() => setHoveredFileIndex(null)}
-                    >
-                      <button
-                        onClick={() => setSelectedFileIndex(i)}
-                        className={`px-3 py-2 pr-8 rounded-lg border ${i === selectedFileIndex ? 'border-green-500 bg-green-500/10' : 'border-zinc-800'} text-sm text-white transition-all`}
-                      >
-                        {f.filename}
-                      </button>
-                      {hoveredFileIndex === i && (
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            if (onDeleteFile) {
-                              onDeleteFile(i);
-                            }
-                          }}
-                          className="absolute right-1 top-1/2 -translate-y-1/2 p-1 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
-                          title="Delete file"
-                        >
-                          <X className="h-3 w-3 text-white" />
-                        </button>
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="w-full h-96 bg-black/80 rounded-md overflow-hidden">
-                  {uploadedFiles[selectedFileIndex]?.local_url ? (
-                    <iframe
-                      title={uploadedFiles[selectedFileIndex].filename}
-                      src={uploadedFiles[selectedFileIndex].local_url}
-                      className="w-full h-full"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-sm text-zinc-400">
-                      No preview available
-                    </div>
-                  )}
-                </div>
+          <div className="mb-6 flex gap-2 justify-center">
+            {uploadedFiles.map((f, i) => (
+              <div key={i} className="px-3 py-1 bg-surface-1/50 backdrop-blur-md rounded-full border border-surface-3 text-xs text-text-secondary flex items-center gap-2">
+                <span>{f.filename}</span>
+                <button onClick={() => onDeleteFile?.(i)} className="hover:text-text-primary"><X className="size-3" /></button>
               </div>
-            </CardContent>
-          </Card>
+            ))}
+          </div>
         )}
 
-        {error && (
-          <Card className="border-destructive bg-destructive/10">
-            <CardContent className="pt-6">
-              <p className="text-destructive text-sm">{error}</p>
-            </CardContent>
-          </Card>
-        )}
+        {/* Record Mode - Now supports both recording and uploading */}
+        {pitchMode === 'record' || pitchMode === 'select' ? (
+          <div className="bg-surface-1/80 backdrop-blur-xl border border-border-gray rounded-3xl p-8 shadow-2xl">
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold text-text-primary mb-2">Analysis & Feedback</h2>
+              <div className="p-4 bg-surface-2/50 rounded-xl border border-surface-3">
+                <p className="text-text-secondary text-sm">
+                  Join a live AI investor call that reacts, questions, and scores your performance
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              {/* Show errors */}
+              {(error || uploadError) && (
+                <div className="p-3 bg-red/10 border border-red/20 rounded-lg text-red text-sm text-center">
+                  {error || uploadError}
+                </div>
+              )}
+
+              {/* Initial State - Show both record and upload options */}
+              {audioMode === 'none' && !isRecording && (
+                <div className="space-y-8">
+                  {/* Divider */}
+                  <div className="relative h-px bg-surface-3"></div>
+
+                  <p className="text-center text-text-secondary text-sm">
+                    Press to record or upload
+                  </p>
+
+                  <div className="flex items-center gap-3">
+                    <Button
+                      size="lg"
+                      onClick={handleStartRecording}
+                      disabled={isProcessing}
+                      className="flex-1 bg-[#F5F5F7] hover:bg-[#E1E1E3] text-black h-12 rounded-xl text-base font-medium shadow-none border-0"
+                    >
+                      <Mic className="h-5 w-5 mr-2" />
+                      Record
+                    </Button>
+                    <Button
+                      size="lg"
+                      className="h-12 w-14 rounded-xl bg-[#FF4F18] hover:bg-[#E04515] text-white shadow-none border-0 p-0 flex items-center justify-center"
+                      onClick={() => document.getElementById('audio-upload-input')?.click()}
+                      disabled={isProcessing}
+                    >
+                      <Upload className="h-5 w-5" />
+                    </Button>
+                  </div>
+
+                  <Button
+                    variant="outline"
+                    className="w-full h-12 rounded-xl bg-surface-2 border-transparent text-text-secondary hover:text-text-primary hover:bg-surface-3"
+                    onClick={onBack}
+                  >
+                    Cancel Session
+                  </Button>
+
+                  <input
+                    id="audio-upload-input"
+                    type="file"
+                    accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
+                    onChange={handleAudioFileSelect}
+                    className="hidden"
+                  />
+                </div>
+              )}
+
+              {/* Recording State */}
+              {audioMode === 'record' && isRecording && (
+                <div className="space-y-8 py-4">
+                  <div className="text-center space-y-4">
+                    <LiveWaveform
+                      active={isRecording}
+                      barColor="#FBFF50"
+                      height={60}
+                      barWidth={6}
+                      barGap={10}
+                    />
+                    <p className="text-4xl font-mono font-bold text-text-primary">
+                      {formatTime(recordingTime)}
+                    </p>
+                    <p className="text-sm text-text-secondary">Recording...</p>
+                  </div>
+                  <div className="flex justify-center">
+                    <Button
+                      size="lg"
+                      variant="destructive"
+                      onClick={handleStopRecording}
+                      className="h-20 w-20 rounded-full animate-pulse flex items-center justify-center p-0"
+                    >
+                      <Square className="h-8 w-8 fill-current" />
+                    </Button>
+                  </div>
+                </div>
+              )}
+
+              {/* Audio Ready State (Recorded or Uploaded) */}
+              {audioMode !== 'none' && !isRecording && (audioBlob || uploadedAudioFile) && (
+                <div className="space-y-6">
+                  <div className="bg-surface-0 rounded-xl p-4 border border-surface-3">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <div className="size-10 rounded-full bg-accent-lime/10 flex items-center justify-center text-accent-lime">
+                          {audioMode === 'record' ? <Mic className="size-5" /> : <Upload className="size-5" />}
+                        </div>
+                        <div>
+                          <p className="text-text-primary font-medium text-sm">
+                            {audioMode === 'record' ? 'Recorded Session' : uploadedAudioFile?.name}
+                          </p>
+                          <p className="text-text-tertiary text-xs">
+                            {audioMode === 'record' ? formatTime(recordingTime) : 'Ready to analyze'}
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={handleRemoveAudio}
+                        className="p-2 rounded-full hover:bg-surface-2 text-text-tertiary hover:text-red transition-colors"
+                      >
+                        <X className="size-4" />
+                      </button>
+                    </div>
+
+                    <audio
+                      src={audioMode === 'record' && audioBlob
+                        ? URL.createObjectURL(audioBlob)
+                        : uploadedAudioURL || undefined
+                      }
+                      controls
+                      className="w-full h-8"
+                    />
+                  </div>
+
+                  <Button
+                    size="lg"
+                    onClick={audioMode === 'record' ? handleSendRecording : handleProceedWithUpload}
+                    disabled={isProcessing}
+                    className="w-full h-12 text-base rounded-xl gap-2 bg-accent-lime hover:bg-accent-lime/90 text-surface-0 font-semibold"
+                  >
+                    {isProcessing ? (
+                      <>
+                        <Loader2 className="h-5 w-5 animate-spin" />
+                        Analyzing Pitch...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-5 w-5" />
+                        Generate Analysis
+                      </>
+                    )}
+                  </Button>
+                </div>
+              )}
+            </div>
+          </div>
+        ) : null}
+
 
         {/* Live Session Mode - Interactive Pitch Coaching */}
         {pitchMode === 'live' && (
-          <div className="fixed inset-0 z-50 bg-[#171717]">
+          <div className="fixed inset-0 z-50 bg-surface-0">
             <InteractivePitchSession
               sessionId={currentSession?.id || sessionId}
               onEndSession={handleEndSession}
@@ -588,418 +712,7 @@ export function PitchPractice({ onBack, onComplete, uploadedFiles = [], onDelete
           </div>
         )}
 
-
-
-        {/* Record Mode - Now supports both recording and uploading */}
-        {pitchMode === 'record' && (
-          <>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span>Analysis & Feedback</span>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      handleRemoveAudio();
-                      setPitchMode('select');
-                    }}
-                  >
-                    Change Mode
-                  </Button>
-                </CardTitle>
-                <CardDescription>
-                  Record your pitch or upload an audio file for AI analysis and coaching feedback
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {/* Show errors */}
-                {(error || uploadError) && (
-                  <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-lg text-red-500 text-sm">
-                    {error || uploadError}
-                  </div>
-                )}
-
-                {/* Initial State - Show both record and upload options */}
-                {audioMode === 'none' && !isRecording && (
-                  <div className="space-y-4">
-                    <p className="text-center text-muted-foreground">
-                      Press to record or upload
-                    </p>
-                    <div className="flex items-center justify-center gap-4">
-                      <Button
-                        size="lg"
-                        onClick={handleStartRecording}
-                        disabled={isProcessing}
-                        className="gap-2"
-                      >
-                        <Mic className="h-5 w-5" />
-                        Record
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        onClick={() => document.getElementById('audio-upload-input')?.click()}
-                        disabled={isProcessing}
-                        className="gap-2"
-                      >
-                        <Upload className="h-5 w-5" />
-                        Upload Audio
-                      </Button>
-                    </div>
-                    <input
-                      id="audio-upload-input"
-                      type="file"
-                      accept=".mp3,.wav,audio/mpeg,audio/wav,audio/wave,audio/x-wav"
-                      onChange={handleAudioFileSelect}
-                      className="hidden"
-                    />
-                  </div>
-                )}
-
-                {/* Recording State */}
-                {audioMode === 'record' && isRecording && (
-                  <div className="space-y-4">
-                    <div className="text-center space-y-4">
-                      <LiveWaveform
-                        active={isRecording}
-                        barColor="#ff6b00"
-                        height={60}
-                        barWidth={6}
-                        barGap={10}
-                      />
-                      <p className="text-2xl font-mono font-bold text-primary">
-                        {formatTime(recordingTime)}
-                      </p>
-                      <p className="text-sm text-muted-foreground">Recording...</p>
-                    </div>
-                    <div className="flex justify-center">
-                      <Button
-                        size="lg"
-                        variant="destructive"
-                        onClick={handleStopRecording}
-                        className="h-16 w-16 rounded-full animate-pulse"
-                      >
-                        <Square className="h-6 w-6" />
-                      </Button>
-                    </div>
-                  </div>
-                )}
-
-                {/* Audio Ready State (Recorded or Uploaded) */}
-                {audioMode !== 'none' && !isRecording && (audioBlob || uploadedAudioFile) && (
-                  <div className="space-y-4">
-                    <div className="text-center space-y-3">
-                      <div className="flex items-center justify-center gap-2">
-                        <p className="text-sm text-muted-foreground">
-                          {audioMode === 'record'
-                            ? `Recording ready • ${formatTime(recordingTime)}`
-                            : `Audio uploaded: ${uploadedAudioFile?.name}`
-                          }
-                        </p>
-                        <button
-                          onClick={handleRemoveAudio}
-                          className="p-1.5 rounded-full bg-red-500/80 hover:bg-red-600 transition-colors"
-                          title="Remove audio"
-                        >
-                          <X className="h-3.5 w-3.5 text-white" />
-                        </button>
-                      </div>
-                      <audio
-                        src={audioMode === 'record' && audioBlob
-                          ? URL.createObjectURL(audioBlob)
-                          : uploadedAudioURL || undefined
-                        }
-                        controls
-                        className="mx-auto w-full max-w-md"
-                      />
-                    </div>
-
-                    {/* Proceed and End Session buttons */}
-                    <div className="flex gap-3 justify-center pt-2">
-                      <Button
-                        size="lg"
-                        onClick={audioMode === 'record' ? handleSendRecording : handleProceedWithUpload}
-                        disabled={isProcessing}
-                        className="gap-2"
-                      >
-                        {isProcessing ? (
-                          <>
-                            <Loader2 className="h-4 w-4 animate-spin" />
-                            Processing...
-                          </>
-                        ) : (
-                          <>
-                            <Send className="h-4 w-4" />
-                            Proceed
-                          </>
-                        )}
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        onClick={handleEndSession}
-                        disabled={isProcessing}
-                      >
-                        End Session
-                      </Button>
-                    </div>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-
-            {currentEmotion && (
-              <Card>
-                <CardHeader>
-                  <CardTitle>Latest Emotion Analysis</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <EmotionIndicator emotion={currentEmotion} />
-                  <EmotionBreakdown emotion={currentEmotion} />
-
-                  {currentEmotion.metrics && (
-                    <div className="grid grid-cols-3 gap-4 pt-4 border-t">
-                      <div>
-                        <p className="text-sm text-muted-foreground">Nervousness</p>
-                        <p className="text-lg font-semibold">
-                          {Math.round(currentEmotion.metrics.nervousness_score * 100)}%
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">Enthusiasm</p>
-                        <p className="text-lg font-semibold capitalize">
-                          {currentEmotion.metrics.enthusiasm_level}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">Confidence</p>
-                        <p className="text-lg font-semibold capitalize">
-                          {currentEmotion.metrics.confidence_indicator}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            )}
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Conversation</CardTitle>
-                <CardDescription>Your pitch and AI coach feedback</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 max-h-[500px] overflow-y-auto">
-                  {messages.length === 0 ? (
-                    <p className="text-center text-muted-foreground py-8">
-                      No messages yet. Start by recording your pitch!
-                    </p>
-                  ) : (
-                    messages.map((message, index) => (
-                      <div
-                        key={index}
-                        className={cn(
-                          "flex gap-3",
-                          message.role === 'user' ? 'justify-end' : 'justify-start'
-                        )}
-                      >
-                        <div
-                          className={cn(
-                            "max-w-[80%] rounded-lg px-4 py-3",
-                            message.role === 'user'
-                              ? 'bg-primary text-primary-foreground'
-                              : 'bg-muted'
-                          )}
-                        >
-                          <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                          {message.emotion && (
-                            <div className="mt-2 pt-2 border-t border-primary-foreground/20">
-                              <EmotionIndicator emotion={message.emotion} />
-                            </div>
-                          )}
-                          <p className="text-xs opacity-70 mt-2">
-                            {message.timestamp.toLocaleTimeString()}
-                          </p>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </>
-        )}
-
-        {/* Upload Mode */}
-        {pitchMode === 'upload' && (
-          <>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span>Upload Audio File</span>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      setUploadedAudioFile(null);
-                      setUploadError(null);
-                      setPitchMode('select');
-                    }}
-                  >
-                    Change Mode
-                  </Button>
-                </CardTitle>
-                <CardDescription>
-                  Upload a pre-recorded pitch (MP3 or WAV only) for analysis and coaching feedback.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {/* File Upload Section */}
-                <div className="flex flex-col items-center justify-center gap-4 p-8 border-2 border-dashed border-zinc-700 rounded-lg hover:border-purple-500 transition-colors">
-                  <Upload className="h-12 w-12 text-zinc-400" />
-                  <div className="text-center">
-                    <p className="text-sm text-zinc-300 mb-2">
-                      {uploadedAudioFile ? uploadedAudioFile.name : 'No file selected'}
-                    </p>
-                    <p className="text-xs text-zinc-500 mb-4">
-                      Supported formats: MP3, WAV (Max size: 10MB)
-                    </p>
-                    <label htmlFor="audio-file-input">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        disabled={isUploadingAudio}
-                        onClick={() => document.getElementById('audio-file-input')?.click()}
-                      >
-                        Choose Audio File
-                      </Button>
-                    </label>
-                    <input
-                      id="audio-file-input"
-                      type="file"
-                      accept=".mp3,.wav,audio/mpeg,audio/wav"
-                      onChange={handleAudioFileSelect}
-                      className="hidden"
-                    />
-                  </div>
-                </div>
-
-                {/* Error Display */}
-                {uploadError && (
-                  <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20">
-                    <p className="text-sm text-red-400">{uploadError}</p>
-                  </div>
-                )}
-
-                {/* Process Button */}
-                {uploadedAudioFile && !uploadError && (
-                  <Button
-                    onClick={handleProcessUploadedAudio}
-                    disabled={isUploadingAudio}
-                    className="w-full gap-2"
-                    size="lg"
-                  >
-                    {isUploadingAudio ? (
-                      <>
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                        Processing Audio...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="h-4 w-4" />
-                        Analyze Audio
-                      </>
-                    )}
-                  </Button>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* Emotion Analysis Card - Show if available */}
-            {currentEmotion && (
-              <Card>
-                <CardHeader>
-                  <CardTitle>Emotion Analysis</CardTitle>
-                  <CardDescription>Real-time emotion detected from your pitch</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <EmotionIndicator emotion={currentEmotion} />
-                  <EmotionBreakdown emotion={currentEmotion} />
-
-                  {currentEmotion.metrics && (
-                    <div className="grid grid-cols-3 gap-4 pt-4 border-t">
-                      <div>
-                        <p className="text-sm text-muted-foreground">Nervousness</p>
-                        <p className="text-lg font-semibold">
-                          {Math.round(currentEmotion.metrics.nervousness_score * 100)}%
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">Enthusiasm</p>
-                        <p className="text-lg font-semibold capitalize">
-                          {currentEmotion.metrics.enthusiasm_level}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">Confidence</p>
-                        <p className="text-lg font-semibold capitalize">
-                          {currentEmotion.metrics.confidence_indicator}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Conversation Card */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Analysis & Feedback</CardTitle>
-                <CardDescription>AI coach analysis of your uploaded pitch</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 max-h-[500px] overflow-y-auto">
-                  {messages.length === 0 ? (
-                    <p className="text-center text-muted-foreground py-8">
-                      Upload an audio file to receive analysis and feedback.
-                    </p>
-                  ) : (
-                    messages.map((message, index) => (
-                      <div
-                        key={index}
-                        className={cn(
-                          "flex gap-3",
-                          message.role === 'user' ? 'justify-end' : 'justify-start'
-                        )}
-                      >
-                        <div
-                          className={cn(
-                            "max-w-[80%] rounded-lg px-4 py-3",
-                            message.role === 'user'
-                              ? 'bg-primary text-primary-foreground'
-                              : 'bg-muted'
-                          )}
-                        >
-                          <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                          {message.emotion && (
-                            <div className="mt-2 pt-2 border-t border-primary-foreground/20">
-                              <EmotionIndicator emotion={message.emotion} />
-                            </div>
-                          )}
-                          <p className="text-xs opacity-70 mt-2">
-                            {message.timestamp.toLocaleTimeString()}
-                          </p>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </>
-        )}
+        {/* Upload Mode UI logic is handled above in the consolidated card */}
       </div>
     </div>
   );

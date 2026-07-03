@@ -51,10 +51,22 @@ class Settings(BaseSettings):
     DEEPGRAM_API_KEY: str = ""
 
     # Additional LLM API Keys (OpenRouter)
-    REASONING_LLM_API_KEY: str = ""
-    EMOTION_DETECTION_LLM_API_KEY: str = ""
-    BACKUP_1_API_KEY: str = ""
-    BACKUP_2_API_KEY: str = ""
+    # These are mapped from the main OPENROUTER keys for backward compatibility
+    @property
+    def REASONING_LLM_API_KEY(self) -> str:
+        return self.OPENROUTER_API_KEY
+
+    @property
+    def EMOTION_DETECTION_LLM_API_KEY(self) -> str:
+        return self.OPENROUTER_API_KEY
+
+    @property
+    def BACKUP_1_API_KEY(self) -> str:
+        return self.OPENROUTER_LIVE_BACKUP_1
+
+    @property
+    def BACKUP_2_API_KEY(self) -> str:
+        return self.OPENROUTER_LIVE_BACKUP_2
     
     # OpenRouter Models (for recorded sessions)
     # Using models WITHOUT privacy policy issues (no 404 errors)
@@ -68,6 +80,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
+        extra = "ignore"
 
 
 @lru_cache()

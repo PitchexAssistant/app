@@ -2601,3 +2601,905 @@
 2026-01-17 05:03:40 [SUCCESS] Application startup complete!
 2026-01-17 05:03:40 [INFO] Press Ctrl+C to exit (services will continue running)
 2026-01-17 05:03:40 [INFO] Use ./stop-app.sh to stop all services
+2026-01-18 02:21:35 [SECTION] Pitchex Application Startup
+2026-01-18 02:21:35 [SECTION] Setting Up Directories
+2026-01-18 02:21:35 [SUCCESS] Created PID directory: /Users/ibrahimnadeem/Documents/code/Pitchex/app/.pids
+2026-01-18 02:21:35 [SECTION] Checking Dependencies
+2026-01-18 02:21:35 [SUCCESS] Python3: Python 3.9.6
+2026-01-18 02:21:35 [SUCCESS] Node.js: v24.11.0
+2026-01-18 02:21:35 [SUCCESS] npm: 11.6.1
+2026-01-18 02:21:35 [SUCCESS] curl: Available
+2026-01-18 02:21:35 [SUCCESS] All dependencies satisfied
+2026-01-18 02:21:35 [SECTION] Checking Port Availability
+2026-01-18 02:21:35 [SUCCESS] Port 8000 (Backend) is available
+2026-01-18 02:21:35 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-18 02:21:35 [SECTION] Starting Backend (FastAPI)
+2026-01-18 02:21:35 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-18 02:21:35 [INFO] Starting FastAPI server on port 8000...
+2026-01-18 02:21:35 [SUCCESS] Backend started (PID: 537)
+2026-01-18 02:21:35 [INFO] Backend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/backend.log
+2026-01-18 02:21:35 [INFO] Waiting for backend to become healthy...
+2026-01-18 02:21:57 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-18 02:21:57 [SECTION] Starting Frontend (Next.js)
+2026-01-18 02:21:57 [INFO] Starting Next.js server on port 3001...
+2026-01-18 02:21:57 [SUCCESS] Frontend started (PID: 637)
+2026-01-18 02:21:57 [INFO] Frontend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/frontend.log
+2026-01-18 02:21:57 [INFO] Waiting for frontend to become healthy...
+2026-01-18 02:22:05 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-18 02:22:05 [SECTION] Starting Health Monitor
+2026-01-18 02:22:05 [SUCCESS] Health monitor started (PID: 699)
+2026-01-18 02:22:05 [INFO] Health checks every 30 seconds
+2026-01-18 02:22:05 [INFO] Health logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/health.log
+2026-01-18 02:22:05 [SECTION] Application Status
+2026-01-18 02:22:05 [SUCCESS] Application startup complete!
+2026-01-18 02:22:05 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-18 02:22:05 [INFO] Use ./stop-app.sh to stop all services
+2026-01-18 04:29:55 [SECTION] Pitchex Application Startup
+2026-01-18 04:29:55 [SECTION] Setting Up Directories
+2026-01-18 04:29:55 [SECTION] Checking Dependencies
+2026-01-18 04:29:55 [SUCCESS] Python3: Python 3.9.6
+2026-01-18 04:29:55 [SUCCESS] Node.js: v24.11.0
+2026-01-18 04:29:56 [SUCCESS] npm: 11.6.1
+2026-01-18 04:29:56 [SUCCESS] curl: Available
+2026-01-18 04:29:56 [SUCCESS] All dependencies satisfied
+2026-01-18 04:29:56 [SECTION] Checking Port Availability
+2026-01-18 04:29:56 [SUCCESS] Port 8000 (Backend) is available
+2026-01-18 04:29:56 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-18 04:29:56 [SECTION] Starting Backend (FastAPI)
+2026-01-18 04:29:56 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-18 04:29:56 [INFO] Starting FastAPI server on port 8000...
+2026-01-18 04:29:56 [SUCCESS] Backend started (PID: 12262)
+2026-01-18 04:29:56 [INFO] Backend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/backend.log
+2026-01-18 04:29:56 [INFO] Waiting for backend to become healthy...
+2026-01-18 04:30:17 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-18 04:30:17 [SECTION] Starting Frontend (Next.js)
+2026-01-18 04:30:17 [INFO] Starting Next.js server on port 3001...
+2026-01-18 04:30:17 [SUCCESS] Frontend started (PID: 12306)
+2026-01-18 04:30:17 [INFO] Frontend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/frontend.log
+2026-01-18 04:30:17 [INFO] Waiting for frontend to become healthy...
+2026-01-18 04:30:23 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-18 04:30:23 [SECTION] Starting Health Monitor
+2026-01-18 04:30:23 [SUCCESS] Health monitor started (PID: 12375)
+2026-01-18 04:30:23 [INFO] Health checks every 30 seconds
+2026-01-18 04:30:23 [INFO] Health logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/health.log
+2026-01-18 04:30:23 [SECTION] Application Status
+2026-01-18 04:30:23 [SUCCESS] Application startup complete!
+2026-01-18 04:30:23 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-18 04:30:23 [INFO] Use ./stop-app.sh to stop all services
+2026-01-18 21:59:19 [SECTION] Pitchex Application Startup
+2026-01-18 21:59:19 [SECTION] Setting Up Directories
+2026-01-18 21:59:19 [SECTION] Checking Dependencies
+2026-01-18 21:59:19 [SUCCESS] Python3: Python 3.9.6
+2026-01-18 21:59:19 [SUCCESS] Node.js: v24.11.0
+2026-01-18 21:59:19 [SUCCESS] npm: 11.6.1
+2026-01-18 21:59:19 [SUCCESS] curl: Available
+2026-01-18 21:59:19 [SUCCESS] All dependencies satisfied
+2026-01-18 21:59:19 [SECTION] Checking Port Availability
+2026-01-18 21:59:19 [SUCCESS] Port 8000 (Backend) is available
+2026-01-18 21:59:19 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-18 21:59:19 [SECTION] Starting Backend (FastAPI)
+2026-01-18 21:59:19 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-18 21:59:19 [INFO] Starting FastAPI server on port 8000...
+2026-01-18 21:59:19 [SUCCESS] Backend started (PID: 29280)
+2026-01-18 21:59:19 [INFO] Backend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/backend.log
+2026-01-18 21:59:19 [INFO] Waiting for backend to become healthy...
+2026-01-18 21:59:41 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-18 21:59:41 [SECTION] Starting Frontend (Next.js)
+2026-01-18 21:59:41 [INFO] Starting Next.js server on port 3001...
+2026-01-18 21:59:41 [SUCCESS] Frontend started (PID: 29339)
+2026-01-18 21:59:41 [INFO] Frontend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/frontend.log
+2026-01-18 21:59:41 [INFO] Waiting for frontend to become healthy...
+2026-01-18 21:59:47 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-18 21:59:47 [SECTION] Starting Health Monitor
+2026-01-18 21:59:47 [SUCCESS] Health monitor started (PID: 29388)
+2026-01-18 21:59:47 [INFO] Health checks every 30 seconds
+2026-01-18 21:59:47 [INFO] Health logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/health.log
+2026-01-18 21:59:47 [SECTION] Application Status
+2026-01-18 21:59:47 [SUCCESS] Application startup complete!
+2026-01-18 21:59:47 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-18 21:59:47 [INFO] Use ./stop-app.sh to stop all services
+2026-01-18 23:35:06 [SECTION] Pitchex Application Startup
+2026-01-18 23:35:06 [SECTION] Setting Up Directories
+2026-01-18 23:35:06 [SECTION] Checking Dependencies
+2026-01-18 23:35:06 [SUCCESS] Python3: Python 3.9.6
+2026-01-18 23:35:06 [SUCCESS] Node.js: v24.11.0
+2026-01-18 23:35:06 [SUCCESS] npm: 11.6.1
+2026-01-18 23:35:06 [SUCCESS] curl: Available
+2026-01-18 23:35:06 [SUCCESS] All dependencies satisfied
+2026-01-18 23:35:06 [SECTION] Checking Port Availability
+2026-01-18 23:35:06 [SUCCESS] Port 8000 (Backend) is available
+2026-01-18 23:35:06 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-18 23:35:06 [SECTION] Starting Backend (FastAPI)
+2026-01-18 23:35:06 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-18 23:35:06 [INFO] Starting FastAPI server on port 8000...
+2026-01-18 23:35:06 [SUCCESS] Backend started (PID: 39974)
+2026-01-18 23:35:06 [INFO] Backend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/backend.log
+2026-01-18 23:35:06 [INFO] Waiting for backend to become healthy...
+2026-01-18 23:35:28 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-18 23:35:28 [SECTION] Starting Frontend (Next.js)
+2026-01-18 23:35:28 [INFO] Starting Next.js server on port 3001...
+2026-01-18 23:35:28 [SUCCESS] Frontend started (PID: 40042)
+2026-01-18 23:35:28 [INFO] Frontend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/frontend.log
+2026-01-18 23:35:28 [INFO] Waiting for frontend to become healthy...
+2026-01-18 23:35:35 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-18 23:35:35 [SECTION] Starting Health Monitor
+2026-01-18 23:35:35 [SUCCESS] Health monitor started (PID: 40099)
+2026-01-18 23:35:35 [INFO] Health checks every 30 seconds
+2026-01-18 23:35:35 [INFO] Health logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/health.log
+2026-01-18 23:35:35 [SECTION] Application Status
+2026-01-18 23:35:35 [SUCCESS] Application startup complete!
+2026-01-18 23:35:35 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-18 23:35:35 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 00:14:12 [SECTION] Pitchex Application Startup
+2026-01-19 00:14:12 [SECTION] Setting Up Directories
+2026-01-19 00:14:12 [SECTION] Checking Dependencies
+2026-01-19 00:14:12 [SUCCESS] Python3: Python 3.9.6
+2026-01-19 00:14:12 [SUCCESS] Node.js: v24.11.0
+2026-01-19 00:14:12 [SUCCESS] npm: 11.6.1
+2026-01-19 00:14:12 [SUCCESS] curl: Available
+2026-01-19 00:14:12 [SUCCESS] All dependencies satisfied
+2026-01-19 00:14:12 [SECTION] Checking Port Availability
+2026-01-19 00:14:12 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 00:14:12 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 00:14:12 [SECTION] Starting Backend (FastAPI)
+2026-01-19 00:14:12 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 00:14:12 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 00:14:12 [SUCCESS] Backend started (PID: 44652)
+2026-01-19 00:14:12 [INFO] Backend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/backend.log
+2026-01-19 00:14:12 [INFO] Waiting for backend to become healthy...
+2026-01-19 00:14:34 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 00:14:34 [SECTION] Starting Frontend (Next.js)
+2026-01-19 00:14:34 [INFO] Starting Next.js server on port 3001...
+2026-01-19 00:14:34 [SUCCESS] Frontend started (PID: 44701)
+2026-01-19 00:14:34 [INFO] Frontend logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/frontend.log
+2026-01-19 00:14:34 [INFO] Waiting for frontend to become healthy...
+2026-01-19 00:14:41 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 00:14:41 [SECTION] Starting Health Monitor
+2026-01-19 00:14:41 [SUCCESS] Health monitor started (PID: 44753)
+2026-01-19 00:14:41 [INFO] Health checks every 30 seconds
+2026-01-19 00:14:41 [INFO] Health logs: /Users/ibrahimnadeem/Documents/code/Pitchex/app/logs/health.log
+2026-01-19 00:14:41 [SECTION] Application Status
+2026-01-19 00:14:41 [SUCCESS] Application startup complete!
+2026-01-19 00:14:41 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 00:14:41 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 02:41:28 [SECTION] Pitchex Application Startup
+2026-01-19 02:41:28 [SECTION] Setting Up Directories
+2026-01-19 02:41:28 [SECTION] Checking Dependencies
+2026-01-19 02:41:28 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 02:41:28 [SUCCESS] Node.js: v20.20.0
+2026-01-19 02:41:29 [SUCCESS] npm: 11.7.0
+2026-01-19 02:41:29 [SUCCESS] curl: Available
+2026-01-19 02:41:29 [SUCCESS] All dependencies satisfied
+2026-01-19 02:41:29 [SECTION] Checking Port Availability
+2026-01-19 02:41:29 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 02:41:29 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 02:41:29 [SECTION] Starting Backend (FastAPI)
+2026-01-19 02:41:29 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 02:41:29 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 02:41:29 [SUCCESS] Backend started (PID: 51823)
+2026-01-19 02:41:29 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 02:41:29 [INFO] Waiting for backend to become healthy...
+2026-01-19 02:42:06 [WARNING] Received interrupt signal. Use ./stop-app.sh to stop services cleanly.
+2026-01-19 02:42:45 [SECTION] Pitchex Application Startup
+2026-01-19 02:42:45 [SECTION] Setting Up Directories
+2026-01-19 02:42:45 [SECTION] Checking Dependencies
+2026-01-19 02:42:45 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 02:42:45 [SUCCESS] Node.js: v20.20.0
+2026-01-19 02:42:45 [SUCCESS] npm: 11.7.0
+2026-01-19 02:42:45 [SUCCESS] curl: Available
+2026-01-19 02:42:45 [SUCCESS] All dependencies satisfied
+2026-01-19 02:42:45 [SECTION] Checking Port Availability
+2026-01-19 02:42:45 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 02:42:45 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 02:42:45 [SECTION] Starting Backend (FastAPI)
+2026-01-19 02:42:45 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 02:42:45 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 02:42:45 [SUCCESS] Backend started (PID: 52481)
+2026-01-19 02:42:45 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 02:42:45 [INFO] Waiting for backend to become healthy...
+2026-01-19 02:43:46 [ERROR] Backend failed to start within 60 seconds
+2026-01-19 02:43:46 [ERROR] Check logs at: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 02:43:46 [WARNING] Cleaning up due to error...
+2026-01-19 02:44:08 [SECTION] Pitchex Application Startup
+2026-01-19 02:44:08 [SECTION] Setting Up Directories
+2026-01-19 02:44:08 [SECTION] Checking Dependencies
+2026-01-19 02:44:08 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 02:44:08 [SUCCESS] Node.js: v20.20.0
+2026-01-19 02:44:08 [SUCCESS] npm: 11.7.0
+2026-01-19 02:44:08 [SUCCESS] curl: Available
+2026-01-19 02:44:08 [SUCCESS] All dependencies satisfied
+2026-01-19 02:44:08 [SECTION] Checking Port Availability
+2026-01-19 02:44:08 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 02:44:08 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 02:44:08 [SECTION] Starting Backend (FastAPI)
+2026-01-19 02:44:08 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 02:44:08 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 02:44:08 [SUCCESS] Backend started (PID: 53209)
+2026-01-19 02:44:08 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 02:44:08 [INFO] Waiting for backend to become healthy...
+2026-01-19 02:45:08 [ERROR] Backend failed to start within 60 seconds
+2026-01-19 02:45:08 [ERROR] Check logs at: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 02:45:08 [WARNING] Cleaning up due to error...
+2026-01-19 02:45:08 [INFO] Stopped backend (PID: 53209)
+2026-01-19 03:09:59 [SECTION] Pitchex Application Startup
+2026-01-19 03:09:59 [SECTION] Setting Up Directories
+2026-01-19 03:09:59 [SECTION] Checking Dependencies
+2026-01-19 03:09:59 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 03:09:59 [SUCCESS] Node.js: v20.20.0
+2026-01-19 03:09:59 [SUCCESS] npm: 11.7.0
+2026-01-19 03:09:59 [SUCCESS] curl: Available
+2026-01-19 03:09:59 [SUCCESS] All dependencies satisfied
+2026-01-19 03:09:59 [SECTION] Checking Port Availability
+2026-01-19 03:09:59 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 03:09:59 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 03:09:59 [SECTION] Starting Backend (FastAPI)
+2026-01-19 03:09:59 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 03:09:59 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 03:09:59 [SUCCESS] Backend started (PID: 61917)
+2026-01-19 03:09:59 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:09:59 [INFO] Waiting for backend to become healthy...
+2026-01-19 03:10:59 [ERROR] Backend failed to start within 60 seconds
+2026-01-19 03:10:59 [ERROR] Check logs at: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:10:59 [WARNING] Cleaning up due to error...
+2026-01-19 03:10:59 [INFO] Stopped backend (PID: 61917)
+2026-01-19 03:11:57 [SECTION] Pitchex Application Startup
+2026-01-19 03:11:57 [SECTION] Setting Up Directories
+2026-01-19 03:11:57 [SECTION] Checking Dependencies
+2026-01-19 03:11:57 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 03:11:57 [SUCCESS] Node.js: v20.20.0
+2026-01-19 03:11:57 [SUCCESS] npm: 11.7.0
+2026-01-19 03:11:57 [SUCCESS] curl: Available
+2026-01-19 03:11:57 [SUCCESS] All dependencies satisfied
+2026-01-19 03:11:57 [SECTION] Checking Port Availability
+2026-01-19 03:11:57 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 03:11:57 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 03:11:57 [SECTION] Starting Backend (FastAPI)
+2026-01-19 03:11:57 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 03:11:57 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 03:11:57 [SUCCESS] Backend started (PID: 63303)
+2026-01-19 03:11:57 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:11:57 [INFO] Waiting for backend to become healthy...
+2026-01-19 03:12:57 [ERROR] Backend failed to start within 60 seconds
+2026-01-19 03:12:57 [ERROR] Check logs at: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:12:57 [WARNING] Cleaning up due to error...
+2026-01-19 03:12:57 [INFO] Stopped backend (PID: 63303)
+2026-01-19 03:23:31 [SECTION] Pitchex Application Startup
+2026-01-19 03:23:31 [SECTION] Setting Up Directories
+2026-01-19 03:23:31 [SECTION] Checking Dependencies
+2026-01-19 03:23:31 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 03:23:31 [SUCCESS] Node.js: v20.20.0
+2026-01-19 03:23:31 [SUCCESS] npm: 11.7.0
+2026-01-19 03:23:31 [SUCCESS] curl: Available
+2026-01-19 03:23:31 [SUCCESS] All dependencies satisfied
+2026-01-19 03:23:31 [SECTION] Checking Port Availability
+2026-01-19 03:23:31 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 03:23:31 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 03:23:31 [SECTION] Starting Backend (FastAPI)
+2026-01-19 03:23:31 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 03:23:31 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 03:23:31 [SUCCESS] Backend started (PID: 67866)
+2026-01-19 03:23:31 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:23:31 [INFO] Waiting for backend to become healthy...
+2026-01-19 03:23:57 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 03:23:57 [SECTION] Starting Frontend (Next.js)
+2026-01-19 03:23:57 [INFO] Starting Next.js server on port 3001...
+2026-01-19 03:23:57 [SUCCESS] Frontend started (PID: 68256)
+2026-01-19 03:23:57 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 03:23:57 [INFO] Waiting for frontend to become healthy...
+2026-01-19 03:24:10 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 03:24:10 [SECTION] Starting Health Monitor
+2026-01-19 03:24:10 [SUCCESS] Health monitor started (PID: 68606)
+2026-01-19 03:24:10 [INFO] Health checks every 30 seconds
+2026-01-19 03:24:10 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 03:24:10 [SECTION] Application Status
+2026-01-19 03:24:10 [SUCCESS] Application startup complete!
+2026-01-19 03:24:10 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 03:24:10 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 03:48:12 [SECTION] Pitchex Application Startup
+2026-01-19 03:48:12 [SECTION] Setting Up Directories
+2026-01-19 03:48:13 [SECTION] Checking Dependencies
+2026-01-19 03:48:13 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 03:48:13 [SUCCESS] Node.js: v20.20.0
+2026-01-19 03:48:13 [SUCCESS] npm: 11.7.0
+2026-01-19 03:48:13 [SUCCESS] curl: Available
+2026-01-19 03:48:13 [SUCCESS] All dependencies satisfied
+2026-01-19 03:48:13 [SECTION] Checking Port Availability
+2026-01-19 03:48:13 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 03:48:13 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 03:48:13 [SECTION] Starting Backend (FastAPI)
+2026-01-19 03:48:13 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 03:48:13 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 03:48:13 [SUCCESS] Backend started (PID: 5372)
+2026-01-19 03:48:13 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:48:13 [INFO] Waiting for backend to become healthy...
+2026-01-19 03:48:33 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 03:48:33 [SECTION] Starting Frontend (Next.js)
+2026-01-19 03:48:33 [INFO] Starting Next.js server on port 3001...
+2026-01-19 03:48:33 [SUCCESS] Frontend started (PID: 5585)
+2026-01-19 03:48:33 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 03:48:33 [INFO] Waiting for frontend to become healthy...
+2026-01-19 03:48:41 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 03:48:41 [SECTION] Starting Health Monitor
+2026-01-19 03:48:41 [SUCCESS] Health monitor started (PID: 5781)
+2026-01-19 03:48:41 [INFO] Health checks every 30 seconds
+2026-01-19 03:48:41 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 03:48:41 [SECTION] Application Status
+2026-01-19 03:48:41 [SUCCESS] Application startup complete!
+2026-01-19 03:48:41 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 03:48:41 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 03:52:45 [SECTION] Pitchex Application Startup
+2026-01-19 03:52:45 [SECTION] Setting Up Directories
+2026-01-19 03:52:45 [SECTION] Checking Dependencies
+2026-01-19 03:52:45 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 03:52:45 [SUCCESS] Node.js: v20.20.0
+2026-01-19 03:52:45 [SUCCESS] npm: 11.7.0
+2026-01-19 03:52:45 [SUCCESS] curl: Available
+2026-01-19 03:52:45 [SUCCESS] All dependencies satisfied
+2026-01-19 03:52:46 [SECTION] Checking Port Availability
+2026-01-19 03:52:46 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 03:52:46 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 03:52:46 [SECTION] Starting Backend (FastAPI)
+2026-01-19 03:52:46 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 03:52:46 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 03:52:46 [SUCCESS] Backend started (PID: 8992)
+2026-01-19 03:52:46 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 03:52:46 [INFO] Waiting for backend to become healthy...
+2026-01-19 03:53:02 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 03:53:02 [SECTION] Starting Frontend (Next.js)
+2026-01-19 03:53:02 [INFO] Starting Next.js server on port 3001...
+2026-01-19 03:53:02 [SUCCESS] Frontend started (PID: 9202)
+2026-01-19 03:53:02 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 03:53:02 [INFO] Waiting for frontend to become healthy...
+2026-01-19 03:53:09 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 03:53:09 [SECTION] Starting Health Monitor
+2026-01-19 03:53:09 [SUCCESS] Health monitor started (PID: 9377)
+2026-01-19 03:53:09 [INFO] Health checks every 30 seconds
+2026-01-19 03:53:09 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 03:53:09 [SECTION] Application Status
+2026-01-19 03:53:09 [SUCCESS] Application startup complete!
+2026-01-19 03:53:09 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 03:53:09 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 10:24:49 [SECTION] Pitchex Application Startup
+2026-01-19 10:24:49 [SECTION] Setting Up Directories
+2026-01-19 10:24:49 [SECTION] Checking Dependencies
+2026-01-19 10:24:49 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 10:24:49 [SUCCESS] Node.js: v20.20.0
+2026-01-19 10:24:49 [SUCCESS] npm: 11.7.0
+2026-01-19 10:24:49 [SUCCESS] curl: Available
+2026-01-19 10:24:49 [SUCCESS] All dependencies satisfied
+2026-01-19 10:24:49 [SECTION] Checking Port Availability
+2026-01-19 10:24:50 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 10:24:50 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 10:24:50 [SECTION] Starting Backend (FastAPI)
+2026-01-19 10:24:50 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 10:24:50 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 10:24:50 [SUCCESS] Backend started (PID: 4179)
+2026-01-19 10:24:50 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 10:24:50 [INFO] Waiting for backend to become healthy...
+2026-01-19 10:25:08 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 10:25:08 [SECTION] Starting Frontend (Next.js)
+2026-01-19 10:25:08 [INFO] Starting Next.js server on port 3001...
+2026-01-19 10:25:08 [SUCCESS] Frontend started (PID: 4401)
+2026-01-19 10:25:08 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 10:25:08 [INFO] Waiting for frontend to become healthy...
+2026-01-19 10:25:16 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 10:25:16 [SECTION] Starting Health Monitor
+2026-01-19 10:25:16 [SUCCESS] Health monitor started (PID: 4563)
+2026-01-19 10:25:16 [INFO] Health checks every 30 seconds
+2026-01-19 10:25:16 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 10:25:16 [SECTION] Application Status
+2026-01-19 10:25:16 [SUCCESS] Application startup complete!
+2026-01-19 10:25:16 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 10:25:16 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 10:31:39 [SECTION] Pitchex Application Startup
+2026-01-19 10:31:39 [SECTION] Setting Up Directories
+2026-01-19 10:31:39 [SECTION] Checking Dependencies
+2026-01-19 10:31:39 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 10:31:39 [SUCCESS] Node.js: v20.20.0
+2026-01-19 10:31:39 [SUCCESS] npm: 11.7.0
+2026-01-19 10:31:39 [SUCCESS] curl: Available
+2026-01-19 10:31:39 [SUCCESS] All dependencies satisfied
+2026-01-19 10:31:39 [SECTION] Checking Port Availability
+2026-01-19 10:31:40 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 10:31:40 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 10:31:40 [SECTION] Starting Backend (FastAPI)
+2026-01-19 10:31:40 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 10:31:40 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 10:31:40 [SUCCESS] Backend started (PID: 10413)
+2026-01-19 10:31:40 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 10:31:40 [INFO] Waiting for backend to become healthy...
+2026-01-19 10:31:58 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 10:31:58 [SECTION] Starting Frontend (Next.js)
+2026-01-19 10:31:58 [INFO] Starting Next.js server on port 3001...
+2026-01-19 10:31:58 [SUCCESS] Frontend started (PID: 10665)
+2026-01-19 10:31:58 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 10:31:58 [INFO] Waiting for frontend to become healthy...
+2026-01-19 10:32:06 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 10:32:06 [SECTION] Starting Health Monitor
+2026-01-19 10:32:06 [SUCCESS] Health monitor started (PID: 10849)
+2026-01-19 10:32:06 [INFO] Health checks every 30 seconds
+2026-01-19 10:32:06 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 10:32:06 [SECTION] Application Status
+2026-01-19 10:32:06 [SUCCESS] Application startup complete!
+2026-01-19 10:32:06 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 10:32:06 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 11:24:11 [SECTION] Pitchex Application Startup
+2026-01-19 11:24:11 [SECTION] Setting Up Directories
+2026-01-19 11:24:11 [SECTION] Checking Dependencies
+2026-01-19 11:24:11 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 11:24:11 [SUCCESS] Node.js: v20.20.0
+2026-01-19 11:24:11 [SUCCESS] npm: 11.7.0
+2026-01-19 11:24:11 [SUCCESS] curl: Available
+2026-01-19 11:24:11 [SUCCESS] All dependencies satisfied
+2026-01-19 11:24:11 [SECTION] Checking Port Availability
+2026-01-19 11:24:11 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 11:24:11 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 11:24:11 [SECTION] Starting Backend (FastAPI)
+2026-01-19 11:24:11 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 11:24:11 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 11:24:11 [SUCCESS] Backend started (PID: 32850)
+2026-01-19 11:24:11 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 11:24:11 [INFO] Waiting for backend to become healthy...
+2026-01-19 11:24:43 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 11:24:43 [SECTION] Starting Frontend (Next.js)
+2026-01-19 11:24:43 [INFO] Starting Next.js server on port 3001...
+2026-01-19 11:24:43 [SUCCESS] Frontend started (PID: 33191)
+2026-01-19 11:24:43 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 11:24:43 [INFO] Waiting for frontend to become healthy...
+2026-01-19 11:24:52 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 11:24:52 [SECTION] Starting Health Monitor
+2026-01-19 11:24:52 [SUCCESS] Health monitor started (PID: 33380)
+2026-01-19 11:24:52 [INFO] Health checks every 30 seconds
+2026-01-19 11:24:52 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 11:24:52 [SECTION] Application Status
+2026-01-19 11:24:52 [SUCCESS] Application startup complete!
+2026-01-19 11:24:52 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 11:24:52 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 11:27:17 [SECTION] Pitchex Application Startup
+2026-01-19 11:27:17 [SECTION] Setting Up Directories
+2026-01-19 11:27:17 [SECTION] Checking Dependencies
+2026-01-19 11:27:17 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 11:27:17 [SUCCESS] Node.js: v20.20.0
+2026-01-19 11:27:17 [SUCCESS] npm: 11.7.0
+2026-01-19 11:27:17 [SUCCESS] curl: Available
+2026-01-19 11:27:17 [SUCCESS] All dependencies satisfied
+2026-01-19 11:27:17 [SECTION] Checking Port Availability
+2026-01-19 11:27:17 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 11:27:17 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 11:27:17 [SECTION] Starting Backend (FastAPI)
+2026-01-19 11:27:17 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 11:27:17 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 11:27:17 [SUCCESS] Backend started (PID: 35493)
+2026-01-19 11:27:17 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 11:27:17 [INFO] Waiting for backend to become healthy...
+2026-01-19 11:27:43 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 11:27:43 [SECTION] Starting Frontend (Next.js)
+2026-01-19 11:27:43 [INFO] Starting Next.js server on port 3001...
+2026-01-19 11:27:43 [SUCCESS] Frontend started (PID: 35753)
+2026-01-19 11:27:43 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 11:27:43 [INFO] Waiting for frontend to become healthy...
+2026-01-19 11:27:53 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 11:27:53 [SECTION] Starting Health Monitor
+2026-01-19 11:27:53 [SUCCESS] Health monitor started (PID: 35933)
+2026-01-19 11:27:53 [INFO] Health checks every 30 seconds
+2026-01-19 11:27:53 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 11:27:53 [SECTION] Application Status
+2026-01-19 11:27:53 [SUCCESS] Application startup complete!
+2026-01-19 11:27:53 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 11:27:53 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 12:22:24 [SECTION] Pitchex Application Startup
+2026-01-19 12:22:24 [SECTION] Setting Up Directories
+2026-01-19 12:22:24 [SECTION] Checking Dependencies
+2026-01-19 12:22:24 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 12:22:24 [SUCCESS] Node.js: v20.20.0
+2026-01-19 12:22:24 [SUCCESS] npm: 11.7.0
+2026-01-19 12:22:24 [SUCCESS] curl: Available
+2026-01-19 12:22:24 [SUCCESS] All dependencies satisfied
+2026-01-19 12:22:24 [SECTION] Checking Port Availability
+2026-01-19 12:22:24 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 12:22:25 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 12:22:25 [SECTION] Starting Backend (FastAPI)
+2026-01-19 12:22:25 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 12:22:25 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 12:22:25 [SUCCESS] Backend started (PID: 49532)
+2026-01-19 12:22:25 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 12:22:25 [INFO] Waiting for backend to become healthy...
+2026-01-19 12:22:43 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 12:22:43 [SECTION] Starting Frontend (Next.js)
+2026-01-19 12:22:43 [INFO] Starting Next.js server on port 3001...
+2026-01-19 12:22:43 [SUCCESS] Frontend started (PID: 49776)
+2026-01-19 12:22:43 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 12:22:43 [INFO] Waiting for frontend to become healthy...
+2026-01-19 12:22:51 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 12:22:51 [SECTION] Starting Health Monitor
+2026-01-19 12:22:51 [SUCCESS] Health monitor started (PID: 49980)
+2026-01-19 12:22:51 [INFO] Health checks every 30 seconds
+2026-01-19 12:22:51 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 12:22:51 [SECTION] Application Status
+2026-01-19 12:22:51 [SUCCESS] Application startup complete!
+2026-01-19 12:22:51 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 12:22:51 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 13:54:43 [SECTION] Pitchex Application Startup
+2026-01-19 13:54:43 [SECTION] Setting Up Directories
+2026-01-19 13:54:43 [SECTION] Checking Dependencies
+2026-01-19 13:54:43 [SUCCESS] Python3: Python 3.13.11
+2026-01-19 13:54:43 [SUCCESS] Node.js: v20.20.0
+2026-01-19 13:54:43 [SUCCESS] npm: 11.7.0
+2026-01-19 13:54:43 [SUCCESS] curl: Available
+2026-01-19 13:54:43 [SUCCESS] All dependencies satisfied
+2026-01-19 13:54:43 [SECTION] Checking Port Availability
+2026-01-19 13:54:44 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 13:54:44 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 13:54:44 [SECTION] Starting Backend (FastAPI)
+2026-01-19 13:54:44 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 13:54:44 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 13:54:44 [SUCCESS] Backend started (PID: 17185)
+2026-01-19 13:54:44 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 13:54:44 [INFO] Waiting for backend to become healthy...
+2026-01-19 13:55:06 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 13:55:06 [SECTION] Starting Frontend (Next.js)
+2026-01-19 13:55:06 [INFO] Starting Next.js server on port 3001...
+2026-01-19 13:55:06 [SUCCESS] Frontend started (PID: 17458)
+2026-01-19 13:55:06 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 13:55:06 [INFO] Waiting for frontend to become healthy...
+2026-01-19 13:55:16 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 13:55:16 [SECTION] Starting Health Monitor
+2026-01-19 13:55:16 [SUCCESS] Health monitor started (PID: 17653)
+2026-01-19 13:55:16 [INFO] Health checks every 30 seconds
+2026-01-19 13:55:16 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 13:55:16 [SECTION] Application Status
+2026-01-19 13:55:16 [SUCCESS] Application startup complete!
+2026-01-19 13:55:16 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 13:55:16 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 15:39:55 [SECTION] Pitchex Application Startup
+2026-01-19 15:39:55 [SECTION] Setting Up Directories
+2026-01-19 15:39:55 [SECTION] Checking Dependencies
+2026-01-19 15:39:55 [SUCCESS] Python3: Python 3.14.2
+2026-01-19 15:39:55 [SUCCESS] Node.js: v20.20.0
+2026-01-19 15:39:55 [SUCCESS] npm: 11.7.0
+2026-01-19 15:39:55 [SUCCESS] curl: Available
+2026-01-19 15:39:55 [SUCCESS] All dependencies satisfied
+2026-01-19 15:39:55 [SECTION] Checking Port Availability
+2026-01-19 15:39:55 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 15:39:55 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 15:39:55 [SECTION] Starting Backend (FastAPI)
+2026-01-19 15:39:55 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 15:39:55 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 15:39:55 [SUCCESS] Backend started (PID: 28164)
+2026-01-19 15:39:55 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 15:39:55 [INFO] Waiting for backend to become healthy...
+2026-01-19 15:40:11 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 15:40:12 [SECTION] Starting Frontend (Next.js)
+2026-01-19 15:40:12 [INFO] Starting Next.js server on port 3001...
+2026-01-19 15:40:12 [SUCCESS] Frontend started (PID: 28420)
+2026-01-19 15:40:12 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 15:40:12 [INFO] Waiting for frontend to become healthy...
+2026-01-19 15:40:31 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 15:40:31 [SECTION] Starting Health Monitor
+2026-01-19 15:40:31 [SUCCESS] Health monitor started (PID: 28741)
+2026-01-19 15:40:31 [INFO] Health checks every 30 seconds
+2026-01-19 15:40:31 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 15:40:31 [SECTION] Application Status
+2026-01-19 15:40:31 [SUCCESS] Application startup complete!
+2026-01-19 15:40:31 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 15:40:31 [INFO] Use ./stop-app.sh to stop all services
+2026-01-19 15:52:08 [SECTION] Pitchex Application Startup
+2026-01-19 15:52:08 [SECTION] Setting Up Directories
+2026-01-19 15:52:08 [SECTION] Checking Dependencies
+2026-01-19 15:52:08 [SUCCESS] Python3: Python 3.13.11
+2026-01-19 15:52:08 [SUCCESS] Node.js: v20.20.0
+2026-01-19 15:52:08 [SUCCESS] npm: 11.7.0
+2026-01-19 15:52:08 [SUCCESS] curl: Available
+2026-01-19 15:52:08 [SUCCESS] All dependencies satisfied
+2026-01-19 15:52:08 [SECTION] Checking Port Availability
+2026-01-19 15:52:08 [SUCCESS] Port 8000 (Backend) is available
+2026-01-19 15:52:08 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-19 15:52:08 [SECTION] Starting Backend (FastAPI)
+2026-01-19 15:52:08 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-19 15:52:08 [INFO] Starting FastAPI server on port 8000...
+2026-01-19 15:52:08 [SUCCESS] Backend started (PID: 33016)
+2026-01-19 15:52:08 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-19 15:52:08 [INFO] Waiting for backend to become healthy...
+2026-01-19 15:52:26 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-19 15:52:26 [SECTION] Starting Frontend (Next.js)
+2026-01-19 15:52:26 [INFO] Starting Next.js server on port 3001...
+2026-01-19 15:52:26 [SUCCESS] Frontend started (PID: 33243)
+2026-01-19 15:52:26 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-19 15:52:26 [INFO] Waiting for frontend to become healthy...
+2026-01-19 15:53:16 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-19 15:53:16 [SECTION] Starting Health Monitor
+2026-01-19 15:53:16 [SUCCESS] Health monitor started (PID: 33543)
+2026-01-19 15:53:16 [INFO] Health checks every 30 seconds
+2026-01-19 15:53:16 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-19 15:53:16 [SECTION] Application Status
+2026-01-19 15:53:16 [SUCCESS] Application startup complete!
+2026-01-19 15:53:16 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-19 15:53:16 [INFO] Use ./stop-app.sh to stop all services
+2026-01-21 01:54:22 [SECTION] Pitchex Application Startup
+2026-01-21 01:54:22 [SECTION] Setting Up Directories
+2026-01-21 01:54:22 [SECTION] Checking Dependencies
+2026-01-21 01:54:22 [SUCCESS] Python3: Python 3.13.11
+2026-01-21 01:54:22 [SUCCESS] Node.js: v20.20.0
+2026-01-21 01:54:22 [SUCCESS] npm: 11.7.0
+2026-01-21 01:54:22 [SUCCESS] curl: Available
+2026-01-21 01:54:22 [SUCCESS] All dependencies satisfied
+2026-01-21 01:54:22 [SECTION] Checking Port Availability
+2026-01-21 01:54:22 [SUCCESS] Port 8000 (Backend) is available
+2026-01-21 01:54:22 [SUCCESS] Port 3001 (Frontend) is available
+2026-01-21 01:54:22 [SECTION] Starting Backend (FastAPI)
+2026-01-21 01:54:22 [INFO] Skipping dependency install (use --install flag to force)
+2026-01-21 01:54:22 [INFO] Starting FastAPI server on port 8000...
+2026-01-21 01:54:22 [SUCCESS] Backend started (PID: 4572)
+2026-01-21 01:54:22 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-01-21 01:54:22 [INFO] Waiting for backend to become healthy...
+2026-01-21 01:54:42 [SUCCESS] Backend is healthy and responding on port 8000
+2026-01-21 01:54:42 [SECTION] Starting Frontend (Next.js)
+2026-01-21 01:54:42 [INFO] Starting Next.js server on port 3001...
+2026-01-21 01:54:42 [SUCCESS] Frontend started (PID: 5444)
+2026-01-21 01:54:42 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-01-21 01:54:42 [INFO] Waiting for frontend to become healthy...
+2026-01-21 01:54:50 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-01-21 01:54:50 [SECTION] Starting Health Monitor
+2026-01-21 01:54:50 [SUCCESS] Health monitor started (PID: 5721)
+2026-01-21 01:54:50 [INFO] Health checks every 30 seconds
+2026-01-21 01:54:50 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-01-21 01:54:50 [SECTION] Application Status
+2026-01-21 01:54:50 [SUCCESS] Application startup complete!
+2026-01-21 01:54:50 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-01-21 01:54:50 [INFO] Use ./stop-app.sh to stop all services
+2026-06-14 13:40:38 [SECTION] Pitchex Application Startup
+2026-06-14 13:40:38 [SECTION] Setting Up Directories
+2026-06-14 13:40:38 [SECTION] Checking Dependencies
+2026-06-14 13:40:38 [SUCCESS] Python3: Python 3.14.5
+2026-06-14 13:40:38 [SUCCESS] Node.js: v22.22.2
+2026-06-14 13:40:38 [SUCCESS] npm: 11.16.0
+2026-06-14 13:40:38 [SUCCESS] curl: Available
+2026-06-14 13:40:38 [SUCCESS] All dependencies satisfied
+2026-06-14 13:40:38 [SECTION] Checking Port Availability
+2026-06-14 13:40:38 [SUCCESS] Port 8000 (Backend) is available
+2026-06-14 13:40:38 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-14 13:40:38 [SECTION] Starting Backend (FastAPI)
+2026-06-14 13:40:38 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-14 13:40:38 [INFO] Starting FastAPI server on port 8000...
+2026-06-14 13:40:38 [SUCCESS] Backend started (PID: 45327)
+2026-06-14 13:40:38 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-14 13:40:38 [INFO] Waiting for backend to become healthy...
+2026-06-14 13:41:08 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-14 13:41:08 [SECTION] Starting Frontend (Next.js)
+2026-06-14 13:41:08 [INFO] Starting Next.js server on port 3001...
+2026-06-14 13:41:08 [SUCCESS] Frontend started (PID: 45883)
+2026-06-14 13:41:08 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-14 13:41:08 [INFO] Waiting for frontend to become healthy...
+2026-06-14 13:41:16 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-14 13:41:16 [SECTION] Starting Health Monitor
+2026-06-14 13:41:16 [SUCCESS] Health monitor started (PID: 46136)
+2026-06-14 13:41:16 [INFO] Health checks every 30 seconds
+2026-06-14 13:41:16 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-14 13:41:16 [SECTION] Application Status
+2026-06-14 13:41:16 [SUCCESS] Application startup complete!
+2026-06-14 13:41:16 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-14 13:41:16 [INFO] Use ./stop-app.sh to stop all services
+2026-06-16 14:33:55 [SECTION] Pitchex Application Startup
+2026-06-16 14:33:55 [SECTION] Setting Up Directories
+2026-06-16 14:33:55 [SECTION] Checking Dependencies
+2026-06-16 14:33:55 [SUCCESS] Python3: Python 3.14.5
+2026-06-16 14:33:55 [SUCCESS] Node.js: v22.22.2
+2026-06-16 14:33:55 [SUCCESS] npm: 11.16.0
+2026-06-16 14:33:55 [SUCCESS] curl: Available
+2026-06-16 14:33:55 [SUCCESS] All dependencies satisfied
+2026-06-16 14:33:55 [SECTION] Checking Port Availability
+2026-06-16 14:33:55 [SUCCESS] Port 8000 (Backend) is available
+2026-06-16 14:33:55 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-16 14:33:55 [SECTION] Starting Backend (FastAPI)
+2026-06-16 14:33:55 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-16 14:33:55 [INFO] Starting FastAPI server on port 8000...
+2026-06-16 14:33:55 [SUCCESS] Backend started (PID: 17077)
+2026-06-16 14:33:55 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-16 14:33:55 [INFO] Waiting for backend to become healthy...
+2026-06-16 14:34:19 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-16 14:34:19 [SECTION] Starting Frontend (Next.js)
+2026-06-16 14:34:19 [INFO] Starting Next.js server on port 3001...
+2026-06-16 14:34:19 [SUCCESS] Frontend started (PID: 18202)
+2026-06-16 14:34:19 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-16 14:34:19 [INFO] Waiting for frontend to become healthy...
+2026-06-16 14:34:27 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-16 14:34:27 [SECTION] Starting Health Monitor
+2026-06-16 14:34:27 [SUCCESS] Health monitor started (PID: 18451)
+2026-06-16 14:34:27 [INFO] Health checks every 30 seconds
+2026-06-16 14:34:27 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-16 14:34:27 [SECTION] Application Status
+2026-06-16 14:34:27 [SUCCESS] Application startup complete!
+2026-06-16 14:34:27 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-16 14:34:27 [INFO] Use ./stop-app.sh to stop all services
+2026-06-16 18:45:34 [SECTION] Pitchex Application Startup
+2026-06-16 18:45:34 [SECTION] Setting Up Directories
+2026-06-16 18:45:34 [SECTION] Checking Dependencies
+2026-06-16 18:45:34 [SUCCESS] Python3: Python 3.14.5
+2026-06-16 18:45:34 [SUCCESS] Node.js: v22.22.2
+2026-06-16 18:45:34 [SUCCESS] npm: 11.16.0
+2026-06-16 18:45:34 [SUCCESS] curl: Available
+2026-06-16 18:45:34 [SUCCESS] All dependencies satisfied
+2026-06-16 18:45:34 [SECTION] Checking Port Availability
+2026-06-16 18:45:34 [SUCCESS] Port 8000 (Backend) is available
+2026-06-16 18:45:34 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-16 18:45:34 [SECTION] Starting Backend (FastAPI)
+2026-06-16 18:45:34 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-16 18:45:34 [INFO] Starting FastAPI server on port 8000...
+2026-06-16 18:45:34 [SUCCESS] Backend started (PID: 5634)
+2026-06-16 18:45:34 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-16 18:45:34 [INFO] Waiting for backend to become healthy...
+2026-06-16 18:45:56 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-16 18:45:56 [SECTION] Starting Frontend (Next.js)
+2026-06-16 18:45:56 [INFO] Starting Next.js server on port 3001...
+2026-06-16 18:45:56 [SUCCESS] Frontend started (PID: 6030)
+2026-06-16 18:45:56 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-16 18:45:56 [INFO] Waiting for frontend to become healthy...
+2026-06-16 18:46:04 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-16 18:46:04 [SECTION] Starting Health Monitor
+2026-06-16 18:46:04 [SUCCESS] Health monitor started (PID: 6306)
+2026-06-16 18:46:04 [INFO] Health checks every 30 seconds
+2026-06-16 18:46:04 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-16 18:46:04 [SECTION] Application Status
+2026-06-16 18:46:04 [SUCCESS] Application startup complete!
+2026-06-16 18:46:04 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-16 18:46:04 [INFO] Use ./stop-app.sh to stop all services
+2026-06-17 11:34:56 [SECTION] Pitchex Application Startup
+2026-06-17 11:34:56 [SECTION] Setting Up Directories
+2026-06-17 11:34:56 [SECTION] Checking Dependencies
+2026-06-17 11:34:56 [SUCCESS] Python3: Python 3.14.5
+2026-06-17 11:34:56 [SUCCESS] Node.js: v22.22.2
+2026-06-17 11:34:57 [SUCCESS] npm: 11.16.0
+2026-06-17 11:34:57 [SUCCESS] curl: Available
+2026-06-17 11:34:57 [SUCCESS] All dependencies satisfied
+2026-06-17 11:34:57 [SECTION] Checking Port Availability
+2026-06-17 11:34:57 [SUCCESS] Port 8000 (Backend) is available
+2026-06-17 11:34:57 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-17 11:34:57 [SECTION] Starting Backend (FastAPI)
+2026-06-17 11:34:57 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-17 11:34:57 [INFO] Starting FastAPI server on port 8000...
+2026-06-17 11:34:57 [SUCCESS] Backend started (PID: 7643)
+2026-06-17 11:34:57 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-17 11:34:57 [INFO] Waiting for backend to become healthy...
+2026-06-17 11:35:23 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-17 11:35:23 [SECTION] Starting Frontend (Next.js)
+2026-06-17 11:35:23 [INFO] Starting Next.js server on port 3001...
+2026-06-17 11:35:23 [SUCCESS] Frontend started (PID: 8162)
+2026-06-17 11:35:23 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-17 11:35:23 [INFO] Waiting for frontend to become healthy...
+2026-06-17 11:35:42 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-17 11:35:42 [SECTION] Starting Health Monitor
+2026-06-17 11:35:42 [SUCCESS] Health monitor started (PID: 8487)
+2026-06-17 11:35:42 [INFO] Health checks every 30 seconds
+2026-06-17 11:35:42 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-17 11:35:42 [SECTION] Application Status
+2026-06-17 11:35:42 [SUCCESS] Application startup complete!
+2026-06-17 11:35:42 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-17 11:35:42 [INFO] Use ./stop-app.sh to stop all services
+2026-06-19 10:04:18 [SECTION] Pitchex Application Startup
+2026-06-19 10:04:18 [SECTION] Setting Up Directories
+2026-06-19 10:04:18 [SECTION] Checking Dependencies
+2026-06-19 10:04:18 [SUCCESS] Python3: Python 3.14.5
+2026-06-19 10:04:18 [SUCCESS] Node.js: v22.22.2
+2026-06-19 10:04:18 [SUCCESS] npm: 11.16.0
+2026-06-19 10:04:18 [SUCCESS] curl: Available
+2026-06-19 10:04:18 [SUCCESS] All dependencies satisfied
+2026-06-19 10:04:18 [SECTION] Checking Port Availability
+2026-06-19 10:04:18 [SUCCESS] Port 8000 (Backend) is available
+2026-06-19 10:04:18 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-19 10:04:18 [SECTION] Starting Backend (FastAPI)
+2026-06-19 10:04:18 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-19 10:04:18 [INFO] Starting FastAPI server on port 8000...
+2026-06-19 10:04:18 [SUCCESS] Backend started (PID: 5940)
+2026-06-19 10:04:18 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-19 10:04:18 [INFO] Waiting for backend to become healthy...
+2026-06-19 10:05:00 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-19 10:05:00 [SECTION] Starting Frontend (Next.js)
+2026-06-19 10:05:00 [INFO] Starting Next.js server on port 3001...
+2026-06-19 10:05:00 [SUCCESS] Frontend started (PID: 6660)
+2026-06-19 10:05:00 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-19 10:05:00 [INFO] Waiting for frontend to become healthy...
+2026-06-19 10:05:12 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-19 10:05:12 [SECTION] Starting Health Monitor
+2026-06-19 10:05:12 [SUCCESS] Health monitor started (PID: 6946)
+2026-06-19 10:05:12 [INFO] Health checks every 30 seconds
+2026-06-19 10:05:12 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-19 10:05:12 [SECTION] Application Status
+2026-06-19 10:05:12 [SUCCESS] Application startup complete!
+2026-06-19 10:05:12 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-19 10:05:12 [INFO] Use ./stop-app.sh to stop all services
+2026-06-19 10:36:37 [SECTION] Pitchex Application Startup
+2026-06-19 10:36:37 [SECTION] Setting Up Directories
+2026-06-19 10:36:37 [SECTION] Checking Dependencies
+2026-06-19 10:36:37 [SUCCESS] Python3: Python 3.14.5
+2026-06-19 10:36:37 [SUCCESS] Node.js: v22.22.2
+2026-06-19 10:36:37 [SUCCESS] npm: 11.16.0
+2026-06-19 10:36:37 [SUCCESS] curl: Available
+2026-06-19 10:36:37 [SUCCESS] All dependencies satisfied
+2026-06-19 10:36:37 [SECTION] Checking Port Availability
+2026-06-19 10:36:37 [SUCCESS] Port 8000 (Backend) is available
+2026-06-19 10:36:37 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-19 10:36:37 [SECTION] Starting Backend (FastAPI)
+2026-06-19 10:36:37 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-19 10:36:37 [INFO] Starting FastAPI server on port 8000...
+2026-06-19 10:36:37 [SUCCESS] Backend started (PID: 4430)
+2026-06-19 10:36:37 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-19 10:36:37 [INFO] Waiting for backend to become healthy...
+2026-06-19 10:37:11 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-19 10:37:11 [SECTION] Starting Frontend (Next.js)
+2026-06-19 10:37:11 [INFO] Starting Next.js server on port 3001...
+2026-06-19 10:37:11 [SUCCESS] Frontend started (PID: 5891)
+2026-06-19 10:37:11 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-19 10:37:11 [INFO] Waiting for frontend to become healthy...
+2026-06-19 10:37:25 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-19 10:37:25 [SECTION] Starting Health Monitor
+2026-06-19 10:37:25 [SUCCESS] Health monitor started (PID: 6218)
+2026-06-19 10:37:25 [INFO] Health checks every 30 seconds
+2026-06-19 10:37:25 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-19 10:37:25 [SECTION] Application Status
+2026-06-19 10:37:25 [SUCCESS] Application startup complete!
+2026-06-19 10:37:25 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-19 10:37:25 [INFO] Use ./stop-app.sh to stop all services
+2026-06-19 11:19:02 [SECTION] Pitchex Application Startup
+2026-06-19 11:19:02 [SECTION] Setting Up Directories
+2026-06-19 11:19:02 [SECTION] Checking Dependencies
+2026-06-19 11:19:02 [SUCCESS] Python3: Python 3.14.5
+2026-06-19 11:19:02 [SUCCESS] Node.js: v22.22.2
+2026-06-19 11:19:02 [SUCCESS] npm: 11.16.0
+2026-06-19 11:19:02 [SUCCESS] curl: Available
+2026-06-19 11:19:02 [SUCCESS] All dependencies satisfied
+2026-06-19 11:19:02 [SECTION] Checking Port Availability
+2026-06-19 11:19:02 [SUCCESS] Port 8000 (Backend) is available
+2026-06-19 11:19:02 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-19 11:19:02 [SECTION] Starting Backend (FastAPI)
+2026-06-19 11:19:02 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-19 11:19:02 [INFO] Starting FastAPI server on port 8000...
+2026-06-19 11:19:03 [SUCCESS] Backend started (PID: 4728)
+2026-06-19 11:19:03 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-19 11:19:03 [INFO] Waiting for backend to become healthy...
+2026-06-19 11:19:35 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-19 11:19:35 [SECTION] Starting Frontend (Next.js)
+2026-06-19 11:19:35 [INFO] Starting Next.js server on port 3001...
+2026-06-19 11:19:35 [SUCCESS] Frontend started (PID: 5237)
+2026-06-19 11:19:35 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-19 11:19:35 [INFO] Waiting for frontend to become healthy...
+2026-06-19 11:19:58 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-19 11:19:58 [SECTION] Starting Health Monitor
+2026-06-19 11:19:58 [SUCCESS] Health monitor started (PID: 6335)
+2026-06-19 11:19:58 [INFO] Health checks every 30 seconds
+2026-06-19 11:19:58 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-19 11:19:58 [SECTION] Application Status
+2026-06-19 11:19:58 [SUCCESS] Application startup complete!
+2026-06-19 11:19:58 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-19 11:19:58 [INFO] Use ./stop-app.sh to stop all services
+2026-06-19 15:33:21 [SECTION] Pitchex Application Startup
+2026-06-19 15:33:21 [SECTION] Setting Up Directories
+2026-06-19 15:33:21 [SECTION] Checking Dependencies
+2026-06-19 15:33:21 [SUCCESS] Python3: Python 3.14.5
+2026-06-19 15:33:21 [SUCCESS] Node.js: v22.22.2
+2026-06-19 15:33:21 [SUCCESS] npm: 11.16.0
+2026-06-19 15:33:21 [SUCCESS] curl: Available
+2026-06-19 15:33:21 [SUCCESS] All dependencies satisfied
+2026-06-19 15:33:21 [SECTION] Checking Port Availability
+2026-06-19 15:33:21 [SUCCESS] Port 8000 (Backend) is available
+2026-06-19 15:33:22 [SUCCESS] Port 3001 (Frontend) is available
+2026-06-19 15:33:22 [SECTION] Starting Backend (FastAPI)
+2026-06-19 15:33:22 [INFO] Skipping dependency install (use --install flag to force)
+2026-06-19 15:33:22 [INFO] Starting FastAPI server on port 8000...
+2026-06-19 15:33:22 [SUCCESS] Backend started (PID: 4935)
+2026-06-19 15:33:22 [INFO] Backend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/backend.log
+2026-06-19 15:33:22 [INFO] Waiting for backend to become healthy...
+2026-06-19 15:33:52 [SUCCESS] Backend is healthy and responding on port 8000
+2026-06-19 15:33:52 [SECTION] Starting Frontend (Next.js)
+2026-06-19 15:33:52 [INFO] Starting Next.js server on port 3001...
+2026-06-19 15:33:52 [SUCCESS] Frontend started (PID: 5446)
+2026-06-19 15:33:52 [INFO] Frontend logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/frontend.log
+2026-06-19 15:33:52 [INFO] Waiting for frontend to become healthy...
+2026-06-19 15:34:04 [SUCCESS] Frontend is healthy and responding on port 3001
+2026-06-19 15:34:04 [SECTION] Starting Health Monitor
+2026-06-19 15:34:04 [SUCCESS] Health monitor started (PID: 5732)
+2026-06-19 15:34:04 [INFO] Health checks every 30 seconds
+2026-06-19 15:34:04 [INFO] Health logs: /home/ahmad/Desktop/Pitchex_v3/app/logs/health.log
+2026-06-19 15:34:04 [SECTION] Application Status
+2026-06-19 15:34:04 [SUCCESS] Application startup complete!
+2026-06-19 15:34:04 [INFO] Press Ctrl+C to exit (services will continue running)
+2026-06-19 15:34:04 [INFO] Use ./stop-app.sh to stop all services

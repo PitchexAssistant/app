@@ -13,6 +13,7 @@ import {
   CheckCircle,
   Download,
   Link2,
+  X,
 } from "lucide-react"
 import Image from "next/image"
 import { useClerk } from "@clerk/nextjs"
@@ -37,6 +38,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Badge } from "./ui/badge"
+import { Input } from "@/components/ui/input"
 import {
   Collapsible,
   CollapsibleContent,
@@ -48,6 +50,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog"
 import { useSessions } from "@/hooks/use-sessions"
 import { Session } from "@/lib/api/client"
 
@@ -63,6 +72,11 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
 
 export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: AppSidebarProps) {
   const [isHistoryOpen, setIsHistoryOpen] = React.useState(true)
+  const [renameDialogOpen, setRenameDialogOpen] = React.useState(false)
+  const [deleteDialogOpen, setDeleteDialogOpen] = React.useState(false)
+  const [sessionToRename, setSessionToRename] = React.useState<Session | null>(null)
+  const [sessionToDelete, setSessionToDelete] = React.useState<string | null>(null)
+  const [newSessionTitle, setNewSessionTitle] = React.useState("")
   const { user: clerkUser } = useClerk()
   const router = useRouter()
   const { state } = useSidebar()
@@ -90,19 +104,34 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
     onSelectSession?.(session)
   }
 
-  const handleDeleteSession = async (e: React.MouseEvent, sessionId: string) => {
+  const handleDeleteSession = (e: React.MouseEvent, sessionId: string) => {
     e.stopPropagation()
-    if (confirm('Are you sure you want to delete this session?')) {
-      await deleteSession(sessionId)
-    }
+    setSessionToDelete(sessionId)
+    setDeleteDialogOpen(true)
   }
 
-  const handleRenameSession = async (e: React.MouseEvent, session: Session) => {
-    e.stopPropagation()
-    const newTitle = prompt('Enter new session name:', session.title)
-    if (newTitle && newTitle.trim() !== session.title) {
-      await updateSession(session.id, { title: newTitle.trim() })
+  const handleConfirmDelete = async () => {
+    if (sessionToDelete) {
+      await deleteSession(sessionToDelete)
     }
+    setDeleteDialogOpen(false)
+    setSessionToDelete(null)
+  }
+
+  const handleRenameSession = (e: React.MouseEvent, session: Session) => {
+    e.stopPropagation()
+    setSessionToRename(session)
+    setNewSessionTitle(session.title)
+    setRenameDialogOpen(true)
+  }
+
+  const handleConfirmRename = async () => {
+    if (sessionToRename && newSessionTitle.trim() && newSessionTitle.trim() !== sessionToRename.title) {
+      await updateSession(sessionToRename.id, { title: newSessionTitle.trim() })
+    }
+    setRenameDialogOpen(false)
+    setSessionToRename(null)
+    setNewSessionTitle("")
   }
 
   const handleDuplicateSession = async (e: React.MouseEvent, session: Session) => {
@@ -256,7 +285,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
             </SidebarMenuItem>
 
             <CollapsibleContent>
-              <SidebarMenuSub className="border-l-surface-2 ml-4 mt-1">
+              <SidebarMenuSub className="border-l-surface-3 mx-0 px-1 mt-1">
                 {loading ? (
                   Array.from({ length: 3 }).map((_, index) => (
                     <SidebarMenuSubItem key={index}>
@@ -265,7 +294,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                   ))
                 ) : sessions.length === 0 ? (
                   <SidebarMenuSubItem>
-                    <div className="px-2 py-2 text-[var(--text-tertiary)] text-sm font-normal">
+                    <div className="px-3 py-2 text-text-tertiary text-sm font-normal">
                       No sessions yet
                     </div>
                   </SidebarMenuSubItem>
@@ -274,7 +303,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                     <SidebarMenuSubItem key={session.id}>
                       <div
                         onClick={() => handleSessionClick(session)}
-                        className={`group/session flex w-full items-center justify-between px-1 py-2 rounded-lg cursor-pointer hover:bg-[var(--surface-2)] ${currentSession?.id === session.id ? 'bg-[var(--surface-1)]' : ''
+                        className={`group/session flex w-full items-center justify-between px-2 py-2 rounded-md cursor-pointer hover:bg-surface-2 ${currentSession?.id === session.id ? 'bg-surface-2' : ''
                           }`}
                       >
                         <div className="flex flex-col min-w-0 flex-1">
@@ -295,7 +324,7 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
                               <MoreVertical className="w-4 h-4 text-[var(--text-tertiary)]" />
                             </Button>
                           </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end" className="bg-[var(--surface-2)] border-[var(--border-gray)]">
+                          <DropdownMenuContent align="end" className="bg-[var(--surface-2)] ml-2rounded-sm border-[var(--border-gray)]">
                             <DropdownMenuItem
                               onClick={(e) => handleRenameSession(e, session)}
                               className="text-[var(--text-secondary)] focus:text-[var(--text-primary)] focus:bg-[var(--surface-2)]"
@@ -351,6 +380,84 @@ export function AppSidebar({ user, onNewSession, onSelectSession, ...props }: Ap
         )}
       </SidebarFooter>
       <SidebarRail />
+
+      {/* Rename Session Dialog */}
+      <Dialog open={renameDialogOpen} onOpenChange={setRenameDialogOpen}>
+        <DialogContent
+          showCloseButton={false}
+          className="bg-surface-1 border-surface-3 rounded-xl p-5 w-[480px] max-w-[480px] gap-4"
+        >
+          <DialogHeader className="gap-1">
+            <DialogTitle className="text-base font-semibold text-text-primary">
+              Rename Session
+            </DialogTitle>
+            <p className="text-sm text-text-secondary">
+              Enter a new name for your session
+            </p>
+          </DialogHeader>
+
+          <Input
+            value={newSessionTitle}
+            onChange={(e) => setNewSessionTitle(e.target.value)}
+            placeholder="Session name"
+            className="bg-surface-2 border-surface-3 text-text-primary placeholder:text-text-tertiary focus:border-accent-lime focus:ring-0"
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                handleConfirmRename()
+              }
+            }}
+            autoFocus
+          />
+
+          <DialogFooter className="gap-3 pt-2">
+            <Button
+              variant="nav"
+              onClick={() => setRenameDialogOpen(false)}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="default"
+              onClick={handleConfirmRename}
+              disabled={!newSessionTitle.trim()}
+            >
+              Rename
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Delete Session Dialog */}
+      <Dialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
+        <DialogContent
+          showCloseButton={false}
+          className="bg-surface-1 border-surface-3 rounded-xl p-5 w-[480px] max-w-[480px] gap-4"
+        >
+          <DialogHeader className="gap-1">
+            <DialogTitle className="text-base font-semibold text-text-primary">
+              Delete Session
+            </DialogTitle>
+            <p className="text-sm text-text-secondary">
+              Are you sure you want to delete this session? This action cannot be undone.
+            </p>
+          </DialogHeader>
+
+          <DialogFooter className="gap-3 pt-2">
+            <Button
+              variant="nav"
+              onClick={() => setDeleteDialogOpen(false)}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="destructive"
+              onClick={handleConfirmDelete}
+            >
+              Delete
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </Sidebar>
   )
 }

@@ -17,6 +17,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Orb, AgentState } from '@/components/ui/orb'
 import { Pause, Play, Mic, MicOff, HelpCircle, X, FileText, Radio } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 import { AppSidebar } from '@/components/app-sidebar'
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
 import { useUser } from '@clerk/nextjs'
@@ -253,7 +254,7 @@ export function LiveSessionOrb({
   }
 
   // Orb colors - yellowish orange tone with warm gradient
-  const orbColors: [string, string] = ['#FFA500', '#FF9500']
+  const orbColors: [string, string] = ['#FBFF50', '#355592']
 
   const { user } = useUser()
 
@@ -265,7 +266,7 @@ export function LiveSessionOrb({
 
   return (
     <SidebarProvider>
-      <div className="relative w-full h-screen bg-[#171717] flex">
+      <div className="relative w-full h-screen bg-surface-0 flex">
         {/* Use the proper AppSidebar component */}
         <AppSidebar
           user={sidebarUser}
@@ -276,10 +277,10 @@ export function LiveSessionOrb({
         />
 
         {/* Main Content Area */}
-        <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-[#171717]">
+        <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-surface-0">
           {/* Timer at Top Center */}
           <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2">
-            <div className="px-6 py-2 rounded-full bg-white text-[#171717] font-medium text-[18px] shadow-lg">
+            <div className="px-6 py-2 rounded-full bg-accent-lime text-surface-0 font-medium text-[20px] shadow-lg">
               {formatTime(elapsedTime)}
             </div>
           </div>
@@ -287,9 +288,9 @@ export function LiveSessionOrb({
           {/* Context Badge */}
           {isConnected && contextFileName && (
             <div className="absolute top-[130px] left-1/2 transform -translate-x-1/2 flex items-center gap-3">
-              <div className="px-4 py-2 rounded-lg bg-[#262626] border border-[#404040] flex items-center gap-2">
-                <FileText className="w-4 h-4 text-[#888]" />
-                <span className="text-sm text-[#f0f0f0]">Context: {contextFileName}</span>
+              <div className="px-4 py-2 rounded-lg bg-surface-2 border border-surface-3 flex items-center gap-2">
+                <FileText className="w-4 h-4 text-text-tertiary" />
+                <span className="text-sm text-text-primary">Context: {contextFileName}</span>
               </div>
             </div>
           )}
@@ -299,17 +300,17 @@ export function LiveSessionOrb({
             <div className="absolute top-[15%] flex flex-col items-center justify-center gap-3">
               {error ? (
                 <>
-                  <div className="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center">
-                    <X className="w-5 h-5 text-red-500" />
+                  <div className="w-8 h-8 rounded-full bg-red/10 flex items-center justify-center">
+                    <X className="w-5 h-5 text-red" />
                   </div>
-                  <p className="text-[16px] font-medium text-red-500 text-center max-w-md px-4">
+                  <p className="text-[16px] font-medium text-red text-center max-w-md px-4">
                     {error}
                   </p>
                 </>
               ) : (
                 <div className="flex items-center justify-center gap-3">
-                  <div className="w-5 h-5 border-2 border-t-[#FF6B00] border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin" />
-                  <p className="text-[16px] font-medium text-[#f0f0f0]">
+                  <div className="w-5 h-5 border-2 border-t-accent-lime border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin" />
+                  <p className="text-[16px] font-medium text-text-primary">
                     Connecting to your AI Investor...
                   </p>
                 </div>
@@ -334,7 +335,7 @@ export function LiveSessionOrb({
 
             {/* Status text and state indicators below orb */}
             <div className="flex flex-col items-center gap-6">
-              <p className="text-[20px] font-medium text-[#f0f0f0]">
+              <p className="text-[20px] font-medium text-text-primary">
                 {statusMessage}
               </p>
 
@@ -345,8 +346,8 @@ export function LiveSessionOrb({
                   <div className={cn(
                     "px-4 py-2 rounded-lg border transition-all",
                     agentState === null
-                      ? "bg-[#262626] border-[#404040] text-[#f0f0f0]"
-                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                      ? "bg-surface-2 border-surface-3 text-text-primary"
+                      : "bg-transparent border-surface-3 text-text-tertiary"
                   )}>
                     <span className="text-sm font-medium">Idle</span>
                   </div>
@@ -355,8 +356,8 @@ export function LiveSessionOrb({
                   <div className={cn(
                     "px-4 py-2 rounded-lg border transition-all",
                     agentState === 'listening'
-                      ? "bg-blue-500/10 border-blue-500/30 text-blue-400"
-                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                      ? "bg-blue/10 border-blue/30 text-blue"
+                      : "bg-transparent border-surface-3 text-text-tertiary"
                   )}>
                     <span className="text-sm font-medium">Listening</span>
                   </div>
@@ -365,8 +366,8 @@ export function LiveSessionOrb({
                   <div className={cn(
                     "px-4 py-2 rounded-lg border transition-all",
                     agentState === 'talking'
-                      ? "bg-[#FF6B00]/10 border-[#FF6B00]/30 text-[#FF6B00]"
-                      : "bg-transparent border-[#2e2e2e] text-[#666666]"
+                      ? "bg-accent-lime/10 border-accent-lime/30 text-accent-lime"
+                      : "bg-transparent border-surface-3 text-text-tertiary"
                   )}>
                     <span className="text-sm font-medium">Talking</span>
                   </div>
@@ -381,17 +382,13 @@ export function LiveSessionOrb({
               {/* Left Controls */}
               <div className="flex items-center gap-4">
                 {/* Pause/Resume Button */}
-                <button
+                <Button
                   onClick={handlePause}
                   disabled={!isConnected}
-                  title={isPaused ? "Resume session" : "Pause session"}
+                  variant={isPaused ? "default" : "nav"}
                   className={cn(
-                    "h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium",
-                    "border",
-                    !isConnected && "opacity-40 cursor-not-allowed",
-                    isPaused
-                      ? "bg-[#FF6B00] hover:bg-[#ff7f1a] text-white border-[#FF6B00] shadow-lg shadow-[#FF6B00]/20"
-                      : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
+                    "gap-2.5",
+                    !isConnected && "opacity-40 cursor-not-allowed"
                   )}
                 >
                   <div className="w-5 h-5 flex items-center justify-center">
@@ -401,10 +398,8 @@ export function LiveSessionOrb({
                       <Pause className="w-4 h-4" fill="currentColor" />
                     )}
                   </div>
-                  <span className="text-[15px]">
-                    {isPaused ? 'Resume' : 'Pause'}
-                  </span>
-                </button>
+                  <span>{isPaused ? 'Resume' : 'Pause'}</span>
+                </Button>
 
                 {/* Mute/Unmute Button */}
                 <button
@@ -412,21 +407,21 @@ export function LiveSessionOrb({
                   disabled={!isConnected}
                   title={isMuted ? "Unmute microphone" : "Mute microphone"}
                   className={cn(
-                    "h-12 w-12 rounded-lg flex items-center justify-center transition-all relative",
+                    "h-11 w-11 rounded-lg flex items-center justify-center transition-all relative",
                     "border",
                     !isConnected && "opacity-40 cursor-not-allowed",
                     isMuted
-                      ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border-red-500/30"
+                      ? "bg-red/10 hover:bg-red/20 text-red border-red/30"
                       : isRecording
-                        ? "bg-green-500/10 hover:bg-green-500/20 text-green-400 border-green-500/30"
-                        : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
+                        ? "bg-green/10 hover:bg-green/20 text-green border-green/30"
+                        : "bg-surface-2 hover:bg-surface-3 text-text-primary border-surface-3"
                   )}
                 >
                   {/* Recording indicator pulse */}
                   {isRecording && !isMuted && (
                     <span className="absolute top-1 right-1 flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
                     </span>
                   )}
                   {isMuted ? (
@@ -440,26 +435,26 @@ export function LiveSessionOrb({
               {/* Right Controls */}
               <div className="flex items-center gap-4">
                 {/* Settings/Help Button */}
-                <button
+                <Button
+                  variant="nav"
+                  size="icon"
                   disabled={!isConnected}
-                  title="Help"
                   className={cn(
-                    "h-12 w-12 rounded-lg flex items-center justify-center transition-all",
-                    "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border border-[#404040]",
                     !isConnected && "opacity-40 cursor-not-allowed"
                   )}
                 >
                   <HelpCircle className="w-5 h-5" />
-                </button>
+                </Button>
 
                 {/* End Session Button */}
-                <button
+                <Button
                   onClick={handleEndSession}
-                  className="h-12 px-6 rounded-lg flex items-center gap-2.5 transition-all font-medium bg-red-600/90 hover:bg-red-600 text-white border border-red-600 shadow-lg shadow-red-600/20"
+                  variant="destructive"
+                  className="gap-2.5"
                 >
                   <X className="w-4 h-4" />
-                  <span className="text-[15px]">End Session</span>
-                </button>
+                  <span>End Session</span>
+                </Button>
               </div>
             </div>
           </div>

@@ -11,16 +11,41 @@ import { useInteractivePitch, Message } from '@/hooks/use-interactive-pitch';
 import { Orb, AgentState } from '@/components/ui/orb';
 import { Pause, Play, Mic, MicOff, X, MessageSquare, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 import { AppSidebar } from '@/components/app-sidebar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { useUser } from '@clerk/nextjs';
 import { useSessions } from '@/hooks/use-sessions';
 import { Session } from '@/lib/api/client';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+// Reusable class constants
+const CLASSES = {
+    // Layout
+    centerAbsolute: 'absolute left-1/2 transform -translate-x-1/2',
+    flexCenter: 'flex items-center justify-center',
+    // State badges
+    stateBadgeBase: 'px-4 py-2 rounded-lg border transition-all duration-300 text-sm font-medium',
+    stateBadgeActive: 'bg-surface-2 border-surface-3 text-text-primary',
+    stateBadgeInactive: 'bg-transparent border-border-gray text-text-tertiary',
+    stateBadgeListening: 'bg-blue/10 border-blue/30 text-blue',
+    stateBadgeTalking: 'bg-accent-lime/10 border-accent-lime/30 text-accent-lime',
+    // Messages
+    messageBase: 'p-3 rounded-lg text-sm',
+    messageUser: 'bg-surface-2 text-text-primary ml-8',
+    messageAI: 'text-text-primary mr-8',
+    // Panel
+    panelCard: 'bg-surface-1 border border-border-gray rounded-xl overflow-hidden',
+    panelHeader: 'px-4 py-3 border-b border-border-gray flex items-center justify-between',
+    // Input
+    textInput: 'flex-1 px-3 py-2 bg-surface-2 border border-border-gray rounded-lg text-text-primary text-sm placeholder:text-text-tertiary focus:outline-none focus:border-surface-3',
+} as const;
 
 interface InteractivePitchSessionProps {
     sessionId?: string;
     onEndSession: () => void;
-    onComplete?: (session: Session) => void;  // Called when session ends with completed session data
+    onComplete?: (session: Session) => void;
     contextFiles?: any[];
 }
 
@@ -38,6 +63,15 @@ export function InteractivePitchSession({
     const [elapsedTime, setElapsedTime] = useState(0);
     const [startTime] = useState(Date.now());
     const messagesEndRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    // Gradient animation - reveals from top
+    useGSAP(() => {
+        gsap.fromTo(".session-gradient",
+            { y: "-100%", opacity: 0.8 },
+            { y: "-40%", duration: 5, ease: "power2.out", delay: 0.5 }
+        );
+    }, { scope: containerRef });
 
     const {
         isConnected,
@@ -74,38 +108,28 @@ export function InteractivePitchSession({
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
-    // Save chat_history to backend whenever messages change - triggers auto-title generation
+    // Save chat_history to backend whenever messages change
     useEffect(() => {
         if (!sessionId || messages.length === 0) return;
-
         const chatHistory = messages.map(m => ({
             role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
             content: m.content,
             timestamp: Math.floor(Date.now() / 1000)
         }));
-
-        // Save chat_history to backend (triggers auto-title on first user message)
         updateSession(sessionId, { chat_history: chatHistory }).catch(err => {
             console.error('[InteractivePitchSession] Failed to save chat_history:', err);
         });
     }, [messages, sessionId, updateSession]);
 
-    // Auto-start recording when connected (only once per connection)
+    // Auto-start recording when connected
     const hasAutoStarted = useRef(false);
     useEffect(() => {
         if (isConnected && !isRecording && !isPaused && !hasAutoStarted.current) {
             hasAutoStarted.current = true;
-            // Small delay to ensure WebSocket is fully ready
-            const timer = setTimeout(() => {
-                startRecording();
-            }, 200);
+            const timer = setTimeout(() => startRecording(), 200);
             return () => clearTimeout(timer);
         }
-
-        // Reset the flag when disconnected
-        if (!isConnected) {
-            hasAutoStarted.current = false;
-        }
+        if (!isConnected) hasAutoStarted.current = false;
     }, [isConnected, isRecording, isPaused, startRecording]);
 
     const formatTime = (seconds: number): string => {
@@ -114,17 +138,15 @@ export function InteractivePitchSession({
         return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     };
 
-    // Determine orb state based on actual activity
     const getAgentState = (): AgentState => {
         if (!isConnected) return 'thinking';
         if (isPaused) return null;
         if (isAISpeaking) return 'talking';
         if (isUserSpeaking) return 'listening';
         if (isProcessing) return 'thinking';
-        return null; // Idle
+        return null;
     };
 
-    // Status message
     const getStatusMessage = (): string => {
         if (!isConnected) return 'Connecting...';
         if (isPaused) return 'Paused';
@@ -135,20 +157,14 @@ export function InteractivePitchSession({
     };
 
     const handlePauseToggle = () => {
-        if (isPaused) {
-            startRecording();
-        } else {
-            stopRecording();
-        }
+        if (isPaused) startRecording();
+        else stopRecording();
         setIsPaused(!isPaused);
     };
 
     const handleMicToggle = () => {
-        if (isRecording) {
-            stopRecording();
-        } else {
-            startRecording();
-        }
+        if (isRecording) stopRecording();
+        else startRecording();
     };
 
     const handleTextSubmit = (e: React.FormEvent) => {
@@ -163,24 +179,18 @@ export function InteractivePitchSession({
         stopRecording();
         disconnect();
 
-        // Complete the session and save final data
         if (sessionId) {
             try {
-                // Calculate duration
                 const duration = Math.floor((Date.now() - startTime) / 1000);
-
-                // Build transcript and chat_history from messages
                 const transcript = messages.map(m =>
                     `${m.role === 'user' ? 'You' : 'Marcus Sterling'}: ${m.content}`
                 ).join('\n');
-
                 const chatHistory = messages.map(m => ({
                     role: (m.role === 'user' ? 'human' : 'ai') as 'human' | 'ai',
                     content: m.content,
                     timestamp: Math.floor(Date.now() / 1000)
                 }));
 
-                // Update session with final data
                 await updateSession(sessionId, {
                     transcript,
                     duration,
@@ -188,10 +198,7 @@ export function InteractivePitchSession({
                     summary: `Session completed with ${messages.length} messages`
                 });
 
-                // Mark session as completed
                 const completedSession = await completeSession(sessionId);
-
-                // Navigate to transcript view if onComplete provided
                 if (completedSession && onComplete) {
                     onComplete(completedSession);
                     return;
@@ -200,8 +207,6 @@ export function InteractivePitchSession({
                 console.error('[InteractivePitchSession] Failed to complete session:', error);
             }
         }
-
-        // Fallback to onEndSession
         onEndSession();
     };
 
@@ -211,58 +216,98 @@ export function InteractivePitchSession({
         avatar: user?.imageUrl || '',
     };
 
-    const orbColors: [string, string] = ['#FFA500', '#FF9500'];
+    const orbColors: [string, string] = ['#FBFF50', '#355592'];
     const agentState = getAgentState();
 
-    // Helper to get emotion color indicator
+    // Emotion display helper
     const getEmotionDisplay = (emotionData: any) => {
         if (!emotionData) return null;
-
         const { dominant_emotion } = emotionData;
-
-        switch (dominant_emotion) {
-            case 'joy':
-            case 'enthusiasm':
-                return { label: 'Enthusiastic', dotColor: 'bg-green-400', textColor: 'text-green-400' };
-            case 'confidence':
-                return { label: 'Confident', dotColor: 'bg-blue-400', textColor: 'text-blue-400' };
-            case 'nervousness':
-            case 'fear':
-                return { label: 'Nervous', dotColor: 'bg-yellow-400', textColor: 'text-yellow-400' };
-            case 'surprise':
-                return { label: 'Surprised', dotColor: 'bg-purple-400', textColor: 'text-purple-400' };
-            case 'anger':
-                return { label: 'Frustrated', dotColor: 'bg-red-400', textColor: 'text-red-400' };
-            case 'sadness':
-                return { label: 'Uncertain', dotColor: 'bg-indigo-400', textColor: 'text-indigo-400' };
-            case 'neutral':
-                return { label: 'Neutral', dotColor: 'bg-gray-400', textColor: 'text-gray-400' };
-            default:
-                return { label: dominant_emotion || 'Unknown', dotColor: 'bg-gray-400', textColor: 'text-gray-400' };
-        }
+        const emotionMap: Record<string, { label: string; dotColor: string; textColor: string }> = {
+            'joy': { label: 'Enthusiastic', dotColor: 'bg-green', textColor: 'text-green' },
+            'enthusiasm': { label: 'Enthusiastic', dotColor: 'bg-magenta', textColor: 'text-magenta' },
+            'confidence': { label: 'Confident', dotColor: 'bg-blue', textColor: 'text-blue' },
+            'nervousness': { label: 'Nervous', dotColor: 'bg-yellow', textColor: 'text-yellow' },
+            'fear': { label: 'Nervous', dotColor: 'bg-yellow', textColor: 'text-yellow' },
+            'surprise': { label: 'Surprised', dotColor: 'bg-magenta', textColor: 'text-magenta' },
+            'anger': { label: 'Frustrated', dotColor: 'bg-red', textColor: 'text-red' },
+            'sadness': { label: 'Uncertain', dotColor: 'bg-purple', textColor: 'text-purple' },
+            'neutral': { label: 'Neutral', dotColor: 'bg-text-primary', textColor: 'text-text-primary' },
+        };
+        return emotionMap[dominant_emotion] || { label: dominant_emotion || 'Unknown', dotColor: 'bg-text-tertiary', textColor: 'text-text-tertiary' };
     };
 
     const emotionDisplay = getEmotionDisplay(currentEmotion);
 
+    // Get state badge class
+    const getStateBadgeClass = (state: AgentState | null, targetState: AgentState | null) => {
+        if (targetState === null) {
+            return agentState === null ? CLASSES.stateBadgeActive : CLASSES.stateBadgeInactive;
+        }
+        if (targetState === 'listening') {
+            return agentState === 'listening' ? CLASSES.stateBadgeListening : CLASSES.stateBadgeInactive;
+        }
+        if (targetState === 'talking') {
+            return agentState === 'talking' ? CLASSES.stateBadgeTalking : CLASSES.stateBadgeInactive;
+        }
+        return CLASSES.stateBadgeInactive;
+    };
+
     return (
         <SidebarProvider>
-            <div className="relative w-full h-screen bg-[#171717] flex">
+            <div ref={containerRef} className="relative w-full h-screen bg-surface-0 flex overflow-hidden">
                 <AppSidebar user={sidebarUser} onNewSession={resetConversation} />
 
-                <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-[#171717]">
+                <SidebarInset className="flex-1 flex flex-col items-center justify-center relative bg-surface-0 overflow-hidden">
+                    {/* Gradient Background Layer */}
+                    <div className="absolute inset-0 z-0 pointer-events-none">
+                        {/* Left Globe */}
+                        <div
+                            className="session-gradient absolute -bottom-[40%] -left-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+                            style={{
+                                background: `
+                                    radial-gradient(circle at center, 
+                                        rgba(64, 83, 214, 0.85) 0%, 
+                                        rgba(45, 140, 255, 0.55) 25%, 
+                                        rgba(88, 28, 135, 0.35) 50%, 
+                                        rgba(128, 0, 255, 0.25) 75%, 
+                                        transparent 100%
+                                    )
+                                `,
+                                transform: "translateY(100%)"
+                            }}
+                        />
+                        {/* Right Globe */}
+                        <div
+                            className="session-gradient absolute -bottom-[40%] -right-[45%] w-[100vw] h-[100vw] rounded-full blur-[120px] opacity-90"
+                            style={{
+                                background: `
+                                    radial-gradient(circle at center, 
+                                        rgba(64, 83, 214, 0.85) 0%, 
+                                        rgba(45, 140, 255, 0.55) 25%, 
+                                        rgba(88, 28, 135, 0.35) 50%, 
+                                        rgba(128, 0, 255, 0.25) 75%,
+                                        transparent 100%
+                                    )
+                                `,
+                                transform: "translateY(100%)"
+                            }}
+                        />
+                    </div>
+
                     {/* Timer */}
-                    <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2">
-                        <div className="px-6 py-2 rounded-full bg-white text-[#171717] font-medium text-[18px] shadow-lg">
+                    <div className={cn(CLASSES.centerAbsolute, 'top-16 z-10')}>
+                        <div className="px-4 py-2 rounded-md bg-accent-lime text-surface-0 font-medium text-h4 shadow-lg">
                             {formatTime(elapsedTime)}
                         </div>
                     </div>
 
-                    {/* Emotion Badge - Below Timer */}
+                    {/* Emotion Badge */}
                     {emotionDisplay && (
-                        <div className="absolute top-[110px] left-1/2 transform -translate-x-1/2">
+                        <div className={cn(CLASSES.centerAbsolute, 'top-30')}>
                             <div className="animate-in fade-in slide-in-from-top-2 duration-300 flex items-center gap-2">
-                                <span className={cn("w-2 h-2 rounded-full", emotionDisplay.dotColor)} />
-                                <span className={cn("text-xs font-medium capitalize", emotionDisplay.textColor)}>
+                                <span className={cn("size-2 rounded-full", emotionDisplay.dotColor)} />
+                                <span className={cn("text-caption font-medium capitalize", emotionDisplay.textColor)}>
                                     {emotionDisplay.label}
                                 </span>
                             </div>
@@ -271,8 +316,8 @@ export function InteractivePitchSession({
 
                     {/* Error */}
                     {error && (
-                        <div className="absolute top-[170px] left-1/2 transform -translate-x-1/2">
-                            <div className="px-4 py-2 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+                        <div className={cn(CLASSES.centerAbsolute, 'top-44')}>
+                            <div className="px-4 py-2 rounded-lg bg-red/10 border border-red/30 text-red text-sm">
                                 {error}
                             </div>
                         </div>
@@ -280,7 +325,7 @@ export function InteractivePitchSession({
 
                     {/* Main Orb */}
                     <div className="flex flex-col items-center justify-center gap-8">
-                        <div className="w-[250px] h-[250px] flex items-center justify-center relative">
+                        <div className="size-64 flex items-center justify-center relative">
                             <Orb
                                 colors={orbColors}
                                 agentState={agentState}
@@ -291,36 +336,21 @@ export function InteractivePitchSession({
                         </div>
 
                         {/* Status */}
-                        <p className="text-[20px] font-medium text-[#f0f0f0]">
+                        <p className="text-h4 font-medium text-text-primary">
                             {getStatusMessage()}
                         </p>
 
                         {/* State Indicators */}
                         {isConnected && (
                             <div className="flex items-center gap-3">
-                                <div className={cn(
-                                    "px-4 py-2 rounded-lg border transition-all duration-300",
-                                    agentState === null
-                                        ? "bg-[#262626] border-[#404040] text-[#f0f0f0]"
-                                        : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                                )}>
-                                    <span className="text-sm font-medium">Idle</span>
+                                <div className={cn(CLASSES.stateBadgeBase, getStateBadgeClass(agentState, null))}>
+                                    Idle
                                 </div>
-                                <div className={cn(
-                                    "px-4 py-2 rounded-lg border transition-all duration-300",
-                                    agentState === 'listening'
-                                        ? "bg-blue-500/20 border-blue-500/50 text-blue-400"
-                                        : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                                )}>
-                                    <span className="text-sm font-medium">Listening</span>
+                                <div className={cn(CLASSES.stateBadgeBase, getStateBadgeClass(agentState, 'listening'))}>
+                                    Listening
                                 </div>
-                                <div className={cn(
-                                    "px-4 py-2 rounded-lg border transition-all duration-300",
-                                    agentState === 'talking'
-                                        ? "bg-[#FF6B00]/20 border-[#FF6B00]/50 text-[#FF6B00]"
-                                        : "bg-transparent border-[#2e2e2e] text-[#666666]"
-                                )}>
-                                    <span className="text-sm font-medium">Talking</span>
+                                <div className={cn(CLASSES.stateBadgeBase, getStateBadgeClass(agentState, 'talking'))}>
+                                    Talking
                                 </div>
                             </div>
                         )}
@@ -328,25 +358,25 @@ export function InteractivePitchSession({
 
                     {/* Transcript Panel */}
                     {showTranscript && (
-                        <div className="absolute right-6 top-[140px] bottom-[140px] w-[350px] bg-[#1e1e1e] border border-[#333] rounded-xl overflow-hidden flex flex-col">
-                            <div className="px-4 py-3 border-b border-[#333] flex items-center justify-between">
-                                <span className="text-white font-medium">Conversation</span>
-                                <button onClick={() => setShowTranscript(false)} className="text-gray-400 hover:text-white">
-                                    <X className="w-4 h-4" />
-                                </button>
+                        <div className={cn(CLASSES.panelCard, 'absolute right-6 top-15 bottom-0 w-80 h-[calc(100%-200px)] flex flex-col')}>
+                            <div className={CLASSES.panelHeader}>
+                                <span className="text-text-primary font-medium">Conversation</span>
+                                <Button variant="ghost" size="sm" onClick={() => setShowTranscript(false)}>
+                                    <X className="size-4" />
+                                </Button>
                             </div>
-                            <div className="flex-1 overflow-y-auto p-4 space-y-3">
+                            <div className="flex-1 overflow-y-auto p-3 space-y-3">
                                 {messages.length === 0 ? (
-                                    <p className="text-gray-500 text-sm text-center">Start speaking to see the conversation</p>
+                                    <p className="text-text-tertiary text-sm text-center">
+                                        Start speaking to see the conversation
+                                    </p>
                                 ) : (
                                     messages.map((msg, idx) => (
                                         <div key={idx} className={cn(
-                                            "p-3 rounded-lg text-sm",
-                                            msg.role === 'user'
-                                                ? "bg-blue-500/20 text-blue-100 ml-8"
-                                                : "bg-[#FF6B00]/20 text-orange-100 mr-8"
+                                            CLASSES.messageBase,
+                                            msg.role === 'user' ? CLASSES.messageUser : CLASSES.messageAI
                                         )}>
-                                            <div className="font-medium text-xs mb-1 opacity-70">
+                                            <div className="font-medium text-caption mb-1 opacity-70">
                                                 {msg.role === 'user' ? 'You' : 'Marcus'}
                                             </div>
                                             {msg.content}
@@ -357,7 +387,7 @@ export function InteractivePitchSession({
                             </div>
 
                             {/* Text Input */}
-                            <form onSubmit={handleTextSubmit} className="p-3 border-t border-[#333]">
+                            <form onSubmit={handleTextSubmit} className="p-3 border-t border-border-gray">
                                 <div className="flex gap-2">
                                     <input
                                         type="text"
@@ -365,78 +395,60 @@ export function InteractivePitchSession({
                                         onChange={(e) => setTextInput(e.target.value)}
                                         placeholder="Or type a message..."
                                         disabled={isProcessing || isAISpeaking}
-                                        className="flex-1 px-3 py-2 bg-[#262626] border border-[#404040] rounded-lg text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#FF6B00]"
+                                        className={CLASSES.textInput}
                                     />
-                                    <button
+                                    <Button
                                         type="submit"
+                                        size="icon"
                                         disabled={!textInput.trim() || isProcessing || isAISpeaking}
-                                        className="px-3 py-2 bg-[#FF6B00] hover:bg-[#ff7f1a] disabled:bg-[#333] disabled:text-gray-500 rounded-lg transition-colors"
                                     >
-                                        <Send className="w-4 h-4" />
-                                    </button>
+                                        <Send className="size-4" />
+                                    </Button>
                                 </div>
                             </form>
                         </div>
                     )}
 
                     {/* Bottom Controls */}
-                    <div className="absolute bottom-[60px] left-0 right-0 flex items-center justify-center px-8">
-                        <div className="w-full max-w-[1000px] flex items-center justify-between">
+                    <div className="absolute bottom-16 left-0 right-0 flex items-center justify-center px-8">
+                        <div className="w-full max-w-4xl flex items-center justify-between">
                             {/* Left */}
                             <div className="flex items-center gap-4">
-                                <button
+                                <Button
                                     onClick={handlePauseToggle}
                                     disabled={!isConnected}
-                                    className={cn(
-                                        "h-12 px-6 rounded-lg flex items-center gap-2.5 font-medium border transition-all",
-                                        isPaused
-                                            ? "bg-[#FF6B00] hover:bg-[#ff7f1a] text-white border-[#FF6B00]"
-                                            : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
-                                    )}
+                                    variant={isPaused ? "active" : "nav"}
                                 >
-                                    {isPaused ? <Play className="w-4 h-4" fill="currentColor" /> : <Pause className="w-4 h-4" fill="currentColor" />}
-                                    <span className="text-[15px]">{isPaused ? 'Resume' : 'Pause'}</span>
-                                </button>
+                                    {isPaused ? <Play className="size-4" fill="currentColor" /> : <Pause className="size-4" fill="currentColor" />}
+                                    {isPaused ? 'Resume' : 'Pause'}
+                                </Button>
 
-                                <button
+                                <Button
                                     onClick={handleMicToggle}
                                     disabled={!isConnected || isPaused || isAISpeaking}
-                                    className={cn(
-                                        "h-14 w-14 rounded-full flex items-center justify-center border-2 transition-all",
-                                        isRecording
-                                            ? isUserSpeaking
-                                                ? "bg-green-500 border-green-400 animate-pulse"
-                                                : "bg-red-500 border-red-400"
-                                            : "bg-[#262626] border-[#404040]"
-                                    )}
+                                    variant={isRecording ? "micRecording" : "mic"}
+                                    size="icon"
                                 >
                                     {isRecording
-                                        ? <MicOff className="w-6 h-6 text-white" />
-                                        : <Mic className="w-6 h-6 text-[#f0f0f0]" />}
-                                </button>
+                                        ? <MicOff className="size-6" />
+                                        : <Mic className="size-6" />}
+                                </Button>
                             </div>
 
                             {/* Right */}
                             <div className="flex items-center gap-4">
-                                <button
+                                <Button
+                                    variant={showTranscript ? "active" : "nav"}
+                                    size="icon"
                                     onClick={() => setShowTranscript(!showTranscript)}
-                                    className={cn(
-                                        "h-12 w-12 rounded-lg flex items-center justify-center border transition-all",
-                                        showTranscript
-                                            ? "bg-[#FF6B00]/20 border-[#FF6B00]/50 text-[#FF6B00]"
-                                            : "bg-[#262626] hover:bg-[#2e2e2e] text-[#f0f0f0] border-[#404040]"
-                                    )}
                                 >
-                                    <MessageSquare className="w-5 h-5" />
-                                </button>
+                                    <MessageSquare className="size-5" />
+                                </Button>
 
-                                <button
-                                    onClick={handleEndSession}
-                                    className="h-12 px-6 rounded-lg flex items-center gap-2.5 font-medium bg-red-600/90 hover:bg-red-600 text-white border border-red-600 shadow-lg shadow-red-600/20"
-                                >
-                                    <X className="w-4 h-4" />
-                                    <span className="text-[15px]">End Session</span>
-                                </button>
+                                <Button onClick={handleEndSession} variant="destructive">
+                                    <X className="size-4" />
+                                    End Session
+                                </Button>
                             </div>
                         </div>
                     </div>
