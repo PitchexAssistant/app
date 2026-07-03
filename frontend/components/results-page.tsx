@@ -5,7 +5,6 @@ import { EmotionTrendChart } from './charts/emotion-trend-chart'
 import { PerformanceRadarChart } from './charts/performance-radar-chart'
 import { SessionAnalysisModal } from '@/features/session-analysis'
 import { Button } from '@/components/ui/button'
-import { Presentation } from 'lucide-react'
 
 interface ResultsPageProps {
   transcript: string
